@@ -1,0 +1,36 @@
+#header {
+    height:260px;
+    line-height:240px;
+    font-size:50px;
+}
+#bodyBox{
+    padding-top:10px;
+    width:1280px;
+    height:860px;
+}
+    #bodyBox p{
+        text-align:left;
+    }
+.bold{
+    padding-left:20px;
+    font-size:40px;
+}
+.other{
+    padding-top:20px;
+    font-size:34px;
+    font-family:WhitneyBook;
+}
+#code{
+    bottom:163px;
+    right:190px;
+    width:180px;
+    height:180px;
+    background-image:url(./resourses/code.png)
+}
+#codeText{
+    bottom:83px;
+    right:0px;
+    width:560px;
+    text-align:center;
+    font-size:25px;
+}

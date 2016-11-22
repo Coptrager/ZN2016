@@ -1,0 +1,1 @@
+"use strict";System.register(["jsx!elements/button"],function(_export,_context){var Button;return{setters:[function(_jsxElementsButton){Button=_jsxElementsButton["default"]}],execute:function(){_export("default",Button)}}});

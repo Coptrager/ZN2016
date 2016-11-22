@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects
+	xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<object 
+		id="flowCfg"
+		class="ru.mobw.coreas3.app.config.FlowConfig">
+		<property name="bindingsRootPackage" value="${utility.path}"/>
+	</object>
+	
+	<object 
+		id="flow"
+		class="ru.mobw.coreas3.app.flow.mcflow.MCFlowBase"
+		depends-on="flowCfg">
+		<constructor-arg ref="flowCfg">
+		</constructor-arg>
+		<property name="routeData" ref="route"/>
+		<property name="elementsMap">
+			<dictionary>
+				<entry>
+					<key>exit</key>
+					<value><ref>exit</ref></value>
+				</entry>
+				<entry>
+					<key>companySelect</key>
+					<value><ref>companySelect</ref></value>
+				</entry>
+				<entry>
+					<key>contractInput</key>
+					<value><ref>contractInput</ref></value>
+				</entry>
+				<entry>
+					<key>phoneInput</key>
+					<value><ref>phoneInput</ref></value>
+				</entry>
+				<entry>
+					<key>paymentTypeSelect</key>
+					<value><ref>paymentTypeSelect</ref></value>
+				</entry>
+				<entry>
+					<key>pinInput</key>
+					<value><ref>pinInput</ref></value>
+				</entry>
+				<entry>
+					<key>balancePayment</key>
+					<value><ref>balancePayment</ref></value>
+				</entry>
+				<entry>
+					<key>sumInput</key>
+					<value><ref>sumInput</ref></value>
+				</entry>
+				<entry>
+					<key>pubOferta</key>
+					<value><ref>pubOferta</ref></value>
+				</entry>
+				<entry>
+					<key>cashPayment</key>
+					<value><ref>cashPayment</ref></value>
+				</entry>
+				<entry>
+					<key>paymentEnd</key>
+					<value><ref>paymentEnd</ref></value>
+				</entry>
+				<entry>
+					<key>nameInput</key>
+					<value><ref>nameInput</ref></value>
+				</entry>
+			</dictionary>
+		</property>
+		<property name="interceptorsMap">
+			<dictionary>
+				<entry>
+					<key>_->contractInput</key>
+					<value>
+						<object class="com.leetwin.insurance.flow.interceptors.StartParamInterceptor"/>
+					</value>
+				</entry>
+			</dictionary>
+		</property>
+	</object>
+	
+	<object
+		id="exit"
+		class="com.leetwin.insurance.flow.elements.ExitElement"
+		>
+		<constructor-arg value="./strah_return.html"/>
+		<constructor-arg value="30046"/>
+		<property name="id" value="1"/>
+	</object>
+	
+	<object
+		id="companySelect"
+		class="com.leetwin.insurance.flow.elements.CompanySelectionElement"
+		>
+		<constructor-arg value="companySelect"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="2"/>
+		<property name="dataName" value="company"/>
+	</object>
+	
+	<object
+		id="contractInput"
+		class="com.leetwin.insurance.flow.elements.ContractInputElement"
+		>
+		<constructor-arg value="contractInput"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="3"/>
+		<property name="bindings">
+			<array>
+				<value>binder.text=$contract.numberUnformatted</value>
+			</array>
+		</property>
+		<property name="dataName" value="contract"/>
+		<property name="validator" ref="contractValidator"/>
+		<property name="validationAlert" value="${err.contractError}"/>
+		<property name="keyboardType" value="state_num"/>
+		<property name="maxLength" value="${config.maxContractLength}"/>
+		<property name="formatter">
+			<object class="ru.mobw.coreas3.formatters.PhoneFormatter">
+				<property name="useBasePart" value="false"/>
+				<property name="formatString" value="##########"/>
+			</object>
+		</property>
+		<property name="kbLang" value="en"/>
+	</object>
+	
+	<object
+		id="nameInput"
+		class="com.leetwin.insurance.flow.elements.NameInputElement">
+		<constructor-arg value="nameInput"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="4"/>
+		<property name="dataName" value="user"/>
+		<property name="validator" ref="nameValidator"/>
+		<property name="multipleErrors" value="${err.name.multi}"/>
+		<property name="lastNameLabel" value="${label.name.last}"/>
+		<property name="middleNameLabel" value="${label.name.middle}"/>
+		<property name="firstNameLabel" value="${label.name.first}"/>
+		<property name="lastNameError" value="${err.name.last}"/>
+		<property name="middleNameError" value="${err.name.middle}"/>
+		<property name="firstNameError" value="${err.name.first}"/>
+		<property name="maxFieldLength" value="${config.maxNameLength}"/>
+		<property name="bindings">
+			<array>
+				<value>binderTexts.last=$user.lastName</value>
+				<value>binderTexts.first=$user.firstName</value>
+				<value>binderTexts.middle=$user.middleName</value>
+			</array>
+		</property>		
+		
+	</object>
+	
+	<object
+		id="phoneInput"
+		class="com.leetwin.insurance.flow.elements.PhoneNumberEnterElement"
+		init-method="onInit"
+		>
+		<constructor-arg value="phoneInput"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="5"/>
+		<property name="dataName" value="phone"/>
+		<property name="bindings">
+			<array>
+				<value>viewMC._contract.text=$contract.number</value>
+				<value>binder.text=$phone.value</value>
+				<value>
+					<object template="navOutcome">
+						<param name="outcome" value="oferta"/>
+						<param name="target" value="viewMC.ofertaButton"/>
+					</object>
+				</value>
+			</array>
+		</property>
+		<property name="formatter" ref="phoneFormatter" />
+		<property name="maxTextLength" value="${config.phoneLength}"/>
+		<property name="validationAlert" value="${err.phoneError}"/>
+		<property name="validator" ref="phoneValidator" />
+	</object>
+
+	<object
+		id="paymentTypeSelect"
+		class="com.leetwin.insurance.flow.elements.PaymentTypeSelectionElement"
+		>
+		<constructor-arg value="paymentTypeSelect"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="6"/>
+		<property name="dataName" value="payment"/>
+		<property name="bindings">
+			<array>
+				<value>balanceButton.active=$lkEnabled</value>
+			</array>
+		</property>
+	</object>
+	
+	<object
+		id="pinInput"
+		class="com.leetwin.insurance.flow.elements.PinEnterElement"
+		>
+		<constructor-arg value="pinInput"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="7"/>
+		<property name="maxTextLength" value="${config.maxPinLength}"/>
+		<property name="validationAlert" value="${err.pinError}"/>
+		<property name="dataName" value="pin"/>
+		<property name="validator" ref="pinValidator" />
+	</object>
+	
+	<object
+		id="sumInput"
+		class="com.leetwin.insurance.flow.elements.EnterSummElement"
+		>
+		<constructor-arg value="sumInput"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="8"/>
+		<property name="dataName" value="sum"/>
+		<property name="maxTextLength" value="${config.maxCashLength}"/>
+		<property name="validationAlert" value="${err.cashError}"/>
+		<property name="bindings">
+			<array>
+				<!--check-->
+				<!--value>viewMC._sumWithComiss.text=#com.leetwin.insurance.flow.methodCalls.ComissionCounter::binder.textChange</value-->
+				<object class="ru.mobw.coreas3.app.bind.BindingRecord">
+					<property name="type">
+						<util:constant static-field="ru.mobw.coreas3.app.bind.BindingRecordType.LITERAL"/>
+					</property>
+					<property name="propName" value="viewMC._comissMessage.text"/>
+					<property name="param" value="${msg.comissionString}"/>
+					<property name="postProcessor">
+						<object class="com.leetwin.insurance.flow.methodCalls.ComissionStringProducer"/>
+					</property>
+				</object>
+				<value>binder.text=$sum.value</value>
+			</array>
+		</property>
+		<property name="validator" ref="sumValidator" />
+	</object>
+	
+	<object
+		id="pubOferta"
+		class="com.leetwin.insurance.flow.elements.OfertaElement"
+		>
+		<constructor-arg value="pubOferta"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="9"/>
+		<property name="path" value="QK_oferta_full.xml"/>
+	</object>
+	
+	<object
+		id="cashPayment"
+		class="com.leetwin.insurance.flow.elements.CashPaymentElement"
+		>
+		<constructor-arg value="cashPayment"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="10"/>
+		<property name="restString" value="${msg.restOfMoney}"/>
+		<property name="bindings">
+			<array>
+				<value>viewMC._minCash.text=$ComissionPostprocessor?addWalletComm:true;roundToTens:true(sum.value)</value>
+				<value>viewMC._toAccount.text=$MoneyFormatPostprocessor(sum.value)</value>
+				<value>viewMC._inserted.text=@MoneyFormatPostprocessor(casher.cash)::casher.validatorCashInsertEvent</value>
+				<value>viewMC._tax.text=@ComissionOnlyGetter(casher.cash)::casher.validatorCashInsertEvent</value>
+			</array>
+		</property>
+		<property name="extrasGetter" ref="sessionPropsToExtras"/>
+	</object>
+	
+	<object
+		id="balancePayment"
+		class="com.leetwin.insurance.flow.elements.BalancePaymentElement"
+		>
+		<constructor-arg value="balancePayment"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="11"/>
+		<property name="bindings">
+			<array>
+				<value>viewMC._sum.text=$ComissionPostprocessor?currency:;addWalletComm:false(sum.value)</value>
+				<value>viewMC._bal.text=$balance.value</value>
+			</array>
+		</property>
+		<property name="extrasGetter" ref="sessionPropsToExtras"/>
+		<property name="waitForCallAlert" value="${msg.waitForCallAlert}"/>
+	</object>
+	
+	<object
+		id="paymentEnd"
+		class="ru.mobw.coreas3.app.flow.mcflow.CommonFlowElement"
+		>
+		<constructor-arg value="paymentEnd"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="12"/>
+		<property name="bindings">
+			<array>
+				<value>viewMC.contractNum._tf.text=$contract.number</value>
+				<value>viewMC.sum._tf.text=$sum.value</value>
+				<value>viewMC._rest.text=$rest</value>
+				<value>viewMC._rest.visible=$hasRest</value>
+				<value>viewMC.fiskDescriptionTf.visible=$fiscalFailure</value>
+			</array>
+		</property>
+	</object>
+	
+	<!-- validators -->
+	
+	<object
+		id="nameValidator"
+		class="com.leetwin.flow.validation.Validator">
+		<property name="constraintsMap">
+			<dictionary>
+				<entry>
+					<key>firstName</key>
+					<value><ref>nameValidationConstraints</ref></value>
+				</entry>
+				<entry>
+					<key>middleName</key>
+					<value><ref>nameValidationConstraints</ref></value>
+				</entry>
+				<entry>
+					<key>lastName</key>
+					<value><ref>nameValidationConstraints</ref></value>
+				</entry>
+			</dictionary>
+		</property>
+	</object>
+	
+	<object
+		id="nameValidationConstraints"
+		class="Array">
+		<constructor-arg>
+			<object class="com.leetwin.flow.validation.constraints.NotNull"/>
+		</constructor-arg>
+		<constructor-arg>
+			<object class="com.leetwin.flow.validation.constraints.NotEmpty"/>
+		</constructor-arg>
+		<constructor-arg>	
+			<object class="com.leetwin.flow.validation.constraints.InRange">
+				<property name="min" value="${config.minNameLength}"/>
+				<property name="max" value="${config.maxNameLength}"/>
+			</object>
+		</constructor-arg>
+	</object>
+	
+	<object 
+		id="pinValidator"
+		class="com.leetwin.flow.validation.Validator">
+		<property name="constraintsMap">
+			<dictionary>
+				<entry>
+					<key>value</key>
+					<value>
+						<array>
+							<object class="com.leetwin.flow.validation.constraints.NotNull"/>
+							<object class="com.leetwin.flow.validation.constraints.InRange">
+								<property name="min" value="${config.minPinLength}"/>
+								<property name="max" value="${config.maxPinLength}"/>
+							</object>
+						</array>
+					</value>
+				</entry>
+			</dictionary>
+		</property>
+	</object>
+
+	<object 
+		id="phoneValidator"
+		class="com.leetwin.flow.validation.Validator">
+		<property name="constraintsMap">
+			<dictionary>
+				<entry>
+					<key>value</key>
+					<value>
+						<array>
+							<object class="com.leetwin.flow.validation.constraints.NotNull"/>
+							<object class="com.leetwin.flow.validation.constraints.InRange">
+								<property name="min" value="10"/>
+								<property name="max" value="10"/>
+							</object>
+							<object class="ru.mobw.coreas3.app.validation.constraints.HasPhoneCapacity"/>
+						</array>
+					</value>
+				</entry>
+			</dictionary>
+		</property>
+	</object>
+
+	<object 
+		id="contractValidator"
+		class="com.leetwin.flow.validation.Validator">
+		<property name="constraintsMap">
+			<dictionary>
+				<entry>
+					<key>numberUnformatted</key>
+					<value>
+						<array>
+							<object class="com.leetwin.flow.validation.constraints.NotNull"/>
+							<object class="com.leetwin.flow.validation.constraints.NotEmpty"/>
+							<object class="com.leetwin.flow.validation.constraints.InRange">
+								<property name="min" value="${config.minContractLength}"/>
+								<property name="max" value="${config.maxContractLength}"/>
+							</object>
+						</array>
+					</value>
+				</entry>
+			</dictionary>
+		</property>
+	</object>
+	
+	<object 
+		id="sumValidator"
+		class="com.leetwin.flow.validation.Validator">
+		<property name="constraintsMap">
+			<dictionary>
+				<entry>
+					<key>value</key>
+					<value>
+						<array>
+							<object class="com.leetwin.flow.validation.constraints.NotNull"/>
+							<object class="com.leetwin.flow.validation.constraints.NotEmpty"/>
+							<object class="com.leetwin.flow.validation.constraints.InRange">
+								<property name="min" value="${config.minCashLimit}"/>
+								<property name="max" value="${num.maxCash}"/>
+								<property name="asNumber" value="true"/>
+								<property name="errorString" value="${err.cashRange}"/>
+							</object>
+							<object class="com.leetwin.flow.validation.constraints.NotZero"/>
+						</array>
+					</value>
+				</entry>
+			</dictionary>
+		</property>
+	</object>
+	<!-- end validators -->
+		
+	<!-- helpers -->
+	<object id="phoneFormatter" class="ru.mobw.coreas3.formatters.PhoneFormatter" />
+	
+	<template id="navOutcome">
+		<object class="ru.mobw.coreas3.app.bind.BindingRecord">
+			<property name="type">
+				<util:constant static-field="ru.mobw.coreas3.app.bind.BindingRecordType.LITERAL"/>
+			</property>
+			<property name="propName" value="dispatchJumpToEvent()"/>
+			<property name="param" value="${outcome}"/>
+			<property name="triggerType" value="event"/>
+			<property name="triggerEventName" value="${target}.click"/>
+		</object>
+	</template>
+	
+	<object id="sessionPropsToExtras" class="com.leetwin.insurance.utils.SessionDataToExtrasConverter">
+		<property name="sessionProps">
+			<dictionary>
+				<entry key="account1" value="user.lastName"/>
+				<entry key="account2" value="user.firstName"/>
+				<entry key="account3" value="user.middleName"/>
+				<entry key="account4" value="phone.contactPhone"/>
+			</dictionary>
+		</property>
+		<property name="receiptPropNames">
+			<dictionary>
+				<entry value="Фамилия" key="account1"/>
+				<entry value="Имя" key="account2"/>
+				<entry value="Отчество" key="account3"/>
+				<entry value="Контактный телефон" key="account4"/>
+			</dictionary>			
+		</property>
+	</object>
+	<!-- end_helpers -->
+</objects>

@@ -1,0 +1,101 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<objects
+	xmlns:util="http://www.springactionscript.org/schema/util"
+	>
+	<property file="private_security-config.properties" prevent-cache="false"/>
+	<import file="private_security_divisions.xml"/>	
+	<util:invoke 
+		target-class="ru.qiwi.general.app.initialize.FlashMovie" 
+		target-method="getView" 
+		id="mainInstance"
+		/>
+
+	
+	<object
+		id="appConfig"
+		class="ru.mobw.coreas3.app.config.Config">
+		<property name="debugMode" value="${config.debugMode}"/>
+		<property name="testMode" value="${config.testMode}"/>
+		<property name="exitURL" value="${config.exitURL}"/>
+		<property name="phonesListURL" value="${config.phonesListURL}"/>
+		<property name="phonesListFallbackURL" value="${config.phonesListFallbackURL}"/>
+		<property name="ofertaPath" value="${config.ofertaPath}"/>
+		<property name="ofertaName" value="${config.ofertaName}"/>
+		<property name="walletPrvId" value="${config.walletPrvId}"/>
+		<property name="prvName" value="${config.PrvName}"/>
+		<property name="noPrinterAlertString" value="${err.noPrinter}"/>		
+		
+		<property name="appName" value="${config.appName}"/>
+		<property name="returnPage" value="${config.returnPage}"/>
+		<property name="statId" value="${config.statId}"/>
+		<property name="statProjectId" value="${config.statProjectId}"/>
+		<property name="commissProfile" value="${profile}"/>
+		<property name="prvId" value="${config.PrvId}"/>
+		<property name="paymentTitle" value="${config.PaymentTitle}"/>
+		<property name="startYearInContractDate" value="${config.startYearInContractDate}"/>
+		
+		
+		<property name="confirmMessName" value="${confirmMess.name}"/>
+		<property name="confirmMessPay" value="${confirmMess.pay}"/>
+		<property name="confirmMessDetails" value="${confirmMess.details}"/>
+		<property name="receiptReciever" value="${receipt.reciever}"/>
+		<property name="receiptPay" value="${receipt.pay}"/>
+		
+		<property name="lkDisabledAlertString" value="${err.lkDisabled}"/>
+		<property name="prvDisabledAlertString" value="${err.prvDenied}"/>
+		<property name="serverErrorString" value="${err.serviceCallError}"/>
+		<property name="serverTimeoutString" value="${err.timeout}"/>
+		<property name="fatalErrorString" value="${err.fatalError}"/>
+		
+		<property name="insufficientCashAlertString" value="${msg.insufficientCash}"/>
+		<property name="maxCashExceeded" value="${err.overSum}"/>
+		<property name="insufficientBalance" value="${msg.insufficientBalance}"/>
+
+		<property name="topAdv" value="${check.topAdv}"/>
+		<property name="bottomAdv" value="${check.bottomAdv}"/>
+		<property name="walletFillPrvId" value="${config.walletFillPrvId}"/>
+		<property name="minCashLimit" value="${config.minCashLimit}"/>
+		<property name="maxCash" value="${num.maxCash}"/>
+		<property name="appPrefix" value="${config.appPrefix}"/>
+		
+		<property name="version">
+			<util:constant static-field="ru.qiwi.general.app.initialize.FlashMovie.version" />
+		</property>
+		
+		<property name="bankConstants">
+			<value>
+				<object class="Object">
+					<property name="BANK_TITLE" value="${bankConstants.BANK_TITLE}"/>
+					<property name="BANK_INN" value="${bankConstants.BANK_INN}"/>
+					<property name="BANK_BIK" value="${bankConstants.BANK_BIK}"/>
+					<property name="BANK_KS" value="${bankConstants.BANK_KS}"/>
+					<property name="BANK_LIC" value="${bankConstants.BANK_LIC}"/>
+					<property name="BANK_OP_NUM" value="${bankConstants.BANK_OP_NUM}"/>
+					<property name="BANK_PKP" value="${bankConstants.BANK_PKP}"/>
+					<property name="BANK_SERVICE_NAME" value="${bankConstants.BANK_SERVICE_NAME}"/>
+				</object>
+			</value>
+		</property>
+		<property name="VQW_URL">
+			<array>
+				<value>https://w.qiwi.com/xml/xmlcp.jsp</value>
+				<value>https://w.qiwi.com/xml/xmlcp.jsp</value>
+				<value>https://w.qiwi.com/xml/xmlcp.jsp</value>
+			</array>
+		</property>
+	</object>	
+	<object 
+		id="application" 
+		class="ru.mobw.coreas3.app.QiwiApplication"
+		init-method="onAppCreated">
+		<property name="view" ref="mainInstance" />
+		<property name="config" ref="appConfig" />
+		<property name="flow" ref="flow"/>
+		<property name="divisions" ref="divisions"/>
+		
+		
+	</object>
+	
+	
+</objects>

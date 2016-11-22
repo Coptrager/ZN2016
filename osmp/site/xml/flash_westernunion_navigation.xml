@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+	<object id="route" class="ru.mobw.coreas3.app.flow.navigation.route.RouteData">
+		<property name="navData">
+			
+			<value>
+				<![CDATA[
+					
+					@default = (init, way, %waySwitch, exit);
+					
+					%waySwitch = (
+						tarifs => tarifs,
+						bankoffertus => bankoffertus,
+						new => @new,
+						card => @card,
+						history => @history
+					);
+					
+					@card = (card, @auth, wuhistory, %wuhistorySwitch, @base);
+					@new = (@auth, @top10country, senderName, birthDate, recipientName, @base);
+					@another = (@top10country, recipientName, @base);
+					@history = (@auth, history);
+
+					%wuhistorySwitch = (
+						another => @another
+					);
+					
+					@top10country = (top10, %top10Switch);
+					%top10Switch = (
+						state => @state,
+						other => @other
+					);
+
+					@state = (state, %stateSwitch);
+					%stateSwitch = (
+						city => city
+					);
+
+					@other = (region, %regionSwitch);
+					%regionSwitch = (
+						country => @country,
+						uic => uic
+					);
+
+					@country = (country, %countrySwitch);
+					%countrySwitch = (
+						state => @state,
+						other => @other
+					);
+
+					@auth = (senderPhone, %senderPhoneSwitch, t:pin);
+
+					%senderPhoneSwitch = (
+						fulloffertus => fulloffertus
+					);
+
+					
+					@base = (currency, summ, %summSwitch, confirmation, %confirmationSwitch, method, %methodSwitch, final, exit);
+					
+					%summSwitch = (
+						conditions => conditions,
+						secret => secret
+					);
+
+					%confirmationSwitch = (
+						contract => contract
+					);
+
+					%methodSwitch = (
+						cash => @cash,
+						balance => @balance
+					);
+					
+					@cash = (change, cash);
+					@balance = (balance, %balanceSwitch);
+					
+					%balanceSwitch = (
+						insufficient => @cash
+					);
+
+				]]>
+			</value>
+		</property>
+	</object>
+</objects>

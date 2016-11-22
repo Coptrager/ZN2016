@@ -1,0 +1,118 @@
+{
+	"version": "Sinaper v1.5.31",
+	"startPage": "CheckStatus",
+	"pages": {
+		"CheckStatus": {
+			"viewClass": "CheckStatusView",
+			"name": "app_start",
+			"header": "&nbsp"
+		},
+		"Calculator": {
+			"viewClass": "CalculatorView",
+			"name": "calculator",
+			"header": "Укажите сумму, которую хотите зачислить",
+			"exitPage": "None",
+			"previousPage": "FormContainer",
+			"containerClass": "g-calculator"
+		},
+		"Offertus": {
+			"viewClass": "OffertusView",
+			"name": "oferta",
+			"containerClass": "g-offertus",
+			"comment": " ",
+			"header": "Оферта",
+			"previousPage": "Confirmation"
+		},
+		"PhoneEnter": {
+			"viewClass": "PhoneEnterView",
+			"name": "phone",
+			"header": "Введите ваш номер телефона",
+			"comment": "Необходимо указать действующий номер для проведения платежа"
+		},
+		"PinEnter": {
+			"viewClass": "PinEnterView",
+			"name": "pin",
+			"header": "Введите PIN-код",
+			"comment": "PIN-код от Visa QIWI Wallet отправлен вам ранее в SMS",
+			"exitPage": "None",
+			"previousPage": "PhoneEnter"
+		},
+		"SummEnter": {
+			"viewClass": "SummEnterView",
+			"name": "summ",
+			"header": "Укажите сумму, которую хотите зачислить",
+			"containerClass": "g-summ-enter",
+			"comment": " "
+		},
+		"Confirmation": {
+			"viewClass": "ConfirmationView",
+			"name": "validate",
+			"containerClass": "g-confirmation",
+			"header": "Проверьте данные",
+			"comment": " "
+		},
+		"PaymentMethod": {
+			"viewClass": "PaymentMethodView",
+			"name": "pay_method",
+			"containerClass": "g-payment-method",
+			"comment": " "
+		},
+		"ChangeOptions": {
+			"viewClass": "ChangeOptionsView",
+			"name": "change_type",
+			"containerClass": "g-change-options"
+		},
+		"PaySummOptions": {
+			"viewClass": "PaySummOptionsView",
+			"name": "pay_summ_options",
+			"containerClass": "g-pay-summ-options"
+		},
+		"CashPayment": {
+			"viewClass": "CashPaymentView",
+			"name": "pay",
+			"containerClass": "g-cash-payment",
+			"skipExitConfirmation": "true",
+			"header": "Внесите деньги",
+			"comment": " "
+		},
+		"BalancePayment": {
+			"viewClass": "BalancePaymentView",
+			"name": "pay_balance",
+			"containerClass": "g-balance-payment",
+			"skipExitConfirmation": "true",
+			"previousPage": "PaymentMethod"
+		},
+		"SmsConfirmation": {
+			"viewClass": "SmsConfirmationView",
+			"name": "sms",
+			"header": "Введите код из SMS",
+			"comment": "Для подтверждения платежа",
+			"exitPage": "None",
+			"previousPage": "BalancePayment"
+		},
+		"FormContainer": {
+			"viewClass": "FormContainerView",
+			"name": "field"
+		},
+		"Favourites": {
+			"viewClass": "FavouritesView",
+			"name": "favourites",
+			"containerClass": "g-favourites",
+			"header": "Выберите сохраненный платеж",
+			"previousPage": "FormContainer"
+		},
+		"PaymentNotConfirmed": {
+			"viewClass": "PaymentNotConfirmedView",
+			"name": "pay_not_confirmed",
+			"containerClass": "g-not-confirmed",
+			"skipExitConfirmation": "true",
+			"header": " ",
+			"path": " "
+		},
+		"Exit": {
+			"viewClass": "StatisticsView",
+			"name": "exit"
+		}
+
+	}
+}

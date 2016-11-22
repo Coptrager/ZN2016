@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<title>Untitled Document</title>
+    <script type="text/javascript">
+
+        function main() {
+            try{
+                terminal.ProcessCommand('PrvId', '15790');
+                terminal.ProcessCommand('PrvName', 'js_error');
+                terminal.ProcessCommand('AccNum', '0000000000');
+                terminal.ProcessCommand('_extra_fake_provider', 'true');
+                terminal.ProcessCommand('_extra_no_print_check', 'true');
+                terminal.ProcessCommand('_extra_comment', '{"type":"unhandledError","additional":{"message":"' + document.getElementById('js_error_description').value + '","source":"' + document.getElementById('js_error_filepath').value + '","line":' + document.getElementById('js_error_linenumber').value + '}}');
+                terminal.ProcessCommand('CreatePay', 'true');
+            }
+            catch(e){
+
+            }
+
+            setTimeout(function () {
+                document.location = './index.html';
+            }, 9000);
+        }
+
+    </script>
+
+</head>
+<body onload="main()" style="margin:0;overflow:hidden;">
+    <form name="ff" id="ff" method="post" action="./index.html">
+        <input name="js_error_filepath" id="js_error_filepath" type="hidden" value="" />
+        <input name="js_error_description" id="js_error_description" type="hidden" value="" />
+        <input name="js_error_linenumber" id="js_error_linenumber" type="hidden" value="" />
+    </form>
+    <table style="width:1280px;height:1024px;">
+        <tr align="center" valign="middle">
+            <td style="font-size:62px;font-family:Arial;">Извините, сервис временно недоступен.</td>
+        </tr>
+    </table>
+</body>
+</html>
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<object id="echeck" class="String">
+		<constructor-arg>
+			<value>
+<![CDATA[Номер телефона/счета/карты клиента<br/>%phone%<br/>Номер терминала: %terminal_id%{{operation_code && <br/>Код операции: %operation_code%}}<br/>Дата платежа: %date%<br/><br/>ВНЕСЕНИЕ СРЕДСТВ В:<br/>КИВИ Банк (АО)<br/>ИНН 3123011520<br/>Принято: %total%<br/>Сервисный сбор: %commission%<br/><br/>{{card && Номер платежной карты: %card%<br/>}}Отправитель: %sender%<br/>Получатель: %recipient%<br/><br/>Операция по переводу средств через систему Unistream принята КИВИ Банк (АО) к исполнению.<br/>Контрольный номер перевода: %control_code%<br/>Страна получения: %country%<br/>Сумма к получению: %amount%{{usd && <br/>Сумма к получению в долларах США: %amountusd% USD<br/>Курс конвертации: 1 USD ═ %rateusd% RUB<br/>}}{{euro && <br/>Сумма к получению в евро: %amounteuro% EURO<br/>Курс конвертации: 1 EURO ═ %rateeuro% RUB<br/>}}{{pound && <br/>Сумма к получению в фунтах: %amountpound% GBP<br/>Курс конвертации: 1 GBP ═ %ratepound% RUB<br/>}}<br/><br/>%service%: %service_number%<br/>
+]]>
+			</value>
+		</constructor-arg>
+	</object>
+</objects>

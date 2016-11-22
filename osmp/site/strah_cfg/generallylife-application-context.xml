@@ -1,0 +1,70 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<objects
+	xmlns:util="http://www.springactionscript.org/schema/util"
+	>
+	<property file="./strah_cfg/generallylife-config.properties" />
+		
+	<object 
+		id="mainInstance"
+		class="com.leetwin.insurance.Main"
+		factory-method="getInstance"
+		/>
+	
+	<object
+		id="appConfig"
+		class="ru.mobw.coreas3.app.config.Config">
+		<property name="debugMode" value="${config.debugMode}"/>
+		<property name="testMode" value="${config.testMode}"/>
+		<property name="exitURL" value="${config.exitURL}"/>
+		<property name="phonesListURL" value="${config.phonesListURL}"/>
+		<property name="phonesListFallbackURL" value="${config.phonesListFallbackURL}"/>
+		<property name="noPrinterAlertString" value="${err.noPrinter}"/>		
+		<property name="version" value="${config.version}"/>
+		
+		<property name="lkDisabledAlertString" value="${err.lkDisabled}"/>
+		<property name="prvDisabledAlertString" value="${err.prvDenied}"/>
+		<property name="serverErrorString" value="${err.serviceCallError}"/>
+		<property name="serverTimeoutString" value="${err.timeout}"/>
+		<property name="insufficientCashAlertString" value="${msg.insufficientCash}"/>
+		<property name="maxCashExceeded" value="${err.overSum}"/>
+		<property name="insufficientBalance" value="${msg.insufficientBalance}"/>
+		<property name="paymentTitle" value="${payment.title}"/>
+		<property name="topAdv" value="${check.topAdv}"/>
+		<property name="bottomAdv" value="${check.bottomAdv}"/>
+		<property name="walletPrvId" value="${config.walletPrvId}"/>
+		<property name="maxCash" value="${num.maxCash}"/>
+		<property name="paymentComment" value="${payment.comment}"/>
+		<property name="comissionProfiles" ref="comissionProfiles"/>
+		<property name="providerIDsOSMP" ref="providerIDsOSMP"/>
+		<property name="providerIDs" ref="providerIDs"/>
+		<property name="providerNames" ref="providerNames"/>
+		
+		<property name="additionalReceiptStrings">
+			<array>
+				<value>ИНН: 7744001803</value>
+				<value>КПП: 774401001</value>
+				<value>р/с: 40701810300000000198</value>
+			</array>
+		</property>
+	</object>
+	
+	<object 
+		id="application" 
+		class="ru.mobw.coreas3.app.QiwiApplication"
+		init-method="onAppCreated">
+		<property name="view" ref="mainInstance" />
+		<property name="config" ref="appConfig" />
+		<!-- navigation is described in flow.xml -->
+		<property name="flow" ref="flow"/>
+		<property name="disabler" ref="loading" />
+		<property name="waitingScreen" ref="loading" />
+		<property name="alertWindow">
+			<value>
+				<object class="ModalAlert" />
+			</value>
+		</property>
+	</object>
+	
+	<object class="LoadingWindow" id="loading" />
+</objects>

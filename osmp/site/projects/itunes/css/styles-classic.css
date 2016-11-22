@@ -1,0 +1,60 @@
+.itunes-text .title {
+  font-family: "WhitneySemibold", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  margin: 5px 0; }
+.itunes-text .child {
+  color: #4D4D4D;
+  font-size: 90%; }
+.itunes-text ol {
+  list-style: inside;
+  list-style-type: decimal; }
+
+.itunes-page {
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  height: 864px;
+  width: 1280px;
+  background: white; }
+  .itunes-page .logo {
+    position: absolute;
+    top: 30px;
+    right: 15px; }
+  .itunes-page .header img {
+    margin: 50px;
+    height: 190px; }
+  .itunes-page > .title {
+    font-size: 36px;
+    text-align: center;
+    margin: 25px 75px;
+    white-space: pre-wrap; }
+  .itunes-page .description {
+    display: -moz-box;
+    -moz-box-align: center;
+    -moz-box-pack: center;
+    -moz-box-orient: horizontal;
+    max-width: 1280px;
+    min-width: 1280px; }
+    .itunes-page .description > * {
+      max-width: 620px;
+      min-width: 620px;
+      margin: 10px; }
+    .itunes-page .description .manual {
+      font-size: 26px;
+      padding: 0 20px; }
+      .itunes-page .description .manual > *:not(:last-child) {
+        margin-bottom: 30px; }
+    .itunes-page .description > .itunes-text {
+      font-size: 16px; }
+
+.overlay-phone .page-header .title-content .title {
+  margin-top: 0; }
+
+.confirmation-page {
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  height: 864px;
+  width: 1280px; }

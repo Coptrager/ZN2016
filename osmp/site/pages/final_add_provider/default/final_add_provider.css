@@ -1,0 +1,42 @@
+#logo {
+    top:80px;
+    left:0px;
+    width:100%;
+    height:140px;
+    background:url(../../resourses/qiwi_logo.svg) no-repeat center;
+}
+#head {
+    top:300px;
+    left:120px;
+    width:1040px;
+    height:70px;
+    padding-top:10px;
+    background:url(../../resourses/success.png) no-repeat left;
+    font-family:WhitneySemibold;
+    font-size:48px;
+    color:#111111;
+}
+#payInfo {
+    top:420px;
+    left:100px;
+    width:1080px;
+    height:auto;
+    font-family:Whitney;
+    font-size:40px;
+    color:#111111;
+}
+p {
+    float:left;
+    font:22px Whitney;
+}
+    p span {
+        width:auto;
+        display:inline-block;
+        border-bottom:1px dotted #3958a9;
+        color:#3958a9;
+        font:inherit;
+        transition:all 150ms;
+    }
+    .info-text span:active {
+        opacity:0.5;
+    }

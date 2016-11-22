@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<object id="countries" class="XML">
+		<constructor-arg>
+			<value>
+<![CDATA[
+	<countries>
+		<country name="Россия"		code="RUS"	index="643"	prvId="20243" smsRequired="false"	prefix="+7 "	length="10"	template="(###) ### ## ##"	currencies="RUB"			commissionId="0"	/>
+		<country name="Украина"		code="UKR"	index="804"	prvId="25247" smsRequired="true"	prefix="+380 "	length="9"	template="## #######"		currencies="RUB|USD"		commissionId="1"	/>
+		<country name="Таджикистан"	code="TJK"	index="762"	prvId="20243" smsRequired="false"	prefix="+992 "	length="9"	template="## ### ####"		currencies="RUB|USD"		commissionId="0"	/>
+		<country name="Кыргызстан"	code="KGZ"	index="417"	prvId="20243" smsRequired="false"	prefix="+996 "	length="9"	template="### ## ## ##"		currencies="RUB|USD"		commissionId="0"	/>
+		<country name="Беларусь"	code="BLG"	index="112"	prvId="20243" smsRequired="false"	prefix="+375 "	length="9"	template="## #######"		currencies="RUB|USD"		commissionId="0"	/>
+		<country name="Грузия"		code="GEO"	index="268"	prvId="25247" smsRequired="true"	prefix="+995 "	length="8"	template="########"			currencies="RUB|USD"		commissionId="1"	/>
+		<country name="Молдова"		code="MD"	index="498"	prvId="20243" smsRequired="false"	prefix="+373 "	length="8"	template="## ## ## ##"		currencies="RUB|USD"		commissionId="0"	/>
+		<country name="Узбекистан"	code="UZB"	index="860"	prvId="20243" smsRequired="false"	prefix="+998 "	length="8"	template="########"			currencies="USD"			commissionId="0"	/>
+		<country name="Азербайджан"	code="AZE"	index="31"	prvId="20243" smsRequired="false"	prefix="+994 "	length="8"	template="########"			currencies="RUB|USD"		commissionId="0"	/>
+	</countries>
+]]>
+			</value>
+		</constructor-arg>
+	</object>
+	
+</objects>

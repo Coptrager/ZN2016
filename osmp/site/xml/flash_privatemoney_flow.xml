@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	
+	<object id="flow" class="ru.qiwi.frankie.flow.CommonFlow">
+		<property name="routeData" ref="route" />
+		<property name="elementsMap">
+			<dictionary>
+				<entry><key>init</key><value ref="init" /></entry>
+				<entry><key>balance</key><value ref="balance" /></entry>
+				<entry><key>cash</key><value ref="cash" /></entry>
+				<entry><key>confirmation</key><value ref="confirmation" /></entry>
+				<entry><key>country</key><value ref="country" /></entry>
+				<entry><key>currency</key><value ref="currency" /></entry>
+				<entry><key>final</key><value ref="final" /></entry>
+				<entry><key>list</key><value ref="list" /></entry>
+				<entry><key>offertus</key><value ref="offertus" /></entry>
+				<entry><key>contract</key><value ref="contract" /></entry>
+				<entry><key>senderphone</key><value ref="senderphone" /></entry>
+				<entry><key>pin</key><value ref="pin" /></entry>
+				<entry><key>recipient</key><value ref="recipient" /></entry>
+				<entry><key>sender</key><value ref="sender" /></entry>
+				<entry><key>shadow</key><value ref="shadow" /></entry>
+				<entry><key>sms</key><value ref="sms" /></entry>
+				<entry><key>recipientphone</key><value ref="recipientphone" /></entry>
+				<entry><key>summ</key><value ref="summ" /></entry>
+				<entry><key>method</key><value ref="method" /></entry>
+				<entry><key>exit</key><value ref="exit" /></entry>
+			</dictionary>
+		</property>
+	</object>
+	
+	
+	<object id="init" class="elements.InitElement">
+		<constructor-arg ref="countries" />
+		<constructor-arg ref="commissions" />
+		<constructor-arg>
+			<value>
+<![CDATA[Минимальная сумма платежа 1 руб. Максимальная сумма платежа с учетом комиссии 15 000 руб.
+Сумма платежей в адрес одного получателя в течение 7 дней не должна превышать 600 000 рублей.
+Перевод доступен для получения через 10-15 мин. после отправления.]]>
+			</value>
+		</constructor-arg>
+		<constructor-arg>
+			<array>
+				<value>
+					<![CDATA[https://w.qiwi.com/xml/xmlcp.jsp]]>
+				</value>
+			</array>
+		</constructor-arg>
+		<property name="id" value="1" />
+	</object>
+	<object id="country" class="elements.CountryElement">
+		<constructor-arg>
+			<value>
+<![CDATA[<b>Переводы по России и в страны СНГ (кроме Украины и Грузии)</b>
+%zero%
+<b>Переводы в Украину и Грузию</b>
+%first%
+]]>
+			</value>
+		</constructor-arg>
+		<property name="id" value="2" />
+	</object>
+	<object id="sender" class="elements.SenderElement">
+		<property name="id" value="3" />
+	</object>
+	<object id="recipient" class="elements.RecipientElement">
+		<property name="id" value="4" />
+	</object>
+	<object id="sms" class="elements.SmsElement">
+		<property name="id" value="5" />
+	</object>
+	<object id="recipientphone" class="elements.RecipientPhoneElement">
+		<property name="id" value="13" />
+	</object>
+	<object id="senderphone" class="elements.SenderPhoneElement">
+		<constructor-arg>
+			<value>
+<![CDATA[<b>Переводы по России и в страны СНГ (кроме Украины)</b>
+%zero%
+<b>Переводы в Украину и Грузию</b>
+%first%
+]]>
+			</value>
+		</constructor-arg>
+		<property name="id" value="6" />
+	</object>
+	<object id="offertus" class="elements.OffertusElement">
+		<constructor-arg value="QK_oferta_full.xml"/>
+		<property name="id" value="12" />
+	</object>
+	<object id="contract" class="elements.ContractElement">
+		<constructor-arg value="QK_oferta_bank.xml"/>
+		<property name="id" value="11" />
+	</object>
+	<object id="pin" class="elements.PinElement">
+		<property name="id" value="8" />
+	</object>
+	<object id="shadow" class="elements.ShadowElement">
+		<property name="id" value="20" />
+	</object>
+	<object id="currency" class="elements.CurrencyElement">
+		<property name="id" value="19" />
+	</object>
+	<object id="summ" class="elements.SummElement">
+		<constructor-arg>
+			<value>
+<![CDATA[{{%change% && <b>Курс: 1 %currency% = %rate%</b>
+Обменный курс на дату совершения платежа устанавливается PrivatMoney и округлен до четырёх знаков после целого числа\n\n}}<b>Получатель:</b>
+%recipient%
+<b>Страна выдачи:</b>
+%country%]]>
+			</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>
+<![CDATA[%bank%\n+\n%agent%]]>
+			</value>
+		</constructor-arg>
+		<property name="id" value="7" />
+	</object>
+	<object id="list" class="elements.ListElement">
+		<constructor-arg>
+			<value>
+<![CDATA[Получатель перевода: %recipient%{{%phone% && , телефон: %phone%}}
+Страна получателя: %country%]]>
+</value>
+		</constructor-arg>
+		<property name="id" value="9" />
+	</object>
+	<object id="confirmation" class="elements.ConfirmationElement">
+		<constructor-arg>
+			<value>
+<![CDATA[Отправитель:\n%sender%\nТелефон: %senderphone%
+
+Получатель:\n%recipient%{{%recipientphone% && \nТелефон: %recipientphone%}}\nСтрана получения перевода: %country%]]>
+			</value>
+		</constructor-arg>
+		<property name="id" value="10" />
+	</object>
+	<object id="method" class="elements.MethodElement">
+		<property name="id" value="14" />
+	</object>
+	<object id="balance" class="elements.BalanceElement">
+        <constructor-arg ref="bill" />
+		<property name="id" value="16" />
+	</object>
+	<object id="cash" class="elements.CashElement">
+        <constructor-arg ref="bill" />
+        <constructor-arg>
+			<value>
+				<![CDATA[%bank%\n+\n%agent%]]>
+			</value>
+		</constructor-arg>
+		<property name="id" value="15" />
+	</object>
+	<object id="final" class="elements.FinalElement">
+		<property name="id" value="18" />
+	</object>
+	<object id="exit" class="ru.qiwi.frankie.elements.ExitElement" />
+
+</objects>

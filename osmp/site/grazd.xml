@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AllList>
+    <option iso3="AUS" value="AU">Австралия</option>
+    <option iso3="AUT" value="AT">Австрия</option>
+    <option iso3="AZE" value="AZ">Азербайджан</option>
+    <option iso3="ALA" value="AX">Аландские острова</option>
+    <option iso3="ALB" value="AL">Албания</option>
+    <option iso3="DZA" value="DZ">Алжир</option>
+    <option iso3="ASM" value="AS">Американское Самоа</option>
+    <option iso3="AIA" value="AI">Ангилья</option>
+    <option iso3="AGO" value="AO">Ангола</option>
+    <option iso3="AND" value="AD">Андорра</option>
+    <option iso3="ATG" value="AG">Антигуа и Барбуда</option>
+    <option iso3="ANT" value="AN">Антильские острова</option>
+    <option iso3="ARG" value="AR">Аргентина</option>
+    <option iso3="ARM" value="AM">Армения</option>
+    <option iso3="ABW" value="AW">Аруба</option>
+    <option iso3="AFG" value="AF">Афганистан</option>
+    <option iso3="BHS" value="BS">Багамы</option>
+    <option iso3="BGD" value="BD">Бангладеш</option>
+    <option iso3="BRB" value="BB">Барбадос</option>
+    <option iso3="BHR" value="BH">Бахрейн</option>
+    <option iso3="BLZ" value="BZ">Белиз</option>
+    <option iso3="BLR" value="BY">Белоруссия</option>
+    <option iso3="BEL" value="BE">Бельгия</option>
+    <option iso3="BEN" value="BJ">Бенин</option>
+    <option iso3="BMU" value="BM">Бермуды</option>
+    <option iso3="BGR" value="BG">Болгария</option>
+    <option iso3="BOL" value="BO">Боливия</option>
+    <option iso3="BIH" value="BA">Босния и Герцеговина</option>
+    <option iso3="BWA" value="BW">Ботсвана</option>
+    <option iso3="BRA" value="BR">Бразилия</option>
+    <option iso3="IOT" value="IO">Британские Территории в Индийском Океане</option>
+    <option iso3="BRN" value="BN">Бруней</option>
+    <option iso3="BFA" value="BF">Буркина-Фасо</option>
+    <option iso3="BDI" value="BI">Бурунди</option>
+    <option iso3="BTN" value="BT">Бутан</option>
+    <option iso3="VUT" value="VU">Вануату</option>
+    <option iso3="VAT" value="VA">Ватикан</option>
+    <option iso3="GBR" value="GB">Великобритания</option>
+    <option iso3="HUN" value="HU">Венгрия</option>
+    <option iso3="VEN" value="VE">Венесуэла</option>
+    <option iso3="VGB" value="VG">Виргинские острова</option>
+    <option iso3="TLS" value="TL">Восточный Тимор</option>
+    <option iso3="VNM" value="VN">Вьетнам</option>
+    <option iso3="GAB" value="GA">Габон</option>
+    <option iso3="HTI" value="HT">Гаити</option>
+    <option iso3="GUY" value="GY">Гайана</option>
+    <option iso3="GMB" value="GM">Гамбия</option>
+    <option iso3="GHA" value="GH">Гана</option>
+    <option iso3="GLP" value="GP">Гваделупа</option>
+    <option iso3="GTM" value="GT">Гватемала</option>
+    <option iso3="GUF" value="GF">Гвиана</option>
+    <option iso3="GIN" value="GN">Гвинея</option>
+    <option iso3="GNB" value="GW">Гвинея-Биссау</option>
+    <option iso3="DEU" value="DE">Германия</option>
+    <option iso3="GGY" value="GG">Гернси</option>
+    <option iso3="GIB" value="GI">Гибралтар</option>
+    <option iso3="HND" value="HN">Гондурас</option>
+    <option iso3="HKG" value="HK">Гонконг</option>
+    <option iso3="GRD" value="GD">Гренада</option>
+    <option iso3="GRL" value="GL">Гренландия</option>
+    <option iso3="GRC" value="GR">Греция</option>
+    <option iso3="GEO" value="GE">Грузия</option>
+    <option iso3="GUM" value="GU">Гуам</option>
+    <option iso3="DNK" value="DK">Дания</option>
+    <option iso3="DJI" value="DJ">Джибути</option>
+    <option iso3="DMA" value="DM">Доминика</option>
+    <option iso3="DOM" value="DO">Доминиканская Республика</option>
+    <option iso3="EGY" value="EG">Египет</option>
+    <option iso3="ZMB" value="ZM">Замбия</option>
+    <option iso3="ESH" value="EH">Зап Сахара</option>
+    <option iso3="ZWE" value="ZW">Зимбабве</option>
+    <option iso3="ISR" value="IL">Израиль</option>
+    <option iso3="IND" value="IN">Индия</option>
+    <option iso3="IDN" value="ID">Индонезия</option>
+    <option iso3="JOR" value="JO">Иордания</option>
+    <option iso3="IRQ" value="IQ">Ирак</option>
+    <option iso3="IRN" value="IR">Иран</option>
+    <option iso3="IRL" value="IE">Ирландия</option>
+    <option iso3="ISL" value="IS">Исландия</option>
+    <option iso3="ESP" value="ES">Испания</option>
+    <option iso3="ITA" value="IT">Италия</option>
+    <option iso3="YEM" value="YE">Йемен</option>
+    <option iso3="CPV" value="CV">Кабо-Верде</option>
+    <option iso3="KAZ" value="KZ">Казахстан</option>
+    <option iso3="CYM" value="KY">Каймановы острова</option>
+    <option iso3="KHM" value="KH">Камбоджа</option>
+    <option iso3="CMR" value="CM">Камерун</option>
+    <option iso3="CAN" value="CA">Канада</option>
+    <option iso3="QAT" value="QA">Катар</option>
+    <option iso3="KEN" value="KE">Кения</option>
+    <option iso3="CYP" value="CY">Кипр</option>
+    <option iso3="KGZ" value="KG">Киргизия</option>
+    <option iso3="KIR" value="KI">Кирибати</option>
+    <option iso3="CHN" value="CN">Китай</option>
+    <option iso3="CCK" value="CC">Кокосовые острова</option>
+    <option iso3="COL" value="CO">Колумбия</option>
+    <option iso3="COM" value="KM">Коморские острова</option>
+    <option iso3="COG" value="CG">Конго Республика</option>
+    <option iso3="COD" value="CD">Конго, Демократическая Республика</option>
+    <option iso3="PRK" value="KP">Корея (Северная), КНДР</option>
+    <option iso3="KOR" value="KR">Корея (Южная)</option>
+    <option iso3="CRI" value="CR">Коста-Рика</option>
+    <option iso3="CIV" value="CI">Кот-д'Ивуар</option>
+    <option iso3="CUB" value="CU">Куба</option>
+    <option iso3="KWT" value="KW">Кувейт</option>
+    <option iso3="LAO" value="LA">Лаос</option>
+    <option iso3="LVA" value="LV">Латвия</option>
+    <option iso3="LSO" value="LS">Лесото</option>
+    <option iso3="LBR" value="LR">Либерия</option>
+    <option iso3="LBN" value="LB">Ливан</option>
+    <option iso3="LBY" value="LY">Ливия</option>
+    <option iso3="LTU" value="LT">Литва</option>
+    <option iso3="LIE" value="LI">Лихтенштейн</option>
+    <option iso3="LUX" value="LU">Люксембург</option>
+    <option iso3="MUS" value="MU">Маврикий</option>
+    <option iso3="MRT" value="MR">Мавритания</option>
+    <option iso3="MDG" value="MG">Мадагаскар</option>
+    <option iso3="MYT" value="YT">Майотт</option>
+    <option iso3="MAC" value="MO">Макао</option>
+    <option iso3="MKD " value="MK">Македония</option>
+    <option iso3="MWI" value="MW">Малави</option>
+    <option iso3="MYS" value="MY">Малайзия</option>
+    <option iso3="MLI" value="ML">Мали</option>
+    <option iso3="UMI" value="UM">Малые острова США</option>
+    <option iso3="MDV" value="MV">Мальдивы</option>
+    <option iso3="MLT" value="MT">Мальта</option>
+    <option iso3="MNP" value="MP">Марианские острова</option>
+    <option iso3="MAR" value="MA">Марокко</option>
+    <option iso3="MTQ" value="MQ">Мартиника</option>
+    <option iso3="MHL" value="MH">Маршалловы острова</option>
+    <option iso3="MEX" value="MX">Мексика</option>
+    <option iso3="FSM" value="FM">Микронезия</option>
+    <option iso3="MOZ" value="MZ">Мозамбик</option>
+    <option iso3="MDA" value="MD">Молдавия</option>
+    <option iso3="MCO" value="MC">Монако</option>
+    <option iso3="MNG" value="MN">Монголия</option>
+    <option iso3="MSR" value="MS">Монтсеррат</option>
+    <option iso3="MMR" value="MM">Мьянма</option>
+    <option iso3="NAM" value="NA">Намибия</option>
+    <option iso3="NRU" value="NR">Науру</option>
+    <option iso3="NPL" value="NP">Непал</option>
+    <option iso3="NER" value="NE">Нигер</option>
+    <option iso3="NGA" value="NG">Нигерия</option>
+    <option iso3="NLD" value="NL">Нидерланды</option>
+    <option iso3="NIC" value="NI">Никарагуа</option>
+    <option iso3="NIU" value="NU">Ниуэ</option>
+    <option iso3="NZL" value="NZ">Новая Зеландия</option>
+    <option iso3="NCL" value="NC">Новая Каледония</option>
+    <option iso3="NOR" value="NO">Норвегия</option>
+    <option iso3="ARE" value="AE">Объединенные Арабские Эмираты</option>
+    <option iso3="OMN" value="OM">Оман</option>
+    <option iso3="BVT" value="BV">Остров Буве</option>
+    <option iso3="IMN" value="IM">Остров Мэн</option>
+    <option iso3="NFK" value="NF">Остров Норфолк</option>
+    <option iso3="CXR" value="CX">Остров Рождества</option>
+    <option iso3="SHN" value="SH">Остров Святой Елены</option>
+    <option iso3="JEY" value="JE">Острова Джерси</option>
+    <option iso3="COK" value="CK">Острова Кука</option>
+    <option iso3="TCA" value="TC">Острова Теркс и Кайкос</option>
+    <option iso3="WLF" value="WF">Острова Уоллис и Футуна</option>
+    <option iso3="HMD" value="HM">Острова Херда и МакДоналда</option>
+    <option iso3="SJM" value="SJ">Острова Шпицберген и Ян-Майен</option>
+    <option iso3="PAK" value="PK">Пакистан</option>
+    <option iso3="PLW" value="PW">Палау</option>
+    <option iso3="PSE" value="PS">Палестина</option>
+    <option iso3="PAN" value="PA">Панама</option>
+    <option iso3="PNG" value="PG">Папуа-Новая Гвинея</option>
+    <option iso3="PRY" value="PY">Парагвай</option>
+    <option iso3="PER" value="PE">Перу</option>
+    <option iso3="PCN" value="PN">Питкерн</option>
+    <option iso3="PYF" value="PF">Полинезия</option>
+    <option iso3="POL" value="PL">Польша</option>
+    <option iso3="PRT" value="PT">Португалия</option>
+    <option iso3="REU" value="RE">Реюньон</option>
+    <option iso3="RUS" value="RU">Россия</option>
+    <option iso3="RWA" value="RW">Руанда</option>
+    <option iso3="ROU" value="RO">Румыния</option>
+    <option iso3="WSM" value="WS">Самоа</option>
+    <option iso3="SMR" value="SM">Сан-Марино</option>
+    <option iso3="STP" value="ST">Сан-Томе и Принсипи</option>
+    <option iso3="SAU" value="SA">Саудовская Аравия</option>
+    <option iso3="SWZ" value="SZ">Свазиленд</option>
+    <option iso3="SYC" value="SC">Сейшельские острова</option>
+    <option iso3="SEN" value="SN">Сенегал</option>
+    <option iso3="VCT" value="VC">Сент-Винсент и Гренадины</option>
+    <option iso3="KNA" value="KN">Сент-Китс и Невис</option>
+    <option iso3="LCA" value="LC">Сент-Люсия</option>
+    <option iso3="SPM" value="PM">Сент-Пьер и Микелон</option>
+    <option iso3="SRB" value="RS">Сербия</option>
+    <option iso3="SGP" value="SG">Сингапур</option>
+    <option iso3="SYR" value="SY">Сирия</option>
+    <option iso3="SVK" value="SK">Словакия</option>
+    <option iso3="SVN" value="SI">Словения</option>
+    <option iso3="SLB" value="SB">Соломоновы острова</option>
+    <option iso3="SOM" value="SO">Сомали</option>
+    <option iso3="SDN" value="SD">Судан</option>
+    <option iso3="SUR" value="SR">Суринам</option>
+    <option iso3="USA" value="US">США</option>
+    <option iso3="SLE" value="SL">Сьерра-Леоне</option>
+    <option iso3="TJK" value="TJ">Таджикистан</option>
+    <option iso3="THA" value="TH">Таиланд</option>
+    <option iso3="TWN" value="TW">Тайвань</option>
+    <option iso3="TZA" value="TZ">Танзания</option>
+    <option iso3="TGO" value="TG">Того</option>
+    <option iso3="TKL" value="TK">Токелау</option>
+    <option iso3="TON" value="TO">Тонга</option>
+    <option iso3="TTO" value="TT">Тринидад и Тобаго</option>
+    <option iso3="TUV" value="TV">Тувалу</option>
+    <option iso3="TUN" value="TN">Тунис</option>
+    <option iso3="TKM" value="TM">Туркменистан</option>
+    <option iso3="TUR" value="TR">Турция</option>
+    <option iso3="UGA" value="UG">Уганда</option>
+    <option iso3="UZB" value="UZ">Узбекистан</option>
+    <option iso3="UKR" value="UA">Украина</option>
+    <option iso3="URY" value="UY">Уругвай</option>
+    <option iso3="FRO" value="FO">Фарерские острова</option>
+    <option iso3="FJI" value="FJ">Фиджи</option>
+    <option iso3="PHL" value="PH">Филиппины</option>
+    <option iso3="FIN" value="FI">Финляндия</option>
+    <option iso3="FLK" value="FK">Фолклендские острова</option>
+    <option iso3="FRA" value="FR">Франция</option>
+    <option iso3="ATF" value="TF">Французские Южные территории</option>
+    <option iso3="HRV" value="HR">Хорватия</option>
+    <option iso3="CAF" value="CF">Центральноафриканская Республика</option>
+    <option iso3="TCD" value="TD">Чад</option>
+    <option iso3="MNE" value="ME">Черногория</option>
+    <option iso3="CZE" value="CZ">Чехия</option>
+    <option iso3="CHL" value="CL">Чили</option>
+    <option iso3="CHE" value="CH">Швейцария</option>
+    <option iso3="SWE" value="SE">Швеция</option>
+    <option iso3="LKA" value="LK">Шри-Ланка</option>
+    <option iso3="ECU" value="EC">Эквадор</option>
+    <option iso3="GNQ" value="GQ">Экваториальная Гвинея</option>
+    <option iso3="SLV" value="SV">Эль-Сальвадор</option>
+    <option iso3="ERI" value="ER">Эритрея</option>
+    <option iso3="EST" value="EE">Эстония</option>
+    <option iso3="ETH" value="ET">Эфиопия</option>
+    <option iso3="SGS" value="GS">Южная Джорджия и Южные Сэндвичевы острова</option>
+    <option iso3="ZAF" value="ZA">Южно-Африканская Республика</option>
+    <option iso3="JAM" value="JM">Ямайка</option>
+    <option iso3="JPN" value="JP">Япония</option>
+</AllList>
+

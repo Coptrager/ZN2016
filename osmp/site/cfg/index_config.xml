@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<idx_config>
+	<buttonsConfig/>
+	<hostData>
+		<mnptimeout>10</mnptimeout>
+		<promotion>-1</promotion>
+		<unekt>0</unekt>
+		<vqw_qr_auth>0</vqw_qr_auth>
+	</hostData>
+</idx_config>

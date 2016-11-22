@@ -1,0 +1,10 @@
+{
+  "name":"popupLoader",
+  "css":true,
+  "parent":"visualControl",
+  "use":[
+    "progressBar",
+    "button"
+  ],
+  "version":"0.1.0"
+}

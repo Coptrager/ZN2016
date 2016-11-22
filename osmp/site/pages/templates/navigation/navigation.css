@@ -1,0 +1,17 @@
+﻿#bodyBox {
+    width:1280px;
+    height:860px;
+}
+#bodyBox {
+    width:1280px;
+    height:860px;
+    overflow:visible;
+}
+#bottomMenu {
+    bottom:0px;
+    left:0px;
+}
+#popupLoader {
+    top:0px;
+    left:0px;
+}

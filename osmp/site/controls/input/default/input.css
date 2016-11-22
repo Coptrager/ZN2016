@@ -1,0 +1,35 @@
+﻿.input {
+    width:1280px;
+    height:auto;
+}
+.input-box {
+    width:1280px;
+    height:auto;
+    display:table-cell;
+    vertical-align:bottom;
+}
+.input-header {
+    width:880px;
+    max-width:880px;
+    height:auto;
+    max-height:70px;
+    font-family:Whitney, Arial;
+    font-size:60px;
+    margin: auto;
+}
+.input-footer {
+    width:880px;
+    max-width:880px;
+    height:auto;
+    max-height:70px;
+    margin:10px auto 20px auto;
+    font-family:Whitney, Arial;
+    font-size:24px;
+}
+.input-inp-box {
+    width:auto;
+    max-width:1200px;
+    height:110px;
+    display:inline-block;
+    vertical-align:middle;
+}

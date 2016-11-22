@@ -1,0 +1,106 @@
+<locales>
+	<words language="ru">
+		<word id="button_prev">НАЗАД</word>
+		<word id="button_exit">НА ГЛАВНУЮ</word>
+		<word id="button_next">ДАЛЕЕ</word>
+		<word id="button_pay">ОПЛАТИТЬ</word>
+		<word id="button_continue">ПРОДОЛЖИТЬ</word>
+		<word id="button_yes">ДА</word>
+		<word id="button_no">НЕТ</word>
+		<word id="button_cancel">ОТМЕНИТЬ</word>
+		<word id="button_forward">ДАЛЕЕ</word>
+		<word id="button_space"> </word>
+		<word id="button_back">Назад</word>
+		<word id="first_name">Имя</word>
+		<word id="second_name">Фамилия</word>
+		<word id="middle_name">Отчество</word>
+		<word id="first_warning">Поле "Имя" заполнено неверно</word>
+		<word id="second_warning">Поле "Фамилия" заполнено неверно</word>
+		<word id="currency_name">руб.</word>
+		<word id="keyboard_erase_all_label">СТЕРЕТЬ ВСЕ</word>
+		<word id="keyboard_erase_label">СТЕРЕТЬ</word>
+		<word id="target_phone">телефон</word>
+		<word id="target_wallet">Visa Qiwi Wallet</word>
+		<word id="loading_title"><![CDATA[Загрузка<br/>данных]]></word>
+		<word id="title">Почта России</word>
+		<word id="subtitle_title">Денежные переводы «Почта России»</word>
+
+		<word id="way_title">Почта России</word>
+		<word id="way_index_button"><![CDATA[Перевод до<br/>востребования]]></word>
+		<word id="way_history_button">Я уже платил</word>
+		<word id="way_description"><![CDATA[Комиссия %commission%<br/>Срок зачисления перевода до 7-ми дней.]]></word>
+		<word id="way_conditions_button">Тарифы и условия</word>
+		<word id="way_note"><![CDATA[Продолжая оплату, вы полностью соглашаетесь с условиями <font color='#275aa8'><a href='event:conditions'>оферты</a></font>.]]></word>
+		<word id="way_error_title">Ошибка связи</word>
+		<word id="way_error_description">Для оплаты воспользуйтесь другим терминалом</word>
+
+		<word id="conditions_title">Информация</word>
+		<word id="conditions_contract_title">Договор</word>
+		<word id="conditions_offertus_title">Оферта</word>
+
+		<word id="offertus_title">Публичная оферта</word>
+		<word id="offertus_pages">Страница %current% из %total%</word>
+		<word id="offertus_prev_button">ПРЕДЫДУЩАЯ</word>
+		<word id="offertus_next_button">СЛЕДУЮЩАЯ</word>
+
+		<word id="index_title"><![CDATA[Введите индекс<br/>почтового отделения]]></word>
+		<word id="index_check_button"><![CDATA[НАЙТИ<br/>ОТДЕЛЕНИЕ]]></word>
+		<word id="address_title"><![CDATA[Введите город и улицу<br/>почтового отделения]]></word>
+		<word id="address_nothing"><![CDATA[Ничего не найдено]]></word>
+		<word id="address_description">Например: село Березка улица Ленина</word>
+
+		<word id="phone_title">Введите ваш телефон</word>
+		<word id="phone_description">Совпадает с Visa QIWI Wallet</word>
+		<word id="phone_pin_sended_title">Вам отправлен PIN-код на номер %phone%</word>
+		<word id="pin_title">Введите PIN-код Visa QIWI Wallet</word>
+		<word id="pin_description">Это обеспечит безопасность вашего перевода</word>
+		<word id="pin_change_button"><![CDATA[ВОССТАНОВИТЬ<br/>PIN-КОД]]></word>
+		<word id="pin_note"><![CDATA[Если вы забыли PIN-код или хотите его изменить, отправьте SMS с текстом PIN на номер 7494. Стоимость SMS по тарифу вашего оператора.<br/>Помните, что PIN-код не может начинаться с нуля.]]></word>
+		<word id="pin_popup_sent_title">Новый PIN-код отправлен вам в SMS</word>
+		<word id="pin_popup_change_title">Вы уверены, что хотите сменить PIN-код?</word>
+		
+		<word id="change_title">Выберите вариант зачисления сдачи  </word>
+		<word id="change_phone_button"><![CDATA[На баланс<br/>сотового телефона]]></word>
+		<word id="change_wallet_button"><![CDATA[На баланс<br/>Visa QIWI Wallet]]></word>
+		
+		<word id="summ_title">Введите сумму перевода</word>
+		<word id="summ_summ_description">Максимальная сумма денежного перевода составляет %maximum%, включая плату за перевод.</word>
+		<word id="summ_commission">Комиссия: %commission%</word>
+		<word id="summ_total">Всего к оплате: %total%</word>
+
+		<word id="confirmation_title">Подтвердите данные</word>
+		<word id="confirmation_index_title">Индекс:</word>
+		<word id="confirmation_post_title_title">Название почтового отделения:</word>
+		<word id="confirmation_post_address_title">Адрес почтового отделения:</word>
+		<word id="confirmation_phone_title">Ваш телефон:</word>
+		<word id="confirmation_name_title">ФИО получателя:</word>
+		<word id="confirmation_summ_title">Сумма перевода:</word>
+		<word id="confirmation_commission_title">Комиссия:</word>
+		<word id="confirmation_edit_button"><![CDATA[ИЗМЕНИТЬ<br/>ДАННЫЕ]]></word>
+
+		<word id="history_title">Выберите сохраненный платеж</word>
+
+		<word id="cash_title">Внесите деньги</word>
+		<word id="cash_description"><![CDATA[Вносимая сумма должна быть не меньше %minimum% и не больше %maximum%]]></word>
+		<word id="cash_change_description"><![CDATA[Вся сдача будет полностью зачислена на %target% %phone%]]></word>
+		<word id="cash_cash_title">Внесено</word>
+		<word id="cash_pay_title">Сумма перевода</word>
+		<word id="cash_commission_title">Комиссия</word>
+		<word id="cash_change_title">Сдача</word>
+		<word id="cash_change_commission_title">Комиссия на сдачу</word>
+		<word id="cash_delta">{{enough && Вы внесли достаточную сумму}}{{enough || Внесите еще %delta%}}</word>
+		<word id="cash_commission_description_button">Условия комиссии</word>
+		<word id="cash_commission_description">Описание комиссий</word>
+		<word id="cash_warning">Внесите деньги</word>`
+		<word id="cash_account_denied_title">Прием платежа запрещен</word>
+		<word id="cash_account_denied_description">Воспользуйтесь другим терминалом</word>
+
+		<word id="final_fiscal">Платеж принят. По техническим причинам печать кассового чека Терминалом в настоящий момент невозможна. Кассовый чек распечатан контрольно-кассовой машиной в составе Терминала. Для его получения обратитесь к владельцу терминала. Контакты (адрес и телефон) указаны на квитанции, а также в разделе «Информация» на главном экране.</word>
+		<word id="final_not_enough_title">Перевод не совершен</word>
+		<word id="final_not_enough_description"><![CDATA[Вы внесли недостаточно денежных средств. <br/>Деньги зачислены на Visa QIWI Wallet %phone%.]]></word>
+		<word id="final_no_money_title">Перевод не совершен</word>
+		<word id="final_no_money_description">Деньги не были внесены</word>
+		<word id="final_success_title">Платеж принят</word>
+		<word id="final_success_description">Спасибо за пользование QIWI Терминалом.\nСохраняйте полученную квитанцию.\nДанные, которые вы заполнили, сохранены.\nДля быстрой оплаты используйте “Я уже платил”.</word>
+	</words>
+</locales>

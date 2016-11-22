@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="refresh" content="900; URL=../index.html"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>Core</title>
+	<script crossorigin src="lib/react/react.js"></script>
+	<script crossorigin src="lib/react/react-dom.js"></script>
+	<script crossorigin src="lib/react-redux/redux.min.js"></script>
+	<script crossorigin src="lib/react-redux/react-redux.min.js"></script>
+	<script crossorigin src="lib/browser-polyfill/browser-polyfill.min.js"></script>
+	<script crossorigin src="lib/loadParams.js"></script>
+	<script crossorigin src="lib/systemjs/systemjs.js"></script>
+	<script crossorigin>
+		window.define = System.amdDefine;
+		window.require = window.requirejs = System.amdRequire;
+		System.config({
+			meta: {
+				'*': {loader: 'lib/systemjs/core-plugin.js'},
+				'lib/systemjs/*': {loader: false},
+				'*.json': {format: 'json'},
+				'*.css': {loader: 'lib/systemjs/css-plugin.js'}
+			},
+			map: {
+				underscore: 'lib/underscore/underscore.js',
+				xmlToJSON: 'lib/xmlToJSON/xmlToJSON.js',
+				text: 'lib/systemjs/text-plugin.js',
+				markdown: 'lib/markdown.js'
+			}
+		});
+		System.import('main');
+	</script>
+
+</head>
+<body>
+<div id="content">
+	<div class="preloader-wrapper">
+		<div class="start-preloader start-logo">
+			<div class="header">Загрузка</div>
+			<div class="animation">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

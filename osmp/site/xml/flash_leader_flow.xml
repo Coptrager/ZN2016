@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	
+	<object id="flow" class="com.qiwi.flow.CommonFlow">
+		<property name="routeData" ref="route" />
+		<property name="elementsMap">
+			<dictionary>
+				<entry><key>init</key><value ref="init" /></entry>
+				<entry><key>way</key><value ref="way" /></entry>
+				<entry><key>card</key><value ref="card" /></entry>
+				<entry><key>cardrecipients</key><value ref="cardrecipients" /></entry>
+				<entry><key>balance</key><value ref="balance" /></entry>
+				<entry><key>cash</key><value ref="cash" /></entry>
+				<entry><key>confirmation</key><value ref="confirmation" /></entry>
+				<entry><key>country</key><value ref="country" /></entry>
+				<entry><key>final</key><value ref="final" /></entry>
+				<entry><key>historyrecipients</key><value ref="historyrecipients" /></entry>
+				<entry><key>offertus</key><value ref="offertus" /></entry>
+				<entry><key>contract</key><value ref="contract" /></entry>
+				<entry><key>senderphone</key><value ref="senderphone" /></entry>
+				<entry><key>pin</key><value ref="pin" /></entry>
+				<entry><key>recipient</key><value ref="recipient" /></entry>
+				<entry><key>sender</key><value ref="sender" /></entry>
+				<entry><key>currency</key><value ref="currency" /></entry>
+				<entry><key>summ</key><value ref="summ" /></entry>
+				<entry><key>method</key><value ref="method" /></entry>
+				<entry><key>exit</key><value ref="exit" /></entry>
+			</dictionary>
+		</property>
+	</object>
+	
+	
+	<object id="init" class="elements.InitElement">
+		<constructor-arg ref="countries" />
+		<constructor-arg>
+			<array>
+				<value><![CDATA[https://w.qiwi.com/xml/xmlcp.jsp]]></value>
+				<value><![CDATA[https://service1.osmp.ru/wallet/xmlcp.jsp]]></value>
+				<value><![CDATA[https://service2.osmp.ru/wallet/xmlcp.jsp]]></value>
+			</array>
+		</constructor-arg>
+		<property name="id" value="1" />
+	</object>
+	<object id="way" class="elements.WayElement">
+		<constructor-arg>
+			<value>
+				<![CDATA[Комиссия: %commissions%
+Сумма одного перевода с учётом комиссии не должна превышать 15 000 рублей.
+Сумма платежей в адрес одного получателя в течение 7-ми дней\nне должна превышать 600 000 рублей.
+Перевод доступен для получения через 10-15 минут после отправления.]]>
+			</value>
+		</constructor-arg>
+		<constructor-arg value="4" />
+		<property name="id" value="20" />
+		<property name="countdownConfirm" value="false" />
+		<property name="exitConfirm" value="false" />
+	</object>
+	<object id="card" class="elements.CardElement">
+		<property name="id" value="21" />
+	</object>
+	<object id="country" class="elements.CountryElement">
+		<property name="id" value="2" />
+	</object>
+	<object id="sender" class="elements.SenderNameElement">
+		<property name="id" value="3" />
+	</object>
+	<object id="recipient" class="elements.RecipientNameElement">
+		<property name="id" value="4" />
+	</object>
+	<object id="senderphone" class="elements.SenderPhoneElement">
+		<constructor-arg>
+			<value>
+				<![CDATA[<b>Переводы внутри России:</b>
+%zero%
+<b>Переводы в страны СНГ:</b>
+%first%
+<b>Совершение платежа в российских рублях с выдачей перевода в долларах США:</b>
+%second%
+<b>Совершение платежа в российских рублях с выдачей перевода в Евро:</b>
+%third%]]>
+			</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>
+				<![CDATA[<b>%currency%:</b>
+				%commission%
+				]]>
+			</value>
+		</constructor-arg>
+		<property name="id" value="6" />
+	</object>
+	<object id="offertus" class="elements.OffertusElement">
+		<constructor-arg value="QK_oferta_full.xml"/>
+		<property name="id" value="12" />
+	</object>
+	<object id="contract" class="elements.OffertusElement">
+		<constructor-arg value="QK_oferta_bank.xml"/>
+		<constructor-arg value="16"/>
+		<property name="id" value="11" />
+	</object>
+	<object id="pin" class="elements.PinElement">
+		<constructor-arg value="*"/>
+		<property name="id" value="8" />
+	</object>
+	<object id="summ" class="elements.SummElement">
+		<constructor-arg>
+			<value>
+				<![CDATA[{{%change% && <b>Курс: 1 %currency% = %rate%</b>
+Обменный курс на дату совершения платежа устанавливается Leader и округлен до двух знаков после целого числа\n\n}}<b>Получатель:</b>
+%recipient%
+<b>Страна выдачи:</b>
+%country%]]>
+			</value>
+		</constructor-arg>
+		<constructor-arg value="%bank%"/>
+		<property name="id" value="7" />
+	</object>
+	
+	<object id="cardrecipients" class="elements.CardRecipientsElement">
+		<constructor-arg>
+			<value>
+				<![CDATA[Получатель перевода: %recipient%{{%phone% && , телефон: %phone%}}
+{{country_name && Страна получателя: %country_name%}}]]>
+			</value>
+		</constructor-arg>
+		<property name="id" value="22" />
+	</object>
+	
+	<object id="historyrecipients" class="elements.HistoryRecipientsElement">
+		<constructor-arg>
+			<value>
+				<![CDATA[Получатель перевода: %recipient%{{%phone% && , телефон: %phone%}}
+{{country_name && Страна получателя: %country_name%}}]]>
+			</value>
+		</constructor-arg>
+		<property name="id" value="17" />
+	</object>
+	
+	<object id="confirmation" class="elements.ConfirmationElement">
+		<constructor-arg>
+			<value>
+				<![CDATA[Отправитель:\n%sender%\nТелефон: %senderphone%
+Получатель:\n%recipient%{{%recipientphone% && \nТелефон: %recipientphone%}}\nСтрана получения перевода: %country%]]>
+			</value>
+		</constructor-arg>
+		<property name="id" value="10" />
+	</object>
+	<object id="method" class="elements.MethodElement">
+		<property name="id" value="14" />
+	</object>
+	<object id="balance" class="elements.BalanceElement">
+		<constructor-arg ref="bill" />
+		<property name="id" value="16" />
+	</object>
+	<object id="cash" class="elements.CashElement">
+		<constructor-arg ref="bill" />
+		<constructor-arg>
+			<value>
+				<![CDATA[%bank%]]>
+			</value>
+		</constructor-arg>
+		<property name="id" value="15" />
+		<property name="timeout" value="300000" />
+		<property name="countdownConfirm" value="false" />
+		<property name="exitConfirm" value="false" />
+	</object>
+	<object id="final" class="elements.FinalElement">
+		<constructor-arg ref="echeck" />
+		<property name="id" value="18" />
+		<property name="countdownConfirm" value="false" />
+		<property name="exitConfirm" value="false" />
+	</object>
+	<object id="currency" class="elements.CurrencyElement">
+		<property name="id" value="19" />
+	</object>
+	<object id="exit" class="com.qiwi.elements.UrlQuitElement" />
+
+</objects>

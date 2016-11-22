@@ -1,0 +1,1 @@
+"use strict";define("../../projects/transpayments/js/elements/confirmItem",function(){return React.createClass({render:function(){return React.createElement("div",{className:"confirmItem"},React.createElement("div",null,React.createElement("div",{className:"label"},this.props.label,": "),React.createElement("div",{className:"value"},this.props.value)))}})});

@@ -1,0 +1,9 @@
+{
+  "name":"popup",
+  "css":true,
+  "parent":"visualControl",
+  "use":[
+    "button"
+  ],
+  "version":"0.1.0"
+}

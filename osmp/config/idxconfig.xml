@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<idx_config>
+	<host_data>
+		<mnptimeout>10</mnptimeout>
+		<promotion>-1</promotion>
+		<unekt>0</unekt>
+		<vqw_qr_auth>0</vqw_qr_auth>
+	</host_data>
+</idx_config>

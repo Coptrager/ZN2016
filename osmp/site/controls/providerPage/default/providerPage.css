@@ -1,0 +1,249 @@
+﻿.providerPage {
+    position:relative;
+    width:1280px;
+    height:720px;
+    display:table-cell;
+    vertical-align:middle;
+    overflow:hidden;
+}
+.buttonHeadText {
+    height:auto;
+    margin-top:30px;
+    font-family:Whitney, Arial;
+    font-size:60px;
+}
+.buttonBlueLine {
+    margin-top:30px;
+    background:linear-gradient(to bottom, #0e4394 0%, #0080c6 100%);
+}
+.buttonsBox {
+    width:800px;
+    max-height:610px;
+    margin:0px 250px 0 230px;
+    padding:10px 0 40px 0;
+}
+.pageButton {
+    position:relative;
+    width:380px;
+    height:120px;
+    margin:30px 0px 0px 20px;
+    background:#fff;
+    border-radius:10px;
+    transition:all 100ms;
+    display:inline-block;
+}
+    .pageButton span {
+        width:inherit;
+        height:inherit;
+        display:table-cell;
+        vertical-align:middle;
+        font-family:Whitney;
+        font-size:24px;
+    }
+    .pageButton:active {
+        background-color:#d2deec;
+        color:#2458aa;
+    }
+.outputPlace {
+    width:1280px;
+    height:auto;
+    max-height:720px;
+    padding:20px 0 40px 0;
+    background:#edbb36;
+}
+.outpitHeader {
+    height:auto;
+    margin-top:30px;
+    font-family:Whitney, Arial;
+    font-size:60px;
+}
+.outputBox {
+    width:inherit;
+    height:auto;
+    margin-top:20px;
+}
+.outputLeft {
+    width:610px;
+    max-height:100px;
+    margin-left:20px;
+    display:table-cell;
+    vertical-align:top;
+}
+    .outputLeft div {
+        width:inherit;
+        height:auto;
+        max-height:45px;
+        font-family:Whitney, Arial;
+        font-size:40px;
+        font-weight:bold;
+    }
+    .outputLeft p {
+        width:inherit;
+        height:auto;
+        max-height:55px;
+        font-family:Whitney, Arial;
+        font-size:20px;
+    }
+.outputRight {
+    width:610px;
+    height:auto;
+    max-height:100px;
+    display:table-cell;
+    vertical-align:top;
+    font-family:Whitney, Arial;
+    font-size:40px;
+}
+
+.providerPageButtonsParent-left {
+    position: absolute;
+    width: 131px;
+    height: 100%;
+    left: 40px;
+    z-index: 2;
+    display: none;
+}
+.providerPageButtons-left {
+    position: absolute;
+    top: 50%;
+    margin-top: -86px;
+    margin-left: 60px;
+    width:67px;
+    height:172px;
+    border:4px solid white;
+    border-left:0;
+    border-radius:24px 10px 10px 24px;
+    overflow:visible;
+    background-image:url('#localPath/resourses/left.png');
+    background-repeat:no-repeat;
+    background-position:left center;
+    transition:background-image 100ms;
+}
+    .providerPageButtons-left:active {
+        margin-top: -82px;
+        background-image:url('#localPath/resourses/left_click.png');
+        background-color:white;
+    }
+    .providerPageButtons-left:before {
+        position:absolute;
+        top:19px;
+        left:-52px;
+        width:129px;
+        height:129px;
+        content:"";
+        border-top:5px solid white;
+        border-left:5px solid white;
+        border-radius:10px 16px 0 16px;
+        transform:rotateY(45deg) rotateZ(-45deg);
+        z-index: -1;
+    }
+        .providerPageButtons-left:active:before {
+            background-color:white;
+        }
+
+.providerPageButtonsParent-right {
+    position: absolute;
+    width: 131px;
+    height: 100%;
+    right: 40px;
+    z-index: 2;
+    display: none;
+}
+.providerPageButtons-right {
+    position:absolute;
+    top: 50%;
+    margin-top: -86px;
+    margin-right: 60px;
+    left:0px;
+    width:67px;
+    height:172px;
+    border:4px solid white;
+    border-right:0;
+    border-radius:10px 24px 24px 10px;
+    overflow:visible;
+    background-image:url('#localPath/resourses/right.png');
+    background-repeat:no-repeat;
+    background-position:right center;
+    transition:background-image 100ms;
+}
+    .providerPageButtons-right:active {
+        margin-top: -82px;
+        background-image:url('#localPath/resourses/right_click.png');
+        background-color:white;
+    }
+    .providerPageButtons-right:before {
+        position:absolute;
+        top:19px;
+        right:-52px;
+        width:129px;
+        height:129px;
+        content:"";
+        border-right:5px solid white;
+        border-bottom:5px solid white;
+        border-radius:0 16px 10px 16px;
+        transform:rotateY(45deg) rotateZ(-45deg);
+        z-index:-1;
+    }
+        .providerPageButtons-right:active:before {
+            background-color:white;
+        }
+
+.buttonsBox .buttons-page {
+    transition: all 1000ms;
+}
+
+.can-slide-left .providerPageButtonsParent-left {
+    display: block;
+}
+.can-slide-right .providerPageButtonsParent-right {
+    display: block;
+}
+
+.buttonsBox>div {
+    display: none;
+}
+
+.buttonsBox>.current {
+    display: block;
+}
+
+.providerPage .buttonsBox {
+    overflow: visible;
+}
+
+@keyframes currentShowAnimRight {
+    from { transform: translate(100px); opacity: 0; }
+    20% { opacity: 0.2; }
+    to { opacity: 1; }
+}
+@keyframes currentShowAnimLeft {
+    from { transform: translate(-100px); opacity: 0; }
+    20% { opacity: 0.2; }
+    to { opacity: 1; }
+}
+.providerPage.move-right .buttonsBox>.current {
+    animation: currentShowAnimRight 0.2s;
+}
+.providerPage.move-left .buttonsBox>.current {
+    animation: currentShowAnimLeft 0.2s;
+}
+
+@keyframes toRightHideAnim {
+    from { opacity: 1; }
+    80% { opacity: 0.2; }
+    to { transform: translate(-100px); opacity: 0; }
+}
+@keyframes toLeftHideAnim {
+    from { opacity: 1; }
+    80% { opacity: 0.2; }
+    to { transform: translate(100px); opacity: 0; }
+}
+.providerPage.move-right .buttonsBox>div.will-hide {
+    animation: toRightHideAnim 0.2s normal forwards ease-in-out;
+}
+.providerPage.move-left .buttonsBox>div.will-hide {
+    animation: toLeftHideAnim 0.2s normal forwards ease-in-out;
+}
+
+.buttonBlueLine {
+    transition: height 0.2s;
+}

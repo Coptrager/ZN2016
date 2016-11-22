@@ -1,0 +1,16 @@
+.pageHead {
+    color:black;
+}
+#counter {
+    top:20px;
+    left:0px;
+    width:1280px;
+    height:30px;
+    font-family:Whitney, Arial;
+    font-size:24px;
+    color:#777776;
+}
+#textScroll {
+    top:200px;
+    left:0px;
+}

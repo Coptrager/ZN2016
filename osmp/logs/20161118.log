@@ -1,0 +1,1504 @@
+10:17:13 Start application(Version 5.4.1.12)...
+10:17:13 Связь с зарегистрированным COM объектом проверена
+10:17:13 Searching S.M.A.R.T. compatible hard drives.
+10:17:13 S.M.A.R.T. compatible hard drive WDC WD2500AAKX-001CA0 was found.
+10:17:16 Command line: C:\osmp\maratl.exe.
+10:17:16 Clear system.
+10:17:16 Initializing counters internet traffic.
+10:17:16 Error initializing counters internet traffic.
+10:17:16 Creating an object-handler instruction.
+10:17:16 Creating an object of the client handler instruction.
+10:17:16 Liaise with the client handler commands.
+10:17:16 Initialize queue instruction.
+10:17:16 Initialization thread instruction fetch.
+10:17:16 Starting thread instruction fetch.
+10:17:16 Initialize queue instruction.
+10:17:16 Initialization thread instruction fetch.
+10:17:16 Starting thread instruction fetch.
+10:17:16 Operation system version: Microsoft Windows 7.
+10:17:16 Checking and deleting old files.
+10:17:16 Detected flash version: 10.1
+10:17:20 Deleting old advertising files.
+10:17:20 Deleting of the old advertising files is completed.
+10:17:20 Checking the S.M.A.R.T. hard drives.
+10:17:20 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 25 C.
+10:17:20 System up time: 0 minutes.
+10:17:20 Reading the configuration file.
+10:17:21 Check of the provider's commission.
+10:17:21 Setting the user interface language: Panama and bill set for country: Panama.
+10:17:21 Getting the information about terminal.
+10:17:21 The phone number of the call center is received.
+10:17:21 Checking the name of organization.
+10:17:21 Checking the address of terminal.
+10:17:21 The field of additional information on the ticket is used by default.
+10:17:21 Setting the ticket width to 0 symbols.
+10:17:21 The minimal ticket length is not limited.
+10:17:21 The value of the ticket left margin was not received. Setting the left margin to 0 symbols.
+10:17:21 Setting list of servers by default.
+10:17:21 Setting the update server home directory to "/!anonymous/".
+10:17:21 Creating JS file locale.
+10:17:21 Write JS file locale.
+10:17:21 Creating a configuration file interface
+10:17:21 The on-line check of entered numbers of accounts is switched on.
+10:17:21 Creating a configuration XML-file interface
+10:17:21 The on-line check of entered numbers of accounts is switched on.
+10:17:21 Checking the phone numbers database.
+10:17:21 Creating the file of advertising content.
+10:17:21 Advertising tasks are not found.
+10:17:21 Creating the file description of advertising content by default.
+10:17:21 Creating the file of advertising content.
+10:17:21 Advertising tasks are not found.
+10:17:21 Creating the file of advertising content.
+10:17:21 Advertising tasks are not found.
+10:17:21 Reseting the day traffic counters.
+10:17:21 Calculating internet traffic.
+10:17:22 Init plugin Sinap version 1.1.0.0.
+10:17:22 Init plugin Gecko17 Browser version 1.1.0.7.
+10:17:22 Init plugin Providers version 1.0.0.21.
+10:17:22 [Providers] Prepare data for search.
+10:17:23 Init plugin Statistics version 1.1.0.22.
+10:17:23 [Statistics] Copy recommendation file.
+10:17:25 The bill acceptor CashCode CCNET is connected over the COM3 port.
+10:17:25 The watchdog timer v1.00 is connected over the COM7 port.
+10:17:25 Searching ports for a printer, a card reader.
+10:19:04 Search of ports is completed.
+10:19:14 Saving the configuration of devices.
+10:19:14 Printer is not found.
+10:19:14 Error opening the COM port of the printer.
+10:19:14 Initializing the bill validator CashCode CCNET.
+10:19:23 The maximum amount of payment is not limited.
+10:19:23 The value of the ticket width can't be less than 40 symbols.
+10:19:23 The last received merchant's balance: 2000 $.
+10:19:23 Terminal ID: 9974700
+10:19:23 Starting the message manager.
+10:19:24 [Gecko17] Set path to bin folder: plugins\browsers/Gecko/Gecko17
+10:19:24 [Gecko17] Set path to zip archive: plugins\browsers/Gecko/Gecko17/Gecko17.zip
+10:19:26 Browser version version: Gecko 17.0.1.
+10:19:26 Flash Player version: 11.1.
+10:19:26 Checking messages.
+10:19:26 Updating the messages for providers.
+10:19:27 Парсинг провайдеров.
+10:19:35 Парсинг провайдеров закончен.
+10:19:36 Создание файлов провайдеров.
+10:19:46 Создание файлов провайдеров закончено.
+10:19:51 Parsing the saved data index page.
+10:19:51 Error loading data the index page.
+10:19:51 Creating a JavaScript-configuration file index page.
+10:19:51 Creating a XML-configuration file index page.
+10:19:52 Redirection to the start page.
+10:19:52 Creating request on reading the provider's commissions.
+10:19:52 Original size: 375 bytes, compressed size: 254 bytes. Sending request to the server...
+10:19:55 Switching on the lock of the right mouse button.
+10:19:56 ...Server 's1047.qiwi.com' returned response. Compressed size: 23736 bytes, original size: 261701 bytes.
+10:19:56 Redirection to the error page.
+10:19:56 The request for payment key was created.
+10:19:56 Original size: 217 bytes, compressed size: 192 bytes. Sending request to the server...
+10:19:56 ...Server 's1069.qiwi.com' returned response. Compressed size: 479 bytes, original size: 608 bytes.
+10:19:56 Writing the file of provider's commissions.
+10:19:56 The payment key was saved.
+10:19:56 Creating the terminal's information file.
+10:19:57 Deleting old home directory of the update server.
+10:19:57 Saving the terminal's information file.
+10:19:57 Parsing the configuration data index page.
+10:19:57 Saving the configuration data index page.
+10:19:57 Saving the configuration button the index page.
+10:19:57 Creating JS file locale.
+10:19:57 Write JS file locale.
+10:19:57 Getting the information about terminal.
+10:19:57 The phone number of the call center is received.
+10:19:57 Checking the name of organization.
+10:19:57 Checking the address of terminal.
+10:19:57 The field of additional information on the ticket is used by default.
+10:19:57 Setting the ticket width to 0 symbols.
+10:19:57 The minimal ticket length is not limited.
+10:19:57 The value of the ticket left margin was not received. Setting the left margin to 0 symbols.
+10:19:57 Setting list of servers by default.
+10:19:57 Setting the update server home directory to "/!anonymous/".
+10:19:57 The maximum amount of payment is not limited.
+10:19:57 The value of the ticket width can't be less than 40 symbols.
+10:19:57 The ID of providers database is changed. The old ID:4615002. The new ID:4615425. It is necessary to update providers database.
+10:19:57 The merchant's balance: 2000.00 $.
+10:19:57 Update plugins queued.
+10:19:57 The ID of configuration database is changed. The old ID:556919645. The new ID:583123618. Starting the update process.
+10:19:57 Starting the update process.
+10:19:57 Terminal ID: 9974700
+10:19:57 Redirection to the start page.
+10:19:57 Creating a configuration file interface
+10:19:57 The on-line check of entered numbers of accounts is switched on.
+10:19:57 Creating a configuration XML-file interface
+10:19:57 The on-line check of entered numbers of accounts is switched on.
+10:20:17 Starting up the monitor of the embed messages.
+10:20:17 Ignoring limit value of payment's amount 15000 $. for the provider No.52866 due to current balance 1965 $. of the merchant.
+10:20:17 Setting limit payment's amount for the provider No.52866 1965 $.
+10:20:17[interface] ???? ? ??????????: Sinaper v1.5.31
+10:20:19 Error while getting the mutex of the embed messages.
+10:20:22 Проверка сертификатов
+10:20:22 Creating request on reading the playlist.
+10:20:22 Original size: 329 bytes, compressed size: 230 bytes. Sending request to the server...
+10:20:22 ...Server 's1759.qiwi.com' returned response, sise: 65 bytes.
+10:20:22 Проверка сертификатов завершена
+10:20:22 ...Server 's1047.qiwi.com' returned response. Compressed size: 303 bytes, original size: 539 bytes.
+10:20:22 Saving the playlist.
+10:20:33 Printing of the ticket is disabled for this payment.
+10:20:33 Adding the information payment to the queue. The transaction number: 3749160337. The provider number: 323. The customer account: 0000000000. The receipt number: 0.
+10:20:33 The extra parameters of payment: MGT_project_number: 30036, MGT_qk_id: 52866, MGT_sum: 0, txn-type: 4.
+10:20:33 Creating payments.
+10:20:33 Original size: 1381 bytes, compressed size: 1049 bytes. Sending request to the server...
+10:20:34 Stop the monitor of embed messages.
+10:20:34 ...Server 's1068.qiwi.com' returned response. Compressed size: 343 bytes, original size: 572 bytes.
+10:20:34 Checking payments status.
+10:20:34 The transaction of payment No.3749160337, Status:1, ResCode:0 was added to server database. Deleting this payment from import.xml.
+10:20:37 Ignoring limit value of payment's amount 15000 $. for the provider No.14868 due to current balance 1965 $. of the merchant.
+10:20:37 Setting limit payment's amount for the provider No.14868 1965 $.
+10:20:39[interface] ????? CMTv1.2.1778
+10:21:22 Sending request to the server...
+10:21:22 [Sinap] Send QDProviders request.
+10:21:22 ...Server 'unknown' returned response. Compressed size: 212890 bytes, original size: 8456287 bytes.
+10:21:22 [Sinap] TransportError: 0, ProtocolError: 0
+10:21:22 [Sinap] QDProviders changed.
+10:21:35 [Sinap] QDProviders saved.
+10:21:43 Printing of the ticket is disabled for this payment.
+10:21:43 Adding the information payment to the queue. The transaction number: 3749161030. The provider number: 323. The customer account: 0000000000. The receipt number: 0.
+10:21:43 The extra parameters of payment: MGT_exit: 3, MGT_project_number: 30070, MGT_time: 0, MGT_path: 1:0|S8:1|S9:1|6:1|S11:1|3:19|6:62|S11:62|0:64|X2:65, MGT_phone: 0000000000, MGT_sum: 0, MGT_ver: CMTv1.2.1778, txn-type: 4.
+10:21:43 Creating payments.
+10:21:43 Original size: 1513 bytes, compressed size: 1154 bytes. Sending request to the server...
+10:21:43 ...Server 's1067.qiwi.com' returned response. Compressed size: 343 bytes, original size: 572 bytes.
+10:21:43 Checking payments status.
+10:21:43 The transaction of payment No.3749161030, Status:1, ResCode:0 was added to server database. Deleting this payment from import.xml.
+10:24:52 Starting time synchronization using NTP time servers.
+10:24:52 Creating the "ping" request.
+10:24:52 Time synchronization: Sending time synchronization request to the server No.1.
+10:24:52 Check for unsent data counters Internet traffic.
+10:24:52 Found unsent data counters Internet traffic.
+10:24:52 Calculating internet traffic.
+10:24:52 Network traffic: 320 Kb received, 23 Kb sent.
+10:24:52 Checking the S.M.A.R.T. hard drives.
+10:24:52 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 29 C.
+10:24:52 Searching S.M.A.R.T. compatible hard drives.
+10:24:52 Time synchronization: Stratum level: 1. Reference ID: ACTS. The time offset: 2.4 sec.
+10:24:54 Time synchronization: Adjusting time of the terminal.
+10:24:54 S.M.A.R.T. compatible hard drive WDC WD2500AAKX-001CA0 was found.
+10:24:54 Checking the S.M.A.R.T. hard drives.
+10:24:54 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 29 C.
+10:24:54 Выход из режима фискального сервера.
+10:24:54 Original size: 2186 bytes, compressed size: 1068 bytes. Sending request to the server...
+10:24:55 ...Server 's1064.qiwi.com' returned response. Compressed size: 680 bytes, original size: 2312 bytes.
+10:24:55 Deleting information about Internet traffic counters ?-546725618.
+10:24:55 The merchant's balance: 2000.00 $.
+10:25:24 Checking of SSL connection
+10:25:24 Sending request to the server...
+10:25:24 [Statistics] Send statistics.
+10:25:24 Original size: 23880 bytes, compressed size: 1281 bytes. Sending request to the server...
+10:25:24 ...Server 's1049.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+10:25:25 ...Server 's1794.qiwi.com' returned response, sise: 0 bytes.
+10:25:25 [Statistics] Remove sent statistics.
+10:26:24 Creating request on getting the provider's configuration.
+10:26:24 Original size: 299 bytes, compressed size: 243 bytes. Sending request to the server...
+10:26:27 ...Server 's1713.qiwi.com' returned response. Compressed size: 518796 bytes, original size: 5058339 bytes.
+10:26:28 Парсинг провайдеров.
+10:26:37 Парсинг провайдеров закончен.
+10:26:54 Manifest request.
+10:26:54 Original size: 245 bytes, compressed size: 215 bytes. Sending request to the server...
+10:26:54 ...Server 's1067.qiwi.com' returned response. Compressed size: 471 bytes, original size: 973 bytes.
+10:26:54 Manifest recieved.
+10:27:54 Update ID: 1511034447:1511034447.
+10:27:54 Update: Запуск процедуры обновления по https.
+10:27:54 Update: Подключение к серверу обновления "update1.osmp.ru".
+10:27:54 Запрос рекомендаций
+10:27:54 Запрос БИНов.
+10:27:54 Original size: 312 bytes, compressed size: 245 bytes. Sending request to the server...
+10:27:54 Original size: 300 bytes, compressed size: 232 bytes. Sending request to the server...
+10:27:54 Download: Downloading file index.sha.
+10:27:55 ...Server 's1758.qiwi.com' returned response, sise: 65 bytes.
+10:27:55 Проверка актуальности файла index.xml.
+10:27:55 Файл index.xml находится в неактуальном состоянии.
+10:27:55 Download: Downloading file index.xml. Compressed size: 88676 bytes
+10:27:55 ...Server 's1713.qiwi.com' returned response. Compressed size: 166209 bytes, original size: 2473224 bytes.
+10:27:56 ...Server 's1713.qiwi.com' returned response. Compressed size: 715 bytes, original size: 23505 bytes.
+10:27:56 ...Server 's1758.qiwi.com' returned response. Compressed size: 88676 bytes, original size: 255191 bytes.
+10:27:56 Рекомендации успешно сохранены.
+10:27:56 БИНы успешно получены.
+10:27:56 Update: Проверка списка файлов на необходимость обновления.
+10:27:57 Update: Нуждается в обновлении файл site\config.json
+10:27:57 Update: Нуждается в обновлении файл site\core\css\styles-classic.css
+10:27:57 Update: Нуждается в обновлении файл site\core\css\styles-light.css
+10:27:57 Update: Нуждается в обновлении файл site\core\js\acceptor.js
+10:27:57 Update: Нуждается в обновлении файл site\core\js\constants\currency.js
+10:27:57 Update: Нуждается в обновлении файл site\core\js\elements\button.jsx
+10:27:57 Update: Нуждается в обновлении файл site\core\js\elements\buttonsContainer.jsx
+10:27:57 Update: Нуждается в обновлении файл site\core\js\elements\logo.jsx
+10:27:57 Update: Нуждается в обновлении файл site\core\js\elements\navigation.jsx
+10:27:57 Update: Нуждается в обновлении файл site\core\js\elements\optionButton.jsx
+10:27:57 Update: Нуждается в обновлении файл site\core\js\elements\popup.jsx
+10:27:57 Update: Нуждается в обновлении файл site\core\js\exit.js
+10:27:57 Update: Нуждается в обновлении файл site\core\js\main.js
+10:27:57 Update: Нуждается в обновлении файл site\core\js\model\limits.js
+10:27:57 Update: Нуждается в обновлении файл site\core\js\pages\balancePayment.jsx
+10:27:57 Update: Нуждается в обновлении файл site\core\js\pages\changeType.jsx
+10:27:57 Update: Нуждается в обновлении файл site\core\js\pages\email.jsx
+10:27:57 Update: Нуждается в обновлении файл site\core\js\pages\final.jsx
+10:27:57 Update: Нуждается в обновлении файл site\core\js\pages\pay.jsx
+10:27:57 Update: Нуждается в обновлении файл site\core\js\pages\paymentMethod.jsx
+10:27:57 Update: Нуждается в обновлении файл site\core\js\pages\phone.jsx
+10:27:57 Update: Нуждается в обновлении файл site\core\js\pages\pin.jsx
+10:27:57 Update: Нуждается в обновлении файл site\core\js\pages\smsConfirmationCode.jsx
+10:27:57 Update: Нуждается в обновлении файл site\core\js\pages\walletLogin.jsx
+10:27:57 Update: Нуждается в обновлении файл site\core\js\payment.js
+10:27:57 Update: Нуждается в обновлении файл site\core\js\reducers\appReducer.js
+10:27:57 Update: Нуждается в обновлении файл site\core\js\statistics.js
+10:27:57 Update: Нуждается в обновлении файл site\core\js\utils.js
+10:27:59 Update: Нуждается в обновлении файл site\herbalife\postamats.xml
+10:27:59 Update: Нуждается в обновлении файл site\json\flash_gibdd_duties_divisions.json
+10:28:00 Update: Нуждается в обновлении файл site\projects\sinap\config.json
+10:28:00 Update: Нуждается в обновлении файл site\projects\sinap\css\styles-classic.css
+10:28:00 Update: Нуждается в обновлении файл site\projects\sinap\css\styles-light.css
+10:28:00 Update: Нуждается в обновлении файл site\projects\sinap\js\exit.js
+10:28:00 Update: Нуждается в обновлении файл site\projects\sinap\js\initial.js
+10:28:00 Update: Нуждается в обновлении файл site\projects\sinap\js\pages\balancePayment.jsx
+10:28:00 Update: Нуждается в обновлении файл site\projects\sinap\js\pages\choiceField.jsx
+10:28:00 Update: Нуждается в обновлении файл site\projects\sinap\js\pages\confirmation.jsx
+10:28:00 Update: Нуждается в обновлении файл site\projects\sinap\js\pages\confirmationChange.jsx
+10:28:00 Update: Нуждается в обновлении файл site\projects\sinap\js\pages\favourites.jsx
+10:28:00 Update: Нуждается в обновлении файл site\projects\sinap\js\pages\inputField.jsx
+10:28:00 Update: Нуждается в обновлении файл site\projects\sinap\js\pages\routerChangeType.jsx
+10:28:00 Update: Нуждается в обновлении файл site\projects\sinap\js\pages\routerPhone.jsx
+10:28:00 Update: Нуждается в обновлении файл site\projects\sinap\js\pages\sinapPage.jsx
+10:28:00 Update: Нуждается в обновлении файл site\projects\sinap\js\pages\staticField.jsx
+10:28:00 Update: Нуждается в обновлении файл site\projects\sinap\js\pages\sum.jsx
+10:28:00 Update: Нуждается в обновлении файл site\projects\sinap\js\pages\sumOptions.jsx
+10:28:00 Update: Нуждается в обновлении файл site\projects\sinap\js\requests\sinap.js
+10:28:00 Update: Нуждается в обновлении файл site\projects\sinap\js\sinap.js
+10:28:00 Update: Нуждается в обновлении файл site\projects\sinap\js\sinap\element.js
+10:28:00 Update: Нуждается в обновлении файл site\projects\sinap\js\sinap\validator.js
+10:28:00 Update: Нуждается в обновлении файл site\projects\sinap\js\sinap\widget.js
+10:28:00 Update: Нуждается в обновлении файл site\projects\sinap\locale.ru.json
+10:28:00 Update: Нуждается в обновлении файл site\xml\flash_gibdd_duties_divisions.xml
+10:28:00 Update: Всего нуждается в обновлении файлов - 54.
+10:28:00 Download: Downloading file /site/config.json. Compressed size: 130 bytes, original size: 146 bytes.
+10:28:01 ...Server 's1758.qiwi.com' returned response. Compressed size: 130 bytes, original size: 146 bytes.
+10:28:01 Download: Downloading file /site/core/css/styles-classic.css. Compressed size: 8620 bytes, original size: 62913 bytes.
+10:28:01 ...Server 's1758.qiwi.com' returned response. Compressed size: 8620 bytes, original size: 62913 bytes.
+10:28:02 Download: Downloading file /site/core/css/styles-light.css. Compressed size: 8256 bytes, original size: 60405 bytes.
+10:28:02 ...Server 's1758.qiwi.com' returned response. Compressed size: 8256 bytes, original size: 60405 bytes.
+10:28:02 Download: Downloading file /site/core/js/acceptor.js. Compressed size: 2870 bytes, original size: 8876 bytes.
+10:28:02 ...Server 's1758.qiwi.com' returned response. Compressed size: 2870 bytes, original size: 8876 bytes.
+10:28:03 Download: Downloading file /site/core/js/constants/currency.js. Compressed size: 619 bytes, original size: 1227 bytes.
+10:28:03 ...Server 's1758.qiwi.com' returned response. Compressed size: 619 bytes, original size: 1227 bytes.
+10:28:03 Download: Downloading file /site/core/js/elements/button.jsx. Compressed size: 2008 bytes, original size: 5842 bytes.
+10:28:04 ...Server 's1758.qiwi.com' returned response. Compressed size: 2008 bytes, original size: 5842 bytes.
+10:28:04 Download: Downloading file /site/core/js/elements/buttonsContainer.jsx. Compressed size: 1312 bytes, original size: 3726 bytes.
+10:28:04 ...Server 's1758.qiwi.com' returned response. Compressed size: 1312 bytes, original size: 3726 bytes.
+10:28:05 Download: Downloading file /site/core/js/elements/logo.jsx. Compressed size: 843 bytes, original size: 1965 bytes.
+10:28:05 ...Server 's1758.qiwi.com' returned response. Compressed size: 843 bytes, original size: 1965 bytes.
+10:28:05 Download: Downloading file /site/core/js/elements/navigation.jsx. Compressed size: 1403 bytes, original size: 4296 bytes.
+10:28:05 ...Server 's1758.qiwi.com' returned response. Compressed size: 1403 bytes, original size: 4296 bytes.
+10:28:06 Download: Downloading file /site/core/js/elements/optionButton.jsx. Compressed size: 480 bytes, original size: 1086 bytes.
+10:28:06 ...Server 's1758.qiwi.com' returned response. Compressed size: 480 bytes, original size: 1086 bytes.
+10:28:06 Download: Downloading file /site/core/js/elements/popup.jsx. Compressed size: 2052 bytes, original size: 6696 bytes.
+10:28:06 ...Server 's1758.qiwi.com' returned response. Compressed size: 2052 bytes, original size: 6696 bytes.
+10:28:07 Download: Downloading file /site/core/js/exit.js. Compressed size: 678 bytes, original size: 1373 bytes.
+10:28:07 ...Server 's1758.qiwi.com' returned response. Compressed size: 678 bytes, original size: 1373 bytes.
+10:28:07 Download: Downloading file /site/core/js/main.js. Compressed size: 742 bytes, original size: 1560 bytes.
+10:28:07 ...Server 's1758.qiwi.com' returned response. Compressed size: 742 bytes, original size: 1560 bytes.
+10:28:08 Download: Downloading file /site/core/js/model/limits.js. Compressed size: 1140 bytes, original size: 3166 bytes.
+10:28:08 ...Server 's1758.qiwi.com' returned response. Compressed size: 1140 bytes, original size: 3166 bytes.
+10:28:08 Download: Downloading file /site/core/js/pages/balancePayment.jsx. Compressed size: 2077 bytes, original size: 5975 bytes.
+10:28:08 ...Server 's1758.qiwi.com' returned response. Compressed size: 2077 bytes, original size: 5975 bytes.
+10:28:09 Download: Downloading file /site/core/js/pages/changeType.jsx. Compressed size: 1853 bytes, original size: 5633 bytes.
+10:28:09 ...Server 's1758.qiwi.com' returned response. Compressed size: 1853 bytes, original size: 5633 bytes.
+10:28:09 Download: Downloading file /site/core/js/pages/email.jsx. Compressed size: 1588 bytes, original size: 4453 bytes.
+10:28:10 ...Server 's1758.qiwi.com' returned response. Compressed size: 1588 bytes, original size: 4453 bytes.
+10:28:10 Download: Downloading file /site/core/js/pages/final.jsx. Compressed size: 1806 bytes, original size: 4777 bytes.
+10:28:10 ...Server 's1758.qiwi.com' returned response. Compressed size: 1806 bytes, original size: 4777 bytes.
+10:28:11 Download: Downloading file /site/core/js/pages/pay.jsx. Compressed size: 3952 bytes, original size: 15078 bytes.
+10:28:11 ...Server 's1758.qiwi.com' returned response. Compressed size: 3952 bytes, original size: 15078 bytes.
+10:28:11 Download: Downloading file /site/core/js/pages/paymentMethod.jsx. Compressed size: 1574 bytes, original size: 4463 bytes.
+10:28:11 ...Server 's1758.qiwi.com' returned response. Compressed size: 1574 bytes, original size: 4463 bytes.
+10:28:12 Download: Downloading file /site/core/js/pages/phone.jsx. Compressed size: 1296 bytes, original size: 3419 bytes.
+10:28:12 ...Server 's1758.qiwi.com' returned response. Compressed size: 1296 bytes, original size: 3419 bytes.
+10:28:12 Download: Downloading file /site/core/js/pages/pin.jsx. Compressed size: 1985 bytes, original size: 4983 bytes.
+10:28:12 ...Server 's1758.qiwi.com' returned response. Compressed size: 1985 bytes, original size: 4983 bytes.
+10:28:13 Download: Downloading file /site/core/js/pages/smsConfirmationCode.jsx. Compressed size: 2409 bytes, original size: 7103 bytes.
+10:28:13 ...Server 's1758.qiwi.com' returned response. Compressed size: 2409 bytes, original size: 7103 bytes.
+10:28:13 Download: Downloading file /site/core/js/pages/walletLogin.jsx. Compressed size: 2025 bytes, original size: 5681 bytes.
+10:28:13 ...Server 's1758.qiwi.com' returned response. Compressed size: 2025 bytes, original size: 5681 bytes.
+10:28:14 Download: Downloading file /site/core/js/payment.js. Compressed size: 1958 bytes, original size: 7317 bytes.
+10:28:14 ...Server 's1758.qiwi.com' returned response. Compressed size: 1958 bytes, original size: 7317 bytes.
+10:28:14 Download: Downloading file /site/core/js/reducers/appReducer.js. Compressed size: 488 bytes, original size: 1095 bytes.
+10:28:14 ...Server 's1758.qiwi.com' returned response. Compressed size: 488 bytes, original size: 1095 bytes.
+10:28:15 Download: Downloading file /site/core/js/statistics.js. Compressed size: 1099 bytes, original size: 3040 bytes.
+10:28:15 ...Server 's1758.qiwi.com' returned response. Compressed size: 1099 bytes, original size: 3040 bytes.
+10:28:15 Download: Downloading file /site/core/js/utils.js. Compressed size: 2382 bytes, original size: 6967 bytes.
+10:28:15 ...Server 's1758.qiwi.com' returned response. Compressed size: 2382 bytes, original size: 6967 bytes.
+10:28:16 Download: Downloading file /site/herbalife/postamats.xml. Compressed size: 130890 bytes, original size: 1565186 bytes.
+10:28:18 ...Server 's1758.qiwi.com' returned response. Compressed size: 130890 bytes, original size: 1565186 bytes.
+10:28:18 Download: Downloading file /site/json/flash_gibdd_duties_divisions.json. Compressed size: 64658 bytes, original size: 637476 bytes.
+10:28:19 ...Server 's1758.qiwi.com' returned response. Compressed size: 64658 bytes, original size: 637476 bytes.
+10:28:20 Download: Downloading file /site/projects/sinap/config.json.
+10:28:20 ...Server 's1758.qiwi.com' returned response, sise: 108 bytes.
+10:28:20 Download: Downloading file /site/projects/sinap/css/styles-classic.css. Compressed size: 1737 bytes, original size: 12327 bytes.
+10:28:20 ...Server 's1758.qiwi.com' returned response. Compressed size: 1737 bytes, original size: 12327 bytes.
+10:28:21 Download: Downloading file /site/projects/sinap/css/styles-light.css. Compressed size: 1682 bytes, original size: 12112 bytes.
+10:28:21 ...Server 's1758.qiwi.com' returned response. Compressed size: 1682 bytes, original size: 12112 bytes.
+10:28:21 Download: Downloading file /site/projects/sinap/js/exit.js. Compressed size: 448 bytes, original size: 923 bytes.
+10:28:21 ...Server 's1758.qiwi.com' returned response. Compressed size: 448 bytes, original size: 923 bytes.
+10:28:22 Download: Downloading file /site/projects/sinap/js/initial.js. Compressed size: 1053 bytes, original size: 2690 bytes.
+10:28:22 ...Server 's1758.qiwi.com' returned response. Compressed size: 1053 bytes, original size: 2690 bytes.
+10:28:22 Download: Downloading file /site/projects/sinap/js/pages/balancePayment.jsx. Compressed size: 1413 bytes, original size: 3439 bytes.
+10:28:22 ...Server 's1758.qiwi.com' returned response. Compressed size: 1413 bytes, original size: 3439 bytes.
+10:28:23 Download: Downloading file /site/projects/sinap/js/pages/choiceField.jsx. Compressed size: 2188 bytes, original size: 6607 bytes.
+10:28:23 ...Server 's1758.qiwi.com' returned response. Compressed size: 2188 bytes, original size: 6607 bytes.
+10:28:23 Download: Downloading file /site/projects/sinap/js/pages/confirmation.jsx. Compressed size: 1752 bytes, original size: 5078 bytes.
+10:28:23 ...Server 's1758.qiwi.com' returned response. Compressed size: 1752 bytes, original size: 5078 bytes.
+10:28:24 Download: Downloading file /site/projects/sinap/js/pages/confirmationChange.jsx. Compressed size: 1206 bytes, original size: 3357 bytes.
+10:28:24 ...Server 's1758.qiwi.com' returned response. Compressed size: 1206 bytes, original size: 3357 bytes.
+10:28:24 Download: Downloading file /site/projects/sinap/js/pages/favourites.jsx. Compressed size: 2368 bytes, original size: 7395 bytes.
+10:28:24 ...Server 's1758.qiwi.com' returned response. Compressed size: 2368 bytes, original size: 7395 bytes.
+10:28:25 Download: Downloading file /site/projects/sinap/js/pages/inputField.jsx. Compressed size: 2128 bytes, original size: 6141 bytes.
+10:28:25 ...Server 's1758.qiwi.com' returned response. Compressed size: 2128 bytes, original size: 6141 bytes.
+10:28:25 Download: Downloading file /site/projects/sinap/js/pages/routerChangeType.jsx. Compressed size: 1616 bytes, original size: 4036 bytes.
+10:28:25 ...Server 's1758.qiwi.com' returned response. Compressed size: 1616 bytes, original size: 4036 bytes.
+10:28:26 Download: Downloading file /site/projects/sinap/js/pages/routerPhone.jsx. Compressed size: 1396 bytes, original size: 3321 bytes.
+10:28:26 ...Server 's1758.qiwi.com' returned response. Compressed size: 1396 bytes, original size: 3321 bytes.
+10:28:26 Download: Downloading file /site/projects/sinap/js/pages/sinapPage.jsx. Compressed size: 3157 bytes, original size: 10204 bytes.
+10:28:27 ...Server 's1758.qiwi.com' returned response. Compressed size: 3157 bytes, original size: 10204 bytes.
+10:28:27 Download: Downloading file /site/projects/sinap/js/pages/staticField.jsx. Compressed size: 1721 bytes, original size: 4531 bytes.
+10:28:27 ...Server 's1758.qiwi.com' returned response. Compressed size: 1721 bytes, original size: 4531 bytes.
+10:28:28 Download: Downloading file /site/projects/sinap/js/pages/sum.jsx. Compressed size: 2310 bytes, original size: 7038 bytes.
+10:28:28 ...Server 's1758.qiwi.com' returned response. Compressed size: 2310 bytes, original size: 7038 bytes.
+10:28:28 Download: Downloading file /site/projects/sinap/js/pages/sumOptions.jsx. Compressed size: 1378 bytes, original size: 4084 bytes.
+10:28:28 ...Server 's1758.qiwi.com' returned response. Compressed size: 1378 bytes, original size: 4084 bytes.
+10:28:29 Download: Downloading file /site/projects/sinap/js/requests/sinap.js. Compressed size: 1328 bytes, original size: 3411 bytes.
+10:28:29 ...Server 's1758.qiwi.com' returned response. Compressed size: 1328 bytes, original size: 3411 bytes.
+10:28:29 Download: Downloading file /site/projects/sinap/js/sinap.js. Compressed size: 3872 bytes, original size: 12000 bytes.
+10:28:29 ...Server 's1758.qiwi.com' returned response. Compressed size: 3872 bytes, original size: 12000 bytes.
+10:28:30 Download: Downloading file /site/projects/sinap/js/sinap/element.js. Compressed size: 3616 bytes, original size: 11873 bytes.
+10:28:30 ...Server 's1758.qiwi.com' returned response. Compressed size: 3616 bytes, original size: 11873 bytes.
+10:28:30 Download: Downloading file /site/projects/sinap/js/sinap/validator.js. Compressed size: 1190 bytes, original size: 3149 bytes.
+10:28:31 ...Server 's1758.qiwi.com' returned response. Compressed size: 1190 bytes, original size: 3149 bytes.
+10:28:31 Download: Downloading file /site/projects/sinap/js/sinap/widget.js. Compressed size: 2387 bytes, original size: 7993 bytes.
+10:28:31 ...Server 's1758.qiwi.com' returned response. Compressed size: 2387 bytes, original size: 7993 bytes.
+10:28:32 Download: Downloading file /site/projects/sinap/locale.ru.json. Compressed size: 1884 bytes, original size: 5282 bytes.
+10:28:32 ...Server 's1758.qiwi.com' returned response. Compressed size: 1884 bytes, original size: 5282 bytes.
+10:28:32 Download: Downloading file /site/xml/flash_gibdd_duties_divisions.xml. Compressed size: 64194 bytes, original size: 631359 bytes.
+10:28:33 ...Server 's1758.qiwi.com' returned response. Compressed size: 64194 bytes, original size: 631359 bytes.
+10:28:33 Update: Загрузка файлов интерфейса закончена.
+10:28:33 Update: Проверка списка рекламных файлов на необходимость обновления.
+10:28:34 Назначен рекламный каталог сервера обновления: advert_ua
+10:28:34 Update: Всего нуждается в обновлении файлов рекламного контента - 0.
+10:28:34 Update: Проверка списка файлов конфигурации интерфейса на необходимость обновления.
+10:28:44 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\779651857123789469
+10:28:52 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\8576090993971540784
+10:28:54 Update: Всего нуждается в обновлении файлов конфигурации интерфейса - 2.
+10:28:54 Download: Downloading file ???????????? ?????????? logos/779651857123789469. Compressed size: 6153 bytes, original size: 6132 bytes.
+10:28:54 ...Server 's1758.qiwi.com' returned response. Compressed size: 6153 bytes, original size: 6132 bytes.
+10:28:55 Download: Downloading file ???????????? ?????????? logos/8576090993971540784. Compressed size: 2846 bytes, original size: 3256 bytes.
+10:28:55 ...Server 's1758.qiwi.com' returned response. Compressed size: 2846 bytes, original size: 3256 bytes.
+10:28:55 Update: Загрузка файлов конфигурации интерфейса закончена.
+10:28:55 Update: Загрузка файлов закончена.
+10:29:24 Creating the file of advertising content.
+10:29:24 Advertising tasks are not found.
+10:29:24 Creating the file description of advertising content by default.
+10:29:24 Creating the file of advertising content.
+10:29:24 Advertising tasks are not found.
+10:29:54 Copying advertising files.
+10:29:54 Copying of advertising files is completed.
+10:29:54 Deleting old advertising files.
+10:29:54 Deleting of the old advertising files is completed.
+10:29:54 Creating the "ping" request.
+10:29:54 Creating provider's configuration.
+10:29:54 Создание файлов провайдеров.
+10:29:54 Check for unsent data counters Internet traffic.
+10:29:54 Calculating internet traffic.
+10:29:54 Network traffic: 1848 Kb received, 153 Kb sent.
+10:29:54 Checking the S.M.A.R.T. hard drives.
+10:29:54 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 32 C.
+10:29:54 Searching S.M.A.R.T. compatible hard drives.
+10:29:55 S.M.A.R.T. compatible hard drive WDC WD2500AAKX-001CA0 was found.
+10:29:55 Checking the S.M.A.R.T. hard drives.
+10:29:55 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 32 C.
+10:29:55 Выход из режима фискального сервера.
+10:29:55 Original size: 2081 bytes, compressed size: 1017 bytes. Sending request to the server...
+10:29:55 ...Server 's1062.qiwi.com' returned response. Compressed size: 653 bytes, original size: 2236 bytes.
+10:29:55 The merchant's balance: 2000.00 $.
+10:30:24 Checking of SSL connection
+10:30:24 Sending request to the server...
+10:30:24 [Statistics] Send statistics.
+10:30:24 Original size: 18225 bytes, compressed size: 1142 bytes. Sending request to the server...
+10:30:25 ...Server 's1049.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+10:30:25 ...Server 's1793.qiwi.com' returned response, sise: 0 bytes.
+10:30:25 [Statistics] Remove sent statistics.
+10:34:22 Создание файлов провайдеров закончено.
+10:34:22 Creating provider's configuration is completed.
+10:34:24 Copying files.
+10:34:26 Copying files is completed.
+10:34:26 Copying provider's configuration file.
+10:34:26 Writing the configuration file.
+10:34:26 The updating is completed.
+10:34:26 [Providers] Prepare data for search after update.
+10:34:27 [Statistics] Copy recommendation file after update.
+10:34:27 Parsing the saved data index page.
+10:34:27 Error loading data the index page.
+10:34:27 Creating a JavaScript-configuration file index page.
+10:34:27 Creating a XML-configuration file index page.
+10:34:54 Creating the "ping" request.
+10:34:54 Check for unsent data counters Internet traffic.
+10:34:54 Calculating internet traffic.
+10:34:54 Network traffic: 1878 Kb received, 163 Kb sent.
+10:34:54 Checking the S.M.A.R.T. hard drives.
+10:34:54 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 34 C.
+10:34:55 Searching S.M.A.R.T. compatible hard drives.
+10:34:55 S.M.A.R.T. compatible hard drive WDC WD2500AAKX-001CA0 was found.
+10:34:55 Checking the S.M.A.R.T. hard drives.
+10:34:55 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 34 C.
+10:34:55 Выход из режима фискального сервера.
+10:34:55 Original size: 2081 bytes, compressed size: 1016 bytes. Sending request to the server...
+10:34:55 ...Server 's1065.qiwi.com' returned response. Compressed size: 653 bytes, original size: 2236 bytes.
+10:34:55 The merchant's balance: 2000.00 $.
+10:35:24 Checking of SSL connection
+10:35:25 Sending request to the server...
+10:35:25 [Statistics] Send statistics.
+10:35:25 Original size: 13929 bytes, compressed size: 948 bytes. Sending request to the server...
+10:35:25 ...Server 's1050.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+10:35:25 ...Server 's1794.qiwi.com' returned response, sise: 0 bytes.
+10:35:25 [Statistics] Remove sent statistics.
+10:35:56[interface] Warn: START wallet v3.0.48/1.1.80f
+10:39:55 Creating the "ping" request.
+10:39:55 Check for unsent data counters Internet traffic.
+10:39:55 Calculating internet traffic.
+10:39:55 Network traffic: 1915 Kb received, 172 Kb sent.
+10:39:55 Checking the S.M.A.R.T. hard drives.
+10:39:55 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 34 C.
+10:39:55 Searching S.M.A.R.T. compatible hard drives.
+10:39:55 S.M.A.R.T. compatible hard drive WDC WD2500AAKX-001CA0 was found.
+10:39:55 Checking the S.M.A.R.T. hard drives.
+10:39:55 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 34 C.
+10:39:55 Выход из режима фискального сервера.
+10:39:55 Original size: 2083 bytes, compressed size: 1017 bytes. Sending request to the server...
+10:39:55 ...Server 's1064.qiwi.com' returned response. Compressed size: 653 bytes, original size: 2236 bytes.
+10:39:56 The merchant's balance: 2000.00 $.
+10:40:25 Checking of SSL connection
+10:40:25 Sending request to the server...
+10:40:25 [Statistics] Send statistics.
+10:40:25 Original size: 40455 bytes, compressed size: 2053 bytes. Sending request to the server...
+10:40:25 ...Server 's1047.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+10:40:25 ...Server 's1794.qiwi.com' returned response, sise: 0 bytes.
+10:40:25 [Statistics] Remove sent statistics.
+10:42:44 Starting up the monitor of the embed messages.
+10:42:44 Ignoring limit value of payment's amount 15000 $. for the provider No.16790 due to current balance 1965 $. of the merchant.
+10:42:44 Setting limit payment's amount for the provider No.16790 1965 $.
+10:42:45[interface] ????? RUSSIANPOSTv1.1.2449
+10:42:46 Error while getting the mutex of the embed messages.
+10:42:46 Creating of the embed on-line request.
+10:42:46 Original size: 256 bytes, compressed size: 184 bytes. Sending request to the server...
+10:42:46 ...Server 's2736' returned response. Compressed size: 481 bytes, original size: 718 bytes.
+10:43:02 Creating of the embed on-line request.
+10:43:02 Original size: 331 bytes, compressed size: 209 bytes. Sending request to the server...
+10:43:02 ...Server 's1564' returned response. Compressed size: 279 bytes, original size: 466 bytes.
+10:43:12 Printing of the ticket is disabled for this payment.
+10:43:12 Adding the information payment to the queue. The transaction number: 3749173923. The provider number: 323. The customer account: 0000000000. The receipt number: 0.
+10:43:12 The extra parameters of payment: MGT_exit: 3, MGT_project_number: 30074, MGT_time: 0, MGT_path: 1:1|2:2|12:8|13:22|12:25|2:26|0:27|X2:27, MGT_phone: 0000000000, MGT_sum: 0, MGT_ver: RUSSIANPOSTv1.1.2449, txn-type: 4.
+10:43:12 Creating payments.
+10:43:12 Original size: 1487 bytes, compressed size: 1132 bytes. Sending request to the server...
+10:43:12 Stop the monitor of embed messages.
+10:43:12 ...Server 's1713.qiwi.com' returned response. Compressed size: 344 bytes, original size: 572 bytes.
+10:43:12 Checking payments status.
+10:43:12 The transaction of payment No.3749173923, Status:1, ResCode:0 was added to server database. Deleting this payment from import.xml.
+10:43:30 Ignoring limit value of payment's amount 15000 $. for the provider No.14868 due to current balance 1965 $. of the merchant.
+10:43:30 Setting limit payment's amount for the provider No.14868 1965 $.
+10:43:31[interface] ????? CMTv1.2.1778
+10:43:50 Printing of the ticket is disabled for this payment.
+10:43:50 Adding the information payment to the queue. The transaction number: 3749174301. The provider number: 323. The customer account: 0000000000. The receipt number: 0.
+10:43:50 The extra parameters of payment: MGT_exit: 3, MGT_project_number: 30070, MGT_time: 0, MGT_path: 1:0|S8:0|S9:1|6:1|S11:1|0:19|X2:19, MGT_phone: 0000000000, MGT_sum: 0, MGT_ver: CMTv1.2.1778, txn-type: 4.
+10:43:50 Creating payments.
+10:43:50 Original size: 1487 bytes, compressed size: 1135 bytes. Sending request to the server...
+10:43:50 ...Server 's1069.qiwi.com' returned response. Compressed size: 344 bytes, original size: 572 bytes.
+10:43:50 Checking payments status.
+10:43:50 The transaction of payment No.3749174301, Status:1, ResCode:0 was added to server database. Deleting this payment from import.xml.
+10:44:42 Original size: 335 bytes, compressed size: 255 bytes. Sending request to the server...
+10:44:43 ...Server 's1713.qiwi.com' returned response. Compressed size: 163 bytes, original size: 183 bytes.
+10:44:43[interface] ?? ??????? ????? ?? ??????? mnp, ??????????? ?? ????????? ???????.
+10:44:47 Ignoring limit value of payment's amount 15000 $. for the provider No.1 due to current balance 1965 $. of the merchant.
+10:44:47 Setting limit payment's amount for the provider No.1 1965 $.
+10:44:47 On-line payment authorization. The transaction number: 3749174877. The provider number: 1. The customer account: 2523553555. The amount: 1.00 $.
+10:44:47 Creating request on checking the payment.
+10:44:47 Original size: 946 bytes, compressed size: 488 bytes. Sending request to the server...
+10:44:48 ...Server 's1050.qiwi.com' returned response. Compressed size: 551 bytes, original size: 1053 bytes.
+10:44:48 The server returned result code: 5 (Account does not belong to the provider).
+10:44:48 The merchant's balance: 2000.00 $.
+10:44:48 The number of attempts to make the on-line request was exhausted.
+10:44:55 Creating the "ping" request.
+10:44:55 Check for unsent data counters Internet traffic.
+10:44:55 Calculating internet traffic.
+10:44:55 Network traffic: 1984 Kb received, 197 Kb sent.
+10:44:55 Checking the S.M.A.R.T. hard drives.
+10:44:55 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+10:44:55 Searching S.M.A.R.T. compatible hard drives.
+10:44:55 S.M.A.R.T. compatible hard drive WDC WD2500AAKX-001CA0 was found.
+10:44:55 Checking the S.M.A.R.T. hard drives.
+10:44:55 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+10:44:55 Выход из режима фискального сервера.
+10:44:55 Original size: 2090 bytes, compressed size: 1025 bytes. Sending request to the server...
+10:44:55 ...Server 's1064.qiwi.com' returned response. Compressed size: 653 bytes, original size: 2236 bytes.
+10:44:56 The merchant's balance: 2000.00 $.
+10:45:25 Checking of SSL connection
+10:45:25 Sending request to the server...
+10:45:25 [Statistics] Send statistics.
+10:45:25 Original size: 33685 bytes, compressed size: 1993 bytes. Sending request to the server...
+10:45:25 ...Server 's1050.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+10:45:25 ...Server 's1794.qiwi.com' returned response, sise: 0 bytes.
+10:45:26 [Statistics] Remove sent statistics.
+10:48:44 Creating request on reading the result of payment. Date range - 29.12.1899 00:00:01 to 04.01.1900 23:59:59. Account number 9123698741.
+10:48:44 Original size: 554 bytes, compressed size: 348 bytes. Sending request to the server...
+10:48:44 ...Server 's1046.qiwi.com' returned response. Compressed size: 136 bytes, original size: 144 bytes.
+10:48:44 Making the repeated on-line request.
+10:48:44 Creating request on reading the result of payment, ID:91982513.
+10:48:44 Original size: 393 bytes, compressed size: 263 bytes. Sending request to the server...
+10:48:44 ...Server 's1049.qiwi.com' returned response. Compressed size: 148 bytes, original size: 175 bytes.
+10:48:45 The number of payments found in server's database: 0.
+10:49:55 Creating the "ping" request.
+10:49:55 Check for unsent data counters Internet traffic.
+10:49:55 Calculating internet traffic.
+10:49:55 Network traffic: 2032 Kb received, 215 Kb sent.
+10:49:55 Checking the S.M.A.R.T. hard drives.
+10:49:55 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+10:49:55 Searching S.M.A.R.T. compatible hard drives.
+10:49:55 S.M.A.R.T. compatible hard drive WDC WD2500AAKX-001CA0 was found.
+10:49:55 Checking the S.M.A.R.T. hard drives.
+10:49:55 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+10:49:55 Выход из режима фискального сервера.
+10:49:55 Original size: 2083 bytes, compressed size: 1020 bytes. Sending request to the server...
+10:49:55 ...Server 's1065.qiwi.com' returned response. Compressed size: 653 bytes, original size: 2236 bytes.
+10:49:56 The merchant's balance: 2000.00 $.
+10:50:25 Checking of SSL connection
+10:50:25 Sending request to the server...
+10:50:25 [Statistics] Send statistics.
+10:50:25 Original size: 38533 bytes, compressed size: 1995 bytes. Sending request to the server...
+10:50:25 ...Server 's1047.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+10:50:25 ...Server 's1794.qiwi.com' returned response, sise: 0 bytes.
+10:50:26 [Statistics] Remove sent statistics.
+10:50:46 Starting up the monitor of the embed messages.
+10:50:46 Ignoring limit value of payment's amount 15000 $. for the provider No.18319 due to current balance 1965 $. of the merchant.
+10:50:46 Setting limit payment's amount for the provider No.18319 1965 $.
+10:50:46[interface] ???? ? ??????????: Sinaper v1.5.31
+10:50:48 Error while getting the mutex of the embed messages.
+10:50:56 Sending request to the server...
+10:50:56 Original size: 161 bytes, compressed size: 115 bytes. Sending request to the server...
+10:50:56 ...Server 'unknown' returned response. Compressed size: 20 bytes, original size: 0 bytes.
+10:50:56 [Sinap] TransportError: 0, ProtocolError: 0
+10:51:02 Original size: 335 bytes, compressed size: 251 bytes. Sending request to the server...
+10:51:02 ...Server 's1068.qiwi.com' returned response. Compressed size: 163 bytes, original size: 183 bytes.
+10:51:06 Printing of the ticket is disabled for this payment.
+10:51:06 Adding the information payment to the queue. The transaction number: 3749178666. The provider number: 323. The customer account: 0000000000. The receipt number: 0.
+10:51:06 The extra parameters of payment: MGT_project_number: 30036, MGT_qk_id: 18319, MGT_sum: 0, txn-type: 4.
+10:51:06 Creating payments.
+10:51:06 Original size: 1357 bytes, compressed size: 1033 bytes. Sending request to the server...
+10:51:07 Stop the monitor of embed messages.
+10:51:07 ...Server 's1068.qiwi.com' returned response. Compressed size: 342 bytes, original size: 572 bytes.
+10:51:07 Checking payments status.
+10:51:07 The transaction of payment No.3749178666, Status:1, ResCode:0 was added to server database. Deleting this payment from import.xml.
+10:54:14[interface] Warn: START wallet v3.0.48/1.1.80f
+10:54:51 Sending request to the server...
+10:54:51 Original size: 965 bytes, compressed size: 243 bytes. Sending request to the server...
+10:54:51 ...Server 's2735' returned response. Compressed size: 305 bytes, original size: 868 bytes.
+10:54:55 Creating the "ping" request.
+10:54:55 Check for unsent data counters Internet traffic.
+10:54:55 Calculating internet traffic.
+10:54:55 Network traffic: 2088 Kb received, 236 Kb sent.
+10:54:55 Checking the S.M.A.R.T. hard drives.
+10:54:55 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+10:54:55 Searching S.M.A.R.T. compatible hard drives.
+10:54:55 S.M.A.R.T. compatible hard drive WDC WD2500AAKX-001CA0 was found.
+10:54:55 Checking the S.M.A.R.T. hard drives.
+10:54:55 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+10:54:55 Выход из режима фискального сервера.
+10:54:55 Original size: 2083 bytes, compressed size: 1018 bytes. Sending request to the server...
+10:54:56 ...Server 's1063.qiwi.com' returned response. Compressed size: 653 bytes, original size: 2236 bytes.
+10:54:56 The merchant's balance: 2000.00 $.
+10:54:57 Sending request to the server...
+10:54:57 Original size: 183 bytes, compressed size: 144 bytes. Sending request to the server...
+10:54:57 ...Server 's2937' returned response. Compressed size: 84 bytes, original size: 88 bytes.
+10:55:02 Sending request to the server...
+10:55:02 Original size: 345 bytes, compressed size: 191 bytes. Sending request to the server...
+10:55:02 ...Server 's2733' returned response. Compressed size: 113 bytes, original size: 140 bytes.
+10:55:09 Sending request to the server...
+10:55:09 Original size: 345 bytes, compressed size: 188 bytes. Sending request to the server...
+10:55:09 ...Server 's1847' returned response. Compressed size: 113 bytes, original size: 140 bytes.
+10:55:25 Checking of SSL connection
+10:55:25 Sending request to the server...
+10:55:25 [Statistics] Send statistics.
+10:55:25 Original size: 36529 bytes, compressed size: 1811 bytes. Sending request to the server...
+10:55:25 ...Server 's1050.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+10:55:25 ...Server 's1793.qiwi.com' returned response, sise: 0 bytes.
+10:55:26 [Statistics] Remove sent statistics.
+10:55:34 Ignoring limit value of payment's amount 15000 $. for the provider No.14868 due to current balance 1965 $. of the merchant.
+10:55:34 Setting limit payment's amount for the provider No.14868 1965 $.
+10:55:35[interface] ????? CMTv1.2.1778
+10:55:42 Printing of the ticket is disabled for this payment.
+10:55:42 Adding the information payment to the queue. The transaction number: 3749181420. The provider number: 323. The customer account: 0000000000. The receipt number: 0.
+10:55:42 The extra parameters of payment: MGT_exit: 3, MGT_project_number: 30070, MGT_time: 0, MGT_path: 1:0|S8:1|S9:1|6:1|S11:1|0:7|X2:7, MGT_phone: 0000000000, MGT_sum: 0, MGT_ver: CMTv1.2.1778, txn-type: 4.
+10:55:42 Creating payments.
+10:55:42 Original size: 1467 bytes, compressed size: 1118 bytes. Sending request to the server...
+10:55:42 ...Server 's1067.qiwi.com' returned response. Compressed size: 344 bytes, original size: 572 bytes.
+10:55:42 Checking payments status.
+10:55:42 The transaction of payment No.3749181420, Status:1, ResCode:0 was added to server database. Deleting this payment from import.xml.
+10:55:48[interface] Warn: START wallet v3.0.48/1.1.80f
+10:59:55 Creating the "ping" request.
+10:59:55 Check for unsent data counters Internet traffic.
+10:59:55 Calculating internet traffic.
+10:59:55 Network traffic: 2148 Kb received, 255 Kb sent.
+10:59:55 Checking the S.M.A.R.T. hard drives.
+10:59:55 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+10:59:55 Searching S.M.A.R.T. compatible hard drives.
+10:59:55 S.M.A.R.T. compatible hard drive WDC WD2500AAKX-001CA0 was found.
+10:59:55 Checking the S.M.A.R.T. hard drives.
+10:59:55 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+10:59:56 Выход из режима фискального сервера.
+10:59:56 Original size: 2090 bytes, compressed size: 1025 bytes. Sending request to the server...
+10:59:56 ...Server 's1063.qiwi.com' returned response. Compressed size: 653 bytes, original size: 2236 bytes.
+10:59:56 The merchant's balance: 2000.00 $.
+11:00:25 Checking of SSL connection
+11:00:25 Sending request to the server...
+11:00:25 [Statistics] Send statistics.
+11:00:25 Original size: 41888 bytes, compressed size: 2096 bytes. Sending request to the server...
+11:00:25 ...Server 's1050.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+11:00:26 ...Server 's1794.qiwi.com' returned response, sise: 0 bytes.
+11:00:26 [Statistics] Remove sent statistics.
+11:04:55 Creating the "ping" request.
+11:04:55 Check for unsent data counters Internet traffic.
+11:04:55 Calculating internet traffic.
+11:04:55 Network traffic: 2172 Kb received, 265 Kb sent.
+11:04:55 Checking the S.M.A.R.T. hard drives.
+11:04:55 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+11:04:55 Searching S.M.A.R.T. compatible hard drives.
+11:04:56 S.M.A.R.T. compatible hard drive WDC WD2500AAKX-001CA0 was found.
+11:04:56 Checking the S.M.A.R.T. hard drives.
+11:04:56 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+11:04:56 Выход из режима фискального сервера.
+11:04:56 Original size: 2083 bytes, compressed size: 1019 bytes. Sending request to the server...
+11:04:56 ...Server 's1062.qiwi.com' returned response. Compressed size: 653 bytes, original size: 2236 bytes.
+11:04:56 The merchant's balance: 2000.00 $.
+11:05:25 Checking of SSL connection
+11:05:26 Sending request to the server...
+11:05:26 [Statistics] Send statistics.
+11:05:26 Original size: 19840 bytes, compressed size: 1300 bytes. Sending request to the server...
+11:05:26 ...Server 's1050.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+11:05:26 ...Server 's1793.qiwi.com' returned response, sise: 0 bytes.
+11:05:26 [Statistics] Remove sent statistics.
+11:06:30[interface] Warn: START wallet v3.0.48/1.1.80f
+11:06:36 Starting up the monitor of the embed messages.
+11:06:36 Ignoring limit value of payment's amount 15000 $. for the provider No.3286 due to current balance 1965 $. of the merchant.
+11:06:36 Setting limit payment's amount for the provider No.3286 1965 $.
+11:06:37[interface] ???? ? ??????????: Sinaper v1.5.31
+11:06:38 Error while getting the mutex of the embed messages.
+11:06:49 Printing of the ticket is disabled for this payment.
+11:06:49 Adding the information payment to the queue. The transaction number: 3749188095. The provider number: 323. The customer account: 0000000000. The receipt number: 0.
+11:06:49 The extra parameters of payment: MGT_project_number: 30036, MGT_qk_id: 3286, MGT_sum: 0, txn-type: 4.
+11:06:49 Creating payments.
+11:06:49 Original size: 1335 bytes, compressed size: 1017 bytes. Sending request to the server...
+11:06:49 Stop the monitor of embed messages.
+11:06:49 ...Server 's1069.qiwi.com' returned response. Compressed size: 344 bytes, original size: 572 bytes.
+11:06:49 Checking payments status.
+11:06:49 The transaction of payment No.3749188095, Status:1, ResCode:0 was added to server database. Deleting this payment from import.xml.
+11:06:51 Ignoring limit value of payment's amount 15000 $. for the provider No.14868 due to current balance 1965 $. of the merchant.
+11:06:51 Setting limit payment's amount for the provider No.14868 1965 $.
+11:06:52[interface] ????? CMTv1.2.1778
+11:06:56 Printing of the ticket is disabled for this payment.
+11:06:56 Adding the information payment to the queue. The transaction number: 3749188168. The provider number: 323. The customer account: 0000000000. The receipt number: 0.
+11:06:56 The extra parameters of payment: MGT_exit: 3, MGT_project_number: 30070, MGT_time: 0, MGT_path: 1:0|S8:1|S9:1|6:1|S11:1|0:5|X2:5, MGT_phone: 0000000000, MGT_sum: 0, MGT_ver: CMTv1.2.1778, txn-type: 4.
+11:06:56 Creating payments.
+11:06:56 Original size: 1467 bytes, compressed size: 1120 bytes. Sending request to the server...
+11:06:57 ...Server 's1067.qiwi.com' returned response. Compressed size: 344 bytes, original size: 572 bytes.
+11:06:57 Checking payments status.
+11:06:57 The transaction of payment No.3749188168, Status:1, ResCode:0 was added to server database. Deleting this payment from import.xml.
+11:09:55 Creating the "ping" request.
+11:09:55 Check for unsent data counters Internet traffic.
+11:09:55 Calculating internet traffic.
+11:09:55 Network traffic: 2235 Kb received, 281 Kb sent.
+11:09:55 Checking the S.M.A.R.T. hard drives.
+11:09:56 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+11:09:56 Searching S.M.A.R.T. compatible hard drives.
+11:09:56 S.M.A.R.T. compatible hard drive WDC WD2500AAKX-001CA0 was found.
+11:09:56 Checking the S.M.A.R.T. hard drives.
+11:09:56 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+11:09:56 Выход из режима фискального сервера.
+11:09:56 Original size: 2090 bytes, compressed size: 1022 bytes. Sending request to the server...
+11:09:56 ...Server 's1063.qiwi.com' returned response. Compressed size: 653 bytes, original size: 2236 bytes.
+11:09:56 The merchant's balance: 2000.00 $.
+11:10:25 Checking of SSL connection
+11:10:26 Sending request to the server...
+11:10:26 [Statistics] Send statistics.
+11:10:26 Original size: 23392 bytes, compressed size: 1296 bytes. Sending request to the server...
+11:10:26 ...Server 's1049.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+11:10:26 ...Server 's1794.qiwi.com' returned response, sise: 0 bytes.
+11:10:26 [Statistics] Remove sent statistics.
+11:12:57 Ignoring limit value of payment's amount 15000 $. for the provider No.14868 due to current balance 1965 $. of the merchant.
+11:12:57 Setting limit payment's amount for the provider No.14868 1965 $.
+11:12:58[interface] ????? CMTv1.2.1778
+11:13:22 Printing of the ticket is disabled for this payment.
+11:13:22 Adding the information payment to the queue. The transaction number: 3749192023. The provider number: 323. The customer account: 0000000000. The receipt number: 0.
+11:13:22 The extra parameters of payment: MGT_exit: 3, MGT_project_number: 30070, MGT_time: 0, MGT_path: 1:0|S8:0|S9:1|6:1|S11:1|3:3|6:19|S11:19|3:20|6:24|S11:24|0:24|X2:24, MGT_phone: 0000000000, MGT_sum: 0, MGT_ver: CMTv1.2.1778, txn-type: 4.
+11:13:22 Creating payments.
+11:13:22 Original size: 1533 bytes, compressed size: 1167 bytes. Sending request to the server...
+11:13:22 ...Server 's1069.qiwi.com' returned response. Compressed size: 344 bytes, original size: 572 bytes.
+11:13:22 Checking payments status.
+11:13:22 The transaction of payment No.3749192023, Status:1, ResCode:0 was added to server database. Deleting this payment from import.xml.
+11:13:24 Ignoring limit value of payment's amount 15000 $. for the provider No.14868 due to current balance 1965 $. of the merchant.
+11:13:24 Setting limit payment's amount for the provider No.14868 1965 $.
+11:13:25[interface] ????? CMTv1.2.1778
+11:13:29 Printing of the ticket is disabled for this payment.
+11:13:29 Adding the information payment to the queue. The transaction number: 3749192099. The provider number: 323. The customer account: 0000000000. The receipt number: 0.
+11:13:29 The extra parameters of payment: MGT_exit: 3, MGT_project_number: 30070, MGT_time: 0, MGT_path: 1:0|S8:0|S9:1|6:1|S11:1|0:5|X2:5, MGT_phone: 0000000000, MGT_sum: 0, MGT_ver: CMTv1.2.1778, txn-type: 4.
+11:13:30 Creating payments.
+11:13:30 Original size: 1467 bytes, compressed size: 1120 bytes. Sending request to the server...
+11:13:30 ...Server 's1068.qiwi.com' returned response. Compressed size: 344 bytes, original size: 572 bytes.
+11:13:30 Checking payments status.
+11:13:30 The transaction of payment No.3749192099, Status:1, ResCode:0 was added to server database. Deleting this payment from import.xml.
+11:14:56 Creating the "ping" request.
+11:14:56 Check for unsent data counters Internet traffic.
+11:14:56 Calculating internet traffic.
+11:14:56 Network traffic: 2274 Kb received, 297 Kb sent.
+11:14:56 Checking the S.M.A.R.T. hard drives.
+11:14:56 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+11:14:56 Searching S.M.A.R.T. compatible hard drives.
+11:14:56 S.M.A.R.T. compatible hard drive WDC WD2500AAKX-001CA0 was found.
+11:14:56 Checking the S.M.A.R.T. hard drives.
+11:14:56 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+11:14:56 Выход из режима фискального сервера.
+11:14:56 Original size: 2090 bytes, compressed size: 1024 bytes. Sending request to the server...
+11:14:56 ...Server 's1065.qiwi.com' returned response. Compressed size: 653 bytes, original size: 2236 bytes.
+11:14:57 The merchant's balance: 2000.00 $.
+11:15:26 Checking of SSL connection
+11:15:26 Sending request to the server...
+11:15:26 [Statistics] Send statistics.
+11:15:26 Original size: 9190 bytes, compressed size: 699 bytes. Sending request to the server...
+11:15:26 ...Server 's1046.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+11:15:26 ...Server 's1794.qiwi.com' returned response, sise: 0 bytes.
+11:15:26 [Statistics] Remove sent statistics.
+11:16:22[interface] Warn: START wallet v3.0.48/1.1.80f
+11:16:34 Sending request to the server...
+11:16:34 Original size: 965 bytes, compressed size: 233 bytes. Sending request to the server...
+11:16:34 ...Server 's1564' returned response. Compressed size: 328 bytes, original size: 943 bytes.
+11:16:42 Sending request to the server...
+11:16:42 Original size: 345 bytes, compressed size: 183 bytes. Sending request to the server...
+11:16:42 ...Server 's1564' returned response. Compressed size: 113 bytes, original size: 140 bytes.
+11:19:56 Checking the messages for the firmware update.
+11:19:56 Creating the "ping" request.
+11:19:56 Check for unsent data counters Internet traffic.
+11:19:56 Calculating internet traffic.
+11:19:56 Network traffic: 2327 Kb received, 314 Kb sent.
+11:19:56 Checking the S.M.A.R.T. hard drives.
+11:19:56 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+11:19:56 Searching S.M.A.R.T. compatible hard drives.
+11:19:56 S.M.A.R.T. compatible hard drive WDC WD2500AAKX-001CA0 was found.
+11:19:56 Checking the S.M.A.R.T. hard drives.
+11:19:56 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+11:19:56 Выход из режима фискального сервера.
+11:19:56 Original size: 2083 bytes, compressed size: 1016 bytes. Sending request to the server...
+11:19:56 ...Server 's1065.qiwi.com' returned response. Compressed size: 653 bytes, original size: 2236 bytes.
+11:19:57 The merchant's balance: 2000.00 $.
+11:20:26 Checking of SSL connection
+11:20:26 Проверка сертификатов
+11:20:26 Sending request to the server...
+11:20:26 [Statistics] Send statistics.
+11:20:26 Original size: 40380 bytes, compressed size: 1687 bytes. Sending request to the server...
+11:20:26 ...Server 's1047.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+11:20:26 ...Server 's1759.qiwi.com' returned response, sise: 65 bytes.
+11:20:26 Проверка сертификатов завершена
+11:20:26 ...Server 's1794.qiwi.com' returned response, sise: 0 bytes.
+11:20:27 [Statistics] Remove sent statistics.
+11:21:26 Sending request to the server...
+11:21:26 [Sinap] Send QDProviders request.
+11:21:26 ...Server 'unknown' returned response, sise: 0 bytes.
+11:21:26 
+11:21:26 [Sinap] TransportError: 0, ProtocolError: 304
+11:21:26 [Sinap] QDProviders not changed.
+11:24:56 Checking the messages for the firmware update.
+11:24:56 Creating the "ping" request.
+11:24:56 Check for unsent data counters Internet traffic.
+11:24:56 Calculating internet traffic.
+11:24:56 Network traffic: 2402 Kb received, 328 Kb sent.
+11:24:56 Checking the S.M.A.R.T. hard drives.
+11:24:56 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+11:24:56 Searching S.M.A.R.T. compatible hard drives.
+11:24:56 S.M.A.R.T. compatible hard drive WDC WD2500AAKX-001CA0 was found.
+11:24:56 Checking the S.M.A.R.T. hard drives.
+11:24:56 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+11:24:56 Выход из режима фискального сервера.
+11:24:56 Original size: 2083 bytes, compressed size: 1020 bytes. Sending request to the server...
+11:24:57 ...Server 's1065.qiwi.com' returned response. Compressed size: 653 bytes, original size: 2236 bytes.
+11:24:57 The merchant's balance: 2000.00 $.
+11:25:26 Checking of SSL connection
+11:25:26 Sending request to the server...
+11:25:26 [Statistics] Send statistics.
+11:25:26 Original size: 37977 bytes, compressed size: 1243 bytes. Sending request to the server...
+11:25:26 ...Server 's1050.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+11:25:26 ...Server 's1793.qiwi.com' returned response, sise: 0 bytes.
+11:25:27 [Statistics] Remove sent statistics.
+11:29:56 Checking the messages for the firmware update.
+11:29:56 Creating the "ping" request.
+11:29:56 Check for unsent data counters Internet traffic.
+11:29:56 Calculating internet traffic.
+11:29:56 Network traffic: 2441 Kb received, 337 Kb sent.
+11:29:56 Checking the S.M.A.R.T. hard drives.
+11:29:56 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+11:29:56 Searching S.M.A.R.T. compatible hard drives.
+11:29:56 S.M.A.R.T. compatible hard drive WDC WD2500AAKX-001CA0 was found.
+11:29:56 Checking the S.M.A.R.T. hard drives.
+11:29:56 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+11:29:56 Выход из режима фискального сервера.
+11:29:56 Original size: 2083 bytes, compressed size: 1018 bytes. Sending request to the server...
+11:29:57 ...Server 's1062.qiwi.com' returned response. Compressed size: 653 bytes, original size: 2236 bytes.
+11:29:57 The merchant's balance: 2000.00 $.
+11:30:26 Checking of SSL connection
+11:30:26 Sending request to the server...
+11:30:26 [Statistics] Send statistics.
+11:30:26 Original size: 57319 bytes, compressed size: 2174 bytes. Sending request to the server...
+11:30:26 ...Server 's1047.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+11:30:27 ...Server 's1793.qiwi.com' returned response, sise: 0 bytes.
+11:30:27 [Statistics] Remove sent statistics.
+11:34:56 Checking the messages for the firmware update.
+11:34:56 Creating the "ping" request.
+11:34:56 Check for unsent data counters Internet traffic.
+11:34:56 Calculating internet traffic.
+11:34:56 Network traffic: 2470 Kb received, 348 Kb sent.
+11:34:56 Checking the S.M.A.R.T. hard drives.
+11:34:56 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+11:34:56 Searching S.M.A.R.T. compatible hard drives.
+11:34:56 S.M.A.R.T. compatible hard drive WDC WD2500AAKX-001CA0 was found.
+11:34:56 Checking the S.M.A.R.T. hard drives.
+11:34:56 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+11:34:57 Выход из режима фискального сервера.
+11:34:57 Original size: 2083 bytes, compressed size: 1018 bytes. Sending request to the server...
+11:34:57 ...Server 's1064.qiwi.com' returned response. Compressed size: 653 bytes, original size: 2236 bytes.
+11:34:57 The merchant's balance: 2000.00 $.
+11:35:26 Checking of SSL connection
+11:35:26 Sending request to the server...
+11:35:26 [Statistics] Send statistics.
+11:35:26 Original size: 27434 bytes, compressed size: 1649 bytes. Sending request to the server...
+11:35:26 ...Server 's1046.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+11:35:27 ...Server 's1793.qiwi.com' returned response, sise: 0 bytes.
+11:35:27 [Statistics] Remove sent statistics.
+11:39:56 Checking the messages for the firmware update.
+11:39:56 Creating the "ping" request.
+11:39:56 Check for unsent data counters Internet traffic.
+11:39:56 Calculating internet traffic.
+11:39:56 Network traffic: 2533 Kb received, 357 Kb sent.
+11:39:56 Checking the S.M.A.R.T. hard drives.
+11:39:56 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+11:39:56 Searching S.M.A.R.T. compatible hard drives.
+11:39:57 S.M.A.R.T. compatible hard drive WDC WD2500AAKX-001CA0 was found.
+11:39:57 Checking the S.M.A.R.T. hard drives.
+11:39:57 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+11:39:57 Выход из режима фискального сервера.
+11:39:57 Original size: 2083 bytes, compressed size: 1018 bytes. Sending request to the server...
+11:39:57 ...Server 's1065.qiwi.com' returned response. Compressed size: 653 bytes, original size: 2236 bytes.
+11:39:57 The merchant's balance: 2000.00 $.
+11:40:26 Checking of SSL connection
+11:40:26 Sending request to the server...
+11:40:26 [Statistics] Send statistics.
+11:40:26 Original size: 11247 bytes, compressed size: 845 bytes. Sending request to the server...
+11:40:27 ...Server 's1050.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+11:40:27 ...Server 's1794.qiwi.com' returned response, sise: 0 bytes.
+11:40:27 [Statistics] Remove sent statistics.
+11:44:56 Checking the messages for the firmware update.
+11:44:56 Creating the "ping" request.
+11:44:56 Check for unsent data counters Internet traffic.
+11:44:56 Calculating internet traffic.
+11:44:56 Network traffic: 2571 Kb received, 367 Kb sent.
+11:44:56 Checking the S.M.A.R.T. hard drives.
+11:44:56 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+11:44:57 Searching S.M.A.R.T. compatible hard drives.
+11:44:57 S.M.A.R.T. compatible hard drive WDC WD2500AAKX-001CA0 was found.
+11:44:57 Checking the S.M.A.R.T. hard drives.
+11:44:57 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+11:44:57 Выход из режима фискального сервера.
+11:44:57 Original size: 2083 bytes, compressed size: 1019 bytes. Sending request to the server...
+11:44:57 ...Server 's1065.qiwi.com' returned response. Compressed size: 653 bytes, original size: 2236 bytes.
+11:44:57 The merchant's balance: 2000.00 $.
+11:45:26 Checking of SSL connection
+11:45:27 Sending request to the server...
+11:45:27 [Statistics] Send statistics.
+11:45:27 Original size: 24757 bytes, compressed size: 1544 bytes. Sending request to the server...
+11:45:27 ...Server 's1049.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+11:45:27 ...Server 's1793.qiwi.com' returned response, sise: 0 bytes.
+11:45:27 [Statistics] Remove sent statistics.
+11:49:57 Checking the messages for the firmware update.
+11:49:57 Creating the "ping" request.
+11:49:57 Check for unsent data counters Internet traffic.
+11:49:57 Calculating internet traffic.
+11:49:57 Network traffic: 2616 Kb received, 383 Kb sent.
+11:49:57 Checking the S.M.A.R.T. hard drives.
+11:49:57 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+11:49:57 Searching S.M.A.R.T. compatible hard drives.
+11:49:57 S.M.A.R.T. compatible hard drive WDC WD2500AAKX-001CA0 was found.
+11:49:57 Checking the S.M.A.R.T. hard drives.
+11:49:57 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+11:49:57 Выход из режима фискального сервера.
+11:49:57 Original size: 2083 bytes, compressed size: 1019 bytes. Sending request to the server...
+11:49:57 ...Server 's1062.qiwi.com' returned response. Compressed size: 653 bytes, original size: 2236 bytes.
+11:49:57 The merchant's balance: 2000.00 $.
+11:50:27 Checking of SSL connection
+11:50:27 Sending request to the server...
+11:50:27 [Statistics] Send statistics.
+11:50:27 Original size: 16646 bytes, compressed size: 1107 bytes. Sending request to the server...
+11:50:27 ...Server 's1046.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+11:50:27 ...Server 's1793.qiwi.com' returned response, sise: 0 bytes.
+11:50:27 [Statistics] Remove sent statistics.
+11:50:51 Ignoring limit value of payment's amount 15000 $. for the provider No.14868 due to current balance 1965 $. of the merchant.
+11:50:51 Setting limit payment's amount for the provider No.14868 1965 $.
+11:50:52[interface] ????? CMTv1.2.1778
+11:50:54 Printing of the ticket is disabled for this payment.
+11:50:54 Adding the information payment to the queue. The transaction number: 3749214548. The provider number: 323. The customer account: 0000000000. The receipt number: 0.
+11:50:54 The extra parameters of payment: MGT_exit: 3, MGT_project_number: 30070, MGT_time: 0, MGT_path: 1:0|S8:1|S9:1|6:1|S11:1|0:2|X2:2, MGT_phone: 0000000000, MGT_sum: 0, MGT_ver: CMTv1.2.1778, txn-type: 4.
+11:50:55 Creating payments.
+11:50:55 Original size: 1467 bytes, compressed size: 1119 bytes. Sending request to the server...
+11:50:55 ...Server 's1067.qiwi.com' returned response. Compressed size: 344 bytes, original size: 572 bytes.
+11:50:55 Checking payments status.
+11:50:55 The transaction of payment No.3749214548, Status:1, ResCode:0 was added to server database. Deleting this payment from import.xml.
+11:51:40 Ignoring limit value of payment's amount 15000 $. for the provider No.1369 due to current balance 1965 $. of the merchant.
+11:51:40 Setting limit payment's amount for the provider No.1369 1965 $.
+11:51:40 Start accepting cash. The provider: ??????: ????? ?????? No.1369. The customer account: DDDDDDDDFFFFFFFFFFFF.
+11:51:44 Stop accepting cash. The provider: ??????: ????? ?????? No.1369. The customer account: DDDDDDDDFFFFFFFFFFFF. The cash amount: 0.00 $.
+11:51:59 Ignoring limit value of payment's amount 15000 $. for the provider No.24888 due to current balance 1965 $. of the merchant.
+11:51:59 Setting limit payment's amount for the provider No.24888 1965 $.
+11:51:59 On-line payment authorization. The transaction number: 3749215190. The provider number: 24888. The customer account: ???????. The amount: 10.00 $.
+11:51:59 Creating request on checking the payment.
+11:51:59 Original size: 949 bytes, compressed size: 486 bytes. Sending request to the server...
+11:52:00 ...Server 's1046.qiwi.com' returned response. Compressed size: 462 bytes, original size: 1004 bytes.
+11:52:00 The server returned result code: 270 (Provider is not available at the moment).
+11:52:00 The merchant's balance: 2000.00 $.
+11:52:00 The number of attempts to make the on-line request was exhausted.
+11:52:05 Ignoring limit value of payment's amount 15000 $. for the provider No.24888 due to current balance 1965 $. of the merchant.
+11:52:05 Setting limit payment's amount for the provider No.24888 1965 $.
+11:52:05 On-line payment authorization. The transaction number: 3749215258. The provider number: 24888. The customer account: ???????f. The amount: 10.00 $.
+11:52:05 Creating request on checking the payment.
+11:52:05 Original size: 950 bytes, compressed size: 487 bytes. Sending request to the server...
+11:52:06 ...Server 's1047.qiwi.com' returned response. Compressed size: 463 bytes, original size: 1006 bytes.
+11:52:06 The server returned result code: 270 (Provider is not available at the moment).
+11:52:06 The merchant's balance: 2000.00 $.
+11:52:06 The number of attempts to make the on-line request was exhausted.
+11:54:57 Creating the "ping" request.
+11:54:57 Check for unsent data counters Internet traffic.
+11:54:57 Calculating internet traffic.
+11:54:57 Network traffic: 2668 Kb received, 400 Kb sent.
+11:54:57 Checking the S.M.A.R.T. hard drives.
+11:54:57 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+11:54:57 Searching S.M.A.R.T. compatible hard drives.
+11:54:57 S.M.A.R.T. compatible hard drive WDC WD2500AAKX-001CA0 was found.
+11:54:57 Checking the S.M.A.R.T. hard drives.
+11:54:57 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+11:54:57 Выход из режима фискального сервера.
+11:54:57 Original size: 2091 bytes, compressed size: 1024 bytes. Sending request to the server...
+11:54:57 ...Server 's1064.qiwi.com' returned response. Compressed size: 653 bytes, original size: 2236 bytes.
+11:54:58 The merchant's balance: 2000.00 $.
+11:55:27 Checking of SSL connection
+11:55:27 Sending request to the server...
+11:55:27 [Statistics] Send statistics.
+11:55:27 Original size: 16056 bytes, compressed size: 1075 bytes. Sending request to the server...
+11:55:27 ...Server 's1046.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+11:55:27 ...Server 's1793.qiwi.com' returned response, sise: 0 bytes.
+11:55:27 [Statistics] Remove sent statistics.
+11:59:48 Ignoring limit value of payment's amount 15000 $. for the provider No.14868 due to current balance 1965 $. of the merchant.
+11:59:48 Setting limit payment's amount for the provider No.14868 1965 $.
+11:59:49[interface] ????? CMTv1.2.1778
+11:59:56 Printing of the ticket is disabled for this payment.
+11:59:56 Adding the information payment to the queue. The transaction number: 3749219964. The provider number: 323. The customer account: 0000000000. The receipt number: 0.
+11:59:56 The extra parameters of payment: MGT_exit: 3, MGT_project_number: 30070, MGT_time: 0, MGT_path: 1:0|S8:0|S9:1|6:1|S11:1|0:7|X2:7, MGT_phone: 0000000000, MGT_sum: 0, MGT_ver: CMTv1.2.1778, txn-type: 4.
+11:59:56 Creating payments.
+11:59:56 Original size: 1467 bytes, compressed size: 1119 bytes. Sending request to the server...
+11:59:56 ...Server 's1713.qiwi.com' returned response. Compressed size: 345 bytes, original size: 572 bytes.
+11:59:56 Checking payments status.
+11:59:56 The transaction of payment No.3749219964, Status:1, ResCode:0 was added to server database. Deleting this payment from import.xml.
+11:59:57 Checking the messages for the firmware update.
+11:59:57 Creating the "ping" request.
+11:59:57 Check for unsent data counters Internet traffic.
+11:59:57 Calculating internet traffic.
+11:59:57 Network traffic: 2714 Kb received, 412 Kb sent.
+11:59:57 Checking the S.M.A.R.T. hard drives.
+11:59:57 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+11:59:57 Searching S.M.A.R.T. compatible hard drives.
+11:59:57 S.M.A.R.T. compatible hard drive WDC WD2500AAKX-001CA0 was found.
+11:59:57 Checking the S.M.A.R.T. hard drives.
+11:59:57 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+11:59:57 Выход из режима фискального сервера.
+11:59:57 Original size: 2093 bytes, compressed size: 1024 bytes. Sending request to the server...
+11:59:58 ...Server 's1063.qiwi.com' returned response. Compressed size: 653 bytes, original size: 2236 bytes.
+11:59:58 The merchant's balance: 2000.00 $.
+12:00:27 Checking of SSL connection
+12:00:27 Sending request to the server...
+12:00:27 [Statistics] Send statistics.
+12:00:27 Original size: 3648 bytes, compressed size: 425 bytes. Sending request to the server...
+12:00:27 ...Server 's1050.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+12:00:27 ...Server 's1794.qiwi.com' returned response, sise: 0 bytes.
+12:00:27 [Statistics] Remove sent statistics.
+12:00:31[interface] Warn: START wallet v3.0.48/1.1.80f
+12:01:21 Ignoring limit value of payment's amount 15000 $. for the provider No.14868 due to current balance 1965 $. of the merchant.
+12:01:21 Setting limit payment's amount for the provider No.14868 1965 $.
+12:01:22[interface] ????? CMTv1.2.1778
+12:01:45 Printing of the ticket is disabled for this payment.
+12:01:45 Adding the information payment to the queue. The transaction number: 3749221058. The provider number: 323. The customer account: 0000000000. The receipt number: 0.
+12:01:45 The extra parameters of payment: MGT_exit: 3, MGT_project_number: 30070, MGT_time: 0, MGT_path: 1:0|S8:1|S9:1|6:1|S11:1|3:19|6:22|S11:22|0:23|X2:24, MGT_phone: 0000000000, MGT_sum: 0, MGT_ver: CMTv1.2.1778, txn-type: 4.
+12:01:45 Creating payments.
+12:01:45 Original size: 1513 bytes, compressed size: 1152 bytes. Sending request to the server...
+12:01:46 ...Server 's1713.qiwi.com' returned response. Compressed size: 344 bytes, original size: 572 bytes.
+12:01:46 Checking payments status.
+12:01:46 The transaction of payment No.3749221058, Status:1, ResCode:0 was added to server database. Deleting this payment from import.xml.
+12:01:50 Ignoring limit value of payment's amount 15000 $. for the provider No.14868 due to current balance 1965 $. of the merchant.
+12:01:50 Setting limit payment's amount for the provider No.14868 1965 $.
+12:01:51[interface] ????? CMTv1.2.1778
+12:02:18 Printing of the ticket is disabled for this payment.
+12:02:18 Adding the information payment to the queue. The transaction number: 3749221384. The provider number: 323. The customer account: 0000000000. The receipt number: 0.
+12:02:18 The extra parameters of payment: MGT_exit: 3, MGT_project_number: 30070, MGT_time: 0, MGT_path: 1:0|S8:0|S9:1|6:1|S11:1|0:27|X2:27, MGT_phone: 0000000000, MGT_sum: 0, MGT_ver: CMTv1.2.1778, txn-type: 4.
+12:02:18 Creating payments.
+12:02:18 Original size: 1487 bytes, compressed size: 1132 bytes. Sending request to the server...
+12:02:18 ...Server 's1713.qiwi.com' returned response. Compressed size: 344 bytes, original size: 572 bytes.
+12:02:18 Checking payments status.
+12:02:18 The transaction of payment No.3749221384, Status:1, ResCode:0 was added to server database. Deleting this payment from import.xml.
+12:10:12 Start application(Version 5.4.1.12)...
+12:10:12 Связь с зарегистрированным COM объектом проверена
+12:10:12 Searching S.M.A.R.T. compatible hard drives.
+12:10:12 S.M.A.R.T. compatible hard drive WDC WD2500AAKX-001CA0 was found.
+12:10:12 Command line: C:\osmp\maratl.exe.
+12:10:12 Clear system.
+12:10:12 Initializing counters internet traffic.
+12:10:12 Creating an object-handler instruction.
+12:10:12 Creating an object of the client handler instruction.
+12:10:12 Liaise with the client handler commands.
+12:10:12 Initialize queue instruction.
+12:10:12 Initialization thread instruction fetch.
+12:10:12 Starting thread instruction fetch.
+12:10:12 Initialize queue instruction.
+12:10:12 Initialization thread instruction fetch.
+12:10:12 Starting thread instruction fetch.
+12:10:12 Operation system version: Microsoft Windows 7.
+12:10:12 Checking and deleting old files.
+12:10:13 Detected flash version: 10.1
+12:10:34 Deleting old advertising files.
+12:10:34 Deleting of the old advertising files is completed.
+12:10:34 Checking the S.M.A.R.T. hard drives.
+12:10:34 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+12:10:35 System up time: 0 minutes.
+12:10:35 Reading the configuration file.
+12:10:35 Check of the provider's commission.
+12:10:35 Setting the user interface language: Panama and bill set for country: Panama.
+12:10:35 Getting the information about terminal.
+12:10:35 The phone number of the call center is received.
+12:10:35 Checking the name of organization.
+12:10:35 Checking the address of terminal.
+12:10:35 The field of additional information on the ticket is used by default.
+12:10:35 Setting the ticket width to 0 symbols.
+12:10:35 The minimal ticket length is not limited.
+12:10:35 The value of the ticket left margin was not received. Setting the left margin to 0 symbols.
+12:10:35 Setting list of servers by default.
+12:10:35 Setting the update server home directory to "/!anonymous/".
+12:10:35 Creating JS file locale.
+12:10:35 Write JS file locale.
+12:10:35 Creating a configuration file interface
+12:10:35 The on-line check of entered numbers of accounts is switched on.
+12:10:35 Creating a configuration XML-file interface
+12:10:35 The on-line check of entered numbers of accounts is switched on.
+12:10:35 Checking the phone numbers database.
+12:10:35 Creating the file of advertising content.
+12:10:35 Advertising tasks are not found.
+12:10:35 Creating the file description of advertising content by default.
+12:10:35 Creating the file of advertising content.
+12:10:35 Advertising tasks are not found.
+12:10:35 Creating the file of advertising content.
+12:10:35 Advertising tasks are not found.
+12:10:35 Reseting the day traffic counters.
+12:10:35 Calculating internet traffic.
+12:10:36 Init plugin Sinap version 1.1.0.0.
+12:10:36 Init plugin Gecko17 Browser version 1.1.0.7.
+12:10:36 Init plugin Providers version 1.0.0.21.
+12:10:36 [Providers] Prepare data for search.
+12:10:37 Init plugin Statistics version 1.1.0.22.
+12:10:37 [Statistics] Copy recommendation file.
+12:10:39 The bill acceptor CashCode CCNET is connected over the COM3 port.
+12:10:39 The watchdog timer v1.00 is connected over the COM7 port.
+12:10:39 Searching ports for a printer, a card reader.
+12:12:18 Search of ports is completed.
+12:12:28 Saving the configuration of devices.
+12:12:28 Printer is not found.
+12:12:28 Error opening the COM port of the printer.
+12:12:28 Initializing the bill validator CashCode CCNET.
+12:12:37 The maximum amount of payment is not limited.
+12:12:37 The value of the ticket width can't be less than 40 symbols.
+12:12:37 The last received merchant's balance: 2000 $.
+12:12:37 Terminal ID: 9974700
+12:12:37 Starting the message manager.
+12:12:38 [Gecko17] Set path to bin folder: plugins\browsers/Gecko/Gecko17
+12:12:38 [Gecko17] Set path to zip archive: plugins\browsers/Gecko/Gecko17/Gecko17.zip
+12:12:39 Browser version version: Gecko 17.0.1.
+12:12:39 Flash Player version: 11.1.
+12:12:39 Checking messages.
+12:12:40 Updating the messages for providers.
+12:12:40 Парсинг провайдеров.
+12:12:49 Парсинг провайдеров закончен.
+12:12:49 Создание файлов провайдеров.
+12:13:02 Создание файлов провайдеров закончено.
+12:13:02 Файлов удалено 3.
+12:13:07 Parsing the saved data index page.
+12:13:07 Error loading data the index page.
+12:13:07 Creating a JavaScript-configuration file index page.
+12:13:07 Creating a XML-configuration file index page.
+12:13:08 Redirection to the start page.
+12:13:08 Creating request on reading the provider's commissions.
+12:13:08 Original size: 375 bytes, compressed size: 254 bytes. Sending request to the server...
+12:13:11 ...Server 's1050.qiwi.com' returned response. Compressed size: 23738 bytes, original size: 261701 bytes.
+12:13:11 Writing the file of provider's commissions.
+12:13:12 Creating the terminal's information file.
+12:13:12 Deleting old home directory of the update server.
+12:13:12 Saving the terminal's information file.
+12:13:12 Parsing the configuration data index page.
+12:13:12 Saving the configuration data index page.
+12:13:12 Saving the configuration button the index page.
+12:13:12 Creating JS file locale.
+12:13:12 Write JS file locale.
+12:13:12 Getting the information about terminal.
+12:13:12 The phone number of the call center is received.
+12:13:12 Checking the name of organization.
+12:13:12 Checking the address of terminal.
+12:13:12 The field of additional information on the ticket is used by default.
+12:13:12 Setting the ticket width to 0 symbols.
+12:13:12 The minimal ticket length is not limited.
+12:13:12 The value of the ticket left margin was not received. Setting the left margin to 0 symbols.
+12:13:12 Setting list of servers by default.
+12:13:12 Setting the update server home directory to "/!anonymous/".
+12:13:12 The maximum amount of payment is not limited.
+12:13:12 The value of the ticket width can't be less than 40 symbols.
+12:13:12 The ID of providers database is changed. The old ID:4615425. The new ID:4615456. It is necessary to update providers database.
+12:13:12 The merchant's balance: 2000.00 $.
+12:13:13 Switching on the lock of the right mouse button.
+12:13:13 Creating a configuration file interface
+12:13:13 The on-line check of entered numbers of accounts is switched on.
+12:13:13 Creating a configuration XML-file interface
+12:13:13 The on-line check of entered numbers of accounts is switched on.
+12:25:06 Start application(Version 5.4.1.12)...
+12:25:07 Связь с зарегистрированным COM объектом проверена
+12:25:07 Searching S.M.A.R.T. compatible hard drives.
+12:25:07 S.M.A.R.T. compatible hard drive WDC WD2500AAKX-001CA0 was found.
+12:25:09 Command line: C:\osmp\maratl.exe.
+12:25:09 Clear system.
+12:25:09 Initializing counters internet traffic.
+12:25:09 Creating an object-handler instruction.
+12:25:09 Creating an object of the client handler instruction.
+12:25:09 Liaise with the client handler commands.
+12:25:09 Initialize queue instruction.
+12:25:09 Initialization thread instruction fetch.
+12:25:09 Starting thread instruction fetch.
+12:25:09 Initialize queue instruction.
+12:25:09 Initialization thread instruction fetch.
+12:25:09 Starting thread instruction fetch.
+12:25:09 Operation system version: Microsoft Windows 7.
+12:25:09 Checking and deleting old files.
+12:25:09 Detected flash version: 10.1
+12:25:32 Deleting old advertising files.
+12:25:32 Deleting of the old advertising files is completed.
+12:25:32 Checking the S.M.A.R.T. hard drives.
+12:25:32 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 35 C.
+12:25:32 System up time: 0 minutes.
+12:25:32 Reading the configuration file.
+12:25:32 Check of the provider's commission.
+12:25:32 Setting the user interface language: Panama and bill set for country: Panama.
+12:25:32 Getting the information about terminal.
+12:25:32 The phone number of the call center is received.
+12:25:32 Checking the name of organization.
+12:25:32 Checking the address of terminal.
+12:25:32 The field of additional information on the ticket is used by default.
+12:25:32 Setting the ticket width to 0 symbols.
+12:25:32 The minimal ticket length is not limited.
+12:25:32 The value of the ticket left margin was not received. Setting the left margin to 0 symbols.
+12:25:32 Setting list of servers by default.
+12:25:32 Setting the update server home directory to "/!anonymous/".
+12:25:32 Creating JS file locale.
+12:25:32 Write JS file locale.
+12:25:33 Creating a configuration file interface
+12:25:33 The on-line check of entered numbers of accounts is switched on.
+12:25:33 Creating a configuration XML-file interface
+12:25:33 The on-line check of entered numbers of accounts is switched on.
+12:25:33 Checking the phone numbers database.
+12:25:33 Creating the file of advertising content.
+12:25:33 Advertising tasks are not found.
+12:25:33 Creating the file description of advertising content by default.
+12:25:33 Creating the file of advertising content.
+12:25:33 Advertising tasks are not found.
+12:25:33 Creating the file of advertising content.
+12:25:33 Advertising tasks are not found.
+12:25:33 Reseting the day traffic counters.
+12:25:33 Calculating internet traffic.
+12:25:34 Init plugin Sinap version 1.1.0.0.
+12:25:34 Init plugin Gecko17 Browser version 1.1.0.7.
+12:25:34 Init plugin Providers version 1.0.0.21.
+12:25:34 [Providers] Prepare data for search.
+12:25:34 Init plugin Statistics version 1.1.0.22.
+12:25:34 [Statistics] Copy recommendation file.
+12:25:36 The bill acceptor CashCode CCNET is connected over the COM3 port.
+12:25:36 The watchdog timer v1.00 is connected over the COM7 port.
+12:25:36 Searching ports for a printer, a card reader.
+12:27:15 Search of ports is completed.
+12:27:25 Saving the configuration of devices.
+12:27:26 Printer is not found.
+12:27:26 Error opening the COM port of the printer.
+12:27:26 Initializing the bill validator CashCode CCNET.
+12:27:34 The maximum amount of payment is not limited.
+12:27:34 The value of the ticket width can't be less than 40 symbols.
+12:27:34 The last received merchant's balance: 2000 $.
+12:27:34 Terminal ID: 9974700
+12:27:34 Starting the message manager.
+12:27:35 [Gecko17] Set path to bin folder: plugins\browsers/Gecko/Gecko17
+12:27:35 [Gecko17] Set path to zip archive: plugins\browsers/Gecko/Gecko17/Gecko17.zip
+12:27:37 Browser version version: Gecko 17.0.1.
+12:27:37 Flash Player version: 11.1.
+12:27:37 Checking messages.
+12:27:37 Updating the messages for providers.
+12:27:38 Парсинг провайдеров.
+12:27:47 Парсинг провайдеров закончен.
+12:27:47 Создание файлов провайдеров.
+12:28:00 Создание файлов провайдеров закончено.
+12:28:05 Parsing the saved data index page.
+12:28:05 Error loading data the index page.
+12:28:05 Creating a JavaScript-configuration file index page.
+12:28:05 Creating a XML-configuration file index page.
+12:28:05 Redirection to the start page.
+12:28:05 Creating request on reading the provider's commissions.
+12:28:05 Original size: 375 bytes, compressed size: 254 bytes. Sending request to the server...
+12:28:08 ...Server 's1049.qiwi.com' returned response. Compressed size: 23735 bytes, original size: 261701 bytes.
+12:28:09 Writing the file of provider's commissions.
+12:28:09 Creating the terminal's information file.
+12:28:10 Deleting old home directory of the update server.
+12:28:10 Saving the terminal's information file.
+12:28:10 Parsing the configuration data index page.
+12:28:10 Saving the configuration data index page.
+12:28:10 Saving the configuration button the index page.
+12:28:10 Creating JS file locale.
+12:28:10 Write JS file locale.
+12:28:10 Getting the information about terminal.
+12:28:10 The phone number of the call center is received.
+12:28:10 Checking the name of organization.
+12:28:10 Checking the address of terminal.
+12:28:10 The field of additional information on the ticket is used by default.
+12:28:10 Setting the ticket width to 0 symbols.
+12:28:10 The minimal ticket length is not limited.
+12:28:10 The value of the ticket left margin was not received. Setting the left margin to 0 symbols.
+12:28:10 Setting list of servers by default.
+12:28:10 Setting the update server home directory to "/!anonymous/".
+12:28:10 The maximum amount of payment is not limited.
+12:28:10 The value of the ticket width can't be less than 40 symbols.
+12:28:10 The ID of providers database is changed. The old ID:4615425. The new ID:4615458. It is necessary to update providers database.
+12:28:10 The merchant's balance: 2000.00 $.
+12:28:10 Switching on the lock of the right mouse button.
+12:28:10 Creating a configuration file interface
+12:28:10 The on-line check of entered numbers of accounts is switched on.
+12:28:10 Creating a configuration XML-file interface
+12:28:10 The on-line check of entered numbers of accounts is switched on.
+12:28:35 Проверка сертификатов
+12:28:36 ...Server 's1758.qiwi.com' returned response, sise: 65 bytes.
+12:28:36 Проверка сертификатов завершена
+12:29:35 Sending request to the server...
+12:29:35 [Sinap] Send QDProviders request.
+12:29:36 ...Server 'unknown' returned response, sise: 0 bytes.
+12:29:36 
+12:29:36 [Sinap] TransportError: 0, ProtocolError: 304
+12:29:36 [Sinap] QDProviders not changed.
+12:29:41 Ignoring limit value of payment's amount 15000 $. for the provider No.14868 due to current balance 1965 $. of the merchant.
+12:29:41 Setting limit payment's amount for the provider No.14868 1965 $.
+12:29:42[interface] ????? CMTv1.2.1778
+12:29:51 Printing of the ticket is disabled for this payment.
+12:29:51 Adding the information payment to the queue. The transaction number: 3749237912. The provider number: 323. The customer account: 0000000000. The receipt number: 0.
+12:29:51 The extra parameters of payment: MGT_exit: 3, MGT_project_number: 30070, MGT_time: 0, MGT_path: 1:0|S8:1|S9:1|6:1|S11:1|0:9|X2:9, MGT_phone: 0000000000, MGT_sum: 0, MGT_ver: CMTv1.2.1778, txn-type: 4.
+12:29:51 Creating payments.
+12:29:51 Original size: 1467 bytes, compressed size: 1120 bytes. Sending request to the server...
+12:29:51 ...Server 's1067.qiwi.com' returned response. Compressed size: 345 bytes, original size: 572 bytes.
+12:29:51 Checking payments status.
+12:29:51 The transaction of payment No.3749237912, Status:1, ResCode:0 was added to server database. Deleting this payment from import.xml.
+12:30:28 Ignoring limit value of payment's amount 15000 $. for the provider No.14868 due to current balance 1965 $. of the merchant.
+12:30:28 Setting limit payment's amount for the provider No.14868 1965 $.
+12:30:29[interface] ????? CMTv1.2.1778
+12:30:33 Printing of the ticket is disabled for this payment.
+12:30:33 Adding the information payment to the queue. The transaction number: 3749238338. The provider number: 323. The customer account: 0000000000. The receipt number: 0.
+12:30:33 The extra parameters of payment: MGT_exit: 3, MGT_project_number: 30070, MGT_time: 0, MGT_path: 1:0|S8:0|S9:1|6:1|S11:1|0:4|X2:4, MGT_phone: 0000000000, MGT_sum: 0, MGT_ver: CMTv1.2.1778, txn-type: 4.
+12:30:34 Creating payments.
+12:30:34 Original size: 1467 bytes, compressed size: 1119 bytes. Sending request to the server...
+12:30:34 ...Server 's1068.qiwi.com' returned response. Compressed size: 344 bytes, original size: 572 bytes.
+12:30:34 Checking payments status.
+12:30:34 The transaction of payment No.3749238338, Status:1, ResCode:0 was added to server database. Deleting this payment from import.xml.
+12:43:11 Start application(Version 5.4.1.12)...
+12:43:11 Связь с зарегистрированным COM объектом проверена
+12:43:11 Searching S.M.A.R.T. compatible hard drives.
+12:43:11 S.M.A.R.T. compatible hard drive WDC WD2500AAKX-001CA0 was found.
+12:43:16 Command line: C:\osmp\maratl.exe.
+12:43:16 Clear system.
+12:43:16 Initializing counters internet traffic.
+12:43:16 Creating an object-handler instruction.
+12:43:16 Creating an object of the client handler instruction.
+12:43:16 Liaise with the client handler commands.
+12:43:16 Initialize queue instruction.
+12:43:16 Initialization thread instruction fetch.
+12:43:16 Starting thread instruction fetch.
+12:43:16 Initialize queue instruction.
+12:43:16 Initialization thread instruction fetch.
+12:43:16 Starting thread instruction fetch.
+12:43:16 Operation system version: Microsoft Windows 7.
+12:43:16 Checking and deleting old files.
+12:43:17 Detected flash version: 10.1
+12:43:35 Deleting old advertising files.
+12:43:35 Deleting of the old advertising files is completed.
+12:43:35 Checking the S.M.A.R.T. hard drives.
+12:43:35 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 36 C.
+12:43:35 System up time: 0 minutes.
+12:43:35 Reading the configuration file.
+12:43:35 Check of the provider's commission.
+12:43:35 Setting the user interface language: Panama and bill set for country: Panama.
+12:43:35 Getting the information about terminal.
+12:43:35 The phone number of the call center is received.
+12:43:35 Checking the name of organization.
+12:43:35 Checking the address of terminal.
+12:43:35 The field of additional information on the ticket is used by default.
+12:43:35 Setting the ticket width to 0 symbols.
+12:43:35 The minimal ticket length is not limited.
+12:43:35 The value of the ticket left margin was not received. Setting the left margin to 0 symbols.
+12:43:35 Setting list of servers by default.
+12:43:35 Setting the update server home directory to "/!anonymous/".
+12:43:35 Creating JS file locale.
+12:43:35 Write JS file locale.
+12:43:35 Creating a configuration file interface
+12:43:35 The on-line check of entered numbers of accounts is switched on.
+12:43:36 Creating a configuration XML-file interface
+12:43:36 The on-line check of entered numbers of accounts is switched on.
+12:43:36 Checking the phone numbers database.
+12:43:36 Creating the file of advertising content.
+12:43:36 Advertising tasks are not found.
+12:43:36 Creating the file description of advertising content by default.
+12:43:36 Creating the file of advertising content.
+12:43:36 Advertising tasks are not found.
+12:43:36 Creating the file of advertising content.
+12:43:36 Advertising tasks are not found.
+12:43:36 Reseting the day traffic counters.
+12:43:36 Calculating internet traffic.
+12:43:36 Init plugin Sinap version 1.1.0.0.
+12:43:36 Init plugin Gecko17 Browser version 1.1.0.7.
+12:43:36 Init plugin Providers version 1.0.0.21.
+12:43:36 [Providers] Prepare data for search.
+12:43:37 Init plugin Statistics version 1.1.0.22.
+12:43:37 [Statistics] Copy recommendation file.
+12:43:39 The bill acceptor CashCode CCNET is connected over the COM3 port.
+12:43:39 The watchdog timer v1.00 is connected over the COM7 port.
+12:43:39 Searching ports for a printer, a card reader.
+12:45:18 Search of ports is completed.
+12:45:28 Saving the configuration of devices.
+12:45:28 Printer is not found.
+12:45:28 Error opening the COM port of the printer.
+12:45:28 Initializing the bill validator CashCode CCNET.
+12:45:37 The maximum amount of payment is not limited.
+12:45:37 The value of the ticket width can't be less than 40 symbols.
+12:45:37 The last received merchant's balance: 2000 $.
+12:45:37 Terminal ID: 9974700
+12:45:37 Starting the message manager.
+12:45:38 [Gecko17] Set path to bin folder: plugins\browsers/Gecko/Gecko17
+12:45:38 [Gecko17] Set path to zip archive: plugins\browsers/Gecko/Gecko17/Gecko17.zip
+12:45:40 Browser version version: Gecko 17.0.1.
+12:45:40 Flash Player version: 11.1.
+12:45:40 Checking messages.
+12:45:40 Updating the messages for providers.
+12:45:41 Парсинг провайдеров.
+12:45:50 Парсинг провайдеров закончен.
+12:45:50 Создание файлов провайдеров.
+12:46:03 Создание файлов провайдеров закончено.
+12:46:08 Parsing the saved data index page.
+12:46:08 Error loading data the index page.
+12:46:08 Creating a JavaScript-configuration file index page.
+12:46:08 Creating a XML-configuration file index page.
+12:46:08 Redirection to the start page.
+12:46:08 Creating request on reading the provider's commissions.
+12:46:08 Original size: 375 bytes, compressed size: 254 bytes. Sending request to the server...
+12:46:11 ...Server 's1050.qiwi.com' returned response. Compressed size: 23717 bytes, original size: 261701 bytes.
+12:46:12 Writing the file of provider's commissions.
+12:46:12 Creating the terminal's information file.
+12:46:12 Deleting old home directory of the update server.
+12:46:12 Saving the terminal's information file.
+12:46:12 Parsing the configuration data index page.
+12:46:12 Saving the configuration data index page.
+12:46:12 Saving the configuration button the index page.
+12:46:12 Creating JS file locale.
+12:46:12 Write JS file locale.
+12:46:12 Getting the information about terminal.
+12:46:12 The phone number of the call center is received.
+12:46:12 Checking the name of organization.
+12:46:12 Checking the address of terminal.
+12:46:12 The field of additional information on the ticket is used by default.
+12:46:12 Setting the ticket width to 0 symbols.
+12:46:12 The minimal ticket length is not limited.
+12:46:12 The value of the ticket left margin was not received. Setting the left margin to 0 symbols.
+12:46:12 Setting list of servers by default.
+12:46:12 Setting the update server home directory to "/!anonymous/".
+12:46:12 The maximum amount of payment is not limited.
+12:46:12 The value of the ticket width can't be less than 40 symbols.
+12:46:12 The ID of providers database is changed. The old ID:4615425. The new ID:4615465. It is necessary to update providers database.
+12:46:12 The merchant's balance: 2000.00 $.
+12:46:13 Switching on the lock of the right mouse button.
+12:46:13 Creating a configuration file interface
+12:46:13 The on-line check of entered numbers of accounts is switched on.
+12:46:13 Creating a configuration XML-file interface
+12:46:13 The on-line check of entered numbers of accounts is switched on.
+12:46:38 Проверка сертификатов
+12:46:38 ...Server 's1759.qiwi.com' returned response, sise: 65 bytes.
+12:46:38 Проверка сертификатов завершена
+12:47:38 Sending request to the server...
+12:47:38 [Sinap] Send QDProviders request.
+12:47:38 ...Server 'unknown' returned response, sise: 0 bytes.
+12:47:38 
+12:47:38 [Sinap] TransportError: 0, ProtocolError: 304
+12:47:38 [Sinap] QDProviders not changed.
+12:51:08 Starting time synchronization using NTP time servers.
+12:51:08 Creating the "ping" request.
+12:51:08 Time synchronization: Sending time synchronization request to the server No.1.
+12:51:08 Check for unsent data counters Internet traffic.
+12:51:08 Calculating internet traffic.
+12:51:08 Network traffic: 76 Kb received, 8 Kb sent.
+12:51:08 Checking the S.M.A.R.T. hard drives.
+12:51:08 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 36 C.
+12:51:09 Time synchronization: Stratum level: 1. Reference ID: ACTS. The time offset: 1.0 sec.
+12:51:09 Searching S.M.A.R.T. compatible hard drives.
+12:51:09 S.M.A.R.T. compatible hard drive WDC WD2500AAKX-001CA0 was found.
+12:51:09 The hard drive 1 is not S.M.A.R.T. compatible(SCSI, RAID, FLASH drive).
+12:51:09 Checking the S.M.A.R.T. hard drives.
+12:51:09 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 36 C.
+12:51:09 Выход из режима фискального сервера.
+12:51:09 Original size: 2085 bytes, compressed size: 1022 bytes. Sending request to the server...
+12:51:09 ...Server 's1065.qiwi.com' returned response. Compressed size: 652 bytes, original size: 2236 bytes.
+12:51:09 The merchant's balance: 2000.00 $.
+12:51:38 Checking of SSL connection
+12:51:39 Sending request to the server...
+12:51:39 [Statistics] Send statistics.
+12:51:39 Original size: 12889 bytes, compressed size: 777 bytes. Sending request to the server...
+12:51:39 ...Server 's1046.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+12:51:39 ...Server 's1793.qiwi.com' returned response, sise: 0 bytes.
+12:51:39 [Statistics] Remove sent statistics.
+12:52:08 Creating request on getting the provider's configuration.
+12:52:08 Original size: 299 bytes, compressed size: 243 bytes. Sending request to the server...
+12:52:12 ...Server 's1069.qiwi.com' returned response. Compressed size: 518794 bytes, original size: 5058168 bytes.
+12:52:13 Парсинг провайдеров.
+12:52:22 Парсинг провайдеров закончен.
+12:56:08 Creating the "ping" request.
+12:56:08 Check for unsent data counters Internet traffic.
+12:56:08 Calculating internet traffic.
+12:56:08 Network traffic: 1740 Kb received, 234 Kb sent.
+12:56:08 Checking the S.M.A.R.T. hard drives.
+12:56:09 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 36 C.
+12:56:09 Searching S.M.A.R.T. compatible hard drives.
+12:56:09 S.M.A.R.T. compatible hard drive WDC WD2500AAKX-001CA0 was found.
+12:56:09 The hard drive 1 is not S.M.A.R.T. compatible(SCSI, RAID, FLASH drive).
+12:56:09 Checking the S.M.A.R.T. hard drives.
+12:56:09 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 36 C.
+12:56:09 Выход из режима фискального сервера.
+12:56:09 Original size: 2091 bytes, compressed size: 1024 bytes. Sending request to the server...
+12:56:09 ...Server 's1065.qiwi.com' returned response. Compressed size: 652 bytes, original size: 2236 bytes.
+12:56:09 The merchant's balance: 2000.00 $.
+12:56:38 Checking of SSL connection
+12:56:39 Sending request to the server...
+12:56:39 [Statistics] Send statistics.
+12:56:39 Original size: 2165 bytes, compressed size: 329 bytes. Sending request to the server...
+12:56:39 ...Server 's1046.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+12:56:39 ...Server 's1793.qiwi.com' returned response, sise: 0 bytes.
+12:56:39 [Statistics] Remove sent statistics.

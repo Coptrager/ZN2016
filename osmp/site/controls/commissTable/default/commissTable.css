@@ -1,0 +1,56 @@
+﻿.commissTable-big{
+    height:280px;
+}
+.commissTable-small{
+    height:160px;
+}
+.commissTableHead {
+    height:40px;
+}
+.commissTableHead div {
+    padding:10px 0 0 20px;
+    height:inherit;
+    font-family:WhitneySemibold;
+    font-size:20px;
+}
+.commissTableHead div:first-child {
+    width:260px;
+}
+.commissTableHead div:last-child {
+    width:580px;
+}
+.commissTableBodyBox-big,
+.commissTableBodyBox-small{
+    margin-top:10px;
+}
+.commissTableBodyBox-big{
+    height:240px;
+}
+.commissTableBodyBox-small{
+    height:120px;
+}
+.commissTableBody{
+    transition:top 400ms;
+}
+.commissTableLine{
+    height:40px;
+    border-radius:6px;
+    transition:background 300ms;
+}
+.commissTableLine-insert{
+    background-color:#edbb36;
+}
+.commissTableLine p{
+    float:left;
+    padding:5px 0 0 20px;
+    text-align:left;
+    height:inherit;
+    font-family:Whitney;
+    font-size:20px;
+}
+.commissTableLine p:first-child{
+    width:260px;
+}
+.commissTableLine p:last-child{
+    width:580px;
+}

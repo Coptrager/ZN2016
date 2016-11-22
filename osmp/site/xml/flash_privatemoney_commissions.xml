@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<object id="commissions" class="Array">
+		<constructor-arg>
+			<array>
+				<value>
+					<object class="ru.mobw.coreas3.vo.ComissionProfile">
+						<property name="from" value="0" />
+						<property name="to" value="3001" />
+						<property name="fix" value="60" />
+					</object>
+				</value>
+				<value>
+					<object class="ru.mobw.coreas3.vo.ComissionProfile">
+						<property name="from" value="3001" />
+						<property name="to" value="9001" />
+						<property name="fix" value="200" />
+					</object>
+				</value>
+				<value>
+					<object class="ru.mobw.coreas3.vo.ComissionProfile">
+						<property name="from" value="9001" />
+						<property name="to" value="15000" />
+						<property name="fix" value="300" />
+					</object>
+				</value>
+			</array>
+		</constructor-arg>
+		<constructor-arg>
+			<array>
+				<value>
+					<object class="ru.mobw.coreas3.vo.ComissionProfile">
+						<property name="from" value="0" />
+						<property name="to" value="15000" />
+						<property name="percent" value="0" />
+					</object>
+				</value>
+			</array>
+		</constructor-arg>
+	</object>
+
+</objects>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<object id="bill" class="String">
+		<constructor-arg>
+			<value>
+<![CDATA[_receipt_=------------------------------------
+&_receipt_ПЛАТЕЖНАЯ КАРТА=Банк: КИВИ Банк (АО)
+Лицензия №2241
+ИНН 3123011520
+123001, г. Москва, ул. Спиридоновка, д. 4, стр. 2
+Вид операции: 028
+Принято: %price%
+Комисcия: %bank_commission%
+------------------------------------
+&_receipt_ВАШ ПЛАТЕЖ=&_receipt_ПЛАТЕЛЬЩИК= %second% %first% %middle%&_receipt_ПОЛУЧАТЕЛЬ СРЕДСТВ= %client_name%&_receipt_ИНН= %inn%{{kpp && &_receipt_КПП= %kpp%}}{{kbk && &_receipt_КБК= %kbk%}}{{okato && &_receipt_ОКТМО/ОКАТО= %okato%}}&_receipt_Р/сч= %bank_account% в %bank_name%
+------------------------------------
+&_receipt_НАЗНАЧЕНИЕ ПЛАТЕЖА=%prefix% %purpose% %postfix%
+&_receipt_СУММА=%amount%
+Копию платежного поручения можно распечатать в
+Visa QIWI Wallet w.qiwi.com
+]]>
+			</value>
+		</constructor-arg>
+	</object>
+</objects>

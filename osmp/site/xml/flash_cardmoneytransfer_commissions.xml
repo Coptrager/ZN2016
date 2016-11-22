@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+
+	<object id="commissions" class="Array">
+		<constructor-arg description="0, PaymentSystem: Visa, MasterCard, Country: Russia">
+			<array>
+				<value>
+					<object class="ru.mobw.coreas3.vo.ComissionProfile">
+						<property name="from" value="0" />
+						<property name="to" value="15000" />
+						<property name="percent" value="2" />
+						<property name="fix" value="50" />
+					</object>
+				</value>
+			</array>
+		</constructor-arg>
+		<constructor-arg description="1, PaymentSystem: Visa, MasterCard, Country: Other">
+			<array>
+				<value>
+					<object class="ru.mobw.coreas3.vo.ComissionProfile">
+						<property name="from" value="0" />
+						<property name="to" value="15000" />
+						<property name="percent" value="2" />
+						<property name="fix" value="100" />
+					</object>
+				</value>
+			</array>
+		</constructor-arg>
+		<constructor-arg description="2, PaymentSystem: QVV">
+			<array>
+				<value>
+					<object class="ru.mobw.coreas3.vo.ComissionProfile">
+						<property name="from" value="0" />
+						<property name="to" value="15000" />
+						<property name="percent" value="2.5" />
+					</object>
+				</value>
+			</array>
+		</constructor-arg>
+		<constructor-arg description="3, PaymentSystem: QVP">
+			<array>
+				<value>
+					<object class="ru.mobw.coreas3.vo.ComissionProfile">
+						<property name="from" value="0" />
+						<property name="to" value="15000" />
+						<property name="percent" value="0" />
+					</object>
+				</value>
+			</array>
+		</constructor-arg>
+		<constructor-arg description="4, PaymentSystem: QVC">
+			<array>
+				<value>
+					<object class="ru.mobw.coreas3.vo.ComissionProfile">
+						<property name="from" value="0" />
+						<property name="to" value="15000" />
+						<property name="percent" value="0" />
+					</object>
+				</value>
+			</array>
+		</constructor-arg>
+	</object>
+
+</objects>

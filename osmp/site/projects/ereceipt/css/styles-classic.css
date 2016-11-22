@@ -1,0 +1,323 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+#final-page {
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px; }
+  #final-page .button {
+    width: 320px;
+    height: 110px;
+    margin: 0 auto; }
+    #final-page .button .button-content {
+      line-height: inherit;
+      font-size: 30px;
+      color: white; }
+  #final-page .main {
+    position: absolute;
+    width: 70%;
+    left: 0%;
+    font-size: 40px; }
+    #final-page .main.noreceipt {
+      width: 100%; }
+    #final-page .main .qiwi {
+      margin-top: 76px;
+      margin-left: 367px; }
+      #final-page .main .qiwi.noreceipt {
+        margin-left: 594px; }
+    #final-page .main .info {
+      position: absolute;
+      top: 290px;
+      left: 50px; }
+      #final-page .main .info.noreceipt {
+        display: -moz-box;
+        -moz-box-align: center;
+        -moz-box-pack: center;
+        -moz-box-orient: vertical;
+        max-width: 1280px;
+        width: 1280px;
+        position: relative;
+        left: 0px; }
+      #final-page .main .info .title {
+        left: 0px;
+        position: relative; }
+        #final-page .main .info .title .text {
+          display: -moz-box;
+          -moz-box-align: center;
+          -moz-box-pack: center;
+          -moz-box-orient: vertical;
+          max-width: 800px;
+          margin: 10px 20px 0;
+          font-size: 48px;
+          white-space: pre-wrap; }
+      #final-page .main .info .description {
+        position: relative;
+        font-size: 30px;
+        left: 125px;
+        top: 0px;
+        white-space: pre-wrap; }
+        #final-page .main .info .description.hasreceipt {
+          width: 600px; }
+        #final-page .main .info .description.noreceipt {
+          text-align: center;
+          width: 812px;
+          margin-top: 28px; }
+    #final-page .main .checkStatusButton {
+      left: 179px;
+      top: 720px;
+      margin: 32px 125px; }
+      #final-page .main .checkStatusButton .option-button {
+        position: absolute; }
+      #final-page .main .checkStatusButton .button-content {
+        height: 98px;
+        color: #FFF; }
+      #final-page .main .checkStatusButton.noreceipt {
+        left: 38%;
+        width: 100%; }
+    #final-page .main .editButton {
+      position: absolute;
+      left: 179px;
+      top: 720px; }
+      #final-page .main .editButton .button-content {
+        height: 110px;
+        color: #FFF; }
+      #final-page .main .editButton.noreceipt {
+        left: 38%;
+        width: 100%; }
+  #final-page .receipt {
+    position: absolute;
+    right: 0%;
+    width: 432px;
+    height: 852px;
+    border-radius: 12px;
+    background: none repeat scroll 0 0 white;
+    margin-right: 25px; }
+    #final-page .receipt .title {
+      font-size: 30px;
+      padding: 20px 30px 0px;
+      color: #111; }
+    #final-page .receipt .text {
+      margin: 40px 0 0;
+      height: 530px;
+      white-space: pre-wrap;
+      overflow: hidden;
+      position: relative;
+      padding: 0px 30px 30px;
+      font-size: 18px;
+      color: #111; }
+      #final-page .receipt .text .blur {
+        position: absolute;
+        height: 200px;
+        bottom: 0;
+        width: 100%;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, #ffffff 100%); }
+    #final-page .receipt .full-receipt {
+      font-size: 20px;
+      text-align: center;
+      padding: 0px 30px 0px; }
+    #final-page .receipt .button {
+      position: absolute;
+      left: 62px;
+      top: 720px;
+      background: linear-gradient(to bottom, #0089cd 0%, #007ac2 100%);
+      border-radius: 10px; }
+      #final-page .receipt .button .button-content {
+        height: 110px; }
+
+#anonym-page {
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  height: 1024px; }
+  #anonym-page > * {
+    display: -moz-box;
+    -moz-box-align: center;
+    -moz-box-pack: center;
+    -moz-box-orient: vertical;
+    width: 1280px; }
+    #anonym-page > * > * {
+      -moz-box-flex: 1;
+      display: -moz-box;
+      -moz-box-align: center;
+      -moz-box-pack: center;
+      -moz-box-orient: vertical;
+      max-width: 1280px; }
+      #anonym-page > * > * > * {
+        -moz-box-flex: 1; }
+  #anonym-page > :first-child {
+    -moz-box-flex: 1; }
+    #anonym-page > :first-child + * {
+      -moz-box-flex: 1; }
+      #anonym-page > :first-child + * + * {
+        -moz-box-flex: 3; }
+  #anonym-page .head {
+    max-height: 400px;
+    min-height: 400px;
+    white-space: pre-wrap;
+    padding: 0 300px;
+    -moz-box-align: start; }
+    #anonym-page .head > * {
+      -moz-box-flex: 0; }
+    #anonym-page .head > :first-child {
+      font-size: 48px; }
+      #anonym-page .head > :first-child + * {
+        font-size: 30px;
+        max-width: 565px;
+        margin: 15px 0 0 105px; }
+        #anonym-page .head > :first-child + * + * {
+          max-width: 650px;
+          margin: 40px 0; }
+          #anonym-page .head > :first-child + * + * .image img {
+            margin-left: 12.5px; }
+  #anonym-page .body {
+    color: #FFF;
+    text-align: center;
+    background: transparent linear-gradient(to bottom, #0E4394 0%, #0080C6 100%) repeat scroll 0% 0%; }
+    #anonym-page .body > :first-child {
+      font-size: 40px;
+      padding: 50px 0; }
+    #anonym-page .body > :last-child {
+      font-size: 25px;
+      padding: 50px; }
+    #anonym-page .body > [class*="button"] {
+      padding: 46px 82px;
+      width: 437px;
+      -moz-box-flex: 0; }
+  #anonym-page .timer {
+    font-size: 30px; }
+  #anonym-page .text-n-image {
+    -moz-box-orient: horizontal; }
+
+#email-page {
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  width: 1280px; }
+  #email-page > :first-child {
+    margin: 53px 0 10px; }
+  #email-page .textfield {
+    margin-top: 30px; }
+    #email-page .textfield .field .text-container > :first-child {
+      right: 20%;
+      min-width: 70%;
+      float: right; }
+  #email-page .emailSuggestContainer {
+    display: -moz-box;
+    -moz-box-align: center;
+    -moz-box-pack: center;
+    -moz-box-orient: horizontal;
+    margin: 10px 0 0 15px;
+    min-height: 92px; }
+  #email-page .emailSuggest {
+    margin: 5px;
+    font-size: 40px;
+    padding: 15px;
+    border-width: 3px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #2458aa;
+    background: #fff;
+    color: #2458aa;
+    position: relative; }
+    #email-page .emailSuggest.pushed {
+      margin: 8px 5px 5px 5px; }
+
+#anonym-page .white-button {
+  width: 560px;
+  height: 132px;
+  background: #FFF;
+  border: none;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-align: left;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.3);
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px; }
+  #anonym-page .white-button .button-content {
+    color: #111;
+    font-size: 34px;
+    line-height: inherit !important;
+    height: 100%;
+    display: -moz-box;
+    -moz-box-align: center;
+    -moz-box-pack: center;
+    -moz-box-orient: vertical; }
+  #anonym-page .white-button .header {
+    font-size: 34px; }
+  #anonym-page .white-button .comment {
+    font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 22px; }
+  #anonym-page .white-button.pushed {
+    opacity: 0.7; }
+  #anonym-page .white-button.disabled {
+    opacity: .5; }
+  #anonym-page .white-button.pushed {
+    transform: translateY(3px); }
+  #anonym-page .white-button.pushed {
+    background: #FFF; }
+  #anonym-page .white-button .button-content {
+    line-height: 46px; }
+    #anonym-page .white-button .button-content strong {
+      font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+      font-weight: normal; }
+    #anonym-page .white-button .button-content i {
+      font-size: 26px;
+      color: #777;
+      line-height: normal; }
+
+#final-page .main .info.noreceipt {
+  top: 62px; }

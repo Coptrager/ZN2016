@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<object id="flowCfg" class="ru.mobw.coreas3.app.config.FlowConfig" />
+	
+	<object id="flow" class="ru.mobw.coreas3.app.flow.mcflow.MCFlowBase" depends-on="flowCfg">
+		<constructor-arg ref="flowCfg" />
+		<property name="routeData" ref="route" />
+		<property name="elementsMap">
+			<dictionary>
+				<entry><key>init</key><value ref="init" /></entry>
+				<entry><key>order</key><value ref="order" /></entry>
+				<entry><key>information</key><value ref="information" /></entry>
+				<entry><key>offertus</key><value ref="offertus" /></entry>
+				<entry><key>confirmation</key><value ref="confirmation" /></entry>
+				<entry><key>phone</key><value ref="phone" /></entry>
+				<entry><key>method</key><value ref="method" /></entry>
+				<entry><key>cash</key><value ref="cash" /></entry>
+				<entry><key>pin</key><value ref="pin" /></entry>
+				<entry><key>balance</key><value ref="balance" /></entry>
+				<entry><key>final</key><value ref="final" /></entry>
+				<entry><key>exit</key><value ref="exit" /></entry>
+			</dictionary>
+		</property>
+	</object>
+	
+	
+	<object id="init" class="elements.InitElement">
+		<constructor-arg ref="providers" />
+		<property name="id" value="1"/>
+	</object>
+	<object id="order" class="elements.OrderElement">
+		<constructor-arg class="String">
+			<value>
+				<![CDATA[Вы оплачиваете %title%]]>
+			</value>
+		</constructor-arg>
+		<constructor-arg ref="statuses" />
+		<property name="id" value="2"/>
+		<property name="countdownConfirm" value="false" />
+		<property name="exitConfirm" value="false" />
+	</object>
+	<object id="information" class="elements.InformationElement">
+		<property name="id" value="3"/>
+	</object>
+	<object id="offertus" class="elements.OffertusElement">
+		<property name="id" value="4"/>
+	</object>
+	<object id="confirmation" class="elements.ConfirmationElement">
+		<constructor-arg class="String">
+			<value>
+				<![CDATA[<font color="#2266BB" size="40">Сумма к оплате c учетом комиссии:   </font>{{roubles && <font color="#000000" size="48">%roubles%</font> <font color="#000000" size="26">%roubles_label%</font>}}{{roubles && {{copecks &&  }}}}{{copecks && <font color="#000000" size="48">%copecks%</font> <font color="#000000" size="26">%copecks_label%</font>}}]]>
+			</value>
+		</constructor-arg>
+		<constructor-arg class="String">
+			<value>
+				<![CDATA[Поставщик услуги: {{is_tour && Турфирма}} {{avia_name && %avia_name%}}{{avia_name || %title%}}<br>Подробная информация по телефону %phone% или на сайте %url%]]>
+			</value>
+		</constructor-arg>
+		<constructor-arg class="String">
+			<value><![CDATA[%description%]]></value>
+		</constructor-arg>
+		<property name="id" value="5"/>
+	</object>
+	<object id="method" class="elements.MethodElement">
+		<property name="id" value="6"/>
+	</object>
+	<object id="phone" class="elements.PhoneElement">
+		<property name="id" value="7"/>
+	</object>
+	<object id="cash" class="elements.CashElement">
+		<constructor-arg ref="billText" />
+		<property name="id" value="8"/>
+		<property name="countdownConfirm" value="false" />
+		<property name="exitConfirm" value="false" />
+	</object>
+	<object id="pin" class="elements.PinElement">
+		<property name="id" value="9"/>
+	</object>
+	<object id="balance" class="elements.BalanceElement">
+		<constructor-arg ref="billText" />
+		<property name="id" value="10"/>
+	</object>
+	<object id="final" class="elements.FinalElement">
+		<constructor-arg class="String">
+			<value>
+				<![CDATA[Не отходите от автомата, дождитесь, пожалуйста, статуса Вашего платежа.]]>
+			</value>
+		</constructor-arg>
+		<constructor-arg ref="statuses" />
+		<property name="id" value="11"/>
+		<property name="timeout" value="360000"/>
+		<property name="countdownConfirm" value="false" />
+		<property name="exitConfirm" value="false" />
+	</object>
+	<object id="exit" class="com.qiwi.elements.ExitElement">
+		<property name="id" value="12"/>
+	</object>
+	
+</objects>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<object id="flowCfg" class="ru.mobw.coreas3.app.config.FlowConfig">
+		<property name="bindingsRootPackage" value="${utility.path}" />
+	</object>
+	
+	<object id="flow" class="ru.mobw.coreas3.app.flow.mcflow.MCFlowBase" depends-on="flowCfg">
+		<constructor-arg ref="flowCfg" />
+		<property name="routeData" ref="route" />
+		<property name="elementsMap">
+            <dictionary>
+                <entry><key>init</key><value ref="init" /></entry>
+                <entry><key>start</key><value ref="start" /></entry>
+                <entry><key>info</key><value ref="info" /></entry>
+                <entry><key>offertus</key><value ref="offertus" /></entry>
+                <entry><key>simple</key><value ref="simple" /></entry>
+                <entry><key>advanced</key><value ref="advanced" /></entry>
+                <entry><key>select</key><value ref="select" /></entry>
+                <entry><key>counter</key><value ref="counter" /></entry>
+                <entry><key>date</key><value ref="date" /></entry>
+                <entry><key>confirm</key><value ref="confirm" /></entry>
+                <entry><key>phone</key><value ref="phone" /></entry>
+                <entry><key>cash</key><value ref="cash" /></entry>
+                <entry><key>final</key><value ref="final" /></entry>
+                <entry><key>exit</key><value ref="exit" /></entry>
+            </dictionary>
+        </property>
+    </object>
+	
+	
+    <object id="init" class="elements.InitElement">
+        <constructor-arg>
+			<array>
+				<value>
+					<object class="ru.mobw.coreas3.vo.ComissionProfile">
+					</object>
+				</value>
+			</array>
+		</constructor-arg>
+        <constructor-arg ref="billCash"/>
+        <constructor-arg class="XML" ref="regions" />
+		<property name="id" value="1"/>
+    </object>
+	
+	
+    <object id="start" class="elements.StartElement">
+		<constructor-arg value="3000" description="Таймаут окна с информацией" />
+		<property name="id" value="2"/>
+		<property name="labels">
+			<value>
+				<object>
+					<property name="titleTf" value="Межрегионгаз %region_name%"/>
+				</object>
+			</value>
+		</property>
+	</object>
+    <object id="info" class="elements.InfoElement">
+		<property name="id" value="3"/>
+	</object>
+    <object id="offertus" class="elements.OffertusElement">
+        <constructor-arg ref="offertusText" />
+		<property name="id" value="4"/>
+    </object>
+    <object id="simple" class="elements.SimpleElement">
+		<property name="id" value="5"/>
+	</object>
+    <object id="advanced" class="elements.AdvancedElement">
+		<property name="id" value="6"/>
+	</object>
+    <object id="select" class="elements.SelectElement">
+		<property name="id" value="7"/>
+	</object>
+    <object id="counter" class="elements.CounterElement">
+		<property name="id" value="8"/>
+	</object>
+    <object id="date" class="elements.DateElement">
+		<property name="id" value="9"/>
+	</object>
+    <object id="confirm" class="elements.ConfirmElement">
+		<property name="id" value="10"/>
+	</object>
+    <object id="phone" class="elements.PhoneInputElement">
+		<property name="id" value="11"/>
+	</object>
+    <object id="cash" class="elements.CashPaymentElement">
+		<property name="id" value="14"/>
+		<property name="timeout" value="210000"/>
+	</object>
+    <object id="final" class="elements.FinalElement">
+		<property name="id" value="13"/>
+		<property name="labels">
+			<value>
+				<object>
+					<property name="greetingsTf" value="Благодарим за использование платежного сервиса{{lite ||  QIWI (КИВИ)}}!"/>
+				</object>
+			</value>
+		</property>
+	</object>
+	<object id="exit" class="ru.qiwi.frankie.elements.ExitElement" />
+	
+</objects>

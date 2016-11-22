@@ -1,0 +1,43 @@
+﻿#top {
+    top:0px;
+    left:0px;
+    width:1280px;
+    height:190px;
+    padding-top:50px;
+    background:linear-gradient(to bottom,  #0078c0 0%,#006bb6 100%);
+}
+#topHeadText {
+    top:17px;
+    left:0px;
+    width:100%;
+    font-family:Whitney;
+    font-size:20px;
+    text-transform:uppercase;
+    color:white;
+}
+.topButton {
+    margin:0px 0 0 20px;
+}
+#groups {
+    top:220px;
+    left:0px;
+    width:1280px;
+    height:640px;
+    padding:15px 0 0 30px;
+}
+.groupButton-box {
+    width:380px;
+    height:125px;
+    margin:25px 0 0 20px;
+}
+#bottomMenu {
+    bottom:0px;
+    left:0px;
+}
+#w_main{
+    bottom:24px;
+    left:50px;
+    width:380px;
+    height:110px;
+    z-index:100;
+}

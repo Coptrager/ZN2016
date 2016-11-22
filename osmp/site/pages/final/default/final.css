@@ -1,0 +1,109 @@
+#logo {
+    top:80px;
+    left:0px;
+    width:100%;
+    height:140px;
+    background:url(../../resourses/qiwi_logo.svg) no-repeat center;
+}
+#head {
+    top: 260px;
+    left: 415px;
+    width: 450px;
+    height: 70px;
+    padding-top: 10px;
+    background: url(../../resourses/success.png) no-repeat left;
+    font-family: WhitneySemibold;
+    font-size: 48px;
+    color: #111111;
+    text-align: right;
+}
+#payInfo {
+    top:380px;
+    left:100px;
+    width:1080px;
+    height:auto;
+    font-family:Whitney;
+    font-size:40px;
+    color:#111111;
+}
+#container {
+    width:100%;
+}
+#alert {
+    width:100px;
+    height:100px;
+    /*display:inline-block;*/
+    background:url('./resourses/alarm.png') no-repeat left;
+}
+#text {
+    width:980px;
+}
+#thanksText {
+    font-size: 20px;
+    font-weight: 400;
+    width: 100%;
+    top: 780px;
+}
+p {
+    float:left;
+    font:22px Whitney;
+}
+    p span {
+        width:auto;
+        display:inline-block;
+        border-bottom:1px dotted #3958a9;
+        color:#3958a9;
+        font:inherit;
+        transition:all 150ms;
+    }
+    .info-text span:active {
+        opacity:0.5;
+    }
+
+.finalButtons{
+    bottom:250px;
+    -moz-box-sizing:border-box;
+    padding-top:35px;
+    width:565px;
+    height:100px;
+    border-radius:12px;
+    font:28px Whitney;
+    color:white;
+    text-transform:uppercase;
+    background:linear-gradient(to bottom,  #0097d7 0%,#0097d7 32%,#008bce 100%);
+    transition:opacity 150ms;
+}
+.finalButtons:active{
+    bottom:247px;
+    opacity:0.7;
+}
+#payStatus{
+    left:50px;
+}
+#payCheck{
+    right:50px;
+}
+#w_final{
+    top:0px;
+    left:0px;
+    width:1280px;
+    height:150px;
+}
+#w_final_lead{
+    bottom:0px;
+    left:0px;
+    width:1280px;
+    height:200px;
+}
+#w_final_poll{
+    top:105px;
+    left:0px;
+    width:1280px;
+    height:650px;
+}
+#w_final_tech{
+    top:-1px;
+    left:-1px;
+    width:1px;
+    height:1px;
+}

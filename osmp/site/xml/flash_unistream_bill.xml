@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<object id="bill" class="String">
+		<constructor-arg>
+			<value>
+<![CDATA[_receipt_ВНЕСЕНИЕ+СРЕДСТВ+В=
+КИВИ Банк (АО)
+Лицензия №2241
+ИНН 3123011520
+117648, г. Москва, мкр. Чертаново Северное, д. 1А, корп. 1
+Принято: %total%
+Сервисный сбор: %commission%
+{{usd && Сумма к выдаче в Долларах США: %amountusd% USD
+Курс конвертации: 1 USD ═ %rateusd% RUB}}{{euro && Сумма к выдаче в Евро: %amounteuro% EURO
+Курс конвертации: 1 EURO ═ %rateeuro% RUB}}{{pound && Сумма к выдаче в Фунтах: %amountpound% GBP
+Курс конвертации: 1 GBP ═ %ratepound% RUB}}
+{{card && Номер платежной карты: %card%
+}}&_receipt_СУММА+К+ПОЛУЧЕНИЮ=%amount%
+Отправитель: %sender%
+Получатель: %recipient%
+Страна получения: %country%
+Контрольный номер перевода: %controlcode%
+Операция по переводу средств через систему Unistream принята КИВИ Банк (АО) к исполнению.
+%service%: %service_number%
+------------------------------------
+&prt_top_reklama=Больше возможностей на сайте: WWW.QIWI.COM
+&prt_bottom_reklama=Телефон поддержки Visa QIWI Wallet:\n8(800) 555-74-94]]>
+			</value>
+		</constructor-arg>
+	</object>
+</objects>

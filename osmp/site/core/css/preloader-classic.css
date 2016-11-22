@@ -1,0 +1,228 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+@font-face {
+  font-family: 'WhitneyBold';
+  src: url("../fonts/Whitney-Bold.woff");
+  font-weight: bold; }
+@font-face {
+  font-family: 'WhitneyLight';
+  src: url("../fonts/Whitney-Light.woff");
+  font-weight: lighter; }
+@font-face {
+  font-family: 'WhitneyMedium';
+  src: url("../fonts/Whitney-Medium.woff");
+  font-weight: normal; }
+@font-face {
+  font-family: 'WhitneySemibold';
+  src: url("../fonts/Whitney-Semibold.woff");
+  font-weight: 600; }
+@font-face {
+  font-family: 'WhitneyBook';
+  src: url("../fonts/Whitney-Book.woff");
+  font-weight: 100; }
+html, body, div, span {
+  -moz-user-select: none; }
+
+body,
+input {
+  color: #111;
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px; }
+
+body {
+  cursor: pointer;
+  background: #E9E8E6;
+  width: 1280px;
+  height: 1024px;
+  overflow: hidden;
+  position: fixed; }
+
+html {
+  background: black; }
+
+strong {
+  font-family: "WhitneySemibold", Helvetica, Arial, sans-serif;
+  font-weight: 600; }
+
+sup {
+  font-size: 80%;
+  vertical-align: super; }
+
+a {
+  color: #111;
+  text-decoration: none; }
+
+.hidden {
+  display: none; }
+
+.clear {
+  clear: both; }
+
+.advert {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 800px;
+  height: 600px; }
+
+.preloader-wrapper {
+  z-index: 1000;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 1280px;
+  height: 1024px;
+  position: fixed;
+  text-align: center; }
+  .preloader-wrapper > :first-child {
+    display: -moz-box;
+    -moz-box-align: center;
+    -moz-box-pack: center;
+    -moz-box-orient: vertical; }
+    .preloader-wrapper > :first-child > * {
+      padding: 7.5px; }
+    .preloader-wrapper > :first-child .animation, .preloader-wrapper > :first-child > :first-child {
+      padding-top: 30px; }
+    .preloader-wrapper > :first-child .message {
+      font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+      font-weight: normal;
+      font-size: 30px; }
+    .preloader-wrapper > :first-child .header {
+      font-family: "WhitneySemibold", Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 34px; }
+    .preloader-wrapper > :first-child.regular-logo:before {
+      content: url("../img/qiwi_big.png"); }
+    .preloader-wrapper > :first-child.start-logo:before {
+      content: url("../img/qiwi_preloader.png"); }
+  .preloader-wrapper .start-preloader {
+    position: relative;
+    width: 1280px;
+    height: 1024px;
+    background: #777;
+    color: #FFF; }
+    .preloader-wrapper .start-preloader .message {
+      display: none; }
+    .preloader-wrapper .start-preloader .header {
+      font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+      font-weight: normal; }
+  .preloader-wrapper .box-preloader {
+    margin-top: 25%;
+    width: 1280px;
+    height: 460px;
+    background: #FFF; }
+  .preloader-wrapper .animation-no {
+    padding-top: 30px;
+    display: -moz-box; }
+    .preloader-wrapper .animation-no > * {
+      -moz-transform: translateZ(0);
+      margin: 15px;
+      width: 20px;
+      height: 20px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      background: #AEAAB1; }
+  .preloader-wrapper .animation {
+    display: -moz-box; }
+    .preloader-wrapper .animation > * {
+      -moz-transform: translateZ(0);
+      margin: 15px;
+      width: 20px;
+      height: 20px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      background: #AEAAB1;
+      -moz-animation: preloader-animation-keyframes 2s;
+      animation: preloader-animation-keyframes 2s; }
+    .preloader-wrapper .animation > :nth-child(1) {
+      -moz-animation-delay: 0.2s;
+      animation-delay: 0.2s; }
+    .preloader-wrapper .animation > :nth-child(2) {
+      -moz-animation-delay: 0.4s;
+      animation-delay: 0.4s; }
+    .preloader-wrapper .animation > :nth-child(3) {
+      -moz-animation-delay: 0.6s;
+      animation-delay: 0.6s; }
+    .preloader-wrapper .animation > :nth-child(4) {
+      -moz-animation-delay: 0.8s;
+      animation-delay: 0.8s; }
+    .preloader-wrapper .animation > :nth-child(5) {
+      -moz-animation-delay: 1s;
+      animation-delay: 1s; }
+    .preloader-wrapper .animation > :nth-child(6) {
+      -moz-animation-delay: 1.2s;
+      animation-delay: 1.2s; }
+    .preloader-wrapper .animation > :nth-child(7) {
+      -moz-animation-delay: 1.4s;
+      animation-delay: 1.4s; }
+    .preloader-wrapper .animation > :nth-child(8) {
+      -moz-animation-delay: 1.6s;
+      animation-delay: 1.6s; }
+
+@-moz-keyframes preloader-animation-keyframes {
+  0%, 13% {
+    background: #FAB131;
+    -moz-transform: translateZ(0); }
+  38%, 50% {
+    background: #F27830;
+    -moz-transform: translateZ(0); }
+  63%, 100% {
+    background: #AEAAB1;
+    -moz-transform: translateZ(0); } }
+@keyframes preloader-animation-keyframes {
+  0%, 13% {
+    background: #FAB131;
+    -moz-transform: translateZ(0); }
+  38%, 50% {
+    background: #F27830;
+    -moz-transform: translateZ(0); }
+  63%, 100% {
+    background: #AEAAB1;
+    -moz-transform: translateZ(0); } }

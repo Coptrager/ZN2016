@@ -1,0 +1,1 @@
+"use strict";System.register(["dispatcher"],function(_export,_context){var Dispatcher;return{setters:[function(_dispatcher){Dispatcher=_dispatcher["default"]}],execute:function(){_export("default",{Events:new Dispatcher})}}});

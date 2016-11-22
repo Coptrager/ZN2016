@@ -1,0 +1,23 @@
+{
+  "paymentProviderId": "0",
+  "changeWalletId": "7406",
+  "offertus": "../../QK_oferta_bank.xml,../../oferta_ogv.xml",
+  "currency": 643,
+  "maxSum": "15000",
+  "minSum": "0.01",
+  "qwCommission": [
+    {
+      "commissionInfo" : [
+        {
+          "commissionFix" : 15,
+          "commissionMax" : "inf",
+          "commissionMin" : "inf",
+          "commissionPercent" : 2,
+          "fromAmount" : 0.0,
+          "toAmount" : "inf"
+        }
+      ],
+      "providerId" : "0"
+    }
+  ]
+}

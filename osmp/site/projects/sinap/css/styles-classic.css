@@ -1,0 +1,329 @@
+.list-scrollable .list-container {
+  height: 620px;
+  width: 860px;
+  margin: auto;
+  overflow: hidden; }
+  .list-scrollable .list-container .list-content {
+    width: 50000px;
+    -moz-transition: margin-left 1s ease-in-out;
+    transition: margin-left 1s ease-in-out; }
+    .list-scrollable .list-container .list-content .page {
+      display: -moz-box;
+      -moz-box-align: center;
+      -moz-box-pack: center;
+      -moz-box-orient: vertical;
+      -moz-box-pack: start;
+      width: 860px; }
+      .list-scrollable .list-container .list-content .page .line {
+        font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        margin: 15px 0; }
+        .list-scrollable .list-container .list-content .page .line .button {
+          width: 390px;
+          height: 125px;
+          background: #FFF;
+          border: none;
+          -moz-border-radius: 10px;
+          border-radius: 10px;
+          text-align: center;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          -moz-box-shadow: 0 6px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 6px 0 rgba(0, 0, 0, 0.3);
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          display: -moz-box;
+          -moz-box-align: center;
+          -moz-box-pack: center;
+          -moz-box-orient: vertical;
+          overflow: hidden;
+          margin-right: 20px; }
+          .list-scrollable .list-container .list-content .page .line .button .button-content {
+            color: #111;
+            font-size: 18px;
+            line-height: inherit !important;
+            height: 100%;
+            display: -moz-box;
+            -moz-box-align: center;
+            -moz-box-pack: center;
+            -moz-box-orient: vertical; }
+          .list-scrollable .list-container .list-content .page .line .button .header {
+            font-size: 18px; }
+          .list-scrollable .list-container .list-content .page .line .button .comment {
+            font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+            font-weight: normal;
+            font-size: 22px; }
+          .list-scrollable .list-container .list-content .page .line .button.pushed {
+            opacity: 0.7; }
+          .list-scrollable .list-container .list-content .page .line .button.disabled {
+            opacity: .5; }
+          .list-scrollable .list-container .list-content .page .line .button.pushed {
+            transform: translateY(3px); }
+          .list-scrollable .list-container .list-content .page .line .button.pushed {
+            background: #FFF; }
+          .list-scrollable .list-container .list-content .page .line .button:last-child {
+            margin-right: 0; }
+          .list-scrollable .list-container .list-content .page .line .button .button-content {
+            line-height: normal;
+            text-align: center;
+            display: -moz-box;
+            -moz-box-align: center;
+            -moz-box-pack: center;
+            -moz-box-orient: vertical;
+            -moz-box-flex: 1; }
+            .list-scrollable .list-container .list-content .page .line .button .button-content strong {
+              font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+              font-weight: normal; }
+            .list-scrollable .list-container .list-content .page .line .button .button-content i {
+              font-size: 12px; }
+          .list-scrollable .list-container .list-content .page .line .button.pushed {
+            transform: none;
+            margin-top: -3px;
+            margin-bottom: -3px; }
+
+.commission-info-block {
+  width: 1280px;
+  background: #FFB82A;
+  color: #111;
+  height: 80px;
+  text-align: center; }
+  .commission-info-block > * {
+    font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    display: inline-block;
+    line-height: 80px;
+    font-size: 36px;
+    margin-left: 50px; }
+    .commission-info-block > * .label {
+      font-family: "WhitneySemibold", Helvetica, Arial, sans-serif;
+      font-weight: 600; }
+
+.info-button {
+  position: fixed;
+  left: 1140px;
+  top: 40px;
+  width: 100px;
+  height: 100px;
+  background: url("../img/icons/question_mark.png") center center no-repeat; }
+  .info-button.pushed {
+    transform: translateY(3px); }
+  .info-button.pushed {
+    background: url("../img/icons/question_mark_press.png") center center no-repeat; }
+
+.markdown-info-popup {
+  text-align: center;
+  font-size: 20px; }
+  .markdown-info-popup p {
+    font-family: "WhitneyBook", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    padding: 4px 0; }
+  .markdown-info-popup h3 {
+    text-align: center;
+    font-size: 26px;
+    margin-top: 20px;
+    font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+    font-weight: normal; }
+  .markdown-info-popup strong {
+    font-family: "WhitneySemibold", Helvetica, Arial, sans-serif;
+    font-weight: 600; }
+
+.checkbox {
+  margin: 5px; }
+  .checkbox .button-content {
+    font-size: 40px; }
+
+.sinap-field {
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  height: 864px;
+  width: 1280px; }
+  .sinap-field .page-header .title-content {
+    margin: 20px 0; }
+  .sinap-field.choice-field .reference {
+    font-size: 22px; }
+
+.page-sum {
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  height: 864px;
+  width: 1280px; }
+  .page-sum > * {
+    margin: 5px 0; }
+
+.sum-options-page {
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  height: 864px;
+  width: 1280px; }
+  .sum-options-page .buttons-container .button-row > * {
+    overflow: visible; }
+  .sum-options-page .option-button {
+    position: relative; }
+    .sum-options-page .option-button .button-content {
+      max-width: 400px; }
+    .sum-options-page .option-button .outer {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      padding-top: 30px;
+      font-size: 26px;
+      line-height: normal;
+      white-space: pre; }
+
+.page-favourites {
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  height: 864px;
+  width: 1280px; }
+  .page-favourites .page-header .title-content {
+    margin: 30px 0; }
+  .page-favourites .list-scrollable .list-container {
+    height: 720px;
+    width: 880px;
+    margin: auto;
+    overflow: hidden; }
+    .page-favourites .list-scrollable .list-container .list-content {
+      width: 50000px;
+      -moz-transition: margin-left 1s ease-in-out;
+      transition: margin-left 1s ease-in-out; }
+      .page-favourites .list-scrollable .list-container .list-content .page {
+        display: -moz-box;
+        -moz-box-align: center;
+        -moz-box-pack: center;
+        -moz-box-orient: vertical;
+        -moz-box-pack: start;
+        width: 880px; }
+        .page-favourites .list-scrollable .list-container .list-content .page .line {
+          font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+          font-weight: normal;
+          margin: 15px 0; }
+          .page-favourites .list-scrollable .list-container .list-content .page .line .button {
+            width: 850px;
+            height: 150px;
+            background: #FFF;
+            border: none;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            text-align: center;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -moz-box-shadow: 0 6px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 0 6px 0 rgba(0, 0, 0, 0.3);
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            display: -moz-box;
+            -moz-box-align: center;
+            -moz-box-pack: center;
+            -moz-box-orient: vertical;
+            overflow: hidden;
+            margin-right: 0; }
+            .page-favourites .list-scrollable .list-container .list-content .page .line .button .button-content {
+              color: #111;
+              font-size: 32px;
+              line-height: inherit !important;
+              height: 100%;
+              display: -moz-box;
+              -moz-box-align: center;
+              -moz-box-pack: center;
+              -moz-box-orient: vertical; }
+            .page-favourites .list-scrollable .list-container .list-content .page .line .button .header {
+              font-size: 32px; }
+            .page-favourites .list-scrollable .list-container .list-content .page .line .button .comment {
+              font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+              font-weight: normal;
+              font-size: 22px; }
+            .page-favourites .list-scrollable .list-container .list-content .page .line .button.pushed {
+              opacity: 0.7; }
+            .page-favourites .list-scrollable .list-container .list-content .page .line .button.disabled {
+              opacity: .5; }
+            .page-favourites .list-scrollable .list-container .list-content .page .line .button.pushed {
+              transform: translateY(3px); }
+            .page-favourites .list-scrollable .list-container .list-content .page .line .button.pushed {
+              background: #FFF; }
+            .page-favourites .list-scrollable .list-container .list-content .page .line .button:last-child {
+              margin-right: 0; }
+            .page-favourites .list-scrollable .list-container .list-content .page .line .button .button-content {
+              line-height: normal;
+              text-align: center;
+              display: -moz-box;
+              -moz-box-align: center;
+              -moz-box-pack: center;
+              -moz-box-orient: vertical;
+              -moz-box-align: start;
+              margin-left: 30px;
+              -moz-box-flex: 1; }
+              .page-favourites .list-scrollable .list-container .list-content .page .line .button .button-content strong {
+                font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+                font-weight: normal; }
+              .page-favourites .list-scrollable .list-container .list-content .page .line .button .button-content i {
+                font-size: 26px; }
+            .page-favourites .list-scrollable .list-container .list-content .page .line .button.pushed {
+              transform: none;
+              margin-top: 3px;
+              margin-bottom: -3px; }
+  .page-favourites .list-scrollable .list-container .list-content .page .line .button {
+    width: 600px; }
+    .page-favourites .list-scrollable .list-container .list-content .page .line .button .button-content {
+      -moz-box-align: start; }
+
+.confirmation-page {
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  height: 864px;
+  width: 1280px; }
+  .confirmation-page .page-header .title-content {
+    margin: 20px 0; }
+  .confirmation-page .license {
+    font-size: 14px;
+    color: #111;
+    padding: 0 50px;
+    text-align: center;
+    margin: 10px 0; }
+  .confirmation-page .change {
+    width: 280px;
+    height: 88px;
+    background: -moz-linear-gradient(top, #0089cd 0%, #007ac2 100%);
+    background: linear-gradient(to bottom, #0089cd 0%, #007ac2 100%);
+    border: none;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-align: center;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 20px; }
+    .confirmation-page .change .button-content {
+      color: #FFF;
+      font-size: 24px;
+      line-height: inherit !important;
+      height: 100%;
+      display: -moz-box;
+      -moz-box-align: center;
+      -moz-box-pack: center;
+      -moz-box-orient: vertical; }
+    .confirmation-page .change .header {
+      font-size: 24px; }
+    .confirmation-page .change .comment {
+      font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+      font-weight: normal;
+      font-size: 22px; }
+    .confirmation-page .change.pushed {
+      opacity: 0.7; }
+    .confirmation-page .change.disabled {
+      opacity: .5; }
+    .confirmation-page .change.pushed {
+      transform: translateY(3px); }
+    .confirmation-page .change.pushed {
+      background: -moz-linear-gradient(top, #0089cd 0%, #007ac2 100%);
+      background: linear-gradient(to bottom, #0089cd 0%, #007ac2 100%); }

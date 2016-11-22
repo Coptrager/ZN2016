@@ -1,0 +1,7 @@
+{
+	"version": "0.0.2",
+	"plugins": [],
+	"locales": {
+		"ru": "../projects/itunes/locale.ru.json"
+	}
+}

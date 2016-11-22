@@ -1,0 +1,6 @@
+{
+    "name": "help",
+    "showTimeout": "15",
+    "payTimeout": "30",
+    "version": "0.1.3"
+}

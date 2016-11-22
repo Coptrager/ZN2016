@@ -1,0 +1,9 @@
+{
+  "name":"regUI",
+  "startPage":"index",
+  "version":"REG v4.7.57.1",
+  "statistics":true,
+  "advert":true,
+  "browser":"ff_17",
+  "params":{}
+}

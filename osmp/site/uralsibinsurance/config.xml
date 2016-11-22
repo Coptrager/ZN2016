@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scripts>
+	<config totalTime="600" defaultIdleTime="60" version="2.0" log="false">
+
+		<session>
+			<var key="settings.MGT_path_format" value="page:time"/>
+			<var key="settings.MGT_date_format" value="yyyy-mm-dd hh:nn:ss"/>
+			<var key="settings.MGT_exit_last_page" value="true"/>
+			<var key="settings.exclude_zero_page" value="true"/>
+			<var key="reg4" value="false"/>
+			
+			<var key="settings.project_version" value="1.0.0"/>
+			<var key='settings.project_number' value='3932'/>
+			<var key='settings.project_name' value='uralsib'/>
+			
+			<var key='check_status.PrvId' value='323'/>
+			<var key='check_status.TermId' value='true'/>
+			<var key='check_status.PrtStatus' value='true'/>
+			
+			<var key='fake_pages.phoneDigitPopup.index' value='12'/>
+			
+			<var key='extras.oferta_visited' value='0'/>
+			<var key='extras.pay' value='0'/>
+			
+			<var key='alternative_exit_page' value='../index.html'/>
+		</session>
+
+		<statistic defaultProfile="bad">
+			<add>
+				<bad>
+					<var name='_extra_MGT_oferta' value='extras.oferta_visited'/>
+				</bad>
+				<good>
+					<includeProfile name='bad'/>
+					<var name='_extra_MGT_phone' value='user_info.phone'/>
+					<var name='_extra_MGT_email' value='user_info.email'/>
+					<var name='_extra_MGT_pay' value='extras.pay'/>
+					<var name='_extra_MGT_oferta' value='extras.oferta_visited'/>
+					<var name='_extra_MGT_package' value='extras.program'/>
+					<var name='_extra_MGT_period' value='extras.period'/>
+					<var name='_extra_MGT_city' value='extras.city'/>
+					<var name='_extra_MGT_last_name' value='user_info.last_name'/>
+					<var name='_extra_MGT_first_name' value='user_info.first_name'/>
+					<var name='_extra_MGT_middle_name' value='user_info.middle_name'/>
+					<var name='_extra_MGT_birth' value='user_info.birth_date_formatted'/>
+					<var name='_extra_MGT_passport' value='user_info.passport'/>
+					<var name='_extra_MGT_passport_data' value='user_info.passport_birth_date_formatted'/>
+					<var name='_extra_MGT_gender' value='user_info.sex'/>
+					<var name='_extra_MGT_delivery_method' value='extras.change'/>
+					<var name="_extra_MGT_summ" value="payments.cash" />
+					<var name="_extra_MGT_summ_payment" value="payments.MinCashLimit" />
+					<var name="_extra_MGT_delivery" value="payments.change" />
+				</good>
+			</add>
+			<object>
+			</object>
+			<bad
+				vars='_extra_MGT_project_number,_extra_MGT_exit,_extra_MGT_date,_extra_MGT_time,_extra_MGT_path,getAccountNumber'
+				post='./return.html'/>
+			<good
+				vars='_extra_MGT_project_number,_extra_MGT_exit,_extra_MGT_date,_extra_MGT_time,_extra_MGT_path,getAccountNumber'
+				post='./return.html'/>
+		</statistic>
+
+		<defaultBackground type="0" name="bg_base"/>
+
+		<pages>
+			
+			<page name="checkStatusPage"  index='1'>
+				<content type="2" name="CheckStatus" symbolName="loadScreen">
+					<componentEvents>
+						<event name='success' page="startPage" />
+						<event name='fail' page="startPage" />
+					</componentEvents>
+				</content>
+			</page>
+			
+			<page name="startPage" index='1'>
+				<content type="0" name="bg_welcome"/>
+				<content type='1' name='exit' pos='40,878'/>
+				<content type='1' name='btn1_a' pos='380,613' page="tarifPage" />
+				<content type='1' name='oferta' pos='1130,878' page="ofertaPage" />
+			</page>
+			
+			<page name="ofertaPage" index='2'>
+				<content type="2" name="HTMLOferta">
+					<param name="set" key0="extras.oferta_visited" value0="1" />
+					<param name="document" value="oferta.html" />
+					<param name="scroll_length" value="10" />
+				</content>
+				<content type='1' name='back' pos='40,878' page='startPage'/>
+				<content type='1' name='oferta3' pos='515,878' />
+			</page>
+			
+			<page name="tarifPage" index='3'>
+				<content type="0" name="bg_2" />
+				<content type="2" name="Page" symbolName="TarifPage">
+					<param name="set" key0="extras.pay" value0="1" />
+					<param name="custom_button_0" instance="femaleButton" key0="extras.program" value0="1" page="periodPage1" 
+							key1="extras.periodText1" value1="2053 руб."
+							key2="extras.periodText2" value2="1540 руб."
+							key3="extras.periodText3" value3="1027 руб." 
+							key4="extras.tarif_txt" value4='"Всё включено"' />
+					<param name="custom_button_1" instance="Button" key0="extras.program" value0="2" page="periodPage2" 
+							key1="extras.periodText1" value1="1704 руб."
+							key2="extras.periodText2" value2="1278 руб."
+							key3="extras.periodText3" value3="852 руб." 
+							key4="extras.tarif_txt" value4='"Базовый"' />
+				</content>
+				<content type='1' name='back' pos='40,878' page='startPage'/>
+				<content type='1' name='oferta3' pos='515,878' />
+			</page>
+			
+			<page name="periodPage1" index='4'>
+				<content type="0" name="bg_3" />
+				<content type="2" name="Page" symbolName="periodPage">
+					<param name="prevButtonTarget" />
+					<param name="custom_button_0" instance="btn1" key0="extras.period" value0="One_year" key1="extras.period_txt" value1=" на 1 год" 
+						key2="payments.MinCashLimit" value2="2053" page="cityPage" />
+					<param name="custom_button_1" instance="btn2" key0="extras.period" value0="six_months" key1="extras.period_txt" value1=" на 6 месяцев" 
+						key2="payments.MinCashLimit" value2="1540" page="cityPage" />
+					<param name="custom_button_2" instance="btn3" key0="extras.period" value0="three_months" key1="extras.period_txt" value1=" на 3 месяца" 
+						key2="payments.MinCashLimit" value2="1027" page="cityPage" />
+					<param name="custom_label_0" instance="label1" key="extras.periodText1" />
+					<param name="custom_label_1" instance="label2" key="extras.periodText2" />
+					<param name="custom_label_2" instance="label3" key="extras.periodText3" />
+				</content>
+				<content type='1' name='back' pos='40,878' page='tarifPage'/>
+				<content type='1' name='oferta3' pos='515,878' />
+			</page>
+			
+			<page name="periodPage2" index='4'>
+				<content type="0" name="bg_3" />
+				<content type="2" name="Page" symbolName="periodPage">
+					<param name="prevButtonTarget" />
+					<param name="custom_button_0" instance="btn1" key0="extras.period" value0="One_year" key1="extras.period_txt" value1=" на 1 год" 
+						key2="payments.MinCashLimit" value2="1704" page="cityPage" />
+					<param name="custom_button_1" instance="btn2" key0="extras.period" value0="six_months" key1="extras.period_txt" value1=" на 6 месяцев" 
+						key2="payments.MinCashLimit" value2="1278" page="cityPage" />
+					<param name="custom_button_2" instance="btn3" key0="extras.period" value0="three_months" key1="extras.period_txt" value1=" на 3 месяца" 
+						key2="payments.MinCashLimit" value2="852" page="cityPage" />
+					<param name="custom_label_0" instance="label1" key="extras.periodText1" />
+					<param name="custom_label_1" instance="label2" key="extras.periodText2" />
+					<param name="custom_label_2" instance="label3" key="extras.periodText3" />
+				</content>
+				<content type='1' name='back' pos='40,878' page='tarifPage'/>
+				<content type='1' name='oferta3' pos='515,878' />
+			</page>
+			
+			<page name="cityPage" index='5'>
+				<content type="0" name="bg_4"/>
+				<content type="2" name="Page" symbolName="cityPage">
+					<param name="prevButton" />
+					<param name="custom_button_0" instance="femaleButton" key0="extras.city" value0="moscow" key1="extras.city_txt" value1="Москва" page="fioPage" />
+				</content>
+				<content type='1' name='oferta3' pos='515,878' />
+			</page>
+			
+			<page name="fioPage" index='6'>
+				<content type="0" name="bg_5" />
+				<content type="2" name="FioFull">
+					<param name="alwaysName" value="true" />
+					<param name="alwaysPatronymic" value="true" />
+					<componentEvents>
+						<event name="submitted" page="birthdayPage" />
+					</componentEvents>
+				</content>
+				<content type='1' name='back' pos='40,878' page='cityPage'/>
+				<content type='1' name='oferta3' pos='515,878' />
+			</page>
+			
+			<page name="birthdayPage" index='7'>
+				<content type="0" name="bg_6" />
+				<content type='1' name='back' pos='40,878' page='fioPage'/>
+				<content type='1' name='oferta3' pos='515,878' />
+				<content type="2" name="SelectDate">
+					<param name="settings" yearChars="4" />
+					<componentEvents>
+						<event name="submitted" page="passportPage" />
+					</componentEvents>
+				</content>
+			</page>
+			
+			<page name="passportPage" index='8'>
+				<content type='1' name='back' pos='40,878' page='birthdayPage'/>
+				<content type='1' name='oferta3' pos='515,878' />
+				<content type="2" name="EMail" symbolName="NamePage">
+					<param name="settings" key="user_info.passport" />
+					<componentEvents>
+						<event name="submitted" page="passportDatePage" />
+					</componentEvents>
+				</content>
+			</page>
+			
+			<page name="passportDatePage" index='9'>
+				<content type="0" name="bg_7" />
+				<content type='1' name='back' pos='40,878' page='passportPage'/>
+				<content type='1' name='oferta3' pos='515,878' />
+				<content type="2" name="SelectDate">
+					<param name="settings" keyPreffix="passport" yearChars="4"/>
+					<componentEvents>
+						<event name="submitted" page="sexPage" />
+					</componentEvents>
+				</content>
+			</page>
+			
+			<page name="sexPage" index='10'>
+				<content type="2" name="Page" symbolName="SexPage">
+					<param name="custom_button_0" instance="femaleButton" key0="user_info.sex" value0="Woman" key1="extras.sex_txt" value1="Женский" page="phonePage" />
+					<param name="custom_button_1" instance="maleButton" key0="user_info.sex" value0="Man" key1="extras.sex_txt" value1="Мужской" page="phonePage" />
+				</content>
+				<content type='1' name='back' pos='40,878' page='passportDatePage'/>
+				<content type='1' name='oferta3' pos='515,878' />
+			</page>
+			
+			<page name="phonePage" index='11' stat='good'>
+				<content type='1' name='back' pos='40,878' page="sexPage" />
+				<content type="2" name="Phone">
+					<componentEvents>
+						<event name='submitted' page="emailPage" />
+					</componentEvents>
+				</content>
+			</page>
+			
+			<page name="emailPage" index='13'>
+				<content type='1' name='back' pos='40,878' page='phonePage'/>
+				<content type='1' name='oferta3' pos='515,878' />
+				<content type="2" name="EMail">
+					<componentEvents>
+						<event name="submitted" page="confirmPage" />
+					</componentEvents>
+				</content>
+			</page>
+			
+			<page name="confirmPage" index='14'>
+				<content type="2" name="Process">
+					<param name="set" key0="extras.phone_txt" value0="+7 " key1="extras.price_txt" value1=" рублей" />
+					<param 
+						name="action0" 
+						type="concat"
+						source0="extras.tarif_txt" 
+						source1="extras.period_txt" 
+						target="extras.tarif_txt" />
+					<param 
+						name="action1" 
+						type="concat"
+						source0="extras.phone_txt" 
+						source1="user_info.phone_formatted" 
+						target="extras.phone_txt" />
+					<param 
+						name="action2" 
+						type="concat"
+						term=" выдан "
+						source0="user_info.passport" 
+						source1="user_info.passport_birth_date_formatted"
+						target="extras.passport_txt" />
+					<param 
+						name="action3" 
+						type="concat"
+						source0="payments.MinCashLimit" 
+						source1="extras.price_txt" 
+						target="extras.price_txt" />
+				</content>
+				<content type="2" name="Page" symbolName="dataPage">
+					<param name="custom_button_0" instance="nextButton" page="changePage" />
+					<param name="custom_label_0" instance="city_txt" key="extras.city_txt" />
+					<param name="custom_label_1" instance="package_txt" key="extras.tarif_txt" />
+					<param name="custom_label_2" instance="price_txt" key="extras.price_txt" />
+					<param name="custom_label_3" instance="name_txt" key="user_info.fio_full" />
+					<param name="custom_label_4" instance="sex_txt" key="extras.sex_txt" />
+					<param name="custom_label_5" instance="birth_txt" key="user_info.birth_date_formatted" />
+					<param name="custom_label_6" instance="passport_txt" key="extras.passport_txt" />
+					<param name="custom_label_7" instance="phone_txt" key="extras.phone_txt" />
+					<param name="custom_label_8" instance="email_txt" key="user_info.email" />
+				</content>
+				<content type='1' name='back' pos='40,878' page='emailPage'/>
+				<content type='1' name='oferta3' pos='515,878' />
+			</page>
+			
+			<page name="changePage" index="15">
+				<content type="2" name="Page" symbolName="selectChangeType">
+					<param name="custom_button_0" instance="changeToMobile" key0="extras.change" value0="1" page="cashPage" />
+					<param name="custom_button_1" instance="changeToWallet" key0="extras.change" value0="1" key1="user_info.change_prv_id" value1="19993" page="cashPage" />
+				</content>
+				<content type='1' name='back' pos='40,878' page='confirmPage'/>
+				<content type='1' name='oferta3' pos='515,878' />
+			</page>
+			
+			<page name="cashPage" index='16' stat='good' idleTime="240">
+				<content type="2" name="ContentCash" symbolName="CashPage">
+					<componentEvents>
+						<event name='pay_success' page='okPage'/>
+						<event name="pay_fail" page="failPage"/>
+						<event name="not_enough" page="noMoneyPage"/>
+						<event name="terminal_fail" page="failPage"/>
+						<event name='prevButtonClick' page='changePage'/>
+					</componentEvents>
+					<param name="alwaysAllow" value="true"/>
+					<param name="PrvId" value="18063"/>
+					<param name="PrvName" value='Уралсиб'/>
+					<param name="MaxCashLimit" value="2500"/>
+				</content>
+			</page>
+			
+			<page name="okPage" idleTime="30" index="17" stat="good">
+				<content type="2" name="Process">
+					<param name="set" 
+						key0="extras.phone2_txt" value0="1. На " />
+					<param 
+						name="action0"
+						type="concat" 
+						source0="extras.phone2_txt"
+						source1="extras.phone_txt"
+						target="extras.phone2_txt" />
+				</content>
+				<content type="2" name="Page" symbolName="bg_ok">
+					<param name="custom_label_0" instance="price_txt" key="extras.price_txt" />
+					<param name="custom_label_1" instance="phone_txt" key="extras.phone2_txt" />
+					<param name="custom_label_2" instance="email_txt" key="user_info.email" />
+				</content>
+				<content type="1" name="exit" pos="40,878"/>
+			</page>
+			
+			<page name="failPage" idleTime="10" index="18">
+				<content type="0" name="bg_fail"/>
+				<content type="1" name="exit" pos="40,878"/>
+			</page>
+			
+			<page name="noMoneyPage" idleTime="10" index="18">
+				<content type="0" name="bg_noMoney"/>
+				<content type="1" name="exit" pos="40,878"/>
+			</page>
+			
+		</pages>
+	</config>
+</scripts>
+

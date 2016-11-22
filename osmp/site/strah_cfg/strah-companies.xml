@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects
+	xmlns:util="http://www.springactionscript.org/schema/util">
+	<object id="comissionProfiles" class="Object">
+		<property name="renaissance">
+			<value>
+				<object class="ru.mobw.coreas3.vo.ComissionProfile">
+					<property name="percent" value="${comission.renaissancepercent}" />
+					<property name="min" value="${comission.min}" />
+				</object>
+			</value>
+		</property>
+		<property name="cr_eur">
+			<value>
+				<object class="ru.mobw.coreas3.vo.ComissionProfile">
+					<property name="percent" value="${comission.crediteuropepercent}" />
+					<property name="min" value="${comission.min}" />
+				</object>
+			</value>
+		</property>
+		<property name="rosno">
+			<value>
+				<object class="ru.mobw.coreas3.vo.ComissionProfile">
+					<property name="percent" value="${comission.percent}" />
+					<property name="min" value="${comission.min}" />
+				</object>
+			</value>
+		</property>
+		<property name="generallycommon">
+			<value>
+				<object class="ru.mobw.coreas3.vo.ComissionProfile">
+					<property name="percent" value="${comission.percent}" />
+					<property name="min" value="${comission.min}" />
+				</object>
+			</value>
+		</property>
+		<property name="generallylife">
+			<value>
+				<object class="ru.mobw.coreas3.vo.ComissionProfile">
+					<property name="percent" value="${comission.percent}" />
+					<property name="min" value="${comission.min}" />
+				</object>
+			</value>
+		</property>
+	</object>
+	
+	<object id="providerIDsOSMP" class="Object">
+		<property name="cr_eur" value="4850"/>
+		<property name="renaissance" value="4847"/>
+		<property name="rosno" value="5859"/>
+		<property name="generallycommon" value="22593"/>
+		<property name="generallylife" value="22592"/>
+	</object>
+	
+	<object id="providerIDs" class="Object">
+		<property name="cr_eur" value="20640"/>
+		<property name="renaissance" value="20639"/>
+		<property name="rosno" value="22534"/>
+		<property name="generallycommon" value="22593"/>
+		<property name="generallylife" value="22592"/>
+	</object>
+	
+	<object id="providerNames" class="Object">
+		<property name="cr_eur" value="Кредит Европа лайф"/>
+		<property name="renaissance" value="Ренессанс жизнь"/>
+		<property name="rosno" value="Allianz Росно"/>
+		<property name="generallycommon" value="ППФ Общее страхование"/>
+		<property name="generallylife" value="ППФ Страхование Жизни"/>
+	</object>
+</objects>

@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects
+	xmlns:util="http://www.springactionscript.org/schema/util">
+	<object 
+		id="flow"
+		class="ru.mobw.coreas3.app.flow.mcflow.MCFlowBase"
+		>
+		<constructor-arg>
+			<object class="ru.mobw.coreas3.app.config.FlowConfig">
+				<property name="bindingsRootPackage" value="${app.bindingsRootPackage}"/>
+			</object>
+		</constructor-arg>
+		<property name="routeData" ref="route"/>
+		<property name="elementsMap">
+			<dictionary>
+				<entry>
+					<key>contractInput</key>
+					<value><ref>contractInput</ref></value>
+				</entry>
+				<entry>
+					<key>pubOferta</key>
+					<value><ref>pubOferta</ref></value>
+				</entry>
+				<entry>
+					<key>ituOferta</key>
+					<value><ref>ituOferta</ref></value>
+				</entry>
+				<entry>
+					<key>nameInput</key>
+					<value><ref>nameInput</ref></value>
+				</entry>
+				<entry>
+					<key>sumInput</key>
+					<value><ref>sumInput</ref></value>
+				</entry>
+				<entry>
+					<key>phoneInput</key>
+					<value><ref>phoneInput</ref></value>
+				</entry>
+				<entry>
+					<key>cashPayment</key>
+					<value><ref>cashPayment</ref></value>
+				</entry>
+				<entry>
+					<key>final</key>
+					<value><ref>final</ref></value>
+				</entry>
+				<entry>
+					<key>exit</key>
+					<value><ref>exit</ref></value>
+				</entry>
+			</dictionary>
+		</property>
+	</object>
+	
+	<!-- elements -->
+	
+	<object
+		id="exit"
+		class="com.leetwin.insurance.flow.elements.MyExitElement"
+		>
+		<constructor-arg value="exit"/>
+	</object>
+	
+	
+	<object
+		id="contractInput"
+		class="com.leetwin.insurance.flow.elements.ContractInputElement"
+		>
+		<constructor-arg value="contractInput"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="dataName" value="contract"/>
+		<property name="validationAlert" value="${err.contractError}"/>
+		<property name="version" value="${config.version}"/>
+		<property name="id" value="1"/>
+		<property name="bindings">
+			<array>
+				<value>binderText=$contract.number</value>
+				<object template="literalBinding">
+					<property name="propName" value="viewMC._commInfo.text"/>
+					<property name="param" value="${msg.walletCommissionString}"/>
+				</object>	
+				<object template="literalBinding">
+					<property name="propName" value="viewMC._v.text"/>
+					<property name="param" value="${config.version}"/>
+				</object>
+			</array>
+		</property>
+	</object>
+	
+	
+	
+	<object
+		id="phoneInput"
+		class="com.leetwin.insurance.flow.elements.PhoneNumberEnterElement"
+		init-method="onInit"
+		>
+		<constructor-arg value="phoneInput"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="dataName" value="phone"/>
+		<property name="id" value="2"/>
+		<property name="bindings">
+			<array>
+				<value>binder.text=$phone.value</value>
+				<object template="literalBinding">
+					<property name="propName" value="viewMC._helpMsg.text"/>
+					<property name="param" value="${msg.phoneInput.helpMsg}"/>
+				</object>
+			</array>
+		</property>
+		<property name="formatter" ref="phoneFormatter" />
+		<property name="maxTextLength" value="${config.phoneLength}"/>
+		<property name="validationAlert" value="${err.phoneError}"/>
+		<property name="validator" ref="phoneValidator" />
+	</object>
+	
+	
+	
+	<object
+		id="sumInput"
+		class="com.leetwin.insurance.flow.elements.SumInputElement"
+		>
+		<constructor-arg value="sumInput"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="dataName" value="sum"/>
+		<property name="id" value="3"/>
+		<property name="maxTextLength" value="${config.maxCashLength}"/>
+		<property name="validationAlert" value="${err.cashError}"/>
+		<property name="bindings">
+			<array>
+				<value>binder.text=$sum.value</value>
+				<object template="literalBinding">
+					<property name="propName" value="viewMC._comissMessage.text"/>
+					<property name="param" value="${msg.comissionString}"/>
+					<property name="postProcessor">
+						<object class="com.leetwin.insurance.flow.methodCalls.ComissionStringProducer"/>
+					</property>
+				</object>
+				<object template="literalBinding">
+					<property name="propName" value="viewMC._lkComissMessage.text"/>
+					<property name="param" value="${msg.walletCommissionString}"/>
+				</object>
+				<object template="literalBinding">
+					<property name="propName" value="viewMC._leftMsg.text"/>
+					<property name="param" value="${msg.sumInput.leftMsg}"/>
+				</object>
+				<object template="literalBinding">
+					<property name="propName" value="viewMC._helpMsg.text"/>
+					<property name="param" value="${msg.sumInput.helpMsg}"/>
+				</object>
+			</array>
+		</property>
+		<property name="validator" ref="sumValidator" />
+	</object>
+	
+	
+	
+	<object
+		id="nameInput"
+		class="com.leetwin.insurance.flow.elements.NameInputElement">
+		<constructor-arg value="nameInput"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="4"/>
+		<property name="validator" ref="nameValidator"/>
+		<property name="maxLastNameLength" value="${config.maxLastNameLength}"/>
+		<property name="dataName" value="name"/>
+		<property name="bindings">
+			<array>
+				<value>inputs.0.text=$name.lastName</value>
+				<value>inputs.1.text=$name.firstName</value>
+				<value>inputs.2.text=$name.middleName</value>
+			</array>
+		</property>
+	</object>
+	
+	
+	
+	
+	<object
+		id="pubOferta"
+		class="com.leetwin.insurance.flow.elements.OfertaElement">
+		<constructor-arg value="pubOferta"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="5"/>
+		<property name="path" value="QK_oferta_bank.xml"/>
+	</object>
+	
+	<object
+		id="ituOferta"
+		class="com.leetwin.insurance.flow.elements.OfertaElement">
+		<constructor-arg value="ituOferta"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="6"/>
+		<property name="path" value="QK_oferta_full.xml"/>
+	</object>
+	
+	
+	
+	<object
+		id="cashPayment"
+		class="com.leetwin.insurance.flow.elements.CashPaymentElement"
+		>
+		
+		<constructor-arg value="cashPayment"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="restString" value="${msg.restOfMoney}"/>
+		<property name="id" value="7"/>
+	</object>
+	
+	
+	
+	
+	<object
+		id="final"
+		class="ru.mobw.coreas3.app.flow.mcflow.CommonFlowElement"
+		>
+		<constructor-arg value="final"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="8"/>
+		<property name="bindings">
+			<array>
+				<value>viewMC.fiskDescriptionTf.visible=$fiscalFailure</value>
+				<value>viewMC._paymentTf.text=$payment</value>
+				<value>viewMC._changeTf.text=$change</value>
+			</array>
+		</property>
+	</object>
+	
+	
+	
+	
+	<object
+		id="paymentEnd"
+		class="ru.mobw.coreas3.app.flow.mcflow.CommonFlowElement"
+		>
+		<constructor-arg value="paymentEnd"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="9"/>
+		<property name="bindings">
+			<array>
+				<value>viewMC.contractNum._tf.text=$contract.number</value>
+				<value>viewMC.sum._tf.text=$sum.value</value>
+				<value>viewMC._rest.text=$rest</value>
+				<value>viewMC._rest.visible=$hasRest</value>
+			</array>
+		</property>
+	</object>
+	
+	
+	
+	
+	
+	<object	id="paymentFail"
+		class="ru.mobw.coreas3.app.flow.mcflow.CommonFlowElement"
+		>
+		<constructor-arg value="paymentFail"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="10"/>
+	</object>
+	
+	
+	
+	
+	
+	<!-- validators -->
+	<object 
+		id="phoneValidator"
+		class="com.leetwin.flow.validation.Validator">
+		<property name="constraintsMap">
+			<dictionary>
+				<entry>
+					<key>value</key>
+					<value>
+						<array>
+							<object class="com.leetwin.flow.validation.constraints.NotNull"/>
+							<object class="com.leetwin.flow.validation.constraints.InRange">
+								<property name="min" value="10"/>
+								<property name="max" value="10"/>
+							</object>
+							<object class="ru.mobw.coreas3.app.validation.constraints.HasPhoneCapacity"/>
+						</array>
+					</value>
+				</entry>
+			</dictionary>
+		</property>
+	</object>
+	
+	<object
+		id="nameValidator"
+		class="com.leetwin.flow.validation.Validator">
+		<property name="errorMessage" value="${err.name}"/>
+		<property name="constraintsMap">
+			<dictionary>
+				<entry>
+					<key>firstName</key>
+					<value>
+						<array>
+							<object class="com.leetwin.flow.validation.constraints.NotNull"/>
+							<object class="com.leetwin.flow.validation.constraints.NotEmpty"/>
+							<object class="com.leetwin.flow.validation.constraints.InRange">
+								<property name="min" value="1"/>
+								<property name="max" value="1"/>
+								<property name="asNumber" value="false"/>
+							</object>
+						</array>						
+					</value>
+				</entry>
+				<entry>
+					<key>middleName</key>
+					<value>
+						<array>
+							<object class="com.leetwin.flow.validation.constraints.NotNull"/>
+							<object class="com.leetwin.flow.validation.constraints.NotEmpty"/>
+							<object class="com.leetwin.flow.validation.constraints.InRange">
+								<property name="min" value="1"/>
+								<property name="max" value="1"/>
+								<property name="asNumber" value="false"/>
+							</object>
+						</array>						
+					</value>
+				</entry>
+				<entry>
+					<key>lastName</key>
+					<value>
+						<array>
+							<object class="com.leetwin.flow.validation.constraints.NotNull"/>
+							<object class="com.leetwin.flow.validation.constraints.NotEmpty"/>
+							<object class="com.leetwin.flow.validation.constraints.InRange">
+								<property name="min" value="${config.minLastNameLength}"/>
+								<property name="max" value="${config.maxLastNameLength}"/>
+								<property name="asNumber" value="false"/>
+							</object>
+							<object class="ru.mobw.coreas3.app.validation.constraints.InputTextValidationConstraint"/>
+						</array>						
+					</value>
+				</entry>
+			</dictionary>
+		</property>
+	</object>
+	
+	<object 
+		id="sumValidator"
+		class="com.leetwin.flow.validation.Validator">
+		<property name="constraintsMap">
+			<dictionary>
+				<entry>
+					<key>value</key>
+					<value>
+						<array>
+							<object class="com.leetwin.flow.validation.constraints.NotNull"/>
+							<object class="com.leetwin.flow.validation.constraints.NotEmpty"/>
+							<object class="com.leetwin.flow.validation.constraints.InRange">
+								<property name="min" value="${config.minCashLimit}"/>
+								<property name="max" value="${num.maxCash}"/>
+								<property name="asNumber" value="true"/>
+								<property name="errorString" value="${err.cashRange}"/>
+							</object>
+							<object class="com.leetwin.flow.validation.constraints.NotZero"/>
+						</array>
+					</value>
+				</entry>
+			</dictionary>
+		</property>
+	</object>
+	<!-- end validators -->
+		
+	<!-- helpers -->
+	<object id="phoneFormatter" class="ru.mobw.coreas3.formatters.PhoneFormatter" />
+	
+	<template id="literalBinding">
+		<object class="ru.mobw.coreas3.app.bind.BindingRecord">
+			<property name="type">
+				<util:constant static-field="ru.mobw.coreas3.app.bind.BindingRecordType.LITERAL"/>
+			</property>
+		</object>
+	</template>
+	<!-- end_helpers -->
+</objects>

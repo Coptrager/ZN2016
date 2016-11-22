@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<herbalife_sales_centers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<center>
+		<center_id>1</center_id>
+		<warehouse_code>1O</warehouse_code>
+		<city>Альметьевск</city>
+		<street>ул. Р. Фахретдина</street>
+		<building>д.37</building>
+		<postal_code>423450</postal_code>
+		<freight_code>PU</freight_code>
+	</center>
+	<center>
+		<center_id>2</center_id>
+		<warehouse_code>4N</warehouse_code>
+		<city>Ангарск</city>
+		<street>29-ый микрорайон</street>
+		<building>д.28</building>
+		<postal_code>665808</postal_code>
+		<freight_code>PU</freight_code>
+	</center>
+	<center>
+		<center_id>3</center_id>
+		<warehouse_code>3J</warehouse_code>
+		<city>Барнаул</city>
+		<street>ул. Пролетарская</street>
+		<building>д.139</building>
+		<postal_code>656049</postal_code>
+		<freight_code>PU</freight_code>
+	</center>
+	<center>
+		<center_id>4</center_id>
+		<warehouse_code>4M</warehouse_code>
+		<city>Братск</city>
+		<street>ул. Ленина</street>
+		<building>д.22а</building>
+		<postal_code>665719</postal_code>
+		<freight_code>PU</freight_code>
+	</center>
+	<center>
+		<center_id>5</center_id>
+		<warehouse_code>O8</warehouse_code>
+		<city>Брянск</city>
+		<street>ул. Бежицкая</street>
+		<building>д.1 корп.10, пом.5</building>
+		<postal_code>241007</postal_code>
+		<freight_code>PU</freight_code>
+	</center>
+	<center>
+		<center_id>6</center_id>
+		<warehouse_code>5F</warehouse_code>
+		<city>Владивосток</city>
+		<street>ул. Некрасовская</street>
+		<building>д.53а</building>
+		<postal_code>690106</postal_code>
+		<freight_code>PU1</freight_code>
+	</center>
+	<center>
+		<center_id>7</center_id>
+		<warehouse_code>4R</warehouse_code>
+		<city>Владимир</city>
+		<street>пр-кт Ленина</street>
+		<building>д.29Б, офис 51</building>
+		<postal_code>600015</postal_code>
+		<freight_code>PU</freight_code>
+	</center>
+	<center>
+		<center_id>8</center_id>
+		<warehouse_code>2O</warehouse_code>
+		<city>Волгоград</city>
+		<street>ул. Комсомольская</street>
+		<building>д.6</building>
+		<postal_code>400131</postal_code>
+		<freight_code>PU1</freight_code>
+	</center>
+	<center>
+		<center_id>9</center_id>
+		<warehouse_code>4T</warehouse_code>
+		<city>Вологда</city>
+		<street>ул. Ленинградская</street>
+		<building>д.79</building>
+		<postal_code>160000</postal_code>
+		<freight_code>PU</freight_code>
+	</center>
+	<center>
+		<center_id>10</center_id>
+		<warehouse_code>4K</warehouse_code>
+		<city>Воронеж</city>
+		<street>ул. Бульвар Победы</street>
+		<building>д.50Б</building>
+		<postal_code>394088</postal_code>
+		<freight_code>PU1</freight_code>
+	</center>
+	<center>
+		<center_id>11</center_id>
+		<warehouse_code>5G</warehouse_code>
+		<city>Екатеринбург</city>
+		<street>ул. Декабристов</street>
+		<building>д.75</building>
+		<postal_code>625023</postal_code>
+		<freight_code>PU1</freight_code>
+	</center>
+	<center>
+		<center_id>12</center_id>
+		<warehouse_code>2H</warehouse_code>
+		<city>Иркутск</city>
+		<street>ул. Поленова</street>
+		<building>д.6</building>
+		<postal_code>664007</postal_code>
+		<freight_code>PU1</freight_code>
+	</center>
+	<center>
+		<center_id>13</center_id>
+		<warehouse_code>2P</warehouse_code>
+		<city>Казань</city>
+		<street>ул. Нигматуллина</street>
+		<building>д.11/84 оф.11Н</building>
+		<postal_code>421001</postal_code>
+		<freight_code>PU1</freight_code>
+	</center>
+	<center>
+		<center_id>14</center_id>
+		<warehouse_code>4U</warehouse_code>
+		<city>Калининград</city>
+		<street>ул. 1812 года</street>
+		<building>д.126</building>
+		<postal_code>236016</postal_code>
+		<freight_code>PU</freight_code>
+	</center>
+	<center>
+		<center_id>15</center_id>
+		<warehouse_code>2R</warehouse_code>
+		<city>Кемерово</city>
+		<street>ул. Н.Островского</street>
+		<building>д.30</building>
+		<postal_code>650099</postal_code>
+		<freight_code>PU1</freight_code>
+	</center>
+	<center>
+		<center_id>16</center_id>
+		<warehouse_code>4Q</warehouse_code>
+		<city>Киров</city>
+		<street>ул. Энгельса</street>
+		<building>д.84/1, пом.6</building>
+		<postal_code>610046</postal_code>
+		<freight_code>PU1</freight_code>
+	</center>
+	<center>
+		<center_id>17</center_id>
+		<warehouse_code>1I</warehouse_code>
+		<city>Краснодар</city>
+		<street>ул. Чекистов</street>
+		<building>д.8/1</building>
+		<postal_code>350089</postal_code>
+		<freight_code>PU</freight_code>
+	</center>
+	<center>
+		<center_id>18</center_id>
+		<warehouse_code>2D</warehouse_code>
+		<city>Красноярск</city>
+		<street>ул. Батурина</street>
+		<building>д.38А</building>
+		<postal_code>660077</postal_code>
+		<freight_code>PU1</freight_code>
+	</center>
+	<center>
+		<center_id>19</center_id>
+		<warehouse_code>2M</warehouse_code>
+		<city>Магнитогорск</city>
+		<street>ул. 50-летия Магнитки</street>
+		<building>д. 59А. Тел.</building>
+		<postal_code>455047</postal_code>
+		<freight_code>PU1</freight_code>
+	</center>
+	<center>
+		<center_id>20</center_id>
+		<warehouse_code>5C</warehouse_code>
+		<city>Москва</city>
+		<street>Ленинградский пр-т</street>
+		<building>д. 76, корп. 1</building>
+		<postal_code>125315</postal_code>
+		<freight_code>PU</freight_code>
+	</center>
+	<center>
+		<center_id>21</center_id>
+		<warehouse_code>3R</warehouse_code>
+		<city>Нижневартовск</city>
+		<street>ул. Ленина</street>
+		<building>д.15, к.2</building>
+		<postal_code>628611</postal_code>
+		<freight_code>PU</freight_code>
+	</center>
+	<center>
+		<center_id>22</center_id>
+		<warehouse_code>2F</warehouse_code>
+		<city>Нижний Новгород</city>
+		<street>ул. Дальняя Ереванская</street>
+		<building>д.8/16</building>
+		<postal_code>603005</postal_code>
+		<freight_code>PU1</freight_code>
+	</center>
+	<center>
+		<center_id>23</center_id>
+		<warehouse_code>4V</warehouse_code>
+		<city>Нижний Тагил</city>
+		<street>ул. Уральская</street>
+		<building>д. 9 оф. 208</building>
+		<postal_code>622001</postal_code>
+		<freight_code>PU</freight_code>
+	</center>
+	<center>
+		<center_id>24</center_id>
+		<warehouse_code>5E</warehouse_code>
+		<city>Новосибирск</city>
+		<street>ул.Лермонтова</street>
+		<building>д.43</building>
+		<postal_code>630005</postal_code>
+		<freight_code>PU1</freight_code>
+	</center>
+	<center>
+		<center_id>25</center_id>
+		<warehouse_code>5I</warehouse_code>
+		<city>Новый Уренгой</city>
+		<street>ул. Ямальская</street>
+		<building>д.42А</building>
+		<postal_code>629305</postal_code>
+		<freight_code>PU1</freight_code>
+	</center>
+	<center>
+		<center_id>26</center_id>
+		<warehouse_code>5K</warehouse_code>
+		<city>Норильск</city>
+		<street>Проспект Ленинский</street>
+		<building>д.3, офис 3</building>
+		<postal_code>663305</postal_code>
+		<freight_code>PU1</freight_code>
+	</center>
+	<center>
+		<center_id>27</center_id>
+		<warehouse_code>2I</warehouse_code>
+		<city>Омск</city>
+		<street>ул. Сенная</street>
+		<building>д.34</building>
+		<postal_code>664024</postal_code>
+		<freight_code>PU1</freight_code>
+	</center>
+	<center>
+		<center_id>28</center_id>
+		<warehouse_code>2S</warehouse_code>
+		<city>Пермь</city>
+		<street>ул. 25 лет Октября</street>
+		<building>д.17</building>
+		<postal_code>614000</postal_code>
+		<freight_code>PU</freight_code>
+	</center>
+	<center>
+		<center_id>29</center_id>
+		<warehouse_code>2N</warehouse_code>
+		<city>Петропавловск-Камчатский</city>
+		<street>ул. Ленинская</street>
+		<building>д.46</building>
+		<postal_code>683000</postal_code>
+		<freight_code>PU</freight_code>
+	</center>
+	<center>
+		<center_id>30</center_id>
+		<warehouse_code>2G</warehouse_code>
+		<city>Ростов-на-Дону</city>
+		<street>пер. Долмановский</street>
+		<building>д.70Д</building>
+		<postal_code>344022</postal_code>
+		<freight_code>PU1</freight_code>
+	</center>
+	<center>
+		<center_id>31</center_id>
+		<warehouse_code>5H</warehouse_code>
+		<city>Самара </city>
+		<street>ул. 4-й проезд</street>
+		<building>д.57, литера Б, Б1</building>
+		<postal_code>443080</postal_code>
+		<freight_code>PU1</freight_code>
+	</center>
+	<center>
+		<center_id>32</center_id>
+		<warehouse_code>3Q</warehouse_code>
+		<city>Смоленск</city>
+		<street>ул. Колхозная</street>
+		<building>д.8</building>
+		<postal_code>214004</postal_code>
+		<freight_code>PU</freight_code>
+	</center>
+	<center>
+		<center_id>33</center_id>
+		<warehouse_code>9O</warehouse_code>
+		<city>СПб Нар. Ополчения</city>
+		<street>пр-т Народного Ополчения</street>
+		<building>д.10А</building>
+		<postal_code>198216</postal_code>
+		<freight_code>PU1</freight_code>
+	</center>
+	<center>
+		<center_id>34</center_id>
+		<warehouse_code>5D</warehouse_code>
+		<city>СПб Новочеркасский</city>
+		<street>Новочеркасский пр-кт</street>
+		<building>д.33, литера А</building>
+		<postal_code>195112</postal_code>
+		<freight_code>PU1</freight_code>
+	</center>
+	<center>
+		<center_id>35</center_id>
+		<warehouse_code>3N</warehouse_code>
+		<city>Ставрополь</city>
+		<street>ул. Мира</street>
+		<building>д.285</building>
+		<postal_code>355035</postal_code>
+		<freight_code>PU</freight_code>
+	</center>
+	<center>
+		<center_id>36</center_id>
+		<warehouse_code>5J</warehouse_code>
+		<city>Сургут</city>
+		<street>ул. Югорская</street>
+		<building>д.1</building>
+		<postal_code>628412</postal_code>
+		<freight_code>PU1</freight_code>
+	</center>
+	<center>
+		<center_id>37</center_id>
+		<warehouse_code>3O</warehouse_code>
+		<city>Тольятти</city>
+		<street>ул. Юбилейная</street>
+		<building>д.2Г оф.318</building>
+		<postal_code>445034</postal_code>
+		<freight_code>PU</freight_code>
+	</center>
+	<center>
+		<center_id>38</center_id>
+		<warehouse_code>4I</warehouse_code>
+		<city>Томск</city>
+		<street>Фрунзе проспект</street>
+		<building>д.24</building>
+		<postal_code>634029</postal_code>
+		<freight_code>PU1</freight_code>
+	</center>
+	<center>
+		<center_id>39</center_id>
+		<warehouse_code>2Q</warehouse_code>
+		<city>Тюмень</city>
+		<street>ул. Мельникайте</street>
+		<building>д.125Б, 2 этаж</building>
+		<postal_code>625007</postal_code>
+		<freight_code>PU1</freight_code>
+	</center>
+	<center>
+		<center_id>40</center_id>
+		<warehouse_code>5O</warehouse_code>
+		<city>Ульяновск</city>
+		<street>ул. Орлова</street>
+		<building>д.21А, оф.218</building>
+		<postal_code>432071</postal_code>
+		<freight_code>PU</freight_code>
+	</center>
+	<center>
+		<center_id>41</center_id>
+		<warehouse_code>4J</warehouse_code>
+		<city>Уфа</city>
+		<street>ул. Пушкина</street>
+		<building>д.45/2</building>
+		<postal_code>450076</postal_code>
+		<freight_code>PU1</freight_code>
+	</center>
+	<center>
+		<center_id>42</center_id>
+		<warehouse_code>3M</warehouse_code>
+		<city>Хабаровск</city>
+		<street>ул. Карла Маркса</street>
+		<building>д.166</building>
+		<postal_code>680031</postal_code>
+		<freight_code>PU1</freight_code>
+	</center>
+	<center>
+		<center_id>43</center_id>
+		<warehouse_code>2E</warehouse_code>
+		<city>Челябинск</city>
+		<street>ул. Молодогвардейцев</street>
+		<building>д.60B</building>
+		<postal_code>454021</postal_code>
+		<freight_code>PU1</freight_code>
+	</center>
+	<center>
+		<center_id>44</center_id>
+		<warehouse_code>2V</warehouse_code>
+		<city>Череповец</city>
+		<street>ул. Металлургов</street>
+		<building>д.4</building>
+		<postal_code>162606</postal_code>
+		<freight_code>PU</freight_code>
+	</center>
+	<center>
+		<center_id>45</center_id>
+		<warehouse_code>4O</warehouse_code>
+		<city>Чита</city>
+		<street>ул. Шилова</street>
+		<building>д.95В</building>
+		<postal_code>672012</postal_code>
+		<freight_code>PU1</freight_code>
+	</center>
+	<center>
+		<center_id>46</center_id>
+		<warehouse_code>5L</warehouse_code>
+		<city>Южно-Сахалинск</city>
+		<street>Проспект Мира</street>
+		<building>д.420, оф.108</building>
+		<postal_code>693006</postal_code>
+		<freight_code>PU</freight_code>
+	</center>
+	<center>
+		<center_id>47</center_id>
+		<warehouse_code>5M</warehouse_code>
+		<city>Якутск </city>
+		<street>ул.Петровского</street>
+		<building>д.38</building>
+		<postal_code>677008</postal_code>
+		<freight_code>PU1</freight_code>
+	</center>
+	<center>
+		<center_id>48</center_id>
+		<warehouse_code>9I</warehouse_code>
+		<city>Ярославль</city>
+		<street>ул. Победы</street>
+		<building>д.38/27</building>
+		<postal_code>150040</postal_code>
+		<freight_code>PU</freight_code>
+	</center>
+        <center>
+		<center_id>49</center_id>
+		<warehouse_code>C4</warehouse_code>
+		<city>Махачкала</city>
+		<street>ул. Ибакова</street>
+		<building>д.7</building>
+		<postal_code>367013</postal_code>
+		<freight_code>PU1</freight_code>
+	</center>
+	<center>
+		<center_id>50</center_id>
+		<warehouse_code>C5</warehouse_code>
+		<city>Пенза</city>
+		<street>ул. Свердлова 4а</street>
+		<building>2-й эт.</building>
+		<postal_code>440026</postal_code>
+		<freight_code>PU1</freight_code>
+	</center>
+</herbalife_sales_centers>

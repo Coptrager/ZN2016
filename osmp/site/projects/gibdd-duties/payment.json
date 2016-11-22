@@ -1,0 +1,21 @@
+{
+  "paymentProviderId": "5781",
+  "changeWalletId": "7406",
+  "offertus": "../../oferta_ogv.xml",
+  "currency": 643,
+  "qwCommission": [
+    {
+      "commissionInfo" : [
+        {
+          "commissionFix" : 0.0,
+          "commissionMax" : "inf",
+          "commissionMin" : 30.0,
+          "commissionPercent" : 3.0,
+          "fromAmount" : 0.0,
+          "toAmount" : "inf"
+        }
+      ],
+      "providerId" : "5781"
+    }
+  ]
+}

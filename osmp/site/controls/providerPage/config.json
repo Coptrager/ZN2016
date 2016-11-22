@@ -1,0 +1,10 @@
+{
+  "name":"providerPage",
+  "css":true,
+  "parent":"visualControl",
+  "use":[
+    "input",
+    "keyboards"
+  ],
+  "version":"0.1.0"
+}

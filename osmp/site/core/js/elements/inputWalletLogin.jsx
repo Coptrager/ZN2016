@@ -1,0 +1,1 @@
+"use strict";System.register([],function(_export,_context){return{setters:[],execute:function(){_export("default",React.createClass({render:function(){return React.createElement("div",{id:"support-element"})}}))}}});

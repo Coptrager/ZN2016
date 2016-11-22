@@ -1,0 +1,511 @@
+[{
+	"addrId" : "39",
+	"regName" : "Республика Адыгея",
+	"addrLevel" : "3",
+	"idForRequest" : "01",
+	"regions" : ["1", "01"]
+}, {
+	"addrId" : "52",
+	"regName" : "Республика Башкортостан",
+	"addrLevel" : "3",
+	"idForRequest" : "02",
+	"regions" : ["2", "02", "102"]
+}, {
+	"addrId" : "76",
+	"regName" : "Республика Бурятия",
+	"addrLevel" : "3",
+	"idForRequest" : "03",
+	"regions" : ["3", "03"]
+}, {
+	"addrId" : "77",
+	"regName" : "Республика Алтай",
+	"addrLevel" : "3",
+	"idForRequest" : "04",
+	"regions" : ["4", "04"]
+}, {
+	"addrId" : "40",
+	"regName" : "Республика Дагестан",
+	"addrLevel" : "3",
+	"idForRequest" : "05",
+	"regions" : ["5", "05"]
+}, {
+	"addrId" : "41",
+	"regName" : "Республика Ингушетия",
+	"addrLevel" : "3",
+	"idForRequest" : "06",
+	"regions" : ["6", "06"]
+}, {
+	"addrId" : "42",
+	"regName" : "Кабардино-Балкарская республика",
+	"addrLevel" : "3",
+	"idForRequest" : "07",
+	"regions" : ["7", "07"]
+}, {
+	"addrId" : "43",
+	"regName" : "Республика Калмыкия",
+	"addrLevel" : "3",
+	"idForRequest" : "08",
+	"regions" : ["8", "08"]
+}, {
+	"addrId" : "44",
+	"regName" : "Карачаево-Черкесская республика",
+	"addrLevel" : "3",
+	"idForRequest" : "09",
+	"regions" : ["9", "09"]
+}, {
+	"addrId" : "27",
+	"regName" : "Республика Карелия",
+	"addrLevel" : "3",
+	"idForRequest" : "10",
+	"regions" : ["10"]
+}, {
+	"addrId" : "28",
+	"regName" : "Республика Коми",
+	"addrLevel" : "3",
+	"idForRequest" : "11",
+	"regions" : ["11"]
+}, {
+	"addrId" : "53",
+	"regName" : "Республика Марий-Эл",
+	"addrLevel" : "3",
+	"idForRequest" : "12",
+	"regions" : ["12"]
+}, {
+	"addrId" : "54",
+	"regName" : "Республика Мордовия",
+	"addrLevel" : "3",
+	"idForRequest" : "13",
+	"regions" : ["13"]
+}, {
+	"addrId" : "94",
+	"regName" : "Республика Саха (Якутия)",
+	"addrLevel" : "3",
+	"idForRequest" : "14",
+	"regions" : ["14"]
+}, {
+	"addrId" : "45",
+	"regName" : "Республика Северная Осетия",
+	"addrLevel" : "3",
+	"idForRequest" : "15",
+	"regions" : ["15"]
+}, {
+	"addrId" : "55",
+	"regName" : "Республика Татарстан",
+	"addrLevel" : "3",
+	"idForRequest" : "16",
+	"regions" : ["16", "116"]
+}, {
+	"addrId" : "78",
+	"regName" : "Республика Тыва",
+	"addrLevel" : "3",
+	"idForRequest" : "17",
+	"regions" : ["17"]
+}, {
+	"addrId" : "56",
+	"regName" : "Удмуртская республика",
+	"addrLevel" : "3",
+	"idForRequest" : "18",
+	"regions" : ["18"]
+}, {
+	"addrId" : "79",
+	"regName" : "Республика Хакасия",
+	"addrLevel" : "3",
+	"idForRequest" : "19",
+	"regions" : ["19"]
+}, {
+	"addrId" : "46",
+	"regName" : "Чеченская республика",
+	"addrLevel" : "3",
+	"idForRequest" : "95",
+	"regions" : ["20", "95"]
+}, {
+	"addrId" : "57",
+	"regName" : "Чувашская республика",
+	"addrLevel" : "3",
+	"idForRequest" : "21",
+	"regions" : ["21"]
+}, {
+	"addrId" : "80",
+	"regName" : "Алтайский край",
+	"addrLevel" : "3",
+	"idForRequest" : "22",
+	"regions" : ["22"]
+}, {
+	"addrId" : "47",
+	"regName" : "Краснодарский край",
+	"addrLevel" : "3",
+	"idForRequest" : "23",
+	"regions" : ["23", "93"]
+}, {
+	"addrId" : "81",
+	"regName" : "Красноярский край",
+	"addrLevel" : "3",
+	"idForRequest" : "24",
+	"regions" : ["24"]
+}, {
+	"addrId" : "95",
+	"regName" : "Приморский край",
+	"addrLevel" : "3",
+	"idForRequest" : "25",
+	"regions" : ["25", "125"]
+}, {
+	"addrId" : "48",
+	"regName" : "Ставропольский край",
+	"addrLevel" : "3",
+	"idForRequest" : "26",
+	"regions" : ["26"]
+}, {
+	"addrId" : "96",
+	"regName" : "Хабаровский край",
+	"addrLevel" : "3",
+	"idForRequest" : "27",
+	"regions" : ["27"]
+}, {
+	"addrId" : "97",
+	"regName" : "Амурская область",
+	"addrLevel" : "3",
+	"idForRequest" : "28",
+	"regions" : ["28"]
+}, {
+	"addrId" : "29",
+	"regName" : "Архангельская область",
+	"addrLevel" : "3",
+	"idForRequest" : "29",
+	"regions" : ["29"]
+}, {
+	"addrId" : "49",
+	"regName" : "Астраханская область",
+	"addrLevel" : "3",
+	"idForRequest" : "30",
+	"regions" : ["30"]
+}, {
+	"addrId" : "9",
+	"regName" : "Белгородская область",
+	"addrLevel" : "3",
+	"idForRequest" : "31",
+	"regions" : ["31"]
+}, {
+	"addrId" : "10",
+	"regName" : "Брянская область",
+	"addrLevel" : "3",
+	"idForRequest" : "32",
+	"regions" : ["32"]
+}, {
+	"addrId" : "11",
+	"regName" : "Владимирская область",
+	"addrLevel" : "3",
+	"idForRequest" : "33",
+	"regions" : ["33"]
+}, {
+	"addrId" : "50",
+	"regName" : "Волгоградская область",
+	"addrLevel" : "3",
+	"idForRequest" : "34",
+	"regions" : ["34"]
+}, {
+	"addrId" : "30",
+	"regName" : "Вологодская область",
+	"addrLevel" : "3",
+	"idForRequest" : "35",
+	"regions" : ["35"]
+}, {
+	"addrId" : "12",
+	"regName" : "Воронежская область",
+	"addrLevel" : "3",
+	"idForRequest" : "36",
+	"regions" : ["36"]
+}, {
+	"addrId" : "13",
+	"regName" : "Ивановская область",
+	"addrLevel" : "3",
+	"idForRequest" : "37",
+	"regions" : ["37"]
+}, {
+	"addrId" : "82",
+	"regName" : "Иркутская область",
+	"addrLevel" : "3",
+	"idForRequest" : "38",
+	"regions" : ["38"]
+}, {
+	"addrId" : "92",
+	"regName" : "Иркутская обл Усть-Ордынский Бурятский округ",
+	"addrLevel" : "3",
+	"idForRequest" : "38",
+	"regions" : ["85"]
+}, {
+	"addrId" : "31",
+	"regName" : "Калининградская",
+	"addrLevel" : "3",
+	"idForRequest" : "39",
+	"regions" : ["39", "91"]
+}, {
+	"addrId" : "14",
+	"regName" : "Калужская область",
+	"addrLevel" : "3",
+	"idForRequest" : "40",
+	"regions" : ["40"]
+}, {
+	"addrId" : "99",
+	"regName" : "Камчатский край",
+	"addrLevel" : "3",
+	"idForRequest" : "41",
+	"regions" : ["41"]
+}, {
+	"addrId" : "83",
+	"regName" : "Кемеровская область",
+	"addrLevel" : "3",
+	"idForRequest" : "42",
+	"regions" : ["42"]
+}, {
+	"addrId" : "58",
+	"regName" : "Кировская область",
+	"addrLevel" : "3",
+	"idForRequest" : "43",
+	"regions" : ["43"]
+}, {
+	"addrId" : "15",
+	"regName" : "Костромская область",
+	"addrLevel" : "3",
+	"idForRequest" : "44",
+	"regions" : ["44"]
+}, {
+	"addrId" : "69",
+	"regName" : "Курганская область",
+	"addrLevel" : "3",
+	"idForRequest" : "45",
+	"regions" : ["45"]
+}, {
+	"addrId" : "16",
+	"regName" : "Курская область",
+	"addrLevel" : "3",
+	"idForRequest" : "46",
+	"regions" : ["46"]
+}, {
+	"addrId" : "32",
+	"regName" : "Ленинградская область",
+	"addrLevel" : "3",
+	"idForRequest" : "47",
+	"regions" : ["47"]
+}, {
+	"addrId" : "17",
+	"regName" : "Липецкая область",
+	"addrLevel" : "3",
+	"idForRequest" : "48",
+	"regions" : ["48"]
+}, {
+	"addrId" : "100",
+	"regName" : "Магаданская область",
+	"addrLevel" : "3",
+	"idForRequest" : "49",
+	"regions" : ["49"]
+}, {
+	"addrId" : "18",
+	"regName" : "Московская",
+	"addrLevel" : "3",
+	"idForRequest" : "50",
+	"regions" : ["50", "90", "150", "190"]
+}, {
+	"addrId" : "33",
+	"regName" : "Мурманская область",
+	"addrLevel" : "3",
+	"idForRequest" : "51",
+	"regions" : ["51"]
+}, {
+	"addrId" : "60",
+	"regName" : "Нижегородская область",
+	"addrLevel" : "3",
+	"idForRequest" : "52",
+	"regions" : ["52", "152"]
+}, {
+	"addrId" : "34",
+	"regName" : "Новгородская область",
+	"addrLevel" : "3",
+	"idForRequest" : "53",
+	"regions" : ["53"]
+}, {
+	"addrId" : "84",
+	"regName" : "Новосибирская область",
+	"addrLevel" : "3",
+	"idForRequest" : "54",
+	"regions" : ["54", "154"]
+}, {
+	"addrId" : "85",
+	"regName" : "Омская область",
+	"addrLevel" : "3",
+	"idForRequest" : "55",
+	"regions" : ["55"]
+}, {
+	"addrId" : "61",
+	"regName" : "Оренбургская область",
+	"addrLevel" : "3",
+	"idForRequest" : "56",
+	"regions" : ["56"]
+}, {
+	"addrId" : "19",
+	"regName" : "Орловская область",
+	"addrLevel" : "3",
+	"idForRequest" : "57",
+	"regions" : ["57"]
+}, {
+	"addrId" : "62",
+	"regName" : "Пензенская область",
+	"addrLevel" : "3",
+	"idForRequest" : "58",
+	"regions" : ["58"]
+}, {
+	"addrId" : "64",
+	"regName" : "Пермский край",
+	"addrLevel" : "3",
+	"idForRequest" : "59",
+	"regions" : ["59", "81", "159"]
+}, {
+	"addrId" : "35",
+	"regName" : "Псковская область",
+	"addrLevel" : "3",
+	"idForRequest" : "60",
+	"regions" : ["60"]
+}, {
+	"addrId" : "51",
+	"regName" : "Ростовская область",
+	"addrLevel" : "3",
+	"idForRequest" : "61",
+	"regions" : ["61", "161"]
+}, {
+	"addrId" : "20",
+	"regName" : "Рязанская область",
+	"addrLevel" : "3",
+	"idForRequest" : "62",
+	"regions" : ["62"]
+}, {
+	"addrId" : "65",
+	"regName" : "Самарская область",
+	"addrLevel" : "3",
+	"idForRequest" : "63",
+	"regions" : ["63", "163"]
+}, {
+	"addrId" : "66",
+	"regName" : "Саратовская область",
+	"addrLevel" : "3",
+	"idForRequest" : "64",
+	"regions" : ["64", "164"]
+}, {
+	"addrId" : "101",
+	"regName" : "Сахалинская область",
+	"addrLevel" : "3",
+	"idForRequest" : "65",
+	"regions" : ["65"]
+}, {
+	"addrId" : "70",
+	"regName" : "Свердловская область",
+	"addrLevel" : "3",
+	"idForRequest" : "66",
+	"regions" : ["66", "96"]
+}, {
+	"addrId" : "21",
+	"regName" : "Смоленская область",
+	"addrLevel" : "3",
+	"idForRequest" : "67",
+	"regions" : ["67"]
+}, {
+	"addrId" : "22",
+	"regName" : "Тамбовская область",
+	"addrLevel" : "3",
+	"idForRequest" : "68",
+	"regions" : ["68"]
+}, {
+	"addrId" : "23",
+	"regName" : "Тверская область",
+	"addrLevel" : "3",
+	"idForRequest" : "69",
+	"regions" : ["69"]
+}, {
+	"addrId" : "86",
+	"regName" : "Томская область",
+	"addrLevel" : "3",
+	"idForRequest" : "70",
+	"regions" : ["70"]
+}, {
+	"addrId" : "24",
+	"regName" : "Тульская область",
+	"addrLevel" : "3",
+	"idForRequest" : "71",
+	"regions" : ["71"]
+}, {
+	"addrId" : "71",
+	"regName" : "Тюменская область",
+	"addrLevel" : "3",
+	"idForRequest" : "72",
+	"regions" : ["72"]
+}, {
+	"addrId" : "67",
+	"regName" : "Ульяновская область",
+	"addrLevel" : "3",
+	"idForRequest" : "73",
+	"regions" : ["73", "173"]
+}, {
+	"addrId" : "72",
+	"regName" : "Челябинская область",
+	"addrLevel" : "3",
+	"idForRequest" : "74",
+	"regions" : ["74"]
+}, {
+	"addrId" : "88",
+	"regName" : "Забайкальский край ",
+	"addrLevel" : "3",
+	"idForRequest" : "75",
+	"regions" : ["75"]
+}, {
+	"addrId" : "90",
+	"regName" : "Забайкальский край Агинский Бурятский округ",
+	"addrLevel" : "3",
+	"idForRequest" : "75",
+	"regions" : ["80"]
+}, {
+	"addrId" : "25",
+	"regName" : "Ярославская область",
+	"addrLevel" : "3",
+	"idForRequest" : "76",
+	"regions" : ["76"]
+}, {
+	"addrId" : "26",
+	"regName" : "г. Москва",
+	"addrLevel" : "3",
+	"idForRequest" : "77",
+	"regions" : ["77", "97", "99", "177", "197", "199"]
+}, {
+	"addrId" : "37",
+	"regName" : "г. Санкт-Петербург",
+	"addrLevel" : "3",
+	"idForRequest" : "78",
+	"regions" : ["78", "98", "178"]
+}, {
+	"addrId" : "102",
+	"regName" : "Еврейская авт. область",
+	"addrLevel" : "3",
+	"idForRequest" : "79",
+	"regions" : ["79"]
+}, {
+	"addrId" : "38",
+	"regName" : "Ненецкий АО",
+	"addrLevel" : "3",
+	"idForRequest" : "83",
+	"regions" : ["83"]
+}, {
+	"addrId" : "74",
+	"regName" : "Ханты-Мансийский Автономный округ - Югра",
+	"addrLevel" : "3",
+	"idForRequest" : "86",
+	"regions" : ["86"]
+}, {
+	"addrId" : "104",
+	"regName" : "Чукотский",
+	"addrLevel" : "3",
+	"idForRequest" : "87",
+	"regions" : ["87"]
+}, {
+	"addrId" : "75",
+	"regName" : "Ямало-Ненецкий",
+	"addrLevel" : "3",
+	"idForRequest" : "89",
+	"regions" : ["89"]
+}]

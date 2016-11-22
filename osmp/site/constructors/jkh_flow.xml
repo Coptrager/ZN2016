@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects
+	xmlns:util="http://www.springactionscript.org/schema/util">
+
+  <!-- elements -->
+
+  <object 
+		id="flowCfg"
+		class="ru.mobw.coreas3.app.config.FlowConfig">
+		<property name="bindingsRootPackage" value="${utility.path}"/>
+	</object>
+
+  <object
+		id="flow"
+		class="ru.mobw.coreas3.app.flow.mcflow.MCFlowBase"
+		depends-on="flowCfg">
+    <constructor-arg ref="flowCfg">
+    </constructor-arg>
+    <property name="routeData" ref="route"/>
+    <property name="elementsMap">
+      <dictionary>
+        <entry>
+          <key>start</key>
+          <value>
+            <ref>start</ref>
+          </value>
+        </entry>
+        <entry>
+			<key>jkuOferta</key>
+			<value>
+				<ref>jkuOferta</ref>
+			</value>
+		</entry>
+		 <entry>
+			<key>qiwiOferta</key>
+			<value>
+				<ref>qiwiOferta</ref>
+			</value>
+		</entry>
+        <entry>
+          <key>enterAccount</key>
+          <value>
+            <ref>enterAccount</ref>
+          </value>
+        </entry>
+        <entry>
+          <key>selectOwe</key>
+          <value>
+            <ref>selectOwe</ref>
+          </value>
+        </entry>
+		<entry>
+          <key>enter_wallet_login</key>
+          <value>
+            <ref>enter_wallet_login</ref>
+          </value>
+        </entry>
+		<entry>
+          <key>pin_page</key>
+          <value>
+            <ref>pin_page</ref>
+          </value>
+        </entry>
+		<entry>
+          <key>save_page</key>
+          <value>
+            <ref>save_page</ref>
+          </value>
+        </entry>
+		<entry>
+          <key>select_payment</key>
+          <value>
+            <ref>select_payment</ref>
+          </value>
+        </entry>
+        <entry>
+          <key>changeOtherPeriod</key>
+          <value>
+            <ref>changeOtherPeriod</ref>
+          </value>
+        </entry>
+        <entry>
+          <key>selectOweMonth</key>
+          <value>
+            <ref>selectOweMonth</ref>
+          </value>
+        </entry>
+        <entry>
+          <key>enterTelephone</key>
+          <value>
+            <ref>enterTelephone</ref>
+          </value>
+        </entry>
+        <entry>
+          <key>changeTypeSelect</key>
+          <value>
+            <ref>changeTypeSelect</ref>
+          </value>
+        </entry>
+        <entry>
+          <key>changeToWallet</key>
+          <value>
+            <ref>changeToWallet</ref>
+          </value>
+        </entry>
+        <entry>
+          <key>changeToMobile</key>
+          <value>
+            <ref>changeToMobile</ref>
+          </value>
+        </entry>         
+        <entry>
+          <key>paymentEnd</key>
+          <value>
+            <ref>paymentEnd</ref>
+          </value>
+        </entry>
+		 <entry>
+          <key>check_page</key>
+          <value>
+            <ref>check_page</ref>
+          </value>
+        </entry>
+		<entry>
+          <key>with_data_page</key>
+          <value>
+            <ref>with_data_page</ref>
+          </value>
+        </entry>
+        <entry>
+          <key>exit</key>
+          <value>
+            <ref>exit</ref>
+          </value>
+        </entry>    
+      </dictionary>
+    </property>
+  </object>
+
+  <object
+		id="start"
+		class="elements.StartElement"
+		>
+	<property name="id" value="1"/>	
+    <constructor-arg value="start"/>
+    <constructor-arg ref="mainInstance"/>
+    
+	<property name="registrationCandidates">
+			<array>
+				<value>viewMC.yaupButton,click,A:yaup</value>
+			</array>
+		</property>
+  </object>
+  
+  <object
+		id="jkuOferta"
+		class="elements.OfertaElement"
+		>
+		<property name="id" value="2"/>
+		<constructor-arg value="jkuOferta"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="ofertaName" value="jku"/>
+		<property name="timeout" value="200000"/>
+   </object>
+	
+	<object
+		id="qiwiOferta"
+		class="elements.OfertaElement"
+		>
+		<property name="id" value="3"/>
+		<constructor-arg value="qiwiOferta"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="ofertaName" value="qiwi"/>
+		<property name="timeout" value="200000"/>
+  </object>
+	
+  <object
+		id="enterAccount"
+		class="elements.EnterAccountElement"
+		>
+	<property name="id" value="4"/>	
+    <constructor-arg value="enterAccount"/>
+    <constructor-arg ref="mainInstance"/> 
+    <property name="maxTextLength" value="10"/>
+    <property name="bindings">
+    	<array>
+    		<value>binder.text=$account</value>
+    	</array>
+    </property>
+	<property name="registrationCandidates">
+			<array>
+				<value>jkhOweRequestParser,SERVER_POST_REQUEST_SUCCESS,S:jkhOweRequest</value>
+				<value>jkhOweRequestParser,SERVER_POST_REQUEST_FATAL_ERROR,E:jkhOweRequestFail</value>
+				<value>jkhOweRequestParser,BASE_SERVICE_ERROR,E:jkhOweRequestFail</value>
+			</array>
+		</property>
+  </object> 
+
+  <object
+		id="selectOwe"
+		class="elements.SelectOweElement"
+		>
+	<property name="id" value="5"/>	
+    <constructor-arg value="selectOwe"/>
+    <constructor-arg ref="mainInstance"/>
+	<property name="registrationCandidates">
+			<array>
+				<value>viewMC.otherPeriod,click,A:otherPeriod</value>
+			</array>
+		</property>
+  </object>
+
+  <object
+		id="changeTypeSelect"
+		class="elements.ChangeTypeSelectionElement"
+		>
+	<property name="id" value="6"/>	
+    <constructor-arg value="changeTypeSelect"/>
+    <constructor-arg ref="mainInstance"/>
+  </object>
+  
+  <object
+		id="selectOweMonth"
+		class="elements.SelectOweMonthElement"
+		>
+	<property name="id" value="7"/>	
+    <constructor-arg value="selectOweMonth"/>
+    <constructor-arg ref="mainInstance"/>
+	
+	
+	<property name="registrationCandidates">
+			<array>
+				<value>viewMC.oweInfo,click,A:oweInfo</value>
+				<value>viewMC.noStrah,click,A:noStrah</value>
+			</array>
+		</property>
+  </object>
+	<object
+		id="pin_page"
+		class="elements.EnterPinElement"
+		>
+		<property name="id" value="14"/>
+		<constructor-arg value="pin_page"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="dataName" value="pin"/>
+		<property name="validator" ref="pinValidator" />
+	</object>
+	<object
+		id="select_payment"
+		class="elements.SelectPaymentElement"
+		>
+		<property name="id" value="15"/>
+		<constructor-arg value="select_payment"/>
+		<constructor-arg ref="mainInstance"/>
+	</object>
+	<object
+		id="save_page"
+		class="elements.SavePaymentElement"
+		>
+		<property name="id" value="16"/>
+		<constructor-arg value="save_page"/>
+		<constructor-arg ref="mainInstance"/>
+	</object>
+	<object
+		id="check_page"
+		class="elements.CheckElement"
+		>
+		<property name="id" value="17"/>
+		<constructor-arg value="check_page"/>
+		<constructor-arg ref="mainInstance"/>
+	</object>
+	<object
+		id="with_data_page"
+		class="elements.WithDataElement"
+		>
+		<property name="id" value="18"/>
+		<constructor-arg value="with_data_page"/>
+		<constructor-arg ref="mainInstance"/>
+		 
+	</object>
+	<object
+		id="enter_wallet_login"
+		class="elements.EnterWalletLoginElement"	
+		>
+		<property name="id" value="13"/>
+		<constructor-arg value="enterTelephone"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="bindings">
+			<array>
+				<value>binder.text=$phone</value>
+			</array>
+		</property>
+		<property name="registrationCandidates">
+			<array>
+				<value>service,responseEvent,S:phoneRequest</value>
+				<value>service,requestFailureEvent,E:phoneRequestFail</value>
+				<value>service,requestPendingErrorEvent,E:phoneRequestFail</value>
+				<value>service,requestTimeoutEvent,E:phoneRequestFail</value>
+			</array>
+		</property>
+		<property name="formatter" ref="phoneFormatter" />
+		<property name="maxTextLength" value="${config.phoneLength}"/>
+		<property name="validationAlert" value="${err.phoneError}"/>
+		<property name="validator" ref="phoneValidator" />
+	</object>
+  <object
+		id="enterTelephone"
+		class="elements.EnterTelephoneElement"
+		>
+		<property name="id" value="8"/>
+		<constructor-arg value="enterTelephone"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="bindings">
+			<array>
+				<value>binder.text=$phone</value>
+			</array>
+		</property>
+		<property name="registrationCandidates">
+			<array>
+				<value>service,responseEvent,S:phoneRequest</value>
+				<value>service,requestFailureEvent,E:phoneRequestFail</value>
+				<value>service,requestPendingErrorEvent,E:phoneRequestFail</value>
+				<value>service,requestTimeoutEvent,E:phoneRequestFail</value>
+			</array>
+		</property>
+		<property name="formatter" ref="phoneFormatter" />
+		<property name="maxTextLength" value="${config.phoneLength}"/>
+		<property name="validationAlert" value="${err.phoneError}"/>
+		<property name="validator" ref="phoneValidator" />
+	</object>
+
+  	<object
+		id="changeToMobile"
+		class="elements.MobileChangePaymentElement"
+		>
+		<property name="id" value="9"/>
+		<constructor-arg value="changeToMobile"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="timeout" value="240000"/>
+	</object>
+	
+	<object
+		id="changeToWallet"
+		class="elements.WalletChangePaymentElement"
+		>
+		<property name="id" value="10"/>
+		<constructor-arg value="changeToWallet"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="timeout" value="240000"/>
+	</object> 
+
+  <object
+	  	id="paymentEnd"
+	  	class="elements.EndPaymentElement"
+	  	>
+	<property name="id" value="11"/>	
+      <constructor-arg value="paymentEnd"/>
+      <constructor-arg ref="mainInstance"/>
+	  <property name="registrationCandidates">
+			<array>
+				<value>viewMC.saveButton,click,A:saveYaup</value>
+			</array>
+		</property>
+  </object>
+
+  <object
+	  	id="changeOtherPeriod"
+	  	class="elements.ChangeOtherPeriodElement"
+	  	>
+	<property name="id" value="12"/>	
+    <constructor-arg value="changeOtherPeriod"/>
+    <constructor-arg ref="mainInstance"/>
+    <property name="timeout" value="210000"/>
+	<property name="registrationCandidates">
+			<array>
+				<value>jkhOweRequestParser,SERVER_POST_REQUEST_SUCCESS,S:jkhOweRequestOtherPeriod</value>
+				<value>jkhOweRequestParser,SERVER_POST_REQUEST_FATAL_ERROR,E:jkhOweRequestOtherPeriodFail</value>
+				<value>jkhOweRequestParser,BASE_SERVICE_ERROR,E:jkhOweRequestOtherPeriodFail</value>
+			</array>
+		</property>
+  </object>
+  
+	<object
+		id="exit"
+		class="elements.ZKUExitElement"
+		>
+		<constructor-arg value="exit"/>
+	</object>
+	
+	 <!-- end elements -->
+	
+	
+	
+	
+  
+	<!-- validators -->
+	
+	<object 
+		id="phoneValidator"
+		class="com.leetwin.flow.validation.Validator">
+		<property name="constraintsMap">
+			<dictionary>
+				<entry>
+					<key>value</key>
+					<value>
+						<array>
+							<object class="com.leetwin.flow.validation.constraints.NotNull"/>
+							<object class="com.leetwin.flow.validation.constraints.InRange">
+								<property name="min" value="10"/>
+								<property name="max" value="10"/>
+							</object>
+						</array>
+					</value>
+				</entry>
+			</dictionary>
+		</property>
+	</object>
+	<object 
+		id="pinValidator"
+		class="com.leetwin.flow.validation.Validator">
+		<property name="constraintsMap">
+			<dictionary>
+				<entry>
+					<key>value</key>
+					<value>
+						<array>
+							<object class="com.leetwin.flow.validation.constraints.NotNull"/>
+							<object class="com.leetwin.flow.validation.constraints.InRange">
+								<property name="min" value="${config.minPinLength}"/>
+								<property name="max" value="${config.maxPinLength}"/>
+							</object>
+						</array>
+					</value>
+				</entry>
+			</dictionary>
+		</property>
+	</object>
+
+
+	<!-- end validators -->
+		
+		
+		
+		
+  
+	<!-- helpers -->
+	<object id="phoneFormatter" class="ru.mobw.coreas3.formatters.PhoneFormatter" />
+	<!-- end_helpers -->
+  
+</objects>

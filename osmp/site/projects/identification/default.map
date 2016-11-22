@@ -1,0 +1,27 @@
+$begin > %init > $end
+
+%init: {
+	pin: @pin,
+	firstdocument: %first
+}
+
+@pin: [
+	pin > %first
+]
+
+%first: {
+	ok: @hasinn,
+	fail: @second
+}
+
+@hasinn: [
+	%confirm > final
+]
+
+%confirm: {
+	change: @second,
+	final: final
+}
+@second: [
+	second > final
+]

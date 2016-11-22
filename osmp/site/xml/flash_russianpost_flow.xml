@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	
+	<object id="flow" class="com.qiwi.flow.CommonFlow">
+		<property name="routeData" ref="route" />
+		<property name="elementsMap">
+			<dictionary>
+				<entry><key>init</key><value ref="init" /></entry>
+				<entry><key>way</key><value ref="way" /></entry>
+				<entry><key>history</key><value ref="history" /></entry>
+				<entry><key>address</key><value ref="address" /></entry>
+				<entry><key>cash</key><value ref="cash" /></entry>
+				<entry><key>conditions</key><value ref="conditions" /></entry>
+				<entry><key>fullconfirmation</key><value ref="fullconfirmation" /></entry>
+				<entry><key>simpleconfirmation</key><value ref="simpleconfirmation" /></entry>
+				<entry><key>final</key><value ref="final" /></entry>
+				<entry><key>index</key><value ref="index" /></entry>
+				<entry><key>name</key><value ref="name" /></entry>
+				<entry><key>summ</key><value ref="summ" /></entry>
+				<entry><key>change</key><value ref="change" /></entry>
+				<entry><key>offertus</key><value ref="offertus" /></entry>
+				<entry><key>contract</key><value ref="contract" /></entry>
+				<entry><key>phone</key><value ref="phone" /></entry>
+				<entry><key>pin</key><value ref="pin" /></entry>
+				<entry><key>exit</key><value ref="exit" /></entry>
+			</dictionary>
+		</property>
+	</object>
+	
+	
+	<object id="init" class="elements.InitElement">
+		<constructor-arg>
+			<array>
+				<value><![CDATA[https://w.qiwi.com/xml/xmlcp.jsp]]></value>
+				<value><![CDATA[https://service1.osmp.ru/wallet/xmlcp.jsp]]></value>
+				<value><![CDATA[https://service2.osmp.ru/wallet/xmlcp.jsp]]></value>
+			</array>
+		</constructor-arg>
+		<constructor-arg ref="divisions" />
+		<property name="id" value="1" />
+	</object>
+	<object id="way" class="elements.WayElement">
+		<constructor-arg value="4"/>
+		<property name="id" value="2" />
+		<property name="countdownConfirm" value="false" />
+		<property name="exitConfirm" value="false" />
+	</object>
+	<object id="conditions" class="elements.ConditionsElement">
+		<property name="id" value="3" />
+		<property name="exitConfirm" value="false" />
+	</object>
+	<object id="offertus" class="com.qiwi.elements.OffertusElement">
+		<constructor-arg value="QK_oferta_full.xml"/>
+		<constructor-arg value="3"/>
+		<property name="id" value="4" />
+		<property name="exitConfirm" value="false" />
+	</object>
+	<object id="contract" class="com.qiwi.elements.OffertusElement">
+		<constructor-arg value="QK_oferta_russianpost.xml"/>
+		<constructor-arg value="4"/>
+		<property name="id" value="5" />
+		<property name="exitConfirm" value="false" />
+	</object>
+	<object id="index" class="elements.IndexElement">
+		<property name="id" value="6" />
+	</object>
+	<object id="address" class="elements.AddressElement">
+		<constructor-arg><value><![CDATA[<b>%index%</b><br/>Адрес: %address%]]></value></constructor-arg>
+		<property name="id" value="7" />
+	</object>
+	<object id="simpleconfirmation" class="elements.SimpleConfirmationElement">
+		<property name="id" value="8" />
+	</object>
+	<object id="name" class="elements.NameElement">
+		<constructor-arg value="res/names_first.txt" />
+		<constructor-arg value="res/names_second.txt" />
+		<constructor-arg value="res/names_middle.txt" />
+		<property name="id" value="9" />
+	</object>
+	<object id="summ" class="elements.SummElement">
+		<constructor-arg value="0" />
+		<property name="id" value="10" />
+	</object>
+	<object id="change" class="elements.ChangeElement">
+		<property name="id" value="11" />
+	</object>
+	<object id="phone" class="elements.PhoneElement">
+		<property name="id" value="12" />
+	</object>
+	<object id="pin" class="elements.PinElement">
+		<property name="id" value="13" />
+	</object>
+	<object id="fullconfirmation" class="elements.FullConfirmationElement">
+		<property name="id" value="14" />
+	</object>
+	<object id="history" class="elements.HistoryElement">
+		<property name="id" value="15" />
+	</object>
+	<object id="cash" class="elements.CashElement">
+		<constructor-arg ref="bill" />
+		<property name="id" value="16" />
+		<property name="countdownConfirm" value="false" />
+		<property name="exitConfirm" value="false" />
+		<property name="timeout" value="300000" />
+	</object>
+	<object id="final" class="elements.FinalElement">
+		<constructor-arg ref="echeck" />
+		<property name="id" value="17" />
+		<property name="countdownConfirm" value="false" />
+		<property name="exitConfirm" value="false" />
+		<property name="timeout" value="60000" />
+	</object>
+	<object id="exit" class="elements.QuitElement" />
+
+</objects>

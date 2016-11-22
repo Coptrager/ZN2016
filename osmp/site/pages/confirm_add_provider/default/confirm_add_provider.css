@@ -1,0 +1,77 @@
+﻿#contentBlock {
+    top:0px;
+    left:0px;
+    width:1280px;
+    height:860px;
+    background:linear-gradient(to bottom, #0e4394 0%, #0080c6 100%);
+}
+.text {
+    text-align: center;
+    color: white;
+    font-family: Whitney, Arial;
+    font-size:38px;
+    line-height: 1;
+}
+.center {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+#text-div-1 {
+    top: 82px;
+}
+
+#text-div-3 {
+    top: 498px;
+}
+
+#text-div-4 {
+    top: 624px;
+}
+#text-div-4>.text {
+    line-height: 1.2;
+    font-size: 24px;
+}
+#submit-button {
+    top: 256px;
+    width: 440px;
+    height: 140px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 0px rgba(36, 37, 43, 0.5);
+    transition:all 100ms;
+}
+
+#submit-button:active {
+    margin-top:3px;
+    background-color:#d2deec;
+    color:#2458aa;
+    box-shadow: 0px 0px 0px rgba(36, 37, 43, 0.5);
+}
+
+#submit-button span {
+    text-transform: uppercase;
+}
+
+#plus-symbol {
+    top: 20px;
+    left: 25px;
+    width: 100px;
+    height: 100px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#submit-button-text {
+    margin-left: 145px;
+    margin-top: 36px;
+    float: left;
+    text-align: left;
+}
+#submit-button-text span {
+    font-size: 24px;
+    color: inherit;
+}

@@ -1,0 +1,7 @@
+{
+	"version": "0.8.7f",
+	"plugins": ["sinap"],
+	"locales": {
+		"ru": "../projects/sinap/locale.ru.json"
+	}
+}

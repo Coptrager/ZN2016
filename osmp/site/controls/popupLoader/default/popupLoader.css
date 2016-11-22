@@ -1,0 +1,97 @@
+﻿#popupLoader {
+    width:1280px;
+    height:1024px;
+    z-index:100;
+    visibility:hidden;
+}
+#popupLoaderShadow {
+    background:black;
+    opacity:0.5;
+}
+#popupLoaderContent {
+    top:230px;
+    left:0px;
+    width:1280px;
+    height:400px;
+    background-color:#f5f5f5;
+    background-image:url('#localPath/resourses/logo.png');
+    background-repeat:no-repeat;
+    background-position:50% 18%;
+}
+#popupLoaderText {
+    width:100%;
+    height:40px;
+    margin-top:240px;
+    text-align:center;
+    font-family:Whitney, Arial;
+    font-size:30px;
+    color:#111111;
+}
+#progressBar {
+    margin-top:40px;
+}
+
+#popupLoaderError {
+    top:230px;
+    left:0px;
+    width:1280px;
+    height:400px;
+    background-color:#f5f5f5;
+}
+#popupLoaderErrorHead {
+    width:100%;
+    height:84px;
+    margin-top:56px;
+    font-family:WhitneySemibold;
+    font-size:50px;
+    color:#111111;
+    padding-left: 32px;
+}
+#popupLoaderErrorHead>div {
+    display: inline-block;
+    width: 84px;
+    height: 84px;
+    margin-left: -104px; /*84+20*/
+    margin-right: 20px;
+    background-repeat:no-repeat;
+    background-position: center center;
+    vertical-align: middle;
+}
+#popupLoaderErrorHead>span {
+    vertical-align: middle;
+}
+#popupLoaderError.error #popupLoaderErrorHead>div {
+    background-image:url('#localPath/resourses/error.png');
+}
+
+#popupLoaderError.warning #popupLoaderErrorHead>div {
+    background-image:url('#localPath/resourses/warning.png');
+}
+
+#popupLoaderErrorCode {
+    width:100%;
+    height:40px;
+    margin-top:30px;
+    font-family:Whitney;
+    font-size:30px;
+    color:#111111;
+}
+#popupLoaderErrorButton {
+    width:272px;
+    height:75px;
+    margin:30px 0 0 500px;
+    padding-top:37px;
+    border:4px solid #2458aa;
+    border-radius:14px;
+    text-align:center;
+    color:#2458aa;
+    font-size:30px;
+    font-family:Whitney, Arial;
+    text-transform:uppercase;
+    transition:margin 300ms;
+}
+    #popupLoaderErrorButton:active {
+        margin-top:34px;
+        background:#2458aa;
+        color:white;
+    }

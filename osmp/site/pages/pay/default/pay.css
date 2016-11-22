@@ -1,0 +1,288 @@
+#headText {
+    margin-top:15px;
+    height:auto;
+    font-family:Whitney;
+    font-size:60px;
+    color:#111111;
+}
+#minMaxBlockedText {
+    top:120px;
+    left:0px;
+    width:1280px;
+    height:auto;
+    font-family:Whitney;
+    font-size:27px;
+    color:#111111;
+    opacity:0;
+    transition:all 250ms;
+}
+#minMaxBlockedText span{
+    padding:0px 10px;
+    display:inline-block;
+    border-radius:8px;
+    background-color:#edbb36;
+}
+.minMaxBlockedText-visible {
+    animation:minMaxBlockedText 300ms forwards;
+}
+@keyframes minMaxBlockedText{
+    from{}
+    to{
+        top:95px;
+        opacity:1;
+    }
+}
+
+#payInfoBlock {
+    display:inline-block;
+    margin-top:90px;
+    padding:20px 0 20px 0;
+    width:1280px;
+    height:auto;
+    background:linear-gradient(to bottom, #0e4394 0%, #0080c6 100%);
+}
+#deliveryBlock{
+    margin-top:5px;
+    padding-bottom:10px;
+}
+.trLine {
+    font:50px Whitney;
+    color:#ffffff;
+    height:76px;
+}
+.trDelivery{
+    font:35px Whitney;
+    color:#ffffff;
+    height:50px;
+}
+
+.alertLine {
+    font:bold 50px WhitneySemibold;
+    color:#edbb36;
+}
+#alertIcon {
+    margin-right:40px;
+    width:60px;
+    height:53px;
+    background:url('./resourses/alarm.png') no-repeat right;
+    visibility:hidden;
+}
+
+#addSum {
+    padding:10px 20px 10px 20px;
+    border-radius:8px;
+    margin-right:20px;
+    vertical-align:inherit;
+    font:22px Whitney;
+    color:black;
+    background:#edbb36;
+    visibility:hidden;
+}
+#addSum:after{
+    position:absolute;
+    top:17px;
+    right:-7px;
+    width:15px;
+    height:15px;
+    background:#edbb36;
+    transform:rotateZ(-45deg);
+    content:"";
+}
+
+#made {
+    font:inherit;
+    color:inherit;
+    vertical-align:inherit;
+}
+.alert {
+    width:150px;
+}
+.head {
+    width:470px;
+}
+.value {
+    width:510px;
+    font:inherit;
+}
+.null {
+    width:150px;
+}
+.head2 {
+    width:490px;
+}
+.value2 {
+    width:490px;
+    font:inherit;
+}
+#commissBlock {
+    margin-left:50px;
+    float:left;
+    width:900px;
+    height:400px;
+}
+/*.commissBlockSmall{
+    height:200px;
+}
+#commissSmallBlock {
+    display:none;
+}
+#commissSmallBlockHead {
+    width:600px;
+    margin:10px 0 0 20px;
+}
+#commissSmallBlockHead div {
+    width:280px;
+    font-family:WhitneySemibold;
+    font-size:20px;
+}
+#commissSmallBlockBody,
+#commissCoinBlockBody {
+    width:900px;
+    height:240px;
+    margin-top:10px;
+}
+.commissBlocksSmall{
+    height:360px;
+}
+#commissSmallTable {
+    top:0px;
+    left:0px;
+    transition:top 300ms;
+}
+    #commissSmallTable div {
+        width:inherit;
+        height:30px;
+        float:left;
+        padding-top:10px;
+        border-radius:6px;
+        transition:background 300ms;
+    }
+div p {
+    float:left;
+    padding-left:20px;
+    font-family:Whitney;
+    font-size:20px;
+    text-align:left;
+}
+p.stable-left {
+    width:260px;
+}
+p.stable-right {
+    width:570px;
+}
+#commissCoinBlock {
+    display:none;
+}
+#kommissFullBlock {
+    max-height: 670px;
+}
+#kommissFullBlock.animated {
+    box-shadow: 0 0 10px 0 white inset;
+}
+#kommissFullBlock.animated>div {
+    animation: bigComiss infinite alternate linear;
+    animation-duration: 15s;
+}
+@keyframes bigComiss {
+    0% {transform: translate(0,0)}
+    8% {transform: translate(0,0)}
+    96% {transform: translate(0,calc(-100% + 670px))}
+    100% {transform: translate(0,calc(-100% + 670px))}
+}
+
+    #kommissFullBlock span {
+        font-family:WhitneySemibold;
+        font-size:20px;
+    }
+    #kommissFullBlock td {
+        height:35px;
+        font-family:Whitney;
+        font-size:20px;
+    }
+    #kommissFullBlock td.table-left {
+        width:280px;
+    }
+
+#showCommiss {
+    width:260px;
+    height:50px;
+    margin:20px 50px 0 0;
+    padding-top:20px;
+    visibility:hidden;
+    font-family:Whitney;
+    font-size:20px;
+    color:#111111;
+    background:#a2cfef;
+    border-radius:8px;
+    transition:opacity 150ms;
+}
+
+#commissFullTable {
+    margin: auto;
+    padding-right: 200px;
+    text-align: left;
+}*/
+
+#w_pay {
+    top:45px;
+    left:0px;
+    width:1280px;
+    height:650px;
+}
+
+
+#commissTable{
+    width:890px;
+    height:400px;
+}
+
+#showCommiss {
+    width:260px;
+    height:50px;
+    margin:20px 50px 0 0;
+    padding-top:20px;
+    font-family:Whitney;
+    font-size:20px;
+    color:#111111;
+    background:#a2cfef;
+    border-radius:8px;
+    transition:opacity 150ms;
+}
+
+#kommissFullBlock {
+    max-height: 670px;
+}
+#kommissFullBlock.animated {
+    box-shadow: 0 0 10px 0 white inset;
+}
+#kommissFullBlock.animated>div {
+    animation: bigComiss infinite alternate linear;
+    animation-duration: 15s;
+}
+@keyframes bigComiss {
+    0% {transform: translate(0,0)}
+    8% {transform: translate(0,0)}
+    96% {transform: translate(0,calc(-100% + 670px))}
+    100% {transform: translate(0,calc(-100% + 670px))}
+}
+#kommissFullBlockAnimate{
+    float:left;
+    margin-left:400px;
+}
+
+    #kommissFullBlock span {
+        font-family:WhitneySemibold;
+        font-size:20px;
+    }
+    #kommissFullBlock td {
+        height:35px;
+        font-family:WhitneyLight;
+        font-size:20px;
+        text-align:left;
+    }
+    #kommissFullBlock td.table-left {
+        width:260px;
+    }
+    #kommissFullBlock td.table-right {
+        width:600px;
+    }

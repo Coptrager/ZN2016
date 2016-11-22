@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<object id="bill" class="String">
+		<constructor-arg>
+			<value>
+<![CDATA[_receipt_ВАШИ+ПЛАТЕЖИ=
+Принято: %accepted%
+Комиссия оператора: %bankcommission%
+Зачислено: %enrolled%
+------------------------------------&_receipt_ОПЛАТА+ЗА=
+КИВИ Банк (АО)
+ИНН: 3123011520
+Лицензия № 2241
+Вид операции: 005
+Сумма: %amount%
+Коммисия: %bankcommission%
+{{usd && Сумма к выдаче в долларах США: %amountusd% USD
+(1 USD = %rateusd%)
+}}{{euro && Сумма к выдаче в Евро: %amounteuro% EURO
+(1 EURO = %rateeuro%)
+}}{{change && Сдача в Visa Qiwi Wallet:
+%change%
+}}Денежные переводы "Лидер"&_receipt_Получатель=%sender%&_receipt_Отправитель=%recipient%&_receipt_Страна получения перевода=%country%&_receipt_Контрольный номер перевода=%control%
+Операция по переводу средств в банк получалеля принята КИВИ Банк (АО) к исполнению
+------------------------------------
+Поддержка клиентов системы Лидер (24ч.) 8(800)333-44-44
+&prt_top_reklama=Больше возможностей на сайте: WWW.QIWI.COM
+&prt_bottom_reklama=Телефон поддержки Visa QIWI Wallet:\n8(800) 555-74-94
+&_extra_comment=Оплата:Денежные переводы: %shortcode% Приложение Leader: %version%
+]]>
+			</value>
+		</constructor-arg>
+	</object>
+</objects>

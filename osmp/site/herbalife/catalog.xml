@@ -1,0 +1,1255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<herbalife_sku>
+                <groups>
+                               <group id="1" name="Сбалансированное питание"/>
+<group id="2" name="Оптимизация контроля веса"/>
+<group id="3" name="Целевое питание"/>
+<group id="4" name="Товары PROMOTE!"/>
+<group id="5" name="Косметические продукты NOURIFUSIONтм"/>
+<group id="6" name="Линия Skin Activator ™"/>
+<group id="7" name="Линия RADIANT C"/>
+<group id="8" name="Линия Herbal aloe"/>
+<group id="9" name="Уход за кожей рук и ног"/>
+<group id="10" name="Уход за телом"/>
+<group id="11" name="Линия Herbalife SKIN"/>
+<group id="12" name="Литература"/>
+<group id="13" name="Спортивное питание HERBALIFE24"/>
+
+                </groups>
+
+                <products>
+                               <product>
+                                               <group_id>1</group_id>
+                                               <SKU>0141</SKU>
+                                               <SKU_name1>Коктейль Формула 1</SKU_name1>
+                                               <SKU_name2>со вкусом Ванили</SKU_name2>
+                                               <base_price>1603.35</base_price>
+                                               <score>23.95</score>
+                               </product>
+		 <product>
+                                               <group_id>1</group_id>
+                                               <SKU>0142</SKU>
+                                               <SKU_name1>Коктейль Формула 1</SKU_name1>
+                                               <SKU_name2>Голландский Шоколад</SKU_name2>
+                                               <base_price>1603.35</base_price>
+                                               <score>23.95</score>
+                               </product>
+		 <product>
+                                               <group_id>1</group_id>
+                                               <SKU>0143</SKU>
+                                               <SKU_name1>Коктейль Формула 1</SKU_name1>
+                                               <SKU_name2>со вкусом Клубники</SKU_name2>
+                                               <base_price>1603.35</base_price>
+                                               <score>23.95</score>
+                               </product>
+		 <product>
+                                               <group_id>1</group_id>
+                                               <SKU>0146</SKU>
+                                               <SKU_name1>Коктейль Формула 1</SKU_name1>
+                                               <SKU_name2>Шоколадное печенье</SKU_name2>
+                                               <base_price>1603.35</base_price>
+                                               <score>23.95</score>
+                               </product>
+		 <product>
+                                               <group_id>1</group_id>
+                                               <SKU>1171</SKU>
+                                               <SKU_name1>Коктейль Формула 1</SKU_name1>
+                                               <SKU_name2>Капучино</SKU_name2>
+                                               <base_price>1603.35</base_price>
+                                               <score>23.95</score>
+                               </product>
+		    <product>			
+                                               <group_id>1</group_id>
+                                               <SKU>0950</SKU>
+                                               <SKU_name1>Коктейль Формула 1</SKU_name1>
+                                               <SKU_name2>Пина-Колада</SKU_name2>
+                                               <base_price>1603.35</base_price>
+                                               <score>23.95</score>
+                               </product>
+		    <product>			
+                                               <group_id>1</group_id>
+                                               <SKU>0946</SKU>
+                                               <SKU_name1>Коктейль Формула 1</SKU_name1>
+                                               <SKU_name2>Маракуйя</SKU_name2>
+                                               <base_price>1603.35</base_price>
+                                               <score>23.95</score>
+                               </product>
+		    <product>			
+                                               <group_id>1</group_id>
+                                               <SKU>2653</SKU>
+                                               <SKU_name1>Коктейль Формула 1</SKU_name1>
+                                               <SKU_name2>в инд. упаковке (7 шт.)</SKU_name2>
+                                               <base_price>614.59</base_price>
+                                               <score>9.17</score>
+                               </product>
+		    <product>
+                                               <group_id>1</group_id>
+                                               <SKU>178A</SKU>
+                                               <SKU_name1>Набор для 3 дневной программы</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>401.65</base_price>
+                                               <score>6.30</score>
+                               </product>
+		    <product>
+                                               <group_id>1</group_id>
+                                               <SKU>2864</SKU>
+                                               <SKU_name1>Овсяно-яблочный напиток</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>1401.83</base_price>
+                                               <score>22.95</score>
+                               </product>
+		    <product>
+                                               <group_id>1</group_id>
+                                               <SKU>2865</SKU>
+                                               <SKU_name1>Комплекс Пищевых Волокон</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>1401.83</base_price>
+                                               <score>22.95</score>
+                               </product>
+		    <product>
+                                               <group_id>1</group_id>
+                                               <SKU>0155</SKU>
+                                               <SKU_name1>Томатный суп с базиликом </SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>1603.35</base_price>
+                                               <score>23.00</score>
+                               </product>
+		<product>
+                                               <group_id>1</group_id>
+                                               <SKU>2669</SKU>
+                                               <SKU_name1>Батончик Формула 1</SKU_name1>
+                                               <SKU_name2>Экспресс Шоколадный</SKU_name2>
+                                               <base_price>765.94</base_price>
+                                               <score>14.00</score>
+                               </product>
+		<product>
+                                               <group_id>1</group_id>
+                                               <SKU>3115</SKU>
+                                               <SKU_name1>Формула 2</SKU_name1>
+                                               <SKU_name2>Мультивитаминный комплекс</SKU_name2>
+                                               <base_price>1292.33</base_price>
+                                               <score>19.95</score>
+                               </product>
+		<product>
+                                               <group_id>1</group_id>
+                                               <SKU>0242</SKU>
+                                               <SKU_name1>Формула 3 Протеиновая смесь </SKU_name1>
+                                               <SKU_name2> </SKU_name2>
+                                               <base_price>1366.83</base_price>
+                                               <score>17.95</score>
+                               </product>
+		<product>
+                                               <group_id>1</group_id>
+                                               <SKU>0258</SKU>
+                                               <SKU_name1>Протеиновые батончики1</SKU_name1>
+                                               <SKU_name2>Ваниль-Миндаль</SKU_name2>
+                                               <base_price>861.48</base_price>
+                                               <score>7.70</score>
+                               </product>
+		<product>
+                                               <group_id>1</group_id>
+                                               <SKU>0259</SKU>
+                                               <SKU_name1>Протеиновые батончики1</SKU_name1>
+                                               <SKU_name2>Шоколад-Арахис</SKU_name2>
+                                               <base_price>861.48</base_price>
+                                               <score>7.70</score>
+                               </product>
+		<product>
+                                               <group_id>1</group_id>
+                                              <SKU>0260</SKU>
+                                               <SKU_name1>Протеиновые батончики1</SKU_name1>
+                                               <SKU_name2>Лимон</SKU_name2>
+                                               <base_price>861.48</base_price>
+                                               <score>7.70</score>
+                               </product>
+		<product>
+                                               <group_id>1</group_id>
+                                               <SKU>0265</SKU>
+                                               <SKU_name1>Фильтр для воды</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>1273.99</base_price>
+                                               <score>20.00</score>
+                               </product>
+		<product>
+                                               <group_id>1</group_id>
+                                               <SKU>0266</SKU>
+                                               <SKU_name1>Сменный картридж</SKU_name1>
+                                               <SKU_name2>для фильтра для воды</SKU_name2>
+                                               <base_price>344.3</base_price>
+                                               <score>5.35</score>
+                               </product>
+     <product>
+                                               <group_id>2</group_id>
+                                               <SKU>0050</SKU>
+                                               <SKU_name1>Термо Комплит</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>1892.19</base_price>
+                                               <score>30.95</score>
+                               </product>
+
+		<product>
+                                               <group_id>2</group_id>
+                                               <SKU>0106</SKU>
+                                               <SKU_name1>Травяной напиток</SKU_name1>
+                                               <SKU_name2>Классический 100г</SKU_name2>
+                                               <base_price>2169.57</base_price>
+                                               <score>34.95</score>
+                               </product>
+		<product>
+                                               <group_id>2</group_id>
+                                               <SKU>0105</SKU>
+                                               <SKU_name1>Травяной напиток</SKU_name1>
+                                               <SKU_name2>Классический 50г</SKU_name2>
+                                               <base_price>1162.14</base_price>
+                                               <score>19.95</score>
+                               </product>
+		<product>
+                                               <group_id>2</group_id>
+                                               <SKU>0255</SKU>
+                                               <SKU_name1>Травяной напиток</SKU_name1>
+                                               <SKU_name2>со вкусом лимона 50г</SKU_name2>
+                                               <base_price>1162.14</base_price>
+                                               <score>19.95</score>
+                               </product>
+		<product>
+                                               <group_id>2</group_id>
+                                               <SKU>0256</SKU>
+                                               <SKU_name1>Травяной напиток</SKU_name1>
+                                               <SKU_name2>со вкусом малины 50г</SKU_name2>
+                                               <base_price>1162.14</base_price>
+                                               <score>19.95</score>
+                               </product>
+		<product>
+                                               <group_id>2</group_id>
+                                               <SKU>0117</SKU>
+                                               <SKU_name1>Желтые таблетки</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>1118.67</base_price>
+                                               <score>20.50</score>
+                               </product>
+		<product>
+                                               <group_id>2</group_id>
+                                               <SKU>0111</SKU>
+                                               <SKU_name1>Целл-у-лосс</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>1082.5</base_price>
+                                               <score>15.75</score>
+                               </product>
+       <product>
+                                               <group_id>3</group_id>
+                                               <SKU>3151</SKU>
+                                               <SKU_name1>Напиток Лифтофф Апельсин </SKU_name1>
+                                               <SKU_name2> </SKU_name2>
+                                               <base_price>1091.74</base_price>
+                                               <score>15.95</score>
+                               </product>
+		<product>
+                                               <group_id>3</group_id>
+                                               <SKU>3152</SKU>
+                                               <SKU_name1>Напиток Лифтофф Лимон </SKU_name1>
+                                               <SKU_name2> </SKU_name2>
+                                               <base_price>1091.74</base_price>
+                                               <score>15.95</score>
+                               </product>
+		<product>
+                                               <group_id>3</group_id>
+                                               <SKU>0020</SKU>
+                                               <SKU_name1>Экстра-Каль</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>629.29</base_price>
+                                               <score>10.25</score>
+                               </product>
+		<product>
+                                               <group_id>3</group_id>
+                                               <SKU>0065</SKU>
+                                               <SKU_name1>Гербалайфлайн</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>1512.14</base_price>
+                                               <score>25.75</score>
+                               </product>					   
+		<product>
+                                               <group_id>3</group_id>
+                                               <SKU>0036</SKU>
+                                               <SKU_name1>Найтворкс</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>5352.2</base_price>
+                                               <score>89.95</score>
+                               </product>
+		<product>
+                                               <group_id>3</group_id>
+                                               <SKU>0006</SKU>
+                                               <SKU_name1>Концентрат Гербал Алоэ </SKU_name1>
+                                               <SKU_name2> </SKU_name2>
+                                               <base_price>1453.4</base_price>
+                                               <score>24.95</score>
+                               </product>
+		<product>
+                                               <group_id>3</group_id>
+                                               <SKU>1408</SKU>
+                                               <SKU_name1>Растительный напиток Алоэ(порошок) </SKU_name1>
+                                               <SKU_name2> </SKU_name2>
+                                               <base_price>3036.79</base_price>
+                                               <score>44.25</score>
+                               </product>
+		<product>
+                                               <group_id>3</group_id>
+                                               <SKU>0022</SKU>
+                                               <SKU_name1>Шизандра</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>961.37</base_price>
+                                               <score>15.50</score>
+                               </product>
+		<product>
+                                               <group_id>3</group_id>
+                                               <SKU>3123</SKU>
+                                               <SKU_name1>Клеточный Активатор</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>1346.70</base_price>
+                                               <score>21.95</score>
+                               </product>
+		<product>
+                                               <group_id>3</group_id>
+                                               <SKU>0139</SKU>
+                                               <SKU_name1>РоузГард</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>1332.35</base_price>
+                                               <score>23.75</score>
+                               </product>
+		<product>
+                                               <group_id>3</group_id>
+                                               <SKU>0122</SKU>
+                                               <SKU_name1>Таблетки NRG</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>842.39</base_price>
+                                               <score>14.75</score>
+                               </product>
+		<product>
+                                               <group_id>3</group_id>
+                                               <SKU>0102</SKU>
+                                               <SKU_name1>Напиток NRG</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>849.54</base_price>
+                                               <score>14.75</score>
+                               </product>
+		<product>
+                                               <group_id>3</group_id>
+                                               <SKU>0003</SKU>
+                                               <SKU_name1>Тан Куай</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>894.39</base_price>
+                                               <score>12.50</score>
+                               </product>
+                
+        <product>
+                                               <group_id>4</group_id>
+                                               <SKU>8462</SKU>
+                                               <SKU_name1>Зеленый значок"Я люблю Herbalife"</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>518.85</base_price>
+                                               <score>1.85</score>
+                               </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>002A</SKU>
+                                               <SKU_name1>Бьюти-кейс Herbalife SKIN</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>990.18</base_price>
+                                               <score>2.90</score>
+                               </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>003A</SKU>
+                                               <SKU_name1>Повязка на голову Herbalife SKIN</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>117.6</base_price>
+                                               <score>0.40</score>
+                               </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>004A</SKU>
+                                               <SKU_name1>Зеркало Herbalife SKIN</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>214.68</base_price>
+                                               <score>0.75</score>
+                               </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>216A</SKU>
+                                               <SKU_name1>Значок Herbalife SKIN (набор из 5 шт.)</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>497.7</base_price>
+                                               <score>1.5</score>
+                               </product>							   
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>8124</SKU>
+                                               <SKU_name1>Сантиметровая лента(набор 10 шт.)</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>216.96</base_price>
+                                               <score>0.75</score>
+                               </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>8125</SKU>
+                                               <SKU_name1>Измельчитель таблеток </SKU_name1>
+                                               <SKU_name2> </SKU_name2>
+                                               <base_price>130.05</base_price>
+                                               <score>0.45</score>
+                               </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>8129</SKU>
+                                               <SKU_name1>Сантиметровая рулетка (набор 5 шт.)</SKU_name1>
+                                               <SKU_name2> </SKU_name2>
+                                               <base_price>206.47</base_price>
+                                               <score>0.70</score>
+                               </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>8478</SKU>
+                                               <SKU_name1>Шейкер для коктейля (набор 5 шт.)</SKU_name1>
+                                               <SKU_name2> </SKU_name2>
+                                               <base_price>477.62</base_price>
+                                               <score>1.65</score>
+                               </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>180A</SKU>
+                                               <SKU_name1>Бутылка для воды Herbalife Nutrition</SKU_name1>
+                                               <SKU_name2>900мл</SKU_name2>
+                                               <base_price>743,79</base_price>
+                                               <score>2.20</score>
+                                </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>8346</SKU>
+                                               <SKU_name1>Значки с трилистником Herbalife</SKU_name1>
+                                               <SKU_name2>(цвет золота, набор 5 шт.)</SKU_name2>
+                                               <base_price>409.34</base_price>
+                                               <score>1.40</score>
+                               </product> 
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>076A</SKU>
+                                               <SKU_name1>Большой значок "Я люблю Herbalife"</SKU_name1>
+                                               <SKU_name2>( набор 5 шт.)</SKU_name2>
+                                               <base_price>497.95</base_price>
+                                               <score>1.50</score>
+                               </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>8347</SKU>
+                                               <SKU_name1>Значки с трилистником Herbalife</SKU_name1>
+                                               <SKU_name2>(цвет серебра, набор 5 шт.)</SKU_name2>
+                                               <base_price>409.34</base_price>
+                                               <score>1.40</score>
+                               </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>8501</SKU>
+                                               <SKU_name1>Значки "Хочешь похудеть"</SKU_name1>
+                                               <SKU_name2>(набор 10 шт.)</SKU_name2>
+                                               <base_price>216.96</base_price>
+                                               <score>0.75</score>
+                               </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>8459</SKU>
+                                               <SKU_name1>Значок Wellness консультант </SKU_name1>
+                                               <SKU_name2>(набор 10 шт.)</SKU_name2>
+                                               <base_price>261.99</base_price>
+                                               <score>0.90</score>
+                               </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>8634</SKU>
+                                               <SKU_name1>Мерные ложки белые </SKU_name1>
+                                               <SKU_name2>(набор 10 шт.)</SKU_name2>
+                                               <base_price>347.04</base_price>
+                                               <score>1.20</score>
+                               </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>8639</SKU>
+                                               <SKU_name1>Контейнер для порошка</SKU_name1>
+                                               <SKU_name2>Формула 1 (набор 10 шт.)</SKU_name2>
+                                               <base_price>260.15</base_price>
+                                               <score>0.90</score>
+                               </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>7640</SKU>
+                                               <SKU_name1>Сумка с логотипом Herbalife </SKU_name1>
+                                               <SKU_name2> </SKU_name2>
+                                               <base_price>736.66</base_price>
+                                               <score>2.25</score>
+                               </product>
+<product>
+                                               <group_id>4</group_id>
+                                               <SKU>X891</SKU>
+                                               <SKU_name1>Брендированный стакан Herbalife </SKU_name1>
+                                               <SKU_name2> </SKU_name2>
+                                               <base_price>170.59</base_price>
+                                               <score>0.70</score>
+                               </product>
+<product>
+                                               <group_id>4</group_id>
+                                               <SKU>8289</SKU>
+                                               <SKU_name1>Брендированный термо-стакан</SKU_name1>
+                                               <SKU_name2>Herbalife</SKU_name2>
+                                               <base_price>685,22</base_price>
+                                               <score>2.20</score>
+                               </product>
+<product>
+                                               <group_id>4</group_id>
+                                               <SKU>8705</SKU>
+                                               <SKU_name1>Супер Шейкер Herbalife 24</SKU_name1>
+                                               <SKU_name2> </SKU_name2>
+                                               <base_price>379.52</base_price>
+                                               <score>1.65</score>
+                               </product>
+<product>
+                                               <group_id>4</group_id>
+                                               <SKU>8710</SKU>
+                                               <SKU_name1>Бутылка для воды Herbalife 24</SKU_name1>
+                                               <SKU_name2> </SKU_name2>
+                                               <base_price>260.15</base_price>
+                                               <score>0.95</score>
+                               </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>8414</SKU>
+                                               <SKU_name1>Воздушные шары с</SKU_name1>
+                                               <SKU_name2> логотипом Herbalife (набор 100 шт.)</SKU_name2>
+                                               <base_price>836.6</base_price>
+                                               <score>2.88</score>
+                               </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>8589</SKU>
+                                               <SKU_name1>Кружка Herbalife</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>256.4</base_price>
+                                               <score>0.80</score>
+                               </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>8751</SKU>
+                                               <SKU_name1>Значок Строителя Успеха</SKU_name1>
+                                               <SKU_name2>(продается только с набором СУ)</SKU_name2>
+						<add_SKU>9636</add_SKU>
+                                               <base_price>96.68</base_price>
+                                               <score>0.26</score>
+                               </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>8876</SKU>
+                                               <SKU_name1>Брендированная косметичка Herbal Aloe </SKU_name1>
+                                               <SKU_name2> </SKU_name2>
+                                               <base_price>284.51</base_price>
+                                               <score>1.30</score>
+                               </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>8786</SKU>
+                                               <SKU_name1>Значок Старшего Консультанта</SKU_name1>
+                                               <SKU_name2>(продается только с Набором СК)</SKU_name2>
+                                               <add_SKU>9977</add_SKU><base_price>96.68</base_price>
+                                               <score>0.26</score>
+                               </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>8752</SKU>
+                                               <SKU_name1>Значок Квалифицированного продюсера</SKU_name1>
+                                               <SKU_name2>(продается только с Набором КП)</SKU_name2>
+						<add_SKU>9736</add_SKU>
+                                               <base_price>96.68</base_price>
+                                               <score>0.26</score>
+                               </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>8697</SKU>
+                                               <SKU_name1>Супер Шейкер для коктейля </SKU_name1>
+                                               <SKU_name2> </SKU_name2>
+                                               <base_price>393.02</base_price>
+                                               <score>1.65</score>
+                               </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>8787</SKU>
+                                               <SKU_name1>Фартук Herbalife</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>508.44</base_price>
+                                               <score>7.80</score>
+                               </product>
+		<product>                                     <group_id>4</group_id>
+                                               <SKU>8711</SKU>
+                                               <SKU_name1>Бутылка для воды Herbalife Nutrition</SKU_name1>
+                                               <SKU_name2>288,83</SKU_name2>
+						<add_SKU/>
+                                               <base_price></base_price>
+                                               <score>0,75</score>
+                               </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>8788</SKU>
+                                               <SKU_name1>Бутылка для воды Herbalife </SKU_name1>
+                                               <SKU_name2> </SKU_name2>
+						<add_SKU/>
+                                               <base_price>260.15</base_price>
+                                               <score>0.95</score>
+                               </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>8573</SKU>
+                                               <SKU_name1>Мочалка для душа Herbalife </SKU_name1>
+                                               <SKU_name2> </SKU_name2>
+                                               <base_price>162.72</base_price>
+                                               <score>0.47</score>
+                               </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>8778</SKU>
+                                               <SKU_name1>Контейнеры для таблеток</SKU_name1>
+                                               <SKU_name2>среднего размера (набор 5 шт.)</SKU_name2>
+                                               <base_price>303.85</base_price>
+                                               <score>1.05</score>
+                               </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>8777</SKU>
+                                               <SKU_name1>Контейнеры для таблеток</SKU_name1>
+                                               <SKU_name2>малого размера (набор 10 шт.)</SKU_name2>
+                                               <base_price>332.62</base_price>
+                                               <score>1.15</score>
+                               </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>8779</SKU>
+                                               <SKU_name1>Контейнеры для таблеток</SKU_name1>
+                                               <SKU_name2>длинные (набор 5 шт.)</SKU_name2>
+                                               <base_price>433.92</base_price>
+                                               <score>1.50</score>
+                               </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>8550</SKU>
+                                               <SKU_name1>Значек "Бросьте вызов лишнему весу"</SKU_name1>
+                                               <SKU_name2>(набор 10 шт.)</SKU_name2>
+                                               <base_price>228.6</base_price>
+                                               <score>0.80</score>
+                               </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>I004</SKU>
+                                               <SKU_name1>Магнит "Сбалансированный завтрак"</SKU_name1>
+                                               <SKU_name2></SKU_name2>
+                                               <base_price>123.63</base_price>
+                                               <score>0.33</score>
+				              </product>
+		<product>
+                                               <group_id>4</group_id>
+                                               <SKU>T363</SKU>
+                                               <SKU_name1>Накидки HRBL 24</SKU_name1>
+                                               <SKU_name2>(набор 10 шт.)</SKU_name2>
+                                               <base_price>2719.58</base_price>
+                                               <score>45.85</score>
+                               </product>            
+        <product>
+                                               <group_id>7</group_id>
+                                               <SKU>2997</SKU>
+                                               <SKU_name1>Спрей для лица Radiant C </SKU_name1>
+                                               <SKU_name2> </SKU_name2>
+                                               <base_price>425.04</base_price>
+                                               <score>6.50</score>
+                               </product>
+							   
+                               <product>
+                                               <group_id>8</group_id>
+                                               <SKU>2561</SKU>
+                                               <SKU_name1>Гель для душа Herbal Aloe </SKU_name1>
+                                               <SKU_name2> </SKU_name2>
+                                               <base_price>545.86</base_price>
+                                               <score>8.30</score>
+                               </product>
+		<product>
+                                               <group_id>8</group_id>
+                                               <SKU>2562</SKU>
+                                               <SKU_name1>Смягчающий гель для тела</SKU_name1>
+                                               <SKU_name2>Herbal Aloe</SKU_name2>
+                                               <base_price>486.13</base_price>
+                                               <score>8.30</score>
+                               </product>
+		<product>
+                                               <group_id>8</group_id>
+                                               <SKU>2563</SKU>
+                                               <SKU_name1>Крем для тела Herbal Aloe </SKU_name1>
+                                               <SKU_name2> </SKU_name2>
+                                               <base_price>486.13</base_price>
+                                               <score>8.30</score>
+                               </product>
+		<product>
+                                               <group_id>8</group_id>
+                                               <SKU>2564</SKU>
+                                               <SKU_name1>Укрепляющий шампунь</SKU_name1>
+                                               <SKU_name2>Herbal Aloe</SKU_name2>
+                                               <base_price>496.25</base_price>
+                                               <score>8.30</score>
+                               </product>
+		<product>
+                                               <group_id>8</group_id>
+                                               <SKU>2565</SKU>
+                                               <SKU_name1>Укрепляющий кондиционер</SKU_name1>
+                                               <SKU_name2>Herbal Aloe</SKU_name2>
+                                               <base_price>496.25</base_price>
+                                               <score>8.30</score>
+                               </product>					   
+        <product>
+                                               <group_id>9</group_id>
+                                               <SKU>0707</SKU>
+                                               <SKU_name1>Крем для рук Комплексный уход</SKU_name1>
+                                               <SKU_name2>"Белый чай"</SKU_name2>
+                                               <base_price>287.28</base_price>
+                                               <score>4.30</score>
+                               </product>
+ 		<product>
+                                               <group_id>9</group_id>
+                                               <SKU>0708</SKU>
+                                               <SKU_name1>Смягчающий крем для ног</SKU_name1>
+                                               <SKU_name2>"Белый чай"</SKU_name2>
+                                               <base_price>287.28</base_price>
+                                               <score>4.30</score>
+                               </product>		
+		<product>
+                                               <group_id>11</group_id>
+                                               <SKU>0765</SKU>
+                                               <SKU_name1>Очищающий гель на </SKU_name1>
+                                               <SKU_name2>основе алоэ</SKU_name2>
+                                               <base_price>939.26</base_price>
+                                               <score>16.75</score>
+                               </product>
+							   
+		<product>
+                                               <group_id>11</group_id>
+                                               <SKU>0766</SKU>
+                                               <SKU_name1>Очищающий гель на </SKU_name1>
+                                               <SKU_name2>основе цитрусовых</SKU_name2>
+                                               <base_price>939.26</base_price>
+                                               <score>16.75</score>
+                               </product>
+							   
+		<product>
+                                               <group_id>11</group_id>
+                                               <SKU>0767</SKU>
+                                               <SKU_name1>Тонизирующий лосьон на </SKU_name1>
+                                               <SKU_name2>основе трав</SKU_name2>
+                                               <base_price>712.15</base_price>
+                                               <score>12.70</score>
+                               </product>
+  							   
+		<product>
+                                               <group_id>11</group_id>
+                                               <SKU>0829</SKU>
+                                               <SKU_name1>Антивозрастная сыворотка </SKU_name1>
+                                               <SKU_name2></SKU_name2>
+                                               <base_price>2431.43</base_price>
+                                               <score>43.35</score>
+                               </product>
+  							   
+		<product>
+                                               <group_id>11</group_id>
+                                               <SKU>0770</SKU>
+                                               <SKU_name1>Гель для кожи вокруг глаз </SKU_name1>
+                                               <SKU_name2>с эффектом лифтинга</SKU_name2>
+                                               <base_price>1477.58</base_price>
+                                               <score>26.35</score>
+                               </product>
+  							   
+		<product>
+                                               <group_id>11</group_id>
+                                               <SKU>0771</SKU>
+                                               <SKU_name1>Увлажняющий крем для </SKU_name1>
+                                               <SKU_name2>кожи вокруг глаз</SKU_name2>
+                                               <base_price>1477.58</base_price>
+                                               <score>26.35</score>
+                               </product>
+							   
+		<product>
+                                               <group_id>11</group_id>
+                                               <SKU>0830</SKU>
+                                               <SKU_name1>Ежедневный увлажняющий крем для </SKU_name1>
+                                               <SKU_name2>естественного сияния кожи</SKU_name2>
+                                               <base_price>1831.61</base_price>
+                                               <score>32.65</score>
+                               </product>
+							   
+		<product>
+                                               <group_id>11</group_id>
+                                               <SKU>0828</SKU>
+                                               <SKU_name1>Защищающий крем SPF30 </SKU_name1>
+                                               <SKU_name2></SKU_name2>
+                                               <base_price>1831.61</base_price>
+                                               <score>32.65</score>
+                               </product>
+							   
+ 		<product>
+                                               <group_id>11</group_id>
+                                               <SKU>0827</SKU>
+                                               <SKU_name1>Ночной обновляющий крем </SKU_name1>
+                                               <SKU_name2></SKU_name2>
+                                               <base_price>1831.61</base_price>
+                                               <score>32.65</score>
+                               </product>
+							   
+		<product>
+                                               <group_id>11</group_id>
+                                               <SKU>0772</SKU>
+                                               <SKU_name1>Ягодный скраб для мгновенного </SKU_name1>
+                                               <SKU_name2>обновления кожи</SKU_name2>
+                                               <base_price>734.59</base_price>
+                                               <score>13.1</score>
+                               </product>
+							   
+		<product>
+                                               <group_id>11</group_id>
+                                               <SKU>0773</SKU>
+                                               <SKU_name1>Очищающая маска на основе </SKU_name1>
+                                               <SKU_name2>глины и мяты</SKU_name2>
+                                               <base_price>796.27</base_price>
+                                               <score>14.2</score>
+                               </product>
+		<product>
+                                               <group_id>11</group_id>
+                                               <SKU>0867</SKU>
+                                               <SKU_name1>7 дневная программа Herbalife SKIN </SKU_name1>
+                                               <SKU_name2></SKU_name2>
+                                               <base_price>1031.04</base_price>
+                                               <score>15.30</score>
+                               </product>
+							   							   
+		<product>
+                                               <group_id>11</group_id>
+                                               <SKU>N151</SKU>
+                                               <SKU_name1>Пакет Herbalife SKIN </SKU_name1>
+                                               <SKU_name2></SKU_name2>
+                                               <base_price>50.4</base_price>
+                                               <score/>
+                               </product>
+                              
+    <product>
+                                               <group_id>12</group_id>
+                                               <SKU>003U</SKU>
+                                               <SKU_name1>Набор Амбассадора </SKU_name1>
+                                               <SKU_name2></SKU_name2>
+                                               <base_price>180</base_price>
+                                               <score/>
+                                  </product>
+    <product>
+                                               <group_id>12</group_id>
+                                               <SKU>5451</SKU>
+                                               <SKU_name1>Международный набор </SKU_name1>
+                                               <SKU_name2>Независимого Партнера</SKU_name2>
+                                               <base_price>1702.8</base_price>
+                                               <score/>
+                               </product>
+							   
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>5001</SKU>
+                                               <SKU_name1>Бланк розничного заказа </SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>27.15</base_price>
+                                               <score/>
+                               </product>
+		<product>
+                                               <group_id>12</group_id>
+                                               <SKU>5942</SKU>
+                                               <SKU_name1> Справочник по продукции Herbalife </SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>78.48</base_price>
+                                               <score/>
+                               </product>
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>6510</SKU>
+                                               <SKU_name1> Брошюра «Правильный завтрак»</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>98.92</base_price>
+                                               <score/>
+                               </product>
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>5034</SKU>
+                                               <SKU_name1> Книга рецептов </SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>378</base_price>
+                                               <score/>
+                               </product>							   
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>N133</SKU>
+                                               <SKU_name1> Брошюра SKIN (набор из 5шт.)</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>118.65</base_price>
+                                               <score/>
+                               </product>							   
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>9581</SKU>
+                                               <SKU_name1>Книга Л.Граттона </SKU_name1>
+                                               <SKU_name2>«Не надо сложностей» </SKU_name2>
+                                               <base_price>164.25</base_price>
+                                               <score/>
+                               </product>
+		<product>
+                                               <group_id>12</group_id>
+                                               <SKU>8673</SKU>
+                                               <SKU_name1>Продуктовый каталог(набор 10шт.) </SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>172</base_price>
+                                               <score/>
+
+                               </product>
+		<product>
+                                               <group_id>12</group_id>
+                                               <SKU>5089</SKU>
+                                               <SKU_name1>Тканевый постер «Марк Хьюз»</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>391.53</base_price>
+                                               <score/>
+                               </product>
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>8823</SKU>
+                                               <SKU_name1>DVD-коллекция Джима Рона </SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>259.26</base_price>
+                                               <score/>
+
+                               </product>
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>7051</SKU>
+                                               <SKU_name1>Пакет бумажный</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>35.54</base_price>
+                                               <score/>
+                               </product>
+		<product>
+                                               <group_id>12</group_id>
+                                               <SKU>7759</SKU>
+                                               <SKU_name1>Пакет Herbalife: маленький </SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>3.54</base_price>
+                                               <score/>
+                               </product>
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>8603</SKU>
+                                               <SKU_name1> Пакет Herbalife: средний </SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>6.53</base_price>
+                                               <score/>
+                               </product>
+		<product>
+                                               <group_id>12</group_id>
+                                               <SKU>7760</SKU>
+                                               <SKU_name1> Пакет Herbalife: большой</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>5.9</base_price>
+                                               <score/>
+                               </product>
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>5817</SKU>
+                                               <SKU_name1> Приглашение на wellness-тест </SKU_name1>
+                                               <SKU_name2>(набор 50 шт.) </SKU_name2>
+                                               <base_price>39.15</base_price>
+                                               <score/>
+                               </product>
+		<product>
+                                               <group_id>12</group_id>
+                                               <SKU>5818</SKU>
+                                               <SKU_name1>Wellness-тест (набор 50 шт.) </SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>71.32</base_price>
+                                               <score/>
+                               </product>
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>5995</SKU>
+                                               <SKU_name1>Брошюра по Группам Поддержки </SKU_name1>
+                                               <SKU_name2>(набор 10 шт.) </SKU_name2>
+                                               <base_price>109.02</base_price>
+                                               <score/>
+                               </product>
+		<product>
+                                               <group_id>12</group_id>
+                                               <SKU>5819</SKU>
+                                               <SKU_name1>Журнал обслуживания клиентов </SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>159.42</base_price>
+                                               <score/>
+                               </product>
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>5060</SKU>
+                                               <SKU_name1>Пособие участника Группы </SKU_name1>
+                                               <SKU_name2> Поддержки </SKU_name2>
+                                               <base_price>65.16</base_price>
+                                               <score/>
+
+                               </product>
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>6398</SKU>
+                                               <SKU_name1>Ежедневник Гербалайф </SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>107.25</base_price>
+                                               <score/>
+                               </product>
+		<product>
+                                               <group_id>12</group_id>
+                                               <SKU>7727</SKU>
+                                               <SKU_name1>Подарочная бумага </SKU_name1>
+                                               <SKU_name2>(набор 10 листов 80х80 см) </SKU_name2>
+                                               <base_price>148.52</base_price>
+                                               <score/>
+                               </product>
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>7728</SKU>
+                                               <SKU_name1>Подарочная лента (10 м) </SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>58.19</base_price>
+                                               <score/>
+                               </product>
+		<product>
+                                               <group_id>12</group_id>
+                                               <SKU>7729</SKU>
+                                               <SKU_name1>Подарочные наклейки (набор 12 шт.) </SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>12.93</base_price>
+                                               <score/>
+                               </product>
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>7730</SKU>
+                                               <SKU_name1>Подарочный пакет </SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>27.15</base_price>
+                                               <score/>
+                               </product>
+		<product>
+                                               <group_id>12</group_id>
+                                               <SKU>8669</SKU>
+                                               <SKU_name1>Сертификаты на Wellness Тест </SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>67.88</base_price>
+                                               <score/>
+                               </product>
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>7905</SKU>
+                                               <SKU_name1>Сертификаты «Попробуйте новую косметическую линию» </SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>67.88</base_price>
+                                               <score/>
+                               </product>
+		<product>
+                                               <group_id>12</group_id>
+                                               <SKU>5802</SKU>
+                                               <SKU_name1>Настольный календарь </SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>74.67</base_price>
+                                               <score/>
+                               </product>
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>7887</SKU>
+                                               <SKU_name1>Настенный календарь </SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>179.31</base_price>
+                                               <score/>
+                               </product>
+		<product>
+                                               <group_id>12</group_id>
+                                               <SKU>N182</SKU>
+                                               <SKU_name1>Счетчик коктейлей Формула 1 </SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>252</base_price>
+                                               <score/>
+                               </product>
+		<product>
+                                               <group_id>12</group_id>
+                                               <SKU>5926</SKU>
+                                               <SKU_name1>Еженедельник Независимого Партнера</SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>345.82</base_price>
+                                               <score/>
+                               </product>
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>5652</SKU>
+                                               <SKU_name1>Книга учета посещений </SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>149.34</base_price>
+                                               <score/>
+                               </product>
+		<product>
+                                               <group_id>12</group_id>
+                                               <SKU>9598</SKU>
+                                               <SKU_name1>Листовка c результатами </SKU_name1>
+                                               <SKU_name2> клинических исследований </SKU_name2>
+                                               <base_price>31.23</base_price>
+                                               <score/>
+                               </product>
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>9749</SKU>
+                                               <SKU_name1> Абонемент на посещение Клуба </SKU_name1>
+                                               <SKU_name2> здорового образа жизни </SKU_name2>
+                                               <base_price>33.95</base_price>
+                                               <score/>
+                               </product>
+		<product>
+                                               <group_id>12</group_id>
+                                               <SKU>9748</SKU>
+                                               <SKU_name1> Приглашение в Клуб </SKU_name1>
+                                               <SKU_name2> здорового образа жизни </SKU_name2>
+                                               <base_price>33.95</base_price>
+                                               <score/>
+                               </product>
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>5025</SKU>
+                                               <SKU_name1>Купон Привилегированного Клиента </SKU_name1>
+                                               <SKU_name2>(набор 150 шт.)  </SKU_name2>
+                                               <base_price>83.2</base_price>
+                                               <score/>
+                               </product>
+
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>9149</SKU>
+                                               <SKU_name1>Набор  Привилегированного Клиента </SKU_name1>
+                                               <SKU_name2> </SKU_name2>
+                                               <base_price>63.21</base_price>
+                                               <score/>
+                               </product>
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>6848</SKU>
+                                               <SKU_name1> Набор Дистрибьютора </SKU_name1>
+                                               <SKU_name2> для Привилегированных Клиентов </SKU_name2>
+                                               <base_price>1632.86</base_price>
+                                               <score/>
+                               </product>
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>4988</SKU>
+                                               <SKU_name1> Подарочная брошюра (набор 5 шт.) </SKU_name1>
+                                               <SKU_name2/>
+                                               <base_price>58.38</base_price>
+                                               <score/>
+                               </product>
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>9977</SKU>
+                                               <SKU_name1>Набор Старшего Консультанта </SKU_name1>
+                                               <SKU_name2>(Продается только со значком СК)</SKU_name2>
+						<add_SKU>8786</add_SKU>
+                                               <base_price>339.41</base_price>
+                                               <score/>
+                               </product>
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>9636</SKU>
+                                               <SKU_name1>Набор Строителя Успеха </SKU_name1>
+                                               <SKU_name2>(Продается только со значком СУ)</SKU_name2>
+					       <add_SKU>8751</add_SKU>
+                                               <base_price>339.41</base_price>
+                                               <score/>
+                               </product>
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>9736</SKU>
+                                               <SKU_name1>Набор Квалифицированного Продюсера </SKU_name1>
+                                               <SKU_name2>(Продается только со значком КП)</SKU_name2>
+						<add_SKU>8752</add_SKU>
+                                               <base_price>475.18</base_price>
+                                               <score/>
+                               </product>
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>5482</SKU>
+                                               <SKU_name1>Ламинированная презентация Группы Поддержки</SKU_name1>
+                                               <SKU_name2>часть 1 </SKU_name2>
+                                               <base_price>1088.67</base_price>
+                                               <score/>
+                               </product>
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>5483</SKU>
+                                               <SKU_name1> Ламинированная презентация Группы Поддержки</SKU_name1>
+                                               <SKU_name2>часть 2 </SKU_name2>
+                                               <base_price>1088.67</base_price>
+                                               <score/>
+                               </product>
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>5463</SKU>
+                                               <SKU_name1>Презентационные материалы Herbalife</SKU_name1>
+                                               <SKU_name2> </SKU_name2>
+                                               <base_price>153.7</base_price>
+                                               <score/>
+                               </product>
+
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>N015</SKU>
+                                               <SKU_name1>Брошюра HERBALIFE24</SKU_name1>
+                                               <SKU_name2> </SKU_name2>
+                                               <base_price>102.46</base_price>
+                                               <score/>
+ 				</product>
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>9113</SKU>
+                                               <SKU_name1>Марк Хьюз: юбилейная коллекция на DVD</SKU_name1>
+                                               <SKU_name2> </SKU_name2>
+                                               <base_price>472.52</base_price>
+                                               <score/>
+ 				</product>
+
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>N010</SKU>
+                                               <SKU_name1>Папка Персонализация</SKU_name1>
+                                               <SKU_name2> </SKU_name2>
+                                               <base_price>717.24</base_price>
+                                               <score/>
+ 				</product>
+
+<product>
+                                               <group_id>12</group_id>
+                                               <SKU>N011</SKU>
+                                               <SKU_name1>Вкладка в папку</SKU_name1>
+                                               <SKU_name2> Персонализация</SKU_name2>
+                                               <base_price>192.12</base_price>
+                                               <score/>
+                               </product>
+<product>
+                                               <group_id>13</group_id>
+                                               <SKU>1437</SKU>
+                                               <SKU_name1>Восстанавливающий коктейль</SKU_name1>
+                                               <SKU_name2>«Восстановление силы»</SKU_name2>
+                                               <base_price>3301.49</base_price>
+                                               <score>54.75</score>
+                               </product>
+
+                </products>
+
+
+</herbalife_sku>
+

@@ -1,0 +1,9 @@
+{
+  "name":"input",
+  "css":true,
+  "parent":"visualControl",
+  "use":[
+    "field"
+  ],
+  "version":"0.1.0"
+}

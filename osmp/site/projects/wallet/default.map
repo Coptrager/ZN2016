@@ -1,0 +1,105 @@
+$begin ‰ start > $end
+
+‰start: {
+	mainMenu: %mainMenu,
+	topup: %topupAccount,
+	invoices: @extInvoices
+}
+
+%mainMenu: {
+	oferta: oferta,
+	support: @support,
+	settings: @settings,
+	topup: %topupAccount,
+	invoices: @invoices,
+	credit: @credit,
+	providers: @providers,
+	history: @history,
+	favorites: @favorites
+}
+
+@extInvoices: [
+	invoicesAuth > @invoices
+]
+
+%topupAccount: {
+	qiwi: @qiwiTopup,
+	megafon: %topupSelectWallet,
+	oferta: oferta,
+	identification: identification
+}
+
+@qiwiTopup: [
+	!checkSubscriptionFee ‰ checkSubscription > %topupComment > @topupPay
+]
+
+‰checkSubscription: {
+	show: subscriptionFeeInfo,
+	smsReceipt: smsReceipt
+}
+
+%topupComment: {
+	mainMenu: %mainMenu
+}
+
+%topupSelectWallet: {
+	qiwi: @qiwiTopup,
+	megafon: @topupPay
+}
+
+@topupPay: [
+	% topupPay
+]
+
+%topupPay:{
+	final: final
+}
+
+@support: [
+	support
+]
+
+@settings: [
+	settings
+]
+
+@invoices: [
+	invoicesList > % invoicesPaymentMethod
+]
+
+%invoicesPaymentMethod: {
+	change: @invoiceCashWithDefaultChange,
+	balance: @invoicesBalancePayment
+}
+
+@invoicesBalancePayment: [
+	%invoicesBalancePayment > invoicesSmsConfirmationCode > final
+]
+
+%invoicesBalancePayment: {
+	final: final
+}
+
+@invoiceCashWithDefaultChange: [
+	!invoicesChangeType > %pay
+]
+
+%pay: {
+	final: final
+}
+
+@credit: [
+	credit
+]
+
+@providers: [
+	providers
+]
+
+@history: [
+	history
+]
+
+@favorites: [
+	favorites
+]

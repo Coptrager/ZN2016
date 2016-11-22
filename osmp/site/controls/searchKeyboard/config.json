@@ -1,0 +1,9 @@
+{
+  "name":"searchKeyboard",
+  "parent": "visualControl",
+  "css":true,
+  "version":"0.1.0",
+  "use":[
+    "keyboardTips"
+  ]
+}

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+
+	<object
+		id="flowCfg"
+		class="ru.mobw.coreas3.app.config.FlowConfig">
+		<property name="bindingsRootPackage" value="${utility.path}"/>
+	</object>
+
+
+	<object id="flow" class="ru.mobw.coreas3.app.flow.mcflow.MCFlowBase"depends-on="flowCfg">
+		<constructor-arg ref="flowCfg">
+		</constructor-arg>
+		<property name="routeData" ref="route"/>
+		<property name="elementsMap">
+			<dictionary>
+				<entry><key>init</key><value><ref>init</ref></value></entry>
+				<entry><key>howToPay</key><value><ref>howToPay</ref></value></entry>
+				<entry><key>account</key><value><ref>account</ref></value></entry>
+				<entry><key>confirmation</key><value><ref>confirmation</ref></value></entry>
+				<entry><key>check</key><value><ref>check</ref></value></entry>
+				<entry><key>changePeriod</key><value><ref>changePeriod</ref></value></entry>
+				<entry><key>shadow</key><value><ref>shadow</ref></value></entry>
+				<entry><key>counters</key><value><ref>counters</ref></value></entry>
+				<entry><key>phone</key><value><ref>phone</ref></value></entry>
+				<entry><key>changeTypeSelect</key><value><ref>changeTypeSelect</ref></value></entry>
+				<entry><key>changeToWallet</key><value><ref>changeToWallet</ref></value></entry>
+				<entry><key>changeToMobile</key><value><ref>changeToMobile</ref></value></entry>
+				<entry><key>quickPayment</key><value><ref>quickPayment</ref></value></entry>
+				<entry><key>paymentEnd</key><value><ref>paymentEnd</ref></value></entry>
+				<entry><key>checkDataPage</key><value><ref>checkDataPage</ref></value></entry>
+				<entry><key>withDataPage</key><value><ref>withDataPage</ref></value></entry>
+				<entry><key>enterWalletLogin</key><value><ref>enterWalletLogin</ref></value></entry>
+				<entry><key>pinPage</key><value><ref>pinPage</ref></value></entry>
+				<entry><key>savePage</key><value><ref>savePage</ref></value></entry>
+				<entry><key>selectPayment</key><value><ref>selectPayment</ref></value></entry>
+				<entry><key>online</key><value><ref>online</ref></value></entry>
+				
+				<entry><key>exit</key><value><ref>exit</ref></value></entry>
+			</dictionary>
+		</property>
+	</object>
+
+
+	<object id="init" class="elements.InitElement">
+		<property name="id" value="2"/>
+		<constructor-arg value="init"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="timeout" value="180000"/>
+	</object>
+
+	<object
+		id="checkDataPage"
+		class="elements.CheckDataElement">
+		<property name="id" value="22"/>
+		<constructor-arg value="checkDataPage"/>
+		<constructor-arg ref="mainInstance"/>
+	</object>
+	
+	<object
+		id="withDataPage"
+		class="elements.WithDataElement">
+		<property name="id" value="23"/>
+		<constructor-arg value="withDataPage"/>
+		<constructor-arg ref="mainInstance"/>
+		 
+	</object>
+	
+	<object id="howToPay" class="elements.HowToPayElement">
+		<property name="id" value="2"/>
+		<constructor-arg value="howToPay"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="timeout" value="180000"/>
+	</object>
+
+
+	<object id="account" class="elements.AccountElement">
+		<property name="id" value="4"/>
+		<constructor-arg value="enterAccount"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="maxTextLength" value="10"/>
+		<property name="lattersLimits" value="5,3,2"/>
+		<property name="bindings">
+			<array>
+				<value>binder.text=$account</value>
+			</array>
+		</property>
+		<property name="registrationCandidates">
+			<array>
+				<value>viewMC.yaupButton,click,A:yaup</value>
+			</array>
+		</property>
+		<property name="timeout" value="180000"/>
+	</object>
+	
+	<object
+		id="enterWalletLogin"
+		class="elements.EnterWalletLoginElement"	
+		>
+		<property name="id" value="18"/>
+		<constructor-arg value="phone"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="bindings">
+			<array>
+				<value>binder.text=$phone</value>
+			</array>
+		</property>
+		<property name="registrationCandidates">
+			<array>
+				<value>service,responseEvent,S:phoneRequest</value>
+				<value>service,requestFailureEvent,E:phoneRequestFail</value>
+				<value>service,requestPendingErrorEvent,E:phoneRequestFail</value>
+				<value>service,requestTimeoutEvent,E:phoneRequestFail</value>
+			</array>
+		</property>
+		<property name="formatter" ref="phoneFormatter" />
+		<property name="maxTextLength" value="${config.phoneLength}"/>
+		<property name="validationAlert" value="${err.phoneError}"/>
+		<property name="validator" ref="phoneValidator" />
+	</object>
+	
+	<object
+		id="pinPage"
+		class="elements.EnterPinElement"
+		>
+		<property name="id" value="19"/>
+		<constructor-arg value="pinPage"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="dataName" value="pin"/>
+		<property name="validator" ref="pinValidator" />
+	</object>
+	<object
+		id="selectPayment"
+		class="elements.SelectPaymentElement"
+		>
+		<property name="id" value="20"/>
+		<constructor-arg value="selectPayment"/>
+		<constructor-arg ref="mainInstance"/>
+	</object>
+	<object
+		id="savePage"
+		class="elements.SavePaymentElement"
+		>
+		<property name="id" value="21"/>
+		<constructor-arg value="savePage"/>
+		<constructor-arg ref="mainInstance"/>
+	</object>
+	
+	<object
+		id="online"
+		class="elements.OnlineElement"
+		>
+		<property name="id" value="24"/>
+		<constructor-arg value="online"/>
+		<constructor-arg ref="mainInstance"/>
+	</object>
+
+	<object id="confirmation" class="elements.ConfirmationElement">
+		<property name="id" value="3"/>
+		<constructor-arg value="confirmation"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="registrationCandidates">
+			<array>
+				<value>viewMC.quickTypeButton,click,A:quickType</value>
+				<value>viewMC.longTypeButton,click,A:longType</value>
+			</array>
+		</property>
+		<property name="timeout" value="180000"/>
+	</object>
+
+
+
+	<object id="check" class="elements.CheckElement">
+		<property name="id" value="15"/>
+		<constructor-arg value="check"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="timeout" value="180000"/>
+	</object>
+
+
+	<object id="changePeriod" class="elements.ChangePeriodElement">
+		<property name="id" value="5"/>
+		<constructor-arg value="changePeriod"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="timeout" value="180000"/>
+	</object>
+
+
+
+	<object id="shadow" class="elements.ShadowElement">
+		<constructor-arg value="shadow"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="16"/>
+		<property name="timeout" value="180000"/>
+	</object>
+
+
+	<object id="counters" class="elements.CountersElement">
+		<constructor-arg value="counters"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="17"/>
+		<property name="timeout" value="180000"/>
+	</object>
+
+
+	<object id="changeTypeSelect" class="elements.ChangeElement">
+		<constructor-arg value="changeTypeSelect"/>
+		<constructor-arg ref="mainInstance"/>
+		<constructor-arg>
+			<value><![CDATA[Денежные средства, внесенные свыше %summ%, будут перечислены на баланс сотового телефона]]></value>
+		</constructor-arg>
+		<constructor-arg>
+			<value><![CDATA[Денежные средства, внесенные свыше %summ%, будут перечислены на счет Visa Qiwi Wallet]]></value>
+		</constructor-arg>
+		<property name="id" value="9"/>
+		<property name="timeout" value="180000"/>
+	</object>
+
+
+	<object id="phone" class="elements.PhoneElement">
+		<constructor-arg value="phone"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="10"/>
+		<property name="bindings">
+			<array>
+				<value>binder.text=$phone</value>
+			</array>
+		</property>
+		<property name="formatter" ref="phoneFormatter" />
+		<property name="maxTextLength" value="${config.phoneLength}"/>
+		<property name="validationAlert" value="${err.phoneError}"/>
+		<property name="timeout" value="180000"/>
+	</object>
+
+
+	<object id="changeToWallet" class="elements.WalletChangePaymentElement">
+		<constructor-arg value="changeToWallet"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="11"/>
+		<property name="timeout" value="240000"/>
+	</object>
+
+	
+	<object id="changeToMobile" class="elements.MobileChangePaymentElement">
+		<property name="id" value="12"/>
+		<constructor-arg value="changeToMobile"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="timeout" value="240000"/>
+	</object>
+
+	
+	<object id="quickPayment" class="elements.QuickPaymentElement">
+		<property name="id" value="13"/>
+		<constructor-arg value="quickPayment"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="timeout" value="240000"/>
+	</object>
+	
+	<object id="paymentEnd" class="elements.PaymentEndElement">
+		<property name="id" value="14"/>
+		<constructor-arg value="paymentEnd"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="timeout" value="180000"/>
+		<property name="registrationCandidates">
+			<array>
+				<value>viewMC.saveButton,click,A:saveYaup</value>
+			</array>
+		</property>
+	</object>
+
+
+
+	<object id="exit" class="elements.MESExitElement">
+		<constructor-arg value="exit"/>
+	</object>
+
+	
+<!-- validators -->
+	
+	<object 
+		id="phoneValidator"
+		class="com.leetwin.flow.validation.Validator">
+		<property name="constraintsMap">
+			<dictionary>
+				<entry>
+					<key>value</key>
+					<value>
+						<array>
+							<object class="com.leetwin.flow.validation.constraints.NotNull"/>
+							<object class="com.leetwin.flow.validation.constraints.InRange">
+								<property name="min" value="10"/>
+								<property name="max" value="10"/>
+							</object>
+						</array>
+					</value>
+				</entry>
+			</dictionary>
+		</property>
+	</object>
+	<object 
+		id="pinValidator"
+		class="com.leetwin.flow.validation.Validator">
+		<property name="constraintsMap">
+			<dictionary>
+				<entry>
+					<key>value</key>
+					<value>
+						<array>
+							<object class="com.leetwin.flow.validation.constraints.NotNull"/>
+							<object class="com.leetwin.flow.validation.constraints.InRange">
+								<property name="min" value="${config.minPinLength}"/>
+								<property name="max" value="${config.maxPinLength}"/>
+							</object>
+						</array>
+					</value>
+				</entry>
+			</dictionary>
+		</property>
+	</object>
+
+
+	<!-- end validators -->
+	<!-- helpers -->
+	<object id="phoneFormatter" class="ru.mobw.coreas3.formatters.PhoneFormatter" />
+	<!-- end_helpers -->
+
+</objects>

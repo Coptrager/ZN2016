@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+	<object 
+		id="route" 
+		class="ru.mobw.coreas3.app.flow.navigation.route.RouteData"
+		>
+		<property name="navData">
+			<value>
+				<![CDATA[
+					@default = (withStartParam>>@withoutCompanySelect, companySelect, @base, paymentEnd, exit);
+					
+					@withoutCompanySelect = (@baseWithoutCompanySelect, paymentEnd, exit);
+					
+					@baseWithoutCompanySelect = (
+						contractInput,
+						<<exit,
+						sumInput, 
+						phoneInput,
+						oferta>>pubOferta, 
+						paymentTypeSelect,
+						%typeSelect
+					);
+					
+					@base = (
+						contractInput, 
+						sumInput, 
+						phoneInput,
+						oferta>>pubOferta, 
+						paymentTypeSelect,
+						%typeSelect
+					);
+					
+					%typeSelect = (
+						balance => @balanceBranch, 
+						cash => cashPayment
+					);
+					
+					@balanceBranch = (
+						pinInput, 
+						balancePayment
+					);
+				]]>
+			</value>
+		</property>
+	</object>
+</objects>

@@ -1,0 +1,33 @@
+html,
+table,
+form,
+iframe
+{
+    width:1280px;
+    height:1024px;
+}
+body,
+div,
+p
+{
+    margin:0px;
+    padding:0px;
+    overflow:hidden;
+    font-family:Whitney,Arial;
+    font-weight:normal;
+    -o-user-select:none;
+    -moz-user-select:none;
+    -khtml-user-select:none;
+    user-select:none;
+}
+iframe{
+    border:0px;
+}
+
+.body{
+    background-color:transparent;
+    margin: 0px;
+    z-index:-5;
+}
+
+

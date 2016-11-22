@@ -1,0 +1,85 @@
+@font-face {
+    font-family:'Whitney';
+    src:url('../fonts/Whitney-Medium.woff');
+}
+
+html,
+body{
+    width:1280px;
+    height:200px;
+}
+body{
+    margin:0px;
+    padding:0px;
+    overflow:hidden;
+    background:none;
+}
+
+/*banner*/
+#body{
+    width:1280px;
+    height:200px;
+    visibility:hidden;
+}
+#content{
+    float:left;
+    width:1280px;
+    height:250px;
+    background:linear-gradient(to bottom, #0e4394 0%, #0080c6 100%);
+}
+#contentText{
+    margin-top:15px;
+    width:1280px;
+    text-align:center;
+    font-family:Whitney, Arial;
+    font-size:22px;
+    color:white;
+}
+#buttonPlace{
+    float:left;
+    margin-top:15px;
+    width:1280px;
+    height:125px;
+    text-align:center;
+}
+.buttonBox{
+    width:390px;
+    height:125px;
+    padding-left:10px;
+    display:inline-block;
+}
+.button {
+    position:relative;
+    width:240px;
+    height:120px;
+    padding-left:140px;
+    background:#fff;
+    border-radius:10px;
+    transition:all 100ms;
+}
+    .button div {
+        position:absolute;
+        top:10px;
+        left:20px;
+        width:100px;
+        height:100px;
+        background-position:center;
+        background-repeat:no-repeat;
+    }
+    .button p {
+        width:220px;
+        max-width:220px;
+        height:120px;
+        display:table-cell;
+        vertical-align:middle;
+        text-align:left;
+        font-family:Whitney;
+        font-size:24px;
+        text-overflow: ellipsis;
+    }
+    .button:active {
+        margin-top:3px;
+        opacity:0.7;
+        /*background-color:#d2deec;
+        color:#2458aa;*/
+    }

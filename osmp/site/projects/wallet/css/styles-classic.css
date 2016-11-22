@@ -1,0 +1,761 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+@font-face {
+  font-family: 'WhitneyBold';
+  src: url("../fonts/Whitney-Bold.woff");
+  font-weight: bold; }
+@font-face {
+  font-family: 'WhitneyLight';
+  src: url("../fonts/Whitney-Light.woff");
+  font-weight: lighter; }
+@font-face {
+  font-family: 'WhitneyMedium';
+  src: url("../fonts/Whitney-Medium.woff");
+  font-weight: normal; }
+@font-face {
+  font-family: 'WhitneySemibold';
+  src: url("../fonts/Whitney-Semibold.woff");
+  font-weight: 600; }
+@font-face {
+  font-family: 'WhitneyBook';
+  src: url("../fonts/Whitney-Book.woff");
+  font-weight: 100; }
+#login-element {
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  min-height: 335px; }
+  #login-element .authorized {
+    padding-top: 53px;
+    display: -moz-box;
+    -moz-box-align: center;
+    -moz-box-pack: center;
+    -moz-box-orient: vertical; }
+    #login-element .authorized .header {
+      font-size: 36px;
+      color: #111;
+      text-align: center;
+      padding-bottom: 10px; }
+    #login-element .authorized .phone {
+      font-size: 48px;
+      color: #111;
+      text-align: center;
+      padding-bottom: 67px; }
+    #login-element .authorized .balanceAndLogout {
+      -moz-box-align: end;
+      -moz-box-pack: end;
+      width: 1280px; }
+      #login-element .authorized .balanceAndLogout > * {
+        margin-right: 10px; }
+      #login-element .authorized .balanceAndLogout .balance {
+        font-size: 48px;
+        color: #111;
+        text-align: right;
+        line-height: 1.6;
+        display: inline;
+        right: 806px;
+        width: 100%;
+        position: absolute; }
+      #login-element .authorized .balanceAndLogout .balance-button {
+        margin-right: -35px;
+        float: right;
+        height: 79px;
+        display: block;
+        position: relative;
+        float: right;
+        right: 50%;
+        width: 260px;
+        height: 79px;
+        background: -moz-linear-gradient(top, #0089cd 0%, #007ac2 100%);
+        background: linear-gradient(to bottom, #0089cd 0%, #007ac2 100%);
+        border: none;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        text-align: center;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background: #A2CFEF; }
+        #login-element .authorized .balanceAndLogout .balance-button .button-content {
+          color: #FFF;
+          font-size: 20px;
+          line-height: inherit !important;
+          height: 100%;
+          display: -moz-box;
+          -moz-box-align: center;
+          -moz-box-pack: center;
+          -moz-box-orient: vertical; }
+        #login-element .authorized .balanceAndLogout .balance-button .header {
+          font-size: 20px; }
+        #login-element .authorized .balanceAndLogout .balance-button .comment {
+          font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+          font-weight: normal;
+          font-size: 22px; }
+        #login-element .authorized .balanceAndLogout .balance-button.disabled {
+          opacity: .5; }
+        #login-element .authorized .balanceAndLogout .balance-button.pushed {
+          transform: translateY(3px); }
+        #login-element .authorized .balanceAndLogout .balance-button.pushed {
+          background: #2458AA; }
+        #login-element .authorized .balanceAndLogout .balance-button .button-content,
+        #login-element .authorized .balanceAndLogout .balance-button .header,
+        #login-element .authorized .balanceAndLogout .balance-button .comment {
+          color: #111; }
+        #login-element .authorized .balanceAndLogout .balance-button .button-content {
+          font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+          font-weight: normal;
+          height: 79px; }
+      #login-element .authorized .balanceAndLogout .logout-button {
+        height: 73px;
+        position: relative;
+        width: 300px;
+        float: right;
+        right: 144px;
+        margin-right: -10px;
+        background-color: transparent; }
+        #login-element .authorized .balanceAndLogout .logout-button .button-content {
+          line-height: 65px; }
+  #login-element .notAuthorized {
+    padding-top: 110px; }
+    #login-element .notAuthorized .info {
+      display: -moz-box;
+      -moz-box-align: center;
+      -moz-box-pack: center;
+      -moz-box-orient: horizontal;
+      margin-left: 30px; }
+    #login-element .notAuthorized .header {
+      font-size: 60px;
+      color: #111;
+      text-align: center;
+      padding-bottom: 40px; }
+    #login-element .notAuthorized .login-button {
+      text-transform: uppercase;
+      color: #FFF;
+      width: 286px;
+      height: 86px;
+      background: linear-gradient(to bottom, #fdb414 0%, #febe10 2%, #ffc50c 4%, #ffc80b 13%, #faa71a 29%, #f58320 52%, #f36b21 75%, #f06522 95%, #e76120 100%);
+      border: 3px 10px solid;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      text-align: center;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      text-shadow: 0 0 #fff, 0 -1px #bd5927; }
+      #login-element .notAuthorized .login-button .button-content {
+        color: none;
+        font-size: 40px;
+        line-height: inherit !important;
+        height: 100%;
+        display: -moz-box;
+        -moz-box-align: center;
+        -moz-box-pack: center;
+        -moz-box-orient: vertical; }
+      #login-element .notAuthorized .login-button .header {
+        font-size: 40px; }
+      #login-element .notAuthorized .login-button .comment {
+        font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        font-size: 22px; }
+      #login-element .notAuthorized .login-button.disabled {
+        opacity: .5; }
+      #login-element .notAuthorized .login-button.pushed {
+        transform: translateY(3px); }
+      #login-element .notAuthorized .login-button.pushed {
+        background: #FFF; }
+      #login-element .notAuthorized .login-button .button-content {
+        font-family: "WhitneySemibold", Helvetica, Arial, sans-serif;
+        font-weight: 600; }
+      #login-element .notAuthorized .login-button.disabled {
+        background: #4D4D4D;
+        text-shadow: none; }
+      #login-element .notAuthorized .login-button.pushed {
+        background: #d55427; }
+      #login-element .notAuthorized .login-button.resizeable {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: auto; }
+    #login-element .notAuthorized .description {
+      font-size: 24px;
+      color: #111;
+      width: 456px;
+      padding-right: 30px; }
+
+#b-check-box .b-check-box__content {
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: horizontal; }
+#b-check-box .b-check-box__text {
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #999999;
+  font-size: 24px;
+  white-space: pre-wrap;
+  margin-left: 20px; }
+#b-check-box .button-icon {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 10px 10px 10px 0; }
+  #b-check-box .button-icon.blue {
+    background: url("../../wallet/img/icons/switch_off.png"); }
+  #b-check-box .button-icon.gray {
+    background: url("../../wallet/img/icons/switch_gray_off.png"); }
+  #b-check-box .button-icon.active.blue {
+    background: url("../../wallet/img/icons/switch_on.png"); }
+  #b-check-box .button-icon.active.gray {
+    background: url("../../wallet/img/icons/switch_gray_on.png"); }
+
+#history-container {
+  width: 1280px; }
+  #history-container #arrow-buttons {
+    top: 343px; }
+  #history-container #b-history-list {
+    margin-left: 275px; }
+    #history-container #b-history-list .b-history__container {
+      display: -moz-box;
+      -moz-box-align: center;
+      -moz-box-pack: center;
+      -moz-box-orient: vertical; }
+    #history-container #b-history-list .mask-container {
+      margin-top: 25px;
+      height: 595px;
+      overflow: hidden;
+      margin-bottom: 12px; }
+      #history-container #b-history-list .mask-container .scrollable-content {
+        position: relative; }
+  #history-container .item {
+    display: -moz-box;
+    -moz-box-align: center;
+    -moz-box-pack: center;
+    -moz-box-orient: horizontal;
+    -moz-box-pack: start;
+    max-width: 740px;
+    min-width: 740px;
+    min-height: 147.75px;
+    max-height: 147.75px;
+    border-bottom: solid 1px; }
+    #history-container .item .status {
+      display: -moz-box;
+      -moz-box-align: center;
+      -moz-box-pack: center;
+      -moz-box-orient: vertical;
+      width: 100px;
+      -moz-box-align: start;
+      margin-left: 15px; }
+      #history-container .item .status .status__date
+      .status__time {
+        font-size: 20px;
+        text-align: left; }
+    #history-container .item .info {
+      display: -moz-box;
+      -moz-box-align: center;
+      -moz-box-pack: center;
+      -moz-box-orient: vertical;
+      -moz-box-pack: start;
+      -moz-box-align: start;
+      width: 408px;
+      margin-left: 21px;
+      min-height: 140px;
+      max-height: 140px; }
+      #history-container .item .info .info__name {
+        font-size: 30px;
+        white-space: pre-line;
+        max-height: 75px;
+        overflow: hidden;
+        display: inline-block;
+        width: 400px; }
+      #history-container .item .info .info__account {
+        font-size: 24px; }
+      #history-container .item .info .info__result {
+        font-size: 14px;
+        color: #38A21B; }
+    #history-container .item .operation {
+      display: -moz-box;
+      -moz-box-align: center;
+      -moz-box-pack: center;
+      -moz-box-orient: vertical;
+      -moz-box-align: end;
+      -moz-box-pack: end;
+      width: 193px;
+      text-align: right; }
+      #history-container .item .operation .operation__summ-title {
+        font-size: 24px; }
+      #history-container .item .operation .operation__summ {
+        font-size: 24px; }
+      #history-container .item .operation .operation__type-label {
+        font-size: 14px; }
+
+#b-invoices-list {
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  background: linear-gradient(to bottom, #0e4394 0%, #0080c6 100%);
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  -moz-box-pack: start;
+  min-width: 1280px;
+  min-height: 695px;
+  margin-top: 20px;
+  padding-top: 28px; }
+  #b-invoices-list #arrow-buttons {
+    top: 420px; }
+  #b-invoices-list .b-invoices__container {
+    display: -moz-box;
+    -moz-box-align: center;
+    -moz-box-pack: center;
+    -moz-box-orient: vertical; }
+  #b-invoices-list .invoice-item {
+    display: -moz-box;
+    -moz-box-align: center;
+    -moz-box-pack: center;
+    -moz-box-orient: horizontal;
+    margin-bottom: 10px; }
+    #b-invoices-list .invoice-item .icon {
+      margin-right: 17px;
+      color: #FFF;
+      text-align: center;
+      padding-top: 117px;
+      font-size: 22px; }
+    #b-invoices-list .invoice-item .content {
+      display: -moz-box;
+      -moz-box-align: center;
+      -moz-box-pack: center;
+      -moz-box-orient: horizontal;
+      -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+      box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      background-color: #FFF;
+      height: 200px;
+      padding-top: 21px;
+      -moz-box-align: start; }
+      #b-invoices-list .invoice-item .content .left {
+        display: -moz-box;
+        -moz-box-align: center;
+        -moz-box-pack: center;
+        -moz-box-orient: vertical;
+        -moz-box-pack: start;
+        -moz-box-align: start;
+        width: 300px;
+        padding-left: 28px; }
+        #b-invoices-list .invoice-item .content .left .date {
+          font-size: 20px; }
+        #b-invoices-list .invoice-item .content .left .acc {
+          font-size: 35px;
+          white-space: pre-wrap;
+          max-height: 75px;
+          overflow: hidden;
+          display: inline-block;
+          width: 275px; }
+        #b-invoices-list .invoice-item .content .left .comment {
+          font-size: 20px;
+          white-space: pre-wrap;
+          max-width: 270px;
+          height: 100px;
+          overflow: hidden; }
+      #b-invoices-list .invoice-item .content .right {
+        display: -moz-box;
+        -moz-box-align: center;
+        -moz-box-pack: center;
+        -moz-box-orient: vertical;
+        -moz-box-pack: start;
+        -moz-box-align: end;
+        width: 300px;
+        padding-right: 28px; }
+        #b-invoices-list .invoice-item .content .right .summTitle {
+          font-size: 20px;
+          font-family: WhitneyMedium,Arial; }
+        #b-invoices-list .invoice-item .content .right .summ {
+          font-size: 35px;
+          font-family: WhitneyMedium,Arial; }
+        #b-invoices-list .invoice-item .content .right .amountTitle {
+          font-size: 20px;
+          margin-top: 20px;
+          font-family: WhitneySemibold,Arial; }
+        #b-invoices-list .invoice-item .content .right .amount {
+          font-size: 35px;
+          font-family: WhitneySemibold,Arial; }
+
+#b-confirmation-payment {
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal; }
+  #b-confirmation-payment .b-confirmation-payment__container {
+    width: 1280px;
+    background: #fdb414;
+    display: -moz-box;
+    -moz-box-align: center;
+    -moz-box-pack: center;
+    -moz-box-orient: vertical;
+    padding-top: 40px;
+    padding-bottom: 60px; }
+    #b-confirmation-payment .b-confirmation-payment__container > * {
+      margin-top: 10px; }
+  #b-confirmation-payment .confirmation-payment-item {
+    width: 1280px; }
+    #b-confirmation-payment .confirmation-payment-item .title {
+      margin-right: 40px;
+      font-size: 36px;
+      font-family: "WhitneySemibold", Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      display: inline-block;
+      text-align: right;
+      width: 50%;
+      position: absolute; }
+    #b-confirmation-payment .confirmation-payment-item .text {
+      font-size: 36px;
+      display: inline-block;
+      text-align: left;
+      left: 50%;
+      margin-left: 30px;
+      position: relative;
+      max-width: 580px;
+      max-height: 150px;
+      overflow: hidden; }
+
+#mainMenu-page {
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical; }
+  #mainMenu-page .support-element {
+    right: 24px;
+    top: 72px;
+    position: absolute; }
+  #mainMenu-page .buttons-container {
+    display: -moz-box;
+    -moz-box-align: center;
+    -moz-box-pack: center;
+    -moz-box-orient: vertical;
+    background: linear-gradient(to bottom, #0e4394 0%, #0080c6 100%);
+    min-height: 490px;
+    min-width: 1280px;
+    margin-top: 40px; }
+    #mainMenu-page .buttons-container .buttons-first-row-container {
+      display: -moz-box;
+      -moz-box-align: center;
+      -moz-box-pack: center;
+      -moz-box-orient: horizontal;
+      margin-top: 20px; }
+    #mainMenu-page .buttons-container .buttons-second-row-container {
+      display: -moz-box;
+      -moz-box-align: center;
+      -moz-box-pack: center;
+      -moz-box-orient: horizontal;
+      margin-top: 30px; }
+    #mainMenu-page .buttons-container .main-menu-button {
+      padding: 30px; }
+    #mainMenu-page .buttons-container .buttons-first-row {
+      margin: 20px;
+      min-height: 150px;
+      max-height: 150px;
+      max-width: 580px;
+      min-width: 580px;
+      background-color: #FFF; }
+      #mainMenu-page .buttons-container .buttons-first-row .button-content {
+        font-size: 40px;
+        padding-left: 30px; }
+    #mainMenu-page .buttons-container .buttons-second-row {
+      padding-left: 10px;
+      margin: 20px;
+      min-height: 110px;
+      max-height: 110px;
+      max-width: 373px;
+      min-width: 373px;
+      background-color: #FFF; }
+      #mainMenu-page .buttons-container .buttons-second-row .button-content {
+        font-size: 30px;
+        padding-left: 18px; }
+  #mainMenu-page .oferta-message {
+    position: relative;
+    font-size: 20px;
+    width: 1280px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #FFF;
+    display: -moz-box;
+    -moz-box-align: center;
+    -moz-box-pack: center;
+    -moz-box-orient: horizontal; }
+    #mainMenu-page .oferta-message .button {
+      display: inline;
+      border-bottom: 1px dotted #FFF; }
+      #mainMenu-page .oferta-message .button.pushed {
+        border-bottom: 1px dotted #FFF; }
+      #mainMenu-page .oferta-message .button .button-content {
+        display: inline;
+        vertical-align: baseline; }
+
+#topup-account-page {
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  height: 900px;
+  min-width: 1280px;
+  min-height: 865px;
+  max-height: 865px; }
+  #topup-account-page .textfield {
+    margin: 40px;
+    font-size: 60px; }
+    #topup-account-page .textfield .field .text-container {
+      margin: 0 179px !important; }
+  #topup-account-page .keyboard .button-content {
+    font-size: 60px; }
+  #topup-account-page .oferta-message {
+    position: relative;
+    font-size: 20px;
+    width: 1280px;
+    margin-top: 10px;
+    color: #111;
+    display: -moz-box;
+    -moz-box-align: center;
+    -moz-box-pack: center;
+    -moz-box-orient: horizontal; }
+    #topup-account-page .oferta-message .button {
+      display: inline;
+      border-bottom: 1px dotted #2458AA;
+      color: #2458AA; }
+      #topup-account-page .oferta-message .button.pushed {
+        border-bottom: 1px dotted #111; }
+      #topup-account-page .oferta-message .button .button-content {
+        display: inline;
+        vertical-align: baseline; }
+  #topup-account-page .info {
+    position: absolute;
+    bottom: 239px; }
+
+.b-check-box_topup {
+  position: absolute;
+  bottom: 0px;
+  width: 1280px;
+  margin-bottom: -125px; }
+
+#topup-comment-page {
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  height: 900px;
+  min-width: 1280px;
+  min-height: 865px;
+  max-height: 865px; }
+  #topup-comment-page .textfield {
+    margin-top: 68px; }
+    #topup-comment-page .textfield .field .text-container > :first-child {
+      right: 164px;
+      min-width: 80%;
+      float: right;
+      white-space: pre;
+      position: relative;
+      text-align: center; }
+
+#topup-select-wallet-page {
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  height: 900px;
+  -moz-box-pack: start;
+  width: 1280px;
+  padding-top: 139px; }
+  #topup-select-wallet-page .page-header {
+    margin-top: 60px; }
+  #topup-select-wallet-page .buttons {
+    display: -moz-box;
+    -moz-box-align: center;
+    -moz-box-pack: center;
+    -moz-box-orient: horizontal;
+    margin-top: 100px; }
+    #topup-select-wallet-page .buttons > * {
+      margin-left: 50px; }
+    #topup-select-wallet-page .buttons .button-content {
+      font-size: 39px;
+      line-height: 41px;
+      margin-left: 18px; }
+
+#subscription-fee-info-page {
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  height: 900px;
+  -moz-box-pack: start;
+  width: 1280px;
+  padding-top: 95px; }
+  #subscription-fee-info-page > * {
+    margin-top: 20px; }
+  #subscription-fee-info-page .page-header {
+    margin-top: 0px; }
+  #subscription-fee-info-page .description {
+    font-size: 44px;
+    text-align: center; }
+  #subscription-fee-info-page .icon {
+    width: 130px;
+    height: 130px;
+    background: url("../../wallet/img/icons/inform.png") no-repeat; }
+  #subscription-fee-info-page #b-check-box {
+    margin-top: 49px; }
+  #subscription-fee-info-page #b-check-box .b-check-box__text {
+    color: #111;
+    font-size: 44px; }
+
+#history-page {
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  height: 900px;
+  -moz-box-pack: start;
+  width: 1280px; }
+  #history-page #left-button,
+  #history-page #right-button {
+    position: absolute;
+    top: 375px; }
+    #history-page #left-button.pushed,
+    #history-page #right-button.pushed {
+      top: 378px; }
+  #history-page #left-button {
+    left: 80px; }
+  #history-page #right-button {
+    right: 80px; }
+  #history-page .more-button {
+    background: #A2CFEF;
+    padding: 29px;
+    border-radius: 10px; }
+    #history-page .more-button .button-content,
+    #history-page .more-button .header,
+    #history-page .more-button .comment {
+      color: #111; }
+  #history-page .history-page-no-items {
+    display: -moz-box;
+    -moz-box-align: center;
+    -moz-box-pack: center;
+    -moz-box-orient: vertical;
+    min-height: 650px;
+    font-size: 40px;
+    white-space: pre-wrap; }
+
+#invoices-page {
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  height: 900px;
+  width: 1280px; }
+  #invoices-page #left-button,
+  #invoices-page #right-button {
+    position: absolute;
+    top: 472px; }
+    #invoices-page #left-button.pushed,
+    #invoices-page #right-button.pushed {
+      top: 475px; }
+    #invoices-page #left-button .button-content,
+    #invoices-page #right-button .button-content {
+      color: #fff;
+      border-color: #fff; }
+      #invoices-page #left-button .button-content .button-content:before,
+      #invoices-page #right-button .button-content .button-content:before {
+        color: #fff;
+        border-color: #fff; }
+  #invoices-page #left-button {
+    left: 80px; }
+  #invoices-page #right-button {
+    right: 80px; }
+  #invoices-page .list-arrow-button {
+    border-color: #fff;
+    color: #fff; }
+    #invoices-page .list-arrow-button .button-content:before {
+      border-color: #fff;
+      color: #fff; }
+    #invoices-page .list-arrow-button.pushed {
+      border-color: #fff;
+      color: #fff; }
+      #invoices-page .list-arrow-button.pushed .button-content:before {
+        border-color: #fff;
+        color: #fff; }
+  #invoices-page .info {
+    position: absolute;
+    bottom: 194px; }
+
+#balance-page {
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  height: 900px;
+  width: 1280px; }
+  #balance-page .items {
+    background: transparent linear-gradient(to bottom, #0e4394 0%, #0080c6 100%) repeat scroll 0% 0%;
+    text-align: center;
+    font-size: 22px;
+    position: relative;
+    padding-top: 30px;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 100px; }
+  #balance-page .info {
+    position: absolute;
+    bottom: 185px; }

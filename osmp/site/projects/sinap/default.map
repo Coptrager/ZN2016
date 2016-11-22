@@ -1,0 +1,24 @@
+$begin ‰ start > !routerPhone % phone % walletLogin > !routerSum ‰ sumCondition > confirmation % oferta > !routerPaymentMethod ‰ paymentMethodNeeded ‰ method > final > $end
+
+‰start: {
+	main: #sinap % calculator ‰ favs,
+	favourite: #sinap > confirmationChange ‰ start
+}
+
+‰favs: {
+	favourites ‰ start
+}
+
+‰sumCondition: {
+	sum: sum,
+	options: sumOptions % sum
+}
+
+‰paymentMethodNeeded: {
+	yes: paymentMethod ‰ method
+}
+
+‰method: {
+	balance: balancePayment % smsConfirmationCode,
+	cash: !routerChangeType % changeType > pay % final
+}

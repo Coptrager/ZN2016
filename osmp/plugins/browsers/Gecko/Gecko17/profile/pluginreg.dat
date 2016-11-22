@@ -1,0 +1,18 @@
+Generated File. Do not edit.
+
+[HEADER]
+Version|0.15|$
+Arch|x86-msvc|$
+
+[PLUGINS]
+NPSWF32.dll|$
+C:\osmp\plugins\browsers\Gecko\Gecko17\bin\plugins\NPSWF32.dll|$
+11.1.102.55|$
+1479238846598|0|1|$
+Shockwave Flash 11.1 r102|$
+Shockwave Flash|$
+2
+0|application/x-shockwave-flash|Adobe Flash movie|swf|$
+1|application/futuresplash|FutureSplash movie|spl|$
+
+[INVALID]

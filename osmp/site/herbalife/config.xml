@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scripts>
+	<config totalTime="1200" defaultIdleTime="180" version="2.0" log="false" logColor="0xFF0000">
+
+		<session>
+			<var key="settings.MGT_date_format" value="yyyy-mm-dd hh:nn:ss"/>
+			<var key="settings.exclude_zero_page" value="true"/>
+
+			<var key="settings.project_version" value="1.3.11"/>
+			<var key='settings.project_number' value='30068'/>
+			<var key='settings.project_name' value='Herbalife'/>
+
+			<var key='fake_pages.phoneDigitPopup' value='0'/>
+			<var key='settings.update_phone' value='0'/>
+
+			<var key='settings.full_version' value='Herbalife 1.3.11'/>
+			<var key='settings.version_font' value='PT Sans'/>
+			<var key='settings.version_font_size' value='14'/>
+			<var key='settings.version_color' value="0x29591B"/>
+
+			<var key='payments.cash' value='0'/>
+
+			<var key='check_status.TermId' value='true'/>
+			<var key='check_status.PrvId' value='14275'/>
+            <var key='check_status.СhecksCommisByPrvSumm' value='true'/>
+
+
+			<var key='delivery_type.0' value='Получение в центре продаж'/>
+			<var key='delivery_type.1' value='Курьерская доставка'/>
+			<var key='delivery_type.2' value='Получение в Постамате'/>
+			<var key='delivery_type.3' value='Почтовая доставка'/>
+
+			<var key='docs_delivery_type.0' value='Доставить вместе с заказом'/>
+			<var key='docs_delivery_type.1' value='Отправить на почтовый адрес независимого партнера'/>
+
+			<var key="header.city" value="Введите город доставки"/>
+			<var key="header.postamat_city_search" value="Укажите город постамата для доставки"/>
+			<var key="header.center_city_search" value="Укажите адрес центра продаж для доставки"/>
+			<var key="header.postamat_search" value="Укажите адрес постамата для доставки"/>
+			<var key="header.address" value="Введите адрес в городе для доставки"/>
+
+			<var key="label.empty" value=""/>
+			<var key="label.addressTip" value="Улица, дом, корпус, квартира (через запятую)"/>
+
+			<var key="user_info.cellularDenied" value="false"/>
+			<var key="user_info.VQWDenied" value="N/A"/>
+
+			<var key="settings.navigation">
+				<value>
+					<![CDATA[
+						@default = (startPage, %start_switch);
+						%start_switch =
+						(
+							success=>@login_branch,
+							fail=>startFailPage
+						);
+						@login_branch = (loginPage, t:loginRequestPage, %login_switch);
+						%login_switch =
+						(
+							auth_success_dual=>@dual_month,
+							auth_success_single=>@deliveryType,
+							auth_apf=>@apf,
+							auth_error=>loginErrorPage
+						);
+						@dual_month = (selectMonthPage, @deliveryType);
+						@deliveryType = (selectDeliveryTypePage, %delivery_switch);
+						%delivery_switch =
+						(
+							submitted.0=>@sales_center_delivery,
+							submitted.2=>@postamat_delivery,
+							default_address=>@post_delivery,
+							custom_address=>@address
+						);
+						@sales_center_delivery = (centerCitySearchPage, centerConfirmPage, @docsDeliveryType);
+						@postamat_delivery = (postamatCitySearchPage, postamatSearchPage, @docsDeliveryType);
+						@post_delivery = (defaultAddressPage, %default_address_switch);
+						@address = (postIndexPage, simpleCityPage, simpleAddressPage, @docsDeliveryType);
+						@docsDeliveryType = (selectDocsDeliveryTypePage,  %change_fio_switch);
+
+						%default_address_switch =
+						(
+							default=>@docsDeliveryType,
+							custom=>@address
+						);
+
+						%change_fio_switch =
+						(
+							next=>@phone,
+							changeFio=>@changeFio
+						);
+
+						@changeFio = (changeFioPage, @phone);
+						@phone = (phonePage, @order);
+						@order = (orderPage, t:orderRequestPage, %order_request_switch);
+
+						%order_request_switch =
+						(
+							order_success=>@confirm_order,
+							delivery_fail=>*selectDeliveryTypePage
+						);
+
+						@confirm_order = (confirmOrderPage, changePage, cashPage, %cash_switch);
+						@apf = (apfMessagePage, phonePage, changePage, cashPage, %cash_switch);
+
+						%cash_switch =
+						(
+							pay_success=>@okPage,
+							pay_fail=>@failPage,
+							pay_uncompleted=>@uncompletedPage,
+							terminal_fail=>@startFailPage
+						);
+
+						@okPage = (okPage);
+						@failPage = (failPage);
+						@startFailPage = (startFailPage);
+						@uncompletedPage = (uncompletedPage);
+				]]>
+				</value>
+			</var>
+		</session>
+
+		<statistic defaultProfile="default">
+			<add>
+				<default>
+					<var name="_extra_MGT_sum" value="payments.cash"/>
+					<var name="_extra_MGT_phone" value="user_info.phone"/>
+				</default>
+			</add>
+			<object>
+				<variable name="prv_id" value="323"/>
+				<variable name="prv_name" value="Magitel"/>
+				<variable name="_extra_MGT_project_number" value="30068"/>
+				<variable name="getAccountNumber" value="0000000000"/>
+			</object>
+			<default
+				vars='_extra_MGT_project_number,_extra_MGT_date,_extra_MGT_time,_extra_MGT_path, getAccountNumber'
+				post='../index.html'/>
+
+		</statistic>
+
+		<defaultBackground type="0" name="bg_base"/>
+
+		<pages>
+			<page name="startPage" index='1'>
+				<content type="2" name="CheckStatus" symbolName="Preloader">
+					<componentEvents>
+						<event name="success"/>
+						<event name="fail"/>
+					</componentEvents>
+				</content>
+			</page>
+
+			<page name="loginPage" index="2">
+				<content type="1" name="exit" pos="50,855"/>
+				<content type="2" name="DualInput" symbolName="LoginPage">
+					<param name="firstLayout" value="eng"/>
+					<param name="secondLayout" value="eng"/>
+					<param name="firstMinChars" value="8"/>
+					<param name="firstMaxChars" value="10"/>
+					<param name="secondMinChars" value="4"/>
+					<param name="secondMaxChars" value="8"/>
+					<param name="secondFieldIsPassword" value="true"/>
+					<param name="noValuesUpdate" value="true"/>
+					<componentEvents>
+						<event name="submitted" page="__next__"/>
+					</componentEvents>
+				</content>
+			</page>
+
+			<page name="loginRequestPage" index="3" idleTime="180">
+				<content type="0" name="bg_login_request"/>
+				<content type="2" name="LoginRequest" symbolName="Stub"/>
+			</page>
+
+			<page name="loginErrorPage" index="4">
+				<content type="1" name="retry" page="__prev__" pos="400,690"/>
+				<content type="2" name="Page" symbolName="LoginErrorPage">
+					<param name="custom_label_0" instance="_messageLabel" key="lastErrorText"/>
+				</content>
+			</page>
+
+			<page name="selectMonthPage" index="5">
+				<content type="1" name="back" page="__prev__" pos="50,855"/>
+				<content type="2" name="RadioGroup" symbolName="MonthPage">
+					<componentEvents>
+						<event name="submitted" page="__next__"/>
+					</componentEvents>
+					<param name="settings" key="selected_month"
+						   labelKey0="user_info.firstMonth"
+						   labelKey1="user_info.secondMonth"
+						/>
+				</content>
+			</page>
+
+			<page name="orderPage" index="6">
+				<content type="0" name="bg_order"/>
+				<content type="2" name="Order" symbolName="OrderPage">
+					<componentEvents>
+						<event name="submitted" page="__next__"/>
+						<event name="prev" page="__prev__"/>
+						<event name="next" page="__next__"/>
+						<event name="data_fail" page="__prev__"/>
+					</componentEvents>
+				</content>
+			</page>
+
+			<page name="selectDeliveryTypePage" index="7">
+				<content type="1" name="back" page="__prev__" pos="50,855"/>
+				<content type="2" name="SelectDeliveryType" symbolName="DeliveryTypePage">
+					<componentEvents>
+						<event name="submitted.0"/>
+						<event name="default_address"/>
+						<event name="custom_address"/>
+						<event name="submitted.2"/>
+					</componentEvents>
+					<param name="settings" key="selected_delivery_type"
+						   labelKey0="delivery_type.0"
+						   labelKey1="delivery_type.1"
+						   labelKey2="delivery_type.2"
+						   labelKey3="delivery_type.3"
+						/>
+					<param name="custom_label_0" instance="_greeting" key="user_info.greeting"/>
+				</content>
+			</page>
+
+			<page name="defaultAddressPage" index="8">
+				<content type="1" name="back" page="__prev__" pos="50,855"/>
+				<content type="2" name="DefaultAddress" symbolName="DefaultAddressPage">
+					<componentEvents>
+						<event name="default"/>
+						<event name="custom"/>
+					</componentEvents>
+				</content>
+			</page>
+
+			<page name="postIndexPage" index="9">
+				<content type="1" name="back" page="__prev__" pos="50,855"/>
+				<content type="2" name="Pin" symbolName="PostIndexPage">
+					<param name="maxChars" value="6"/>
+					<param name="settings" key="user_info.postIndex" validate="false" savePin="true"/>
+					<componentEvents>
+						<event name="submitted" page="__next__"/>
+					</componentEvents>
+				</content>
+			</page>
+
+			<page name="simpleCityPage" index="10">
+				<content type="1" name="back" page="__prev__" pos="50,855"/>
+				<content type="2" name="Address" symbolName="AddressPage">
+					<param name="custom_label_0" instance="_header" key="header.city"/>
+					<param name="custom_label_1" instance="_cityLabel" key="label.empty"/>
+					<param name="max_name_length" value="30"/>
+					<param name="settings" key="user_info.delivery_city" placeholderText="Город"/>
+					<componentEvents>
+						<event name="submitted" page="__next__"/>
+					</componentEvents>
+				</content>
+			</page>
+
+			<page name="simpleAddressPage" index="11">
+				<content type="1" name="back" page="__prev__" pos="50,855"/>
+				<content type="2" name="Address" symbolName="AddressPage">
+					<param name="custom_label_0" instance="_header" key="header.address"/>
+					<param name="custom_label_1" instance="_cityLabel" key="label.addressTip"/>
+					<param name="max_name_length" value="200"/>
+					<param name="settings" key="user_info.delivery_address"
+						   placeholderText="Улица, дом, корпус, квартира"/>
+					<componentEvents>
+						<event name="submitted" page="__next__"/>
+					</componentEvents>
+				</content>
+			</page>
+
+			<page name="centerCitySearchPage" index="12">
+				<content type="1" name="back" page="__prev__" pos="50,855"/>
+				<content type="2" name="CitySearch" symbolName="CitySearchPage">
+					<param name="custom_label_0" instance="_header" key="header.center_city_search"/>
+					<param name="custom_label_1" instance="_cityLabel" key="label.empty"/>
+					<param name="settings" key="user_info.center_city_search"
+						   placeholderText="Введите первые буквы названия города"/>
+					<componentEvents>
+						<event name="submitted" page="__next__"/>
+						<event name="data_fail" page="__prev__"/>
+					</componentEvents>
+				</content>
+			</page>
+
+			<page name="centerConfirmPage" index="13">
+				<content type="1" name="back" page="__prev__" pos="50,855"/>
+				<content type="1" name="confirm" page="__next__" pos="750,855"/>
+				<content type="2" name="Page" symbolName="SalesCenterConfirmPage">
+					<param name="custom_label_0" instance="_cityLabel" key="user_info.center_city_search"/>
+					<param name="custom_label_1" instance="_addressLabel" key="user_info.sales_center_address"/>
+				</content>
+			</page>
+
+			<page name="postamatCitySearchPage" index="14">
+				<content type="1" name="back" page="__prev__" pos="50,855"/>
+				<content type="2" name="CitySearch" symbolName="CitySearchPage">
+					<param name="custom_label_0" instance="_header" key="header.postamat_city_search"/>
+					<param name="custom_label_1" instance="_cityLabel" key="label.empty"/>
+					<param name="settings" key="user_info.postamat_city_search"
+						   placeholderText="Введите первые буквы названия города"/>
+					<componentEvents>
+						<event name="submitted" page="__next__"/>
+						<event name="data_fail" page="__prev__"/>
+					</componentEvents>
+				</content>
+			</page>
+
+			<page name="postamatSearchPage" index="15">
+				<content type="1" name="back" page="__prev__" pos="50,855"/>
+				<content type="2" name="PostamatSearch" symbolName="PostamatSearchPage">
+					<param name="custom_label_0" instance="_header" key="header.postamat_search"/>
+					<param name="custom_label_1" instance="_cityLabel" key="user_info.postamat_city_search"/>
+					<param name="settings" key="user_info.postamat_search"
+						   placeholderText="Введите первые буквы станции метро или улицы"/>
+					<componentEvents>
+						<event name="submitted" page="__next__"/>
+					</componentEvents>
+				</content>
+			</page>
+
+			<page name="selectDocsDeliveryTypePage" index="16">
+				<content type="1" name="back" pos="50,855" page="__prev__"/>
+				<content type="2" name="DocsDeliveryRadioGroup" symbolName="DocsDeliveryTypePage">
+					<componentEvents>
+						<event name="next"/>
+						<event name="changeFio"/>
+					</componentEvents>
+					<param name="settings" key="selected_doc_delivery_type"
+						   labelKey0="docs_delivery_type.0"
+						   labelKey1="docs_delivery_type.1"
+						/>
+				</content>
+			</page>
+
+			<page name="changeFioPage" index="23">
+				<content type="1" name="back" pos="50,855" page="__prev__"/>
+				<content type="2" name="DualInput" symbolName="ChangeFioPage">
+					<param name="firstLayout" value="rus"/>
+					<param name="secondLayout" value="rus"/>
+					<param name="firstMinChars" value="2"/>
+					<param name="firstMaxChars" value="50"/>
+					<param name="secondMinChars" value="2"/>
+					<param name="secondMaxChars" value="50"/>
+					<param name="keys" value="user_info.changedName,user_info.changedSurname"/>
+					<componentEvents>
+						<event name="submitted" page="__next__"/>
+					</componentEvents>
+				</content>
+			</page>
+
+			<page name="phonePage" index="17">
+				<content type="1" name="back" pos="50,855" page="__prev__"/>
+				<content type="2" name="Phone" symbolName="PhonePage">
+					<componentEvents>
+						<event name="submitted" page="__next__"/>
+					</componentEvents>
+				</content>
+			</page>
+
+			<page name="confirmOrderPage" index="19">
+				<content type="0" name="bg_confirm_order"/>
+				<content type="1" name="back" page="__prev__" pos="50,855"/>
+				<content type="1" name="next2" page="__next__" pos="970,855"/>
+				<content type="2" name="ConfirmOrder" symbolName="ConfirmOrderPage">
+				</content>
+			</page>
+
+			<page name="orderRequestPage" index="18" idleTime="180">
+				<content type="0" name="bg_order_request"/>
+				<content type="2" name="OrderRequest" symbolName="OrderRequestPage">
+					<componentEvents>
+						<event name="order_fail" page="__prev__"/>
+					</componentEvents>
+				</content>
+			</page>
+
+			<page name="apfMessagePage" index="20">
+				<content type="1" name="back" page="__prev__" pos="50,855"/>
+				<content type="1" name="next2" page="__next__" pos="970,855"/>
+				<content type="2" name="Page" symbolName="APFMessagePage">
+					<param name="custom_label_0" instance="_fio" key="user_info.treatment"/>
+					<param name="custom_label_1" instance="_sum" key="user_info.apfSumText"/>
+				</content>
+			</page>
+
+			<page name="changePage" index="21">
+				<content type="1" name="back" page="__prev__" pos="50,855"/>
+				<content type="2" name="Change" symbolName="ChangePage">
+					<componentEvents>
+						<event name="submitted" page="__next__"/>
+					</componentEvents>
+				</content>
+			</page>
+
+			<page name="cashPage" index="22" idleTime="1200">
+				<content type="0" name="bg_cash"/>
+				<content type="2" name="Cash" symbolName="CashPageWithChange">
+					<componentEvents>
+						<event name="no_cash"/>
+						<event name="terminal_fail"/>
+					</componentEvents>
+					<param name="PrvId" value="14275"/>
+					<param name="PrvName" value="«ООО «Гербалайф Интернэшнл РС»"/>
+					<param name="PrvId2" from_session="payments.PrvId2"/>
+					<param name="AccNum2" from_session="payments.AccNum2"/>
+					<param
+						name="add_params"
+						key0="MinCashLimit2"
+						value0="1"
+						key1="komissiya"
+						value1="1"
+						/>
+				</content>
+			</page>
+
+			<page name="startFailPage" index='90'>
+				<content type="0" name="bg_fail"/>
+				<content type="1" name="exit" pos="50,855"/>
+			</page>
+
+			<page name="okPage" index='91'>
+				<content type="0" name="bg_ok"/>
+				<content type="2" name="Page" symbolName="FinalPage">
+					<param name="custom_label_0" instance="orderNumber" key="finalOrderNumber"/>
+				</content>
+				<content type="1" name="exit" pos="50,855"/>
+			</page>
+
+			<page name="failPage" index='92'>
+				<content type="0" name="bg_cash_fail"/>
+				<content type="1" name="exit" pos="50,855"/>
+			</page>
+
+			<page name="uncompletedPage" index='93'>
+				<content type="0" name="bg_uncompleted"/>
+				<content type="2" name="Page" symbolName="FinalPage">
+					<param name="custom_label_0" instance="orderNumber" key="finalOrderNumber"/>
+				</content>
+				<content type="1" name="exit" pos="50,855"/>
+			</page>
+		</pages>
+	</config>
+</scripts>
+

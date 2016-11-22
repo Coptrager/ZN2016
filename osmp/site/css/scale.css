@@ -1,0 +1,16 @@
+/*
+(screenSizeX)/1280 = scaleX
+(screenSizeY)/1024 = scaleY
+(1280-(screenSizeX))/2 = translateX
+(1024-(screenSizeY))/2 = translateY
+*/
+@media screen and (max-height: 800px) { /* 1280x800 */
+	body {
+		transform: scale(0.78125, 0.78125) translate(0, -112px);
+	}
+}
+@media screen and (max-height: 768px) { /* 1024x768 */
+	body {
+		transform: scale(0.75, 0.75) translate(-128px, -128px);
+	}
+}

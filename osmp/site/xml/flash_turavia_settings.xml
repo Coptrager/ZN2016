@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data xmlns:b="com.styleru.bool" xmlns:n="com.styleru.number" xmlns:s="com.styleru.string">
+	<settings
+		n:width="1280"
+		n:height="1024"
+		s:constructor_context="xml/flash_turavia_context.xml"
+		s:constructor_flow="xml/flash_turavia_flow.xml"
+		s:prvname="Visa QIWI Wallet"
+		s:prvid="441"
+		s:prvid2="5483"
+		s:qw_prvid="441"
+		n:speed="0.4"
+		s:statisticsId="30032"
+		>
+	</settings>
+	<LoaderMax name="resources" load="true">
+		<SWFLoader name="fonts" url="swf/flash_turavia_fonts.swf" />
+		<SWFLoader name="graphics" url="swf/flash_turavia_graphics.swf" />
+	</LoaderMax>
+</data>

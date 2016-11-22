@@ -1,0 +1,4001 @@
+{
+	"a89acf00-aa79-42a6-864b-be77c6abfe5e": {
+		"elements" : [{
+				"hideFromConfirmationScreen" : false,
+				"name" : "recipientName",
+				"type" : "field",
+				"value" : "Исомиддинов Фирдавсхон",
+				"view" : {
+					"prompt" : "",
+					"title" : "ФИО Клиента",
+					"widget" : {
+						"type" : "info"
+					}
+				}
+			}, {
+				"name" : "swift",
+				"type" : "field",
+				"value" : "EJSATJ22;01"
+			}, {
+				"hideFromConfirmationScreen" : false,
+				"name" : "amount",
+				"type" : "field",
+				"value" : "800.00",
+				"view" : {
+					"prompt" : "",
+					"title" : "Макс. сумма",
+					"widget" : {
+						"type" : "info"
+					}
+				}
+			}, {
+				"name" : "recipientCountry",
+				"type" : "field",
+				"value" : "762"
+			}, {
+				"name" : "from_name_f",
+				"type" : "field",
+				"value" : "Фирдавсхон"
+			}, {
+				"name" : "from_name",
+				"type" : "field",
+				"value" : "Фирдавсхон"
+			}, {
+				"name" : "to_name_f",
+				"type" : "field",
+				"value" : "Исомиддинов"
+			}, {
+				"name" : "to_name",
+				"type" : "field",
+				"value" : "Фирдавсхон"
+			}
+		]
+	},
+	"883c0f48-999a-4dc4-bd3b-f77847f852e3": {
+
+		"elements" : [
+			{
+				"hideFromConfirmationScreen" : true,
+				"name" : "account",
+				"type" : "field",
+				"validator" : {
+					"message" : "Выберите постановление для оплаты",
+					"predicate" : {
+						"pattern" : "^18810277166500232887$",
+						"type" : "regex"
+					},
+					"type" : "predicate"
+				},
+				"view" : {
+					"prompt" : "Выберите постановление",
+					"title" : "Ваши постановления",
+					"widget" : {
+						"choices" : [
+							{
+								"title" : "5000.00 руб. за постановление 18810277166500232887",
+								"value" : "18810277166500232887"
+							},
+							{
+								"title" : "5001.00 руб. за постановление 18810277166500232887",
+								"value" : "18810277166500232887"
+							},
+							{
+								"title" : "5002.00 руб. за постановление 18810277166500232887",
+								"value" : "18810277166500232887"
+							},
+							{
+								"title" : "5003.00 руб. за постановление 18810277166500232887",
+								"value" : "18810277166500232887"
+							},
+							{
+								"title" : "5004.00 руб. за постановление 18810277166500232887",
+								"value" : "18810277166500232887"
+							},
+							{
+								"title" : "5005.00 руб. за постановление 18810277166500232887",
+								"value" : "18810277166500232887"
+							},
+							{
+								"title" : "5006.00 руб. за постановление 18810277166500232887",
+								"value" : "18810277166500232887"
+							},
+							{
+								"title" : "5007.00 руб. за постановление 18810277166500232887",
+								"value" : "18810277166500232887"
+							},
+							{
+								"title" : "5008.00 руб. за постановление 18810277166500232887",
+								"value" : "18810277166500232887"
+							},
+							{
+								"title" : "5009.00 руб. за постановление 18810277166500232887",
+								"value" : "18810277166500232887"
+							},
+							{
+								"title" : "5010.00 руб. за постановление 18810277166500232887",
+								"value" : "18810277166500232887"
+							},
+							{
+								"title" : "5011.00 руб. за постановление 18810277166500232887",
+								"value" : "18810277166500232887"
+							},
+							{
+								"title" : "5012.00 руб. за постановление 18810277166500232887",
+								"value" : "18810277166500232887"
+							},
+							{
+								"title" : "5013.00 руб. за постановление 18810277166500232887",
+								"value" : "18810277166500232887"
+							},
+							{
+								"title" : "5014.00 руб. за постановление 18810277166500232887",
+								"value" : "18810277166500232887"
+							}
+						],
+						"expansion" : {
+							"threshold" : 4,
+							"title" : "Показать все постановления"
+						},
+						"type" : "radio"
+					}
+				}
+			},
+			{
+				"condition" : {
+					"field" : "account",
+					"type" : "validity"
+				},
+				"content" : {
+					"elements" : [
+						{
+							"condition" : {
+								"field" : "account",
+								"predicate" : {
+									"pattern" : "18810277166500232887",
+									"type" : "regex"
+								},
+								"type" : "predicate"
+							},
+							"content" : {
+								"elements" : [
+									{
+										"condition" : {
+											"field" : "account",
+											"type" : "validity"
+										},
+										"content" : {
+											"elements" : [
+												{
+													"name" : "hasDiscount",
+													"type" : "field",
+													"value" : "true"
+												},
+												{
+													"name" : "okato_helper",
+													"type" : "field",
+													"value" : "45917000"
+												},
+												{
+													"name" : "altid",
+													"type" : "field",
+													"value" : "2400******0077ТК103951643"
+												},
+												{
+													"name" : "okato",
+													"type" : "field",
+													"value" : "45917000"
+												},
+												{
+													"name" : "rec_bik",
+													"type" : "field",
+													"value" : "044583001"
+												},
+												{
+													"name" : "kpp",
+													"type" : "field",
+													"value" : "772401001"
+												},
+												{
+													"name" : "kbk",
+													"type" : "field",
+													"value" : "18811630020016000140"
+												},
+												{
+													"condition" : {
+														"field" : "hasDiscount",
+														"predicate" : {
+															"pattern" : "true",
+															"type" : "regex"
+														},
+														"type" : "predicate"
+													},
+													"content" : {
+														"elements" : [
+															{
+																"hideFromConfirmationScreen" : false,
+																"name" : "to_name",
+																"type" : "field",
+																"value" : "УФК по г. Москве (УВД ЮАО ГУ МВД России по г. Москве, л/сч. № 04731451150)",
+																"view" : {
+																	"prompt" : "",
+																	"title" : "Наименование получателя платежа",
+																	"widget" : {
+																		"type" : "info"
+																	}
+																}
+															},
+															{
+																"hideFromConfirmationScreen" : false,
+																"name" : "subdivision",
+																"type" : "field",
+																"value" : "ОБ ДПС ГИБДД УВД по ЮАО ГУ МВД России по г. Москве",
+																"view" : {
+																	"prompt" : "",
+																	"title" : "Подразделение",
+																	"widget" : {
+																		"type" : "info"
+																	}
+																}
+															},
+															{
+																"hideFromConfirmationScreen" : true,
+																"name" : "cre",
+																"type" : "field",
+																"value" : "40101810800000010041",
+																"view" : {
+																	"prompt" : "",
+																	"title" : "Счет получателя",
+																	"widget" : {
+																		"type" : "info"
+																	}
+																}
+															},
+															{
+																"hideFromConfirmationScreen" : true,
+																"name" : "inn",
+																"type" : "field",
+																"value" : "7724048948",
+																"view" : {
+																	"prompt" : "",
+																	"title" : "ИНН получателя",
+																	"widget" : {
+																		"type" : "info"
+																	}
+																}
+															},
+															{
+																"hideFromConfirmationScreen" : true,
+																"name" : "sum_info",
+																"type" : "field",
+																"value" : "2500.00",
+																"view" : {
+																	"prompt" : "Сумма к оплате",
+																	"title" : "Сумма к оплате с учетом скидки",
+																	"widget" : {
+																		"type" : "info"
+																	}
+																}
+															},
+															{
+																"hideFromConfirmationScreen" : true,
+																"name" : "Info",
+																"type" : "field",
+																"value" : "ФЗ №437-ФЗ от 22.12.2014 (оплата 50% штрафа погашает задолженность)",
+																"view" : {
+																	"prompt" : "Основание для скидки",
+																	"title" : "Основание для скидки",
+																	"widget" : {
+																		"type" : "info"
+																	}
+																}
+															},
+															{
+																"hideFromConfirmationScreen" : true,
+																"name" : "summa",
+																"type" : "field",
+																"view" : {
+																	"prompt" : "",
+																	"title" : "Отказаться от скидки",
+																	"widget" : {
+																		"offValue" : "2500.00",
+																		"onValue" : "5000.00",
+																		"type" : "switch"
+																	}
+																}
+															},
+															{
+																"condition" : {
+																	"field" : "summa",
+																	"predicate" : {
+																		"pattern" : "2500.00",
+																		"type" : "regex"
+																	},
+																	"type" : "predicate"
+																},
+																"content" : {
+																	"terms" : {
+																		"commission" : {
+																			"ranges" : [
+																				{
+																					"bound" : 0,
+																					"min" : 30.0,
+																					"rate" : 0.030
+																				}
+																			]
+																		},
+																		"deadline" : "Уважаемые Абоненты! Обращаем Ваше внимание, что техническое обеспечение сервиса  производится на стороне Qiwi. Служба клиентской поддержки:  8 800 707-77-59 (Круглосуточно, звонок бесплатный)",
+																		"description" : "Уважаемые Абоненты! Обращаем Ваше внимание, что техническое обеспечение сервиса  производится на стороне Qiwi. Служба клиентской поддержки:  8 800 707-77-59 (Круглосуточно, звонок бесплатный)Если у вас есть постановление, <a href=\"/payment/form.action?provider=1973\">оплатите штраф по его номеру и дате</a>",
+																		"fixedSum" : {
+																			"amount" : 2500.0,
+																			"currency" : "643"
+																		},
+																		"identification" : {
+																			"required" : false
+																		},
+																		"limits" : [
+																			{
+																				"currency" : "643",
+																				"max" : 15000.0,
+																				"min" : 0.0
+																			}
+																		],
+																		"overpayment" : false,
+																		"qd" : 5779,
+																		"qw" : 26349,
+																		"sumConstraint" : {
+																			"sum" : {
+																				"amount" : 2500.0,
+																				"currency" : "643"
+																			},
+																			"type" : "FixedSumConstraint"
+																		},
+																		"type" : "OfflineQWTransitTerms",
+																		"underpayment" : false
+																	}
+																},
+																"type" : "dependency"
+															},
+															{
+																"condition" : {
+																	"field" : "summa",
+																	"predicate" : {
+																		"pattern" : "5000.00",
+																		"type" : "regex"
+																	},
+																	"type" : "predicate"
+																},
+																"content" : {
+																	"terms" : {
+																		"commission" : {
+																			"ranges" : [
+																				{
+																					"bound" : 0,
+																					"min" : 30.0,
+																					"rate" : 0.030
+																				}
+																			]
+																		},
+																		"deadline" : "Уважаемые Абоненты! Обращаем Ваше внимание, что техническое обеспечение сервиса  производится на стороне Qiwi. Служба клиентской поддержки:  8 800 707-77-59 (Круглосуточно, звонок бесплатный)",
+																		"description" : "Уважаемые Абоненты! Обращаем Ваше внимание, что техническое обеспечение сервиса  производится на стороне Qiwi. Служба клиентской поддержки:  8 800 707-77-59 (Круглосуточно, звонок бесплатный)Если у вас есть постановление, <a href=\"/payment/form.action?provider=1973\">оплатите штраф по его номеру и дате</a>",
+																		"fixedSum" : {
+																			"amount" : 5000.0,
+																			"currency" : "643"
+																		},
+																		"identification" : {
+																			"required" : false
+																		},
+																		"limits" : [
+																			{
+																				"currency" : "643",
+																				"max" : 15000.0,
+																				"min" : 0.0
+																			}
+																		],
+																		"overpayment" : false,
+																		"qd" : 5779,
+																		"qw" : 26349,
+																		"sumConstraint" : {
+																			"sum" : {
+																				"amount" : 5000.0,
+																				"currency" : "643"
+																			},
+																			"type" : "FixedSumConstraint"
+																		},
+																		"type" : "OfflineQWTransitTerms",
+																		"underpayment" : false
+																	}
+																},
+																"type" : "dependency"
+															}
+														],
+														"fieldGroups" : [
+															{
+																"fields" : [ "to_name", "subdivision", "cre", "inn", "sum_info", "Info", "summa" ],
+																"title" : "Информация для подтверждения"
+															}
+														]
+													},
+													"type" : "dependency"
+												},
+												{
+													"condition" : {
+														"field" : "hasDiscount",
+														"predicate" : {
+															"pattern" : "false",
+															"type" : "regex"
+														},
+														"type" : "predicate"
+													},
+													"content" : {
+														"elements" : [
+															{
+																"hideFromConfirmationScreen" : false,
+																"name" : "to_name",
+																"type" : "field",
+																"value" : "УФК по г. Москве (УВД ЮАО ГУ МВД России по г. Москве, л/сч. № 04731451150)",
+																"view" : {
+																	"prompt" : "",
+																	"title" : "Наименование получателя платежа",
+																	"widget" : {
+																		"type" : "info"
+																	}
+																}
+															},
+															{
+																"hideFromConfirmationScreen" : false,
+																"name" : "subdivision",
+																"type" : "field",
+																"value" : "ОБ ДПС ГИБДД УВД по ЮАО ГУ МВД России по г. Москве",
+																"view" : {
+																	"prompt" : "",
+																	"title" : "Подразделение",
+																	"widget" : {
+																		"type" : "info"
+																	}
+																}
+															},
+															{
+																"hideFromConfirmationScreen" : true,
+																"name" : "cre",
+																"type" : "field",
+																"value" : "40101810800000010041",
+																"view" : {
+																	"prompt" : "",
+																	"title" : "Счет получателя",
+																	"widget" : {
+																		"type" : "info"
+																	}
+																}
+															},
+															{
+																"hideFromConfirmationScreen" : true,
+																"name" : "inn",
+																"type" : "field",
+																"value" : "7724048948",
+																"view" : {
+																	"prompt" : "",
+																	"title" : "ИНН получателя",
+																	"widget" : {
+																		"type" : "info"
+																	}
+																}
+															},
+															{
+																"hideFromConfirmationScreen" : true,
+																"name" : "sum_info",
+																"type" : "field",
+																"value" : "5000.00",
+																"view" : {
+																	"prompt" : "",
+																	"title" : "Сумма к оплате",
+																	"widget" : {
+																		"type" : "info"
+																	}
+																}
+															}
+														],
+														"fieldGroups" : [
+															{
+																"fields" : [ "to_name", "subdivision", "cre", "inn", "sum_info" ],
+																"title" : "Информация для подтверждения"
+															}
+														],
+														"terms" : {
+															"commission" : {
+																"ranges" : [
+																	{
+																		"bound" : 0,
+																		"min" : 30.0,
+																		"rate" : 0.030
+																	}
+																]
+															},
+															"deadline" : "Уважаемые Абоненты! Обращаем Ваше внимание, что техническое обеспечение сервиса  производится на стороне Qiwi. Служба клиентской поддержки:  8 800 707-77-59 (Круглосуточно, звонок бесплатный)",
+															"description" : "Уважаемые Абоненты! Обращаем Ваше внимание, что техническое обеспечение сервиса  производится на стороне Qiwi. Служба клиентской поддержки:  8 800 707-77-59 (Круглосуточно, звонок бесплатный)Если у вас есть постановление, <a href=\"/payment/form.action?provider=1973\">оплатите штраф по его номеру и дате</a>",
+															"fixedSum" : {
+																"amount" : 5000.0,
+																"currency" : "643"
+															},
+															"identification" : {
+																"required" : false
+															},
+															"limits" : [
+																{
+																	"currency" : "643",
+																	"max" : 15000.0,
+																	"min" : 0.0
+																}
+															],
+															"overpayment" : false,
+															"qd" : 5779,
+															"qw" : 26349,
+															"sumConstraint" : {
+																"sum" : {
+																	"amount" : 5000.0,
+																	"currency" : "643"
+																},
+																"type" : "FixedSumConstraint"
+															},
+															"type" : "OfflineQWTransitTerms",
+															"underpayment" : false
+														}
+													},
+													"type" : "dependency"
+												},
+												{
+													"hideFromConfirmationScreen" : false,
+													"name" : "from_name_f",
+													"semantics" : {
+														"type" : "LastName"
+													},
+													"sensitiveData" : false,
+													"type" : "field",
+													"validator" : {
+														"message" : "Поле не может быть пустым",
+														"predicate" : {
+															"pattern" : "^(?=\\S)((?!\\s\\s)[А-Яа-яЁё\\s\\-]){0,39}[А-Яа-яЁё]$",
+															"type" : "regex"
+														},
+														"type" : "predicate"
+													},
+													"view" : {
+														"prompt" : "Введите фамилию",
+														"title" : "Фамилия",
+														"widget" : {
+															"stripStaticSymbols" : false,
+															"type" : "text"
+														}
+													}
+												},
+												{
+													"hideFromConfirmationScreen" : false,
+													"name" : "from_name",
+													"semantics" : {
+														"type" : "FirstName"
+													},
+													"sensitiveData" : false,
+													"type" : "field",
+													"validator" : {
+														"message" : "Поле не может быть пустым",
+														"predicate" : {
+															"pattern" : "^(?=\\S)((?!\\s\\s)[А-Яа-яЁё\\s\\-]){0,39}[А-Яа-яЁё]$",
+															"type" : "regex"
+														},
+														"type" : "predicate"
+													},
+													"view" : {
+														"prompt" : "Введите имя",
+														"title" : "Имя",
+														"widget" : {
+															"stripStaticSymbols" : false,
+															"type" : "text"
+														}
+													}
+												},
+												{
+													"hideFromConfirmationScreen" : false,
+													"name" : "from_name_p",
+													"semantics" : {
+														"type" : "MiddleName"
+													},
+													"sensitiveData" : false,
+													"type" : "field",
+													"validator" : {
+														"message" : "Поле не может быть пустым",
+														"predicate" : {
+															"pattern" : "^(?=\\S)((?!\\s\\s)[А-Яа-яЁё\\s\\-]){0,39}[А-Яа-яЁё]$",
+															"type" : "regex"
+														},
+														"type" : "predicate"
+													},
+													"view" : {
+														"prompt" : "Введите отчество",
+														"title" : "Отчество",
+														"widget" : {
+															"stripStaticSymbols" : false,
+															"type" : "text"
+														}
+													}
+												},
+												{
+													"hideFromConfirmationScreen" : false,
+													"name" : "from_address_reg",
+													"sensitiveData" : false,
+													"type" : "field",
+													"validator" : {
+														"message" : "Неверное значение",
+														"predicate" : {
+															"pattern" : "^(?=\\S)((?!\\s\\s)[А-Яа-яЁё\\.\\s\\-]){0,49}[А-Яа-яЁё\\.]$",
+															"type" : "regex"
+														},
+														"type" : "predicate"
+													},
+													"view" : {
+														"prompt" : "Регион проживания",
+														"title" : "Регион проживания",
+														"widget" : {
+															"stripStaticSymbols" : false,
+															"type" : "text"
+														}
+													}
+												},
+												{
+													"hideFromConfirmationScreen" : false,
+													"name" : "from_address_city",
+													"sensitiveData" : false,
+													"type" : "field",
+													"validator" : {
+														"message" : "Неверное значение",
+														"predicate" : {
+															"pattern" : "^(?=\\S)((?!\\s\\s)[А-Яа-яЁё0-9\\.\\,\\s\\-]){0,49}[А-Яа-яЁё0-9\\.]$",
+															"type" : "regex"
+														},
+														"type" : "predicate"
+													},
+													"view" : {
+														"prompt" : "Введите район, населенный пункт",
+														"title" : "Район, населенный пункт",
+														"widget" : {
+															"stripStaticSymbols" : false,
+															"type" : "text"
+														}
+													}
+												},
+												{
+													"hideFromConfirmationScreen" : false,
+													"name" : "from_address_street",
+													"sensitiveData" : false,
+													"type" : "field",
+													"validator" : {
+														"message" : "Неверное значение",
+														"predicate" : {
+															"pattern" : "^(?=\\S)((?!\\s\\s)[А-Яа-яЁё0-9\\.\\,\\s\\-]){0,49}[А-Яа-яЁё0-9\\.]$",
+															"type" : "regex"
+														},
+														"type" : "predicate"
+													},
+													"view" : {
+														"prompt" : "Улица",
+														"title" : "Улица",
+														"widget" : {
+															"stripStaticSymbols" : false,
+															"type" : "text"
+														}
+													}
+												},
+												{
+													"hideFromConfirmationScreen" : false,
+													"name" : "from_address_house_1",
+													"sensitiveData" : false,
+													"type" : "field",
+													"validator" : {
+														"message" : "Неверное значение",
+														"predicate" : {
+															"pattern" : "^(?=\\S)((?!\\s\\s)[А-Яа-яЁё0-9\\.\\,\\s\\/\\\\-]){0,9}[А-Яа-яЁё0-9]$",
+															"type" : "regex"
+														},
+														"type" : "predicate"
+													},
+													"view" : {
+														"prompt" : "Введите номер дома",
+														"title" : "Дом",
+														"widget" : {
+															"mask" : "d?*********",
+															"stripStaticSymbols" : false,
+															"type" : "text"
+														}
+													}
+												},
+												{
+													"hideFromConfirmationScreen" : false,
+													"name" : "from_address_house_3",
+													"sensitiveData" : false,
+													"type" : "field",
+													"validator" : {
+														"message" : "Неверное значение",
+														"predicate" : {
+															"pattern" : "^.{0,10}$",
+															"type" : "regex"
+														},
+														"type" : "predicate"
+													},
+													"view" : {
+														"prompt" : "Введите корпус",
+														"title" : "Корпус",
+														"widget" : {
+															"mask" : "d?*********",
+															"stripStaticSymbols" : false,
+															"type" : "text"
+														}
+													}
+												},
+												{
+													"hideFromConfirmationScreen" : false,
+													"name" : "from_address_flat",
+													"sensitiveData" : false,
+													"type" : "field",
+													"validator" : {
+														"message" : "Неверное значение",
+														"predicate" : {
+															"pattern" : "^.{0,10}$",
+															"type" : "regex"
+														},
+														"type" : "predicate"
+													},
+													"view" : {
+														"prompt" : "Введите номер квартиры",
+														"title" : "Квартира",
+														"widget" : {
+															"mask" : "d?*********",
+															"stripStaticSymbols" : false,
+															"type" : "text"
+														}
+													}
+												}
+											],
+											"fieldGroups" : [
+												{
+													"fields" : [ "from_name_f", "from_name", "from_name_p" ],
+													"title" : "ФИО плательщика"
+												},
+												{
+													"fields" : [ "from_address_reg", "from_address_city", "from_address_street" ],
+													"title" : "Регион, населенный пункт, улица"
+												},
+												{
+													"fields" : [ "from_address_house_1", "from_address_house_3", "from_address_flat" ],
+													"title" : "Дом, корпус, квартира"
+												}
+											]
+										},
+										"type" : "dependency"
+									}
+								]
+							},
+							"type" : "dependency"
+						}
+					]
+				},
+				"type" : "dependency"
+			}
+		]
+	},
+	"64c1ac04-053e-4b3c-820e-617af1f4ad3c": {
+		"elements" : [
+			{
+				"name" : "skipPost",
+				"type" : "field",
+				"value" : "false"
+			},
+			{
+				"condition" : {
+					"field" : "skipPost",
+					"predicate" : {
+						"pattern" : "false",
+						"type" : "regex"
+					},
+					"type" : "predicate"
+				},
+				"content" : {
+					"elements" : [
+						{
+							"name" : "hasDiscount",
+							"type" : "field",
+							"value" : "false"
+						},
+						{
+							"condition" : {
+								"field" : "hasDiscount",
+								"predicate" : {
+									"pattern" : "true",
+									"type" : "regex"
+								},
+								"type" : "predicate"
+							},
+							"content" : {},
+							"type" : "dependency"
+						},
+						{
+							"condition" : {
+								"field" : "hasDiscount",
+								"predicate" : {
+									"pattern" : "false",
+									"type" : "regex"
+								},
+								"type" : "predicate"
+							},
+							"content" : {
+								"elements" : [
+									{
+										"name" : "altid",
+										"type" : "field",
+										"value" : "2200*****0000ААВ781925643"
+									},
+									{
+										"name" : "post_date",
+										"type" : "field",
+										"value" : "25.12.2015"
+									},
+									{
+										"name" : "online",
+										"type" : "field",
+										"value" : "2"
+									},
+									{
+										"name" : "rec_bik",
+										"type" : "field",
+										"value" : "044583001"
+									},
+									{
+										"name" : "okato_helper",
+										"type" : "field",
+										"value" : "46648000"
+									},
+									{
+										"name" : "okato",
+										"type" : "field",
+										"value" : "46648000"
+									},
+									{
+										"name" : "kpp",
+										"type" : "field",
+										"value" : "770245001"
+									},
+									{
+										"name" : "kbk",
+										"type" : "field",
+										"value" : "18811630020016000140"
+									},
+									{
+										"hideFromConfirmationScreen" : false,
+										"name" : "to_name",
+										"type" : "field",
+										"value" : "УФК по МО (УГИБДД ГУ МВД России по Московской области)",
+										"view" : {
+											"prompt" : "",
+											"title" : "Наименование получателя платежа ",
+											"widget" : {
+												"type" : "info"
+											}
+										}
+									},
+									{
+										"hideFromConfirmationScreen" : false,
+										"name" : "subdivision",
+										"type" : "field",
+										"value" : "14 Б 2 П ДПС (южный) ГИБДД ГУ МВД России по Московской области",
+										"view" : {
+											"prompt" : "",
+											"title" : "Подразделение",
+											"widget" : {
+												"type" : "info"
+											}
+										}
+									},
+									{
+										"hideFromConfirmationScreen" : true,
+										"name" : "cre",
+										"type" : "field",
+										"value" : "40101810600000010102",
+										"view" : {
+											"prompt" : "",
+											"title" : "Счет получателя",
+											"widget" : {
+												"type" : "info"
+											}
+										}
+									},
+									{
+										"hideFromConfirmationScreen" : true,
+										"name" : "inn",
+										"type" : "field",
+										"value" : "7703037039",
+										"view" : {
+											"prompt" : "",
+											"title" : "ИНН получателя",
+											"widget" : {
+												"type" : "info"
+											}
+										}
+									},
+									{
+										"hideFromConfirmationScreen" : true,
+										"name" : "sum_info",
+										"type" : "field",
+										"value" : "1000.00",
+										"view" : {
+											"prompt" : "Сумма к оплате",
+											"title" : "Сумма к оплате",
+											"widget" : {
+												"type" : "info"
+											}
+										}
+									},
+									{
+										"hideFromConfirmationScreen" : false,
+										"name" : "from_name_f",
+										"semantics" : {
+											"type" : "LastName"
+										},
+										"sensitiveData" : false,
+										"type" : "field",
+										"validator" : {
+											"message" : "Поле не может быть пустым",
+											"predicate" : {
+												"pattern" : "^(?=\\S)((?!\\s\\s)[А-Яа-яЁё\\s\\-]){0,39}[А-Яа-яЁё]$",
+												"type" : "regex"
+											},
+											"type" : "predicate"
+										},
+										"view" : {
+											"prompt" : "Введите фамилию",
+											"title" : "Фамилия",
+											"widget" : {
+												"mask" : "*?***************************************",
+												"stripStaticSymbols" : false,
+												"type" : "text"
+											}
+										}
+									},
+									{
+										"hideFromConfirmationScreen" : false,
+										"name" : "from_name",
+										"semantics" : {
+											"type" : "FirstName"
+										},
+										"sensitiveData" : false,
+										"type" : "field",
+										"validator" : {
+											"message" : "Поле не может быть пустым",
+											"predicate" : {
+												"pattern" : "^(?=\\S)((?!\\s\\s)[А-Яа-яЁё\\s\\-]){0,39}[А-Яа-яЁё]$",
+												"type" : "regex"
+											},
+											"type" : "predicate"
+										},
+										"view" : {
+											"prompt" : "Введите имя",
+											"title" : "Имя",
+											"widget" : {
+												"mask" : "*?***************************************",
+												"stripStaticSymbols" : false,
+												"type" : "text"
+											}
+										}
+									},
+									{
+										"hideFromConfirmationScreen" : false,
+										"name" : "from_name_p",
+										"semantics" : {
+											"type" : "MiddleName"
+										},
+										"sensitiveData" : false,
+										"type" : "field",
+										"validator" : {
+											"message" : "Поле не может быть пустым",
+											"predicate" : {
+												"pattern" : "^(?=\\S)((?!\\s\\s)[А-Яа-яЁё\\s\\-]){0,39}[А-Яа-яЁё]$",
+												"type" : "regex"
+											},
+											"type" : "predicate"
+										},
+										"view" : {
+											"prompt" : "Введите отчество",
+											"title" : "Отчество",
+											"widget" : {
+												"mask" : "*?***************************************",
+												"stripStaticSymbols" : false,
+												"type" : "text"
+											}
+										}
+									},
+									{
+										"hideFromConfirmationScreen" : false,
+										"name" : "from_address_reg",
+										"sensitiveData" : false,
+										"type" : "field",
+										"validator" : {
+											"message" : "Неверное значение",
+											"predicate" : {
+												"pattern" : "^(?=\\S)((?!\\s\\s)[А-Яа-яЁё\\.\\s\\-]){0,49}[А-Яа-яЁё\\.]$",
+												"type" : "regex"
+											},
+											"type" : "predicate"
+										},
+										"view" : {
+											"prompt" : "Введите регион проживания",
+											"title" : "Регион проживания",
+											"widget" : {
+												"mask" : "*?*************************************************",
+												"stripStaticSymbols" : false,
+												"type" : "text"
+											}
+										}
+									},
+									{
+										"hideFromConfirmationScreen" : false,
+										"name" : "from_address_city",
+										"sensitiveData" : false,
+										"type" : "field",
+										"validator" : {
+											"message" : "Неверное значение",
+											"predicate" : {
+												"pattern" : "^(?=\\S)((?!\\s\\s)[А-Яа-яЁё0-9\\.\\,\\s\\-]){0,49}[А-Яа-яЁё0-9\\.]$",
+												"type" : "regex"
+											},
+											"type" : "predicate"
+										},
+										"view" : {
+											"prompt" : "Введите район, населенный пункт",
+											"title" : "Район, населенный пункт",
+											"widget" : {
+												"mask" : "*?*************************************************",
+												"stripStaticSymbols" : false,
+												"type" : "text"
+											}
+										}
+									},
+									{
+										"hideFromConfirmationScreen" : false,
+										"name" : "from_address_street",
+										"sensitiveData" : false,
+										"type" : "field",
+										"validator" : {
+											"message" : "Неверное значение",
+											"predicate" : {
+												"pattern" : "^(?=\\S)((?!\\s\\s)[А-Яа-яЁё0-9\\.\\,\\s\\-]){0,49}[А-Яа-яЁё0-9\\.]$",
+												"type" : "regex"
+											},
+											"type" : "predicate"
+										},
+										"view" : {
+											"prompt" : "Улица",
+											"title" : "Улица",
+											"widget" : {
+												"mask" : "*?*************************************************",
+												"stripStaticSymbols" : false,
+												"type" : "text"
+											}
+										}
+									},
+									{
+										"hideFromConfirmationScreen" : false,
+										"name" : "from_address_house_1",
+										"sensitiveData" : false,
+										"type" : "field",
+										"validator" : {
+											"message" : "Неверное значение",
+											"predicate" : {
+												"pattern" : "^(?=\\S)((?!\\s\\s)[А-Яа-яЁё0-9\\.\\,\\s\\/\\\\-]){0,9}[А-Яа-яЁё0-9]$",
+												"type" : "regex"
+											},
+											"type" : "predicate"
+										},
+										"view" : {
+											"prompt" : "Введите номер дома",
+											"title" : "Дом",
+											"widget" : {
+												"mask" : "d?*********",
+												"stripStaticSymbols" : false,
+												"type" : "text"
+											}
+										}
+									},
+									{
+										"hideFromConfirmationScreen" : false,
+										"name" : "from_address_house_3",
+										"sensitiveData" : false,
+										"type" : "field",
+										"validator" : {
+											"message" : "Неверное значение",
+											"predicate" : {
+												"pattern" : "^.{0,10}$",
+												"type" : "regex"
+											},
+											"type" : "predicate"
+										},
+										"view" : {
+											"prompt" : "Введите корпус",
+											"title" : "Корпус",
+											"widget" : {
+												"mask" : "d?*********",
+												"stripStaticSymbols" : false,
+												"type" : "text"
+											}
+										}
+									},
+									{
+										"hideFromConfirmationScreen" : false,
+										"name" : "from_address_flat",
+										"sensitiveData" : false,
+										"type" : "field",
+										"validator" : {
+											"message" : "Неверное значение",
+											"predicate" : {
+												"pattern" : "^.{0,10}$",
+												"type" : "regex"
+											},
+											"type" : "predicate"
+										},
+										"view" : {
+											"prompt" : "Введите номер квартиры",
+											"title" : "Квартира",
+											"widget" : {
+												"mask" : "d?*********",
+												"stripStaticSymbols" : false,
+												"type" : "text"
+											}
+										}
+									}
+								],
+								"fieldGroups" : [
+									{
+										"fields" : [ "to_name", "subdivision", "cre", "inn", "sum_info" ],
+										"title" : "Информация для подтверждения"
+									},
+									{
+										"fields" : [ "from_name_f", "from_name", "from_name_p" ],
+										"title" : "ФИО плательщика"
+									},
+									{
+										"fields" : [ "from_address_reg", "from_address_city", "from_address_street" ],
+										"title" : "Регион, населенный пункт, улица"
+									},
+									{
+										"fields" : [ "from_address_house_1", "from_address_house_3", "from_address_flat" ],
+										"title" : "Дом, корпус, квартира"
+									}
+								],
+								"terms" : {
+									"commission" : {
+										"ranges" : [
+											{
+												"bound" : 0.0,
+												"min" : 30.0,
+												"rate" : 0.030
+											}
+										]
+									},
+									"deadline" : "Уважаемые Абоненты! Обращаем Ваше внимание, что техническое обеспечение сервиса  производится на стороне Qiwi. Служба клиентской поддержки:  8 800 707-77-59 (Круглосуточно, звонок бесплатный)",
+									"description" : "Уважаемые Абоненты! Обращаем Ваше внимание, что техническое обеспечение сервиса  производится на стороне Qiwi. Служба клиентской поддержки:  8 800 707-77-59 (Круглосуточно, звонок бесплатный)Если у вас есть постановление, <a href=\"/payment/form.action?provider=1973\">оплатите штраф по его номеру и дате</a>",
+									"fixedSum" : {
+										"amount" : 1000.0,
+										"currency" : "643"
+									},
+									"identification" : {
+										"required" : false
+									},
+									"limits" : [
+										{
+											"currency" : "643",
+											"max" : 15000.0,
+											"min" : 0.0
+										}
+									],
+									"overpayment" : false,
+									"qd" : 5779,
+									"qw" : 26349,
+									"sumConstraint" : {
+										"sum" : {
+											"amount" : 1000.0,
+											"currency" : "643"
+										},
+										"type" : "FixedSumConstraint"
+									},
+									"type" : "OfflineQWTransitTerms",
+									"underpayment" : false
+								}
+							},
+							"type" : "dependency"
+						}
+					]
+				},
+				"type" : "dependency"
+			},
+			{
+				"condition" : {
+					"field" : "skipPost",
+					"predicate" : {
+						"pattern" : "true",
+						"type" : "regex"
+					},
+					"type" : "predicate"
+				},
+				"content" : {
+					"elements" : [
+						{
+							"hideFromConfirmationScreen" : false,
+							"name" : "post_date",
+							"sensitiveData" : false,
+							"type" : "field",
+							"validator" : {
+								"message" : "Неверное значение",
+								"predicate" : {
+									"pattern" : "^([0-9]{2})\\.([0-9]{2})\\.([0-9]{4})$",
+									"type" : "regex"
+								},
+								"type" : "predicate"
+							},
+							"view" : {
+								"prompt" : "",
+								"title" : "Дата постановления",
+								"widget" : {
+									"allowsFutureDate" : true,
+									"format" : "dd.MM.yyyy",
+									"type" : "date"
+								}
+							}
+						},
+						{
+							"id" : "5f0c0ad3-ed8a-4a05-8c61-7c1d90fa332e",
+							"message" : "Получить информацию",
+							"params" : [
+								{
+									"field" : "post_date",
+									"triggerReload" : false
+								},
+								{
+									"field" : "account",
+									"triggerReload" : false
+								}
+							],
+							"title" : "Получить информацию",
+							"type" : "ref"
+						}
+					]
+				},
+				"type" : "dependency"
+			}
+		]
+	},
+	"e0a38728-3ec9-4570-b436-ada71d4644bd": {
+		"elements" : [{
+			"name" : "skipPost",
+			"type" : "field",
+			"value" : "false"
+		},
+			{
+			"condition" : {
+				"field" : "skipPost",
+				"predicate" : {
+					"pattern" : "false",
+					"type" : "regex"
+				},
+				"type" : "predicate"
+			},
+			"content" : {
+				"elements" : [{
+					"name" : "hasDiscount",
+					"type" : "field",
+					"value" : "true"
+				}, {
+					"condition" : {
+						"field" : "hasDiscount",
+						"predicate" : {
+							"pattern" : "true",
+							"type" : "regex"
+						},
+						"type" : "predicate"
+					},
+					"content" : {
+						"elements" : [{
+							"hideFromConfirmationScreen" : false,
+							"name" : "to_name_f",
+							"type" : "field",
+							"value" : "УФК по г.Москве (УГИБДД ГУ МВД России по г. Москве (ЦАФАП), л/сч № 04731440640)",
+							"view" : {
+								"prompt" : "",
+								"title" : "Наименование получателя платежа ",
+								"widget" : {
+									"type" : "info"
+								}
+							}
+						}, {
+							"hideFromConfirmationScreen" : false,
+							"name" : "subdivision",
+							"type" : "field",
+							"value" : "ЦАФАП ОДД ГИБДД ГУ МВД России по г. Москве",
+							"view" : {
+								"prompt" : "",
+								"title" : "Подразделение",
+								"widget" : {
+									"type" : "info"
+								}
+							}
+						}, {
+							"hideFromConfirmationScreen" : false,
+							"name" : "cre",
+							"type" : "field",
+							"value" : "40101810800000010041",
+							"view" : {
+								"prompt" : "",
+								"title" : "Счет получателя",
+								"widget" : {
+									"type" : "info"
+								}
+							}
+						}, {
+							"hideFromConfirmationScreen" : false,
+							"name" : "inn",
+							"type" : "field",
+							"value" : "7707089101",
+							"view" : {
+								"prompt" : "",
+								"title" : "ИНН получателя",
+								"widget" : {
+									"type" : "info"
+								}
+							}
+						}, {
+							"hideFromConfirmationScreen" : false,
+							"name" : "sum_info",
+							"type" : "field",
+							"value" : "250.00",
+							"view" : {
+								"prompt" : "Сумма к оплате",
+								"title" : "Сумма к оплате",
+								"widget" : {
+									"type" : "info"
+								}
+							}
+						}, {
+							"hideFromConfirmationScreen" : false,
+							"name" : "Info",
+							"type" : "field",
+							"value" : "ФЗ №437-ФЗ от 22.12.2014 (оплата 50% штрафа погашает задолженность целиком)",
+							"view" : {
+								"prompt" : "Основание для скидки",
+								"title" : "Основание для скидки",
+								"widget" : {
+									"type" : "info"
+								}
+							}
+						}, {
+							"hideFromConfirmationScreen" : false,
+							"name" : "summa",
+							"type" : "field",
+							"view" : {
+								"prompt" : "",
+								"title" : "Отказаться от скидки",
+								"widget" : {
+									"offValue" : "250.00",
+									"onValue" : "500.00",
+									"type" : "switch"
+								}
+							}
+						}, {
+							"hideFromConfirmationScreen" : false,
+							"name" : "from_name_f",
+							"semantics" : {
+								"type" : "LastName"
+							},
+							"sensitiveData" : false,
+							"type" : "field",
+							"validator" : {
+								"message" : "Поле не может быть пустым",
+								"predicate" : {
+									"pattern" : "^(?=\\S)((?!\\s\\s)[А-Яа-яЁё\\s\\-]){0,39}[А-Яа-яЁё]$",
+									"type" : "regex"
+								},
+								"type" : "predicate"
+							},
+							"view" : {
+								"prompt" : "Введите фамилию",
+								"title" : "Фамилия",
+								"widget" : {
+									"stripStaticSymbols" : false,
+									"type" : "text"
+								}
+							}
+						}, {
+							"hideFromConfirmationScreen" : false,
+							"name" : "from_name",
+							"semantics" : {
+								"type" : "FirstName"
+							},
+							"sensitiveData" : false,
+							"type" : "field",
+							"validator" : {
+								"message" : "Поле не может быть пустым",
+								"predicate" : {
+									"pattern" : "^(?=\\S)((?!\\s\\s)[А-Яа-яЁё\\s\\-]){0,39}[А-Яа-яЁё]$",
+									"type" : "regex"
+								},
+								"type" : "predicate"
+							},
+							"view" : {
+								"prompt" : "Введите имя",
+								"title" : "Имя",
+								"widget" : {
+									"stripStaticSymbols" : false,
+									"type" : "text"
+								}
+							}
+						}, {
+							"hideFromConfirmationScreen" : false,
+							"name" : "from_name_p",
+							"semantics" : {
+								"type" : "MiddleName"
+							},
+							"sensitiveData" : false,
+							"type" : "field",
+							"validator" : {
+								"message" : "Поле не может быть пустым",
+								"predicate" : {
+									"pattern" : "^(?=\\S)((?!\\s\\s)[А-Яа-яЁё\\s\\-]){0,39}[А-Яа-яЁё]$",
+									"type" : "regex"
+								},
+								"type" : "predicate"
+							},
+							"view" : {
+								"prompt" : "Введите отчество",
+								"title" : "Отчество",
+								"widget" : {
+									"stripStaticSymbols" : false,
+									"type" : "text"
+								}
+							}
+						}, {
+							"hideFromConfirmationScreen" : false,
+							"name" : "from_address_reg",
+							"sensitiveData" : false,
+							"type" : "field",
+							"validator" : {
+								"message" : "Неверное значение",
+								"predicate" : {
+									"pattern" : "^(?=\\S)((?!\\s\\s)[А-Яа-яЁё\\s\\-]){0,100}[А-Яа-яЁё]$",
+									"type" : "regex"
+								},
+								"type" : "predicate"
+							},
+							"view" : {
+								"prompt" : "Введите регион проживания",
+								"title" : "Регион проживания",
+								"widget" : {
+									"stripStaticSymbols" : false,
+									"type" : "text"
+								}
+							}
+						}, {
+							"hideFromConfirmationScreen" : false,
+							"name" : "from_address_city",
+							"sensitiveData" : false,
+							"type" : "field",
+							"validator" : {
+								"message" : "Неверное значение",
+								"predicate" : {
+									"pattern" : "^(?=\\S)((?!\\s\\s)[А-Яа-яЁё\\s\\-]){0,100}[А-Яа-яЁё]$",
+									"type" : "regex"
+								},
+								"type" : "predicate"
+							},
+							"view" : {
+								"prompt" : "Введите район, населенный пункт",
+								"title" : "Район, населенный пункт",
+								"widget" : {
+									"stripStaticSymbols" : false,
+									"type" : "text"
+								}
+							}
+						}, {
+							"hideFromConfirmationScreen" : false,
+							"name" : "from_address_street",
+							"sensitiveData" : false,
+							"type" : "field",
+							"validator" : {
+								"message" : "Неверное значение",
+								"predicate" : {
+									"pattern" : "^(?=\\S)((?!\\s\\s)[А-Яа-яЁё0-9\\s\\-]){0,100}[А-Яа-яЁё]$",
+									"type" : "regex"
+								},
+								"type" : "predicate"
+							},
+							"view" : {
+								"prompt" : "Улица",
+								"title" : "Улица",
+								"widget" : {
+									"stripStaticSymbols" : false,
+									"type" : "text"
+								}
+							}
+						}, {
+							"hideFromConfirmationScreen" : false,
+							"name" : "from_address_house_1",
+							"sensitiveData" : false,
+							"type" : "field",
+							"validator" : {
+								"message" : "Неверное значение",
+								"predicate" : {
+									"pattern" : "С",
+									"type" : "regex"
+								},
+								"type" : "predicate"
+							},
+							"view" : {
+								"prompt" : "Введите номер дома",
+								"title" : "Дом",
+								"widget" : {
+									"mask" : "d?***********************************************",
+									"stripStaticSymbols" : false,
+									"type" : "text"
+								}
+							}
+						}, {
+							"hideFromConfirmationScreen" : false,
+							"name" : "from_address_house_2",
+							"sensitiveData" : false,
+							"type" : "field",
+							"validator" : {
+								"message" : "Неверное значение",
+								"predicate" : {
+									"pattern" : "^.*$",
+									"type" : "regex"
+								},
+								"type" : "predicate"
+							},
+							"view" : {
+								"prompt" : "Введите корпус",
+								"title" : "Корпус",
+								"widget" : {
+									"mask" : "d*?************************",
+									"stripStaticSymbols" : false,
+									"type" : "text"
+								}
+							}
+						}, {
+							"hideFromConfirmationScreen" : false,
+							"name" : "from_address_flat",
+							"sensitiveData" : false,
+							"type" : "field",
+							"validator" : {
+								"message" : "Неверное значение",
+								"predicate" : {
+									"pattern" : "^\\d+$",
+									"type" : "regex"
+								},
+								"type" : "predicate"
+							},
+							"view" : {
+								"prompt" : "Введите номер квартиры",
+								"title" : "Квартира",
+								"widget" : {
+									"keyboard" : "numeric",
+									"mask" : "d?ddddddddddddddddddddddddddd",
+									"stripStaticSymbols" : false,
+									"type" : "text"
+								}
+							}
+						}, {
+							"condition" : {
+								"field" : "summa",
+								"predicate" : {
+									"pattern" : "250.00",
+									"type" : "regex"
+								},
+								"type" : "predicate"
+							},
+							"content" : {
+								"elements" : [{
+									"name" : "someHiddenField",
+									"type" : "field",
+									"value" : "false"
+								}],
+								"terms" : {
+									"commission" : {
+										"ranges" : [{
+											"bound" : 0.0,
+											"min" : 30.0,
+											"rate" : 0.030
+										}
+										]
+									},
+									"deadline" : "Уважаемые Абоненты! Обращаем Ваше внимание, что техническое обеспечение сервиса  производится на стороне Qiwi. Служба клиентской поддержки:  8 800 707-77-59 (Круглосуточно, звонок бесплатный)",
+									"description" : "Уважаемые Абоненты! Обращаем Ваше внимание, что техническое обеспечение сервиса  производится на стороне Qiwi. Служба клиентской поддержки:  8 800 707-77-59 (Круглосуточно, звонок бесплатный)Если у вас есть постановление, <a href=\"/payment/form.action?provider=1973\">оплатите штраф по его номеру и дате</a>",
+									"fixedSum" : {
+										"amount" : 250.0,
+										"currency" : "643"
+									},
+									"identification" : {
+										"required" : false
+									},
+									"limits" : [{
+										"currency" : "643",
+										"max" : 15000.0,
+										"min" : 0.0
+									}
+									],
+									"overpayment" : false,
+									"qd" : 5779,
+									"qw" : 26349,
+									"sumConstraint" : {
+										"sum" : {
+											"amount" : 250.0,
+											"currency" : "643"
+										},
+										"type" : "FixedSumConstraint"
+									},
+									"type" : "OfflineQWTransitTerms",
+									"underpayment" : false
+								}
+							},
+							"type" : "dependency"
+						}, {
+							"condition" : {
+								"field" : "summa",
+								"predicate" : {
+									"pattern" : "500.00",
+									"type" : "regex"
+								},
+								"type" : "predicate"
+							},
+							"content" : {
+								"elements" : [{
+									"name" : "someHiddenField",
+									"type" : "field",
+									"value" : "false"
+								}],
+								"terms" : {
+									"commission" : {
+										"ranges" : [{
+											"bound" : 0.0,
+											"min" : 30.0,
+											"rate" : 0.030
+										}
+										]
+									},
+									"deadline" : "Уважаемые Абоненты! Обращаем Ваше внимание, что техническое обеспечение сервиса  производится на стороне Qiwi. Служба клиентской поддержки:  8 800 707-77-59 (Круглосуточно, звонок бесплатный)",
+									"description" : "Уважаемые Абоненты! Обращаем Ваше внимание, что техническое обеспечение сервиса  производится на стороне Qiwi. Служба клиентской поддержки:  8 800 707-77-59 (Круглосуточно, звонок бесплатный)Если у вас есть постановление, <a href=\"/payment/form.action?provider=1973\">оплатите штраф по его номеру и дате</a>",
+									"fixedSum" : {
+										"amount" : 500.0,
+										"currency" : "643"
+									},
+									"identification" : {
+										"required" : false
+									},
+									"limits" : [{
+										"currency" : "643",
+										"max" : 15000.0,
+										"min" : 0.0
+									}
+									],
+									"overpayment" : false,
+									"qd" : 5779,
+									"qw" : 26349,
+									"sumConstraint" : {
+										"sum" : {
+											"amount" : 500.0,
+											"currency" : "643"
+										},
+										"type" : "FixedSumConstraint"
+									},
+									"type" : "OfflineQWTransitTerms",
+									"underpayment" : false
+								}
+							},
+							"type" : "dependency"
+						}
+						],
+						"fieldGroups" : [{
+							"fields" : ["to_name_f", "subdivision", "cre", "inn", "sum_info", "Info", "summa"],
+							"title" : "Информация для подтверждения"
+						}, {
+							"fields" : ["from_name_f", "from_name", "from_name_p"],
+							"title" : "ФИО плательщика"
+						}, {
+							"fields" : ["from_address_reg", "from_address_city", "from_address_street"],
+							"title" : "Регион, населенный пункт, улица"
+						}, {
+							"fields" : ["from_address_house_1", "from_address_house_2", "from_address_flat"],
+							"title" : "Дом, корпус, квартира"
+						}
+						]
+					},
+					"type" : "dependency"
+				}, {
+					"condition" : {
+						"field" : "hasDiscount",
+						"predicate" : {
+							"pattern" : "false",
+							"type" : "regex"
+						},
+						"type" : "predicate"
+					},
+					"content" : {
+						"elements" : [{
+							"hideFromConfirmationScreen" : false,
+							"name" : "to_name_f",
+							"type" : "field",
+							"value" : "УФК по г.Москве (УГИБДД ГУ МВД России по г. Москве (ЦАФАП), л/сч № 04731440640)",
+							"view" : {
+								"prompt" : "",
+								"title" : "Наименование получателя платежа ",
+								"widget" : {
+									"type" : "info"
+								}
+							}
+						}, {
+							"hideFromConfirmationScreen" : false,
+							"name" : "subdivision",
+							"type" : "field",
+							"value" : "ЦАФАП ОДД ГИБДД ГУ МВД России по г. Москве",
+							"view" : {
+								"prompt" : "",
+								"title" : "Подразделение",
+								"widget" : {
+									"type" : "info"
+								}
+							}
+						}, {
+							"hideFromConfirmationScreen" : false,
+							"name" : "cre",
+							"type" : "field",
+							"value" : "40101810800000010041",
+							"view" : {
+								"prompt" : "",
+								"title" : "Счет получателя",
+								"widget" : {
+									"type" : "info"
+								}
+							}
+						}, {
+							"hideFromConfirmationScreen" : false,
+							"name" : "inn",
+							"type" : "field",
+							"value" : "7707089101",
+							"view" : {
+								"prompt" : "",
+								"title" : "ИНН получателя",
+								"widget" : {
+									"type" : "info"
+								}
+							}
+						}, {
+							"hideFromConfirmationScreen" : true,
+							"name" : "sum_info",
+							"type" : "field",
+							"value" : "500.00",
+							"view" : {
+								"prompt" : "Сумма к оплате",
+								"title" : "Сумма к оплате",
+								"widget" : {
+									"type" : "info"
+								}
+							}
+						}, {
+							"hideFromConfirmationScreen" : false,
+							"name" : "from_name_f",
+							"semantics" : {
+								"type" : "LastName"
+							},
+							"sensitiveData" : false,
+							"type" : "field",
+							"validator" : {
+								"message" : "Поле не может быть пустым",
+								"predicate" : {
+									"pattern" : "^(?=\\S)((?!\\s\\s)[А-Яа-яЁё\\s\\-]){0,39}[А-Яа-яЁё]$",
+									"type" : "regex"
+								},
+								"type" : "predicate"
+							},
+							"view" : {
+								"prompt" : "Введите фамилию",
+								"title" : "Фамилия",
+								"widget" : {
+									"stripStaticSymbols" : false,
+									"type" : "text"
+								}
+							}
+						}, {
+							"hideFromConfirmationScreen" : false,
+							"name" : "from_name",
+							"semantics" : {
+								"type" : "FirstName"
+							},
+							"sensitiveData" : false,
+							"type" : "field",
+							"validator" : {
+								"message" : "Поле не может быть пустым",
+								"predicate" : {
+									"pattern" : "^(?=\\S)((?!\\s\\s)[А-Яа-яЁё\\s\\-]){0,39}[А-Яа-яЁё]$",
+									"type" : "regex"
+								},
+								"type" : "predicate"
+							},
+							"view" : {
+								"prompt" : "Введите имя",
+								"title" : "Имя",
+								"widget" : {
+									"stripStaticSymbols" : false,
+									"type" : "text"
+								}
+							}
+						}, {
+							"hideFromConfirmationScreen" : false,
+							"name" : "from_name_p",
+							"semantics" : {
+								"type" : "MiddleName"
+							},
+							"sensitiveData" : false,
+							"type" : "field",
+							"validator" : {
+								"message" : "Поле не может быть пустым",
+								"predicate" : {
+									"pattern" : "^(?=\\S)((?!\\s\\s)[А-Яа-яЁё\\s\\-]){0,39}[А-Яа-яЁё]$",
+									"type" : "regex"
+								},
+								"type" : "predicate"
+							},
+							"view" : {
+								"prompt" : "Введите отчество",
+								"title" : "Отчество",
+								"widget" : {
+									"stripStaticSymbols" : false,
+									"type" : "text"
+								}
+							}
+						}, {
+							"hideFromConfirmationScreen" : false,
+							"name" : "from_address_reg",
+							"sensitiveData" : false,
+							"type" : "field",
+							"validator" : {
+								"message" : "Неверное значение",
+								"predicate" : {
+									"pattern" : "^(?=\\S)((?!\\s\\s)[А-Яа-яЁё\\s\\-]){0,100}[А-Яа-яЁё]$",
+									"type" : "regex"
+								},
+								"type" : "predicate"
+							},
+							"view" : {
+								"prompt" : "Введите регион проживания",
+								"title" : "Регион проживания",
+								"widget" : {
+									"stripStaticSymbols" : false,
+									"type" : "text"
+								}
+							}
+						}, {
+							"hideFromConfirmationScreen" : false,
+							"name" : "from_address_city",
+							"sensitiveData" : false,
+							"type" : "field",
+							"validator" : {
+								"message" : "Неверное значение",
+								"predicate" : {
+									"pattern" : "^(?=\\S)((?!\\s\\s)[А-Яа-яЁё\\s\\-]){0,100}[А-Яа-яЁё]$",
+									"type" : "regex"
+								},
+								"type" : "predicate"
+							},
+							"view" : {
+								"prompt" : "Введите район, населенный пункт",
+								"title" : "Район, населенный пункт",
+								"widget" : {
+									"stripStaticSymbols" : false,
+									"type" : "text"
+								}
+							}
+						}, {
+							"hideFromConfirmationScreen" : false,
+							"name" : "from_address_street",
+							"sensitiveData" : false,
+							"type" : "field",
+							"validator" : {
+								"message" : "Неверное значение",
+								"predicate" : {
+									"pattern" : "^(?=\\S)((?!\\s\\s)[А-Яа-яЁё0-9\\s\\-]){0,100}[А-Яа-яЁё]$",
+									"type" : "regex"
+								},
+								"type" : "predicate"
+							},
+							"view" : {
+								"prompt" : "Улица",
+								"title" : "Улица",
+								"widget" : {
+									"stripStaticSymbols" : false,
+									"type" : "text"
+								}
+							}
+						}, {
+							"hideFromConfirmationScreen" : false,
+							"name" : "from_address_house_1",
+							"sensitiveData" : false,
+							"type" : "field",
+							"validator" : {
+								"message" : "Неверное значение",
+								"predicate" : {
+									"pattern" : "^[а-яА-ЯЁё0-9\\.\\,\\s\\/\\\\-]+$",
+									"type" : "regex"
+								},
+								"type" : "predicate"
+							},
+							"view" : {
+								"prompt" : "Введите номер дома",
+								"title" : "Дом",
+								"widget" : {
+									"mask" : "d?***********************************************",
+									"stripStaticSymbols" : false,
+									"type" : "text"
+								}
+							}
+						}, {
+							"hideFromConfirmationScreen" : false,
+							"name" : "from_address_house_2",
+							"sensitiveData" : false,
+							"type" : "field",
+							"validator" : {
+								"message" : "Неверное значение",
+								"predicate" : {
+									"pattern" : "^.*$",
+									"type" : "regex"
+								},
+								"type" : "predicate"
+							},
+							"view" : {
+								"prompt" : "Введите корпус",
+								"title" : "Корпус",
+								"widget" : {
+									"mask" : "d*?************************",
+									"stripStaticSymbols" : false,
+									"type" : "text"
+								}
+							}
+						}, {
+							"hideFromConfirmationScreen" : false,
+							"name" : "from_address_flat",
+							"sensitiveData" : false,
+							"type" : "field",
+							"validator" : {
+								"message" : "Неверное значение",
+								"predicate" : {
+									"pattern" : "^\\d+$",
+									"type" : "regex"
+								},
+								"type" : "predicate"
+							},
+							"view" : {
+								"prompt" : "Введите номер квартиры",
+								"title" : "Квартира",
+								"widget" : {
+									"keyboard" : "numeric",
+									"mask" : "d?ddddddddddddddddddddddddddd",
+									"stripStaticSymbols" : false,
+									"type" : "text"
+								}
+							}
+						}
+						],
+						"fieldGroups" : [{
+							"fields" : ["to_name_f", "subdivision", "cre", "inn", "sum_info"],
+							"title" : "Информация для подтверждения"
+						}, {
+							"fields" : ["from_name_f", "from_name", "from_name_p"],
+							"title" : "ФИО плательщика"
+						}, {
+							"fields" : ["from_address_reg", "from_address_city", "from_address_street"],
+							"title" : "Регион, населенный пункт, улица"
+						}, {
+							"fields" : ["from_address_house_1", "from_address_house_2", "from_address_flat"],
+							"title" : "Дом, корпус, квартира"
+						}
+						],
+						"terms" : {
+							"commission" : {
+								"ranges" : [{
+									"bound" : 0.0,
+									"min" : 30.0,
+									"rate" : 0.030
+								}
+								]
+							},
+							"deadline" : "Уважаемые Абоненты! Обращаем Ваше внимание, что техническое обеспечение сервиса  производится на стороне Qiwi. Служба клиентской поддержки:  8 800 707-77-59 (Круглосуточно, звонок бесплатный)",
+							"description" : "Уважаемые Абоненты! Обращаем Ваше внимание, что техническое обеспечение сервиса  производится на стороне Qiwi. Служба клиентской поддержки:  8 800 707-77-59 (Круглосуточно, звонок бесплатный)Если у вас есть постановление, <a href=\"/payment/form.action?provider=1973\">оплатите штраф по его номеру и дате</a>",
+							"fixedSum" : {
+								"amount" : 500.0,
+								"currency" : "643"
+							},
+							"identification" : {
+								"required" : false
+							},
+							"limits" : [{
+								"currency" : "643",
+								"max" : 15000.0,
+								"min" : 0.0
+							}
+							],
+							"overpayment" : false,
+							"qd" : 5779,
+							"qw" : 26349,
+							"sumConstraint" : {
+								"sum" : {
+									"amount" : 500.0,
+									"currency" : "643"
+								},
+								"type" : "FixedSumConstraint"
+							},
+							"type" : "OfflineQWTransitTerms",
+							"underpayment" : false
+						}
+					},
+					"type" : "dependency"
+				}
+				]
+			},
+			"type" : "dependency"
+		}, {
+			"condition" : {
+				"field" : "skipPost",
+				"predicate" : {
+					"pattern" : "true",
+					"type" : "regex"
+				},
+				"type" : "predicate"
+			},
+			"content" : {
+				"elements" : [{
+					"hideFromConfirmationScreen" : false,
+					"name" : "post_date",
+					"sensitiveData" : false,
+					"type" : "field",
+					"validator" : {
+						"message" : "Неверное значение",
+						"predicate" : {
+							"pattern" : "^([0-9]{2})\\.([0-9]{2})\\.([0-9]{4})$",
+							"type" : "regex"
+						},
+						"type" : "predicate"
+					},
+					"view" : {
+						"prompt" : "",
+						"title" : "Дата постановления",
+						"widget" : {
+							"allowsFutureDate" : true,
+							"format" : "dd.MM.yyyy",
+							"type" : "date"
+						}
+					}
+				}, {
+					"id" : "11882f05-45a5-4c00-8d29-5734e2f4fb54",
+					"message" : "Получить информацию",
+					"params" : [{
+						"field" : "post_date",
+						"triggerReload" : false
+					}, {
+						"field" : "account",
+						"triggerReload" : false
+					}
+					],
+					"title" : "Получить информацию",
+					"type" : "ref"
+				}
+				]
+			},
+			"type" : "dependency"
+		}
+		]
+	},
+	"40fe6b3b-2de4-41c9-8425-0a20abf0df62": {
+		"elements" : [
+			{
+				"name" : "_info_sum",
+				"type" : "field",
+				"value" : "1000.00"
+			},
+			{
+				"condition" : {
+					"field" : "account",
+					"type" : "validity"
+				},
+				"content" : {
+					"elements" : [
+						{
+							"name" : "to_name_f",
+							"type" : "field",
+							"value" : "УФК по Санкт-Петербургу (Главное Управление Министрества юстиции РФ по Санкт-Петербургу)"
+						},
+						{
+							"name" : "inn",
+							"type" : "field",
+							"value" : "7838459758"
+						},
+						{
+							"name" : "kpp",
+							"type" : "field",
+							"value" : "783801001"
+						},
+						{
+							"name" : "okato",
+							"type" : "field",
+							"value" : "40303000"
+						},
+						{
+							"name" : "kbk",
+							"type" : "field",
+							"value" : "31810805000010001110"
+						},
+						{
+							"name" : "rec_bik",
+							"type" : "field",
+							"value" : "044030001"
+						},
+						{
+							"name" : "cre",
+							"type" : "field",
+							"value" : "40101810200000010001"
+						},
+						{
+							"name" : "to_bank",
+							"type" : "field",
+							"value" : "ГРКЦ ГУ Банка России по Санкт-Петербургу"
+						},
+						{
+							"name" : "comment",
+							"type" : "field",
+							"value" : "Государственная пошлина за государственную регистрацию прав на недвижимое имущество и сделок с ним (Дополнительно в графе \"наименование платежа\" указывается СНИЛС - страховой номер индивидуального лицевого счета плательщика)"
+						},
+						{
+							"name" : "pay_type",
+							"type" : "field",
+							"value" : "Регистрация прав"
+						}
+					]
+				},
+				"type" : "dependency"
+			},
+			{
+				"hideFromConfirmationScreen" : false,
+				"name" : "rem_dcm_type",
+				"type" : "field",
+				"validator" : {
+					"message" : "Не выбран тип реквизитов",
+					"predicate" : {
+						"pattern" : "^01$|^14$",
+						"type" : "regex"
+					},
+					"type" : "predicate"
+				},
+				"view" : {
+					"prompt" : "Выберите реквизиты",
+					"title" : "Тип реквизитов",
+					"widget" : {
+						"choices" : [
+							{
+								"title" : "Серия и номер паспорта",
+								"value" : "01"
+							},
+							{
+								"title" : "СНИЛС",
+								"value" : "14"
+							}
+						],
+						"type" : "radio"
+					}
+				}
+			}, {
+				"hideFromConfirmationScreen" : false,
+				"name" : "switch2",
+				"type" : "field",
+				"view" : {
+					"prompt" : "",
+					"title" : "Оплата со скидкой 50%",
+					"widget" : {
+						"offValue" : "нет",
+						"onValue" : "да",
+						"type" : "switch"
+					}
+				}
+			},
+			{
+				"condition" : {
+					"field" : "rem_dcm_type",
+					"predicate" : {
+						"pattern" : "^01$",
+						"type" : "regex"
+					},
+					"type" : "predicate"
+				},
+				"content" : {
+					"elements" : [
+						{
+							"hideFromConfirmationScreen" : false,
+							"name" : "rem_dcm_no",
+							"sensitiveData" : true,
+							"type" : "field",
+							"validator" : {
+								"message" : "Неверный формат номера паспорта",
+								"predicate" : {
+									"pattern" : "^\\d{10}$",
+									"type" : "regex"
+								},
+								"type" : "predicate"
+							},
+							"view" : {
+								"prompt" : "Введите серию и номер паспорта",
+								"title" : "Серия и номер паспорта",
+								"widget" : {
+									"keyboard" : "numeric",
+									"mask" : "dddddddddd",
+									"stripStaticSymbols" : false,
+									"type" : "text"
+								}
+							}
+						}
+					]
+				},
+				"type" : "dependency"
+			},
+			{
+				"condition" : {
+					"field" : "rem_dcm_type",
+					"predicate" : {
+						"pattern" : "^14$",
+						"type" : "regex"
+					},
+					"type" : "predicate"
+				},
+				"content" : {
+					"elements" : [
+						{
+							"hideFromConfirmationScreen" : false,
+							"name" : "rem_dcm_no",
+							"sensitiveData" : true,
+							"type" : "field",
+							"validator" : {
+								"message" : "Неверный формат СНИЛС",
+								"predicate" : {
+									"pattern" : "^\\d{11}$",
+									"type" : "regex"
+								},
+								"type" : "predicate"
+							},
+							"view" : {
+								"prompt" : "Введите СНИЛС",
+								"title" : "СНИЛС",
+								"widget" : {
+									"keyboard" : "numeric",
+									"mask" : "ddddddddddd",
+									"stripStaticSymbols" : false,
+									"type" : "text"
+								}
+							}
+						}
+					]
+				},
+				"type" : "dependency"
+			},
+			{
+				"hideFromConfirmationScreen" : false,
+				"name" : "from_name_f",
+				"semantics" : {
+					"type" : "LastName"
+				},
+				"sensitiveData" : false,
+				"type" : "field",
+				"validator" : {
+					"message" : "Поле не может быть пустым",
+					"predicate" : {
+						"pattern" : "^.+$",
+						"type" : "regex"
+					},
+					"type" : "predicate"
+				},
+				"view" : {
+					"prompt" : "Введите фамилию",
+					"title" : "Фамилия",
+					"widget" : {
+						"stripStaticSymbols" : false,
+						"type" : "text"
+					}
+				}
+			},
+			{
+				"hideFromConfirmationScreen" : false,
+				"name" : "from_name",
+				"semantics" : {
+					"type" : "FirstName"
+				},
+				"sensitiveData" : false,
+				"type" : "field",
+				"validator" : {
+					"message" : "Поле не может быть пустым",
+					"predicate" : {
+						"pattern" : "^.+$",
+						"type" : "regex"
+					},
+					"type" : "predicate"
+				},
+				"view" : {
+					"prompt" : "Введите имя",
+					"title" : "Имя",
+					"widget" : {
+						"stripStaticSymbols" : false,
+						"type" : "text"
+					}
+				}
+			},
+			{
+				"hideFromConfirmationScreen" : false,
+				"name" : "from_name_p",
+				"semantics" : {
+					"type" : "MiddleName"
+				},
+				"sensitiveData" : false,
+				"type" : "field",
+				"validator" : {
+					"message" : "Поле не может быть пустым",
+					"predicate" : {
+						"pattern" : "^.+$",
+						"type" : "regex"
+					},
+					"type" : "predicate"
+				},
+				"view" : {
+					"prompt" : "Введите отчество",
+					"title" : "Отчество",
+					"widget" : {
+						"stripStaticSymbols" : false,
+						"type" : "text"
+					}
+				}
+			}
+		],
+		"fieldGroups" : [
+			{
+				"fields" : [ "from_name_f", "from_name", "from_name_p" ],
+				"title" : "Данные плательщика"
+			}, {
+				"fields": ["switch2", "rem_dcm_type"],
+				"title": "Трррр"
+			}
+		],
+		"terms" : {
+			"commission" : {
+				"ranges" : [
+					{
+						"bound" : 0.0,
+						"min" : 30.0,
+						"rate" : 0.020
+					}
+				]
+			},
+			"description" : "",
+			"identification" : {
+				"required" : false
+			},
+			"limits" : [
+				{
+					"currency" : "643",
+					"max" : 15000.0,
+					"min" : 0.0
+				}
+			],
+			"overpayment" : false,
+			"qd" : 17499,
+			"qw" : 26540,
+			"sumConstraint" : {
+				"suggestedSum" : {
+					"amount" : 1000.0,
+					"currency" : "643"
+				},
+				"type" : "EditableSumConstraint"
+			},
+			"type" : "OfflineQWTransitTerms",
+			"underpayment" : true
+		}
+	},
+	"496768c8-5cf2-4ccd-9cca-a8ab79131ef4": {
+		"elements" : [
+			{
+				"name" : "order_id_createRouteReceipt",
+				"type" : "field",
+				"value" : "1661"
+			},
+			{
+				"name" : "oper_id_createRouteReceipt",
+				"type" : "field",
+				"value" : "1728"
+			},
+			{
+				"hideFromConfirmationScreen" : false,
+				"name" : "value_mk",
+				"type" : "field",
+				"value" : "1405.73",
+				"view" : {
+					"prompt" : "Стоимость МК (руб)",
+					"title" : "Стоимость МК (руб)",
+					"widget" : {
+						"type" : "info"
+					}
+				}
+			},
+			{
+				"name" : "mk_id",
+				"type" : "field",
+				"value" : "5135000072737007"
+			},
+			{
+				"name" : "date_mk",
+				"type" : "field",
+				"value" : "201512121200"
+			},
+			{
+				"name" : "verb_mk",
+				"type" : "field",
+				"value" : "Р22 513км Историческая улица — Р208\r\nР208 0км Р22 — Р22\r\nР22 327км Р208 — М4\r\nМ4 77км Р22 — "
+			},
+			{
+				"hideFromConfirmationScreen" : false,
+				"name" : "routes_mk",
+				"type" : "field",
+				"value" : "919.206",
+				"view" : {
+					"prompt" : "Протяженность маршрута (км)",
+					"title" : "Протяженность маршрута (км)",
+					"info" : "Инфо первого поля",
+					"widget" : {
+						"type" : "info"
+					}
+				}
+			},
+			{
+				"hideFromConfirmationScreen" : false,
+				"name" : "routes_md",
+				"type" : "field",
+				"value" : "920.206",
+				"view" : {
+					"prompt" : "Затяженность маршрута (км)",
+					"title" : "Затяженность маршрута (км)",
+					"info" : "Инфо второго поля",
+					"widget" : {
+						"type" : "info"
+					}
+				}
+			},
+			{
+				"name" : "arrear",
+				"type" : "field",
+				"value" : "false"
+			},
+			{
+				"condition" : {
+					"field" : "arrear",
+					"predicate" : {
+						"pattern" : "^true$",
+						"type" : "regex"
+					},
+					"type" : "predicate"
+				},
+				"content" : {
+					"elements" : [
+						{
+							"hideFromConfirmationScreen" : false,
+							"name" : "arrear_sum",
+							"type" : "field",
+							"value" : "0.00",
+							"view" : {
+								"prompt" : "Сумма задолженности (руб)",
+								"title" : "Сумма задолженности (руб)",
+								"widget" : {
+									"type" : "info"
+								}
+							}
+						},
+						{
+							"hideFromConfirmationScreen" : false,
+							"name" : "arrear_date",
+							"type" : "field",
+							"value" : "null",
+							"view" : {
+								"prompt" : "Дата возникновения задолженности",
+								"title" : "Дата возникновения задолженности",
+								"widget" : {
+									"type" : "info"
+								}
+							}
+						}
+					]
+				},
+				"type" : "dependency"
+			},
+			{
+				"id" : "6194a695-7997-4c00-aa00-b89d57772be6",
+				"message" : "Проверить возможность оплаты",
+				"params" : [
+					{
+						"field" : "mk_id",
+						"triggerReload" : true
+					},
+					{
+						"field" : "userAction",
+						"triggerReload" : true
+					},
+					{
+						"field" : "transport",
+						"triggerReload" : true
+					}
+				],
+				"title" : "Проверить возможность оплаты",
+				"type" : "ref"
+			}
+		],
+		"fieldGroups" : [
+			{
+				"fields" : [ "routes_mk", "routes_md" ],
+				"title" : "Супер инфо-поле"
+			}
+		],
+		"terms" : {
+			"commission" : {
+				"ranges" : [
+					{
+						"bound" : 0.0,
+						"rate" : 0.020
+					}
+				]
+			},
+			"description" : "",
+			"fixedSum" : {
+				"amount" : 1405.730,
+				"currency" : "643"
+			},
+			"identification" : {
+				"required" : true
+			},
+			"limits" : [
+				{
+					"currency" : "643",
+					"max" : 15000.0,
+					"min" : 0.0
+				}
+			],
+			"overpayment" : false,
+			"qd" : 52866,
+			"qw" : 26924,
+			"sumConstraint" : {
+				"sum" : {
+					"amount" : 1405.730,
+					"currency" : "643"
+				},
+				"type" : "FixedSumConstraint"
+			},
+			"type" : "OfflineQWTransitTerms",
+			"underpayment" : true
+		}
+	},
+	"885eea9e-d147-475c-9d7e-c3689e5dac20": {
+		"elements" : [
+			{
+				"hideFromConfirmationScreen" : false,
+				"name" : "end_mk",
+				"type" : "field",
+				"validator" : {
+					"message" : "Начало маршрута не выбранно",
+					"predicate" : {
+						"pattern" : "^209909$|^209910$|^209911$|^124452$|^103120$|^118571$|^125382$|^108367$|^129049$|^214679$|^230547$|^111847$|^118633$|^118634$|^118748$|^118796$",
+						"type" : "regex"
+					},
+					"type" : "predicate"
+				},
+				"view" : {
+					"prompt" : "Выберите конец маршрута",
+					"title" : "Конец маршрута",
+					"widget" : {
+						"choices" : [
+							{
+								"title" : "Ярославская область, Ростов Город",
+								"value" : "209909"
+							},
+							{
+								"title" : "Ростовская область, Ростов-на-Дону, Ростов Главный СНТ Сад",
+								"value" : "209910"
+							},
+							{
+								"title" : "Ростовская область, Ростов-на-Дону Город",
+								"value" : "209911"
+							},
+							{
+								"title" : "Ростовская область, Ростов-на-Дону, Авангард СНТ Садовое неком-е товарищество",
+								"value" : "124452"
+							},
+							{
+								"title" : "Ростовская область, Ростов-на-Дону, Агропром СНТ Садовое неком-е товарищество",
+								"value" : "103120"
+							},
+							{
+								"title" : "Ростовская область, Ростов-на-Дону, Аксаец СНТ Садовое неком-е товарищество",
+								"value" : "118571"
+							},
+							{
+								"title" : "Ростовская область, Ростов-на-Дону, Аэро СНТ Садовое неком-е товарищество",
+								"value" : "125382"
+							},
+							{
+								"title" : "Ростовская область, Ростов-на-Дону, Белая Ромашка СНТ Сад",
+								"value" : "108367"
+							},
+							{
+								"title" : "Ростовская область, Ростов-на-Дону, Берёзка СНТ Дачное нек",
+								"value" : "129049"
+							},
+							{
+								"title" : "Ростовская область, Ростов-на-Дону, Весна СНТ Сад",
+								"value" : "214679"
+							},
+							{
+								"title" : "Ростовская область, Ростов-на-Дону, Водоканалпроект СНТ Сад",
+								"value" : "230547"
+							},
+							{
+								"title" : "Ростовская область, Ростов-на-Дону, Ворошиловский район",
+								"value" : "111847"
+							},
+							{
+								"title" : "Ростовская область, Ростов-на-Дону, Восток СНТ (Первомайский район)",
+								"value" : "118633"
+							},
+							{
+								"title" : "Ростовская область, Ростов-на-Дону, Восток СНТ (Пролетарский район) Дачное нек",
+								"value" : "118634"
+							},
+							{
+								"title" : "Ростовская область, Ростов-на-Дону, Восход СНТ Сад",
+								"value" : "118748"
+							},
+							{
+								"title" : "Ростовская область, Ростов-на-Дону, Восход УВД СНТ",
+								"value" : "118796"
+							}
+						],
+						"type" : "list"
+					}
+				}
+			}
+		]
+	},
+	"4f006166-3f83-4457-9a4f-affae8db67a4": {
+		"elements" : [
+			{
+				"hideFromConfirmationScreen" : false,
+				"name" : "start_mk",
+				"type" : "field",
+				"validator" : {
+					"message" : "Начало маршрута не выбранно",
+					"predicate" : {
+						"pattern" : "^215903$|^232502$|^215207$|^214534$|^214633$|^214687$|^214695$|^214700$|^214711$|^214713$|^214728$|^214760$|^214811$|^230501$|^230503$|^230499$",
+						"type" : "regex"
+					},
+					"type" : "predicate"
+				},
+				"view" : {
+					"prompt" : "Выберите начало маршрута",
+					"title" : "Начало маршрута",
+					"widget" : {
+						"choices" : [
+							{
+								"title" : "Москва, Москва Город",
+								"value" : "215903"
+							},
+							{
+								"title" : "Москва, Армазово Деревня",
+								"value" : "232502"
+							},
+							{
+								"title" : "Москва, Армейский Поселение",
+								"value" : "215207"
+							},
+							{
+								"title" : "Москва, Верховье СНТ Территория",
+								"value" : "214534"
+							},
+							{
+								"title" : "Москва, Весенино КП",
+								"value" : "214633"
+							},
+							{
+								"title" : "Москва, Весна СНТ (Воскресенское)",
+								"value" : "214687"
+							},
+							{
+								"title" : "Москва, Весна СНТ (Марушкинское)",
+								"value" : "214695"
+							},
+							{
+								"title" : "Москва, Весна СНТ (Рязановское)",
+								"value" : "214700"
+							},
+							{
+								"title" : "Москва, Весна-1 КИЗ Территория",
+								"value" : "214711"
+							},
+							{
+								"title" : "Москва, Весна-2 КИЗ",
+								"value" : "214713"
+							},
+							{
+								"title" : "Москва, Весна-МК СНТ",
+								"value" : "214728"
+							},
+							{
+								"title" : "Москва, Ветеран МО СНТ",
+								"value" : "214760"
+							},
+							{
+								"title" : "Москва, Ветеран СНТ (Воскресенское)",
+								"value" : "214811"
+							},
+							{
+								"title" : "Москва, Внуково СНТ Территория",
+								"value" : "230501"
+							},
+							{
+								"title" : "Москва, Внуково ТИЗ",
+								"value" : "230503"
+							},
+							{
+								"title" : "Москва, Внуково деревня",
+								"value" : "230499"
+							}
+						],
+						"type" : "list"
+					}
+				}
+			}
+		]
+	},
+	"c17a45be-33db-42d0-90f8-2c0473ecbf77": {
+		"elements" : [
+			{
+				"name" : "order_id_authCustomer",
+				"type" : "field",
+				"value" : "1593"
+			},
+			{
+				"name" : "oper_id_authCustomer",
+				"type" : "field",
+				"value" : "1674"
+			},
+			{
+				"name" : "account",
+				"type" : "field",
+				"value" : "101001365440"
+			},
+			{
+				"hideFromConfirmationScreen" : true,
+				"name" : "start_mk_value",
+				"sensitiveData" : false,
+				"type" : "field",
+				"validator" : {
+					"message" : "",
+					"predicate" : {
+						"pattern" : ".+",
+						"type" : "regex"
+					},
+					"type" : "predicate"
+				},
+				"view" : {
+					"info" : "Для более точного поиска укажите населенный пункт, район и область. Например: \"Иваново Череповецкий район Вологодская область\"",
+					"prompt" : "Укажите начало маршрута",
+					"title" : "Начало маршрута",
+					"widget" : {
+						"stripStaticSymbols" : false,
+						"type" : "text"
+					}
+				}
+			},
+			{
+				"id" : "4f006166-3f83-4457-9a4f-affae8db67a4",
+				"message" : "Показать варианты адреса",
+				"params" : [
+					{
+						"field" : "start_mk_value",
+						"triggerReload" : true
+					},
+					{
+						"field" : "transport",
+						"triggerReload" : true
+					}
+				],
+				"title" : "Показать варианты адреса",
+				"type" : "ref"
+			},
+			{
+				"hideFromConfirmationScreen" : true,
+				"name" : "end_mk_value",
+				"sensitiveData" : false,
+				"type" : "field",
+				"validator" : {
+					"message" : "",
+					"predicate" : {
+						"pattern" : ".+",
+						"type" : "regex"
+					},
+					"type" : "predicate"
+				},
+				"view" : {
+					"info" : "Для более точного поиска укажите населенный пункт, район и область. Например: \"Иваново Череповецкий район Вологодская область\"",
+					"prompt" : "Укажите конец маршрута",
+					"title" : "Конец маршрута",
+					"widget" : {
+						"stripStaticSymbols" : false,
+						"type" : "text"
+					}
+				}
+			},
+			{
+				"id" : "885eea9e-d147-475c-9d7e-c3689e5dac20",
+				"message" : "Показать варианты адреса",
+				"params" : [
+					{
+						"field" : "end_mk_value",
+						"triggerReload" : true
+					},
+					{
+						"field" : "transport",
+						"triggerReload" : true
+					}
+				],
+				"title" : "Показать варианты адреса",
+				"type" : "ref"
+			},
+			{
+				"hideFromConfirmationScreen" : false,
+				"name" : "user_date_mk",
+				"sensitiveData" : false,
+				"type" : "field",
+				"validator" : {
+					"message" : "Дата указана не верно",
+					"predicate" : {
+						"pattern" : "^\\d{2}\\.\\d{2}\\.\\d{4}$",
+						"type" : "regex"
+					},
+					"type" : "predicate"
+				},
+				"view" : {
+					"info" : "Формат ввода ДД.ММ.ГГГГ",
+					"prompt" : "Укажите дату начала маршрута",
+					"title" : "Дата начала маршрута",
+					"widget" : {
+						"keyboard" : "numeric",
+						"mask" : "dd.dd.dddd",
+						"stripStaticSymbols" : false,
+						"type" : "text"
+					}
+				}
+			},
+			{
+				"hideFromConfirmationScreen" : false,
+				"name" : "user_time_mk",
+				"sensitiveData" : false,
+				"type" : "field",
+				"validator" : {
+					"message" : "Время указано не верно",
+					"predicate" : {
+						"pattern" : "^\\d{2}:\\d{2}$",
+						"type" : "regex"
+					},
+					"type" : "predicate"
+				},
+				"view" : {
+					"info" : "Формат ввода ЧЧ:ММ",
+					"prompt" : "Укажите время начала маршрута",
+					"title" : "Время начала маршрута",
+					"widget" : {
+						"keyboard" : "numeric",
+						"mask" : "dd:dd",
+						"stripStaticSymbols" : false,
+						"type" : "text"
+					}
+				}
+			},
+			{
+				"id" : "496768c8-5cf2-4ccd-9cca-a8ab79131ef4",
+				"message" : "Cформировать МК",
+				"params" : [
+					{
+						"field" : "account",
+						"triggerReload" : true
+					},
+					{
+						"field" : "start_mk",
+						"triggerReload" : true
+					},
+					{
+						"field" : "end_mk",
+						"triggerReload" : true
+					},
+					{
+						"field" : "order_id_authCustomer",
+						"triggerReload" : true
+					},
+					{
+						"field" : "oper_id_authCustomer",
+						"triggerReload" : true
+					},
+					{
+						"field" : "user_date_mk",
+						"triggerReload" : true
+					},
+					{
+						"field" : "user_time_mk",
+						"triggerReload" : true
+					},
+					{
+						"field" : "transport",
+						"triggerReload" : true
+					}
+				],
+				"title" : "Cформировать МК",
+				"type" : "ref"
+			}
+		]
+	},
+	"152f3643-216c-4766-a2ca-230954b37716": {
+		"terms": {
+			"commission" : {
+				"ranges" : [
+					{
+						"bound" : 0.0,
+						"min" : 30.0,
+						"rate" : 0.020
+					}
+				]
+			},
+			"description" : "",
+			"identification" : {
+				"required" : false
+			},
+			"limits" : [
+				{
+					"currency" : "643",
+					"max" : 15000.0,
+					"min" : 0.0
+				}
+			],
+			"overpayment" : false,
+			"qd" : 17499,
+			"qw" : 26540,
+			"sumConstraint" : {
+				"suggestedSum" : {
+					"amount" : 300.42,
+					"currency" : "643"
+				},
+				"type" : "EditableSumConstraint"
+			},
+			"type" : "OfflineQWTransitTerms",
+			"underpayment" : true
+		},
+		"elements": [
+			{
+				"type": "field",
+				"name": "_info_sum",
+				"view": {
+					"title": "Стоимость услуги",
+					"prompt": "Стоимость услуги",
+					"widget": {
+						"type": "info"
+					}
+				},
+				"value": "1500.00",
+				"hideFromConfirmationScreen": true
+			},
+			{
+				"type": "dependency",
+				"condition": {
+					"type": "validity",
+					"field": "account"
+				},
+				"content": {
+					"elements": [
+						{
+							"type": "field",
+							"name": "to_name_f",
+							"value": "УФК по Санкт-Петербургу (Главное Управление Министрества юстиции РФ по Санкт-Петербургу)"
+						},
+						{
+							"type": "field",
+							"name": "inn",
+							"value": "7838459758"
+						},
+						{
+							"type": "field",
+							"name": "kpp",
+							"value": "783801001"
+						},
+						{
+							"type": "field",
+							"name": "okato",
+							"value": "40303000"
+						},
+						{
+							"type": "field",
+							"name": "kbk",
+							"value": "31810805000010001110"
+						},
+						{
+							"type": "field",
+							"name": "rec_bik",
+							"value": "044030001"
+						},
+						{
+							"type": "field",
+							"name": "cre",
+							"value": "40101810200000010001"
+						},
+						{
+							"type": "field",
+							"name": "to_bank",
+							"value": "ГРКЦ ГУ Банка России по Санкт-Петербургу"
+						},
+						{
+							"type": "field",
+							"name": "comment",
+							"value": "За выдачу паспорта гражданина РФ пришедшего в негодность"
+						},
+						{
+							"type": "field",
+							"name": "pay_type",
+							"value": "Замена паспорта"
+						}
+					]
+				}
+			},
+			{
+				"type": "field",
+				"name": "rem_dcm_type",
+				"validator": {
+					"type": "predicate",
+					"predicate": {
+						"type": "regex",
+						"pattern": "^01$|^14$"
+					},
+					"message": "Не выбран тип реквизитов"
+				},
+				"view": {
+					"title": "Тип реквизитов",
+					"prompt": "Выберите реквизиты",
+					"widget": {
+						"type": "radio",
+						"choices": [
+							{
+								"value": "01",
+								"title": "Серия и номер паспорта"
+							},
+							{
+								"value": "14",
+								"title": "СНИЛС"
+							}
+						]
+					}
+				},
+				"hideFromConfirmationScreen": false
+			},
+			{
+				"type": "dependency",
+				"condition": {
+					"type": "predicate",
+					"field": "rem_dcm_type",
+					"predicate": {
+						"type": "regex",
+						"pattern": "^01$"
+					}
+				},
+				"content": {
+					"elements": [
+						{
+							"type": "field",
+							"name": "rem_dcm_no",
+							"validator": {
+								"type": "predicate",
+								"predicate": {
+									"type": "regex",
+									"pattern": "^\\d{10}$"
+								},
+								"message": "Неверный формат номера паспорта"
+							},
+							"view": {
+								"title": "Серия и номер паспорта",
+								"prompt": "Введите серию и номер паспорта",
+								"widget": {
+									"type": "text",
+									"mask": "dddddddddd",
+									"keyboard": "numeric",
+									"stripStaticSymbols": false
+								}
+							},
+							"sensitiveData": true,
+							"hideFromConfirmationScreen": false
+						}
+					]
+				}
+			},
+			{
+				"type": "dependency",
+				"condition": {
+					"type": "predicate",
+					"field": "rem_dcm_type",
+					"predicate": {
+						"type": "regex",
+						"pattern": "^14$"
+					}
+				},
+				"content": {
+					"elements": [
+						{
+							"type": "field",
+							"name": "rem_dcm_no",
+							"validator": {
+								"type": "predicate",
+								"predicate": {
+									"type": "regex",
+									"pattern": "^\\d{11}$"
+								},
+								"message": "Неверный формат СНИЛС"
+							},
+							"view": {
+								"title": "СНИЛС",
+								"prompt": "Введите СНИЛС",
+								"widget": {
+									"type": "text",
+									"mask": "ddddddddddd",
+									"keyboard": "numeric",
+									"stripStaticSymbols": false
+								}
+							},
+							"sensitiveData": true,
+							"hideFromConfirmationScreen": false
+						}
+					]
+				}
+			},
+			{
+				"type": "field",
+				"name": "from_name_f",
+				"validator": {
+					"type": "predicate",
+					"predicate": {
+						"type": "regex",
+						"pattern": "^.+$"
+					},
+					"message": "Поле не может быть пустым"
+				},
+				"view": {
+					"title": "Фамилия",
+					"prompt": "Введите фамилию",
+					"widget": {
+						"type": "text",
+						"stripStaticSymbols": false
+					}
+				},
+				"sensitiveData": false,
+				"hideFromConfirmationScreen": false
+			},
+			{
+				"type": "field",
+				"name": "from_name",
+				"validator": {
+					"type": "predicate",
+					"predicate": {
+						"type": "regex",
+						"pattern": "^.+$"
+					},
+					"message": "Поле не может быть пустым"
+				},
+				"view": {
+					"title": "Имя",
+					"prompt": "Введите имя",
+					"widget": {
+						"type": "text",
+						"stripStaticSymbols": false
+					}
+				},
+				"sensitiveData": false,
+				"hideFromConfirmationScreen": false
+			},
+			{
+				"type": "field",
+				"name": "from_name_p",
+				"validator": {
+					"type": "predicate",
+					"predicate": {
+						"type": "regex",
+						"pattern": "^.+$"
+					},
+					"message": "Поле не может быть пустым"
+				},
+				"view": {
+					"title": "Отчество",
+					"prompt": "Введите отчество",
+					"widget": {
+						"type": "text",
+						"stripStaticSymbols": false
+					}
+				},
+				"sensitiveData": false,
+				"hideFromConfirmationScreen": false
+			}
+		]
+	},
+	"0a4539a6-3ab3-423a-8c1e-3621dbfe0229": {
+		"terms": {
+			"type": "DefaultQWTerms",
+			"id": "26540",
+			"commission": {
+				"ranges": [
+					{
+						"bound": 0.00,
+						"rate": 0.02,
+						"min": 30.00
+					}
+				]
+			},
+			"limits": [
+				{
+					"currency": "643",
+					"min": 0.00,
+					"max": 15000.00
+				}
+			],
+			"description": " ",
+			"overpayment": false,
+			"underpayment": true,
+			"identification": {
+				"required": false
+			},
+			"fixedSum": {
+				"currency": "643",
+				"amount": 400.00
+			},
+			"sumConstraint": {
+				"type": "FixedSumConstraint",
+				"sum": {
+					"currency": "643",
+					"amount": 400.00
+				}
+			}
+		},
+		"elements": [
+			{
+				"type": "dependency",
+				"condition": {
+					"type": "validity",
+					"field": "account"
+				},
+				"content": {
+					"elements": [
+						{
+							"type": "field",
+							"name": "to_name_f",
+							"value": "УФК по Санкт-Петербургу (Главное Управление Министрества юстиции РФ по Санкт-Петербургу)"
+						},
+						{
+							"type": "field",
+							"name": "inn",
+							"value": "7838459758"
+						},
+						{
+							"type": "field",
+							"name": "kpp",
+							"value": "783801001"
+						},
+						{
+							"type": "field",
+							"name": "okato",
+							"value": "40303000"
+						},
+						{
+							"type": "field",
+							"name": "kbk",
+							"value": "31810805000010001110"
+						},
+						{
+							"type": "field",
+							"name": "rec_bik",
+							"value": "044030001"
+						},
+						{
+							"type": "field",
+							"name": "cre",
+							"value": "40101810200000010001"
+						},
+						{
+							"type": "field",
+							"name": "to_bank",
+							"value": "ГРКЦ ГУ Банка России по Санкт-Петербургу"
+						},
+						{
+							"type": "field",
+							"name": "comment",
+							"value": "Плата за предоставление сведений из ЕГРЮЛ"
+						},
+						{
+							"type": "field",
+							"name": "pay_type",
+							"value": "Плата за предоставление сведений из ЕГРЮЛ"
+						}
+					]
+				}
+			},
+			{
+				"type": "field",
+				"name": "rem_dcm_type",
+				"validator": {
+					"type": "predicate",
+					"predicate": {
+						"type": "regex",
+						"pattern": "^01$|^14$"
+					},
+					"message": "Не выбран тип реквизитов"
+				},
+				"view": {
+					"title": "Тип реквизитов",
+					"prompt": "Выберите реквизиты",
+					"widget": {
+						"type": "radio",
+						"choices": [
+							{
+								"value": "01",
+								"title": "Серия и номер паспорта"
+							},
+							{
+								"value": "14",
+								"title": "СНИЛС"
+							}
+						]
+					}
+				}
+			},
+			{
+				"type": "dependency",
+				"condition": {
+					"type": "predicate",
+					"field": "rem_dcm_type",
+					"predicate": {
+						"type": "regex",
+						"pattern": "^01$"
+					}
+				},
+				"content": {
+					"elements": [
+						{
+							"type": "field",
+							"name": "rem_dcm_serial_no",
+							"validator": {
+								"type": "predicate",
+								"predicate": {
+									"type": "regex",
+									"pattern": "^\\d{4}$"
+								},
+								"message": "Неверный формат серии паспорта"
+							},
+							"view": {
+								"title": "Серия паспорта",
+								"prompt": "Введите серию паспорта",
+								"widget": {
+									"type": "text",
+									"mask": "dddd",
+									"keyboard": "numeric",
+									"stripStaticSymbols": false
+								}
+							},
+							"sensitiveData": true
+						},
+						{
+							"type": "field",
+							"name": "rem_dcm_no",
+							"validator": {
+								"type": "predicate",
+								"predicate": {
+									"type": "regex",
+									"pattern": "^\\d{6}$"
+								},
+								"message": "Неверный формат номера паспорта"
+							},
+							"view": {
+								"title": "Номер паспорта",
+								"prompt": "Введите номер паспорта",
+								"widget": {
+									"type": "text",
+									"mask": "dddddd",
+									"keyboard": "numeric",
+									"stripStaticSymbols": false
+								}
+							},
+							"sensitiveData": true
+						}
+					]
+				}
+			},
+			{
+				"type": "dependency",
+				"condition": {
+					"type": "predicate",
+					"field": "rem_dcm_type",
+					"predicate": {
+						"type": "regex",
+						"pattern": "^14$"
+					}
+				},
+				"content": {
+					"elements": [
+						{
+							"type": "field",
+							"name": "rem_dcm_no",
+							"validator": {
+								"type": "predicate",
+								"predicate": {
+									"type": "regex",
+									"pattern": "^\\d{3}-\\d{3}-\\d{3} \\d{2}$"
+								},
+								"message": "Неверный формат СНИЛС"
+							},
+							"view": {
+								"title": "СНИЛС",
+								"prompt": "Введите СНИЛС",
+								"widget": {
+									"type": "text",
+									"mask": "ddd-ddd-ddd dd",
+									"keyboard": "numeric",
+									"stripStaticSymbols": false
+								}
+							},
+							"sensitiveData": true
+						}
+					]
+				}
+			},
+			{
+				"type": "field",
+				"name": "from_name_f",
+				"validator": {
+					"type": "predicate",
+					"predicate": {
+						"type": "regex",
+						"pattern": "^.+$"
+					},
+					"message": "Поле не может быть пустым"
+				},
+				"view": {
+					"title": "Фамилия",
+					"prompt": "Введите фамилию",
+					"widget": {
+						"type": "text",
+						"stripStaticSymbols": false
+					}
+				},
+				"sensitiveData": false
+			},
+			{
+				"type": "field",
+				"name": "from_name",
+				"validator": {
+					"type": "predicate",
+					"predicate": {
+						"type": "regex",
+						"pattern": "^.+$"
+					},
+					"message": "Поле не может быть пустым"
+				},
+				"view": {
+					"title": "Имя",
+					"prompt": "Введите имя",
+					"widget": {
+						"type": "text",
+						"stripStaticSymbols": false
+					}
+				},
+				"sensitiveData": false
+			},
+			{
+				"type": "field",
+				"name": "from_name_p",
+				"validator": {
+					"type": "predicate",
+					"predicate": {
+						"type": "regex",
+						"pattern": "^.+$"
+					},
+					"message": "Поле не может быть пустым"
+				},
+				"view": {
+					"title": "Отчество",
+					"prompt": "Введите отчество",
+					"widget": {
+						"type": "text",
+						"stripStaticSymbols": false
+					}
+				},
+				"sensitiveData": false
+			}
+		]
+	},
+	"ea684982-83c3-4cd7-9631-a8c14391ede6": {
+		"elements": [
+			{
+				"name": "account",
+				"type": "field",
+				"validator": {
+					"message": "Выберите постановление для оплаты",
+					"predicate": {
+						"pattern": "^188108M77ФЭ0081945Z2$",
+						"type": "regex"
+					},
+					"type": "predicate"
+				},
+				"view": {
+					"prompt": "Выберите постановление",
+					"title": "Ваши постановления",
+					"widget": {
+						"choices": [
+							{
+								"title": "3000 руб. за постановление 188108M77ФЭ0081945Z2",
+								"value": "188108M77ФЭ0081945Z2"
+							}
+						],
+						"expansion": {
+							"threshold": 4,
+							"title": "Показать все постановления"
+						},
+						"type": "radio"
+					}
+				}
+			},
+			{
+				"condition": {
+					"field": "account",
+					"type": "validity"
+				},
+				"content": {
+					"elements": [
+						{
+							"condition": {
+								"field": "account",
+								"predicate": {
+									"pattern": "188108M77ФЭ0081945Z2",
+									"type": "regex"
+								},
+								"type": "predicate"
+							},
+							"content": {
+								"elements": [
+									{
+										"name": "post",
+										"type": "field",
+										"value": "188108M77ФЭ0081945Z2"
+									},
+									{
+										"name": "rec_kpp",
+										"type": "field",
+										"value": "770701001"
+									},
+									{
+										"name": "fns_taxdocnumber",
+										"type": "field",
+										"value": "0"
+									},
+									{
+										"name": "rec_mfo",
+										"type": "field",
+										"value": "044583001"
+									},
+									{
+										"name": "fns_paymenttype",
+										"type": "field",
+										"value": "ПЛ"
+									},
+									{
+										"name": "altid",
+										"type": "field",
+										"value": "2400000000007717196980643"
+									},
+									{
+										"name": "fns_status",
+										"type": "field",
+										"value": "08"
+									},
+									{
+										"name": "rec_tax",
+										"type": "field",
+										"value": "7707821043"
+									},
+									{
+										"name": "rec_name",
+										"type": "field",
+										"value": "УФК по г.Москве (МАДИ)"
+									},
+									{
+										"name": "supid",
+										"type": "field",
+										"value": "188108M77ФЭ0081945Z2"
+									},
+									{
+										"name": "fns_purpose",
+										"type": "field",
+										"value": "0"
+									},
+									{
+										"name": "rec_cre",
+										"type": "field",
+										"value": "40101810800000010041"
+									},
+									{
+										"name": "fns_taxperiod",
+										"type": "field",
+										"value": "0"
+									},
+									{
+										"name": "rec_subdivision",
+										"type": "field",
+										"value": "Московская административная дорожная инспекция"
+									},
+									{
+										"name": "extra",
+										"type": "field",
+										"value": "\n            \n              RNIP\n              \n                OrdinanceId\n                77ФЭ0081945\n              \n              \n                OrdinanceDate\n                22.02.2014\n              \n              \n                SRV_CODE\n                AAAAA032680000000001\n              \n            \n          "
+									},
+									{
+										"name": "summ",
+										"type": "field",
+										"value": "300000"
+									},
+									{
+										"name": "kbk",
+										"type": "field",
+										"value": "78211630020018000140"
+									},
+									{
+										"name": "exaction_kind",
+										"type": "field",
+										"value": "Оплата штрафа за нарушение ПДД. Номер постановления: 77ФЭ0081945, дата постановления: 22.02.2014"
+									},
+									{
+										"name": "rec_okato",
+										"type": "field",
+										"value": "45382000000"
+									},
+									{
+										"name": "fns_taxdocdate",
+										"type": "field",
+										"value": "0"
+									}
+								],
+								"terms": {
+									"commission": {
+										"ranges": [
+											{
+												"bound": 0.0,
+												"min": 30.0,
+												"rate": 0.030
+											}
+										]
+									},
+									"description": " Если у вас есть постановление, <a href=\"/payment/form.action?provider=1973\">оплатите штраф по его номеру и дате</a>",
+									"fixedSum": {
+										"amount": 3000,
+										"currency": "643"
+									},
+									"identification": {
+										"required": false
+									},
+									"limits": [
+										{
+											"currency": "643",
+											"max": 15000.0,
+											"min": 0.0
+										}
+									],
+									"overpayment": false,
+									"qd": 441,
+									"qw": 26349,
+									"sumConstraint": {
+										"sum": {
+											"amount": 3000,
+											"currency": "643"
+										},
+										"type": "FixedSumConstraint"
+									},
+									"type": "OfflineQWTransitTerms",
+									"underpayment": false
+								}
+							},
+							"type": "dependency"
+						}
+					]
+				},
+				"type": "dependency"
+			},
+			{
+				"condition": {
+					"field": "account",
+					"type": "validity"
+				},
+				"content": {
+					"elements": [
+						{
+							"name": "from_name_f",
+							"sensitiveData": false,
+							"type": "field",
+							"validator": {
+								"message": "Поле не может быть пустым",
+								"predicate": {
+									"pattern": "^(?=.*\\S).{1,50}$",
+									"type": "regex"
+								},
+								"type": "predicate"
+							},
+							"view": {
+								"prompt": "Введите фамилию",
+								"title": "Фамилия",
+								"widget": {
+									"stripStaticSymbols": false,
+									"type": "text"
+								}
+							}
+						},
+						{
+							"name": "from_name",
+							"sensitiveData": false,
+							"type": "field",
+							"validator": {
+								"message": "Поле не может быть пустым",
+								"predicate": {
+									"pattern": "^(?=.*\\S).{1,50}$",
+									"type": "regex"
+								},
+								"type": "predicate"
+							},
+							"view": {
+								"prompt": "Введите имя",
+								"title": "Имя",
+								"widget": {
+									"stripStaticSymbols": false,
+									"type": "text"
+								}
+							}
+						},
+						{
+							"name": "from_name_p",
+							"sensitiveData": false,
+							"type": "field",
+							"validator": {
+								"message": "Поле не может быть пустым",
+								"predicate": {
+									"pattern": "^(?=.*\\S).{1,50}$",
+									"type": "regex"
+								},
+								"type": "predicate"
+							},
+							"view": {
+								"prompt": "Введите отчество",
+								"title": "Отчество",
+								"widget": {
+									"stripStaticSymbols": false,
+									"type": "text"
+								}
+							}
+						}
+					]
+				},
+				"type": "dependency"
+			}
+		]
+	},
+	"8637a528-272a-468a-9b5d-ec28cf5dbfbc": {
+		"terms": {
+			"commission": {
+				"ranges": [
+					{
+						"bound": 0.0,
+						"fixed": 20.0,
+						"rate": 0.020
+					}
+				]
+			},
+			"description": "Перевод наличными на карты Visa, выданные любыми банками стран: Россия, Азербайджан, Армения, Беларусь, Грузия, Казахстан, Киргизия, Молдова, Украина, Узбекистан, Таджикистан, Туркменистан.<br><br>Ограничения на перевод на одного отправителя или получателя: <br><b>Россия</b>: сумма переводов не более 600 000 рублей в месяц.<br><b>Другие страны</b>: не более 5 переводов в день, сумма перевода не более 150 000 рублей за текущие 7 дней.<br><br>Комиссия: Россия 2% + 20 руб.; другие страны 2% + 40 руб.<br>Услуга предоставляется согласно <a target=\"_blank\" href=\"https://w.qiwi.com/page/file.action?id=304\">оферте</a>.<br />",
+			"id": "1963",
+			"limits": [
+				{
+					"currency": "643",
+					"max": 15000.0,
+					"min": 0.0
+				}
+			],
+			"underpayment": "true",
+			"overpayment": "true"
+		}
+	},
+	"e3eb91f6-d69e-4309-93d3-ab3238b963a7": {},
+	"3d418c73-e2cb-474a-bf5f-3240a3001c90": {
+		"elements": [
+			{
+				"type": "field",
+				"name": "account",
+				"value": "0"
+			},
+			{
+				"type": "field",
+				"name": "order_id_authCustomer",
+				"value": "6679"
+			},
+			{
+				"type": "field",
+				"name": "oper_id_authCustomer",
+				"value": "2649"
+			},
+			{
+				"type": "field",
+				"name": "start_mk_value",
+				"validator": {
+					"type": "predicate",
+					"predicate": {
+						"type": "regex",
+						"pattern": ".+"
+					},
+					"message": ""
+				},
+				"view": {
+					"title": "Начало маршрута",
+					"prompt": "Укажите начало маршрута",
+					"info": "Для более точного поиска укажите населенный пункт, район и область. Например: \"Иваново Череповецкий район Вологодская область\"",
+					"widget": {
+						"type": "text",
+						"stripStaticSymbols": false
+					}
+				},
+				"sensitiveData": false,
+				"hideFromConfirmationScreen": false
+			},
+			{
+				"type": "ref",
+				"id": "cd31c238-4776-4302-88d3-e03dc1046ac4",
+				"title": "Показать варианты адреса",
+				"message": "Показать варианты адреса",
+				"params": [
+					{
+						"field": "start_mk_value",
+						"triggerReload": true
+					}
+				]
+			},
+			{
+				"type": "field",
+				"name": "end_mk_value",
+				"validator": {
+					"type": "predicate",
+					"predicate": {
+						"type": "regex",
+						"pattern": ".+"
+					},
+					"message": ""
+				},
+				"view": {
+					"title": "Конец маршрута",
+					"prompt": "Укажите конец маршрута",
+					"info": "Для более точного поиска укажите населенный пункт, район и область. Например: \"Иваново Череповецкий район Вологодская область\"",
+					"widget": {
+						"type": "text",
+						"stripStaticSymbols": false
+					}
+				},
+				"sensitiveData": false,
+				"hideFromConfirmationScreen": false
+			},
+			{
+				"type": "ref",
+				"id": "a65be237-64d2-4b38-85a6-68bfd4c3af58",
+				"title": "Показать варианты адреса",
+				"message": "Показать варианты адреса",
+				"params": [
+					{
+						"field": "end_mk_value",
+						"triggerReload": true
+					}
+				]
+			},
+			{
+				"type": "field",
+				"name": "user_date_mk",
+				"validator": {
+					"type": "predicate",
+					"predicate": {
+						"type": "regex",
+						"pattern": "^\\d{2}\\.\\d{2}\\.\\d{4}$"
+					},
+					"message": "Дата указана не верно"
+				},
+				"view": {
+					"title": "Дата и время начала маршрута",
+					"prompt": "Укажите дату и время начала маршрута",
+					"info": "Формат ввода ДД.ММ.ГГГГ",
+					"widget": {
+						"type": "text",
+						"mask": "dd.dd.dddd",
+						"keyboard": "numeric",
+						"stripStaticSymbols": false
+					}
+				},
+				"sensitiveData": false,
+				"hideFromConfirmationScreen": false
+			},
+			{
+				"type": "field",
+				"name": "user_time_mk",
+				"validator": {
+					"type": "predicate",
+					"predicate": {
+						"type": "regex",
+						"pattern": "^\\d{2}:\\d{2}$"
+					},
+					"message": "Время указано не верно"
+				},
+				"view": {
+					"title": "Время начала маршрута",
+					"prompt": "Укажите время начала маршрута",
+					"widget": {
+						"type": "text",
+						"mask": "dd:dd",
+						"keyboard": "numeric",
+						"stripStaticSymbols": false
+					}
+				},
+				"sensitiveData": false,
+				"hideFromConfirmationScreen": false
+			},
+			{
+				"type": "ref",
+				"id": "389426b8-b01c-42b0-9890-a5db757638c9",
+				"title": "Cформировать МК",
+				"message": "Cформировать МК",
+				"params": [
+					{
+						"field": "account",
+						"triggerReload": true
+					},
+					{
+						"field": "start_mk",
+						"triggerReload": true
+					},
+					{
+						"field": "end_mk",
+						"triggerReload": true
+					},
+					{
+						"field": "order_id_authCustomer",
+						"triggerReload": true
+					},
+					{
+						"field": "oper_id_authCustomer",
+						"triggerReload": true
+					},
+					{
+						"field": "user_date_mk",
+						"triggerReload": true
+					},
+					{
+						"field": "user_time_mk",
+						"triggerReload": true
+					}
+				]
+			}
+		]
+	}
+}

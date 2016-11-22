@@ -1,0 +1,118 @@
+﻿#categoryPlace {
+    top:0px;
+    left:0px;
+    width:1280px;
+    height:860px;
+    background:linear-gradient(to bottom, #0e4394 0%, #0080c6 100%);
+}
+#categoryHead {
+    width:100%;
+    height:200px;
+}
+#categoryTextOld {
+    top:80px;
+    left:0px;
+    width:1280px;
+    height:70px;
+    font-family:Whitney;
+    font-size:60px;
+    color:#ffffff;
+    animation:textOld 500ms;
+    animation-fill-mode:forwards;
+}
+@keyframes textOld {
+    0% {
+        top:80px;
+        font-size:60px;
+    }
+    100% {
+        top:30px;
+        font-size:30px;
+    }
+}
+#categoryTextOld2 {
+    top:80px;
+    left:0px;
+    width:1280px;
+    height:70px;
+    font-family:Whitney;
+    font-size:60px;
+    color:#ffffff;
+    animation:textOld2 500ms;
+    animation-fill-mode:forwards;
+}
+@keyframes textOld2 {
+    0% {
+        top:30px;
+        font-size:30px;
+    }
+    100% {
+        top:80px;
+        font-size:60px;
+    }
+}
+#categoryTextOld3 {
+    top:30px;
+    left:0px;
+    width:1280px;
+    height:70px;
+    font-family:Whitney;
+    font-size:30px;
+    color:#ffffff;
+    animation:textOld3 700ms;
+    animation-fill-mode:forwards;
+}
+@keyframes textOld3 {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+#categoryTextNew {
+    top:120px;
+    left:0px;
+    width:1280px;
+    height:70px;
+    font-family:Whitney;
+    font-size:60px;
+    color:#ffffff;
+    animation:textNew 600ms;
+    animation-fill-mode:forwards;
+}
+@keyframes textNew {
+    0% {
+        opacity:0;
+        top:120px;
+    }
+    100% {
+        opacity:1;
+        top:70px;
+    }
+}
+#categoryTextNew2 {
+    top:120px;
+    left:0px;
+    width:1280px;
+    height:70px;
+    font-family:Whitney;
+    font-size:60px;
+    color:#ffffff;
+    animation:textNew2 500ms;
+    animation-fill-mode:forwards;
+}
+@keyframes textNew2 {
+    0% {
+        opacity:1;
+        top:70px;
+    }
+    100% {
+        opacity:0;
+        top:120px;
+    }
+}
+#categoryList {
+    top:170px;
+    left:0px;
+}

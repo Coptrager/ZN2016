@@ -1,0 +1,34 @@
+html,
+body{
+    width:100%;
+    height:100%;
+}
+body{
+    margin:0px;
+    padding:0px;
+    overflow:hidden;
+    background:none;
+}
+
+/*banner*/
+#bannerBtn{
+    width:410px;
+    height:147px;
+    padding:13px 0 0 180px;
+    border:5px solid #2458aa;
+    border-radius:30px 30px 50% 50%;
+    font:WhitneySemibold, Arial;
+    font-size:45px;
+    text-transform:uppercase;
+    text-align:left;
+    color:white;
+    background:url('../image/credit.png'), linear-gradient(to right, #0e4394 0%, #0080c6 100%);
+    background-repeat:no-repeat;
+    background-position:8% 15%;
+    transition:margin 150ms;
+    transition:background 150ms;
+}
+        #bannerBtn:active {
+            margin-top:3px;
+            background:url('../image/credit.png') no-repeat 8% 15%, linear-gradient(to right, #2458AA 0%, #2458AA 100%);
+        }

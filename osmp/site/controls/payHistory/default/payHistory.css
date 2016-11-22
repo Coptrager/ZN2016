@@ -1,0 +1,189 @@
+﻿.payHistory_body {
+    width: 1280px;
+    height: 640px;
+    position: relative;
+}
+.payHistory_body>div {
+    position: absolute;
+}
+
+/* LEFT ARROW*/
+.payHistory_to-left {
+    top: 234px;
+    left: 50px;
+    width: 120px;
+    height: 200px;
+}
+
+.payHistory_to-left>div {
+    position: absolute;
+    top:0px;
+    right:0px;
+    width:67px;
+    height:172px;
+    border:4px solid #2458AA;
+    border-left:0;
+    border-radius:24px 10px 10px 24px;
+    overflow:visible;
+    background-image:url('#localPath/resourses/left.png');
+    background-repeat:no-repeat;
+    background-position:left center;
+    transition:top 100ms;
+}
+    .payHistory_to-left:active>div {
+        top:4px;
+        background-image:url('#localPath/resourses/left_click.png');
+        background-color:#2458AA;
+    }
+    .payHistory_to-left>div:before {
+        position:absolute;
+        top:19px;
+        left:-52px;
+        width:129px;
+        height:129px;
+        content:"";
+        border-top:5px solid #2458AA;
+        border-left:5px solid #2458AA;
+        border-radius:10px 16px 0 16px;
+        transform:rotateY(45deg) rotateZ(-45deg);
+        z-index:-1;
+    }
+    .payHistory_to-left:active>div:before {
+        background-color:#2458AA;
+    }
+/* RIGHT ARROW*/
+.payHistory_to-right {
+    top: 234px;
+    right: 50px;
+    width: 120px;
+    height: 200px;
+}
+.payHistory_to-right>div {
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:67px;
+    height:172px;
+    border:4px solid #2458AA;
+    border-right:0;
+    border-radius:10px 24px 24px 10px;
+    overflow:visible;
+    background-image:url('#localPath/resourses/right.png');
+    background-repeat:no-repeat;
+    background-position:right center;
+    transition:top 100ms;
+}
+    .payHistory_to-right:active>div {
+        top:4px;
+        background-image:url('#localPath/resourses/right_click.png');
+        background-color:#2458AA;
+    }
+    .payHistory_to-right>div:before {
+        position:absolute;
+        top:19px;
+        right:-52px;
+        width:129px;
+        height:129px;
+        content:"";
+        border-right:5px solid #2458AA;
+        border-bottom:5px solid #2458AA;
+        border-radius:0 16px 10px 16px;
+        transform:rotateY(45deg) rotateZ(-45deg);
+        z-index:-1;
+    }
+        .payHistory_to-right:active>div:before {
+            background-color:#2458AA;
+        }
+
+/*PAGES*/
+.payHistory_page-box {
+    height: 100%;
+    width: 880px;
+    top: 0px;
+    left: 200px;
+}
+
+.payHistory_page-film {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    overflow: visible;
+    left: 0%;
+    position: absolute;
+    transition: left 600ms;
+}
+.payHistory_page-film>div {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+}
+
+.payHistory_pay-item {
+    width: 100%;
+    height: 160px;
+    position: relative;
+}
+.payHistory_item-left {
+    left: 0px;
+    top: 0px;
+    width: 140px;
+    height: 160px;
+    font-size: 24px;
+}
+.payHistory_item-body {
+    left: 140px;
+    top: 0px;
+    width: 740px; /*880-140*/
+    height: 160px;
+    position: absolute;
+}
+div:not(:first-child)>.payHistory_item-body {
+    border-top: 2px solid #2458AA;
+}
+
+.payHistory_state {
+    margin: auto;
+    width: 80px;
+    height: 80px;
+}
+.payHistory_item-left>.success {
+    background: url('#localPath/resourses/success.png') 50% 50% no-repeat;
+}
+.payHistory_item-left>.fail {
+    background: url('#localPath/resourses/fail.png') 50% 50% no-repeat;
+}
+.payHistory_item-left>.wait {
+    background: url('#localPath/resourses/wait.png') 50% 50% no-repeat;
+}
+
+.payHistory_item-account {
+    padding: 10px 10px 10px 10px;
+    position: absolute;
+    text-align: left;
+    font-size: 36px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 540px;  /* 740 - 200*/
+}
+
+.payHistory_item-money {
+    padding: 10px 0 10px 0;
+    position: absolute;
+    text-align: right;
+    font-size: 32px;
+    top: 0;
+    right: 0;
+}
+
+.payHistory_item-print {
+    position: absolute;
+    font-size: 24px;
+    right: 0;
+    bottom: 24px;
+    color:#111111;
+    background: #a2cfef;
+    border-radius:8px;
+    padding: 16px;
+}

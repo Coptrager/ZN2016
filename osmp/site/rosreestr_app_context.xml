@@ -1,0 +1,93 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<objects
+	xmlns:util="http://www.springactionscript.org/schema/util"
+	>
+	<property file="rosreestr_app_config.properties" prevent-cache="false"/>
+		
+	<object 
+		id="mainInstance"
+		class="Main"
+		factory-method="getInstance"
+	/>
+	
+	<object
+		id="appConfig"
+		class="ru.mobw.coreas3.app.config.Config">
+		<property name="debugMode" value="${config.debugMode}"/>
+		<property name="testMode" value="${config.testMode}"/>
+		<property name="exitURL" value="${config.exitURL}"/>
+		<property name="phonesListURL" value="${config.phonesListURL}"/>
+		<property name="phonesListFallbackURL" value="${config.phonesListFallbackURL}"/>
+		<property name="ofertaPath" value="${config.ofertaPath}"/>
+		<property name="noPrinterAlertString" value="${err.noPrinter}"/>		
+		<property name="version" value="${config.version}"/>
+		<property name="qwName" value="${config.QWName}"/>
+		<property name="EX_NUM_REQUEST_TYPE" value="${config.EX_NUM_REQUEST_TYPE}"/>
+		<property name="returnPage" value="${config.returnPage}"/>
+		<property name="statId" value="${config.statId}"/>
+		<property name="statProjectId" value="${config.statProjectId}"/>
+		
+		<property name="lkDisabledAlertString" value="${err.lkDisabled}"/>
+		<property name="prvDisabledAlertString" value="${err.prvDenied}"/>
+		<property name="serverErrorString" value="${err.serviceCallError}"/>
+		<property name="serverTimeoutString" value="${err.timeout}"/>
+		<property name="fatalErrorString" value="${err.fatalError}"/>
+		
+		<property name="insufficientCashAlertString" value="${msg.insufficientCash}"/>
+		<property name="maxCashExceeded" value="${err.overSum}"/>
+		<property name="insufficientBalance" value="${msg.insufficientBalance}"/>
+		<property name="paymentTitle" value="${payment.title}"/>
+		<property name="topAdv" value="${check.topAdv}"/>
+		<property name="bottomAdv" value="${check.bottomAdv}"/>
+		<property name="walletPrvId" value="${config.walletPrvId}"/>
+		<property name="qwId" value="${config.QWId}"/>
+		<property name="walletFillPrvId" value="${config.walletFillPrvId}"/>
+		<property name="prvId" value="${config.PrvId}"/>
+		<property name="srcId" value="${config.SrcId}"/>
+		<property name="minCashLimit" value="${config.minCashLimit}"/>
+		<property name="minPayment" value="${config.minPayment}"/>
+		
+		<property name="maxCash" value="${num.maxCash}"/>
+		
+		<property name="bankConstants">
+			<value>
+				<object class="Object">
+					<property name="BANK_TITLE" value="${bankConstants.BANK_TITLE}"/>
+					<property name="BANK_INN" value="${bankConstants.BANK_INN}"/>
+					<property name="BANK_ADR" value="${bankConstants.BANK_ADR}"/>
+					<property name="BANK_BIK" value="${bankConstants.BANK_BIK}"/>
+					<property name="BANK_KS" value="${bankConstants.BANK_KS}"/>
+					<property name="BANK_LIC" value="${bankConstants.BANK_LIC}"/>
+					<property name="BANK_OP_NUM" value="${bankConstants.BANK_OP_NUM}"/>
+					<property name="BANK_PKP" value="${bankConstants.BANK_PKP}"/>
+					<property name="BANK_SERVICE_NAME" value="${bankConstants.BANK_SERVICE_NAME}"/>
+				</object>
+			</value>
+		</property>
+		<property name="VQW_URL">
+			<array>
+				<value>https://w.qiwi.com/xml/xmlcp.jsp</value>
+				<value>https://service1.osmp.ru/wallet/xmlcp.jsp</value>
+				<value>https://service2.osmp.ru/wallet/xmlcp.jsp</value>
+			</array>
+		</property>
+	</object>	
+	<object 
+		id="application" 
+		class="ru.mobw.coreas3.app.QiwiApplication"
+		init-method="onAppCreated">
+		<property name="view" ref="mainInstance" />
+		<property name="config" ref="appConfig" />
+		<property name="flow" ref="flow"/>
+		<property name="disabler" ref="loading" />
+		<property name="waitingScreen" ref="loading" />
+		<property name="alertWindow">
+			<value>
+				<object class="ModalAlert" />
+			</value>
+		</property>
+	</object>
+	
+	<object class="LoadingWindow" id="loading" />
+</objects>

@@ -1,0 +1,79 @@
+﻿#headText {
+    width:100%;
+    height:auto;
+    font-family:Whitney;
+    font-size:60px;
+    color:#111111;
+}
+#yellowLine {
+    width:1280px;
+    height:auto;
+    margin-top:35px;
+    padding-bottom:30px;
+    background:#edbb36;
+    font-family:Whitney;
+    font-size:80px;
+    color:#111111;
+}
+    #yellowLine p{
+        width:100%;
+        margin:50px 0 20px 0;
+        text-align:center;
+    }
+.validateTableLine{
+    margin-top:20px;
+}
+.validateTableBlock{
+   -moz-box-sizing:content-box;
+    box-sizing:content-box;
+    padding:0px 20px;
+    width:600px;
+    height:auto;
+    min-height:50px;
+    max-height:100px;
+    font-size:40px;
+}
+#info {
+    width:840px;
+    height:auto;
+    margin-left:227px;
+}
+.icon {
+    width:100px;
+}
+.info-text {
+    width:740px;
+    height:auto;
+    padding-top:40px;
+    font-family:Whitney;
+    font-size:24px;
+    color:#111111;
+}
+    .info-text span {
+        color:#3958a9;
+        border-bottom:1px dotted #3958a9;
+        transition:all 150ms;
+    }
+    .info-text span:active {
+        opacity:0.5;
+    }
+#advertButton {
+    width:60px;
+    height:60px;
+    margin-top:40px;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+#noPrintIcon {
+    width:60px;
+    height:53px;
+    margin-top:44px;
+    background:url('./resourses/alarm.png') no-repeat center;
+}
+#w_validate_card_pay {
+    right: 20px;
+    width: 300px;
+    height: 50px;
+    top: 40px;
+    z-index: 100;
+}

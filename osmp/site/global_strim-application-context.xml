@@ -1,0 +1,94 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<objects
+	xmlns:util="http://www.springactionscript.org/schema/util"
+	>
+	<property file="global_strim-config.properties" prevent-cache="false"/>
+	<util:invoke 
+		target-class="ru.qiwi.general.app.initialize.FlashMovie" 
+		target-method="getView" 
+		id="mainInstance"
+		/>
+
+	
+	<object
+		id="appConfig"
+		class="ru.mobw.coreas3.app.config.Config">
+		<property name="debugMode" value="${config.debugMode}"/>
+		<property name="testMode" value="${config.testMode}"/>
+		<property name="exitURL" value="${config.exitURL}"/>
+		<property name="phonesListURL" value="${config.phonesListURL}"/>
+		<property name="phonesListFallbackURL" value="${config.phonesListFallbackURL}"/>
+		<property name="ofertaPath" value="${config.ofertaPath}"/>
+		<property name="ofertaName" value="${config.ofertaName}"/>
+		<property name="walletPrvId" value="${config.walletPrvId}"/>
+		<property name="prvName" value="${config.PrvName}"/>
+		<property name="noPrinterAlertString" value="${err.noPrinter}"/>		
+		<property name="version" value="${config.version}"/>
+		<property name="appName" value="${config.appName}"/>
+		<property name="returnPage" value="${config.returnPage}"/>
+		<property name="statId" value="${config.statId}"/>
+		<property name="statProjectId" value="${config.statProjectId}"/>
+		<property name="commissProfile" value="${profile}"/>
+		<property name="prvId" value="${config.PrvId}"/>
+		<property name="paymentTitle" value="${config.PaymentTitle}"/>
+		<property name="minSumm" value="${config.minSumm}"/>
+		<property name="appPrefix" value="${config.appPrefix}"/>
+		<property name="confirmMessName" value="${confirmMess.name}"/>
+		<property name="confirmMessPay" value="${confirmMess.pay}"/>
+		<property name="confirmMessDetails" value="${confirmMess.details}"/>
+		<property name="receiptReciever" value="${receipt.reciever}"/>
+		<property name="receiptPay" value="${receipt.pay}"/>
+		
+		<property name="lkDisabledAlertString" value="${err.lkDisabled}"/>
+		<property name="prvDisabledAlertString" value="${err.prvDenied}"/>
+		<property name="serverErrorString" value="${err.serviceCallError}"/>
+		<property name="serverTimeoutString" value="${err.timeout}"/>
+		<property name="fatalErrorString" value="${err.fatalError}"/>
+		
+		<property name="insufficientCashAlertString" value="${msg.insufficientCash}"/>
+		<property name="maxCashExceeded" value="${err.overSum}"/>
+		<property name="insufficientBalance" value="${msg.insufficientBalance}"/>
+		
+		<property name="titleCommissAndMaxSummMessage" value="${caption.titleCommissAndMaxSummMessage}"/>
+
+
+		<property name="topAdv" value="${check.topAdv}"/>
+		<property name="bottomAdv" value="${check.bottomAdv}"/>
+		<property name="walletFillPrvId" value="${config.walletFillPrvId}"/>
+		<property name="minCashLimit" value="${config.minCashLimit}"/>
+		<property name="maxCash" value="${num.maxCash}"/>
+		<property name="connections">
+			<array>
+				<!--<value>http://10.12.0.189:8080/term2/xmlutf.jsp;http://www.mobw.ru/crossdomain.xml</value>-->
+				<value>https://w.qiwi.ru/term2/xmlcp.jsp;http://www.mobw.ru/crossdomain.xml</value>
+				<value>https://service1.osmp.ru/mylk/xmlcp.jsp;http://www.osmp.ru/crossdomain.xml</value>
+				<value>https://service1.osmp.ru/mylk/xmlcp.jsp;http://www.osmp.ru/crossdomain.xml</value>
+			</array>
+		</property>
+		<property name="bankConstants">
+			<value>
+				<object class="Object">
+					<property name="BANK_TITLE" value="${bankConstants.BANK_TITLE}"/>
+					<property name="BANK_INN" value="${bankConstants.BANK_INN}"/>
+					<property name="BANK_BIK" value="${bankConstants.BANK_BIK}"/>
+					<property name="BANK_KS" value="${bankConstants.BANK_KS}"/>
+					<property name="BANK_LIC" value="${bankConstants.BANK_LIC}"/>
+					<property name="BANK_OP_NUM" value="${bankConstants.BANK_OP_NUM}"/>
+					<property name="BANK_PKP" value="${bankConstants.BANK_PKP}"/>
+					<property name="BANK_SERVICE_NAME" value="${bankConstants.BANK_SERVICE_NAME}"/>
+				</object>
+			</value>
+		</property>
+	</object>	
+	<object 
+		id="application" 
+		class="ru.mobw.coreas3.app.QiwiApplication"
+		init-method="onAppCreated">
+		<property name="view" ref="mainInstance" />
+		<property name="config" ref="appConfig" />
+		<property name="flow" ref="flow"/>
+	</object>
+	
+	
+</objects>

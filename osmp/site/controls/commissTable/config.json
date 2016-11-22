@@ -1,0 +1,6 @@
+{
+  "name":"commissTable",
+  "css":true,
+  "parent":"visualControl",
+  "version":"0.1.0"
+}

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	
+	<object id="flow" class="com.qiwi.flow.CommonFlow">
+		<property name="routeData" ref="route" />
+		<property name="elementsMap">
+			<dictionary>
+				<entry><key>init</key><value ref="init" /></entry>
+				<entry><key>balance</key><value ref="balance" /></entry>
+				<entry><key>birthDate</key><value ref="birthDate" /></entry>
+				<entry><key>card</key><value ref="card" /></entry>
+				<entry><key>cash</key><value ref="cash" /></entry>
+				<entry><key>change</key><value ref="change" /></entry>
+				<entry><key>city</key><value ref="city" /></entry>
+				<entry><key>conditions</key><value ref="conditions" /></entry>
+				<entry><key>contract</key><value ref="contract" /></entry>
+				<entry><key>confirmation</key><value ref="confirmation" /></entry>
+				<entry><key>country</key><value ref="country" /></entry>
+				<entry><key>currency</key><value ref="currency" /></entry>
+				<entry><key>final</key><value ref="final" /></entry>
+				<entry><key>method</key><value ref="method" /></entry>
+				<entry><key>fulloffertus</key><value ref="fulloffertus" /></entry>
+				<entry><key>bankoffertus</key><value ref="bankoffertus" /></entry>
+				<entry><key>pin</key><value ref="pin" /></entry>
+				<entry><key>recipientName</key><value ref="recipientName" /></entry>
+				<entry><key>region</key><value ref="region" /></entry>
+				<entry><key>registration</key><value ref="registration" /></entry>
+				<entry><key>secret</key><value ref="secret" /></entry>
+				<entry><key>senderName</key><value ref="senderName" /></entry>
+				<entry><key>senderPhone</key><value ref="senderPhone" /></entry>
+				<entry><key>state</key><value ref="state" /></entry>
+				<entry><key>summ</key><value ref="summ" /></entry>
+				<entry><key>tarifs</key><value ref="tarifs" /></entry>
+				<entry><key>top10</key><value ref="top10" /></entry>
+				<entry><key>uic</key><value ref="uic" /></entry>
+				<entry><key>way</key><value ref="way" /></entry>
+				<entry><key>wuhistory</key><value ref="wuhistory" /></entry>
+				<entry><key>exit</key><value ref="exit" /></entry>
+			</dictionary>
+		</property>
+	</object>
+	
+	
+	<object id="init" class="elements.InitElement">
+		<constructor-arg>
+			<array>
+				<value>
+					<![CDATA[https://w.qiwi.com/xml/xmlcp.jsp]]>
+				</value>
+			</array>
+		</constructor-arg>
+		<property name="id" value="1" />
+		<property name="countdownConfirm" value="false" />
+		<property name="exitConfirm" value="false" />
+	</object>
+	<object id="balance" class="elements.BalanceElement">
+		<property name="id" value="16" />
+	</object>
+	<object id="bankoffertus" class="com.qiwi.elements.OffertusElement">
+		<constructor-arg value="QK_oferta_bank.xml"/>
+		<property name="id" value="25" />
+	</object>
+	<object id="birthDate" class="elements.DateElement">
+		<constructor-arg value="##/##/####"/>
+		<property name="id" value="26" />
+	</object>
+	<object id="card" class="com.qiwi.moneytransfer.elements.CardElement">
+		<property name="id" value="21" />
+	</object>
+	<object id="cash" class="elements.CashElement">
+		<constructor-arg><value>
+			<![CDATA[Сдача будет зачислена на %change% %phone%.
+Минимальная сумма денежного перевода составляет %min%, не включая плату за перевод.
+Максимальная сумма денежного перевода составляет %max%, включая плату за перевод.]]>
+		</value></constructor-arg>
+		<constructor-arg value="Внесите %summ% в терминал"/>
+		<property name="id" value="15" />
+		<property name="countdownConfirm" value="false" />
+		<property name="exitConfirm" value="false" />
+		<property name="timeout" value="300000" />
+	</object>
+	<object id="change" class="com.qiwi.moneytransfer.elements.ChangeElement">
+		<constructor-arg value="На сотовый %phone%"/>
+		<constructor-arg value="На счет Visa QIWI Wallet %phone%"/>
+		<property name="id" value="27" />
+	</object>
+	<object id="city" class="elements.CityElement">
+		<constructor-arg value="Выберите город получения перевода"/>
+		<property name="id" value="28" />
+	</object>
+	<object id="conditions" class="elements.ConditionsElement">
+		<property name="id" value="29" />
+	</object>
+	<object id="confirmation" class="elements.ConfirmationElement">
+		<constructor-arg value="1 рубль =\n%rate% %currency%"/>
+		<property name="id" value="10" />
+	</object>
+	<object id="contract" class="elements.ContractElement">
+		<constructor-arg value="xml/flash_westernunion_contract.xml"/>
+		<property name="id" value="11" />
+	</object>
+	<object id="country" class="elements.CountryElement">
+		<property name="id" value="2" />
+	</object>
+	<object id="currency" class="elements.CurrencyElement">
+		<property name="id" value="19" />
+	</object>
+	<object id="final" class="elements.FinalElement">
+		<constructor-arg><value>
+			<![CDATA[1. На номер %phone% отправлено SMS с контрольным номером перевода.
+2. Сохраните SMS и чек до получения перевода.
+3. Сообщите получателю контрольный номер перевода и секретный код, если он есть.
+
+{{card_entered || Для вас выпущена карта MyWU %card%.\nИспользуйте этот номер карты MyWU при последующих переводах.}}]]>
+		</value></constructor-arg>
+		<constructor-arg ref="bill" />
+		<constructor-arg value="Запрос обрабатывается. Дождитесь подтверждения перевода." />
+		<property name="id" value="18" />
+		<property name="countdownConfirm" value="false" />
+		<property name="exitConfirm" value="false" />
+		<property name="timeout" value="300000" />
+	</object>
+	<object id="fulloffertus" class="com.qiwi.elements.OffertusElement">
+		<constructor-arg value="QK_oferta_full.xml"/>
+		<property name="id" value="12" />
+	</object>
+	<object id="history" class="elements.HistoryElement">
+		<property name="id" value="9" />
+	</object>
+	<object id="method" class="elements.MethodElement">
+		<constructor-arg value="Выберите способ оплаты"/>
+		<constructor-arg value="%balance% в вашем кошельке."/>
+		<property name="id" value="14" />
+	</object>
+	<object id="pin" class="elements.AdvancedPinElement">
+		<constructor-arg value="Совпадает с PIN-кодом вашего Visa QIWI Wallet."/>
+		<constructor-arg value="Дождитесь SMS с PIN-кодом."/>
+		<property name="id" value="8" />
+	</object>
+	<object id="recipientName" class="elements.RecipientNameElement">
+		<constructor-arg value="Введите фамилию, имя и отчество получателя"/>
+		<constructor-arg value=""/>
+		<property name="id" value="4" />
+	</object>
+	<object id="region" class="elements.RegionElement">
+		<property name="id" value="30" />
+	</object>
+	<object id="registration" class="elements.RegistrationElement">
+		<property name="id" value="37" />
+	</object>
+	<object id="secret" class="elements.SecretElement">
+		<property name="id" value="31" />
+	</object>
+	<object id="senderName" class="elements.SenderNameElement">
+		<constructor-arg value="Введите вашу фамилию, имя и отчество"/>
+		<constructor-arg value="Убедитесь, что вы ввели ФИО правильно. В случае, если ФИО введены неправильно, претензии по возврату перевода не принимаются."/>
+		<property name="id" value="3" />
+	</object>
+	<object id="senderPhone" class="elements.SenderPhoneElement">
+		<constructor-arg><value>
+			<![CDATA[Пройдите полную идентификацию в QIWI, чтобы переводить деньги через Western Union.
+Подробнее на qiwi.com<br/>и по телефону 8-800-707-77-59.]]>
+		</value></constructor-arg>
+		<constructor-arg value="-485"/>
+		<property name="id" value="6" />
+	</object>
+	<object id="state" class="elements.StateElement">
+		<constructor-arg value="Выберите штат получения перевода"/>
+		<property name="id" value="32" />
+	</object>
+	<object id="summ" class="elements.SummElement">
+		<property name="id" value="7" />
+	</object>
+	<object id="tarifs" class="elements.TarifsElement">
+		<property name="id" value="33" />
+	</object>
+	<object id="top10" class="elements.Top10Element">
+		<constructor-arg value="Выберите страну получения перевода"/>
+		<property name="id" value="34" />
+	</object>
+	<object id="uic" class="elements.UICElement">
+		<constructor-arg value="Выберите страну получения перевода"/>
+		<property name="id" value="35" />
+	</object>
+	<object id="way" class="elements.WayElement">
+		<property name="id" value="36" />
+		<property name="countdownConfirm" value="false" />
+		<property name="exitConfirm" value="false" />
+	</object>
+	<object id="wuhistory" class="elements.WUHistoryElement">
+		<property name="id" value="22" />
+	</object>
+	<object id="exit" class="com.qiwi.elements.UrlExitElement" />
+
+</objects>

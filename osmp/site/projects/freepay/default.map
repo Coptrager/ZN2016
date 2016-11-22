@@ -1,0 +1,9 @@
+$begin > inputSum > fullName > documentType > documentNumber > purpose > walletLogin > changeType > %confirmation > %pay > $end
+
+%confirmation: {
+	offertus: oferta
+}
+
+%pay: {
+	final: final
+}

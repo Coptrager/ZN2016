@@ -1,0 +1,173 @@
+{
+	"ru": {
+		"currency": {
+			"rub": {
+				"code": "643",
+				"suffix": " руб.",
+				"short": "руб."
+			}
+		},
+		"pages": {
+			"oferta": {
+				"title": "Оферта",
+				"countOf": "${current}-я страница из ${total}"
+			}
+		},
+
+
+		"errors": {
+			"application": "Ошибка приложения",
+			"default": "Ошибка",
+			"overSum": "Максимальная сумма платежа на данном терминале ${sum}",
+			"providerDenied": "Провайдер запрещен",
+			"printerError": "Принтер неисправен",
+			"accountDenied": "Нельзя совершить платеж с данным номером счета"
+		},
+		"navigation": {
+			"next": "Далее",
+			"exit": "На главную",
+			"prev": "Назад"
+		},
+		"requests": {
+			"timeout": "Нет связи с сервером",
+			"unknown": "Неизвестная ошибка",
+			"transport": "Техническая ошибка"
+		},
+		"popups": {
+			"exit_message": "Вы уверены, что хотите выйти?",
+			"exit_ok": "Выйти",
+			"exit_cancel": "Остаться",
+			"load_title": "Загрузка данных",
+			"load_message": "Подождите, пожалуйста",
+			"yes": "Да",
+			"no": "Нет",
+			"cancel": "Отмена",
+			"attention": "Внимание",
+			"information": "Информация",
+			"error": "Ошибка",
+			"ten_seconds": "Выход через 10 секунд"
+		},
+		"wallet_popups": {
+			"generatePin": {
+				"title": "Получите PIN-код",
+				"text": "С помощью PIN-кода вы получаете доступ\nк сохраненным платежам и оплате с баланса. \nВыслать на ${phone}",
+				"ok": "ВЫСЛАТЬ",
+				"cancel": "ОТМЕНА"
+			}
+		},
+		"buttons": {
+			"erase": "Стереть"
+		},
+		"offerta_page": {
+			"title": "Оферта",
+			"count_of": "-я страница из ",
+			"prev": "ПРЕДЫДУЩАЯ",
+			"next": "СЛЕДУЮЩАЯ"
+		},
+		"email_page": {
+			"title": "Введите e-mail",
+			"subtitle": ""
+		},
+		"pay_page": {
+			"title": "Внесите деньги",
+			"error_begin_acceptor": "Ошибка инициализации платежа",
+			"limits": "Можно внести не меньше ${min} и не больше ${max}",
+			"cash": "Внесено",
+			"forward_button": "Оплатить",
+			"pay_summ": "К зачислению",
+			"commiss": "Комиссия",
+			"change_summ": "Сдача",
+			"change_commiss": "Комиссия на сдачу",
+			"commiss_button": "Все условия комиссии",
+			"qw_commiss_value": "Комиссия банка",
+			"cash_commiss_value": "Дополнительная комиссия при оплате наличными",
+			"commiss_popup_title": "Все условия комиссии",
+			"deficient_alert": "Внесенной суммы недостаточно для проведения платежа. Деньги зачислены на ваш Visa QIWI Wallet",
+			"deficient": "Внесите еще ",
+			"commiss_summ": "Сумма платежа",
+			"commiss_value": "Комиссия на платеж",
+			"change_commiss_summ": "Сумма сдачи",
+			"change_commiss_value": "Комиссия на сдачу",
+			"commiss_summ_title": "Сумма",
+			"commiss_value_title": "Размер комиссии",
+			"coinCommiss": "Комиссия на монеты ${commiss}%"
+		},
+		"payment_method_page": {
+			"title": "Выберите способ оплаты",
+			"cash": "Наличные деньги",
+			"balance": "Visa QIWI Wallet",
+			"insufficiently_balance": "Недостаточно средств на балансе. Оплата возможна только наличными"
+		},
+		"change_type_page": {
+			"title": "Куда зачислить сдачу?",
+			"subtitle": "Сдача наличными не выдается",
+			"mobile": "На ваш сотовый",
+			"wallet": "На ваш кошелек",
+			"wallet_subtitle": "Visa QIWI Wallet"
+		},
+		"finalPage": {
+			"payment_success": "Платеж принят",
+			"thx": "Спасибо за пользование сервисом",
+			"header": "Платеж не завершен",
+			"deficient_alert": "Деньги остались на счете вашего Visa QIWI Wallet",
+			"zero_alert": "Вы не внесли деньги"
+		},
+		"walletLoginPage": {
+			"title": "Введите ваш номер телефона",
+			"subtitle": "Необходимо указать действующий номер для проведения платежа"
+		},
+		"loginPage": {
+			"title": "Введите ваш номер телефона",
+			"subtitle": "Необходимо указать действующий номер для проведения платежа",
+			"load_title": "Загрузка данных",
+			"load_message": "Запрос статуса идентификации",
+			"identification_message": "Ваш статус идентификации позволяет совершить платеж"
+		},
+		"pinPage": {
+			"title": "Введите PIN-код",
+			"subtitle": "PIN-код от Visa QIWI Wallet отправлен вам ранее в SMS",
+			"load_message": "Пожалуйста, подождите, пока проверяется PIN-код",
+			"generatePin": {
+				"button": "Восстановить PIN-код",
+				"message": "Отправить SMS с новым PIN-кодом\nна номер ${phone}?",
+				"addition_message_for_generate_error": "\nЕсли вы забыли PIN-код, отправьте SMS с текстом PIN на номер 7494.\nСтоимость SMS по тарифу вашего оператора.",
+				"yes": "ДА",
+				"no": "НЕТ",
+				"load_message": "Пожалуйста, подождите, пока вам будет выслан новый PIN-код",
+				"pin_sent": "PIN-код отправлен\nна номер ${phone}",
+				"change_message": "Вы можете поменять PIN-код на более удобный",
+				"change_yes": "ПОМЕНЯТЬ",
+				"change_no": "НЕТ, СПАСИБО",
+				"pin_changed": "PIN-код изменен",
+				"not_valid_pin_title": "Этот PIN-код недостаточно надежный",
+				"not_valid_pin_message": "Придумайте PIN-код, где нет:\n- 0 в начале\n- одинаковых цифр\n- цифр, идущих по порядку (например, 2345)",
+				"not_valid_confirm_pin_title": "Ошибка",
+				"not_valid_confirm_pin_message": "Введенные PIN-коды не совпадают"
+			}
+		},
+		"changePinPage": {
+			"title": "Придумайте новый PIN-код"
+		},
+		"confirmChangePinPage": {
+			"title": "Повторите PIN-код",
+			"load_message": "Пожалуйста, подождите, пока будет сохранен ваш новый PIN-код"
+		},
+		"balancePaymentPage": {
+			"title": "Оплата со счета Visa QIWI Wallet",
+			"balance": "На вашем счете",
+			"pay_summ": "Спишется со счета",
+			"user_summ": "Сумма платежа",
+			"commiss_summ": "Комиссия"
+		},
+		"smsConfirmPage": {
+			"title": "Введите код из SMS",
+			"subtitle": "Для подтверждения платежа",
+			"resendButton": "Прислать код\nповторно",
+			"resendSuccess": "Код выслан повторно, повторите попытку ввода",
+			"confirmError": "Исчерпан лимит ввода кода подтверждения\nПовторите платеж заново",
+			"timeoutResend": "Повторный запрос кода возможен не чаще, чем один раз в 20 секунд"
+		}
+	},
+	"en": {
+	}
+}

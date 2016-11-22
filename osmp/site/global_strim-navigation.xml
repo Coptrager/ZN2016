@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+	<object id="route"
+			class="ru.mobw.coreas3.app.flow.navigation.route.RouteData">
+		<property name="navData">
+			<value>
+				<![CDATA[
+				
+					@default = (checkStatus, @titleBranch, @paymentTypeBranch, end);
+					
+					@titleBranch = (title, %titleSwitch);
+					
+					%titleSwitch = 
+					(
+						info=>info
+					);
+					
+					@paymentTypeBranch = (paymentType, %paymentTypeSwitch);
+					
+					%paymentTypeSwitch = 
+					(
+						cashPayment=>@cashPaymentBranch,
+						balancePayment=>@balancePaymentBranch
+					);
+					
+					@cashPaymentBranch = (uidInput, fioConfirm, sumInput, %sumInputSwitch, @phoneBranch, residentSwitch, confirmData, cash);
+					
+					%sumInputSwitch = 
+					(
+						oferta=>bankOferta
+					);
+					
+					@cashPaymentWithOutPhoneBranch = (uidInput, fioConfirm, sumInput, %sumInputSwitch, residentSwitch, confirmData, cash, end);
+					
+					@balancePaymentBranch = (@phoneBranch, balanceSumInput, %sumInputSwitch, residentSwitch, uidInput, confirmData, balancePayment);
+					
+					@phoneBranch = (inputPhone, %inputPhoneSwitch);
+					%inputPhoneSwitch = 
+					(
+						oferta=>oferta,
+						pinNotExist=>@pinNotExistBranch,
+						inputPin=>@pinBranch
+					);
+					@pinBranch = (t:inputPin);
+					
+					@pinNotExistBranch = (t:pinNotExist, %pinNotExistSwitch);
+					%pinNotExistSwitch = 
+					(
+						enterPhone=>@phoneBranch,
+						payCash=>@cashPaymentWithOutPhoneBranch
+					);
+				]]>
+			</value>
+		</property>
+	</object>
+</objects>

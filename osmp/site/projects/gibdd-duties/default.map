@@ -1,0 +1,40 @@
+$begin > selectCategory > dutiesList ‰ another > selectDivision ‰ another > threeFields > threeFields > threeFields > passport > walletLogin > %gibddChangeType > $end
+
+‰another: {
+	←another: regionNumber > divisionsList,
+	other: @select
+}
+
+@!select: [
+	regionNumber > divisionsList
+]
+
+%gibddChangeType: {
+	mobile: @cash,
+	wallet: %paymentMethod
+}
+
+%paymentMethod: {
+	cash: @cash,
+	balance: @balance
+}
+
+@cash: [
+	%confirmation > %pay
+]
+
+%pay: {
+	final: final
+}
+
+@balance: [
+	%confirmation > %balancePayment > smsConfirmationCode > final
+]
+
+%balancePayment: {
+	final: final
+}
+
+%confirmation: {
+	offertus: oferta
+}

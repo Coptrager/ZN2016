@@ -1,0 +1,9 @@
+{
+  "name":"bottomMenu",
+  "css":true,
+  "use":[
+    "button"
+  ],
+  "parent":"visualControl",
+  "version":"0.1.0"
+}

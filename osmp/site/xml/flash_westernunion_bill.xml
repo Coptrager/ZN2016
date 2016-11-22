@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<object id="bill" class="String">
+		<constructor-arg>
+			<value>
+<![CDATA[_receipt_=------------------------------&_receipt_Ваши платежи=
+Принято: %total%
+Плата за перевод: %commission%
+Сумма перевода: %receive% %currency%
+------------------------------------&_receipt_Оплата за=
+КИВИ Банк (ЗАО)
+Лицензия № 2241
+ИНН: 3123011520
+117648, г. Москва, мкр. Чертаново Северное, д. 1А, корп. 1
+Вид операции: 005
+Сумма: %total%
+------------------------------------
+{{code && &_receipt_Контрольный номер денежного перевода=%code%\n}}
+------------------------------------&_receipt_ФИО отправителя=%sender_name%&_receipt_Номер мобильного телефона отправителя=%sender_phone%&_receipt_ФИО получателя=%recipient_name%&_receipt_Страна получения перевода=%country%&_receipt_Общая сумма принятых денежных средств=%total%&_receipt_Сумма перевода в сумме внесения=%send%&_receipt_Плата за перевод=%commission%&_receipt_Сумма к выплате в валюте выплаты=%receive% %currency%&_receipt_Обменный курс=1 руб. = %rate% %currency%
+------------------------------------
+{{card && &_receipt_Номер MyWU карты=%card%}}
+Используйте номер MyWU карты при всех последующих переводах Western Union&_receipt_Круглосуточная поддержка Western Union=
+Телефон: 8 800 200 2232
+------------------------------------
+]]>
+			</value>
+		</constructor-arg>
+	</object>
+</objects>

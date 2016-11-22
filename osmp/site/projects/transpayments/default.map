@@ -1,0 +1,24 @@
+$begin > % _app_start > $end
+
+%_app_start: {
+	language: %_language,
+	account: @account
+}
+
+%_language: {
+	account: @account,
+    oferta: _oferta
+}
+
+@account: [
+	_account > _phone > %_confirm
+]
+
+%_confirm: {
+	oferta: _oferta,
+	pay: @pay
+}
+
+ @pay: [
+    _pay > _final
+ ]

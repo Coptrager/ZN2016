@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<import file="flash_turavia_navigation.xml"/>
+	<import file="flash_turavia_bill.xml"/>
+	<import file="flash_turavia_providers.xml"/>
+	<import file="flash_turavia_statuses.xml"/>
+	
+	<object id="mainInstance" class="Main" factory-method="getInstance" />
+	
+	<object id="application" class="ru.mobw.coreas3.app.QiwiApplication" init-method="onAppCreated">
+		<property name="view" ref="mainInstance" />
+		<property name="config" ref="appConfig" />
+		<property name="flow" ref="flow" />
+	</object>
+	
+	<object id="appConfig" class="ru.mobw.coreas3.app.config.Config" />
+	
+</objects>

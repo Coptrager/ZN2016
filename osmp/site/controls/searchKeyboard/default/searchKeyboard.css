@@ -1,0 +1,92 @@
+﻿.searchKeyboard {
+    width: 1200px;
+    height: 370px;
+}
+.searchKeyboard_has_tips {
+    height: 480px;
+}
+
+.searchKeyboard_lowercase {
+    text-transform: lowercase;
+}
+
+.searchKeyboard__line {
+    font-size: 0;
+    height: 90px;
+}
+
+.searchKeyboard__button {
+    width: 86px;
+    height: 86px;
+    font-family: Whitney, Arial;
+    font-size: 42px;
+    color: white;
+    background: linear-gradient(to bottom,  #0097d7 0%,#0097d7 32%,#008bce 100%);
+    border: none;
+    border-radius: 8px;
+    margin: 2px 2px 3px 2px;
+    padding: 0;
+    transition: all 0.1s;
+    vertical-align: top;
+}
+.searchKeyboard__button:active {
+    transform: translate(0, 2px);
+    background: linear-gradient(to bottom,  #2458AA 0%, #2458AA 100%);
+    color: white;
+}
+
+.searchKeyboard__button_line_0 {
+    background:linear-gradient(to bottom,  #0097d7 0%,#0097d7 32%,#008bce 100%);
+}
+.searchKeyboard__button_line_1 {
+    background:linear-gradient(to bottom,  #0089cd 0%,#007ac2 100%);
+}
+.searchKeyboard__button_line_2 {
+    background:linear-gradient(to bottom,  #0078c0 0%,#006bb6 100%);
+}
+.searchKeyboard__button_line_3 {
+    background:linear-gradient(to bottom,  #0067b2 0%,#005ea9 29%,#004896 71%,#0b4493 78%,#0b4493 100%);
+}
+
+.searchKeyboard__button_color_white {
+    background: white;
+    border: solid 4px #00539F;
+    color: #0b4493;
+    font-size:36px;
+    text-transform: none;
+}
+.searchKeyboard__button_type_shift {
+    position: relative;
+}
+.searchKeyboard__button_type_shift:active {
+    background: white;
+}
+.searchKeyboard__button_type_shift:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: all 0.1s;
+    background: url('#localPath/resourses/arrow.svg') no-repeat scroll center center;
+}
+.searchKeyboard__button_rounded:before {
+    transform: rotate(180deg);
+}
+.searchKeyboard__button_type_space {
+    width:528px;
+}
+.searchKeyboard__button_type_clear {
+    width:184px;
+    font-size:28px;
+}
+
+.searchKeyboard__button_hidden {
+    transform: scale(0,0);
+    margin: 0px;
+    width: 0px;
+    height: 0px;
+    opacity: 0.5;
+    border-width: 0px;
+}

@@ -1,0 +1,660 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<regions>
+		<region name="Республика Адыгея" id="39">
+			<service type="" label="Междугородная и Международная связь" prvId="1954"/>
+			<service type="" label="Интернет" prvId="1962"/>
+			<service type="" label="Домашний телефон" prvId="1953"/>
+			<service type="" label="Телевидение">
+				<service type="" label="Телевидение" prvId="1963"/>
+				<service type="" label="Аренда оборудования" prvId="1964"/>
+			</service>	
+		</region>
+		<region name="Республика Алтай" id="77">
+			<service type="" label="Домашний телефон">
+				<service type="" label="По номеру лицевого счета" prvId="4097"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Интернет">
+				<service type="" label="По номеру лицевого счета" prvId="4097"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Междугородная и Международная связь">
+				<service type="" label="По номеру лицевого счета" prvId="4097"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Телевидение">
+				<service type="" label="По номеру лицевого счета" prvId="4097"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>			
+		</region>
+		<region name="Алтайский край" id="80">
+			<service type="" label="Домашний телефон">
+				<service type="" label="По номеру лицевого счета" prvId="4100"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Интернет">
+				<service type="" label="По номеру лицевого счета" prvId="4100"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Междугородная и Международная связь">
+				<service type="" label="По номеру лицевого счета" prvId="4100"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Телевидение">
+				<service type="" label="По номеру лицевого счета" prvId="4100"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+		</region>
+		<region name="Амурская область" id="97">
+			<service type="" label="Интернет" prvId="4183"/>
+			<service type="" label="Телевидение" prvId="4199"/>
+			<service type="" label="Домашний телефон" prvId="529"/>
+			<service type="" label="Междугородная и Международная связь" prvId="2450"/>
+		</region>
+		<region name="Архангельская область" id="29">
+			<service type="" label="ИСС МТТ" prvId="2113"/>
+			<service type="" label="Междугородная и международная связь">
+				<service type="" label="Услуги МТТ" prvId="2111"/>
+				<service type="" label="Услуги Аудиотеле" prvId="2114"/>
+			</service>
+			<service type="" label="Домашний телефон" prvId="2109"/>
+			<service type="" label="Интернет" prvId="2109"/>
+			<service type="" label="Телевидение" prvId="2109"/>
+		</region>
+		<region name="Астраханская область" id="49">
+			<service type="" label="Междугородная и Международная связь" prvId="1954"/>
+			<service type="" label="Интернет" prvId="1962"/>
+			<service type="" label="Домашний телефон" prvId="1953"/>
+			<service type="" label="Телевидение" >
+				<service type="" label="Аренда оборудования" prvId="1964"/>
+				<service type="" label="Телевидение" prvId="1963"/>
+			</service>
+		</region>
+		<region name="Белгородская область" id="9">
+			<service type="" label="Домашний телефон" prvId="1741"/>
+			<service type="" label="Интернет" prvId="4474"/>
+			<service type="" label="Телевидение" prvId="5373"/>
+			<service type="" label="Междугородная и Международная связь" prvId="1741"/>
+		</region>
+		<region name="Брянская область" id="10">
+			<service type="" label="Домашний телефон" prvId="3386"/>
+			<service type="" label="Интернет" prvId="3388"/>
+			<service type="" label="Радио" prvId="3390"/>
+			<service type="" label="Телевидение" prvId="5374"/>
+			<service type="" label="Междугородная и Международная связь" prvId="3386"/>
+		</region>
+		<region name="Республика Бурятия" id="76">
+			<service type="" label="Домашний телефон">
+				<service type="" label="По номеру лицевого счета" prvId="4098"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Интернет">
+				<service type="" label="По номеру лицевого счета" prvId="4098"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Междугородная и Международная связь">
+				<service type="" label="По номеру лицевого счета" prvId="4098"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Телевидение">
+				<service type="" label="По номеру лицевого счета" prvId="4098"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>		
+		</region>
+		<region name="Владимирская область" id="11">
+			<service type="" label="Домашний телефон" prvId="2587"/>
+			<service type="" label="Интернет" prvId="2592"/>
+			<service type="" label="Телевидение" prvId="5375"/>
+			<service type="" label="Междугородная и Международная связь" prvId="2587"/>
+		</region>
+		<region name="Волгоградская область" id="50">
+			<service type="" label="Телевидение">
+				<service type="" label="Телевидение" prvId="1963"/>
+				<service type="" label="Аренда оборудования" prvId="1964"/>
+			</service>	
+			<service type="" label="Домашний телефон" prvId="1953"/>
+			<service type="" label="Междугородная и Международная связь" prvId="1954"/>
+			<service type="" label="Интернет" prvId="1962"/>
+		</region>
+		<region name="Воронежская область" id="12">
+			<service type="" label="Домашний телефон" prvId="1737"/>
+			<service type="" label="Интернет" prvId="4476"/>
+			<service type="" label="Телевидение" prvId="5376"/>
+			<service type="" label="Междугородная и Международная связь" prvId="1737"/>
+		</region>
+		<region name="Республика Дагестан" id="40">
+			<service type="" label="Домашний телефон" prvId="1953"/>
+			<service type="" label="Интернет" prvId="1962"/>
+			<service type="" label="Междугородная и Международная связь" prvId="1954"/>
+		</region>
+		<region name="Забайкальский край" id="88">
+			<service type="" label="Домашний телефон">
+				<service type="" label="По номеру лицевого счета" prvId="4107"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Интернет">
+				<service type="" label="По номеру лицевого счета" prvId="4107"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Междугородная и Международная связь">
+				<service type="" label="По номеру лицевого счета" prvId="4107"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Телевидение">
+				<service type="" label="По номеру лицевого счета" prvId="4107"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>	
+		</region>
+		<region name="Ивановская область" id="13">
+			<service type="" label="Домашний телефон" prvId="4755"/>
+			<service type="" label="Интернет" prvId="4758"/>
+			<service type="" label="Непрофильные услуги" prvId="4757"/>
+			<service type="" label="Телевидение" prvId="5387"/>
+			<service type="" label="Междугородная и Международная связь" prvId="4755"/>
+		</region>
+		<region name="Республика Ингушетия" id="41">
+			<service type="" label="Междугородная и Международная связь" prvId="1954"/>
+		</region>
+		<region name="Иркутская область" id="82">
+			<service type="" label="Домашний телефон">
+				<service type="" label="По номеру лицевого счета" prvId="4102"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Интернет">
+				<service type="" label="По номеру лицевого счета" prvId="4102"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Междугородная и Международная связь">
+				<service type="" label="По номеру лицевого счета" prvId="4102"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Телевидение">
+				<service type="" label="По номеру лицевого счета" prvId="4102"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>	
+		</region>
+		<region name="Кабардино-Балкарская Республика" id="42">
+			<service type="" label="Телевидение">
+				<service type="" label="Телевидение" prvId="1963"/>
+				<service type="" label="Аренда оборудования" prvId="1964"/>
+			</service>
+			<service type="" label="Домашний телефон" prvId="1953"/>
+			<service type="" label="Интернет" prvId="1962"/>
+			<service type="" label="Междугородная и Международная связь" prvId="1954"/>
+		</region>
+		<region name="Калининградская область" id="31">
+		<service type="" label="Домашний телефон" prvId="1898"/>
+		<service type="" label="Междугородная и Международная связь" prvId="1897"/>
+		<service type="" label="Интернет" prvId="1898"/>
+		<service type="" label="Телевидение" prvId="1898"/>
+		</region>
+		<region name="Республика Калмыкия" id="43">
+			<service type="" label="Телевидение">
+				<service type="" label="Телевидение" prvId="1963"/>
+				<service type="" label="Аренда оборудования" prvId="1964"/>
+			</service>
+			<service type="" label="Интернет" prvId="1962"/>
+			<service type="" label="Междугородная и Международная связь" prvId="1954"/>
+		</region>
+		<region name="Калужская область" id="14">
+			<service type="" label="Домашний телефон" prvId="1082"/>
+			<service type="" label="Интернет" prvId="1083"/>
+			<service type="" label="Телевидение" prvId="5378"/>
+			<service type="" label="Междугородная и Международная связь" prvId="1082"/>
+		</region>
+		<region name="Камчатский край" id="99">
+			<service type="" label="Домашний телефон" prvId="529"/>
+			<service type="" label="Интернет" prvId="5278"/>
+			<service type="" label="Телевидение" prvId="5279"/>
+		</region>
+		<region name="Карачаево-Черкесская Республика" id="44">
+			<service type="" label="Домашний телефон" prvId="1953"/>
+			<service type="" label="Междугородная и Международная связь" prvId="1954"/>
+			<service type="" label="Интернет" prvId="1962"/>
+			<service type="" label="Телевидение">
+				<service type="" label="Телевидение" prvId="1963"/>
+				<service type="" label="Аренда оборудования" prvId="1964"/>
+			</service>
+		</region>
+		<region name="Республика Карелия" id="27">
+			<service type="" label="ИСС МТТ" prvId="2143"/>
+			<service type="" label="Междугородная и Международная связь">
+				<service type="" label="Услуги Аудиотеле" prvId="2142" />
+				<service type="" label="Услуги МТТ" prvId="2146" />
+				<service type="" label="Услуги СЦС Совинтел" prvId="2145" />
+			</service>
+			<service type="" label="Домашний телефон" prvId="2140"/>
+			<service type="" label="Интернет" prvId="2140"/>
+			<service type="" label="Телевидение" prvId="2140"/>
+		</region>
+		<region name="Кемеровская область" id="83">
+			<service type="" label="Домашний телефон">
+				<service type="" label="По номеру лицевого счета" prvId="4103"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Интернет">
+				<service type="" label="По номеру лицевого счета" prvId="4103"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Междугородная и Международная связь">
+				<service type="" label="По номеру лицевого счета" prvId="4103"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Телевидение">
+				<service type="" label="По номеру лицевого счета" prvId="4103"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>	
+		</region>
+		<region name="Кировская область" id="58">
+			<service type="" label="Домашний телефон" prvId="2014"/>
+			<service type="" label="Интернет" prvId="2015"/>
+			<service type="" label="Телевидение" prvId="2016"/>
+		</region>
+		<region name="Республика Коми" id="28">
+			<service type="" label="ИСС МТТ" prvId="1834"/>
+			<service type="" label="Междугородная и Международная связь">
+				<service type="" label="Услуги Аудиотеле" prvId="1833"/>
+				<service type="" label="Услуги МТТ" prvId="1836"/>
+			</service>
+			<service type="" label="Домашний телефон" prvId="2104"/>
+			<service type="" label="Интернет" prvId="2104"/>
+		    <service type="" label="Телевидение" prvId="2104"/>
+		</region>
+		<region name="Костромская область" id="15">
+			<service type="" label="Домашний телефон" prvId="4750"/>
+			<service type="" label="Интернет" prvId="4754"/>
+			<service type="" label="Телевидение" prvId="5377"/>
+			<service type="" label="Междугородная и Международная связь" prvId="4750"/>
+			<service type="" label="Непрофильные услуги" prvId="4753"/>
+		</region>
+		<region name="Краснодарский край" id="47">
+			<service type="" label="Междугородная и Международная связь" prvId="1954"/>
+			<service type="" label="Интернет" prvId="1962"/>
+			<service type="" label="Домашний телефон" prvId="1953"/>
+			<service type="" label="Телевидение">
+				<service type="" label="Телевидение" prvId="1963"/>
+				<service type="" label="Аренда оборудования" prvId="1964"/>
+			</service>
+		</region>
+		<region name="Красноярский край" id="81">
+			<service type="" label="Домашний телефон">
+				<service type="" label="По номеру лицевого счета" prvId="4101"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Интернет">
+				<service type="" label="По номеру лицевого счета" prvId="4101"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Междугородная и Международная связь">
+				<service type="" label="По номеру лицевого счета" prvId="4101"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Телевидение">
+				<service type="" label="По номеру лицевого счета" prvId="4101"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>	
+		</region>
+		<region name="Курганская область" id="69">
+			<service type="" label="Интернет" prvId="1783"/>
+			<service type="" label="Домашний телефон" prvId="1780"/>
+			<service type="" label="SIP-Телефония" prvId="1782"/>
+			<service type="" label="Телевидение" prvId="1784"/>
+		</region>
+		<region name="Курская область" id="16">
+			<service type="" label="Домашний телефон" prvId="1242"/>
+			<service type="" label="Интернет" prvId="1245"/>
+			<service type="" label="Телевидение" prvId="5389"/>
+			<service type="" label="Междугородная и Международная связь" prvId="1242"/>
+		</region>
+		<region name="Липецкая область" id="17">
+			<service type="" label="Домашний телефон" prvId="1099"/>
+			<service type="" label="Междугородная и Международная связь" prvId="1099"/>
+			<service type="" label="Интернет" prvId="1085"/>
+			<service type="" label="Телевидение" prvId="5379"/>
+		</region>
+		<region name="Магаданская область" id="100">
+			<service type="" label="Домашний телефон" prvId="529"/>
+			<service type="" label="Интернет" prvId="5050"/>
+			<service type="" label="Междугородная и Международная связь" prvId="2450"/>
+		</region>
+		<region name="Республика Марий Эл" id="53">
+			<service type="" label="Домашний телефон" prvId="2028"/>
+			<service type="" label="Интернет" prvId="2029"/>
+		</region>
+		<region name="Республика Мордовия" id="54">
+			<service type="" label="Интернет" prvId="4561"/>
+			<service type="" label="Междугородная и Международная связь" prvId="4558"/>
+			<service type="" label="Домашний телефон" prvId="2017"/>
+			<service type="" label="Телевидение" prvId="4557"/>
+		</region>
+		<region name="г. Москва и Московская область" id="26,18">
+			<service type="" label="Домашний телефон Московская область" prvId="857"/>
+			<service type="" label="Интернет Московская область" prvId="866"/>
+			<service type="" label="Междугородная и Международная связь">
+				<service type="" label="Московская область" prvId="857"/>
+				<service type="" label="г. Москва" prvId="1948"/>
+			</service>
+			<service type="" label="Телевидение Московская область" prvId="5388"/>
+		</region>
+		<region name="Мурманская область" id="33">
+			<service type="" label="Междугородная и Международная связь" prvId="2107"/>
+			<service type="" label="Домашний телефон" prvId="2106"/>
+			<service type="" label="Интернет" prvId="2106"/>
+		   <service type="" label="Телевидение" prvId="2106"/>
+		</region>
+		<region name="Нижегородская область" id="60">
+			<service type="" label="Интернет" prvId="2024"/>
+			<service type="" label="Домашний телефон" prvId="2023"/>
+		</region>
+		<region name="Новгородская область" id="">
+			<service type="" label="Междугородная и Международная связь">
+				<service type="" label="Услуги МТТ" prvId="2117"/>
+				<service type="" label="Услуги Аудиотеле" prvId="2118"/>
+			</service>
+			<service type="" label="Домашний телефон" prvId="2115"/>
+			<service type="" label="Интернет" prvId="2115"/>
+		    <service type="" label="Телевидение" prvId="2115"/>
+		</region>
+		<region name="Новосибирская область" id="84">
+			<service type="" label="Домашний телефон">
+				<service type="" label="Домашний телефон по номеру лицевого счета" prvId="4104"/>
+				<service type="" label="Домашний телефон по номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Интернет">
+				<service type="" label="По номеру лицевого счета" prvId="4104"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Междугородная и Международная связь">
+				<service type="" label="По номеру лицевого счета" prvId="4104"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Телевидение">
+				<service type="" label="По номеру лицевого счета" prvId="4104"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>	
+		</region>
+		<region name="Омская область" id="85">
+			<service type="" label="Домашний телефон">
+				<service type="" label="Домашний телефон по номеру лицевого счета" prvId="4105"/>
+				<service type="" label="Домашний телефон по номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Интернет">
+				<service type="" label="По номеру лицевого счета" prvId="4105"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Междугородная и Международная связь">
+				<service type="" label="По номеру лицевого счета" prvId="4105"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Телевидение">
+				<service type="" label="По номеру лицевого счета" prvId="4105"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>	
+		</region>
+		<region name="Оренбургская область" id="61">
+			<service type="" label="Интернет">
+				<service type="" label="Оплата по номеру лицевого счета" prvId="2018"/>
+				<service type="" label="Оплата по номеру телефона" prvId="2019"/>
+			</service>
+			<service type="" label="Домашний телефон">
+				<service type="" label="Домашний телефон по номеру лицевого счета" prvId="2037"/>
+				<service type="" label="Домашний телефон по номеру телефона" prvId="2038"/>
+			</service>
+		</region>
+		<region name="Орловская область" id="19">
+			<service type="" label="Интернет" prvId="1818"/>
+			<service type="" label="Домашний телефон" prvId="1751"/>
+			<service type="" label="Телевидение" prvId="5381"/>
+			<service type="" label="Междугородная и международная связь" prvId="1751"/>
+		</region>
+		<region name="Пензенская область" id="62">
+			<service type="" label="Интернет" prvId="6329"/>
+			<service type="" label="Домашний телефон" prvId="2031"/>
+		</region>
+		<region name="Пермский край" id="64">
+			<service type="" label="SIP-Телефония" prvId="1782"/>
+			<service type="" label="Домашний телефон" prvId="1780"/>
+			<service type="" label="Интернет" prvId="1783"/>
+			<service type="" label="Телевидение" prvId="1784"/>
+		</region>
+		<region name="Приморский край" id="95">
+			<service type="" label="Домашний телефон" prvId="529"/>
+			<service type="" label="Интернет" prvId="4180"/>
+			<service type="" label="Междугородная и Международная связь" prvId="2450"/>
+			<service type="" label="Телевидение" prvId="4197"/>
+		</region>
+		<region name="Псковская область" id="35">
+			<service type="" label="Междугородная и международная связь">
+				<service type="" label="Услуги Аудиотеле" prvId="2506"/>
+				<service type="" label="Услуги МТТ" prvId="2507"/>
+			</service>
+			<service type="" label="Домашний телефон" prvId="2509"/>
+			<service type="" label="Интернет" prvId="2509"/>
+		    <service type="" label="Телевидение" prvId="2509"/>
+		</region>
+		<region name="Ростовская область" id="51">
+			<service type="" label="Телевидение">
+				<service type="" label="Аренда оборудования" prvId="1964"/>
+				<service type="" label="Телевидение" prvId="1963"/>
+			</service>
+			<service type="" label="Домашний телефон" prvId="1953"/>
+			<service type="" label="Интернет" prvId="1962"/>
+			<service type="" label="Междугородная и Международная связь" prvId="1954"/>
+		</region>
+		<region name="Рязанская область" id="20">
+			<service type="" label="Интернет" prvId="4472"/>
+			<service type="" label="Домашний телефон" prvId="1729"/>
+			<service type="" label="Телевидение" prvId="5382"/>
+			<service type="" label="Междугородная и Международная связь" prvId="1729"/>
+		</region>
+		<region name="Самарская область" id="65">
+			<service type="" label="Интернет" prvId="1396"/>
+			<service type="" label="Домашний телефон" prvId="1397"/>
+		</region>
+		<region name="г. Санкт-Петербург и Ленинградская область" id="37,32">
+			<service type="" label="Домашний телефон">
+				<service type="" label="Ленинградская область" prvId="1829"/>
+				<service type="" label="г.Санкт-Петербург" prvId="1880"/>
+			</service>
+			<service type="" label="Междугородная и Международная связь">
+				<service type="" label="Услуги Аудиотеле Ленинградская область" prvId="1830"/>
+				<service type="" label="Услуги МТТ Ленинградская область" prvId="1831"/>
+				<service type="" label="Услуги МТТ г.Санкт-Петербург" prvId="1881"/>
+			</service>
+			<service type="" label="Интернет">
+				<service type="" label="Интернет г.Санкт-Петербург" prvId="1880"/>
+				<service type="" label="Интернет Ленинградская область" prvId="1829"/>
+			</service>
+			<service type="" label="Телевидение">
+				<service type="" label="ТВ г.Санкт-Петербург" prvId="1880"/>
+				<service type="" label="ТВ Ленинградская область" prvId="1829"/>
+			</service>
+		</region>
+		<region name="Саратовская область" id="66">
+			<service type="" label="Интернет" prvId="2012"/>
+			<service type="" label="Домашний телефон" prvId="2013"/>
+		</region>
+		<region name="Республика Саха/Якутия" id="94">
+			<service type="" label="Междугородная и Международная связь" prvId="1385"/>
+			<service type="" label="Домашний телефон" prvId="913"/>
+		</region>
+		<region name="Сахалинская область" id="101">
+			<service type="" label="Междугородная и Международная связь" prvId="2450"/>
+			<service type="" label="Домашний телефон" prvId="529"/>
+		</region>
+		<region name="Свердловская область" id="70">
+			<service type="" label="Интернет" prvId="1783"/>
+			<service type="" label="Домашний телефон" prvId="1780"/>
+			<service type="" label="SIP-Телефония" prvId="1782"/>
+			<service type="" label="Телевидение" prvId="1784"/>
+		</region>
+		<region name="Республика Северная Осетия - Алания" id="45">
+			<service type="" label="Телевидение">
+				<service type="" label="Аренда оборудования" prvId="1964"/>
+				<service type="" label="Телевидение" prvId="1963"/>
+			</service>
+			<service type="" label="Домашний телефон" prvId="1953"/>
+			<service type="" label="Интернет" prvId="1962"/>
+			<service type="" label="Междугородная и Международная связь" prvId="1954"/>
+		</region>
+		<region name="Смоленская область" id="21">
+			<service type="" label="Интернет" prvId="1817"/>
+			<service type="" label="Домашний телефон" prvId="1744"/>
+			<service type="" label="Непрофильные услуги" prvId="1745"/>
+			<service type="" label="Телевидение" prvId="5383"/>
+			<service type="" label="Междугородная и Международная связь" prvId="1744"/>
+		</region>
+		<region name="Ставропольский край" id="48">
+			<service type="" label="Телевидение">
+				<service type="" label="Аренда оборудования" prvId="1964"/>
+				<service type="" label="Телевидение" prvId="1963"/>
+			</service>
+			<service type="" label="Домашний телефон" prvId="1953"/>
+			<service type="" label="Интернет" prvId="1962"/>
+			<service type="" label="Междугородная и Международная связь" prvId="1954"/>
+		</region>
+		<region name="Тамбовская область" id="22">
+			<service type="" label="Интернет" prvId="2047"/>
+			<service type="" label="Домашний телефон" prvId="2045"/>
+			<service type="" label="Радио" prvId="2046"/>
+			<service type="" label="Телевидение" prvId="5384"/>
+			<service type="" label="Междугородная и Международная связь" prvId="2045"/>
+		</region>
+		<region name="Республика Татарстан" id="55">
+			<service type="" label="Интернет">
+				<service type="" label="г. Набережные челны" prvId="2641"/>
+				<service type="" label="г. Казань" prvId="2642"/>
+			</service>	
+			<service type="" label="Домашний телефон">
+				<service type="" label="г. Казань" prvId="606"/>
+				<service type="" label="г. Набережные Челны" prvId="884"/>
+			</service>	
+			<service type="" label="г. Казань" prvId="2643"/>	
+		</region>
+		<region name="Тверская область" id="23">
+			<service type="" label="Интернет" prvId="4475"/>
+			<service type="" label="Непрофильные услуги">
+				<service type="" label="Непрофильные услуги" prvId="1734"/>
+				<service type="" label="Радио" prvId="1733"/>
+			</service>
+			<service type="" label="Домашний телефон" prvId="1735"/>
+			<service type="" label="Телевидение" prvId="5386"/>
+			<service type="" label="Междугородная и Международная связь" prvId="1735"/>
+		</region>
+		<region name="Томская область" id="86">
+			<service type="" label="Домашний телефон">
+				<service type="" label="По номеру лицевого счета" prvId="4106"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Интернет">
+				<service type="" label="По номеру лицевого счета" prvId="4106"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Междугородная и Международная связь">
+				<service type="" label="По номеру лицевого счета" prvId="4106"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Телевидение">
+				<service type="" label="По номеру лицевого счета" prvId="4106"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>	
+		</region>
+		<region name="Тульская область" id="24">
+			<service type="" label="Интернет" prvId="1244"/>
+			<service type="" label="Домашний телефон" prvId="1243"/>
+			<service type="" label="Непрофильные услуги">
+				<service type="" label="Непрофильные услуги" prvId="2231"/>
+				<service type="" label="Радио" prvId="2229"/>
+			</service>
+			<service type="" label="Телевидение" prvId="5385"/>
+			<service type="" label="Междугородная и Международная связь" prvId="1243"/>
+		</region>
+		<region name="Тюменская область" id="71">
+			<service type="" label="Интернет" prvId="1783"/>
+			<service type="" label="Домашний телефон" prvId="1780"/>
+			<service type="" label="SIP-Телефония" prvId="1782"/>
+			<service type="" label="Телевидение" prvId="1784"/>
+		</region>
+		<region name="Удмуртская Республика" id="56">
+			<service type="" label="Интернет" prvId="2026"/>
+			<service type="" label="Домашний телефон" prvId="2025"/>
+		</region>
+		<region name="Ульяновская область" id="67">
+			<service type="" label="Интернет">
+				<service type="" label="Оплата по номеру телефона" prvId="4741"/>
+				<service type="" label="Оплата по номеру лицевого счета" prvId="4741"/>
+			</service>
+			<service type="" label="Домашний телефон">
+				<service type="" label="Домашний телефон по номеру телефона" prvId="4741"/>
+				<service type="" label="Домашний телефон по номеру лицевого счета" prvId="4741"/>
+			</service>
+			<service type="" label="Междугородная и Международная связь">
+				<service type="" label="Оплата по номеру телефона" prvId="4741"/>
+				<service type="" label="Оплата по номеру лицевого счета" prvId="4741"/>
+			</service>
+			<service type="" label="Непрофильные услуги">
+				<service type="" label="Радио оплата по номеру телефона" prvId="4741"/>
+				<service type="" label="Радио оплата по номеру лицевого счета" prvId="4741"/>
+			</service>
+			<service type="" label="Телевидение">
+				<service type="" label="Оплата по номеру телефона" prvId="4741"/>
+				<service type="" label="Оплата по номеру лицевого счета" prvId="4741"/>
+			</service>
+		</region>
+		<region name="Хабаровский край" id="96">
+			<service type="" label="Интернет" prvId="4182"/>
+			<service type="" label="Телевидение" prvId="4198"/>
+			<service type="" label="Междугородная и Международная связь" prvId="2450"/>
+			<service type="" label="Домашний телефон" prvId="529"/>
+		</region>
+		<region name="Республика Хакасия" id="79">
+			<service type="" label="Домашний телефон">
+				<service type="" label="Домашний телефон по номеру лицевого счета" prvId="4099"/>
+				<service type="" label="Домашний телефон по номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Интернет">
+				<service type="" label="По номеру лицевого счета" prvId="4099"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Междугородная и Международная связь">
+				<service type="" label="По номеру лицевого счета" prvId="4099"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+			<service type="" label="Телевидение">
+				<service type="" label="По номеру лицевого счета" prvId="4099"/>
+				<service type="" label="По номеру телефона" prvId="4108"/>
+			</service>
+		</region>
+		<region name="Ханты-Мансийский АО - Югра АО" id="74">
+			<service type="" label="Интернет" prvId="1783"/>
+			<service type="" label="Домашний телефон" prvId="1780"/>
+			<service type="" label="SIP-Телефония" prvId="1782"/>
+			<service type="" label="Телевидение" prvId="1784"/>
+		</region>
+		<region name="Челябинская область" id="72">
+			<service type="" label="Интернет" prvId="1783"/>
+			<service type="" label="Домашний телефон" prvId="1780"/>
+			<service type="" label="SIP-Телефония" prvId="1782"/>
+		</region>
+		<region name="Чувашская Республика - Чувашия" id="57">
+			<service type="" label="Домашний телефон" prvId="2020"/>
+			<service type="" label="Интернет" prvId="2021"/>
+			<service type="" label="Телевидение" prvId="2022"/>
+			<service type="" label="Междугородная и Международная связь" prvId="4555"/>
+		</region>
+		<region name="Ямало-Ненецкий АО" id="75">
+			<service type="" label="Интернет" prvId="1783"/>
+			<service type="" label="Домашний телефон" prvId="1780"/>
+			<service type="" label="SIP-Телефония" prvId="1782"/>
+			<service type="" label="Телевидение" prvId="1784"/>
+		</region>
+		<region name="Ярославская область" id="25">
+			<service type="" label="Домашний телефон" prvId="4746"/>
+			<service type="" label="Непрофильные услуги" prvId="4748"/>
+			<service type="" label="Интернет" prvId="4749"/>
+			<service type="" label="Телевидение" prvId="5390"/>
+			<service type="" label="Междугородная и Международная связь" prvId="4746"/>
+		</region>
+	</regions>
+</config>

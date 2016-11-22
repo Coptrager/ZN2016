@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data xmlns:b="com.styleru.bool" xmlns:n="com.styleru.number" xmlns:s="com.styleru.string">
+	<settings
+		n:width="1280"
+		n:height="1024"
+		s:constructor_context="xml/flash_fns_context.xml"
+		s:constructor_flow="xml/flash_fns_flow.xml"
+		s:prvname="QIWI Кошелёк"
+		s:prvid="6089"
+		s:prvid2="7406"
+		s:qw_prvid="441"
+		s:payment_prvid="21407"
+		n:speed="0.4"
+		n:statisticsId="30017"
+		n:min_limit="10"
+		s:min_limit_error_title="Ошибка суммы платежа"
+		s:min_limit_error_description="Через терминал возможна оплата сумм не менее 10 руб."
+		n:max_limit="14696"
+		s:max_limit_error_title="Ошибка суммы платежа"
+		s:max_limit_error_description="Через терминал возможна оплата сумм не более 14696 руб."
+		>
+	</settings>
+	<LoaderMax name="resources" load="true">
+		<SWFLoader name="fonts" url="swf/flash_fns_fonts.swf" />
+		<SWFLoader name="tahoma" url="swf/flash_font_tahoma.swf" />
+		<SWFLoader name="graphics" url="swf/flash_fns_graphics.swf" />
+	</LoaderMax>
+</data>

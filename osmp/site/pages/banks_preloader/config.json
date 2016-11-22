@@ -1,0 +1,7 @@
+﻿{
+  "parent":"banks_template",
+  "timeout":120,
+  "use":[
+    "textfield", "button", "preloader", "popup", "numpad"
+  ]
+}

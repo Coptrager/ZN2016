@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<providers>
+	<provider>
+		<fields>
+			<id>1973</id>
+			<name>Штрафы ГИБДД</name>
+			<group>-1</group>
+			<full_name>Штрафы ГИБДД</full_name>
+		</fields>
+		<config_files>
+			<context>gibdd_fine_app_context.xml</context>
+			<navigation>gibdd_fine_app_navigation.xml</navigation>
+			<flow>gibdd_fine_app_flow.xml</flow>
+			<library>f3_resources.swf</library>
+		</config_files>
+	</provider>
+	<provider>
+		<fields>
+			<id>20226</id>
+			<name>Росреестр</name>
+			<group>-1</group>
+			<full_name>Росреестр</full_name>
+		</fields>
+		<config_files>
+			<context>rosreestr_app_context.xml</context>
+			<navigation>rosreestr_app_navigation.xml</navigation>
+			<flow>rosreestr_app_flow.xml</flow>
+			<library>rr_resources.swf</library>
+		</config_files>
+	</provider>
+	<provider>
+		<fields>
+			<id>20062</id>
+			<name>Служба Судебных Приставов</name>
+			<group>-1</group>
+			<full_name>Служба Судебных Приставов</full_name>
+		</fields>
+		<config_files>
+			<context>ssp_app_context.xml</context>
+			<navigation>ssp_app_navigation.xml</navigation>
+			<flow>ssp_app_flow.xml</flow>
+			<library>ssp_resources.swf</library>
+		</config_files>
+	</provider>
+	<provider>
+		<fields>
+			<id>23328</id>
+			<name>Первое коллекторское бюро</name>
+			<group>-1</group>
+			<full_name>Первое коллекторское бюро</full_name>
+		</fields>
+		<config_files>
+			<context>pkb_app_context.xml</context>
+			<navigation>pkb_app_navigation.xml</navigation>
+			<flow>pkb_app_flow.xml</flow>
+			<library>pkb_resources.swf</library>
+		</config_files>
+	</provider>
+	<provider>
+		<fields>
+			<id>24802</id>
+			<name>Восток финанс</name>
+			<group>-1</group>
+			<full_name>Восток финанс</full_name>
+		</fields>
+		<config_files>
+			<context>vostok_app_context.xml</context>
+			<navigation>vostok_app_navigation.xml</navigation>
+			<flow>vostok_app_flow.xml</flow>
+			<library>vostok_resources.swf</library>
+		</config_files>
+	</provider>
+</providers>

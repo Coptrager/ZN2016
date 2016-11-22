@@ -1,0 +1,22 @@
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+  <object id="divisions" class="XMLList">
+    <constructor-arg>
+      <value><![CDATA[<divisions>
+		  <region id="45" name="Москва">
+			<division name="УВО ЦАО ГУ МВД России по г. Москве" code="01"/>
+			<division name="МОВО УВД по СВАО ГУ МВД России по г. Москве" code="02"/>
+			<division name="МОВО УВД по ВАО ГУ МВД России по г. Москве" code="03"/>
+			<division name="МОВО УВД по ЮВАО ГУ МВД России по г. Москве" code="04"/>
+			<division name="МОВО УВД по ЮАО ГУ МВД России по г. Москве" code="05"/>
+			<division name="МОВО УВД по ЮЗАО ГУ МВД России по г. Москве" code="06"/>
+			<division name="МОВО УВД по ЗАО ГУ МВД России по г. Москве" code="07"/>
+			<division name="МОВО УВД по СЗАО ГУ МВД России по г. Москве" code="08"/>
+			<division name="МОВО УВД по САО ГУ МВД России по г. Москве" code="09"/>
+			<division name="МОВО УВД по Зеленоградскому АО г. Москвы ГУ МВД России по г. Москве" code="10"/>
+			<division name="УВО ГУ МВД России по г. Москве" code="11"/>
+		  </region>
+		</divisions>]]>
+	   </value>
+    </constructor-arg>
+  </object>
+</objects>

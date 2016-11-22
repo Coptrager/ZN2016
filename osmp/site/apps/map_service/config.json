@@ -1,0 +1,9 @@
+{
+    "name": "map_service",
+    "version": "0.0.1",
+    "width": 1280,
+    "height": 1024,
+    "app_id": "SkZQHhro81Ue39GzUNEl",
+    "app_code":"H12Td4PratHOQoK3EJBZlw",
+    "url":"http://image.maps.cit.api.here.com/mia/1.6/mapview"
+}

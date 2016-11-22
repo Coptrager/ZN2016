@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<info>
+	<region-hierarchy>
+		<address id="1" name="?????????? ?????????" type="1" level="1" regUICalculatedBy="0"/>
+		<address id="2" name="???????????" type="2" level="2" regUICalculatedBy="0"/>
+		<address id="26" name="??????" type="5" level="3" regUICalculatedBy="1"/>
+	</region-hierarchy>
+	<agent-id>4666170</agent-id>
+	<agent-inn>7703633176</agent-inn>
+	<aof-name>Q??? ??????????? aof-name</aof-name>
+	<aof-bank-acc>7703633176</aof-bank-acc>
+	<agt-contract>??????? ????????????</agt-contract>
+	<offer-type>0</offer-type>
+	<prof-type>REG</prof-type>
+	<p-width>0</p-width>
+	<p-height>0</p-height>
+	<online-auth>1</online-auth>
+	<max-pay-amount>0</max-pay-amount>
+	<receipt-address>? ??????, ?, ????????</receipt-address>
+	<osmp-general-phone>8-495-6265252</osmp-general-phone>
+	<terminal-type>4</terminal-type>
+	<ftp-home>/!anonymous/</ftp-home>
+	<agt-country-code>643</agt-country-code>
+</info>

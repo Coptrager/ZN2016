@@ -1,0 +1,104 @@
+﻿#contentBlock {
+    top:0px;
+    left:0px;
+    width:1280px;
+    height:860px;
+    background:linear-gradient(to bottom, #0e4394 0%, #0080c6 100%);
+}
+
+@keyframes textNew {
+    0% {
+        opacity:0;
+        top:90px;
+    }
+    100% {
+        opacity:1;
+        top:40px;
+    }
+}
+
+#header {
+    width: 1280px;
+    top: 40px;
+    padding-bottom: 10px;
+    animation:textNew 600ms;
+    animation-fill-mode:forwards;
+}
+#header div {
+    padding-bottom: 10px;
+}
+#header, #header span {
+    line-height: 1;
+    color: white;
+    font-family: Whitney;
+    font-size: 60px;
+}
+
+#button-place {
+    top: 200px;
+    width: 1280px;
+    height: 600px;
+}
+
+.button {
+    width: 380px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    transition: all 200ms;
+}
+.button:active {
+    margin-top: 3px;
+    background-color:#d2deec;
+    color:#2458aa;
+}
+
+.button .icon {
+    top: 10px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image:url('./resourses/rostelecom.png');
+}
+
+#search-icon {
+    background-image:url('./resourses/search.png');
+}
+
+.button span {
+    width: 220px;
+    height: 120px;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: Whitney;
+    font-size: 24px;
+    text-align: left;
+    color: black;
+    padding-left: 140px;
+}
+.button.hidden {
+    display: none;
+}
+
+.row-1 {
+    top: 0px;
+}
+.row-2 {
+    top: 150px;
+}
+.row-3 {
+    top: 450px;
+}
+.column-1 {
+    left: 50px;
+}
+.column-2 {
+    left: 450px;
+}
+.column-3 {
+    left: 850px;
+}

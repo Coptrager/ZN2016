@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scripts>
+	<config totalTime="300" defaultIdleTime="60" version="2.0" log="false">
+
+		<session>
+			<var key="settings.MGT_path_format" value="page:time"/>
+			<var key="settings.MGT_date_format" value="yyyy-mm-dd hh:nn:ss"/>
+			<var key="settings.MGT_exit_last_page" value="true"/>
+			<var key="settings.exclude_zero_page" value="true"/>
+
+			<var key="check_status.PrvId" value="10020"/>
+			<var key="check_status.TermId" value="true"/>
+			<var key="settings.oferta_path" value="../oferta_itunes.xml"/>
+			<var key="settings.oferta_name" value="qiwi"/>
+			<var key="settings.project_name" value="ITUNES"/>
+			<var key="settings.project_version" value="1.1.29"/>
+		</session>
+
+		<statistic defaultProfile="bad">
+			<add>
+				<bad>
+					
+					<var name="_extra_MGT_phone" value="user_info.phone"/>
+				</bad>
+				<good>
+					<includeProfile name="bad"/>
+				</good>
+			</add>
+			<object>
+				<variable name="prv_id" value="323"/>
+				<variable name="prv_name" value="Magitel"/>
+				<variable name="_extra_MGT_project_number" value="30035"/>
+				<variable name="_extra_no_print_check" value="true"/>
+				<variable name="_extra_fake_provider" value="true"/>
+				<variable name="_extra_result_int_page" value="./return.html"/>
+				<variable name="_extra_MGT_exit" value="./return.html"/>
+				<variable name="getAccountNumber" value="0000000000"/>
+			</object>
+			<bad
+				vars="_extra_MGT_project_number,_extra_MGT_exit,_extra_MGT_date,_extra_MGT_time,_extra_MGT_path, getAccountNumber"
+				post="./return.html"/>
+			<good
+				vars="_extra_MGT_project_number,_extra_MGT_exit,_extra_MGT_date,_extra_MGT_time,_extra_MGT_path, getAccountNumber"
+				post="./return.html"/>
+		</statistic>
+
+		<defaultBackground type="0" name="bg_base"/>
+
+		<pages>
+
+
+			<page name="checkStatusPage" index="0">
+				<content type="2" name="CheckStatus">
+					<componentEvents>
+						<event name="success" page="startPage"/>
+						<event name="fail" page="failPage"/>
+					</componentEvents>
+				</content>
+			</page>
+
+			<page name="startPage" index="1">
+				<content type="0" name="bg_0"/>
+				<content type="1" name="exit" pos="490,883"/>
+				<content type="1" name="next" pos="958,883" page="phonePage"/>
+			</page>
+
+			<page name="phonePage" index="2">
+				<content type="2" name="InputPhonePage" symbolName="inputPhone">
+					<componentEvents>
+						<event name="phone_submitted" page="confirmPage"/>
+						<event name="back" page="startPage"/>
+					</componentEvents>
+				</content>
+			</page>
+
+			<page name="confirmPage" index="3">
+				<content type="1" name="back" pos="21,883" page="phonePage"/>
+				<content type="1" name="exit" pos="490,883"/>
+				<content type="1" name="next" pos="958,883" page="cashPage"/>
+				<content type="1" name="ofertabtnnew" pos="844,775" page="ofertaPage"/>
+				<content type="2" name="Page" symbolName="confirmPage">
+					<param name="custom_label_0" instance="phoneLabel" key="user_info.phone_formatted"/>
+				</content>
+			</page>
+			<page name="ofertaPage" index="8">
+               <content type="2" name="OfertaPage" pos="100,0"/>
+               <content type="1" name="back" pos="20,883" page="confirmPage"/>
+			</page>
+
+			<!--...-->
+			<page name="cashPage" idleTime="300" index="4" stat="good">
+				<content type="2" name="CustomContentCash">
+					<componentEvents>
+						<event name="pay_success" page="okPage"/>
+						<event name="pay_fail" page="cashFailPage"/>
+						<event name="prevButtonClick" page="confirmPage"/>
+						<event name="leave" page="noMoneyPage"/>
+						<event name="exit" page="noMoneyPage"/>
+					</componentEvents>
+
+					<param name="PrvId" value="10020"/>
+					<param name="PrvName" value="Visa QIWI Wallet"/>
+					<param name="MinCashLimit" value="300"/>
+				</content>
+			</page>
+
+			<page name="okPage" idleTime="30" index="6" stat="good">
+				<content type="2" name="OkPage" />
+				<content type="2" name="Page" symbolName="FiscalResultPage">
+					<param name="custom_mc_0" instance="failLabel" key="payments.fiscal_result"/>
+				</content>
+			</page>
+
+			<page name="failPage" idleTime="10" index="7">
+				<content type="0" name="bg_8"/>
+				<content type="1" name="exit" pos="490,883"/>
+			</page>
+			
+			<page name="noMoneyPage" idleTime="10" index="9">
+				<content type="0" name="bg_9"/>
+				<content type="1" name="exit" pos="490,883"/>
+			</page>
+
+			<page name="cashFailPage" idleTime="10" index="8" stat="good">
+				<content type="0" name="bg_7"/>
+				<content type="1" name="exit" pos="490,883"/>
+				<content type="2" name="Page" symbolName="FiscalResultPage">
+					<param name="custom_mc_0" instance="failLabel" key="payments.fiscal_result"/>
+				</content>
+			</page>
+		</pages>
+	</config>
+</scripts>
+

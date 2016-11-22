@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scripts>
+	<config totalTime="600" defaultIdleTime="60" version="2.0" log="false">
+
+		<session>
+			<var key="settings.MGT_path_format" value="page:time"/>
+			<var key="settings.MGT_date_format" value="yyyy-mm-dd hh:nn:ss"/>
+			<var key="settings.MGT_exit_last_page" value="true"/>
+			<var key="settings.exclude_zero_page" value="true"/>
+
+			<var key="check_status.PrvId" value="323"/>
+			<var key="check_status.TermId" value="true"/>
+
+			<var key="settings.project_name" value="Rostelecom"/>
+			<var key="settings.project_version" value="Rostelecom 1.0.6"/>
+			<var key="extras.rp" value="return.html"/>
+
+		</session>
+
+		<statistic defaultProfile="bad">
+			<add>
+				<bad>
+					<var name="_extra_MGT_phone" value="user_info.phone"/>
+					<var name="_extra_MGT_account" value="user_info.account"/>
+					<var name="_extra_MGT_ver" value="settings.project_version"/>
+				</bad>
+				<good>
+					<var name="_extra_MGT_phone" value="user_info.phone"/>
+					<var name="_extra_MGT_account" value="user_info.account"/>
+					<var name="_extra_MGT_sum" value="extras.sum"/>
+					<var name="_extra_MGT_ver" value="settings.project_version"/>
+					<var name="_extra_result_int_page" value="extras.rp"/>
+
+				</good>
+			</add>
+			<object>
+				<variable name="prv_id" value="323"/>
+				<variable name="prv_name" value="Magitel"/>
+				<variable name="_extra_MGT_project_number" value="30054"/>
+				<variable name="_extra_no_print_check" value="true"/>
+				<variable name="_extra_fake_provider" value="true"/>
+				<variable name="_extra_result_int_page" value="return.html"/>
+				<variable name="_extra_MGT_exit" value="return.html"/>
+				<variable name="getAccountNumber" value="0000000000"/>
+			</object>
+			<bad
+				vars="_extra_MGT_project_number,_extra_MGT_exit,_extra_MGT_date,_extra_MGT_time,_extra_MGT_path, getAccountNumber"
+				post="./return.html"/>
+			<good
+				vars="_extra_MGT_project_number,_extra_MGT_exit,_extra_MGT_date,_extra_MGT_time,_extra_MGT_path, getAccountNumber"
+				post="./return.html"/>
+		</statistic>
+
+		<defaultBackground type="0" name="bg_1"/>
+
+		<pages>
+			<page name="check_status_page" index="1">
+				
+				<content type="2" name="Check">
+					<componentEvents>
+						<event name="success" page="start_page"/>
+						<event name="not_detected" page="search_page"/>
+						<event name="fail" page="fail_page"/>
+					</componentEvents>
+				</content>
+				
+				<content type="2" name="Version" pos="1080, 1000"/>	
+			</page>
+
+			<page name="start_page" index="2" >
+				<content type="2" name="DefaultBg"/>
+				<content type="1" name="exit" pos="490.4,884"/>
+				<content type="2" name="SelectService" pos="156,-20">
+					<componentEvents>
+						<event name="fail" page="fail_page"/>
+						<event name="search" page="search_page"/>
+						<event name="goto" page="goto_page"/>
+						<event name="openSubservices" page="subservice_page"/>
+					</componentEvents>
+				</content>		
+				<content type="2" name="Version" pos="1080, 1000"/>
+			</page>
+			<page name="subservice_page" index="5">
+				<content type="2" name="DefaultBg"/>
+				<content type="1" name="exit" pos="490.4,884"/>
+				
+				<content type="2" name="SelectSubService" pos="156,-20">
+					<componentEvents>
+						<event name="goto" page="goto_page"/>
+						<event name="back" page="start_page"/>
+						<event name="search" page="search_page"/>
+					</componentEvents>
+				</content>
+				<content type="2" name="Version" pos="1080, 1000"/>
+			</page>
+			<page name="search_page" index="3" >
+				<content type="2" name="DefaultBg"/>
+				<content type="1" name="exit" pos="490.4,884"/>
+				<content type="2" name="SearchKeyboard" pos="117.35,510.75"/>
+				
+				<content type="2" name="SearchRegion" pos="154,33">
+					<componentEvents>
+						<event name="openRegion" page="start_page"/>
+						<event name="back" page="start_page"/>
+					</componentEvents>
+				</content>	
+				
+				<content type="2" name="SearchResult" pos="100,240"/>
+				<content type="2" name="Version" pos="1080, 1000"/>
+				
+			</page>	
+			<page name="fail_page" index="4">
+				<content type="2" name="DefaultBgFail"/>
+				<content type="1" name="exit" pos="490.4,884"/>
+				<content type="2" name="Version" pos="1080, 1000"/>
+			</page>	
+			
+			<page name="goto_page" idleTime="1" index="5" stat="good">
+			</page>
+		</pages>
+	</config>
+</scripts>
+

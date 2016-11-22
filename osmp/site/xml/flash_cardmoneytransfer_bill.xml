@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<object id="bill" class="String">
+		<constructor-arg>
+			<value>
+<![CDATA[_receipt_------------------------------------\nВАШ_ПЛАТЕЖ=
+КИВИ Банк (АО)
+Лицензия №2241
+ИНН 3123011520
+117648, г. Москва, мкр. Чертаново Северное, д. 1А, корп. 1
+Вид операции: 011
+Сумма перевода: %amount%
+Комиссия за перевод: %commission%
+Перевод на карту %payment_system%: %card_number%{{bank && 
+Банк эмитент: %bank%}}{{issuer && &_receipt_ОТПРАВИТЕЛЬ=%issuer%
+%issuer_address%}}{{recipient && &_receipt_ПОЛУЧАТЕЛЬ=%recipient%
+%recipient_country%}}]]>
+			</value>
+		</constructor-arg>
+	</object>
+</objects>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SinApp</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<link rel="stylesheet" href="css/styles-classic.css" type="text/css"/>
+		<script src="../flash_app/js/storage.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div id="preloader" class="hidden">
+			<div class="preloader">
+				<div class="preloader-message-box">
+					<img class="preloader-logo"/>
+					<div class="preloader-header"></div>
+					<div class="preloader-message"></div>
+					<div class="preloader-animation">
+						<div class="dot dot1"></div>
+						<div class="dot dot2"></div>
+						<div class="dot dot3"></div>
+						<div class="dot dot4"></div>
+						<div class="dot dot5"></div>
+						<div class="dot dot6"></div>
+						<div class="dot dot7"></div>
+						<div class="dot dot8"></div>
+					</div>
+				</div>
+				<div id="ad-preloader" class="hidden"></div>
+			</div>
+		</div>
+		<div id="main">
+			<div id="logo-badge" class="hidden">
+				<div id="logo"></div>
+			</div>
+			<div id="version"></div>
+			<div id="navigation" class="hidden">
+				<div id="prev-button" class="regular-button"></div>
+				<div id="exit-button" class="regular-button" data-code="Exit"></div>
+				<div id="next-button" class="primary-button"></div>
+			</div>
+			<div id="side-info" class="hint-list moved default"></div>
+			<div id="header-block">
+				<div id="subtitle"></div>
+				<div id="header"></div>
+				<div id="comment"></div>
+			</div>
+			<div id="content-wrapper"></div>
+		</div>
+
+		<div id="popups">
+			<div id="default-popup" class="popup hidden">
+				<div class="popup-container">
+					<div class="title"></div>
+					<div class="message"></div>
+					<div class="popup-buttons-container">
+						<div id="default-popup-button-0" class="popup-button">
+							<div class="button-content"></div>
+						</div>
+						<div id="default-popup-button-1" class="popup-button">
+							<div class="button-content"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="exit-popup" class="popup hidden">
+				<div class="popup-container">
+					<div class="title"></div>
+					<div class="message"></div>
+					<div class="popup-buttons-container">
+						<div id="exit-popup-button-0" class="popup-button">
+							<div class="button-content"></div>
+						</div>
+						<div id="exit-popup-button-1" class="popup-button">
+							<div class="button-content"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="microsite.js" type="text/javascript"></script>
+		
+		<script charset="utf-8">
+			window.onerror = function (message, source, line, column, obj) {
+				var err = 'JS-error occured:\n' + message + '\nFile: ' + source + '\nLine: ' + line;
+				if (obj && obj.stack)
+					err += '\nStack: ' + obj.stack;
+				debugger;
+				if (cj && cj.maratl) {
+					cj.maratl.log(err);
+					cj.maratl.send(K.MARATL.NET.SEND_MAIL, JSON.stringify({
+						address: 'a.immoreev@qiwi.ru; e.bashtan@qiwi.ru',
+						subject: 'SSK App Error',
+						text: 'Terminal: ' + S.get(K.SESSION.TERMINAL.ID) + '\n' +
+						'Project & Version: ' + cj.APP.version + '\n' + err + '\n' +
+						'QD Id: ' + S.qd() + '\n'
+					}));
+					if (!cj.maratl.emulator) cj.APP.appView.changePage(K.NAV.EXIT);
+				}
+				else
+					console.log(err);
+			};
+			window.onunhandledrejection = function() {};
+
+			//for TEST_MODE
+			if (!window.terminal)
+				window.terminal = {};
+			window.terminal.OnResponse = function (sName, sVal) { cj.maratl.receive(sName, sVal); };
+
+			if (!window.loadAll)
+				window.loadAll = function() { return Promise.resolve(); };
+			loadAll().then(function() {
+				document.body.onmousedown = cj.bodyClick;
+				if (!storage.getAndRemove) storage.getAndRemove = function(key) {
+					var k = storage.get(key);
+					storage.remove(key);
+					return k;
+				};
+				var login, login0, balance, favourite;
+				login = storage.getAndRemove("login");
+				login0 = storage.getAndRemove("login0");
+				balance = storage.getAndRemove("balance");
+				favourite = storage.getAndRemove("favourite");
+				if (login && login0 && balance && favourite) {
+					try {
+						cj.EXTERNAL = {
+							session: JSON.parse(favourite),
+							login: login,
+							p: login0,
+							balance: balance,
+							phonePrvId: unescape(storage.getAndRemove("phone_prv_id")) || -1,
+							ident: storage.getAndRemove("ident"),
+							mode: storage.getAndRemove('mode')
+						};
+					} catch (e) {
+						cj.EXTERNAL = null;
+					}
+				}
+				cj.APP = new App();
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+	<connection>
+		<address>http://server.city24.ru/InXml.aspx</address>
+		<login>qiwi_login</login>
+		<password>qiwi_password</password>
+	</connection>
+	<transitions>
+		<paying>checking.html</paying>
+		<exit>wtf.html</exit>
+		<print>print.html</print>
+		<recepient>827</recepient>
+	</transitions>
+	<terminalData>
+		<terminal_service_url>trololo</terminal_service_url>
+		<operator_id>10877</operator_id>
+		<project_id>30051</project_id>
+		<service_password>12345</service_password>
+		<operator_name>City.Travel</operator_name>
+		<timeout>75</timeout>
+		<serverTimeout>90</serverTimeout>
+		<qiwi>
+			<proxy>http://service1.qiwi.com/proxy</proxy>
+			<host>http://server.city24.ru</host>
+			<uri>/InXml.aspx</uri>
+			<uri_rzd>/City24Booking</uri_rzd>
+		</qiwi>
+	</terminalData>
+</settings>

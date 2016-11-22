@@ -1,0 +1,9 @@
+﻿{
+  "validatorOffMax": 20,
+  "parent": "provider_info",
+  "use": [
+    "button",
+    "commissionParser"
+  ],
+  "timeout": 180
+}

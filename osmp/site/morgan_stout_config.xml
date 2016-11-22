@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<urls>
+	<url>https://w.qiwi.com/xml/xmlcp.jsp</url>
+	<url>https://w.qiwi.com/xml/xmlcp.jsp</url>
+	<url>https://w.qiwi.com/xml/xmlcp.jsp</url>
+</urls>
+<providers>
+	<provider>
+		<id>1894</id>
+		<qd_id>4494</qd_id>
+		<name>Morgan and Stout</name>
+		<stateName>enterContractStateMorgan</stateName>
+		<mask>\\d{11}</mask>
+		<maxLength>11</maxLength>
+		<comissionProf>
+			<commission>
+			<profiles id="1894">
+				<def>0</def>
+			</profiles>
+			</commission>
+		</comissionProf>
+	</provider>
+	<provider>
+		<id>20657</id>
+		<qd_id>5188</qd_id>
+		<name>РДК</name>
+		<stateName>enterContractStateRdk</stateName>
+		<mask>\\d{23}</mask>
+		<maxLength>23</maxLength>
+		<comissionProf>
+			<commission>
+			<profiles id="20657">
+				<def>0</def>
+			</profiles>
+			</commission>
+		</comissionProf>
+	</provider>
+	<provider>
+		<id>22352</id>
+		<qd_id>6378</qd_id>
+		<name>ЭОС</name>
+		<stateName>enterContractStateEos</stateName>
+		<mask>\\d+</mask>
+		<maxLength>10</maxLength>
+		<comissionProf>
+			<commission>
+			<profiles id="22352">
+				<def>0</def>
+			</profiles>
+			</commission>
+		</comissionProf>
+	</provider>
+	<provider>
+		<id>22545</id>
+		<qd_id>7479</qd_id>
+		<name>Кредит Коллекшен Груп</name>
+		<stateName>enterContractStateCCG</stateName>
+		<mask>\\d{7}</mask>
+		<maxLength>7</maxLength>
+		<comissionProf>
+			<commission>
+			<profiles id="22545">
+				<def>1</def>
+			</profiles>
+			</commission>
+		</comissionProf>
+	</provider>
+	<provider>
+		<id>22546</id>
+		<qd_id>7478</qd_id>
+		<name>ООО «Кредитэкспресс Финанс»</name>
+		<stateName>enterContractStateCE</stateName>
+		<mask>\\d+</mask>
+		<maxLength>10</maxLength>
+		<comissionProf>
+			<commission>
+			<profiles id="22546">
+				<def>2.5</def>
+			</profiles>
+			</commission>
+		</comissionProf>
+	</provider>
+	<provider>
+		<id>22909;22944</id>
+		<qd_id>8651</qd_id>
+		<name>Агентство по сбору долгов</name>
+		<stateName>enterContractStateASD</stateName>
+		<mask>\\d+</mask>
+		<maxLength>19</maxLength>
+		<comissionProf>
+		  <commission>
+			<profiles id="22909">
+				<def>2.5</def>
+			</profiles>
+		  </commission>
+		  <commission>	
+			<profiles id="22944">
+				<def>0</def>
+			</profiles>
+		  </commission>
+		</comissionProf>
+	</provider>
+	<provider>
+		<id>23143</id>
+		<qd_id>9327</qd_id>
+		<name>Нано-Финанс</name>
+		<stateName>enterContractStateNANO</stateName>
+		<mask>\\d+</mask>
+		<maxLength>9</maxLength>
+		<comissionProf>
+			<commission>
+			<profiles id="23143">
+				<def>0</def>
+			</profiles>
+			</commission>
+		</comissionProf>
+	</provider>
+	<provider>
+		<id>23144</id>
+		<qd_id>9564</qd_id>
+		<name>ДА-ЦКБ</name>
+		<stateName>enterContractStateCKB</stateName>
+		<mask>\\d+</mask>
+		<maxLength>8</maxLength>
+		<comissionProf>
+			<commission>
+			<profiles id="23144">
+				<def>0</def>
+			</profiles>
+			</commission>
+		</comissionProf>
+	</provider>
+</providers>

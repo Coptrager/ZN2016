@@ -1,0 +1,1 @@
+"use strict";System.register([],function(_export,_context){var UPDATE_PAGE;return{setters:[],execute:function(){function updatePageData(dispatch,data){dispatch({type:UPDATE_PAGE,data:data})}_export("UPDATE_PAGE",UPDATE_PAGE="UPDATE_PAGE"),_export("UPDATE_PAGE",UPDATE_PAGE),_export("updatePageData",updatePageData)}}});

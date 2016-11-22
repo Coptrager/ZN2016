@@ -1,0 +1,6 @@
+{
+  "name":"digitalKeyboard",
+  "parent": "visualControl",
+  "css":true,
+  "version":"0.1.0"
+}

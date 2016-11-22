@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects
+xmlns:util="http://www.springactionscript.org/schema/util">
+  <object 
+		id="flowCfg"
+		class="ru.mobw.coreas3.app.config.FlowConfig">
+	</object>
+
+  <object
+		id="flow"
+		class="ru.mobw.coreas3.app.flow.mcflow.MCFlowBase"
+		depends-on="flowCfg">
+    <constructor-arg ref="flowCfg">
+    </constructor-arg>
+    <property name="routeData" ref="route"/>
+    <property name="elementsMap">
+      <dictionary>
+		<entry><key>checkStatus</key><value><ref>checkStatus</ref></value></entry>
+		<entry><key>title</key><value><ref>title</ref></value></entry>
+		<entry><key>info</key><value><ref>info</ref></value></entry>
+		<entry><key>oferta</key><value><ref>oferta</ref></value></entry>
+		<entry><key>bankOferta</key><value><ref>bankOferta</ref></value></entry>
+		<entry><key>exit</key><value><ref>exit</ref></value></entry> 
+		<entry><key>paymentType</key><value><ref>paymentType</ref></value></entry>
+		<entry><key>uidInput</key><value><ref>uidInput</ref></value></entry>
+		<entry><key>inputPhone</key><value><ref>inputPhone</ref></value></entry>
+		<entry><key>pinNotExist</key><value><ref>pinNotExist</ref></value></entry>
+		<entry><key>inputPin</key><value><ref>inputPin</ref></value></entry>
+		<entry><key>balanceSumInput</key><value><ref>balanceSumInput</ref></value></entry>
+		<entry><key>residentSwitch</key><value><ref>residentSwitch</ref></value></entry>
+		<entry><key>confirmData</key><value><ref>confirmData</ref></value></entry>
+		<entry><key>balancePayment</key><value><ref>balancePayment</ref></value></entry>
+		<entry><key>end</key><value><ref>end</ref></value></entry>
+		<entry><key>fioConfirm</key><value><ref>fioConfirm</ref></value></entry>
+		<entry><key>sumInput</key><value><ref>sumInput</ref></value></entry>
+		<entry><key>cash</key><value><ref>cash</ref></value></entry>
+      </dictionary>
+    </property>
+  </object>
+	<object
+		id="checkStatus"
+		class="ru.qiwi.general.ui.base.page.BasePageWithOutUI"
+		>
+		<property name="id" value="1"/>
+		<constructor-arg value="checkStatus"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="ru.qiwi.bridge.view.AbstractView"/>
+		<property name="_controllerClass" value="controllers.CheckStatusController"/>
+		
+		<property name="registrationCandidates">
+			<array>
+				<value>controller.checkStatusService,success,S:checkStatus</value>
+				<value>controller.checkStatusService,prvDenied,E:prvDenied</value>
+				<value>controller.checkStatusService,printerFail,E:printerFail</value>
+				<value>controller.checkStatusService,techError,E:techError</value>
+			</array>
+		</property>
+	</object>
+	<object
+		id="title"
+		class="ru.qiwi.general.ui.base.page.BasePage"
+		>
+		<property name="id" value="2"/>
+		<constructor-arg value="title"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="views.TitleView"/>
+		<property name="_controllerClass" value="controllers.TitleController"/>
+		<property name="registrationCandidates"> 
+			<array>
+				<value>controller.getCourseService,responseEvent,S:courseSuccess</value>
+				<value>controller.getCourseService,fail,E:courseFail</value>
+				<value>controller.getCourseService,timeout,E:courseFail</value>
+			</array>
+		</property>
+	</object>
+	
+	<object
+		id="info"
+		class="ru.qiwi.general.ui.base.page.BasePage"
+		>
+		<property name="id" value="17"/>
+		<constructor-arg value="info"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="ru.qiwi.general.ui.base.view.BaseView"/>
+		<property name="_controllerClass" value="ru.qiwi.general.ui.base.controller.BaseController"/>
+	</object>
+	<object
+		id="oferta"
+		class="ru.qiwi.general.ui.base.page.OfertaPage"
+		>
+		<property name="id" value="3"/>
+		<constructor-arg value="oferta"/>
+		<constructor-arg ref="mainInstance"/>
+		<constructor-arg value="${config.ofertaPath}"/>
+		<property name="_viewClass" value="ru.qiwi.general.ui.base.view.OfertaView"/>
+		<property name="_controllerClass" value="ru.qiwi.general.ui.base.controller.OfertaController"/>
+	</object>
+	<object
+		id="bankOferta"
+		class="ru.qiwi.general.ui.base.page.OfertaPage"
+		>
+		<property name="id" value="18"/>
+		<constructor-arg value="oferta"/>
+		<constructor-arg ref="mainInstance"/>
+		<constructor-arg value="${config.bankOfertaPath}"/>
+		<property name="_viewClass" value="ru.qiwi.general.ui.base.view.OfertaView"/>
+		<property name="_controllerClass" value="ru.qiwi.general.ui.base.controller.OfertaController"/>
+	</object>
+	<object
+		id="paymentType"
+		class="ru.qiwi.general.ui.base.page.BasePage"
+		>
+		<property name="id" value="4"/>
+		<constructor-arg value="paymentType"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="views.PaymentTypeView"/>
+		<property name="_controllerClass" value="controllers.PaymentTypeController"/>
+		<property name="registrationCandidates"> 
+			<array>
+				<value>view.cashPayment,ACTION_CLICK,A:paymentFromCash</value>
+				<value>view.balancePayment,ACTION_CLICK,A:paymentFromBalance</value>
+			</array>
+		</property>		
+	</object>
+	<object
+		id="uidInput"
+		class="ru.qiwi.general.ui.base.page.BasePage"
+		>
+		<property name="id" value="5"/>
+		<constructor-arg value="uidInput"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="views.UIDInputView"/>
+		<property name="_controllerClass" value="controllers.UIDInputController"/>
+		<property name="registrationCandidates"> 
+			<array>
+				<value>controller.getInfoService,responseEvent,S:uidSuccess</value>
+				<value>controller.getInfoService,fail,E:uidFail</value>
+				<value>controller.getInfoService,timeout,E:uidFail</value>
+			</array>
+		</property>
+	</object>
+	
+	<object
+		id="fioConfirm"
+		class="ru.qiwi.general.ui.base.page.BasePage"
+		>
+		<property name="id" value="6"/>
+		<constructor-arg value="fioConfirm"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="views.FioConfirmView"/>
+		<property name="_controllerClass" value="controllers.FioConfirmController"/>
+	</object>
+	<object
+		id="inputPhone"
+		class="ru.qiwi.general.ui.base.page.BasePage"
+		>
+		<property name="id" value="7"/>
+		<constructor-arg value="inputPhone"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="views.InputPhoneView"/>
+		<property name="_controllerClass" value="controllers.InputPhoneController"/>
+		<property name="registrationCandidates">
+			<array>
+				<value>controller.authService,loginSuccess,S:loginSuccess</value>
+				<value>controller.authService,loginNotExist,E:loginNotExist</value>
+				<value>controller.authService,loginWithoutPin,E:loginWithoutPin</value>
+				<value>controller.authService,fail,E:loginFail</value>
+				<value>controller.authService,timeout,E:loginFail</value>
+			</array>
+		</property>
+	</object>
+	<object
+		id="pinNotExist"
+		class="ru.qiwi.general.ui.base.page.BasePage"
+		>
+		<property name="id" value="16"/>
+		<constructor-arg value="pinNotExist"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="views.PinNotExistAlertView"/>
+		<property name="_controllerClass" value="controllers.PinNotExistAlertController"/>
+		<property name="registrationCandidates"> 
+			<array>
+				<value>view.inputPhone,ACTION_CLICK,A:inputPhoneSelect</value>
+				<value>view.payCash,ACTION_CLICK,A:payCashSelect</value>
+			</array>
+		</property>	
+	</object>
+	<object
+		id="inputPin"
+		class="ru.qiwi.general.ui.base.page.BasePage"
+		>
+		<property name="id" value="8"/>
+		<constructor-arg value="inputPin"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="views.InputWalletPinView"/>
+		<property name="_controllerClass" value="controllers.InputWalletPinController"/>
+		<property name="registrationCandidates"> 
+			<array>
+				<value>controller.loginService,pinSuccess,S:pinSuccess</value>
+				<value>controller.loginService,fail,E:pinFail</value>
+				<value>controller.loginService,timeout,E:pinFail</value>
+			</array>
+		</property>
+	</object>
+	<object
+		id="balanceSumInput"
+		class="ru.qiwi.general.ui.base.page.BasePage"
+		>
+		<property name="id" value="9"/>
+		<constructor-arg value="sumInput"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="views.SumInputView"/>
+		<property name="_controllerClass" value="controllers.BalanceSumInputController"/>
+	</object>
+	<object
+		id="sumInput"
+		class="ru.qiwi.general.ui.base.page.BasePage"
+		>
+		<property name="id" value="10"/>
+		<constructor-arg value="sumInput"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="views.SumInputView"/>
+		<property name="_controllerClass" value="controllers.CashSumInputController"/>
+	</object>
+	<object
+		id="residentSwitch"
+		class="ru.qiwi.general.ui.base.page.BasePage"
+		>
+		<property name="id" value="11"/>
+		<constructor-arg value="residentSwitch"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="views.ResidentSwitchView"/>
+		<property name="_controllerClass" value="controllers.ResidentSwitchController"/>
+		<property name="registrationCandidates"> 
+			<array>
+				<value>view.resident,ACTION_CLICK,A:residentSelect</value>
+				<value>view.notResident,ACTION_CLICK,A:notResidentSelect</value>
+			</array>
+		</property>	
+	</object>
+	<object
+		id="confirmData"
+		class="ru.qiwi.general.ui.base.page.BasePage"
+		>
+		<property name="id" value="12"/>
+		<constructor-arg value="confirmData"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="views.ConfirmDataView"/>
+		<property name="_controllerClass" value="controllers.ConfirmDataController"/>
+		<property name="registrationCandidates"> 
+			<array>
+				<value>controller.paymentService,responseEvent,S:cashPaymentSuccess</value>
+				<value>controller.paymentService,fail,E:cashPaymentFail</value>
+				<value>controller.paymentService,timeout,E:cashPaymentFail</value>
+			</array>
+		</property>
+	</object>
+	<object
+		id="balancePayment"
+		class="ru.qiwi.general.ui.base.page.BasePage"
+		>
+		<property name="id" value="13"/>
+		<constructor-arg value="balancePayment"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="views.BalancePaymentView"/>
+		<property name="_controllerClass" value="controllers.BalancePaymentController"/>
+		<property name="registrationCandidates"> 
+			<array>
+				<value>controller.paymentService,balancePaymentSuccess,S:balancePaymentSuccess</value>
+				<value>controller.paymentService,fail,E:balancePaymentFail</value>
+				<value>controller.paymentService,timeout,E:balancePaymentFail</value>
+			</array>
+		</property>
+	</object>
+	<object
+		id="cash"
+		class="ru.qiwi.general.ui.base.page.BasePage"
+		>
+		<property name="id" value="14"/>
+		<constructor-arg value="cash"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="views.GlobalStreamCashView"/>
+		<property name="_controllerClass" value="controllers.GlobalStreamCashController"/>
+	</object>
+	<object
+		id="end"
+		class="ru.qiwi.general.ui.base.page.BasePage"
+		>
+		<property name="id" value="15"/>
+		<constructor-arg value="end"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="views.EndView"/>
+		<property name="_controllerClass" value="controllers.EndController"/>
+	</object>
+	<object
+		id="exit"
+		class="ru.qiwi.general.ui.base.page.ExitPage"
+		>
+		<constructor-arg value="exit"/>
+	</object>
+</objects>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+	<object id="route" class="ru.mobw.coreas3.app.flow.navigation.route.RouteData">
+		<property name="navData">
+			
+			<value>
+				<![CDATA[
+					
+					@default = (init, country, %countrySwitch, @base, exit);
+					
+					%countrySwitch = (
+						new => @new,
+						history => @history
+					);
+					
+					@new = (sender, recipient, sms, %smsSwitch, senderphone, %offertusSwitch, t:pin, @shadow);
+					@history = (senderphone, %offertusSwitch, t:pin, list, @shadow);
+					
+					
+					@shadow = (t:shadow, currency, @summ);
+					
+					%smsSwitch = (
+						sms => recipientphone
+					);
+					
+					%offertusSwitch = (
+						offertus => offertus
+					);
+					
+					%contractSwitch = (
+						contract => contract
+					);
+					
+					@summ = (summ, %contractSwitch);
+					
+					@base = (confirmation, method, %methodSwitch, final);
+					
+					%methodSwitch = (
+						cash => cash,
+						balance => @balance
+					);
+					
+					@balance = (balance, %balanceSwitch);
+					
+					%balanceSwitch = (
+						insufficient => cash
+					);
+					
+				]]>
+			</value>
+		</property>
+	</object>
+</objects>

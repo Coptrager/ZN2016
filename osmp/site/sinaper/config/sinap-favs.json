@@ -1,0 +1,121 @@
+{
+	"16776": {
+		"session": {
+			"sms-pay-id": "3",
+			"prv-id": "581",
+			"extras": {
+				"oper_type": "1",
+				"mfo": "044583209",
+				"account_type": "4"
+			},
+			"prv-name": "HandyBank",
+			"title": "Платеж Хэндибанк",
+			"id": "339437907",
+			"to-cur": "643",
+			"amount": "100.00",
+			"from-cur": "643",
+			"account": "7889933666-3336"
+		},
+		"login": "9262092185",
+		"p": "1397",
+		"balance": "21017.91",
+		"phonePrvId": "3",
+		"ident": "<response>  <result-code fatal='false'>0</result-code>  <exist>1</exist>  <pin>1</pin>  <indent>    <confirmed>true</confirmed>    <passport-number>45******35</passport-number>    <oms>****************</oms>    <first-name>*******</first-name>    <middle-name>******</middle-name>    <birth-date>12.12.1990</birth-date>    <verified>false</verified>    <fake-data>false</fake-data>    <last-name>фихшетек</last-name>  </indent></response>",
+		"mode": "bank_favorites"
+	},
+	"870": {
+		"session": {
+			"extras": {
+				"oper_type": "1",
+				"exp_date": "0615",
+				"account_type": "1"
+			},
+			"from-cur": "643",
+			"title": "Платеж ОАО 'АЛЬФА-БАНК'",
+			"id": "341456257",
+			"amount": "11.00",
+			"prv-id": "464",
+			"sms-pay-id": "46",
+			"to-cur": "643",
+			"account": "4154282501169593",
+			"prv-name": "Альфа-Банк"
+		},
+		"login": "9262092185",
+		"p": "1397",
+		"balance": "21017.91",
+		"phonePrvId": "3",
+		"ident": "<response>  <result-code fatal=\"false\">0</result-code>  <exist>1</exist>  <pin>1</pin>  <indent>    <confirmed>true</confirmed>    <passport-number>45******35</passport-number>    <verified>false</verified>    <first-name>*******</first-name>    <middle-name>******</middle-name>    <birth-date>12.12.1990</birth-date>    <oms>****************</oms>    <fake-data>false</fake-data>    <last-name>фихшетек</last-name>  </indent></response>",
+		"mode": "bank_favorites"
+	},
+	"466": {
+		"session": {
+			"id": "342578394",
+			"account": "18810777777777700945",
+			"amount": "500.00",
+			"extras": {
+				"from_name_f": "ттеест",
+				"kbk": "18811630020016000140",
+				"supid": "18810177140916200945",
+				"fns_paymenttype": "0",
+				"rec_mfo": "044583001",
+				"from_name": "ЛОЛ",
+				"rec_subdivision": "ЦАФАП ОДД ГИБДД ГУ МВД России по г. Москве",
+				"rec_name": "УФК по г.Москве (УГИБДД ГУ МВД России по г. Москве (ЦАФАП), л/сч № 04731440640)",
+				"exaction_kind": "ШТРАФ ПО АДМИНИСТРАТИВНОМУ ПРАВОНАРУШЕНИЮ ПОСТАНОВЛЕНИЕ №18810177140916200945",
+				"from_name_p": "тест",
+				"fns_taxdocnumber": "0",
+				"rec_okato": "45379000",
+				"post": "18810177140916200945",
+				"fns_purpose": "0",
+				"extra": "                          FK                      ",
+				"fns_taxperiod": "0",
+				"driving_license": "77 06 890295",
+				"rec_kpp": "770731005",
+				"fns_status": "00",
+				"altid": "2400000000007717196980643",
+				"rec_tax": "7707089101",
+				"account": "18810177140916200945",
+				"fns_taxdocdate": "0",
+				"rec_cre": "40101810800000010041",
+				"comment": "none",
+				"vehicle_registration_cert": "77 17 196980",
+				"summ": "50000"
+			}
+		},
+		"login": "9262092185",
+		"p": "1397",
+		"balance": "21017.91",
+		"phonePrvId": "3",
+		"ident": "<response>  <result-code fatal='false'>0</result-code>  <exist>1</exist>  <pin>1</pin>  <indent>    <confirmed>true</confirmed>    <passport-number>45******35</passport-number>    <oms>****************</oms>    <first-name>*******</first-name>    <middle-name>******</middle-name>    <birth-date>12.12.1990</birth-date>    <verified>false</verified>    <fake-data>false</fake-data>    <last-name>фихшетек</last-name>  </indent></response>",
+		"mode": "bank_favorites"
+	},
+	"4530": {
+		"session" : {
+			"from-cur" : "643",
+			"prv-id" : "870",
+			"sms-pay-id" : "7",
+			"title" : "Платеж Сбербанк России ОАО",
+			"id" : "343200723",
+			"to-cur" : "643",
+			"amount" : "9.00",
+			"account" : "4230181033825208693",
+			"prv-name" : "Сбербанк",
+			"extras" : {
+				"mfo" : "044525225",
+				"oper_type" : "1",
+				"urgent" : "0",
+				"lname" : "Тьл",
+				"mname" : "Тлдд",
+				"fname" : "Мпл",
+				"account_type" : "2",
+				"field_switch": "нет"
+			}
+		},
+		"login" : "9263592785",
+		"p" : "6969",
+		"balance" : "3273.65",
+		"phonePrvId" : "3",
+		"ident" : "<response>  <result-code fatal=\"false\">0</result-code>  <exist>1</exist>  <pin>1</pin></response>",
+		"mode" : "bank_favorites_list"
+	}
+}

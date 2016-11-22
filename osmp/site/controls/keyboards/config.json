@@ -1,0 +1,10 @@
+{
+  "name":"keyboards",
+  "css":true,
+  "use":[
+    "digitalKeyboard",
+    "searchKeyboard"
+  ],
+  "parent":"visualControl",
+  "version":"0.1.0"
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<!-- http://www.artlebedev.ru/tools/country-list/xml/ -->
+	<object id="countries" class="XML">
+		<constructor-arg>
+			<value>
+<![CDATA[
+	<countries>
+		<country name="Россия"			index="643"	smsRequired="false"	prefix="+7 "	length="10"	template="(###) ### ## ##"
+			currencies="RUB:0:24392"
+			cities="" banks=""
+		/>
+		<country name="Абхазия"			index="895"	smsRequired="false"	prefix="+794 "	length="10"	template="###-##-###"
+			currencies="RUB:0:24392"
+			cities="" banks=""
+		/>
+		<country name="Азербайджан"		index="031"	smsRequired="false"	prefix="+994 "	length="8"	template="########"
+			currencies="RUB:0:24392"
+			cities="" banks=""
+		/>
+		<country name="Беларусь"		index="112"	smsRequired="false"	prefix="+375 "	length="9"	template="## #######"
+			currencies="RUB:0:24392"
+			cities="" banks=""
+		/>
+		<country name="Грузия"			index="268"	smsRequired="false"	prefix="+995 "	length="10"	template="########"
+			currencies="RUB:0:24392"
+			cities="" banks=""
+		/>
+		<country name="Казахстан"		index="398"	smsRequired="false"	prefix="+7 7"	length="7"	template="#######"
+			currencies="RUB:0:24392"
+			cities="" banks=""
+		/>
+		<country name="Кыргызстан"		index="417"	smsRequired="false"	prefix="+996 "	length="9"	template="### ## ## ##"
+			currencies="RUB:0:24392"
+			cities="" banks=""
+		/>
+		<country name="Молдова"			index="498"	smsRequired="false"	prefix="+373 "	length="8"	template="####-##-##"
+			currencies="RUB:0:24392"
+			cities="" banks=""
+		/>
+		<country name="Приднестровье"	index="499"	smsRequired="false"	prefix="+373 "	length="8"	template="########"
+			currencies="RUB:0:24392"
+			cities="" banks=""
+		/>
+		<country name="Таджикистан"		index="762"	smsRequired="false"	prefix="+992 "	length="9"	template="## ### ####"
+			currencies="RUB:0:24392"
+			cities="" banks=""
+		/>
+		<country name="Украина"			index="804"	smsRequired="false"	prefix="+380 "	length="9"	template="## #######"
+			currencies="RUB:0:24392"
+			cities="" banks=""
+		/>
+	</countries>
+]]>
+			</value>
+		</constructor-arg>
+	</object>
+	
+</objects>

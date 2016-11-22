@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scripts>
+	<config totalTime="30000" defaultIdleTime="60" version="2.0" log="false">
+
+		<session>
+			<var key="settings.MGT_path_format" value="page:time32"/>
+			<var key="settings.MGT_date_format" value="yyyy-mm-dd hh:nn:ss"/>
+			<var key="settings.MGT_exit_last_page" value="true"/>
+			<var key="settings.exclude_zero_page" value="true"/>
+
+			<var key="check_status.PrvId" value="12098"/>
+			<var key="check_status.TermId" value="true"/>
+			<var key="settings.oferta_path" value="../oferta_ogv.xml"/>
+			<var key="settings.oferta_name" value="qiwi"/>
+			<var key="settings.project_name" value="MOSPARKING"/>
+			<var key="settings.project_version" value="1.0.23"/>
+			<var key="settings.vqw_id" value="7406"/>
+			 <var key="settings.logos_path" value="../img/ui_item/"/>
+            <var key="settings.config_js_path" value="../config/"/>
+			<var key="settings.service_mail" value="e.bashtan@qiwi.ru"/>
+			<var key="settings.qiwi_url">
+                <value>
+                    <![CDATA[https://w.qiwi.com/xml/xmlcp.jsp,https://service1.osmp.ru/wallet/xmlcp.jsp,https://service2.osmp.ru/wallet/xmlcp.jsp]]></value>
+            </var>
+			<var key="settings.max_summ" value="Максимальная сумма платежа с учетом комиссии: 15000 руб."/>
+			<var key="settings.max_summ_value" value="15000"/>
+			<var key="settings.qw_id" value="24580"/>
+			<var key="settings.qw_start_id" value="25237"/>	
+			<var key="settings.comm_src_id" value="4"/>	
+			
+		</session>
+
+		<statistic defaultProfile="bad">
+			<add>
+				<bad>
+					<var name="_extra_MGT_sum" value="payments.cash"/>
+					<var name="_extra_MGT_phone" value="user_info.phone"/>
+				</bad>
+				<good>
+					<includeProfile name="bad"/>
+				</good>
+			</add>
+			<object>
+				<variable name="prv_id" value="323"/>
+				<variable name="prv_name" value="Magitel"/>
+				<variable name="_extra_MGT_project_number" value="30058"/>
+				<variable name="_extra_no_print_check" value="true"/>
+				<variable name="_extra_fake_provider" value="true"/>
+				<variable name="_extra_result_int_page" value="./return.html"/>
+				<variable name="_extra_MGT_exit" value="./return.html"/>
+				<variable name="getAccountNumber" value="0000000000"/>
+			</object>
+			<bad
+				vars="_extra_MGT_project_number,_extra_MGT_exit,_extra_MGT_date,_extra_MGT_time,_extra_MGT_path, getAccountNumber"
+				post="./return.html"/>
+			<good
+				vars="_extra_MGT_project_number,_extra_MGT_exit,_extra_MGT_date,_extra_MGT_time,_extra_MGT_path, getAccountNumber"
+				post="./return.html"/>
+		</statistic>
+
+		<defaultBackground type="0" name="bg_base"/>
+
+		<pages>
+
+
+			<page name="checkStatusPage" index="0">
+				<content type="2" name="checkStatus.CheckStatus">
+					<componentEvents>
+						<event name="success" page="selectPaymentType"/>
+						<event name="fail" page="failPage"/>
+					</componentEvents>
+				</content>
+			</page>
+			<page name="selectPaymentType" index="1" >
+				<content type="1" name="exit" pos="490,883"/>
+				<content type="2" name="Icon.IconWrapper" pos="1106,33"/>
+				<content type="2" name="SelectPaymentType.SelectPaymentType" pos="0,8" >
+					<componentEvents>
+						<event name="lk" page="phoneLkPage"/>
+						<event name="start" page="phoneStartPage"/>
+						<event name="onlineCommissFail" page="onlineCommissPage"/>
+					</componentEvents>
+				</content>
+			</page>
+			<page name="phoneStartPage" index="3">
+				
+				<content type="1" name="back" pos="21,883" page="selectPaymentType"/>
+				<content type="2" name="Icon.IconWrapper" pos="1106,33"/>
+				<content type="2" name="InputPhone.InputPhonePage" symbolName="inputPhone" pos="0,8">
+					<componentEvents>
+						<event name="phone_submitted" page="vehicleNumber"/>
+					</componentEvents>
+				</content>
+			</page>
+			<page name="phoneLkPage" index="2">
+				
+				<content type="1" name="back" pos="21,883" page="selectPaymentType"/>
+				<content type="2" name="Icon.IconWrapper" pos="1106,33"/>
+				<content type="2" name="InputPhone.InputPhonePage" symbolName="inputPhone" pos="0,8">
+					<componentEvents>
+						<event name="phone_submitted" page="confirmLkPage"/>
+					</componentEvents>
+				</content>
+			</page>
+			<page name="vehicleNumber" index="4">
+				
+				<content type="1" name="back" pos="21,883" page="phoneStartPage"/>
+				<content type="2" name="Icon.IconWrapper" pos="1106,33"/>
+				<content type="2" name="VehicleNumber.VehicleNumber" pos="0,8">
+					<componentEvents>
+						<event name="data_submitted" page="area"/>
+					</componentEvents>
+				</content>
+			</page>
+			<page name="area" index="5">
+				<content type="1" name="exit" pos="490,883"/>
+				<content type="2" name="Icon.IconWrapper" pos="1106,33"/>
+				<content type="1" name="back" pos="21,883" page="vehicleNumber"/>
+				<content type="2" name="Area.Area" pos="0,8">
+					<componentEvents>
+						<event name="data_submitted" page="time"/>
+					</componentEvents>
+				</content>
+			</page>
+			<page name="time" index="6">
+				
+				<content type="1" name="back" pos="21,883" page="area"/>
+				<content type="2" name="Icon.IconWrapper" pos="1106,33"/>
+				<content type="2" name="Time.TimePage" pos="0,8">
+					<componentEvents>
+						<event name="data_submitted" page="select_change_page"/>
+					</componentEvents>
+				</content>
+			</page>
+			<page name="onlinePage" index="7">
+				
+				<content type="0" name="bg_9"/>
+				<content type="2" name="Icon.IconWrapper" pos="1106,33"/>
+				<content type="2" name="GetSumm.GetSumm">
+				 <componentEvents>
+						<event name="fail" page="OnlineFailPage"/>
+						<event name="error" page="errorPage"/>
+					</componentEvents>
+					<param name="minTime" value="2000"/>
+					<param name="maxTime" value="120000"/>
+					<param name="maxFails" value="3"/>
+				</content>
+			 </page>
+			<page name="errorPage" index="20" >
+				<content type="2" name="Icon.IconWrapper" pos="1106,33"/>
+				<content type="2" name="Page" symbolName="ModalAlert" pos="0,0" >
+					<param name="custom_label_0" instance="_descriptionTf" key="alertText"/>
+					<param name="custom_label_1" instance="_titleTf" value="Ошибка"/>
+				</content>
+				<content type="1" name="OkButton" pos="469.7,478.8" page="select_change_page" />
+			</page>	
+			<page name="OnlineFailPage" idleTime="30" index="8">
+				<content type="2" name="Icon.IconWrapper" pos="1106,33"/>
+				<content type="0" name="bg_13"/>
+				<content type="1" name="retry" page="onlinePage" pos="420,500"/>
+				<content type="1" name="exit" pos="490.4,880"/>
+			</page>
+			<page name="lastFailPage" idleTime="10" index="9">
+				<content type="2" name="Icon.IconWrapper" pos="1106,33"/>
+				<content type="0" name="bg_14"/>
+				<content type="1" name="exit" pos="490.4,880"/>
+			</page>
+			
+			<page name="select_change_page" index="10">
+				<content type="1" name="back" pos="21,883" page="time" />
+				<content type="2" name="Icon.IconWrapper" pos="1106,33"/>
+				<content type="2" name="SelectChange.SelectChange" pos="0.95,60">
+					<componentEvents>
+						<event name="next" page="onlinePage"/>
+					</componentEvents>
+				</content>
+			</page>	
+			<page name="confirmStartPage" index="11">
+				<content type="1" name="back" pos="21,883" page="select_change_page"/>
+				<content type="1" name="exit" pos="490,883"/>
+				<content type="1" name="ofertabtnnew" pos="844,775" page="ofertaPageStart"/>
+				<content type="2" name="Icon.IconWrapper" pos="1106,33"/>
+				
+				<content type="2" name="Confirm.Confirm" pos="638.6,318">
+					<componentEvents>
+						<event name="next" page="cashChangePage"/>
+					</componentEvents>
+				</content>
+			</page>
+			<page name="confirmLkPage" index="12">
+				<content type="1" name="back" pos="21,883" page="phoneLkPage"/>
+				<content type="1" name="exit" pos="490,883"/>
+				<content type="1" name="next" pos="958,883" page="cashSimplePage"/>
+				<content type="1" name="ofertabtnnew" pos="844,775" page="ofertaPageLk"/>
+				<content type="2" name="Page" symbolName="confirmPage">
+					<param name="custom_label_0" instance="phoneLabel" key="user_info.phone_formatted"/>
+				</content>
+				<content type="2" name="Icon.IconWrapper" pos="1106,33"/>
+				
+			</page>
+			<page name="ofertaPageLk" index="13">
+				<content type="2" name="Icon.IconWrapper" pos="1106,33"/>
+               <content type="2" name="Oferta.OfertaPage" pos="100,0"/>
+               <content type="1" name="back" pos="20,883" page="confirmLkPage"/>
+			</page>
+			<page name="ofertaPageStart" index="14">
+				<content type="2" name="Icon.IconWrapper" pos="1106,33"/>
+               <content type="2" name="Oferta.OfertaPage" pos="100,0"/>
+               <content type="1" name="back" pos="20,883" page="confirmStartPage"/>
+			</page>
+			<page name="cashChangePage" idleTime="300" index="15" stat="good">
+				
+				<content type="2" name="CashWithChange.ContentCashWithChange">
+					<componentEvents>
+						<event name="pay_success" page="okPage"/>
+						<event name="pay_zero" page="zeroPage"/>
+						<event name="pay_fail" page="cashFailPage"/>
+						<event name="prevButtonClick" page="confirmStartPage"/>
+						<event name="acc_denied" page="accountDeniedPage"/>
+						<event name="leave"/>
+					</componentEvents>
+
+					<param name="PrvName" value="Visa QIWI Wallet"/>
+					<param name="MinCashLimit" value="1"/>
+					
+				</content>
+				<content type="2" name="Icon.IconWrapper" pos="1106,33"/>
+			</page>
+
+			<!--...-->
+			<page name="cashSimplePage" idleTime="30000" index="16" stat="good">
+				<content type="2" name="Icon.IconWrapper" pos="1106,33"/>
+				<content type="2" name="SimpleCash.CustomContentCash">
+					<componentEvents>
+						<event name="pay_success" page="okPage"/>
+						<event name="pay_zero" page="zeroPage"/>
+						<event name="pay_fail" page="cashFailPage"/>
+						<event name="prevButtonClick" page="confirmPage"/>
+						<event name="acc_denied" page="accountDeniedPage"/>
+						
+						<event name="leave"/>
+					</componentEvents>
+
+					<param name="PrvName" value="Visa QIWI Wallet"/>
+					<param name="MinCashLimit" value="1"/>
+				</content>
+			</page>
+
+			<page name="okPage" idleTime="30" index="17" stat="good">
+				<content type="2" name="Icon.IconWrapper" pos="1106,33"/>
+				<content type="0" name="bg_6"/>
+				<content type="1" name="exit" pos="490,883"/>
+				<content type="2" name="Page" symbolName="FiscalResultPage">
+					<param name="custom_mc_0" instance="failLabel" key="payments.fiscal_result"/>
+				</content>
+			</page>
+
+			<page name="failPage" idleTime="18" index="6">
+				<content type="2" name="Icon.IconWrapper" pos="1106,33"/>
+				<content type="0" name="bg_8"/>
+				<content type="1" name="exit" pos="490,883"/>
+			</page>
+			
+			<page name="zeroPage" idleTime="10" index="20">
+				<content type="2" name="Icon.IconWrapper" pos="1106,33"/>
+				<content type="0" name="bg_zero"/>
+				<content type="1" name="exit" pos="490,883"/>
+			</page>
+
+			<page name="cashFailPage" idleTime="19" index="7" stat="good">
+				<content type="2" name="Icon.IconWrapper" pos="1106,33"/>
+				<content type="0" name="bg_7"/>
+				<content type="1" name="exit" pos="490,883"/>
+				<content type="2" name="Page" symbolName="FiscalResultPage">
+					<param name="custom_mc_0" instance="failLabel" key="payments.fiscal_result"/>
+				</content>
+			</page>
+			
+			<page name="onlineCommissPage" idleTime="10" index="20">
+				<content type="2" name="Icon.IconWrapper" pos="1106,33"/>
+				<content type="0" name="bg_13"/>
+				<content type="1" name="exit" pos="490.4,880"/>
+			</page>
+			<page name="accountDeniedPage" idleTime="10" index="21">
+				<content type="2" name="Icon.IconWrapper" pos="1106,33"/>
+				<content type="0" name="bg_15"/>
+				<content type="1" name="exit" pos="490.4,880"/>
+			</page>
+		</pages>
+	</config>
+</scripts>
+

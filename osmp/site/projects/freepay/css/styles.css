@@ -1,0 +1,354 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+@font-face {
+  font-family: 'WhitneyBold';
+  src: url("../fonts/Whitney-Bold.woff");
+  font-weight: bold; }
+@font-face {
+  font-family: 'WhitneyLight';
+  src: url("../fonts/Whitney-Light.woff");
+  font-weight: lighter; }
+@font-face {
+  font-family: 'WhitneyMedium';
+  src: url("../fonts/Whitney-Medium.woff");
+  font-weight: normal; }
+@font-face {
+  font-family: 'WhitneySemibold';
+  src: url("../fonts/Whitney-Semibold.woff");
+  font-weight: 600; }
+@font-face {
+  font-family: 'WhitneyBook';
+  src: url("../fonts/Whitney-Book.woff");
+  font-weight: 100; }
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+strong,
+sub,
+sup,
+b,
+u,
+i,
+ul,
+li,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  -moz-user-select: -moz-none;
+  user-select: none; }
+
+body,
+input {
+  color: #111;
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: normal; }
+
+body {
+  cursor: pointer;
+  background: #e9e8e6;
+  width: 1280px;
+  height: 1024px;
+  overflow: hidden;
+  position: absolute; }
+
+html {
+  background: #000; }
+
+strong {
+  font-weight: 600; }
+
+sup {
+  font-size: 80%;
+  vertical-align: super; }
+
+.sum-and-commission-info {
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: horizontal;
+  background: #fdb414;
+  width: 1280px;
+  height: 50px;
+  margin-bottom: 10px; }
+  .sum-and-commission-info > * {
+    margin-right: 20px; }
+
+.sum-and-commission-info-item {
+  display: inherit;
+  margin: 15px;
+  font-size: 40px; }
+  .sum-and-commission-info-item .label {
+    font-family: "WhitneySemibold", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    margin-right: 10px; }
+
+.list-container {
+  width: 1280px;
+  padding: 20px 0px 20px 0;
+  background: -moz-linear-gradient(top, #0e4394 0%, #0080c6 100%);
+  background: linear-gradient(to bottom, #0e4394 0%, #0080c6 100%); }
+  .list-container .scroll-container {
+    margin: 0 210px;
+    width: 860px;
+    overflow: hidden; }
+    .list-container .scroll-container .scrollable {
+      width: 50000px;
+      top: 0;
+      margin-left: 0;
+      height: 100%;
+      -moz-transition: margin-left 1s ease-in-out;
+      transition: margin-left 1s ease-in-out; }
+      .list-container .scroll-container .scrollable .page {
+        width: 820px;
+        margin: 10px 20px;
+        display: -moz-box;
+        -moz-box-align: center;
+        -moz-box-pack: center;
+        -moz-box-orient: vertical;
+        -moz-box-pack: start; }
+        .list-container .scroll-container .scrollable .page .line {
+          margin: 15px 0; }
+          .list-container .scroll-container .scrollable .page .line .radio-button {
+            width: 380px;
+            height: 120px;
+            padding: 10px 20px;
+            display: -moz-box;
+            -moz-box-align: center;
+            -moz-box-pack: center;
+            -moz-box-orient: vertical;
+            overflow: hidden;
+            -moz-box-shadow: 0 6px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 0 6px 0 rgba(0, 0, 0, 0.3);
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            background: #fff;
+            -moz-border-radius: 10px;
+            border-radius: 10px; }
+            .list-container .scroll-container .scrollable .page .line .radio-button:first-child {
+              margin-right: 20px; }
+            .list-container .scroll-container .scrollable .page .line .radio-button .button-content {
+              line-height: normal;
+              display: -moz-box;
+              -moz-box-align: center;
+              -moz-box-pack: center;
+              -moz-box-orient: vertical;
+              -moz-box-pack: start;
+              -moz-box-align: start; }
+
+.confirmation-payment {
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal; }
+  .confirmation-payment .confirmation-payment__container {
+    width: 1280px;
+    background: #fdb414;
+    display: -moz-box;
+    -moz-box-align: center;
+    -moz-box-pack: center;
+    -moz-box-orient: vertical;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    .confirmation-payment .confirmation-payment__container > * {
+      margin-top: 10px; }
+  .confirmation-payment .confirmation-payment-item {
+    width: 1280px; }
+    .confirmation-payment .confirmation-payment-item .title {
+      margin-right: 40px;
+      font-size: 28px;
+      font-family: "WhitneySemibold", Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      display: inline-block;
+      text-align: right;
+      width: 35%;
+      position: absolute; }
+    .confirmation-payment .confirmation-payment-item .text {
+      font-size: 28px;
+      display: inline-block;
+      text-align: left;
+      left: 35%;
+      margin-left: 30px;
+      position: relative;
+      max-width: 756px;
+      max-height: 140px;
+      overflow: hidden;
+      white-space: pre-wrap; }
+      .confirmation-payment .confirmation-payment-item .text.short {
+        overflow: visible; }
+
+.input-sum-page {
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  height: 864px;
+  width: 1280px; }
+  .input-sum-page .info {
+    position: absolute;
+    bottom: 200px; }
+  .input-sum-page .textfield {
+    margin: 10px; }
+  .input-sum-page .page-header .title-content .title {
+    font-size: 48px;
+    margin-bottom: 15px; }
+
+.full-name-page {
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  height: 864px;
+  -moz-box-pack: start;
+  margin-top: 100px;
+  width: 100%; }
+  .full-name-page .fieldBlock {
+    margin: 45px 0 0 0;
+    text-align: center; }
+  .full-name-page .erase-button .button-content {
+    font-size: 48px;
+    font-family: "WhitneySemibold", Helvetica, Arial, sans-serif;
+    font-weight: 600; }
+
+.document-type-page {
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  height: 864px;
+  width: 1280px; }
+  .document-type-page .list-container {
+    margin-top: 20px; }
+    .document-type-page .list-container .scroll-container .scrollable .page .line .radio-button {
+      height: 150px;
+      padding: 0px; }
+      .document-type-page .list-container .scroll-container .scrollable .page .line .radio-button .button-content {
+        -moz-box-pack: center;
+        -moz-box-align: center;
+        height: 150px;
+        font-size: 32px;
+        text-align: center; }
+
+.document-number-page {
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  height: 864px;
+  width: 1280px; }
+
+.purpose-page {
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  height: 864px;
+  width: 1280px; }
+  .purpose-page .textfield .field {
+    position: relative;
+    height: 180px;
+    white-space: pre-wrap;
+    width: 1000px; }
+  .purpose-page .textfield .text-container > :first-child {
+    overflow: visible;
+    min-width: 800px;
+    text-align: left;
+    float: left;
+    height: auto;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    padding: 12px;
+    font-size: 45px; }
+
+.confirmation-page {
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  height: 900px;
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  width: 1280px; }
+  .confirmation-page > * {
+    padding-bottom: 10px; }
+  .confirmation-page .offertus {
+    position: relative;
+    font-size: 20px;
+    width: 1280px;
+    margin-top: 10px;
+    color: #000;
+    display: -moz-box;
+    -moz-box-align: center;
+    -moz-box-pack: center;
+    -moz-box-orient: horizontal; }

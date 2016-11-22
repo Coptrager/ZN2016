@@ -1,0 +1,41 @@
+﻿.groupButton {
+    position:relative;
+    width:240px;
+    height:120px;
+    padding-left:140px;
+    background:linear-gradient(to bottom,  #0097d7 0%,#0097d7 32%,#008bce 100%);
+    border-radius:10px;
+    transition:all 100ms;
+}
+    .groupButton div {
+        top:10px;
+        left:20px;
+        width:100px;
+        height:100px;
+        background-position:center;
+        background-repeat:no-repeat;
+    }
+    .groupButton p {
+        width:220px;
+        max-width:220px;
+        height:120px;
+        display:table-cell;
+        vertical-align:middle;
+        font-family:Whitney;
+        font-size:30px;
+        color:#ffffff;
+        text-overflow: ellipsis;
+    }
+.groupButton-type2 {
+    background:linear-gradient(to bottom,  #0089cd 0%,#007ac2 100%);
+}
+.groupButton-type3 {
+    background:linear-gradient(to bottom,  #0078c0 0%,#006bb6 100%);
+}
+.groupButton-type4 {
+    background:linear-gradient(to bottom,  #0067b2 0%,#005ea9 29%,#004896 71%,#0b4493 78%,#0b4493 100%);
+}
+.groupButton:active {
+    margin-top:3px;
+    background:linear-gradient(to bottom,  #2458aa 0%,#2458aa 100%);
+}

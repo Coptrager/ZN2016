@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects
+xmlns:util="http://www.springactionscript.org/schema/util">
+  <object 
+		id="flowCfg"
+		class="ru.mobw.coreas3.app.config.FlowConfig">
+	</object>
+
+  <object
+		id="flow"
+		class="ru.mobw.coreas3.app.flow.mcflow.MCFlowBase"
+		depends-on="flowCfg">
+    <constructor-arg ref="flowCfg">
+    </constructor-arg>
+    <property name="routeData" ref="route"/>
+    <property name="elementsMap">
+      <dictionary>
+        <entry>
+          <key>title</key>
+          <value>
+            <ref>title</ref>
+          </value>
+        </entry>
+		<entry>
+			<key>publicOferta</key>
+			<value>
+				<ref>publicOferta</ref>
+			</value>
+		</entry>
+		<entry>
+			<key>instruction</key>
+			<value>
+				<ref>instruction</ref>
+			</value>
+		</entry>
+		<entry>
+			<key>number</key>
+			<value>
+				<ref>number</ref>
+			</value>
+		</entry>
+		<entry>
+			<key>payInfo</key>
+			<value>
+				<ref>payInfo</ref>
+			</value>
+		</entry>
+		<entry>
+			<key>fioInput</key>
+			<value>
+				<ref>fioInput</ref>
+			</value>
+		</entry>
+		<entry>
+			<key>fioConfirm</key>
+			<value>
+				<ref>fioConfirm</ref>
+			</value>
+		</entry>
+		<entry>
+			<key>paymentDetails</key>
+			<value>
+				<ref>paymentDetails</ref>
+			</value>
+		</entry>
+		<entry>
+			<key>walletLogin</key>
+			<value>
+				<ref>walletLogin</ref>
+			</value>
+		</entry>
+		<entry>
+			<key>paymentTypeSelect</key>
+			<value>
+				<ref>paymentTypeSelect</ref>
+			</value>
+		</entry>
+		<entry>
+			<key>walletPin</key>
+			<value>
+				<ref>walletPin</ref>
+			</value>
+		</entry>
+		<entry>
+			<key>customSumBalancePayment</key>
+			<value>
+				<ref>customSumBalancePayment</ref>
+			</value>
+		</entry>
+		<entry>
+			<key>cashPayment</key>
+			<value>
+				<ref>cashPayment</ref>
+			</value>
+		</entry>
+		<entry>
+			<key>cashPaymentOk</key>
+			<value>
+				<ref>cashPaymentOk</ref>
+			</value>
+		</entry>
+		<entry>
+			<key>changeSelection</key>
+			<value>
+				<ref>changeSelection</ref>
+			</value>
+		</entry>
+	
+		
+        <entry>
+          <key>exit</key>
+          <value>
+            <ref>exit</ref>
+          </value>
+        </entry>    
+      </dictionary>
+    </property>
+  </object>
+
+  
+	 <object
+		id="title"
+		class="flow.elements.TitleOnlineCommissElement"
+		>
+		<constructor-arg value="title"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="timeout" value="120000"/>
+		<property name="id" value="1"/>
+	</object>
+	<object
+		id="publicOferta"
+		class="flow.elements.OfertaElement"
+		>
+		<constructor-arg value="publicOferta"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="ofertaName" value="qiwi"/>
+		<property name="timeout" value="180000"/>
+		<property name="id" value="2"/>
+	</object>
+	<object
+		id="instruction"
+		class="ru.mobw.coreas3.app.flow.mcflow.CommonFlowElement"
+		>
+		<constructor-arg value="instruction"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="timeout" value="120000"/>
+		<property name="id" value="3"/>
+	</object>
+	<object
+		id="number"
+		class="flow.elements.rosreestr.NumberElement"
+		>
+		<constructor-arg value="number"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="timeout" value="180000"/>
+		<property name="id" value="4"/>
+		<property name="registrationCandidates"> 
+			<array>
+				<value>service,serviceResponse,S:paymentInfoRosreestr</value>
+				<value>service,serviceError,E:paymentInfoRosreestrError</value>
+				<value>service,serviceTimeout,E:paymentInfoRosreestrError</value>
+				<value>service,alert,E:paymentInfoRosreestrError</value>
+			</array>
+		</property>
+	</object>
+	<object
+		id="payInfo"
+		class="flow.elements.rosreestr.PayInfoElement"
+		>
+		<constructor-arg value="payInfo"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="timeout" value="180000"/>
+		<property name="id" value="5"/>
+	</object>
+	<object
+		id="fioConfirm"
+		class="flow.elements.rosreestr.PersonalDataValidationElement"
+		>
+		<constructor-arg value="fioConfirm"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="timeout" value="180000"/>
+		<property name="id" value="6"/>
+	</object>
+	<object
+		id="paymentDetails"
+		class="flow.elements.rosreestr.PaymentsViewElement"
+		>
+		<constructor-arg value="paymentDetails"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="timeout" value="180000"/>
+		<property name="id" value="7"/>
+	</object>
+	
+	
+	<object
+		id="fioInput"
+		class="flow.elements.NameInputElement"
+		>
+		<constructor-arg value="fioInput"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="timeout" value="180000"/>
+		<property name="id" value="8"/>
+	</object>
+	<object
+		id="walletLogin"
+		class="flow.elements.PhoneNumberEnterElement"
+		>
+		<constructor-arg value="walletLogin"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="timeout" value="180000"/>
+		<property name="id" value="9"/>
+		<property name="registrationCandidates">
+			<array>
+				<value>authService,result,S:loginSuccess</value>
+				<value>authService,fail,E:loginFail</value>
+				<value>authService,timeout,E:loginFail</value>
+			</array>
+		</property>
+	</object>
+	<object
+		id="paymentTypeSelect"
+		class="flow.elements.PaymentTypeSelectionElement"
+		>
+		<constructor-arg value="paymentTypeSelect"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="timeout" value="180000"/>
+		<property name="id" value="10"/>
+		<property name="registrationCandidates"> 
+			<array>
+				<value>selectCash,ACTION_CLICK,A:paymentFromCash</value>
+				<value>selectQW,ACTION_CLICK,A:paymentFromQW</value>
+			</array>
+		</property>	
+	</object>
+	
+	<object
+		id="walletPin"
+		class="flow.elements.WalletPinInput"
+		>
+		<constructor-arg value="walletPin"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="timeout" value="180000"/>
+		<property name="id" value="11"/>
+		<property name="registrationCandidates"> 
+			<array>
+				<value>service,responseEvent,S:pinSuccess</value>
+				<value>service,requestFailureEvent,E:pinFail</value>
+				<value>service,requestPendingErrorEvent,E:pinFail</value>
+				<value>service,requestTimeoutEvent,E:pinFail</value>
+				<value>service,alert,E:pinFail</value>
+			</array>
+		</property>
+	</object>
+	<object
+		id="customSumBalancePayment"
+		class="flow.elements.BalancePaymentElement"
+		>
+		<constructor-arg value="customSumBalancePayment"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_service">
+			<object class="service.rossreestr.RosreestrPaymentService">
+			</object>
+		</property>
+		<property name="timeout" value="180000"/>
+		<property name="id" value="12"/>
+		<property name="registrationCandidates"> 
+			<array>
+				<value>serviceDispatcher,successPayment,S:balancePaymentSuccess</value>
+				<value>serviceDispatcher,failPayment,E:balancePaymentFail</value>
+			</array>
+		</property>
+	</object>
+	
+	<object
+		id="changeSelection"
+		class="flow.elements.ChangeSellectionElement"
+		>
+		<constructor-arg value="changeSelection"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="timeout" value="120000"/>
+		<property name="id" value="13"/>
+		<property name="registrationCandidates"> 
+			<array>
+				<value>changeToMobile,ACTION_CLICK,A:changeToMobile</value>
+				<value>changeToWallet,ACTION_CLICK,A:changeToQW</value>
+			</array>
+		</property>	
+	</object>
+	<object
+		id="cashPayment"
+		class="flow.elements.BaseCashPaymentElement"
+		>
+		<constructor-arg value="cashPayment"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_service">
+			<object class="service.rossreestr.RosreestrPaymentService"/>
+		</property>
+		<property name="timeout" value="240000"/>
+		<property name="id" value="14"/>
+	</object>
+	<object
+		id="cashPaymentOk"
+		class="flow.elements.EndPaymentElement"
+		>
+		<constructor-arg value="cashPaymentOk"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="timeout" value="60000"/>
+		<property name="id" value="15"/>
+	</object>
+	<object
+		id="exit"
+		class="flow.elements.MyExitElement"
+		>
+		<constructor-arg value="exit"/>
+	</object>
+	
+	<object 
+		id="phoneValidator"
+		class="com.leetwin.flow.validation.Validator">
+		<property name="constraintsMap">
+			<dictionary>
+				<entry>
+					<key>value</key>
+					<value>
+						<array>
+							<object class="com.leetwin.flow.validation.constraints.NotNull"/>
+							<object class="com.leetwin.flow.validation.constraints.InRange">
+								<property name="min" value="10"/>
+								<property name="max" value="10"/>
+							</object>
+							
+						</array>
+					</value>
+				</entry>
+			</dictionary>
+		</property>
+	</object>
+	
+	<object id="phoneFormatter" class="ru.mobw.coreas3.formatters.PhoneFormatter" />
+</objects>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+	<object 
+		id="route" 
+		class="ru.mobw.coreas3.app.flow.navigation.route.RouteData"
+		>
+		<property name="navData">
+			<value>
+				<![CDATA[
+				
+					@default = (title, %switch, decisionNumber, %decisionSelect);
+
+					@shortDecision = (decisionDate, decisionServiceFail>>@failDecision, @afterRequest);
+					
+					@serviceFail = (@failDecision, @afterRequest);
+								
+					@afterRequest = (fioInput, addressInput, inputSummSelect>>@summ, walletLogin, paymentTypeSelect, %typeSelect, 
+								paymentCash, cashPayment, %cashSelect, exit);			
+					
+					%decisionSelect= (
+						shortDecision => @shortDecision,
+						serviceOk => @afterRequest,
+						serviceFail => @serviceFail
+					);
+					
+					%switch = (
+									oferta=>publicOferta,
+									info=>instruction
+					);
+					
+					%typeSelect = (
+						balance => @balanceBranch, 
+						cash => changeSelection
+					);
+					
+					%cashSelect= (
+						success => cashPaymentOk, 
+						fail => exit
+					);
+					
+					@failDecision = (okatoInput, innList);
+					
+					@summ = (sumInput);
+					
+					@balanceBranch = (t:walletPin, customSumBalancePayment, cashPaymentOk, exit);
+				]]>
+			</value>
+		</property>
+	</object>
+</objects>
+

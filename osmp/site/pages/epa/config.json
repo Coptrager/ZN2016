@@ -1,0 +1,5 @@
+﻿{
+  "parent":"provider_info",
+  "use":["input", "digitalKeyboard", "cellularInput", "searchKeyboard", "payHistory"],
+  "timeout":180
+}

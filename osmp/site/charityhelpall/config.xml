@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scripts>
+	<config totalTime="1200" defaultIdleTime="120" version="2.0" log="false">
+
+		<session>
+			<var key="settings.MGT_path_format" value="page:time"/>
+			<var key="settings.MGT_date_format" value="yyyy-mm-dd hh:nn:ss"/>
+			<var key="settings.MGT_exit_last_page" value="true"/>
+			<var key="settings.exclude_zero_page" value="true"/>
+
+			<var key="settings.project_version" value="1.0.1"/>
+			<var key='settings.project_number' value='3880'/>
+			<var key='settings.project_name' value='Charity'/>
+			<var key='settings.payments.MinCashLimit' value='1'/>
+			<var key="settings.phonesPath" value="../" />
+			<var key="settings.phonesPath" value="../" />
+
+			<var key="check_status.PrvId" value="323"/>
+			<var key="check_status.TermId" value="true"/>
+			
+			<var key='fake_pages.phoneDigitPopup.index' value='4'/>
+		</session>
+
+		<statistic defaultProfile="bad">
+			<bad>
+			</bad>
+			<add>
+				<good>
+					<includeProfile name='bad'/>
+					<var name="_extra_MGT_cash" value="payments.cash" />
+					<var name="_extra_MGT_email" value="user_info.email" />
+				</good>
+			</add>
+			<object>
+				<variable name="prv_id" value="323"/>
+				<variable name="prv_name" value="Magitel"/>
+				<variable name="_extra_MGT_project_number" value="3880"/>
+				<variable name="_extra_no_print_check" value="true"/>
+				<variable name="_extra_fake_provider" value="true"/>
+				<variable name="_extra_result_int_page" value="./return2.html"/>
+				<variable name="_extra_MGT_exit" value="../index.html"/>
+				<variable name="getAccountNumber" value="0000000000"/>
+			</object>
+			<bad
+				vars='_extra_MGT_project_number,_extra_MGT_exit,_extra_MGT_date,_extra_MGT_time,_extra_MGT_path, getAccountNumber'
+				post='../index.html'/>
+			<good
+				vars='_extra_MGT_project_number,_extra_MGT_exit,_extra_MGT_date,_extra_MGT_time,_extra_MGT_path, getAccountNumber'
+				post='../index.html'/>
+		</statistic>
+
+		<defaultBackground type="0" name="bg_base"/>
+
+		<pages>
+			
+			<page name="checkPage">
+				<content type="2" name="CheckStatus">
+					<componentEvents>
+						<event name="success" page="startPage"/>
+						<event name="fail" page="startPage"/>
+					</componentEvents>
+				</content>
+			</page>
+			
+			<page name="startPage" index='1' stat='bad'>
+				<content type="0" name="bg_welcome"/>
+				<content type='1' name='exit' pos='40,878' />
+				<content type='1' name='oferta' pos='310,878' page='ofertaPage'/>
+				<content type='1' name='next' pos='790,878' page='cashPage'/>
+			</page>
+			
+			<page name="ofertaPage" index='2' stat='bad'>
+				<content type="2" name="HTMLOferta">
+					<param name="scroll_length" value="10" />
+				</content>
+				<content type='1' name='back' pos='40,878' page="startPage" />
+			</page>
+			
+			<page name="phonePage" index='3' stat='bad'>
+				<content type="2" name="Phone">
+					<componentEvents>
+						<event name="submitted" page="cashPage" />
+					</componentEvents>
+				</content>
+				<content type='1' name='back' pos='40,878' page="startPage" />
+			</page>
+			
+			<page name="cashPage" index="5" idleTime='380'>
+				<content type="2" name="ContentCash">
+					<componentEvents>
+						<event name="pay_success" page="okPage"/>
+						<event name="pay_fail" page="okPage"/>
+						<event name="prevButtonClick" page="startPage"/>
+					</componentEvents>
+					<param name="noChange" value="true"/>
+					<param name="alwaysAllow" value="true"/>
+					<param name="AccNum" value="0000000000"/>
+					<param name="PrvId" value="17444"/>
+					<param name="PrvName" value='Получатели Благотворительной программы "Всем"'/>
+					<param name="add_params"				
+						key0="_extra_comment"
+						value0="техническая транзакция, платеж будет распределён на провайдеров ID 1669; ID 3689; ID 3942; ID 4652; ID 5329; ID 5796; ID 14374; ID 17374"
+						key1="_receipt_prt_account"
+						value1="Номер телефона/счета/карты клиента"
+						key2="_receipt_Пожертвования в пользу получателей"
+						value2='
+WWF России
+Служба помощи "Милосердие"
+Российский фонд помощи
+Детские Деревни - SOS
+Фонд В. Спивакова
+БФ Вера
+БФ Даунсайд Ап
+Фонд "Старость в радость"' 
+						key3="_receipt_"
+						value3='Сумма распределена между указанными получателями
+согласно оферте Благотворительной программы "Всем"' 
+						key4="_receipt_prt_bottom_reklama"
+						value4='Информация о программе на сайте помочьвсем.рф'/>
+				</content>
+			</page>
+			
+			<page name="okPage" idleTime='30' index='6' stat='good'>
+				<content type="0" name="bg_ok"/>
+				<content type='1' name='btn' pos='640,619' page="emailPage" />
+				<content type='1' name='exit' pos='40,878' />
+			</page>
+			
+			<page name="emailPage" index="7" stat="good">
+				<content type='1' name='exit' pos='40,878' />
+				<content type="2" name="EMail">
+					<componentEvents>
+						<event name="submitted" page="okEmailPage" />
+					</componentEvents>
+				</content>
+			</page>
+			
+			<page name="okEmailPage" idleTime='10' index='8' stat='good'>
+				<content type="0" name="bg_ok_email"/>
+				<content type='1' name='exit' pos='40,878' />
+			</page>
+			
+		</pages>
+	</config>
+</scripts>

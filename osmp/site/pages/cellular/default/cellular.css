@@ -1,0 +1,74 @@
+﻿#headText {
+    top:50px;
+    left:0px;
+    width:100%;
+    height:70px;
+    font-family:Whitney,Arial;
+    font-size:60px;
+    color:#111111;
+}
+#cellularInput {
+    top:150px;
+    left:230px;
+}
+#digitalKeyboard {
+    top:280px;
+    left:445px;
+    transition:top 300ms cubic-bezier(.18,.47,.33,1.03);
+    transition-delay:50ms;
+}
+#avatar{
+    bottom:-520px;
+    left:240px;
+    width:800px;
+    height:520px;
+    background:#e9e8e6;
+    transition:bottom 600ms cubic-bezier(.18,.47,.33,1.03);
+    transition-delay:300ms;
+}
+    #avatarImage{
+        top:50px;
+        left:320px;
+        width:150px;
+        height:150px;
+        border-radius:75px;
+        background-color:white;
+        background-position:center center;
+        background-repeat:no-repeat;
+    }
+    #avatarName{
+        margin-top:210px;
+        height:56px;
+        font-size:24px;
+        color:white;
+    }
+        .anLeft{
+            float:left;
+            width:63px;
+            height:56px;
+            background:url(./resourses/l.png) no-repeat center;
+        }
+        .anCenter{
+            float:left;
+            padding-top:18px;
+            height:56px;
+            background:url(./resourses/c.png) repeat top left;
+            text-transform:uppercase;
+        }
+        .anRight{
+            float:left;
+            width:63px;
+            height:56px;
+            background:url(./resourses/r.png) no-repeat center;
+        }
+    #avatarInfo {
+        top:280px;
+        left:0px;
+        font-size:28px;
+        font-family:WhitneyBook,Arial;
+    }
+        #avatarInfo span{
+            font-size:48px;
+            font:WhitneyBold bold;
+            line-height:90px;
+        }

@@ -1,0 +1,67 @@
+﻿#logo {
+    top:20px;
+    left:0px;
+    width:100%;
+    height:140px;
+    background:url(../../resourses/qiwi_logo.svg) no-repeat center;
+}
+#head {
+    top:200px;
+    left:0px;
+    height:70px;
+    padding-top:10px;
+    font-family:WhitneySemibold;
+    font-size:48px;
+    color:#111111;
+}
+#infoBox{
+    top:320px;
+    left:200px;
+    width:880px;
+    height:200px;
+    border-top:1px solid #2458aa;
+    border-bottom:1px solid #2458aa;
+}
+    #infoBox div{
+        -moz-box-sizing:padding-box;
+    }
+#success{
+    top:40px;
+    left:20px;
+    padding-top:60px;
+    width:100px;
+    height:85px;
+    font:18px Whitney;
+    background:url(./resourses/success.png) no-repeat top center;
+}
+#info{
+    top:36px;
+    left:200px;
+    width:440px;
+    max-width:430px;
+}
+    #info div{
+        font:36px Whitney;
+    }
+#summ{
+    top:36px;
+    right:20px;
+    width:150px;
+    font:36px Whitney;
+}
+#bottom{
+    bottom:80px;
+    left:0px;
+    font:28px Whitney;
+}
+    #bottom span {
+        width:auto;
+        display:inline-block;
+        border-bottom:1px dotted #3958a9;
+        color:#3958a9;
+        font:inherit;
+        transition:all 150ms;
+    }
+    .info-text span:active {
+        opacity:0.5;
+    }

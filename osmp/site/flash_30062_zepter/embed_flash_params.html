@@ -1,0 +1,57 @@
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1251">
+</head>
+<script type="text/javascript">
+
+
+  function getFlashContainer() {
+    var flashContainer = document.getElementById("flashcontent_ff");
+    if (!flashContainer) {
+      flashContainer = document.getElementById("flashcontent");
+    }
+    return flashContainer;
+  }
+
+  function fromMaratl(code, value) {
+    if (getFlashContainer() && getFlashContainer().fromMaratl) {
+      getFlashContainer().fromMaratl(code, value);
+    }
+  }
+
+  function startListeners() {
+    terminal.OnResponse = OnResponse;
+  }
+
+  function OnResponse(code, value) {
+    fromMaratl(code, value);
+  }
+
+  function fromFlash(code, value) {
+    terminal.processcommand(code, value);
+  }
+
+</script>
+<body bgcolor="#f5f5f5" style="border:0;margin:0" onload="startListeners()">
+
+<div style="z-index:100" id="project">
+  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="100%" height="100%"
+          codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+          id="flashcontent" align="middle">
+    <param name="allowScriptAccess" value="always"/>
+    <param name="allowFullScreen" value="true">
+    <param name="movie" value="engine.swf"/>
+    <param name="quality" value="high"/>
+    <param name="bgcolor" value="#ffffff"/>
+    <param name="FlashVars" value=""/>
+    <embed id="flashcontent_ff" name="flashcontent_ff" allowScriptAccess="always"
+           type="application/x-shockwave-flash" quality="high" bgcolor="#ffffff" width="100%" height="100%"
+           align="middle"
+           src="engine.swf"
+           flashvars=""
+           pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+  </object>
+</div>
+
+</body>
+</html>

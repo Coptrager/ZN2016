@@ -1,0 +1,7 @@
+{
+	"version": "1.0.7",
+	"locales": {
+		"ru": "../../projects/transpayments/locale.ru.json",
+        "tj": "../../projects/transpayments/locale.tj.json"
+	}
+}

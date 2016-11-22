@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<object id="bill" class="String">
+		<constructor-arg>
+			<value>
+<![CDATA[_receipt_ВНЕСЕНИЕ+СРЕДСТВ+В=
+КИВИ Банк (АО)
+Лицензия №2241
+ИНН 3123011520
+117648, г. Москва, мкр. Чертаново Северное, д. 1А, корп. 1
+Принято: %price%
+Сервисный сбор: %bank_commission% в т.ч. НДС 18%.
+&_receipt_Тип+перевода="до востребования"&_receipt_Получатель=%recipient%
+
+Поручение исполнено КИВИ Банк (АО).
+&_receipt_Индекс+ОПС+получения=%index%&_receipt_Адрес+ОПС+получения=%address%&_receipt_Сумма+к+получению=%amount%&_receipt_Срок+доставки+перевода+Почтой+России=5-7 дней
+
+Справочная служба QIWI: 8-800-301-11-31
+------------------------------------&prt_top_reklama=Больше возможностей на сайте: WWW.QIWI.COM
+&prt_bottom_reklama=Телефон поддержки Visa QIWI Wallet:\n8(800) 555-74-94]]>
+			</value>
+		</constructor-arg>
+	</object>
+</objects>

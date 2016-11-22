@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+	<object id="route"
+			class="ru.mobw.coreas3.app.flow.navigation.route.RouteData">
+		<property name="navData">
+			<value>
+				<![CDATA[
+				
+					@default = (checkStatus, @titleBranch, @selectDepartmentBranch, contractNumber,contractDate, selectMonth, sum,  name, address, changeType, phone,  confirm, cash, end);
+					
+					@titleBranch = (title, %titleSwitch);
+					
+					%titleSwitch = 
+					(
+						oferta=>oferta,
+						info=>info
+					);
+					
+					@selectDepartmentBranch = (selectDepartment, %selectDepartmentSwitch);
+					
+					%selectDepartmentSwitch = 
+					(
+						changeRegion=>changeRegion
+					);
+				]]>
+			</value>
+		</property>
+	</object>
+</objects>

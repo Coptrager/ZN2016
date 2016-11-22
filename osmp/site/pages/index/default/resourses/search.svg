@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 720 720" enable-background="new 0 0 720 720" xml:space="preserve">
+<defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:rgb(55,104,150);stop-opacity:1" />
+      <stop offset="40%" style="stop-color:rgb(55,104,150);stop-opacity:1" />
+      <stop offset="41%" style="stop-color:rgb(0,57,116);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(0,57,116);stop-opacity:1" />
+    </linearGradient>
+</defs>
+<g>
+	<path fill="white" d="M362.7,709.2C167.9,709.2,9.4,550.7,9.4,355.9C9.4,161.1,167.9,2.6,362.7,2.6s353.3,158.5,353.3,353.3
+		C716.1,550.7,557.6,709.2,362.7,709.2z"/>
+	<path fill="rgb(38,90,165)" d="M362.7,709.2C167.9,709.2,9.4,550.7,9.4,355.9C9.4,161.1,167.9,2.6,362.7,2.6s353.3,158.5,353.3,353.3
+		C716.1,550.7,557.6,709.2,362.7,709.2z M362.7,37C186.9,37,43.8,180,43.8,355.9s143.1,318.9,318.9,318.9s318.9-143.1,318.9-318.9
+		S538.6,37,362.7,37z"/>
+</g>
+<path fill="rgb(38,90,165)" d="M441.2,393c12.8-20.9,19.6-44.7,19.6-69.2c0-73.3-59.6-132.9-132.9-132.9s-132.9,59.6-132.9,132.9s59.6,133,132.9,133
+	c27.3,0,53.6-8.3,76.1-24.1l88.2,88.2l38.5-38.5L441.2,393z M327.8,408.6c-46.7,0-84.8-38-84.8-84.8s38-84.8,84.8-84.8
+	s84.8,38,84.8,84.8S374.6,408.6,327.8,408.6z"/>
+</svg>

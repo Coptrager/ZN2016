@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects
+xmlns:util="http://www.springactionscript.org/schema/util">
+  <object 
+		id="flowCfg"
+		class="ru.mobw.coreas3.app.config.FlowConfig">
+	</object>
+	
+  <object
+		id="flow"
+		class="ru.mobw.coreas3.app.flow.mcflow.MCFlowBase"
+		depends-on="flowCfg">
+    <constructor-arg ref="flowCfg">
+    </constructor-arg>
+    <property name="routeData" ref="route"/>
+    <property name="elementsMap">
+      <dictionary>
+		<entry><key>checkStatus</key><value><ref>checkStatus</ref></value></entry>
+		<entry><key>title</key><value><ref>title</ref></value></entry>
+		<entry><key>oferta</key><value><ref>oferta</ref></value></entry> 
+		<entry><key>info</key><value><ref>info</ref></value></entry>
+		<entry><key>selectDepartment</key><value><ref>selectDepartment</ref></value></entry>
+		<entry><key>contractNumber</key><value><ref>contractNumber</ref></value></entry>
+		<entry><key>contractDate</key><value><ref>contractDate</ref></value></entry>
+		<entry><key>selectMonth</key><value><ref>selectMonth</ref></value></entry>
+		<entry><key>sum</key><value><ref>sum</ref></value></entry>
+		<entry><key>name</key><value><ref>name</ref></value></entry>
+		<entry><key>address</key><value><ref>address</ref></value></entry>
+		<entry><key>changeType</key><value><ref>changeType</ref></value></entry>
+		<entry><key>phone</key><value><ref>phone</ref></value></entry>
+		<entry><key>confirm</key><value><ref>confirm</ref></value></entry>
+		<entry><key>cash</key><value><ref>cash</ref></value></entry>
+		<entry><key>end</key><value><ref>end</ref></value></entry>
+		<entry><key>exit</key><value><ref>exit</ref></value></entry> 
+      </dictionary>
+    </property>
+  </object>
+	<object
+		id="checkStatus"
+		class="ru.qiwi.general.ui.base.page.BasePageWithOutUI"
+		>
+		<property name="id" value="1"/>
+		<constructor-arg value="checkStatus"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="ru.qiwi.bridge.view.AbstractView"/>
+		<property name="_controllerClass" value="controllers.CheckStatusController"/>
+		<property name="registrationCandidates">
+			<array>
+				<value>controller.checkStatusService,success,S:checkStatus</value>
+				<value>controller.checkStatusService,prvDenied,E:prvDenied</value>
+				<value>controller.checkStatusService,printerFail,E:printerFail</value>
+				<value>controller.checkStatusService,techError,E:techError</value>
+			</array>
+		</property>
+	</object>
+	<object
+		id="title"
+		class="ru.qiwi.general.ui.base.page.BasePage"
+		>
+		<property name="id" value="2"/>
+		<constructor-arg value="title"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="views.TitleView"/>
+		<property name="_controllerClass" value="controllers.TitleController"/>
+	</object>
+	<object
+		id="oferta"
+		class="ru.qiwi.general.ui.base.page.OfertaPage"
+		>
+		<property name="id" value="3"/>
+		<constructor-arg value="oferta"/>
+		<constructor-arg ref="mainInstance"/>
+		<constructor-arg value="${config.ofertaPath}"/>
+		<property name="_viewClass" value="ru.qiwi.general.ui.base.view.OfertaView"/>
+		<property name="_controllerClass" value="ru.qiwi.general.ui.base.controller.OfertaController"/>
+	</object>
+	<object
+		id="info"
+		class="ru.qiwi.general.ui.base.page.BasePage"
+		>
+		<property name="id" value="4"/>
+		<constructor-arg value="info"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="ru.qiwi.general.ui.base.view.BaseView"/>
+		<property name="_controllerClass" value="ru.qiwi.general.ui.base.controller.BaseController"/>
+	</object>
+	<object
+		id="selectDepartment"
+		class="ru.qiwi.general.ui.base.page.BasePage"
+		>
+		<property name="id" value="5"/>
+		<constructor-arg value="selectDepartment"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="views.SelectDepartmentView"/>
+		<property name="_controllerClass" value="controllers.SelectDepartmentController"/>
+		<property name="registrationCandidates">
+			<array>
+				<value>controller.service,responseEvent,S:departmentSuccess</value>
+				<value>controller.service,fail,E:departmentFail</value>
+				<value>controller.service,timeout,E:departmentFail</value>
+			</array>
+		</property>
+	</object>
+	<object
+		id="contractNumber"
+		class="ru.qiwi.general.ui.base.page.BasePage"
+		>
+		<property name="id" value="6"/>
+		<constructor-arg value="contractNumber"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="views.ContractNumberView"/>
+		<property name="_controllerClass" value="controllers.ContractNumberController"/>
+	</object>
+	<object
+		id="contractDate"
+		class="ru.qiwi.general.ui.base.page.BasePage"
+		>
+		<property name="id" value="7"/>
+		<constructor-arg value="contractDate"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="views.ContractDateView"/>
+		<property name="_controllerClass" value="controllers.ContractDateController"/>
+	</object>
+	
+	<object
+		id="selectMonth"
+		class="ru.qiwi.general.ui.base.page.BasePage"
+		>
+		<property name="id" value="8"/>
+		<constructor-arg value="selectMonth"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="views.SelectMonthView"/>
+		<property name="_controllerClass" value="controllers.SelectMonthController"/>
+	</object>
+	<object
+		id="sum"
+		class="ru.qiwi.general.ui.base.page.BasePage"
+		>
+		<property name="id" value="9"/>
+		<constructor-arg value="sum"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="views.SumInputView"/>
+		<property name="_controllerClass" value="controllers.SumInputController"/>
+	</object>
+	<object
+		id="name"
+		class="ru.qiwi.general.ui.base.page.MultiInputPage"
+		>
+		<property name="id" value="10"/>
+		<constructor-arg value="name"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="views.NameView"/>
+		<property name="_controllerClass" value="controllers.NameController"/>
+		
+		
+	</object>
+	<object
+		id="address"
+		class="ru.qiwi.general.ui.base.page.MultiInputPage"
+		>
+		<property name="id" value="11"/>
+		<constructor-arg value="address"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="views.AddressView"/>
+		<property name="_controllerClass" value="controllers.AddressController"/>
+		
+		
+	</object>
+	
+	<object
+		id="changeType"
+		class="ru.qiwi.general.ui.base.page.BasePage"
+		>
+		<property name="id" value="12"/>
+		<constructor-arg value="changeType"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="views.ChangeTypeView"/>
+		<property name="_controllerClass" value="controllers.ChangeTypeController"/>
+		<property name="registrationCandidates">
+			<array>
+				<value>view.changeToMobile,ACTION_CLICK,A:changeToMobile</value>
+				<value>view.changeToWallet,ACTION_CLICK,A:changeToWallet</value>
+			</array>
+		</property>
+		
+	</object>
+	<object
+		id="phone"
+		class="ru.qiwi.general.ui.base.page.BasePage"
+		>
+		<property name="id" value="13"/>
+		<constructor-arg value="phone"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="views.PhoneView"/>
+		<property name="_controllerClass" value="controllers.PhoneController"/>
+	</object>
+	<object
+		id="confirm"
+		class="ru.qiwi.general.ui.base.page.BasePage"
+		>
+		<property name="id" value="14"/>
+		<constructor-arg value="confirm"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="views.ConfirmView"/>
+		<property name="_controllerClass" value="controllers.ConfirmController"/>
+	</object>
+	<object
+		id="cash"
+		class="ru.qiwi.general.ui.base.page.BasePage"
+		>
+		<property name="id" value="15"/>
+		<constructor-arg value="cash"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="ru.qiwi.general.ui.base.view.CashView"/>
+		<property name="_controllerClass" value="ru.qiwi.general.ui.base.controller.CashController"/>
+	</object>
+	
+	<object
+		id="end"
+		class="ru.qiwi.general.ui.base.page.BasePage"
+		>
+		<property name="id" value="16"/>
+		<constructor-arg value="end"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="_viewClass" value="views.EndView"/>
+		<property name="_controllerClass" value="controllers.EndController"/>
+	</object>
+	<object
+		id="exit"
+		class="ru.qiwi.general.ui.base.page.ExitPage"
+		>
+		<constructor-arg value="exit"/>
+	</object>
+</objects>

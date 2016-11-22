@@ -1,0 +1,15 @@
+﻿#progressBar {
+    width:300px;
+    height:20px;
+}
+.progressBar-dot {
+    width:20px;
+    height:20px;
+    float:left;
+    border-radius:10px;
+    background:#dbdde0;
+    transition:background 200ms;
+}
+.progressBar-step {
+    margin-left:20px;
+}

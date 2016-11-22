@@ -1,0 +1,1 @@
+"use strict";System.register(["jsx!pages/changeType"],function(_export,_context){var Proxy;return{setters:[function(_jsxPagesChangeType){Proxy=_jsxPagesChangeType["default"]}],execute:function(){_export("default",Proxy)}}});

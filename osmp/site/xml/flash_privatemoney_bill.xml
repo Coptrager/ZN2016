@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<object id="bill" class="String">
+		<constructor-arg>
+			<value>
+<![CDATA[_receipt_ВАШИ_ПЛАТЕЖИ=
+Принято: %accepted%
+Комиссия оператора: %bankcommission%
+Зачислено: %enrolled%
+------------------------------------
+&_receipt_ОПЛАТА_ЗА=
+КИВИ Банк (ЗАО)
+ИНН: 3123011520
+Лицензия № 2241
+Вид операции: 005
+Сумма: %amount%
+Коммисия: %bankcommission%
+{{usd && Сумма к выдаче в долларах США: %amountusd% USD
+(1 USD = %rateusd%)}}
+{{change && Сдача в Visa Qiwi Wallet:
+%change%}}
+"PrivatMoney"
+%recipient%
+&_receipt_Контрольный номер перевода=%controlcode%
+Страна получения перевода: %country%
+Операция по переводу средств в банк получалеля принята КИВИ Банк (ЗАО) к исполнению
+------------------------------------
+&prt_top_reklama=Больше возможностей на сайте: WWW.QIWI.COM
+&prt_bottom_reklama=Телефон поддержки Visa QIWI Wallet:\n8(800) 555-74-94
+&_extra_comment=Оплата:Денежные переводы: %shortcode% Приложение PrivateMoney: %version%
+]]>
+			</value>
+		</constructor-arg>
+	</object>
+</objects>

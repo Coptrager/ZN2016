@@ -1,0 +1,7 @@
+﻿{
+  "parent":"provider_info",
+  "use":[
+    "triggerButton"
+  ],
+  "timeout":120
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+	<object id="route" class="ru.mobw.coreas3.app.flow.navigation.route.RouteData" >
+		<property name="navData">
+			<value>
+				<![CDATA[
+					@default = (init, @checkBranch, @base, exit);
+					@base = (account, %accountSwitch, t:online, confirmation, %confirmationSwitch);
+					
+					%accountSwitch = (
+						showInfo => howToPay,
+						yaup => @yaupBranch
+					);
+
+					%confirmationSwitch = (
+						selectDate => changePeriod,
+						quick => @quick,
+						long => @long
+					);
+					
+					@quick = (quickPayment, @paymentEndBranch);
+
+					@long = (counters, check, %checkSwitch, changeTypeSelect, %changeSwitch, phone, %typeSelect, @paymentEndBranch);
+					
+					@paymentEndBranch = (paymentEnd, %paymentEndSwitch);
+					%paymentEndSwitch = 
+					(
+						pin=>@saveBranch,
+						save=>savePage,
+						phoneForSave=>@phoneForSaveBranch
+					);
+					%checkSwitch = (
+						selectDate => changePeriod,
+						counters => counters,
+						quick => @quick
+					);
+					
+					%changeSwitch = (
+						mosenergo => @quick
+					);
+
+					%typeSelect = (
+						changeToWallet => changeToWallet,
+						changeToMobile => changeToMobile
+					);
+					@checkBranch=(t:checkDataPage, %checkDataSwitch);
+					
+					%checkDataSwitch=
+					(
+						withData => @withDataBranch
+					);
+					@withDataBranch = (withDataPage, @favoriteBranch);
+					@favoriteBranch=(t:online, confirmation, %confirmationSwitch);
+					@yaupBranch=(enterWalletLogin, t:pinPage, selectPayment,%selectPaymentSwitch, @favoriteBranch);
+					%selectPaymentSwitch=
+					(
+						start=>@default
+					);
+					@phoneForSaveBranch = (enterWalletLogin, %phoneSwitch, t:pinPage, savePage);
+					%phoneSwitch = (
+						withoutPin=> savePage
+					);
+					
+					@saveBranch = (t:pinPage, savePage);
+				]]>
+			</value>
+		</property>
+	</object>
+</objects>

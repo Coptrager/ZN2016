@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<object id="flowCfg" class="ru.mobw.coreas3.app.config.FlowConfig">
+		<property name="bindingsRootPackage" value="${utility.path}" />
+	</object>
+	
+	<object id="flow" class="ru.mobw.coreas3.app.flow.mcflow.MCFlowBase" depends-on="flowCfg">
+		<constructor-arg ref="flowCfg" />
+		<property name="routeData" ref="route" />
+		<property name="elementsMap">
+			<dictionary>
+				<entry><key>init</key><value ref="init" /></entry>
+				<entry><key>summ</key><value ref="summ" /></entry>
+				<entry><key>offertus</key><value ref="offertus" /></entry>
+				<entry><key>name</key><value ref="name" /></entry>
+				<entry><key>purpose</key><value ref="purpose" /></entry>
+				<entry><key>phone</key><value ref="phone" /></entry>
+				<entry><key>confirmation</key><value ref="confirmation" /></entry>
+				<entry><key>change</key><value ref="change" /></entry>
+				<entry><key>cash</key><value ref="cash" /></entry>
+				<entry><key>final</key><value ref="final" /></entry>
+				<entry><key>exit</key><value ref="exit" /></entry>
+			</dictionary>
+		</property>
+	</object>
+	
+	
+	
+	<object id="init" class="elements.InitElement">
+		<constructor-arg>
+			<array>
+				<value>
+					<object class="ru.mobw.coreas3.vo.ComissionProfile">
+						<property name="fix" value="15" />
+						<property name="percent" value="1.5" />
+					</object>
+				</value>
+			</array>
+		</constructor-arg>
+		<property name="id" value="1" />
+	</object>
+	<object id="summ" class="elements.SummElement">
+		<constructor-arg class="String">
+			<value>
+				<![CDATA[<b>Комиссия банка: %bank_commission%</b><br/>(%bank_description%)<br/><b>Комиссия агента: %agent_commission%</b><br/>(%agent_description%)]]>
+			</value>
+		</constructor-arg>
+		<constructor-arg class="String">
+			<value>
+				<![CDATA[Максимальная сумма к оплате на данном терминале составляет %max_summ%\nЕсли Вы ввели чужой номер телефона, то претензии по зачислению рассмотрены не будут.]]>
+			</value>
+		</constructor-arg>
+		<property name="id" value="2" />
+	</object>
+	<object id="offertus" class="elements.OffertusElement">
+		<property name="id" value="3" />
+	</object>
+	<object id="name" class="elements.NameElement">
+		<property name="id" value="6" />
+	</object>
+	<object id="purpose" class="elements.PurposeElement">
+		<constructor-arg value="90" description="Общее максимальное количество символов в поле ввода" />
+		<property name="id" value="5" />
+	</object>
+	<object id="phone" class="elements.PhoneElement">
+		<property name="id" value="4" />
+	</object>
+	<object id="confirmation" class="elements.ConfirmationElement">
+		<constructor-arg class="String">
+			<value>
+				<![CDATA[Комиссия банка – %bank_commission%\nКомиссия агента – %agent_commission%]]>
+			</value>
+		</constructor-arg>
+		<constructor-arg class="String">
+			<value>
+				<![CDATA[%client_name%\nНомер счета: %bank_account%   ИНН: %inn%\n{{kpp && КПП: %kpp%{{kbk &&    }}{{kbk || \n}}}}{{kbk && КБК: %kbk%{{okato &&    }}{{okato || \n}}}}{{okato && ОКТМО/ОКАТО: %okato%\n}}Банк получателя: %bank_name%\nНазначение платежа: %purpose%]]>
+			</value>
+		</constructor-arg>
+		<property name="id" value="7" />
+	</object>
+	<object id="change" class="elements.ChangeElement">
+		<property name="id" value="8" />
+	</object>
+	<object id="cash" class="elements.CashElement">
+		<constructor-arg ref="bill" />
+		<property name="id" value="9" />
+	</object>
+	<object id="final" class="elements.FinalElement">
+		<property name="id" value="10" />
+	</object>
+	<object id="exit" class="com.qiwi.elements.ExitElement" />
+
+</objects>

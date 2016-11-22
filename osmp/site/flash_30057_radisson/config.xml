@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scripts>
+	<config totalTime="600" defaultIdleTime="60" version="2.0" log="false">
+
+		<session>
+			<var key="settings.MGT_path_format" value="page:time"/>
+			<var key="settings.MGT_date_format" value="yyyy-mm-dd hh:nn:ss"/>
+			<var key="settings.MGT_exit_last_page" value="true"/>
+			<var key="settings.exclude_zero_page" value="true"/>
+			<var key="settings.update_phone" value="true"/>
+			<var key="settings.use_phone_capacity" value="true"/>
+			<var key="settings.vqw_id" value="7406"/>
+
+			<var key="check_status.PrvId" value="11808"/>
+			<var key="check_status.TermId" value="true"/>
+			<var key="check_status.PrtStatus" value="true"/>
+
+			<var key="settings.project_name" value="Radisson"/>
+			<var key="settings.project_version" value="Radisson 1.0.2"/>
+			<var key="settings.oferta_path" value="Offer.xml"/>
+			<var key="settings.oferta_name" value="qiwi"/>
+			<var key="extras.rp" value="./flash_30057_radisson/return.html"/>
+			
+			<var key="fake_pages.phoneProviderPopup.index" value="3"/>
+			<var key="fake_pages.phoneDigitPopup.index" value="3"/>
+			<var key="fake_pages.maxPopup.index" value="4"/>
+		</session>
+
+		<statistic defaultProfile="bad">
+			<add>
+				<bad>
+					<var name="_extra_MGT_phone" value="user_info.phone"/>
+					<var name="_extra_MGT_account" value="user_info.account"/>
+					<var name="_extra_MGT_ver" value="settings.project_version"/>
+				</bad>
+				<good>
+					<var name="_extra_MGT_phone" value="user_info.phone"/>
+					<var name="_extra_MGT_account" value="user_info.account"/>
+					<var name="_extra_MGT_sum" value="extras.sum"/>
+					<var name="_extra_MGT_ver" value="settings.project_version"/>
+					<var name="_extra_result_int_page" value="extras.rp"/>
+
+				</good>
+			</add>
+			<object>
+				<variable name="prv_id" value="323"/>
+				<variable name="prv_name" value="Magitel"/>
+				<variable name="_extra_MGT_project_number" value="30057"/>
+				<variable name="_extra_no_print_check" value="true"/>
+				<variable name="_extra_fake_provider" value="true"/>
+				<variable name="_extra_result_int_page" value="./flash_30057_radisson/return.html"/>
+				<variable name="_extra_MGT_exit" value="./flash_30057_radisson/return.html"/>
+				<variable name="getAccountNumber" value="0000000000"/>
+			</object>
+			<bad
+				vars="_extra_MGT_project_number,_extra_MGT_exit,_extra_MGT_date,_extra_MGT_time,_extra_MGT_path, getAccountNumber"
+				post="./return.html"/>
+			<good
+				vars="_extra_MGT_project_number,_extra_MGT_exit,_extra_MGT_date,_extra_MGT_time,_extra_MGT_path, getAccountNumber"
+				post="./return.html"/>
+		</statistic>
+
+		<defaultBackground type="0" name="bg_base"/>
+
+		<pages>
+			<page name="check_status_page" index="1">
+				
+				<content type="2" name="Check">
+					<componentEvents>
+						<event name="success" page="start_page"/>
+						<event name="fail" page="fail_page"/>
+						<event name="prt_fail" page="prt_fail_page"/>
+					</componentEvents>
+				</content>
+			</page>
+			<page name="start_page" index="2" >
+				<content type="0" name="bg_1"/>
+				<content type="1" name="exit" pos="490.4,880"/>
+				<content type="2" name="Start" pos="407.5,335.95" >
+					<componentEvents>
+						<event name="today" page="select_port_page"/>
+						<event name="other" page="select_date"/>
+						<event name="info" page="info_page"/>
+						<event name="online" page="onlinePage"/>
+					</componentEvents>
+				</content>	
+			</page>
+			<page name="onlinePage" index="3">
+				<content type="0" name="bg_9"/>
+				<content type="2" name="GetTimetable">
+				 <componentEvents>
+						<event name="fail" page="TimetableOnlineFailPage"/>
+						<event name="last_fail" page="lastFailPage"/>
+					</componentEvents>
+					<param name="minTime" value="2000"/>
+					<param name="maxTime" value="120000"/>
+					<param name="maxFails" value="3"/>
+				</content>
+			 </page>
+			<page name="TimetableOnlineFailPage" idleTime="30" index="4">
+				<content type="0" name="bg_13"/>
+				<content type="1" name="retry" page="onlinePage" pos="420,500"/>
+				<content type="1" name="exit" pos="490.4,880"/>
+			</page>
+			<page name="lastFailPage" idleTime="10" index="5">
+				<content type="0" name="bg_noSend"/>
+				<content type="1" name="exit" pos="490.4,880"/>
+			</page>
+			
+			<page name="info_page" index="6">
+				<content type="0" name="bg_info"/>
+				<content type="1" name="exit" pos="490.4,880"/>
+				<content type="1" name="back" pos="25,880" page="start_page" />
+				<content type="1" name="marshrut" pos="215.35,304.15" page="marsh_page" />
+				<content type="1" name="oferta" pos="678.45,304.15" page="oferta_page" />
+			</page>	
+			<page name="marsh_page" index="7">
+				<content type="0" name="bg_marsh"/>
+				<content type="1" name="exit" pos="490.4,880"/>
+				<content type="1" name="back" pos="25,880" page="info_page" />
+				<content type="1" name="btnPay" pos="939,880" page="select_date" />
+				<content type="2" name="MarshInfo" pos="25,260.20" />
+			</page>
+			<page name="oferta_page" index="8">
+				<content type="2" name="OfertaPage">
+					<componentEvents>
+						<event name="select_port" page="select_date"/>
+					</componentEvents>
+				</content>
+				<content type="1" name="back" pos="25,880" page="info_page" />
+			</page>	
+			<page name="select_date" index="9">
+				<content type="0" name="bg_day"/>
+				<content type="1" name="exit" pos="490.4,880"/>
+				<content type="1" name="back" pos="25,880" page="start_page" />
+				<content type="2" name="SelectDate" pos="55,299.35" >
+					<componentEvents>
+						<event name="next" page="select_port_page"/>
+					</componentEvents>
+				</content>	
+			</page>	
+			<page name="select_time" index="10">
+				<content type="0" name="bg_time"/>
+				<content type="1" name="exit" pos="490.4,880"/>
+				<content type="1" name="back" pos="25,880" page="select_port_page" />
+				<content type="2" name="SelectTime" pos="235.85,283.45" >
+					<componentEvents>
+						<event name="next" page="select_seats"/>
+					</componentEvents>
+				</content>	
+			</page>	
+			<page name="select_seats" index="11">
+				<content type="0" name="bg_kolvo"/>
+				<content type="1" name="exit" pos="490.4,880"/>
+				<content type="1" name="back" pos="25,880" page="select_time" />
+				<content type="2" name="SelectSeats" pos="261.9,363.05" >
+					<componentEvents>
+						<event name="next" page="phonePage"/>
+					</componentEvents>
+				</content>	
+			</page>	
+			<page name="phonePage" index="12">
+				<content type="1" name="back" page="select_seats" pos="25,880"/>
+				<content type="2" name="Phone">
+					<componentEvents>
+						<event name="submitted" page="select_change_page"/>
+					</componentEvents>
+					<param name="next_button_template" free="Далее"/>
+				</content>
+			</page>
+
+			
+			<page name="select_change_page" index="13">
+				<content type="1" name="back" pos="25,880" page="phonePage" />
+				<content type="1" name="exit" pos="490.4,880"/>
+				<content type="2" name="SelectChange" pos="0.95,60">
+					<componentEvents>
+						<event name="next" page="confirm_page"/>
+					</componentEvents>
+				</content>
+			</page>	
+			
+			<page name="confirm_page" index="14">
+				<content type="0" name="bg_yes"/>
+				<content type="1" name="back" pos="25,880" page="select_change_page" />
+				<content type="1" name="exit" pos="490.4,880"/>
+				<content type="1" name="pay" pos="939,880" page="orderPage" />
+				<content type="2" name="Confirm" pos="487.3,248.75"/>
+			</page>	
+			<page name="orderPage" index="15">
+				<content type="0" name="bg_9"/>
+				<content type="2" name="GetOrder">
+				 <componentEvents>
+						<event name="fail" page="OrderFailPage"/>
+						<event name="last_fail" page="lastFailPage"/>
+					</componentEvents>
+					<param name="minTime" value="2000"/>
+					<param name="maxTime" value="60000"/>
+					<param name="maxFails" value="3"/>
+				</content>
+			 </page>
+			<page name="OrderFailPage" idleTime="30" index="16">
+				<content type="0" name="bg_13"/>
+				<content type="1" name="retry" page="orderPage" pos="420,500"/>
+				<content type="1" name="exit" pos="490.4,880"/>
+			</page>
+			<page name="money_page" idleTime="300" index="17" stat="good">
+				<content type="2" name="ContentCash">
+					<componentEvents>
+						<event name="pay_success" page="thanks_page"/>
+						<event name="pay_fail" page="no_thanks_page"/>
+						<event name="prevButtonClick" page="confirm_page"/>
+					</componentEvents>
+					<param name="PrvId" value="11808"/>
+					<param name="PrvName" value="Radisson Cruise"/>
+					<param name="MaxCashLimit" value="15000"/>
+					<param name="add_params"
+						key0="_receipt_prt_bitimage" from_session0="barcode"
+						key1="_extra_booking_code" from_session1="orderOfTrip"
+						key2="_extra_booking_time" from_session2="timeOfTrip"
+						key3="_extra_booking_date" from_session3="dateOfTrip"
+						key4="_extra_booking_port" from_session4="portOfTrip"
+						key5="_extra_booking_count" from_session5="ticketsOfTrip"
+						key6="_receipt_Номер билета" from_session6="orderOfTrip"
+						key7="_receipt_Дата отправления" from_session7="dateOfTrip"
+						key8="_receipt_Время отправления" from_session8="timeOfTrip"
+						key9="_receipt_Причал" from_session9="portOfTrip"
+						key10="_receipt_Билеты" from_session10="ticketsOfTrip"
+					  />
+				</content>
+			</page>
+
+			<page name="thanks_page" index="18">
+				<content type="0" name="bg_thx"/>
+				<content type="1" name="exit" pos="490.4,880"/>
+				
+				<content type="2" name="FinishText" pos="0,218" />
+				<content type="1" name="btnShema" pos="939,880" page="shema_page" />
+			</page>	
+			<page name="no_thanks_page" index="22">
+				<content type="0" name="bg_no_thx"/>
+				<content type="1" name="exit" pos="490.4,880"/>
+			</page>	
+			<page name="shema_page" index="19">
+				<content type="2" name="Scheme" pos="0,60" />
+				
+				<content type="1" name="exit" pos="490.4,880"/>
+			</page>	
+			
+			<page name="select_port_page" index="20">
+				<content type="0" name="bg_prichal"/>
+				<content type="1" name="back" pos="25,880" page="start_page" />
+				<content type="1" name="exit" pos="490.4,880"/>
+				<content type="2" name="SelectPrichal" pos="107.75,261.25" >
+					<componentEvents>
+						<event name="next" page="select_time"/>
+					</componentEvents>
+					<!--<param name="custom_label_0" instance="l1" key="text_key"/>-->
+				</content>	
+			</page>	
+			<page name="fail_page" index="21">
+				<content type="0" name="bg_fail"/>
+				<content type="1" name="exit" pos="490.4,880"/>
+			</page>
+			<page name="prt_fail_page" index="23">
+				<content type="0" name="bg_prt_fail"/>
+				<content type="1" name="exit" pos="490.4,880"/>
+			</page>	
+			
+		</pages>
+	</config>
+</scripts>
+

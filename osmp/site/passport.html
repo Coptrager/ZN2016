@@ -1,0 +1,122 @@
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="refresh" content="600; URL=./index.html">
+  <title>passport</title>
+  <script src="js/engine/utils.js" type="text/javascript"></script>
+  <script src="js/engine/storage.js" type="text/javascript"></script>
+  <script src="flash_app/js/storage.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/IFrameChannel.js"></script>
+
+  <script>
+    function getFlashContainer() {
+      var flashContainer = document.getElementById("flashcontent_ff");
+      if (!flashContainer) {
+        flashContainer = document.getElementById("flashcontent");
+      }
+      return flashContainer;
+    }
+
+    function clearIdent() {
+      storage.remove("ident_adv_counter");
+    }
+
+    function putIdent(phone, xml, title, description, target) {
+      var ident = {
+        phone: phone,
+        title: title,
+        description: description,
+        target: target,
+        xml: xml
+      };
+      storage.put("ident_adv_counter", ident.serialize());
+    }
+
+    function getIdent() {
+      if(window.localStorage != null){
+			return JSON.parse(storage.get("ident_adv_counter"));
+		}
+		else
+		{
+			return Object.deserialize(storage.get("ident_adv_counter"));
+		}
+    }
+
+    function getProvider() {
+      return storage.get("provider");
+    }
+
+    function OnResponse(code, value) {
+      var cont = getFlashContainer();
+      if (cont && cont.fromMaratl) {
+        cont.fromMaratl(code, value);
+      }
+    }
+
+    var channel = (window == top)
+      ? null
+      : IFrameChannel(top, 'passportFrameConnection', {response: OnResponse});
+
+    function sendMail(json) {
+      if (channel)
+        channel('processCommand')('network.sendMail', json);
+      else
+        terminal.processcommand("network.sendMail", json)
+    }
+    function startListeners() {
+      if (!channel)
+        terminal.OnResponse = OnResponse;
+    }
+    function fromFlash(code, value) {
+      if (channel)
+        channel('processCommand')(code, value);
+      else
+        terminal.processcommand(code, value);
+    }
+
+    function shouldFlashExit() {
+      if (channel) {
+        channel('exit')();
+        return false;
+      }
+      return true;
+    }
+  </script>
+  <style>
+
+    #flashcontent {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1280px;
+      height: 1024px;
+    }
+
+    html, body {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    body {
+      margin: 0;
+    }
+
+  </style>
+</head>
+<body onload="startListeners()">
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+        codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="100%"
+        height="100%" id="flashcontent" align="middle">
+  <param name="allowScriptAccess" value="sameDomain"/>
+  <param name="movie" value="passport.swf"/>
+  <param name="quality" value="high"/>
+  <param name="bgcolor" value="#ffffff"/>
+  <embed src="passport.swf" quality="high"
+         bgcolor="#ffffff" width="100%" height="100%"
+         name="flashcontent_ff"
+         id="flashcontent_ff"
+         align="middle" border="0" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"
+         pluginspage="http://www.macromedia.com/go/getflashplayer"/>
+</object>
+</body>
+</html>

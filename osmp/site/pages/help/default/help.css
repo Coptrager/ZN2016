@@ -1,0 +1,11 @@
+#buttonInfoBox{
+    bottom:80px;
+    right:55px;
+    transition:bottom 150ms;
+}
+    #buttonInfoBox:active{
+        bottom:77px;
+    }
+#pageHead span{
+    text-transform:capitalize;
+}

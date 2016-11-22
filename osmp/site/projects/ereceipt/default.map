@@ -1,0 +1,18 @@
+$begin > %init > $end
+
+%init: {
+	anonym: @anonym,
+	final: %final
+}
+%final: {
+	email: %sendemail,
+	ident: ident
+}
+
+%sendemail: {
+	back: %final
+}
+
+@anonym: [
+	anonym > ident
+]

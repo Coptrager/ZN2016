@@ -1,0 +1,1204 @@
+21:42:55 Start application(Version 5.4.1.12)...
+21:42:55 Связь с зарегистрированным COM объектом проверена
+21:42:55 Searching S.M.A.R.T. compatible hard drives.
+21:42:55 No S.M.A.R.T. hard drives found.
+21:42:55 Command line: "C:\osmp\maratl.exe" .
+21:42:55 No Flash found
+21:42:55 Clear system.
+21:42:55 Configuration file for flash not found.
+21:42:55 Create configuration file for flash.
+21:42:55 Ошибка открытия базы config/info.db3: SQLITE_CANTOPEN[14]: unable to open database file
+21:42:55 Initializing counters internet traffic.
+21:42:55 Information on the Internet traffic counters missing.
+21:42:55 Creating an object-handler instruction.
+21:42:55 Creating an object of the client handler instruction.
+21:42:55 Liaise with the client handler commands.
+21:42:55 Need to update Flash player
+21:42:55 Initialize queue instruction.
+21:42:55 Initialization thread instruction fetch.
+21:42:55 Starting thread instruction fetch.
+21:42:55 Initialize queue instruction.
+21:42:55 Initialization thread instruction fetch.
+21:42:55 Starting thread instruction fetch.
+21:42:55 Creating the sos.dll.
+21:42:55 Creating the ww.dll.
+21:42:55 Operation system version: Microsoft Windows 7.
+21:42:55 Checking and deleting old files.
+21:42:55 Deleting old advertising files.
+21:42:55 Deleting of the old advertising files is completed.
+21:42:56 System up time: 24 minutes.
+21:42:56 Reading the configuration file.
+21:42:56 Disabling the standard shell.
+21:42:56 Командная строка "C:\osmp\maratl.exe" 
+21:42:56 Error while disabling the standard shell.
+21:42:56 The configuration file is not found, starting up the master of configuration.
+21:42:58 Выбран язык приложения: Русский.
+22:03:11 Start application(Version 5.4.1.12)...
+22:03:11 Связь с зарегистрированным COM объектом проверена
+22:03:11 Searching S.M.A.R.T. compatible hard drives.
+22:03:11 No S.M.A.R.T. hard drives found.
+22:03:11 Command line: "C:\osmp\maratl.exe" .
+22:03:11 No Flash found
+22:03:11 Clear system.
+22:03:11 Configuration file for flash not found.
+22:03:11 Create configuration file for flash.
+22:03:11 Ошибка открытия базы config/info.db3: SQLITE_CANTOPEN[14]: unable to open database file
+22:03:11 Initializing counters internet traffic.
+22:03:11 Information on the Internet traffic counters missing.
+22:03:11 Creating an object-handler instruction.
+22:03:11 Creating an object of the client handler instruction.
+22:03:11 Liaise with the client handler commands.
+22:03:11 Initialize queue instruction.
+22:03:11 Initialization thread instruction fetch.
+22:03:11 Need to update Flash player
+22:03:11 Starting thread instruction fetch.
+22:03:11 Initialize queue instruction.
+22:03:11 Initialization thread instruction fetch.
+22:03:11 Starting thread instruction fetch.
+22:03:11 Operation system version: Microsoft Windows 7.
+22:03:11 Checking and deleting old files.
+22:03:14 Deleting old advertising files.
+22:03:14 Deleting of the old advertising files is completed.
+22:03:14 System up time: 7 minutes.
+22:03:14 Reading the configuration file.
+22:03:14 Disabling the standard shell.
+22:03:14 Командная строка "C:\osmp\maratl.exe" 
+22:03:14 Error while disabling the standard shell.
+22:03:14 The configuration file is not found, starting up the master of configuration.
+22:03:15 Выбран язык приложения: Русский.
+22:04:52 Сохранение привязки конфигурации к терминалу.
+22:04:52 Ошибка при сохранении привязки к терминалу.
+22:07:51 Need to update Flash player
+22:07:51 Flash updated successfully
+22:07:54 Start application(Version 5.4.1.12)...
+22:07:54 Связь с зарегистрированным COM объектом проверена
+22:07:54 Searching S.M.A.R.T. compatible hard drives.
+22:07:54 S.M.A.R.T. compatible hard drive WDC WD2500AAKX-001CA0 was found.
+22:07:55 Command line: "C:\osmp\maratl.exe" .
+22:07:55 Clear system.
+22:07:55 Configuration file for flash not found.
+22:07:55 Create configuration file for flash.
+22:07:55 Add "FullFramerateWhenInvisible" to flash configuration.
+22:07:55 Ошибка открытия базы config/info.db3: SQLITE_CANTOPEN[14]: unable to open database file
+22:07:55 Initializing counters internet traffic.
+22:07:55 Information on the Internet traffic counters missing.
+22:07:55 Creating an object-handler instruction.
+22:07:55 Creating an object of the client handler instruction.
+22:07:55 Liaise with the client handler commands.
+22:07:55 Initialize queue instruction.
+22:07:55 Initialization thread instruction fetch.
+22:07:55 Starting thread instruction fetch.
+22:07:55 Initialize queue instruction.
+22:07:55 Initialization thread instruction fetch.
+22:07:55 Starting thread instruction fetch.
+22:07:55 Detected flash version: 10.1
+22:07:55 Operation system version: Microsoft Windows 7.
+22:07:55 Checking and deleting old files.
+22:07:57 Deleting old advertising files.
+22:07:57 Deleting of the old advertising files is completed.
+22:07:57 Checking the S.M.A.R.T. hard drives.
+22:07:57 The temperature of the hard drive WDC WD2500AAKX-001CA0 is 37 C.
+22:07:58 System up time: 0 minutes.
+22:07:58 Reading the configuration file.
+22:07:58 Disabling the standard shell.
+22:07:58 Командная строка "C:\osmp\maratl.exe" 
+22:07:58 Stopping the standard shell.
+22:07:59 Creating the system tray and the shell objects.
+22:07:59 The applications started up at the start of the operation system has already been started by shell.
+22:07:59 The configuration file is not found, starting up the master of configuration.
+22:08:00 Выбран язык приложения: Русский.
+22:08:58 Сохранение привязки конфигурации к терминалу.
+22:09:14 Вход в меню изменения параметров безопасности.
+22:09:15 Параметры безопасности не были изменены.
+22:09:15 Установлена поддержка языковой версии интерфейса: Россия и денежных единиц для страны: Россия.
+22:09:15 Установка запрета вызова диспетчера задач и использования системных комбинаций клавиатуры.
+22:09:15 Получение информации о терминале.
+22:09:15 Создание JS файла региональных параметров.
+22:09:15 Сохранение JS файла региональных параметров.
+22:09:15 Создание файла конфигурации интерфейса
+22:09:15 Создание XML-файла конфигурации интерфейса
+22:09:15 Проверка наличия базы номерных емкостей.
+22:09:15 База номерных емкостей отсутствует. Создание базы по умолчанию.
+22:09:15 Включено обновление номерных емкостей.
+22:09:15 Создание файла описания рекламного контента.
+22:09:15 Рекламных заданий не обнаружено.
+22:09:15 Создание файла описания рекламного контента по умолчанию.
+22:09:15 Создание файла описания рекламного контента.
+22:09:15 Рекламных заданий не обнаружено.
+22:09:15 Создание файла описания рекламного контента.
+22:09:15 Рекламных заданий не обнаружено.
+22:09:16 Сброс счетчиков дневного трафика.
+22:09:16 Получение статистики по трафику интернет.
+22:09:16 Plugins loading error: Plc.data not found.
+22:09:16 Ошибка доступа к таблице ActionVersions : SQLITE_ERROR[1]: 
+22:09:16 Включено обновление.
+22:09:16 Terminal ID: 9974700
+22:09:16 Update plugins queued.
+22:09:16 Поиск портов к которым подключен принтер, купюро/монетоприемник, сторожевой таймер, кардридер.
+22:09:57 Поиск портов завершен.
+22:10:07 Сохранение конфигурации устройств.
+22:10:07 Принтер не был найден.
+22:10:07 Купюро/монетоприемник не был найден.
+22:10:07 Сторожевой таймер не был найден.
+22:10:07 Установлено ограничение макс. суммы платежа 0 руб.
+22:10:07 Значение ширины чека не может быть менее 40 символов.
+22:10:07 Terminal ID: 9974700
+22:10:07 Запуск менеджера сообщений.
+22:10:09 Версия браузера: IE 8.0.7601.17514.
+22:10:09 Версия Flash Player: 10.1.
+22:10:09 Проверка сообщений.
+22:10:09 Обновление сообщений для провайдеров.
+22:10:09 Ошибка при получении конфигурации провайдеров.
+22:10:09 Парсинг сохраненных данных индексной страницы.
+22:10:09 Создание JavaScript-файла конфигурации индексной страницы.
+22:10:09 Создание XML-файла конфигурации индексной страницы.
+22:10:09 ??????? ?? ???????? ??????.
+22:10:09 ??????? ?? ???????? ??????.
+22:10:09 Формирование запроса на чтение комиссий провайдеров.
+22:10:09 Original size: 375 bytes, compressed size: 254 bytes. Sending request to the server...
+22:10:10 Включение блокировки правой кнопки мыши.
+22:10:10 Error: SSL certificate problem: self signed certificate in certificate chain
+22:10:10 Сертификат клиента не может быть аутентифицирован известными СА сертификатами.
+22:10:10 Checking of SSL connection
+22:10:10 Проверка сертификатов
+22:10:10 Cервер "unknown", получено 0 байт. Ошибка соединения по сети интернет: 60.
+22:10:10 Changing the server address to https://service2.osmp.ru/term2/xml.jsp.
+22:10:10 Error: SSL certificate problem: self signed certificate in certificate chain
+22:10:10 Ошибка проверки SSL соединения Сертификат клиента не может быть аутентифицирован известными СА сертификатами.
+22:10:10 Changing the server address to https://service3.osmp.ru/term2/xml.jsp.
+22:10:10 ...Server 's1760.qiwi.com' returned response, sise: 65 bytes.
+22:10:10 Проверка сертификатов завершена
+22:10:10 Запрос списка сертификатов
+22:10:10 ...Server 's1758.qiwi.com' returned response. Compressed size: 440 bytes, original size: 934 bytes.
+22:10:10 Список сертификатов получен
+22:10:10 Запрос сертификата ca256_qiwi.com.cer
+22:10:11 ...Server 's1759.qiwi.com' returned response, sise: 2194 bytes.
+22:10:11 Получен сертификат ca256_qiwi.com.cer 
+22:10:11 Запрос сертификата ca256_sovest.com.cer
+22:10:11 ...Server 's1759.qiwi.com' returned response, sise: 2194 bytes.
+22:10:11 Получен сертификат ca256_sovest.com.cer 
+22:10:11 Запрос сертификата ca_serviceN.osmp.ru.cer
+22:10:11 ...Server 's1757.qiwi.com' returned response, sise: 1818 bytes.
+22:10:11 Получен сертификат ca_serviceN.osmp.ru.cer 
+22:10:11 Запрос сертификата root256_qiwi.com.cer
+22:10:11 ...Server 's1759.qiwi.com' returned response, sise: 2120 bytes.
+22:10:11 Получен сертификат root256_qiwi.com.cer 
+22:10:11 Запрос сертификата root256_sovest.com.cer
+22:10:11 ...Server 's1759.qiwi.com' returned response, sise: 2120 bytes.
+22:10:11 Получен сертификат root256_sovest.com.cer 
+22:10:11 Запрос сертификата root_serviceN.osmp.ru.cer
+22:10:11 ...Server 's1760.qiwi.com' returned response, sise: 1546 bytes.
+22:10:11 Получен сертификат root_serviceN.osmp.ru.cer 
+22:10:12[interface]  Project SSK Error, 1.1.10
+22:10:26 Вход в сервисное меню автомата.
+22:10:27 Проверка SSL соединения
+22:10:27 ...Server 's1046.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+22:10:29 Проверка SSL соединения
+22:10:29 ...Server 's1047.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+22:10:29 Проверка SSL соединения
+22:10:29 ...Server 's1050.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+22:10:30 Проверка SSL соединения
+22:10:30 ...Server 's1047.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+22:10:32 Проверка SSL соединения
+22:10:32 ...Server 's1047.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+22:10:35 Печать чека.
+22:10:35 Принтер не найден.
+22:10:36 Печать чека.
+22:10:36 Принтер не найден.
+22:10:36 Печать чека.
+22:10:36 Принтер не найден.
+22:10:37 Печать чека.
+22:10:37 Принтер не найден.
+22:10:37 Печать чека.
+22:10:37 Принтер не найден.
+22:10:38 Печать чека.
+22:10:38 Принтер не найден.
+22:10:38 Печать чека.
+22:10:38 Принтер не найден.
+22:10:38 Печать чека.
+22:10:38 Принтер не найден.
+22:10:38 Печать чека.
+22:10:38 Принтер не найден.
+22:10:42 Вход в меню изменения параметров интерфейса.
+22:10:44 Параметры интерфейса не были изменены.
+22:10:47 Проверка SSL соединения
+22:10:47 ...Server 's1047.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+22:11:09 Отправка запроса регистрации терминала.
+22:11:09 Original size: 390 bytes, compressed size: 262 bytes. Sending request to the server...
+22:11:09 ...Server 's1046.qiwi.com' returned response. Compressed size: 266 bytes, original size: 459 bytes.
+22:11:10 Активация авторизации при помощи цифровой подписи.
+22:11:10 Ожидание в течении 5 мин. применения новых авторизационных данных на сервере.
+22:11:18 ??????? ?? ???????? ??????.
+22:11:20[interface]  Project SSK Error, 1.1.10
+22:11:38 Вход в сервисное меню автомата.
+22:11:40 Проверка SSL соединения
+22:11:40 ...Server 's1046.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+22:14:09 Проверка SSL соединения
+22:14:09 ...Server 's1046.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+22:15:11 Checking of SSL connection
+22:15:11 ...Server 's1047.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+22:15:39 Проверка сертификатов
+22:15:39 ...Server 's1757.qiwi.com' returned response, sise: 65 bytes.
+22:15:39 Проверка сертификатов завершена
+22:16:34 Проверка SSL соединения
+22:16:34 ...Server 's1049.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+22:16:35 Проверка SSL соединения
+22:16:35 ...Server 's1050.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+22:16:36 Проверка SSL соединения
+22:16:36 ...Server 's1047.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+22:16:37 Проверка SSL соединения
+22:16:37 ...Server 's1050.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+22:16:39 Формирование запроса на чтение комиссий провайдеров.
+22:16:39 Original size: 375 bytes, compressed size: 254 bytes. Sending request to the server...
+22:16:42 ...Server 's1050.qiwi.com' returned response. Compressed size: 23725 bytes, original size: 261651 bytes.
+22:16:43 The request for payment key was created.
+22:16:43 Original size: 217 bytes, compressed size: 192 bytes. Sending request to the server...
+22:16:43 ...Server 's1068.qiwi.com' returned response. Compressed size: 478 bytes, original size: 608 bytes.
+22:16:43 The payment key was saved.
+22:16:43 Запись файла комиссий провайдеров.
+22:16:43 Создание файла информации об автомате.
+22:16:43 Сохранение файла информации об автомате.
+22:16:43 Парсинг конфигурационных данных индексной страницы.
+22:16:43 Сохранение конфигурационных данных индексной страницы.
+22:16:43 Сохранение конфигурации кнопок индексной страницы.
+22:16:43 Создание JS файла региональных параметров.
+22:16:43 Сохранение JS файла региональных параметров.
+22:16:43 Получение информации о терминале.
+22:16:43 Получен номер ЕКЦ.
+22:16:43 Проверка названия организации.
+22:16:43 Проверка адреса терминала.
+22:16:43 Проверка ИНН агента.
+22:16:43 Используется строка доп. информации на чеке по умолчанию.
+22:16:43 Получено значение ширины чека в 0 символов.
+22:16:43 Минимальная длина чека не ограничена.
+22:16:43 Значение для отступа слева для чеке не получено. Используется отступ слева на чеке 0 символов.
+22:16:43 Назначение списка серверов по умолчанию.
+22:16:43 Назначен домашний каталог сервера обновления"/!anonymous/".
+22:16:43 Установлено ограничение макс. суммы платежа по умолчанию 15000 руб.
+22:16:43 Значение ширины чека не может быть менее 40 символов.
+22:16:43 Баланс в системе: 2000.00 руб.
+22:17:09 Проверка SSL соединения
+22:17:09 ...Server 's1046.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+22:17:09 Проверка SSL соединения
+22:17:09 ...Server 's1046.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+22:17:09 Проверка SSL соединения
+22:17:09 Баланс агента получен.
+22:17:09 Восстановление полноценной работы терминала.
+22:17:09 Запуск задания на синхронизацию с серверами эталонного времени.
+22:17:09 Формирование запроса "ping".
+22:17:09 Синхронизация времени: Отправка запроса серверу №1.
+22:17:09 Проверка наличия неотправленных данных счетчиков Интернет-трафика.
+22:17:09 Получение статистики по трафику интернет.
+22:17:10 Трафик: Принято 1387 Кб, передано 135 Кб.
+22:17:10 Проверка жестких дисков S.M.A.R.T.
+22:17:10 ...Server 's1049.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+22:17:10 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+22:17:10 Синхронизация времени: Уровень эталона NTP сервера: 1. Идентификатор эталона: ACTS. Расхождение во времени: 0.5 сек.
+22:17:10 Поиск жестких дисков с функцией S.M.A.R.T.
+22:17:10 Обнаружен жесткий диск WDC WD2500AAKX-001CA0 с функцией S.M.A.R.T.
+22:17:10 Проверка жестких дисков S.M.A.R.T.
+22:17:10 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+22:17:10 Выход из режима фискального сервера.
+22:17:10 Запрос рекомендаций
+22:17:10 Original size: 2052 bytes, compressed size: 993 bytes. Sending request to the server...
+22:17:10 Запрос БИНов.
+22:17:10 Original size: 312 bytes, compressed size: 245 bytes. Sending request to the server...
+22:17:10 Запрос запрещенных номиналов.
+22:17:10 Original size: 300 bytes, compressed size: 232 bytes. Sending request to the server...
+22:17:10 Original size: 308 bytes, compressed size: 240 bytes. Sending request to the server...
+22:17:10 ...Server 's1713.qiwi.com' returned response. Compressed size: 134 bytes, original size: 153 bytes.
+22:17:10 Запрещенные номиналы успешно получены.
+22:17:10 ...Server 's1064.qiwi.com' returned response. Compressed size: 644 bytes, original size: 2195 bytes.
+22:17:11 Баланс в системе: 2000.00 руб.
+22:17:11 ...Server 's1068.qiwi.com' returned response. Compressed size: 165969 bytes, original size: 2469624 bytes.
+22:17:11 БИНы успешно получены.
+22:17:12 ...Server 's1069.qiwi.com' returned response. Compressed size: 715 bytes, original size: 23505 bytes.
+22:17:12 Рекомендации успешно сохранены.
+22:17:25 Проверка SSL соединения
+22:17:25 ...Server 's1049.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+22:17:39 Checking of SSL connection
+22:17:40 ...Server 's1047.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+22:18:24 ??????? ?? ???????? ??????.
+22:18:26[interface]  Project SSK Error, 1.1.10
+22:18:40 Отправка запроса на получение номерной емкости.
+22:18:40 Original size: 329 bytes, compressed size: 231 bytes. Sending request to the server...
+22:18:40 ...Server 's1050.qiwi.com' returned response. Compressed size: 383411 bytes, original size: 3226041 bytes.
+22:18:41 Создание и запись базы номерных емкостей.
+22:18:41 Создание и сохранение базы номерных емкостей для embed объекта.
+22:22:10 Формирование запроса "ping".
+22:22:10 Проверка наличия неотправленных данных счетчиков Интернет-трафика.
+22:22:10 Получение статистики по трафику интернет.
+22:22:10 Трафик: Принято 2678 Кб, передано 196 Кб.
+22:22:10 Проверка жестких дисков S.M.A.R.T.
+22:22:10 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+22:22:10 Поиск жестких дисков с функцией S.M.A.R.T.
+22:22:10 Обнаружен жесткий диск WDC WD2500AAKX-001CA0 с функцией S.M.A.R.T.
+22:22:10 Проверка жестких дисков S.M.A.R.T.
+22:22:10 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+22:22:10 Выход из режима фискального сервера.
+22:22:10 Original size: 2056 bytes, compressed size: 995 bytes. Sending request to the server...
+22:22:10 ...Server 's1066.qiwi.com' returned response. Compressed size: 644 bytes, original size: 2195 bytes.
+22:22:10 Баланс в системе: 2000.00 руб.
+22:22:40 Checking of SSL connection
+22:22:40 ...Server 's1050.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+22:23:14 Генерация файлов номерных емкостей
+22:23:14 Завершение генерации файлов номерных емкостей
+22:23:40 Отправка запроса на получение playlist.
+22:23:40 Original size: 329 bytes, compressed size: 230 bytes. Sending request to the server...
+22:23:40 ...Server 's1050.qiwi.com' returned response. Compressed size: 303 bytes, original size: 539 bytes.
+22:23:40 Вход в сервисное меню автомата.
+22:23:40 Сохранение playlist.
+22:24:05 Проверка SSL соединения
+22:24:05 ...Server 's1047.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+22:24:06 ??????? ?? ???????? ??????.
+22:24:08[interface]  Project SSK Error, 1.1.10
+22:27:10 Формирование запроса "ping".
+22:27:10 Проверка наличия неотправленных данных счетчиков Интернет-трафика.
+22:27:10 Получение статистики по трафику интернет.
+22:27:10 Трафик: Принято 3326 Кб, передано 205 Кб.
+22:27:10 Проверка жестких дисков S.M.A.R.T.
+22:27:10 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+22:27:10 Поиск жестких дисков с функцией S.M.A.R.T.
+22:27:10 Обнаружен жесткий диск WDC WD2500AAKX-001CA0 с функцией S.M.A.R.T.
+22:27:10 Проверка жестких дисков S.M.A.R.T.
+22:27:10 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+22:27:10 Выход из режима фискального сервера.
+22:27:10 Original size: 2055 bytes, compressed size: 996 bytes. Sending request to the server...
+22:27:10 ...Server 's1064.qiwi.com' returned response. Compressed size: 644 bytes, original size: 2195 bytes.
+22:27:10 Баланс в системе: 2000.00 руб.
+22:27:40 Checking of SSL connection
+22:27:40 ...Server 's1050.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+22:29:40 Формирование запроса на получение конфигурации провайдеров.
+22:29:40 Original size: 299 bytes, compressed size: 243 bytes. Sending request to the server...
+22:29:43 ...Server 's1067.qiwi.com' returned response. Compressed size: 519076 bytes, original size: 5062400 bytes.
+22:29:43 Парсинг провайдеров.
+22:29:52 Парсинг провайдеров закончен.
+22:30:10 Manifest request.
+22:30:10 Original size: 245 bytes, compressed size: 215 bytes. Sending request to the server...
+22:30:10 ...Server 's1067.qiwi.com' returned response. Compressed size: 471 bytes, original size: 973 bytes.
+22:30:10 Manifest recieved.
+22:30:10 Download: ???????? ????? browsers/Gecko/Gecko17/v1.1.0/Gecko17.dll. ?????? ?????? 114851 ????, ???????? ?????? 241152 ????.
+22:30:11 ...Server 's1758.qiwi.com' returned response. Compressed size: 114851 bytes, original size: 241152 bytes.
+22:30:11 Download: ???????? ????? utils/providers/v1.0.0/Providers.dll. ?????? ?????? 134351 ????, ???????? ?????? 266752 ????.
+22:30:11 ...Server 's1758.qiwi.com' returned response. Compressed size: 134351 bytes, original size: 266752 bytes.
+22:30:11 Download: ???????? ????? utils/statistics/v1.1.0.22/Statistics.dll. ?????? ?????? 390135 ????, ???????? ?????? 700416 ????.
+22:30:12 ...Server 's1758.qiwi.com' returned response. Compressed size: 390135 bytes, original size: 700416 bytes.
+22:30:13 Download: ???????? ????? utils/utils/v1.2.0/utils.dll. ?????? ?????? 408427 ????, ???????? ?????? 744448 ????.
+22:30:13 ...Server 's1758.qiwi.com' returned response. Compressed size: 408427 bytes, original size: 744448 bytes.
+22:31:10 ID обновления: 1511034447:1511034447.
+22:31:10 Update: Запуск процедуры обновления по https.
+22:31:10 Update: Подключение к серверу обновления "update1.osmp.ru".
+22:31:10 Запрос рекомендаций
+22:31:10 Запрос БИНов.
+22:31:10 Original size: 312 bytes, compressed size: 245 bytes. Sending request to the server...
+22:31:10 Original size: 300 bytes, compressed size: 232 bytes. Sending request to the server...
+22:31:10 Download: ???????? ????? index.sha.
+22:31:10 ...Server 's1757.qiwi.com' returned response, sise: 65 bytes.
+22:31:10 Проверка актуальности файла index.xml.
+22:31:10 Файл index.xml находится в неактуальном состоянии.
+22:31:10 Download: ???????? ????? index.xml. ?????? ?????? 88646 ????
+22:31:11 ...Server 's1068.qiwi.com' returned response. Compressed size: 165969 bytes, original size: 2469624 bytes.
+22:31:11 ...Server 's1757.qiwi.com' returned response. Compressed size: 88646 bytes, original size: 255187 bytes.
+22:31:11 БИНы успешно получены.
+22:31:12 ...Server 's1067.qiwi.com' returned response. Compressed size: 715 bytes, original size: 23505 bytes.
+22:31:12 Update: Проверка списка файлов на необходимость обновления.
+22:31:12 Рекомендации успешно сохранены.
+22:31:17 Update: Всего нуждается в обновлении файлов - 0.
+22:31:17 Update: Проверка списка рекламных файлов на необходимость обновления.
+22:31:17 Назначен рекламный каталог сервера обновления: advert_ua
+22:31:17 Update: Всего нуждается в обновлении файлов рекламного контента - 0.
+22:31:17 Update: Проверка списка файлов конфигурации интерфейса на необходимость обновления.
+22:31:18 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\zkh.gif
+22:31:22 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\internet.gif
+22:31:22 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\internet2.gif
+22:31:23 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\internet1.gif
+22:31:23 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\e-commerce2.gif
+22:31:25 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\phone.gif
+22:31:28 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\sotov.gif
+22:31:28 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\ek.gif
+22:31:28 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\tv.gif
+22:31:28 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\tv2.gif
+22:31:28 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\tv4.gif
+22:31:30 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\other.gif
+22:31:33 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\jku2.gif
+22:31:33 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\jku.gif
+22:31:33 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\4139363528503636134
+22:31:40 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\kredit.gif
+22:31:40 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\e-commerce1.gif
+22:31:47 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv18215_3ec80db6.jpg
+22:31:47 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv1647radonez.jpg
+22:31:47 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv3689mercy.jpg
+22:31:47 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv1665Present_life.jpg
+22:31:47 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\2251057372695251175
+22:31:47 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv4506_6546a192.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv4601_eeeff566.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv17374_fef755a6.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv5796_193db149.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv1976_2355755c.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv3385_f878e88e.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv13666_3a5945d9.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv9017_9a20ccf5.jpeg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv2135refusals.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\2993872909894008818
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv2747_ebff5508.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\7810429037633123583
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv1585share_heat.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv1686_193207c9.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv4652_dcf17cd2.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv4011creation.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv2957Our_children.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\6042353604834865312
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv5664_c4e70ed8.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv2696_ec2d5ed2.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\6520474454776331349
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\7900979389401156793
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv3069krasnodog.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv5329_4d6109f8.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv17779_79190cc7.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\3593162157776520385
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\6359614921414848646
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\8403975929586760886
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv9528_74b006ca.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv4163_26381c9e.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\3429159844359588333
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv5802_a9a3ead2.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv2069help_promo.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv16225_9ead0aa4.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\162058053516768316
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv5791_287036f0.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv3454Turmalin.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv4249_b1d9d793.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv4848_523646c0.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\943830619348025798
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv1758_460db8be.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv4017minisite_help_svoi_deti.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\7964549654737173128
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\486818272575112771
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv8456_8e16816d.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv5663_b80c5a5c.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\8173850142809374128
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv3639Life_as_miracle.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv3903small_houses.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\2368130091178244701
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv4176_4806af6.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv2136National_welfare_fund.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv2137children_together.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv4710_465851c3.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\2919191737515525211
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv3692_2dfb2c8f.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\7471265350905543300
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv9073_e88c40f7.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv3446fondprof.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\5981887288317198639
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\6559269087215203435
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv6289_3d5b590b.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv2976_14a338f0.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv4258_17cc5dca.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv17836_452ac419.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\1933856648590345685
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv6099_6ca0ccba.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\3097504069964772747
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv17116_5ae29493.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv17375_7dfdf52f.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv5866_a1cc5fb3.jpeg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv3823heart_to_heartt.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\2932946059454992018
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv16281_9cb38d41.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv4767_cf2a6a7a.jpg
+22:31:48 Update: Нуждается в обновлении файл конфигурации интерфейса site\img\ui_item\charity\prv5031_5187a2f.jpg
+22:31:48 Update: Всего нуждается в обновлении файлов конфигурации интерфейса - 98.
+22:31:48 Download: ???????? ????? ???????????? ?????????? logos/4139363528503636134. ?????? ?????? 7902 ????, ???????? ?????? 7943 ????.
+22:31:48 ...Server 's1757.qiwi.com' returned response. Compressed size: 7902 bytes, original size: 7943 bytes.
+22:31:48 Download: ???????? ????? ???????????? ?????????? logos/162058053516768316. ?????? ?????? 142473 ????, ???????? ?????? 150068 ????.
+22:31:50 ...Server 's1757.qiwi.com' returned response. Compressed size: 142473 bytes, original size: 150068 bytes.
+22:31:50 Download: ???????? ????? ???????????? ?????????? logos/1933856648590345685. ?????? ?????? 116498 ????, ???????? ?????? 130414 ????.
+22:31:51 ...Server 's1757.qiwi.com' returned response. Compressed size: 116498 bytes, original size: 130414 bytes.
+22:31:52 Download: ???????? ????? ???????????? ?????????? logos/2251057372695251175. ?????? ?????? 142124 ????, ???????? ?????? 147239 ????.
+22:31:53 ...Server 's1757.qiwi.com' returned response. Compressed size: 142124 bytes, original size: 147239 bytes.
+22:31:53 Download: ???????? ????? ???????????? ?????????? logos/2368130091178244701. ?????? ?????? 118001 ????, ???????? ?????? 129307 ????.
+22:31:54 ...Server 's1757.qiwi.com' returned response. Compressed size: 118001 bytes, original size: 129307 bytes.
+22:31:55 Download: ???????? ????? ???????????? ?????????? logos/2919191737515525211. ?????? ?????? 389282 ????, ???????? ?????? 401115 ????.
+22:31:56 ...Server 's1757.qiwi.com' returned response. Compressed size: 389282 bytes, original size: 401115 bytes.
+22:31:56 Download: ???????? ????? ???????????? ?????????? logos/2932946059454992018. ?????? ?????? 426667 ????, ???????? ?????? 460671 ????.
+22:31:58 ...Server 's1757.qiwi.com' returned response. Compressed size: 426667 bytes, original size: 460671 bytes.
+22:31:59 Download: ???????? ????? ???????????? ?????????? logos/2993872909894008818. ?????? ?????? 142898 ????, ???????? ?????? 153378 ????.
+22:32:00 ...Server 's1757.qiwi.com' returned response. Compressed size: 142898 bytes, original size: 153378 bytes.
+22:32:00 Download: ???????? ????? ???????????? ?????????? logos/3097504069964772747. ?????? ?????? 77717 ????, ???????? ?????? 77884 ????.
+22:32:01 ...Server 's1757.qiwi.com' returned response. Compressed size: 77717 bytes, original size: 77884 bytes.
+22:32:01 Download: ???????? ????? ???????????? ?????????? logos/3429159844359588333. ?????? ?????? 114164 ????, ???????? ?????? 134118 ????.
+22:32:03 ...Server 's1757.qiwi.com' returned response. Compressed size: 114164 bytes, original size: 134118 bytes.
+22:32:03 Download: ???????? ????? ???????????? ?????????? logos/3593162157776520385. ?????? ?????? 118618 ????, ???????? ?????? 138037 ????.
+22:32:04 ...Server 's1757.qiwi.com' returned response. Compressed size: 118618 bytes, original size: 138037 bytes.
+22:32:05 Download: ???????? ????? ???????????? ?????????? logos/486818272575112771. ?????? ?????? 271651 ????, ???????? ?????? 347266 ????.
+22:32:06 ...Server 's1757.qiwi.com' returned response. Compressed size: 271651 bytes, original size: 347266 bytes.
+22:32:06 Download: ???????? ????? ???????????? ?????????? logos/5981887288317198639. ?????? ?????? 497 ????, ???????? ?????? 13107 ????.
+22:32:06 ...Server 's1757.qiwi.com' returned response. Compressed size: 497 bytes, original size: 13107 bytes.
+22:32:07 Download: ???????? ????? ???????????? ?????????? logos/6042353604834865312. ?????? ?????? 96252 ????, ???????? ?????? 105271 ????.
+22:32:08 ...Server 's1757.qiwi.com' returned response. Compressed size: 96252 bytes, original size: 105271 bytes.
+22:32:08 Download: ???????? ????? ???????????? ?????????? logos/6359614921414848646. ?????? ?????? 252863 ????, ???????? ?????? 261244 ????.
+22:32:10 ...Server 's1757.qiwi.com' returned response. Compressed size: 252863 bytes, original size: 261244 bytes.
+22:32:11 Download: ???????? ????? ???????????? ?????????? logos/6520474454776331349. ?????? ?????? 436168 ????, ???????? ?????? 476083 ????.
+22:32:13 ...Server 's1757.qiwi.com' returned response. Compressed size: 436168 bytes, original size: 476083 bytes.
+22:32:13 Download: ???????? ????? ???????????? ?????????? logos/6559269087215203435. ?????? ?????? 145194 ????, ???????? ?????? 148348 ????.
+22:32:14 ...Server 's1757.qiwi.com' returned response. Compressed size: 145194 bytes, original size: 148348 bytes.
+22:32:15 Download: ???????? ????? ???????????? ?????????? logos/7471265350905543300. ?????? ?????? 472072 ????, ???????? ?????? 498161 ????.
+22:32:18 ...Server 's1757.qiwi.com' returned response. Compressed size: 472072 bytes, original size: 498161 bytes.
+22:32:18 Download: ???????? ????? ???????????? ?????????? logos/7810429037633123583. ?????? ?????? 308094 ????, ???????? ?????? 360604 ????.
+22:32:20 ...Server 's1757.qiwi.com' returned response. Compressed size: 308094 bytes, original size: 360604 bytes.
+22:32:20 Download: ???????? ????? ???????????? ?????????? logos/7900979389401156793. ?????? ?????? 138679 ????, ???????? ?????? 153049 ????.
+22:32:21 ...Server 's1757.qiwi.com' returned response. Compressed size: 138679 bytes, original size: 153049 bytes.
+22:32:22 Download: ???????? ????? ???????????? ?????????? logos/7964549654737173128. ?????? ?????? 124688 ????, ???????? ?????? 153062 ????.
+22:32:23 ...Server 's1757.qiwi.com' returned response. Compressed size: 124688 bytes, original size: 153062 bytes.
+22:32:23 Download: ???????? ????? ???????????? ?????????? logos/8173850142809374128. ?????? ?????? 380156 ????, ???????? ?????? 393446 ????.
+22:32:25 ...Server 's1757.qiwi.com' returned response. Compressed size: 380156 bytes, original size: 393446 bytes.
+22:32:25 Download: ???????? ????? ???????????? ?????????? logos/8403975929586760886. ?????? ?????? 146193 ????, ???????? ?????? 153703 ????.
+22:32:27 ...Server 's1757.qiwi.com' returned response. Compressed size: 146193 bytes, original size: 153703 bytes.
+22:32:27 Download: ???????? ????? ???????????? ?????????? logos/943830619348025798. ?????? ?????? 152643 ????, ???????? ?????? 173651 ????.
+22:32:28 ...Server 's1757.qiwi.com' returned response. Compressed size: 152643 bytes, original size: 173651 bytes.
+22:32:29 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv13666_3a5945d9.jpg. ?????? ?????? 125220 ????, ???????? ?????? 137658 ????.
+22:32:31 ...Server 's1757.qiwi.com' returned response. Compressed size: 125220 bytes, original size: 137658 bytes.
+22:32:31 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/top8/prv1585share_heat.jpg. ?????? ?????? 145544 ????, ???????? ?????? 152426 ????.
+22:32:32 ...Server 's1757.qiwi.com' returned response. Compressed size: 145544 bytes, original size: 152426 bytes.
+22:32:33 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv16225_9ead0aa4.jpg. ?????? ?????? 134873 ????, ???????? ?????? 153051 ????.
+22:32:34 ...Server 's1757.qiwi.com' returned response. Compressed size: 134873 bytes, original size: 153051 bytes.
+22:32:34 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv16281_9cb38d41.jpg. ?????? ?????? 140182 ????, ???????? ?????? 147828 ????.
+22:32:36 ...Server 's1757.qiwi.com' returned response. Compressed size: 140182 bytes, original size: 147828 bytes.
+22:32:36 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/top8/prv1647radonez.jpg. ?????? ?????? 147010 ????, ???????? ?????? 153609 ????.
+22:32:38 ...Server 's1757.qiwi.com' returned response. Compressed size: 147010 bytes, original size: 153609 bytes.
+22:32:38 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/top8/prv1665Present_life.jpg. ?????? ?????? 142367 ????, ???????? ?????? 154124 ????.
+22:32:40 ...Server 's1757.qiwi.com' returned response. Compressed size: 142367 bytes, original size: 154124 bytes.
+22:32:40 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv1686_193207c9.jpg. ?????? ?????? 132388 ????, ???????? ?????? 136180 ????.
+22:32:41 ...Server 's1757.qiwi.com' returned response. Compressed size: 132388 bytes, original size: 136180 bytes.
+22:32:42 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv17116_5ae29493.jpg. ?????? ?????? 136049 ????, ???????? ?????? 141677 ????.
+22:32:43 ...Server 's1757.qiwi.com' returned response. Compressed size: 136049 bytes, original size: 141677 bytes.
+22:32:43 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv17374_fef755a6.jpg. ?????? ?????? 119475 ????, ???????? ?????? 139220 ????.
+22:32:44 ...Server 's1757.qiwi.com' returned response. Compressed size: 119475 bytes, original size: 139220 bytes.
+22:32:44 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv17375_7dfdf52f.jpg. ?????? ?????? 112240 ????, ???????? ?????? 142323 ????.
+22:32:45 ...Server 's1757.qiwi.com' returned response. Compressed size: 112240 bytes, original size: 142323 bytes.
+22:32:46 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv1758_460db8be.jpg. ?????? ?????? 142327 ????, ???????? ?????? 151085 ????.
+22:32:48 ...Server 's1757.qiwi.com' returned response. Compressed size: 142327 bytes, original size: 151085 bytes.
+22:32:48 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv17779_79190cc7.jpg. ?????? ?????? 140264 ????, ???????? ?????? 151180 ????.
+22:32:49 ...Server 's1757.qiwi.com' returned response. Compressed size: 140264 bytes, original size: 151180 bytes.
+22:32:49 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv17836_452ac419.jpg. ?????? ?????? 122042 ????, ???????? ?????? 133575 ????.
+22:32:51 ...Server 's1757.qiwi.com' returned response. Compressed size: 122042 bytes, original size: 133575 bytes.
+22:32:51 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv18215_3ec80db6.jpg. ?????? ?????? 96659 ????, ???????? ?????? 139263 ????.
+22:32:52 ...Server 's1757.qiwi.com' returned response. Compressed size: 96659 bytes, original size: 139263 bytes.
+22:32:53 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv1976_2355755c.jpg. ?????? ?????? 148496 ????, ???????? ?????? 152343 ????.
+22:32:54 ...Server 's1757.qiwi.com' returned response. Compressed size: 148496 bytes, original size: 152343 bytes.
+22:32:54 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv2069help_promo.jpg. ?????? ?????? 146444 ????, ???????? ?????? 152799 ????.
+22:32:55 ...Server 's1757.qiwi.com' returned response. Compressed size: 146444 bytes, original size: 152799 bytes.
+22:32:56 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/top8/prv2135refusals.jpg. ?????? ?????? 147124 ????, ???????? ?????? 151758 ????.
+22:32:58 ...Server 's1757.qiwi.com' returned response. Compressed size: 147124 bytes, original size: 151758 bytes.
+22:32:58 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/top8/prv2136National_welfare_fund.jpg. ?????? ?????? 145771 ????, ???????? ?????? 153660 ????.
+22:33:00 ...Server 's1757.qiwi.com' returned response. Compressed size: 145771 bytes, original size: 153660 bytes.
+22:33:01 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/top8/prv2137children_together.jpg. ?????? ?????? 147574 ????, ???????? ?????? 154387 ????.
+22:33:03 ...Server 's1757.qiwi.com' returned response. Compressed size: 147574 bytes, original size: 154387 bytes.
+22:33:03 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/top8/prv2696_ec2d5ed2.jpg. ?????? ?????? 131514 ????, ???????? ?????? 139260 ????.
+22:33:04 ...Server 's1757.qiwi.com' returned response. Compressed size: 131514 bytes, original size: 139260 bytes.
+22:33:04 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv2747_ebff5508.jpg. ?????? ?????? 148671 ????, ???????? ?????? 152671 ????.
+22:33:06 ...Server 's1757.qiwi.com' returned response. Compressed size: 148671 bytes, original size: 152671 bytes.
+22:33:06 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/top8/prv2957Our_children.jpg. ?????? ?????? 139575 ????, ???????? ?????? 153856 ????.
+22:33:08 ...Server 's1757.qiwi.com' returned response. Compressed size: 139575 bytes, original size: 153856 bytes.
+22:33:08 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/top8/prv2976_14a338f0.jpg. ?????? ?????? 117011 ????, ???????? ?????? 132297 ????.
+22:33:09 ...Server 's1757.qiwi.com' returned response. Compressed size: 117011 bytes, original size: 132297 bytes.
+22:33:09 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/top8/prv3069krasnodog.jpg. ?????? ?????? 145373 ????, ???????? ?????? 152752 ????.
+22:33:10 Формирование запроса "ping".
+22:33:10 Проверка наличия неотправленных данных счетчиков Интернет-трафика.
+22:33:10 Получение статистики по трафику интернет.
+22:33:10 Трафик: Принято 14662 Кб, передано 638 Кб.
+22:33:10 Проверка жестких дисков S.M.A.R.T.
+22:33:10 Температура жесткого диска WDC WD2500AAKX-001CA0 38 C.
+22:33:10 Поиск жестких дисков с функцией S.M.A.R.T.
+22:33:10 Обнаружен жесткий диск WDC WD2500AAKX-001CA0 с функцией S.M.A.R.T.
+22:33:10 Проверка жестких дисков S.M.A.R.T.
+22:33:10 Температура жесткого диска WDC WD2500AAKX-001CA0 38 C.
+22:33:10 Выход из режима фискального сервера.
+22:33:10 Original size: 2058 bytes, compressed size: 997 bytes. Sending request to the server...
+22:33:10 ...Server 's1063.qiwi.com' returned response. Compressed size: 644 bytes, original size: 2195 bytes.
+22:33:11 Баланс в системе: 2000.00 руб.
+22:33:12 ...Server 's1757.qiwi.com' returned response. Compressed size: 145373 bytes, original size: 152752 bytes.
+22:33:12 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv3385_f878e88e.jpg. ?????? ?????? 145156 ????, ???????? ?????? 146425 ????.
+22:33:14 ...Server 's1757.qiwi.com' returned response. Compressed size: 145156 bytes, original size: 146425 bytes.
+22:33:14 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/top8/prv3446fondprof.jpg. ?????? ?????? 147069 ????, ???????? ?????? 153156 ????.
+22:33:15 ...Server 's1757.qiwi.com' returned response. Compressed size: 147069 bytes, original size: 153156 bytes.
+22:33:16 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/top8/prv3454Turmalin.jpg. ?????? ?????? 148437 ????, ???????? ?????? 151838 ????.
+22:33:17 ...Server 's1757.qiwi.com' returned response. Compressed size: 148437 bytes, original size: 151838 bytes.
+22:33:18 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/top8/prv3639Life_as_miracle.jpg. ?????? ?????? 145509 ????, ???????? ?????? 154304 ????.
+22:33:19 ...Server 's1757.qiwi.com' returned response. Compressed size: 145509 bytes, original size: 154304 bytes.
+22:33:19 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/top8/prv3689mercy.jpg. ?????? ?????? 139956 ????, ???????? ?????? 151528 ????.
+22:33:20 ...Server 's1757.qiwi.com' returned response. Compressed size: 139956 bytes, original size: 151528 bytes.
+22:33:21 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv3692_2dfb2c8f.jpg. ?????? ?????? 131339 ????, ???????? ?????? 148326 ????.
+22:33:22 ...Server 's1757.qiwi.com' returned response. Compressed size: 131339 bytes, original size: 148326 bytes.
+22:33:22 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/top8/prv3823heart_to_heartt.jpg. ?????? ?????? 137904 ????, ???????? ?????? 153658 ????.
+22:33:24 ...Server 's1757.qiwi.com' returned response. Compressed size: 137904 bytes, original size: 153658 bytes.
+22:33:24 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/top8/prv3903small_houses.jpg. ?????? ?????? 128561 ????, ???????? ?????? 149610 ????.
+22:33:25 ...Server 's1757.qiwi.com' returned response. Compressed size: 128561 bytes, original size: 149610 bytes.
+22:33:25 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/top8/prv4011creation.jpg. ?????? ?????? 135715 ????, ???????? ?????? 152336 ????.
+22:33:27 ...Server 's1757.qiwi.com' returned response. Compressed size: 135715 bytes, original size: 152336 bytes.
+22:33:28 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/top8/prv4017minisite_help_svoi_deti.jpg. ?????? ?????? 149368 ????, ???????? ?????? 153949 ????.
+22:33:29 ...Server 's1757.qiwi.com' returned response. Compressed size: 149368 bytes, original size: 153949 bytes.
+22:33:29 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/top8/prv4163_26381c9e.jpg. ?????? ?????? 136645 ????, ???????? ?????? 139541 ????.
+22:33:30 ...Server 's1757.qiwi.com' returned response. Compressed size: 136645 bytes, original size: 139541 bytes.
+22:33:30 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv4176_4806af6.jpg. ?????? ?????? 145287 ????, ???????? ?????? 148784 ????.
+22:33:32 ...Server 's1757.qiwi.com' returned response. Compressed size: 145287 bytes, original size: 148784 bytes.
+22:33:32 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv4249_b1d9d793.jpg. ?????? ?????? 148361 ????, ???????? ?????? 153337 ????.
+22:33:34 ...Server 's1757.qiwi.com' returned response. Compressed size: 148361 bytes, original size: 153337 bytes.
+22:33:35 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/top8/prv4258_17cc5dca.jpg. ?????? ?????? 89244 ????, ???????? ?????? 94732 ????.
+22:33:35 ...Server 's1757.qiwi.com' returned response. Compressed size: 89244 bytes, original size: 94732 bytes.
+22:33:36 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/top8/prv4506_6546a192.jpg. ?????? ?????? 107000 ????, ???????? ?????? 133862 ????.
+22:33:37 ...Server 's1757.qiwi.com' returned response. Compressed size: 107000 bytes, original size: 133862 bytes.
+22:33:38 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/top8/prv4601_eeeff566.jpg. ?????? ?????? 150544 ????, ???????? ?????? 153591 ????.
+22:33:38 ...Server 's1757.qiwi.com' returned response. Compressed size: 150544 bytes, original size: 153591 bytes.
+22:33:39 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/top8/prv4652_dcf17cd2.jpg. ?????? ?????? 134841 ????, ???????? ?????? 152988 ????.
+22:33:40 Checking of SSL connection
+22:33:40 ...Server 's1050.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+22:33:41 ...Server 's1757.qiwi.com' returned response. Compressed size: 134841 bytes, original size: 152988 bytes.
+22:33:41 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv4710_465851c3.jpg. ?????? ?????? 143989 ????, ???????? ?????? 153478 ????.
+22:33:42 ...Server 's1757.qiwi.com' returned response. Compressed size: 143989 bytes, original size: 153478 bytes.
+22:33:43 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv4767_cf2a6a7a.jpg. ?????? ?????? 158059 ????, ???????? ?????? 201468 ????.
+22:33:45 ...Server 's1757.qiwi.com' returned response. Compressed size: 158059 bytes, original size: 201468 bytes.
+22:33:45 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/top8/prv4848_523646c0.jpg. ?????? ?????? 100138 ????, ???????? ?????? 115898 ????.
+22:33:46 ...Server 's1757.qiwi.com' returned response. Compressed size: 100138 bytes, original size: 115898 bytes.
+22:33:46 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv5031_5187a2f.jpg. ?????? ?????? 132487 ????, ???????? ?????? 161739 ????.
+22:33:48 ...Server 's1757.qiwi.com' returned response. Compressed size: 132487 bytes, original size: 161739 bytes.
+22:33:48 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/top8/prv5329_4d6109f8.jpg. ?????? ?????? 136904 ????, ???????? ?????? 145229 ????.
+22:33:49 ...Server 's1757.qiwi.com' returned response. Compressed size: 136904 bytes, original size: 145229 bytes.
+22:33:49 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv5663_b80c5a5c.jpg. ?????? ?????? 143748 ????, ???????? ?????? 149255 ????.
+22:33:50 ...Server 's1757.qiwi.com' returned response. Compressed size: 143748 bytes, original size: 149255 bytes.
+22:33:51 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv5664_c4e70ed8.jpg. ?????? ?????? 107771 ????, ???????? ?????? 135753 ????.
+22:33:51 ...Server 's1757.qiwi.com' returned response. Compressed size: 107771 bytes, original size: 135753 bytes.
+22:33:52 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv5791_287036f0.jpg. ?????? ?????? 140627 ????, ???????? ?????? 152172 ????.
+22:33:53 ...Server 's1757.qiwi.com' returned response. Compressed size: 140627 bytes, original size: 152172 bytes.
+22:33:53 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv5796_193db149.jpg. ?????? ?????? 147985 ????, ???????? ?????? 153533 ????.
+22:33:54 ...Server 's1757.qiwi.com' returned response. Compressed size: 147985 bytes, original size: 153533 bytes.
+22:33:54 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv5802_a9a3ead2.jpg. ?????? ?????? 130932 ????, ???????? ?????? 148770 ????.
+22:33:55 ...Server 's1757.qiwi.com' returned response. Compressed size: 130932 bytes, original size: 148770 bytes.
+22:33:56 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv5866_a1cc5fb3.jpeg. ?????? ?????? 146934 ????, ???????? ?????? 153494 ????.
+22:33:57 ...Server 's1757.qiwi.com' returned response. Compressed size: 146934 bytes, original size: 153494 bytes.
+22:33:57 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv6099_6ca0ccba.jpg. ?????? ?????? 112832 ????, ???????? ?????? 115546 ????.
+22:33:59 ...Server 's1757.qiwi.com' returned response. Compressed size: 112832 bytes, original size: 115546 bytes.
+22:33:59 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv6289_3d5b590b.jpg. ?????? ?????? 264122 ????, ???????? ?????? 294926 ????.
+22:34:01 ...Server 's1757.qiwi.com' returned response. Compressed size: 264122 bytes, original size: 294926 bytes.
+22:34:01 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv8456_8e16816d.jpg. ?????? ?????? 113221 ????, ???????? ?????? 136018 ????.
+22:34:03 ...Server 's1757.qiwi.com' returned response. Compressed size: 113221 bytes, original size: 136018 bytes.
+22:34:03 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv9017_9a20ccf5.jpeg. ?????? ?????? 106896 ????, ???????? ?????? 133110 ????.
+22:34:04 ...Server 's1757.qiwi.com' returned response. Compressed size: 106896 bytes, original size: 133110 bytes.
+22:34:04 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv9073_e88c40f7.jpg. ?????? ?????? 137568 ????, ???????? ?????? 154346 ????.
+22:34:05 ...Server 's1757.qiwi.com' returned response. Compressed size: 137568 bytes, original size: 154346 bytes.
+22:34:06 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/prv9528_74b006ca.jpg. ?????? ?????? 222831 ????, ???????? ?????? 250940 ????.
+22:34:07 ...Server 's1757.qiwi.com' returned response. Compressed size: 222831 bytes, original size: 250940 bytes.
+22:34:08 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/custom/e-commerce1.gif. ?????? ?????? 7417 ????, ???????? ?????? 7823 ????.
+22:34:08 ...Server 's1757.qiwi.com' returned response. Compressed size: 7417 bytes, original size: 7823 bytes.
+22:34:08 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/custom/e-commerce2.gif. ?????? ?????? 6147 ????, ???????? ?????? 6521 ????.
+22:34:08 ...Server 's1757.qiwi.com' returned response. Compressed size: 6147 bytes, original size: 6521 bytes.
+22:34:09 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/custom/ek.gif. ?????? ?????? 5455 ????, ???????? ?????? 5488 ????.
+22:34:09 ...Server 's1757.qiwi.com' returned response. Compressed size: 5455 bytes, original size: 5488 bytes.
+22:34:09 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/custom/internet.gif. ?????? ?????? 5295 ????, ???????? ?????? 5340 ????.
+22:34:09 ...Server 's1757.qiwi.com' returned response. Compressed size: 5295 bytes, original size: 5340 bytes.
+22:34:09 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/custom/internet1.gif. ?????? ?????? 5084 ????, ???????? ?????? 5365 ????.
+22:34:10 ...Server 's1757.qiwi.com' returned response. Compressed size: 5084 bytes, original size: 5365 bytes.
+22:34:10 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/custom/internet2.gif. ?????? ?????? 6144 ????, ???????? ?????? 6449 ????.
+22:34:10 ...Server 's1757.qiwi.com' returned response. Compressed size: 6144 bytes, original size: 6449 bytes.
+22:34:10 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/custom/jku.gif. ?????? ?????? 6930 ????, ???????? ?????? 7335 ????.
+22:34:11 ...Server 's1757.qiwi.com' returned response. Compressed size: 6930 bytes, original size: 7335 bytes.
+22:34:11 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/custom/jku2.gif. ?????? ?????? 6056 ????, ???????? ?????? 6445 ????.
+22:34:11 ...Server 's1757.qiwi.com' returned response. Compressed size: 6056 bytes, original size: 6445 bytes.
+22:34:11 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/custom/kredit.gif. ?????? ?????? 6757 ????, ???????? ?????? 6826 ????.
+22:34:11 ...Server 's1757.qiwi.com' returned response. Compressed size: 6757 bytes, original size: 6826 bytes.
+22:34:12 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/custom/other.gif. ?????? ?????? 6017 ????, ???????? ?????? 6033 ????.
+22:34:12 ...Server 's1757.qiwi.com' returned response. Compressed size: 6017 bytes, original size: 6033 bytes.
+22:34:12 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/custom/phone.gif. ?????? ?????? 6401 ????, ???????? ?????? 6496 ????.
+22:34:12 ...Server 's1757.qiwi.com' returned response. Compressed size: 6401 bytes, original size: 6496 bytes.
+22:34:12 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/custom/sotov.gif. ?????? ?????? 4322 ????, ???????? ?????? 4319 ????.
+22:34:13 ...Server 's1757.qiwi.com' returned response. Compressed size: 4322 bytes, original size: 4319 bytes.
+22:34:13 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/custom/tv.gif. ?????? ?????? 5208 ????, ???????? ?????? 5223 ????.
+22:34:13 ...Server 's1757.qiwi.com' returned response. Compressed size: 5208 bytes, original size: 5223 bytes.
+22:34:13 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/custom/tv2.gif. ?????? ?????? 5772 ????, ???????? ?????? 6078 ????.
+22:34:13 ...Server 's1757.qiwi.com' returned response. Compressed size: 5772 bytes, original size: 6078 bytes.
+22:34:14 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/custom/tv4.gif. ?????? ?????? 4457 ????, ???????? ?????? 4726 ????.
+22:34:14 ...Server 's1757.qiwi.com' returned response. Compressed size: 4457 bytes, original size: 4726 bytes.
+22:34:14 Download: ???????? ????? ???????????? ?????????? logos/!anonymous/custom/zkh.gif. ?????? ?????? 5833 ????, ???????? ?????? 5845 ????.
+22:34:14 ...Server 's1757.qiwi.com' returned response. Compressed size: 5833 bytes, original size: 5845 bytes.
+22:34:15 Update: Загрузка файлов конфигурации интерфейса закончена.
+22:34:15 Update: Загрузка файлов закончена.
+22:34:40 Создание файла описания рекламного контента.
+22:34:40 Рекламных заданий не обнаружено.
+22:34:40 Создание файла описания рекламного контента по умолчанию.
+22:34:40 Создание файла описания рекламного контента.
+22:34:40 Рекламных заданий не обнаружено.
+22:35:10 Копирование рекламных файлов.
+22:35:10 Копирование рекламных файлов завершено.
+22:35:10 Удаление старых рекламных файлов.
+22:35:10 Удаление старых рекламных файлов завершено.
+22:35:10 Создание конфигурации провайдеров.
+22:35:10 Создание файлов провайдеров.
+22:38:10 Формирование запроса "ping".
+22:38:10 Проверка наличия неотправленных данных счетчиков Интернет-трафика.
+22:38:10 Получение статистики по трафику интернет.
+22:38:10 Трафик: Принято 20589 Кб, передано 895 Кб.
+22:38:10 Проверка жестких дисков S.M.A.R.T.
+22:38:10 Температура жесткого диска WDC WD2500AAKX-001CA0 38 C.
+22:38:10 Поиск жестких дисков с функцией S.M.A.R.T.
+22:38:10 Обнаружен жесткий диск WDC WD2500AAKX-001CA0 с функцией S.M.A.R.T.
+22:38:10 Проверка жестких дисков S.M.A.R.T.
+22:38:10 Температура жесткого диска WDC WD2500AAKX-001CA0 38 C.
+22:38:11 Выход из режима фискального сервера.
+22:38:11 Original size: 2045 bytes, compressed size: 996 bytes. Sending request to the server...
+22:38:11 ...Server 's1065.qiwi.com' returned response. Compressed size: 644 bytes, original size: 2195 bytes.
+22:38:11 Баланс в системе: 2000.00 руб.
+22:38:40 Checking of SSL connection
+22:38:40 ...Server 's1047.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+22:39:29 Создание файлов провайдеров закончено.
+22:39:29 Создание конфигурации провайдеров завершено.
+22:39:40 Копирование файлов.
+22:39:41 Копирование завершено.
+22:39:41 Копирование файла конфигурации провайдеров.
+22:39:41 Запись конфигурационного файла.
+22:39:41 Обновление закончено.
+22:39:41 Парсинг сохраненных данных индексной страницы.
+22:39:41 Ошибка при загрузке данных индексной страницы.
+22:39:41 Создание JavaScript-файла конфигурации индексной страницы.
+22:39:41 Создание XML-файла конфигурации индексной страницы.
+22:39:41 Файлы или настройки плагинов были обновлены.
+22:39:41 Создание и запуск обновляющего bat-файла.
+22:39:42 Завершение службы синхронизации времени.
+22:39:42 Остановка менеджера сообщений.
+22:39:42 Сохранение конфигурации.
+22:39:42 Завершение программы.
+22:39:47 Cтарт программы(Версия 5.4.1.12)...
+22:39:47 Связь с зарегистрированным COM объектом проверена
+22:39:47 Поиск жестких дисков с функцией S.M.A.R.T.
+22:39:47 Обнаружен жесткий диск WDC WD2500AAKX-001CA0 с функцией S.M.A.R.T.
+22:39:47 Программы запускаемые при старте операционной системы уже были запущены shell.
+22:39:47 Командная строка: maratl.exe  .
+22:39:47 Очистка системы.
+22:39:47 Инициализация счетчиков интернет-трафика.
+22:39:47 Создание объекта-обработчика команд.
+22:39:47 Создание объекта-клиента обработчика команд.
+22:39:47 Установление связи клиента с обработчиком команд.
+22:39:47 Инициализация очереди сообщений.
+22:39:47 Инициализация потока выборки сообщений.
+22:39:47 Запуск потока выборки команд.
+22:39:47 Инициализация очереди команд.
+22:39:47 Инициализация потока выборки команд.
+22:39:47 Запуск потока выборки команд.
+22:39:47 Обнаружен flash версии: 10.1
+22:39:47 Версия операционной системы: Microsoft Windows 7.
+22:39:47 Проверка и удаление старых файлов.
+22:39:47 Удаление старых рекламных файлов.
+22:39:47 Удаление старых рекламных файлов завершено.
+22:39:47 Проверка жестких дисков S.M.A.R.T.
+22:39:47 Температура жесткого диска WDC WD2500AAKX-001CA0 38 C.
+22:39:48 Время работы операционной системы 32 мин.
+22:39:48 Чтение конфигурационного файла.
+22:39:48 Проверка комиссий провайдеров.
+22:39:48 Установлена поддержка языковой версии интерфейса: Россия и денежных единиц для страны: Россия.
+22:39:48 Установка запрета вызова диспетчера задач и использования системных комбинаций клавиатуры.
+22:39:48 Получение информации о терминале.
+22:39:48 Получен номер ЕКЦ.
+22:39:48 Проверка названия организации.
+22:39:48 Проверка адреса терминала.
+22:39:48 Проверка ИНН агента.
+22:39:48 Используется строка доп. информации на чеке по умолчанию.
+22:39:48 Получено значение ширины чека в 0 символов.
+22:39:48 Минимальная длина чека не ограничена.
+22:39:48 Значение для отступа слева для чеке не получено. Используется отступ слева на чеке 0 символов.
+22:39:48 Назначение списка серверов по умолчанию.
+22:39:48 Назначен домашний каталог сервера обновления"/!anonymous/".
+22:39:48 Создание JS файла региональных параметров.
+22:39:48 Сохранение JS файла региональных параметров.
+22:39:48 Создание файла конфигурации интерфейса
+22:39:48 Включена on-line проверка введенных номеров счетов.
+22:39:48 Создание XML-файла конфигурации интерфейса
+22:39:48 Включена on-line проверка введенных номеров счетов.
+22:39:48 Проверка наличия базы номерных емкостей.
+22:39:48 Создание файла описания рекламного контента.
+22:39:48 Рекламных заданий не обнаружено.
+22:39:48 Создание файла описания рекламного контента по умолчанию.
+22:39:48 Создание файла описания рекламного контента.
+22:39:48 Рекламных заданий не обнаружено.
+22:39:48 Создание файла описания рекламного контента.
+22:39:48 Рекламных заданий не обнаружено.
+22:39:48 Сброс счетчиков дневного трафика.
+22:39:48 Получение статистики по трафику интернет.
+22:39:49 Init plugin Sinap version 1.1.0.0.
+22:39:49 Init plugin Gecko17 Browser version 1.1.0.7.
+22:39:49 Init plugin Providers version 1.0.0.21.
+22:39:49 [Providers] Prepare data for search.
+22:39:49 Init plugin Statistics version 1.1.0.22.
+22:39:49 [Statistics] Copy recommendation file.
+22:39:49 Поиск портов к которым подключен принтер, купюро/монетоприемник, сторожевой таймер, кардридер.
+22:40:30 Поиск портов завершен.
+22:40:40 Сохранение конфигурации устройств.
+22:40:41 Принтер не был найден.
+22:40:41 Купюро/монетоприемник не был найден.
+22:40:41 Сторожевой таймер не был найден.
+22:40:41 ??????? ?? ???????? ??????.
+22:40:41 Установлено ограничение макс. суммы платежа по умолчанию 15000 руб.
+22:40:41 Значение ширины чека не может быть менее 40 символов.
+22:40:41 Последний полученный баланс в системе: 2000 руб.
+22:40:41 Terminal ID: 9974700
+22:40:41 Запуск менеджера сообщений.
+22:40:42 [Gecko17] Set path to bin folder: plugins\browsers/Gecko/Gecko17
+22:40:42 [Gecko17] Set path to zip archive: plugins\browsers/Gecko/Gecko17/Gecko17.zip
+22:40:42 [Gecko17] Error engine files, unzip engine.
+22:40:42 [Gecko17] Create directory plugins\browsers\Gecko\Gecko17\bin\
+22:40:42 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\AccessibleMarshal.dll, size: 11776 kb.
+22:40:42 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\breakpadinjector.dll, size: 67072 kb.
+22:40:42 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\chrome.manifest, size: 36 kb.
+22:40:42 [Gecko17] Create directory plugins\browsers\Gecko\Gecko17\bin\components\
+22:40:42 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\components\binary.manifest, size: 0 kb.
+22:40:42 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\crashreporter.exe, size: 109056 kb.
+22:40:42 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\crashreporter.ini, size: 4003 kb.
+22:40:42 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\D3DCompiler_43.dll, size: 2106216 kb.
+22:40:42 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\d3dx9_43.dll, size: 1998168 kb.
+22:40:43 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\dependentlibs.list, size: 183 kb.
+22:40:43 [Gecko17] Create directory plugins\browsers\Gecko\Gecko17\bin\dictionaries\
+22:40:43 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\dictionaries\en-US.aff, size: 3274 kb.
+22:40:43 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\dictionaries\en-US.dic, size: 624100 kb.
+22:40:43 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\freebl3.chk, size: 478 kb.
+22:40:43 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\freebl3.dll, size: 251392 kb.
+22:40:43 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\gkmedias.dll, size: 4025344 kb.
+22:40:43 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\IA2Marshal.dll, size: 26112 kb.
+22:40:43 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\js.exe, size: 2271232 kb.
+22:40:44 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\libEGL.dll, size: 54784 kb.
+22:40:44 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\libGLESv2.dll, size: 470016 kb.
+22:40:44 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\LICENSE, size: 389 kb.
+22:40:44 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\mozalloc.dll, size: 8704 kb.
+22:40:44 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\mozglue.dll, size: 95744 kb.
+22:40:44 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\mozjs.dll, size: 2233856 kb.
+22:40:44 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\mozsqlite3.dll, size: 571904 kb.
+22:40:44 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\msvcp100.dll, size: 421200 kb.
+22:40:44 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\msvcr100.dll, size: 770384 kb.
+22:40:45 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\nspr4.dll, size: 159232 kb.
+22:40:45 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\nss3.dll, size: 631296 kb.
+22:40:45 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\nssckbi.dll, size: 363520 kb.
+22:40:45 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\nssdbm3.chk, size: 478 kb.
+22:40:45 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\nssdbm3.dll, size: 89088 kb.
+22:40:45 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\nssutil3.dll, size: 85504 kb.
+22:40:45 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\omni.ja, size: 4987133 kb.
+22:40:46 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\platform.ini, size: 142 kb.
+22:40:46 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\plc4.dll, size: 14848 kb.
+22:40:46 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\plds4.dll, size: 12288 kb.
+22:40:46 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\plugin-container.exe, size: 9728 kb.
+22:40:46 [Gecko17] Create directory plugins\browsers\Gecko\Gecko17\bin\plugins\
+22:40:46 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\plugins\flashplayer.xpt, size: 856 kb.
+22:40:46 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\plugins\NPSWF32.dll, size: 8527008 kb.
+22:40:46 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\precomplete, size: 1332 kb.
+22:40:46 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\README.xulrunner, size: 578 kb.
+22:40:46 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\redit.exe, size: 8704 kb.
+22:40:46 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\smime3.dll, size: 83968 kb.
+22:40:47 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\softokn3.chk, size: 478 kb.
+22:40:47 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\softokn3.dll, size: 147968 kb.
+22:40:47 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\ssl3.dll, size: 138240 kb.
+22:40:47 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\updater.exe, size: 252416 kb.
+22:40:47 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\xpcom.dll, size: 12288 kb.
+22:40:47 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\xul.dll, size: 13879808 kb.
+22:40:47 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\xulrunner-stub.exe, size: 99328 kb.
+22:40:48 [Gecko17] Start unzip file: plugins\browsers\Gecko\Gecko17\bin\xulrunner.exe, size: 89088 kb.
+22:40:49 Версия браузера: Gecko 17.0.1.
+22:40:49 Версия Flash Player: 11.1.
+22:40:49 Проверка сообщений.
+22:40:49 Обновление сообщений для провайдеров.
+22:40:50 Парсинг провайдеров.
+22:40:58 Парсинг провайдеров закончен.
+22:40:58 Создание файлов провайдеров.
+22:41:01 Создание файлов провайдеров закончено.
+22:41:06 Парсинг сохраненных данных индексной страницы.
+22:41:06 Ошибка при загрузке данных индексной страницы.
+22:41:06 Создание JavaScript-файла конфигурации индексной страницы.
+22:41:06 Создание XML-файла конфигурации индексной страницы.
+22:41:06 ??????? ?? ???????? ??????.
+22:41:06 Формирование запроса на чтение комиссий провайдеров.
+22:41:06 Original size: 375 bytes, compressed size: 254 bytes. Sending request to the server...
+22:41:07 Включение блокировки правой кнопки мыши.
+22:41:08[interface]  Project SSK Error, 1.1.10
+22:41:08 ...Server 's1047.qiwi.com' returned response. Compressed size: 23724 bytes, original size: 261651 bytes.
+22:41:09 Запись файла комиссий провайдеров.
+22:41:09 Создание файла информации об автомате.
+22:41:09 Удаление старого домашнего каталога сервера обновления.
+22:41:09 Сохранение файла информации об автомате.
+22:41:09 Парсинг конфигурационных данных индексной страницы.
+22:41:09 Сохранение конфигурационных данных индексной страницы.
+22:41:09 Сохранение конфигурации кнопок индексной страницы.
+22:41:09 Создание JS файла региональных параметров.
+22:41:09 Сохранение JS файла региональных параметров.
+22:41:09 Получение информации о терминале.
+22:41:09 Получен номер ЕКЦ.
+22:41:09 Проверка названия организации.
+22:41:09 Проверка адреса терминала.
+22:41:09 Проверка ИНН агента.
+22:41:09 Используется строка доп. информации на чеке по умолчанию.
+22:41:09 Получено значение ширины чека в 0 символов.
+22:41:09 Минимальная длина чека не ограничена.
+22:41:09 Значение для отступа слева для чеке не получено. Используется отступ слева на чеке 0 символов.
+22:41:09 Назначение списка серверов по умолчанию.
+22:41:09 Назначен домашний каталог сервера обновления"/!anonymous/".
+22:41:09 Установлено ограничение макс. суммы платежа по умолчанию 15000 руб.
+22:41:09 Значение ширины чека не может быть менее 40 символов.
+22:41:09 Баланс в системе: 2000.00 руб.
+22:41:36 Проверка сертификатов
+22:41:36 ...Server 's1757.qiwi.com' returned response, sise: 65 bytes.
+22:41:36 Проверка сертификатов завершена
+22:42:36 Отправлен запрос серверу...
+22:42:36 [Sinap] Send QDProviders request.
+22:42:37 ...Server 'unknown' returned response. Compressed size: 211796 bytes, original size: 8431701 bytes.
+22:42:37 [Sinap] TransportError: 0, ProtocolError: 0
+22:42:37 [Sinap] QDProviders changed.
+22:42:40 [Sinap] QDProviders saved.
+22:46:06 Запуск задания на синхронизацию с серверами эталонного времени.
+22:46:06 Формирование запроса "ping".
+22:46:06 Синхронизация времени: Отправка запроса серверу №1.
+22:46:06 Проверка наличия неотправленных данных счетчиков Интернет-трафика.
+22:46:06 Получение статистики по трафику интернет.
+22:46:06 Трафик: Принято 1010 Кб, передано 14 Кб.
+22:46:06 Проверка жестких дисков S.M.A.R.T.
+22:46:06 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+22:46:06 Синхронизация времени: Уровень эталона NTP сервера: 1. Идентификатор эталона: ACTS. Расхождение во времени: 0.5 сек.
+22:46:07 Поиск жестких дисков с функцией S.M.A.R.T.
+22:46:07 Обнаружен жесткий диск WDC WD2500AAKX-001CA0 с функцией S.M.A.R.T.
+22:46:07 Проверка жестких дисков S.M.A.R.T.
+22:46:07 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+22:46:07 Выход из режима фискального сервера.
+22:46:07 Original size: 2100 bytes, compressed size: 1029 bytes. Sending request to the server...
+22:46:07 ...Server 's1066.qiwi.com' returned response. Compressed size: 644 bytes, original size: 2195 bytes.
+22:46:07 Баланс в системе: 2000.00 руб.
+22:46:36 Checking of SSL connection
+22:46:36 ...Server 's1046.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+22:51:06 Формирование запроса "ping".
+22:51:06 Проверка наличия неотправленных данных счетчиков Интернет-трафика.
+22:51:06 Получение статистики по трафику интернет.
+22:51:06 Трафик: Принято 1773 Кб, передано 20 Кб.
+22:51:06 Проверка жестких дисков S.M.A.R.T.
+22:51:06 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+22:51:07 Поиск жестких дисков с функцией S.M.A.R.T.
+22:51:07 Обнаружен жесткий диск WDC WD2500AAKX-001CA0 с функцией S.M.A.R.T.
+22:51:07 Проверка жестких дисков S.M.A.R.T.
+22:51:07 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+22:51:07 Выход из режима фискального сервера.
+22:51:07 Original size: 2101 bytes, compressed size: 1030 bytes. Sending request to the server...
+22:51:07 ...Server 's1062.qiwi.com' returned response. Compressed size: 644 bytes, original size: 2195 bytes.
+22:51:07 Баланс в системе: 2000.00 руб.
+22:51:36 Checking of SSL connection
+22:51:36 ...Server 's1046.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+22:56:07 Формирование запроса "ping".
+22:56:07 Проверка наличия неотправленных данных счетчиков Интернет-трафика.
+22:56:07 Получение статистики по трафику интернет.
+22:56:07 Трафик: Принято 2444 Кб, передано 25 Кб.
+22:56:07 Проверка жестких дисков S.M.A.R.T.
+22:56:07 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+22:56:07 Поиск жестких дисков с функцией S.M.A.R.T.
+22:56:07 Обнаружен жесткий диск WDC WD2500AAKX-001CA0 с функцией S.M.A.R.T.
+22:56:07 Проверка жестких дисков S.M.A.R.T.
+22:56:07 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+22:56:07 Выход из режима фискального сервера.
+22:56:07 Original size: 2101 bytes, compressed size: 1031 bytes. Sending request to the server...
+22:56:07 ...Server 's1066.qiwi.com' returned response. Compressed size: 644 bytes, original size: 2195 bytes.
+22:56:07 Баланс в системе: 2000.00 руб.
+22:56:37 Checking of SSL connection
+22:56:37 ...Server 's1049.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+23:01:07 Формирование запроса "ping".
+23:01:07 Проверка наличия неотправленных данных счетчиков Интернет-трафика.
+23:01:07 Получение статистики по трафику интернет.
+23:01:07 Трафик: Принято 3097 Кб, передано 31 Кб.
+23:01:07 Проверка жестких дисков S.M.A.R.T.
+23:01:07 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+23:01:07 Поиск жестких дисков с функцией S.M.A.R.T.
+23:01:07 Обнаружен жесткий диск WDC WD2500AAKX-001CA0 с функцией S.M.A.R.T.
+23:01:07 Проверка жестких дисков S.M.A.R.T.
+23:01:07 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+23:01:07 Выход из режима фискального сервера.
+23:01:07 Original size: 2101 bytes, compressed size: 1029 bytes. Sending request to the server...
+23:01:07 ...Server 's1063.qiwi.com' returned response. Compressed size: 644 bytes, original size: 2195 bytes.
+23:01:07 Баланс в системе: 2000.00 руб.
+23:01:37 Checking of SSL connection
+23:01:37 ...Server 's1046.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+23:06:07 Формирование запроса "ping".
+23:06:07 Проверка наличия неотправленных данных счетчиков Интернет-трафика.
+23:06:07 Получение статистики по трафику интернет.
+23:06:07 Трафик: Принято 3704 Кб, передано 37 Кб.
+23:06:07 Проверка жестких дисков S.M.A.R.T.
+23:06:07 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+23:06:07 Поиск жестких дисков с функцией S.M.A.R.T.
+23:06:07 Обнаружен жесткий диск WDC WD2500AAKX-001CA0 с функцией S.M.A.R.T.
+23:06:07 Проверка жестких дисков S.M.A.R.T.
+23:06:07 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+23:06:07 Выход из режима фискального сервера.
+23:06:07 Original size: 2101 bytes, compressed size: 1030 bytes. Sending request to the server...
+23:06:07 ...Server 's1065.qiwi.com' returned response. Compressed size: 644 bytes, original size: 2195 bytes.
+23:06:08 Баланс в системе: 2000.00 руб.
+23:06:37 Checking of SSL connection
+23:06:37 ...Server 's1046.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+23:11:07 Формирование запроса "ping".
+23:11:07 Проверка наличия неотправленных данных счетчиков Интернет-трафика.
+23:11:07 Получение статистики по трафику интернет.
+23:11:07 Трафик: Принято 4283 Кб, передано 43 Кб.
+23:11:07 Проверка жестких дисков S.M.A.R.T.
+23:11:07 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+23:11:07 Поиск жестких дисков с функцией S.M.A.R.T.
+23:11:07 Обнаружен жесткий диск WDC WD2500AAKX-001CA0 с функцией S.M.A.R.T.
+23:11:07 Проверка жестких дисков S.M.A.R.T.
+23:11:07 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+23:11:07 Выход из режима фискального сервера.
+23:11:07 Original size: 2101 bytes, compressed size: 1031 bytes. Sending request to the server...
+23:11:08 ...Server 's1062.qiwi.com' returned response. Compressed size: 644 bytes, original size: 2195 bytes.
+23:11:08 Баланс в системе: 2000.00 руб.
+23:11:37 Checking of SSL connection
+23:11:37 ...Server 's1049.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+23:16:07 Формирование запроса "ping".
+23:16:07 Проверка наличия неотправленных данных счетчиков Интернет-трафика.
+23:16:07 Получение статистики по трафику интернет.
+23:16:07 Трафик: Принято 4839 Кб, передано 49 Кб.
+23:16:07 Проверка жестких дисков S.M.A.R.T.
+23:16:07 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+23:16:07 Поиск жестких дисков с функцией S.M.A.R.T.
+23:16:07 Обнаружен жесткий диск WDC WD2500AAKX-001CA0 с функцией S.M.A.R.T.
+23:16:07 Проверка жестких дисков S.M.A.R.T.
+23:16:07 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+23:16:08 Выход из режима фискального сервера.
+23:16:08 Original size: 2101 bytes, compressed size: 1032 bytes. Sending request to the server...
+23:16:08 ...Server 's1063.qiwi.com' returned response. Compressed size: 644 bytes, original size: 2195 bytes.
+23:16:08 Баланс в системе: 2000.00 руб.
+23:16:37 Checking of SSL connection
+23:16:37 ...Server 's1049.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+23:21:07 Формирование запроса "ping".
+23:21:07 Проверка наличия неотправленных данных счетчиков Интернет-трафика.
+23:21:07 Получение статистики по трафику интернет.
+23:21:07 Трафик: Принято 5523 Кб, передано 55 Кб.
+23:21:07 Проверка жестких дисков S.M.A.R.T.
+23:21:07 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+23:21:07 Поиск жестких дисков с функцией S.M.A.R.T.
+23:21:08 Обнаружен жесткий диск WDC WD2500AAKX-001CA0 с функцией S.M.A.R.T.
+23:21:08 Проверка жестких дисков S.M.A.R.T.
+23:21:08 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+23:21:08 Выход из режима фискального сервера.
+23:21:08 Original size: 2101 bytes, compressed size: 1029 bytes. Sending request to the server...
+23:21:08 ...Server 's1065.qiwi.com' returned response. Compressed size: 644 bytes, original size: 2195 bytes.
+23:21:08 Баланс в системе: 2000.00 руб.
+23:21:37 Checking of SSL connection
+23:21:37 ...Server 's1046.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+23:26:07 Формирование запроса "ping".
+23:26:07 Проверка наличия неотправленных данных счетчиков Интернет-трафика.
+23:26:07 Получение статистики по трафику интернет.
+23:26:07 Трафик: Принято 6175 Кб, передано 60 Кб.
+23:26:07 Проверка жестких дисков S.M.A.R.T.
+23:26:07 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+23:26:08 Поиск жестких дисков с функцией S.M.A.R.T.
+23:26:08 Обнаружен жесткий диск WDC WD2500AAKX-001CA0 с функцией S.M.A.R.T.
+23:26:08 Проверка жестких дисков S.M.A.R.T.
+23:26:08 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+23:26:08 Выход из режима фискального сервера.
+23:26:08 Original size: 2101 bytes, compressed size: 1029 bytes. Sending request to the server...
+23:26:08 ...Server 's1062.qiwi.com' returned response. Compressed size: 644 bytes, original size: 2195 bytes.
+23:26:08 Баланс в системе: 2000.00 руб.
+23:26:37 Checking of SSL connection
+23:26:37 ...Server 's1047.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+23:31:08 Формирование запроса "ping".
+23:31:08 Проверка наличия неотправленных данных счетчиков Интернет-трафика.
+23:31:08 Получение статистики по трафику интернет.
+23:31:08 Трафик: Принято 6735 Кб, передано 66 Кб.
+23:31:08 Проверка жестких дисков S.M.A.R.T.
+23:31:08 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+23:31:08 Поиск жестких дисков с функцией S.M.A.R.T.
+23:31:08 Обнаружен жесткий диск WDC WD2500AAKX-001CA0 с функцией S.M.A.R.T.
+23:31:08 Проверка жестких дисков S.M.A.R.T.
+23:31:08 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+23:31:08 Выход из режима фискального сервера.
+23:31:08 Original size: 2101 bytes, compressed size: 1028 bytes. Sending request to the server...
+23:31:08 ...Server 's1065.qiwi.com' returned response. Compressed size: 644 bytes, original size: 2195 bytes.
+23:31:08 Баланс в системе: 2000.00 руб.
+23:31:38 Checking of SSL connection
+23:31:38 ...Server 's1047.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+23:36:08 Формирование запроса "ping".
+23:36:08 Проверка наличия неотправленных данных счетчиков Интернет-трафика.
+23:36:08 Получение статистики по трафику интернет.
+23:36:08 Трафик: Принято 7232 Кб, передано 71 Кб.
+23:36:08 Проверка жестких дисков S.M.A.R.T.
+23:36:08 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+23:36:08 Поиск жестких дисков с функцией S.M.A.R.T.
+23:36:08 Обнаружен жесткий диск WDC WD2500AAKX-001CA0 с функцией S.M.A.R.T.
+23:36:08 Проверка жестких дисков S.M.A.R.T.
+23:36:08 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+23:36:08 Выход из режима фискального сервера.
+23:36:08 Original size: 2101 bytes, compressed size: 1031 bytes. Sending request to the server...
+23:36:08 ...Server 's1063.qiwi.com' returned response. Compressed size: 644 bytes, original size: 2195 bytes.
+23:36:08 Баланс в системе: 2000.00 руб.
+23:36:38 Checking of SSL connection
+23:36:38 ...Server 's1050.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+23:41:08 Проверка сообщений обновления оборудования.
+23:41:08 Формирование запроса "ping".
+23:41:08 Проверка наличия неотправленных данных счетчиков Интернет-трафика.
+23:41:08 Получение статистики по трафику интернет.
+23:41:08 Трафик: Принято 7706 Кб, передано 78 Кб.
+23:41:08 Проверка жестких дисков S.M.A.R.T.
+23:41:08 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+23:41:08 Поиск жестких дисков с функцией S.M.A.R.T.
+23:41:08 Обнаружен жесткий диск WDC WD2500AAKX-001CA0 с функцией S.M.A.R.T.
+23:41:08 Проверка жестких дисков S.M.A.R.T.
+23:41:08 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+23:41:08 Выход из режима фискального сервера.
+23:41:08 Original size: 2101 bytes, compressed size: 1030 bytes. Sending request to the server...
+23:41:08 ...Server 's1066.qiwi.com' returned response. Compressed size: 644 bytes, original size: 2195 bytes.
+23:41:08 Баланс в системе: 2000.00 руб.
+23:41:38 Проверка сертификатов
+23:41:38 Checking of SSL connection
+23:41:38 ...Server 's1759.qiwi.com' returned response, sise: 65 bytes.
+23:41:38 Проверка сертификатов завершена
+23:41:38 ...Server 's1047.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+23:42:38 Отправлен запрос серверу...
+23:42:38 [Sinap] Send QDProviders request.
+23:42:38 ...Server 'unknown' returned response, sise: 0 bytes.
+23:42:38 
+23:42:38 [Sinap] TransportError: 0, ProtocolError: 304
+23:42:38 [Sinap] QDProviders not changed.
+23:46:08 Проверка сообщений обновления оборудования.
+23:46:08 Формирование запроса "ping".
+23:46:08 Проверка наличия неотправленных данных счетчиков Интернет-трафика.
+23:46:08 Получение статистики по трафику интернет.
+23:46:08 Трафик: Принято 8209 Кб, передано 87 Кб.
+23:46:08 Проверка жестких дисков S.M.A.R.T.
+23:46:08 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+23:46:08 Поиск жестких дисков с функцией S.M.A.R.T.
+23:46:08 Обнаружен жесткий диск WDC WD2500AAKX-001CA0 с функцией S.M.A.R.T.
+23:46:08 Проверка жестких дисков S.M.A.R.T.
+23:46:08 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+23:46:08 Выход из режима фискального сервера.
+23:46:08 Original size: 2101 bytes, compressed size: 1030 bytes. Sending request to the server...
+23:46:08 ...Server 's1066.qiwi.com' returned response. Compressed size: 644 bytes, original size: 2195 bytes.
+23:46:09 Баланс в системе: 2000.00 руб.
+23:46:38 Checking of SSL connection
+23:46:38 ...Server 's1046.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+23:51:08 Проверка сообщений обновления оборудования.
+23:51:08 Формирование запроса "ping".
+23:51:08 Проверка наличия неотправленных данных счетчиков Интернет-трафика.
+23:51:08 Получение статистики по трафику интернет.
+23:51:08 Трафик: Принято 8725 Кб, передано 93 Кб.
+23:51:08 Проверка жестких дисков S.M.A.R.T.
+23:51:08 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+23:51:08 Поиск жестких дисков с функцией S.M.A.R.T.
+23:51:08 Обнаружен жесткий диск WDC WD2500AAKX-001CA0 с функцией S.M.A.R.T.
+23:51:08 Проверка жестких дисков S.M.A.R.T.
+23:51:08 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+23:51:09 Выход из режима фискального сервера.
+23:51:09 Original size: 2102 bytes, compressed size: 1028 bytes. Sending request to the server...
+23:51:09 ...Server 's1065.qiwi.com' returned response. Compressed size: 644 bytes, original size: 2195 bytes.
+23:51:09 Баланс в системе: 2000.00 руб.
+23:51:38 Checking of SSL connection
+23:51:38 ...Server 's1049.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.
+23:56:08 Проверка сообщений обновления оборудования.
+23:56:08 Формирование запроса "ping".
+23:56:08 Проверка наличия неотправленных данных счетчиков Интернет-трафика.
+23:56:08 Получение статистики по трафику интернет.
+23:56:08 Трафик: Принято 9201 Кб, передано 99 Кб.
+23:56:08 Проверка жестких дисков S.M.A.R.T.
+23:56:08 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+23:56:08 Поиск жестких дисков с функцией S.M.A.R.T.
+23:56:09 Обнаружен жесткий диск WDC WD2500AAKX-001CA0 с функцией S.M.A.R.T.
+23:56:09 Проверка жестких дисков S.M.A.R.T.
+23:56:09 Температура жесткого диска WDC WD2500AAKX-001CA0 37 C.
+23:56:09 Выход из режима фискального сервера.
+23:56:09 Original size: 2102 bytes, compressed size: 1031 bytes. Sending request to the server...
+23:56:09 ...Server 's1063.qiwi.com' returned response. Compressed size: 644 bytes, original size: 2195 bytes.
+23:56:09 Баланс в системе: 2000.00 руб.
+23:56:38 Checking of SSL connection
+23:56:38 ...Server 's1047.qiwi.com' returned response. Compressed size: 0 bytes, original size: 0 bytes.

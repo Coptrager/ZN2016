@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<object id="flow" class="com.qiwi.flow.CommonFlow">
+		<property name="routeData" ref="route" />
+		<property name="elementsMap">
+			<dictionary>
+				<entry><key>init</key><value ref="init" /></entry>
+				<entry><key>offertus</key><value ref="offertus" /></entry>
+				<entry><key>data</key><value ref="data" /></entry>
+				<entry><key>hidden</key><value ref="hidden" /></entry>
+				<entry><key>cardnumber</key><value ref="cardnumber" /></entry>
+				<entry><key>issuer</key><value ref="issuer" /></entry>
+				<entry><key>address</key><value ref="address" /></entry>
+				<entry><key>recipient</key><value ref="recipient" /></entry>
+				<entry><key>phone</key><value ref="phone" /></entry>
+				<entry><key>confirmation</key><value ref="confirmation" /></entry>
+				<entry><key>cash</key><value ref="cash" /></entry>
+				<entry><key>final</key><value ref="final" /></entry>
+				<entry><key>exit</key><value ref="exit" /></entry>
+			</dictionary>
+		</property>
+	</object>
+	
+	<object id="init" class="elements.InitElement">
+		<constructor-arg>
+			<array>
+				<value>
+					<![CDATA[https://w.qiwi.com/xml/xmlcp.jsp]]>
+				</value>
+			</array>
+		</constructor-arg>
+		<constructor-arg ref="commissions"/>
+		<property name="id" value="1" />
+	</object>
+	<object id="offertus" class="com.qiwi.elements.PagesElement">
+		<constructor-arg value="QK_oferta_Cash2card.xml"/>
+		<property name="id" value="3" />
+	</object>
+	<object id="data" class="elements.DataElement">
+		<property name="id" value="4" />
+	</object>
+	<object id="hidden" class="elements.HiddenElement">
+		<property name="id" value="5" />
+	</object>
+	<object id="cardnumber" class="elements.CardNumberElement">
+		<constructor-arg>
+			<array>
+				<value>
+<![CDATA[%bank%
+%system%
+%country%]]>
+				</value>
+			</array>
+		</constructor-arg>
+		<constructor-arg>
+			<array>
+				<value>
+<![CDATA[<b>Срок перевода:</b>
+до 4-х рабочих дней
+<b>Комиссия:</b>
+%commission%]]>
+				</value>
+			</array>
+		</constructor-arg>
+		<constructor-arg>
+			<array>
+				<value>
+<![CDATA[Продолжая оплату, вы соглашаетесь с условиями <font color="#0000ff"><a href='event:offertus'>оферты</a></font>.]]>
+				</value>
+			</array>
+		</constructor-arg>
+		<property name="id" value="6" />
+	</object>
+	<object id="issuer" class="elements.IssuerElement">
+		<constructor-arg value="Введите фамилию и имя отправителя"/>
+		<constructor-arg value="При указании неверных данных платеж будет отклонен"/>
+		<property name="id" value="9" />
+	</object>
+	<object id="address" class="elements.AddressElement">
+		<property name="id" value="10" />
+	</object>
+	<object id="recipient" class="elements.RecipientElement">
+		<constructor-arg value="Введите фамилию и имя получателя"/>
+		<property name="id" value="11" />
+	</object>
+	<object id="phone" class="elements.PhoneElement">
+		<property name="id" value="12" />
+	</object>
+	<object id="confirmation" class="elements.ConfirmationElement">
+		<property name="id" value="13" />
+	</object>
+	<object id="cash" class="elements.CashElement">
+		<constructor-arg ref="bill"/>
+		<constructor-arg value="Комиссия за перевод: %commission%\nСумма перевода на одну карту или одного отправителя не более 600 000 рублей в месяц." />
+		<property name="id" value="14" />
+		<property name="timeout" value="300000" />
+		<property name="countdownConfirm" value="false" />
+		<property name="exitConfirm" value="false" />
+	</object>
+	<object id="final" class="elements.FinalElement">
+		<property name="id" value="15" />
+		<property name="countdownConfirm" value="false" />
+		<property name="exitConfirm" value="false" />
+	</object>
+	<object id="exit" class="com.qiwi.elements.UrlQuitElement">
+		<property name="id" value="0" />
+		<property name="countdownConfirm" value="false" />
+		<property name="exitConfirm" value="false" />
+	</object>
+	
+</objects>

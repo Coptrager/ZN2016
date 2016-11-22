@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+	<object id="route" class="ru.mobw.coreas3.app.flow.navigation.route.RouteData">
+		<property name="navData">
+			
+			<value>
+				<![CDATA[
+					@default = (init, @manual, hidden, %hidden, phone, confirmation, cash, final);
+					
+					@manual = (cardnumber, %cardnumberSwitch);
+					
+					%cardnumberSwitch = (
+						offertus => offertus
+					);
+					
+					@data = (data, %dataSwitch);
+					
+					%dataSwitch = (
+						offertus => offertus
+					);
+					
+					%hidden = (
+						rumastercard => @rumastercard,
+						othermastercard => @othermastercard,
+						othervisa => @othervisa
+					);
+					
+					@rumastercard = (issuer, recipient);
+					@othermastercard = (issuer, address, recipient);
+					@othervisa = (issuer, address, recipient);
+				]]>
+			</value>
+		</property>
+	</object>
+</objects>

@@ -1,0 +1,6 @@
+{
+  "name":"folderButton",
+  "css":true,
+  "parent":"button",
+  "version":"0.1.0"
+}

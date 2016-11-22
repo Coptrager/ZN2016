@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	<object id="billCash" class="String">
+		<constructor-arg>
+			<value>
+<![CDATA[_receipt_=<br>Заявка на оплату товаров/услуг
+КИВИ Банк (АО)
+Лицензия №2241
+ИНН 3123011520
+117648, г. Москва, мкр. Чертаново Северное, д. 1А, корп. 1
+Контактный номер: 8-800-555-74-94,
+8-495-771-74-94
+Принято: %inserted%
+Комиссия: 0 руб.
+Вид услуг: Перевод без открытия счета
+
+ВАШ ПЛАТЕЖ:&_receipt_Получатель средств=%company%&_receipt_Телефон=%company_phone%&_receipt_Номер лицевого счёта=%account%&_receipt_Сумма=%inserted%
+-----------------------------------
+]]>
+			</value>
+		</constructor-arg>
+	</object>
+</objects>

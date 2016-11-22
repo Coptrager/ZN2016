@@ -1,0 +1,7 @@
+﻿{
+  "parent":"provider_info",
+  "use":[
+    "phoneParser"
+  ],
+  "timeout":120
+}

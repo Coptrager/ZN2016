@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data xmlns:b="com.styleru.bool" xmlns:n="com.styleru.number" xmlns:s="com.styleru.string">
+	<!-- 10463 -->
+	<settings
+		n:width="1280"
+		n:height="1024"
+		s:constructor_context="xml/flash_sobinbank_context.xml"
+		s:constructor_flow="xml/flash_sobinbank_flow.xml"
+		s:prvname="КИВИ Банк (АО)"
+		s:prvid="10463"
+		s:payment_prvid="22656"
+		s:qw_prvid="441"
+		n:speed="0.4"
+		s:statisticsId="30019"
+		>
+	</settings>
+	<LoaderMax name="resources" load="true">
+		<SWFLoader name="fonts" url="swf/flash_sobinbank_fonts.swf" />
+		<SWFLoader name="graphics" url="swf/flash_sobinbank_graphics.swf" />
+	</LoaderMax>
+</data>

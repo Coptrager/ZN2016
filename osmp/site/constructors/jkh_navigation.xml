@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+	<object 
+		id="route" 
+		class="ru.mobw.coreas3.app.flow.navigation.route.RouteData"
+		>
+		<property name="navData">
+			<value>
+				<![CDATA[
+					@default = (@check_branch, @base, @payment_end_branch, exit);
+				    @payment_end_branch = (paymentEnd, %payment_end_switch);
+					%payment_end_switch = 
+					(
+						pin=>@save_branch,
+						save=>save_page
+					);
+					@save_branch = (pin_page, save_page);
+					@base = (
+						start,
+						%selectOferta,
+						enterAccount,
+						@payment_branch	         				
+					);
+					@payment_branch = (selectOwe,
+            			changePeriod>>@otherPeriod,
+						changeTypeSelect,
+						enterTelephone,						
+						%typeSelect);
+					@otherPeriod = (changeOtherPeriod, selectOweMonth);
+					
+					%typeSelect = (
+						changeToWallet => changeToWallet,
+						changeToMobile => changeToMobile
+					);
+					@check_branch=(t:check_page, %check_switch);
+					%check_switch=
+					(
+						with_data => @with_data_branch
+					);
+					@with_data_branch = (with_data_page, @favorite_branch);
+					@favorite_branch=(@payment_branch,@payment_end_branch, exit);
+					%selectOferta = (
+						yaup => @yaup_branch,
+						changeToZKUOferta => zkuOferta,
+						changeToQIWIOferta => qiwiOferta
+					);   
+					@yaup_branch=(enter_wallet_login, t:pin_page, select_payment,%select_payment_switch, @favorite_branch);
+					%select_payment_switch=
+					(
+						start=>@default
+					);
+				]]>
+			</value>
+		</property>
+	</object>
+</objects>

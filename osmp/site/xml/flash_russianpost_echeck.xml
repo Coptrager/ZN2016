@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<object id="echeck" class="String">
+		<constructor-arg>
+			<value>
+<![CDATA[Номер телефона/счета<br/>%phone%<br/>Номер терминала: %terminal_id%<br/>Код операции: %operation_code%<br/>Дата платежа: %date%<br/><br/>ВНЕСЕНИЕ СРЕДСТВ В:<br/>КИВИ Банк (АО)<br/>ИНН 3123011520<br/>Принято: %price%<br/>Сервисный сбор: %bank_commission% в т.ч. НДС 18 %.<br/><br/>Тип перевода: "до востребования"<br/>Получатель: %recipient%<br/><br/>Поручение исполнено КИВИ Банк (АО).<br/><br/>Индекс ОПС получения: %index%<br/>Адрес ОПС получения: %address%<br/>Сумма к получению: %amount%<br/>Срок доставки перевода Почтой России: 5-7 дней<br/>Справочная служба QIWI: 8-800-301-11-31]]>
+			</value>
+		</constructor-arg>
+	</object>
+</objects>

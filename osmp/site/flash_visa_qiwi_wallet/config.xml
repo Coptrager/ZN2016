@@ -1,0 +1,1229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scripts>
+    <config totalTime="120000" defaultIdleTime="180" version="2.0" log="false">
+
+        <session>
+            <var key="settings.project_version" value="2.3.103"/>
+
+            <var key="settings.MGT_path_format" value="page:time32"/>
+            <var key="settings.MGT_date_format" value="yyyy-mm-dd hh:nn:ss"/>
+            <var key="settings.MGT_exit_last_page" value="true"/>
+            <var key="settings.exclude_zero_page" value="true"/>
+            <var key="settings.update_phone" value="true"/>
+            <var key="settings.use_phone_capacity" value="true"/>
+            <var key="settings.summForEndPage" value="1850;5100;6800;13400;14300"/>
+            <var key="settings.badSummForCashPage" value="2150;6900;7800;12900;14700"/>
+            <var key="settings.statistic_descriptor" value="statistic_specification_vqw.xml"/>
+            <var key="settings.service_mail" value="e.bashtan@qiwi.ru"/>
+            <var key="settings.bins" value="../bin_list.xml"/>
+            <var key="settings.user_min_refill_amount_for_show_limit_info" value="5000"/>
+            <var key="settings.user_min_topup_amount_for_show_limit_info" value="100"/>
+            <var key="settings.critical_framerate" value="4"/>
+            <var key="settings.critical_framerate_restart_diff" value="24"/>
+            <var key="settings.critical_framerate_restart_command" value="vqw_js_api.toMaratl"/>
+
+            <var key="check_status.TermId" value="true"/>
+            <var key="check_status.StartParam" value="true"/>
+            <var key="check_status.PrtStatus" value="false"/>
+            <var key="check_status.Interval" value="3000"/>
+
+            <var key="settings.exception_words" value="./exception.word"/>
+            <var key="settings.blocked_numbers" value="../blocked.numbers"/>
+            <var key="settings.payments.PrtStatus" value="false"/>
+            <var key="settings.project_name" value="Visa QIWI Wallet"/>
+
+            <var key="settings.qw_proxy_request_url" value="https://facecontrol.qiwi.com/proxy"/>
+            <var key="settings.json_request_url" value="https://service1.qiwi.com/qwproxy/json/checkuser"/>
+            <var key="settings.json_request_path" value="/qwproxy/json/checkuser"/>
+
+
+            <var key="settings.oferta_name" value="qiwi"/>
+            <var key="settings.error_prv_id" value="15790"/>
+            <var key="settings.test_data"><value><![CDATA[https://w.qiwi.com/xml/9266930355916801764391671856589262545601/utf.jsp&19993]]></value></var>
+            <var key="settings.countries">
+                <value>
+                    <country name="Россия" code="rus">
+                        <var key="change_to_qw_prv_id" value="7406"/>
+                        <var key="main_qw_prv_id" value="441"/>
+                        <var key="topup_prv_name" value="Visa QIWI Wallet"/>
+                        <var key="wallet_name" value="Visa QIWI Wallet"/>
+                        <var key="max_summ" value="15000"/>
+                        <var key="topup_min_summ" value="1"/>
+                        <var key="replenish_prv_id" value="7406"/>
+                        <var key="get_max_summ_event" value="getMaxsummForProviderQd"/>
+                        <var key="ident_enable" value="true"/>
+                        <var key="logo" value="./logos/vqw.png"/>
+                        <var key="check_user_event" value="checkUser"/>
+                        <var key="check_user_exist_event" value="checkUserExists"/>
+
+                        <var key="phones_url">
+                            <value>
+                                <urls>
+                                    <url code="../phones.txt,../phones_er.txt"/>
+                                </urls>
+                            </value>
+                        </var>
+                        <var key="use_online_phone_check" value="true"/>
+                        <var key="use_oldschool_url_request" value="false"/>
+
+                        <var key="qiwi_url">
+                            <value>
+                                <![CDATA[https://w.qiwi.com/xml/xmlcp.jsp,https://service1.osmp.ru/wallet/xmlcp.jsp,https://service2.osmp.ru/wallet/xmlcp.jsp]]>
+                            </value>
+                        </var>
+                        <var key="replenish_mf_prv_id" value="441"/>
+                        <var key="config_js_path" value="../config/"/>
+                        <var key="load_banks" value="true"/>
+                        <var key="sms_number" value="7494"/>
+                        <var key="bank_support_phone" value="8 800 707-77-59"/>
+                        <var key="banks_redirect" value="../bank.html,-161"/>
+                        <var key="oferta_path" value="../QK_oferta_erk_vqw.xml,../QK_oferta_bank.xml,../QK_oferta_eggs.xml,../QK_oferta_full.xml"/>
+                        <var key="supportInfo">
+                            <value>
+                                <![CDATA[в Москве +7 495 771-74-94<br>в регионах 8 800 707-77-59<br>Подробнее на сайте: qiwi.com]]></value>
+                        </var>
+                        <var key="currency_code" value="643"/>
+                        <var key="currency_name" value="руб."/>
+                        <var key="currency_coin_name" value="коп."/>
+                        <var key="providers" value="./providers.json"/>
+                        <var key="locales">
+                            <value>
+                                <locales start="rus">
+                                    <locale code="rus"/>
+                                    <locale code="kaz"/>
+                                </locales>
+                            </value>
+                        </var>
+                    </country>
+                    <country name="Казахстан" code="kaz">
+                        <var key="change_to_qw_prv_id" value="7882"/>
+                        <var key="project_number" value="30008"/>
+                        <var key="topup_banner" value="./banners/topup.png"/>
+                        <var key="main_qw_prv_id" value="7882"/>
+                        <var key="topup_prv_name" value="АО AsiaCredit Bank (АзияКредит Банк)"/>
+                        <var key="wallet_name" value="QIWI Кошелек"/>
+                        <var key="max_summ" value="70000"/>
+                        <var key="topup_min_summ" value="1"/>
+                        <var key="replenish_prv_id" value="7882"/>
+                        <var key="ident_enable" value="false"/>
+                        <var key="get_max_summ_event" value="getMaxsumm"/>
+                        <var key="check_user_event" value="checkUserByXml"/>
+                        <var key="logo" value="./logos/qw.png"/>
+                        <var key="check_user_exist_event" value="checkUserExistByXml"/>
+                        <var key="phones_url" value="../phones.txt"/>
+                        <var key="banks_redirect" value="../main.html#-5:1,-162"/>
+                        <!-- <var key="topup_receipt_prt_top_reklama_rus" value="test_top"/>
+                        <var key="topup_receipt_prt_top_reklama_kaz" value="test_top kaz"/>
+                        <var key="topup_receipt_prt_bottom_reklama_rus" value="text_bottom"/>
+                        <var key="topup_receipt_prt_bottom_reklama_kaz" value="text_bottom kaz"/>
+                        <var key="topup_extra_receipt_kaz" value="text_extra kaz"/>
+                        <var key="topup_extra_receipt_rus" value="text_extra rus"/>
+
+                        <var key="topup_adv_rus" value="./banners/topup.png|10:10|top"/>
+                        <var key="topup_adv_kaz" value="./banners/adv.png|0:0|bottom"/>     -->
+
+                        <var key="phones_url">
+                            <value>
+                                <urls>
+                                    <url code="../phones.txt,../phones_er.txt"/>
+                                    <url code="../phones_kz.txt,../phones_er_kz.txt"/>
+                                </urls>
+                            </value>
+                        </var>
+                        <var key="use_oldschool_url_request" value="true"/>
+                        <var key="qiwi_url">
+                            <value>
+                                <![CDATA[https://w.qiwi.com/xml/xmlutf.jsp,https://service1.osmp.ru/wallet/xmlutf.jsp,https://service2.osmp.ru/wallet/xmlutf.jsp]]>
+                            </value>
+                        </var>
+                        <var key="use_online_phone_check" value="false"/>
+                        <var key="replenish_mf_prv_id" value="7882"/>
+                        <var key="load_banks" value="false"/>
+                        <var key="config_js_path" value="../config/"/>
+                        <var key="sms_number" value="7494"/>
+                        <var key="bank_support_phone" value="8(727)356-12-15"/>
+                        <var key="oferta_path" value="../QK_oferta_akb.xml"/>
+                        <var key="supportInfo">
+                            <value>
+                                <![CDATA[8(727)356-12-15<br>Подробнее на сайте: qiwi.com]]></value>
+                        </var>
+                        <var key="currency_code" value="398"/> <!--643-->
+                        <var key="currency_name" value="тг."/>
+                        <var key="currency_coin_name" value="тиын"/>
+                        <var key="providers" value="./providers.json"/>
+                        <var key="locales">
+                            <value>
+                                <locales start="rus">
+                                    <locale code="rus"/>
+                                    <locale code="kaz"/>
+                                </locales>
+                            </value>
+                        </var>
+                    </country>
+                </value>
+            </var>
+
+            <var key="settings.pages.wallet_auth" value="wallet_login_page"/>
+            <var key="settings.navigation">
+                <value>
+                    <![CDATA[
+						@default = (check_status_page, %check_status_switch);
+						%check_status_switch = 
+						(
+							fail_terminal =>fail_terminal_page,
+							bank_favorites_list=>@bank_favorites_concrete_branch,
+							bank_favorites=>@bank_favorites_branch,
+							provider=>@single_provider_branch,
+							topup=>@replenish_branch,
+							card_data=>@card_data_branch,
+							main_menu=>@main_menu_branch,
+							favorites=>@general_favorites_branch,
+							invoices=>@invoices_branch
+						);
+						
+						@main_menu_branch = (main_menu_page, %main_menu_switch);
+						%main_menu_switch = 
+						(
+							login=>@auth_in_menu_branch,
+							qr_login=>@qr_login_branch,
+							oferta=>oferta_page,
+							bills=>@bills_path_branch,
+							payServices=>@payments_branch,
+							reports=>@reports_branch,
+							replenish=>@replenish_branch,
+							banks=>@banks_branch,
+							generalFavoritesList=>@general_favorites_branch,
+							settings=>@settings_branch,
+							sendFeedback=>@send_feedback_branch,
+							pin=>@get_balance_branch,
+							success_auth_qr=>@qr_check_branch
+						);
+
+						@qr_login_branch = (qr_login_page, %qr_login_switch);
+						%qr_login_switch =
+						(
+						    success_auth_qr=>@qr_check_branch
+						);
+
+						@qr_check_branch = (qr_check_page, %qr_check_switch);
+						%qr_check_switch =
+						(
+						    success_auth_qr=>@main_menu_branch
+						);
+
+						@get_balance_branch = (@check_full_auth_branch, @main_menu_branch);
+						@card_data_branch = (check_card_page, %check_card_switch, t:sipmle_pin_page, @main_menu_branch);
+                        %check_card_switch =
+                        (
+                            mainMenu=>@main_menu_branch
+                        );
+
+						@auth_in_menu_branch = (@auth_branch, @main_menu_branch);
+						@auth_branch = (input_login_page, %auth_login_switch);
+						%auth_login_switch = 
+						(
+							oferta=>oferta_page,
+							pin=>@hard_pin_branch
+						);
+
+						@hard_pin_branch = (t:sipmle_pin_page, %hard_pin_switch);
+						%hard_pin_switch =
+						(
+						      changePin => @set_pin_branch
+						);
+						@set_pin_branch = (change_pin_page, t:change_pin_confirm_page);
+
+						@send_feedback_branch = (@check_small_auth_branch, select_feedback_type_page, %select_feedback_type_switch, enter_feedback_email_page, enter_feedback_message_page,@main_menu_branch);
+						%select_feedback_type_switch =
+						(
+						    back=>*main_menu_page
+						);
+						@bills_path_branch = (@check_small_auth_branch, t:bills_loader_page, %bills_loader_switch);
+						@bill_payment_branch = (@select_payment_type_bills_branch, @end_provider_branch);
+                        @select_payment_type_bills_branch = (t:check_need_select_payment_type_page, %check_need_select_payment_type_bills_switch, @cash_bills_branch);
+                        @need_payment_type_bills_branch = (select_payment_type_page, %select_payment_type_bills_switch);
+                        %check_need_select_payment_type_bills_switch =
+                        (
+                            need=>@need_payment_type_bills_branch
+                        );
+
+						%select_payment_type_bills_switch=
+						(
+							cash=>@cash_bills_branch,
+							balance=>@balance_bills_branch
+						);
+						@cash_bills_branch=(@select_change_branch, t:silent_confirm_bill_page, cash_page, @end_provider_branch);
+						@balance_bills_branch=(@check_pin_for_balance_branch, balance_bills_page, @end_provider_branch);
+
+						@replenish_branch = (t:init_replenish_page, @input_replenish_account_branch);
+						@end_replenish_branch=(end_replenish_page, %end_replenish_switch);
+						%end_replenish_switch=
+						(
+                            back=>@re_main_menu_branch
+						);
+
+						@re_main_menu_branch = (load_data_page, @main_menu_branch);
+
+						@replenish_comment_branch = (replenish_comment_page, %replenish_comment_switch);
+						%replenish_comment_switch=
+						(
+                            mainMenu=>@main_menu_branch
+						);
+						@input_replenish_account_branch = (input_replenish_account_page, %input_replenish_account_switch, @qw_replenish_branch);
+						%input_replenish_account_switch = 
+						(
+						    cash=>@replenish_cash_branch,
+							oferta=>oferta_page,
+							pin=>@simple_pin_branch,
+							confirm_topup_account=>@confirm_topup_account_branch,
+							select_replenish_type => @selectReplenishTypeBranch,
+							qw_replenish => @qw_replenish_branch
+						);
+						@confirm_topup_account_branch = (t:confirm_topup_account_page, @qw_replenish_branch);
+						@qw_replenish_branch = (@replenish_comment_branch, @replenish_cash_branch, @end_replenish_branch);
+                        @mf_replenish_branch = (@replenish_cash_branch, @end_replenish_branch);
+
+                        @replenish_cash_branch = (replenish_cash_page, %replenish_cash_switch, @end_replenish_branch);
+						%replenish_cash_switch=
+						(
+                            mainMenu=>@main_menu_branch
+						);
+
+                        @selectReplenishTypeBranch = (select_replenish_page, %selectReplenishSwitch);
+                        %selectReplenishSwitch =
+						(
+                            replenishQW=>@qw_replenish_branch,
+                            replenishMF=>@mf_replenish_branch
+						);
+
+						@check_small_auth_branch = (t:check_small_auth_page, %check_small_auth_switch);
+						%check_small_auth_switch = 
+						(
+							login=>@input_login_branch,
+							pin=>@simple_pin_branch
+						);
+						@input_login_branch = (input_login_page, %input_login_switch);
+						%input_login_switch = 
+						(
+							oferta=>oferta_page,
+							pin=>@hard_pin_branch
+						);
+						
+						@pin_branch = (t:pin_page, %pin_small_switch);
+						%pin_small_switch=
+						(
+						    changePin => @set_pin_branch,
+							back=>*input_login_page
+						);
+						
+						%bills_loader_switch=
+						(
+							back=>*main_menu_page,
+							bills=>@bills_list_branch,
+							oneBill=>@one_bill_branch
+						);
+						@bills_list_branch = (bills_list_page, %bills_list_switch);
+						%bills_list_switch = 
+						(
+							next=>@bill_payment_branch,
+							back=>*main_menu_page
+						);
+						@one_bill_branch= (one_bill_page, %one_bill_switch);
+						%one_bill_switch = 
+						(
+							next=>@bill_payment_branch,
+							back=>*main_menu_page
+						);
+						
+						@payments_branch=(search_providers_page, %search_providers_switch, @provider_qw_branch);
+						%search_providers_switch = 
+						(
+							generalFavoritesList=>@general_favorites_search_branch,
+							back=>*main_menu_page
+						);
+						@general_favorites_search_branch=(@check_full_auth_branch, general_favorites_list_page, %general_favorites_search_switch, @detail_provider_info_branch);
+						%general_favorites_search_switch=
+						(
+							back=>*search_providers_page
+						);
+						@provider_qw_branch = (t:get_provider_page, %get_provider_switch);
+						%get_provider_switch=
+						(
+							exit=>goto_provider_page,
+							provider=>@provider_from_search_branch,
+							topup=>@replenish_branch,
+							invoices=>@bills_path_branch,
+							deferred_change=>@provider_deferred_change_branch
+						);
+						@provider_deferred_change_branch = (t:light_init_provider, %welcome_provider_switch, @provider_pages_branch,t:check_online_page, %check_online_switch, @check_auth_provider_offline_branch,t:select_fixed_page, %select_fixed_switch, enter_summ_page, @payment_deffered_change_branch);
+                        @check_auth_provider_offline_branch = (input_login_provider_offline_page);
+                        @payment_deffered_change_branch = (confirm_offline_page, cash_deffered_page, @end_provider_branch);
+
+
+						@provider_from_search_branch = (t:light_init_provider, %welcome_provider_switch, @provider_pages_branch,t:check_online_page, %check_online_switch, @check_auth_provider_branch,t:select_fixed_page, %select_fixed_switch, enter_summ_page, @select_payment_type_branch, @end_provider_branch);
+                        @end_provider_branch=(end_provider_page, %end_provider_switch);
+						%end_provider_switch=
+						(
+                            back=>@re_main_menu_branch
+						);
+
+						@check_auth_provider_branch = (t:check_small_auth_page, %check_auth_provider_switch);
+                        %check_auth_provider_switch =
+                        (
+                            login=>@input_login_for_provider_branch,
+                            pin=>@simple_pin_branch
+                        );
+                        @input_login_for_provider_branch = (t:input_login_page, %input_login_for_provider_branch);
+                        %input_login_for_provider_branch =
+                        (
+                            oferta=>oferta_page,
+                            pin=>@pin_provider_branch
+                        );
+                        @pin_provider_branch = (t:pin_page,  %pin_provider_switch);
+                        %pin_provider_switch=
+                        (
+                            changePin => @set_pin_branch,
+                            back=>@input_login_for_provider_branch
+                        );
+
+						@bank_favorites_concrete_branch = (t:bank_favorites_page, %bank_favorites_switch);
+						
+						@bank_favorites_branch = (bank_favorites_login_page, %bank_favorites_login_switch, @pin_bank_branch, t:bank_favorites_page, %bank_favorites_switch);
+						%bank_favorites_login_switch =
+						(
+							oferta=>oferta_page,
+							defaultExit=>goto_banks_page
+						);
+						@pin_bank_branch=(t:pin_page, %pin_bank_switch);
+						%pin_bank_switch=
+						(
+							back=>*bank_favorites_login_page
+						);						
+						%bank_favorites_switch = 
+						(
+							noFavoritesPage=>@no_favorites_branch,
+							moreThanOneFavoritesPage=>@list_favorites_branch,
+							errorLoad=>@bank_favorites_branch 
+						);
+						@list_favorites_branch = (list_favorites_page, %list_favorites_switch);
+						%list_favorites_switch = 
+						(
+							external_favorite=>goto_external_favorite_page,
+							backFromConcreteBank=>@bank_favorites_branch,
+							newFavorite =>new_favorite_page
+						);
+						@no_favorites_branch = (no_favorites_page, %no_favorites_switch);
+						%no_favorites_switch = 
+						(
+							newFavorite => goto_banks_page
+						);
+						
+						@reports_branch = (@check_full_auth_branch, reports_page, %reports_switch);
+						
+						%reports_switch=
+						(
+							back=>*main_menu_page
+						);
+						
+						@settings_branch = (@check_full_auth_branch, settings_page, %settings_switch);
+						%settings_switch=
+						(
+							back=>*main_menu_page,
+							changePin=>@change_pin_branch
+						);
+						@change_pin_branch = (change_pin_page, change_pin_confirm_page, @main_menu_branch);
+						 
+						@check_full_auth_branch = (t:check_full_auth_page, %check_full_auth_switch);
+						%check_full_auth_switch = 
+						(
+							login=>@input_login_full_branch,
+							pin=>@simple_pin_branch
+						);
+						@simple_pin_branch=(t:sipmle_pin_page,  %simple_pin_switch);
+						%simple_pin_switch=
+						(
+						    changePin => @set_pin_branch
+						);
+
+						@full_pin_branch=(t:pin_page, %full_pin_switch);
+						%full_pin_switch=
+						(
+						    changePin => @set_pin_branch,
+							back=>*main_menu_page
+						);
+						
+						@input_login_full_branch = (full_login_page, %input_login_full_switch,@hard_pin_branch);
+						%input_login_full_switch = 
+						(
+							oferta=>oferta_page
+						);
+						
+						@pin_full_branch=(t:pin_page, %pin_full_switch);
+						%pin_full_switch=
+						(
+							back=>*full_login_page
+						);
+						@single_provider_branch=(init_provider_page, %init_provider_switch, @provider_pages_branch, t:check_online_page, %check_online_switch, @input_login_single_provider_branch, t:select_fixed_page, %select_fixed_switch, enter_summ_page, @select_payment_type_branch, @end_provider_branch);
+
+                        %check_online_switch=(
+                            disp_buttons=>disp_buttons_page
+                        );
+                        %init_provider_switch =
+                        (
+                            main_menu=>@main_menu_branch,
+                            welcome_provider=>@welcome_page_branch
+                        );
+                        %select_fixed_switch =
+                        (
+                            without_fixed_summ => @without_fix_branch,
+                            with_fixed_summ_from_online => @online_fix_branch
+                        );
+                        @without_fix_branch = (confirm_page, cash_without_fixed_summ_page, @end_provider_branch);
+                        @online_fix_branch = (@select_payment_type_branch, @end_provider_branch);
+
+                        @select_payment_type_branch = (t:check_need_select_payment_type_page, %check_need_select_payment_type_switch, @cash_branch);
+                        @need_payment_type_branch = (select_payment_type_page, %select_payment_type_switch);
+                        %check_need_select_payment_type_switch =
+                        (
+                            need=>@need_payment_type_branch
+                        );
+
+                        @input_login_single_provider_branch = (input_login_page, %input_login_single_provider_switch);
+                        %input_login_single_provider_switch =
+                        (
+                            oferta=>oferta_page,
+                            pin=>@simple_pin_branch
+                        );
+
+						@invoices_branch = (@input_login_invoices_branch, t:bills_loader_page, %bills_loader_invoices_switch);
+						%bills_loader_invoices_switch=
+						(
+							back=>@invoices_branch,
+							bills=>@bills_list_invoices_branch,
+							oneBill=>@one_bill_invoices_branch
+						);
+
+						@bills_list_invoices_branch = (bills_list_page, %bills_list_invoices_switch);
+						%bills_list_invoices_switch =
+						(
+							next=>@bill_payment_branch,
+							back=>@invoices_branch
+						);
+						@one_bill_invoices_branch= (one_bill_page, %one_bill_invoices_switch);
+						%one_bill_invoices_switch =
+						(
+							next=>@bill_payment_branch,
+							back=>@invoices_branch
+						);
+
+                        @input_login_invoices_branch = (input_login_invoices_page, %input_login_single_provider_switch);
+
+						@provider_pages_branch = (provider_account_page,%provider_account_switch, t:check_provider_extras_page, %check_provider_extras_switch );
+						%welcome_provider_switch=(
+						    welcome_provider=>@welcome_page_branch
+						);
+						@welcome_page_branch = (welcome_page, %welcome_page_switch);
+						%welcome_page_switch=(
+						    favorites=>@general_favorites_provider_welcome_branch,
+						    oferta=>oferta_page
+						);
+						@general_favorites_provider_welcome_branch=(@check_full_auth_branch, general_favorites_list_page, %general_favorites_provider_welcome_switch, @detail_provider_info_branch);
+						%general_favorites_provider_welcome_switch=
+						(
+							back=>*welcome_page
+						);
+
+						%provider_account_switch=
+						(
+							favorites=>@general_favorites_provider_branch
+						);
+						@general_favorites_provider_branch=(@check_full_auth_branch, general_favorites_list_page, %general_favorites_provider_switch, @detail_provider_info_branch);
+						%general_favorites_provider_switch=
+						(
+							back=>*provider_account_page
+						);
+
+						%check_provider_extras_switch=
+						(
+							extraFields=>provider_extra_field_page
+						);
+						
+						%select_payment_type_switch=
+						(
+							cash=>@cash_branch,
+							payFromBalanceSms=>pay_through_sms_page,
+							balance=>@balance_branch
+						);
+						@cash_branch=(@select_change_branch, confirm_page, cash_page, @end_provider_branch);
+
+						@select_change_branch = (select_change_page, %select_change_switch);
+						%select_change_switch=
+						(
+							changeToOtherMobile => t:change_to_other_mobile_page
+						);
+						
+						@balance_branch=(@check_pin_for_balance_branch, confirm_page, balance_page, @end_provider_branch);
+						@check_pin_for_balance_branch = (t:check_full_auth_page, %check_pin_for_balance_switch);
+						%check_pin_for_balance_switch =
+						(
+							pin=>@simple_pin_branch
+						);
+
+						@general_favorites_branch = (@check_full_auth_branch, general_favorites_list_page, %general_favorites_list_switch, @detail_provider_info_branch);
+						%general_favorites_list_switch=
+						(
+							back=>@main_menu_branch
+						);
+						
+						@detail_provider_info_branch = (t:detail_provider_info_init_page, %detail_provider_info_init_switch);
+						%detail_provider_info_init_switch = 
+						(
+							just_exit=>goto_provider_page,
+							external_favorite=>goto_external_favorite_page,
+							provider_favorite=>@favorite_detail_branch
+						);
+						@favorite_detail_branch = (favorite_item_page, %favorite_item_switch,t:light_init_provider, t:check_provider_favorite_extras_page, %check_provider_favorite_extras_switch, t:check_online_page, %check_online_switch, t:select_fixed_page, %select_fixed_switch, enter_summ_page, @select_payment_type_branch, @end_provider_branch);
+
+						%check_provider_favorite_extras_switch=
+						(
+							extraFields=>provider_favorite_extra_field_page
+						);
+
+						%favorite_item_switch=
+						(
+							typeTitle=>@provider_edit_title_branch,
+							typeAccount=>@provider_edit_account_branch,
+							typeSum=>@provider_edit_sum_branch,
+							typeExtra=>@provider_edit_extra_branch,
+							typeComment=>@provider_edit_comment_branch
+						);
+						@provider_edit_title_branch=(provider_edit_title_page);
+						@provider_edit_account_branch=(provider_edit_account_page);
+						@provider_edit_sum_branch=(provider_edit_sum_page);
+						@provider_edit_extra_branch=(provider_edit_extra_page);
+						@provider_edit_comment_branch=(provider_edit_comment_page);
+						
+						@banks_branch=(goto_banks_page);
+					]]>
+                </value>
+            </var>
+        </session>
+        <locales start="rus">
+            <locale code="rus"/>
+            <locale code="kaz"/>
+        </locales>
+        <statistic defaultProfile="bad">
+            <add>
+                <bad>
+                    <var name="_extra_MGT_phone" value="user_info.phone"/>
+                    <var name="_extra_comment" value="project_name_and_version"/>
+                </bad>
+                <good>
+                    <var name="_extra_MGT_phone" value="user_info.phone"/>
+                    <var name="_extra_MGT_account" value="user_info.account"/>
+                    <var name="_extra_MGT_ver" value="settings.project_version"/>
+                    <var name="_extra_comment" value="project_name_and_version"/>
+                  </good>
+            </add>
+            <object>
+                <variable name="prv_id" value="323"/>
+                <variable name="prv_name" value="Magitel"/>
+                <variable name="_extra_MGT_project_number" value="30065"/>
+                <variable name="_extra_no_print_check" value="true"/>
+                <variable name="_extra_fake_provider" value="true"/>
+                <variable name="getAccountNumber" value="0000000000"/>
+            </object>
+            <bad
+                    vars="_extra_MGT_project_number,_extra_MGT_exit,_extra_MGT_date,_extra_MGT_time,_extra_MGT_path, getAccountNumber"
+                    post="../index.html"/>
+            <good
+                    vars="_extra_MGT_project_number,_extra_MGT_exit,_extra_MGT_date,_extra_MGT_time,_extra_MGT_path, getAccountNumber"
+                    post="../index.html"/>
+        </statistic>
+
+        <defaultBackground type="0" name="bg_base"/>
+
+        <pages>
+            <!--Инициализация: Установка соединения с маратлом, Загрузка провайдеров, Выбор навигации-->
+            <page name="check_status_page" index="1" idleTime="15">
+                <content type="2" name="logicLayer.terminal.Terminal"/>
+                <content type="2" name="logicLayer.settings.Settings"/>
+                <content type="2" name="logicLayer.providers.Providers"/>
+                <content type="2" name="logicLayer.checkStatus.CheckPage"/>
+
+            </page>
+
+            <!--Ваши банковские платежи: Логин-->
+            <page name="bank_favorites_login_page" index="2" idleTime="40">
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2" name="presentationLayer.favorite.bank.bankFavoritesLogin.BankFavoritesLoginPage"/>
+                <content type="2" name="Page" symbolName="version" pos="1043.6,1002">
+                    <param name="custom_label_0" instance="versionTf" key="global_project_version"/>
+                </content>
+                <content type="2" name="presentationLayer.defaultLogo.DefaultLogoWrapper" pos="40,0"/>
+            </page>
+
+            <!--Пин-->
+            <page name="pin_page" index="3" idleTime="40">
+                <content type="2" name="logicLayer.network.Network"/>
+
+                <content type="2" name="presentationLayer.auth.inputPin.InputPinPage"/>
+                <content type="2" name="Page" symbolName="version" pos="1043.6,1002">
+                    <param name="custom_label_0" instance="versionTf" key="global_project_version"/>
+                </content>
+                <content type="2" name="presentationLayer.defaultLogo.DefaultLogoWrapper" pos="40,0"/>
+            </page>
+
+            <!--Пин(другой возврат)-->
+            <page name="sipmle_pin_page" index="3" idleTime="40">
+                <content type="2" name="logicLayer.network.Network"/>
+
+                <content type="2" name="presentationLayer.auth.inputSimplePin.InputSimplePinPage"/>
+                <content type="2" name="Page" symbolName="version" pos="1043.6,1002">
+                    <param name="custom_label_0" instance="versionTf" key="global_project_version"/>
+                </content>
+                <content type="2" name="presentationLayer.defaultLogo.DefaultLogoWrapper" pos="40,0"/>
+            </page>
+
+            <!--Ваши банковские платежи: Запрос избранного-->
+            <page name="bank_favorites_page" index="4" idleTime="40">
+                <content type="2" name="logicLayer.providers.Providers"/>
+                <content type="2" name="logicLayer.network.Network"/>
+
+                <content type="2" name="presentationLayer.favorite.bank.bankFavoritesLoader.BankFavoritesLoaderPage"/>
+            </page>
+
+            <!--Ваши банковские платежи: Список избранного-->
+            <page name="list_favorites_page" index="5" idleTime="40">
+                <content type="2" name="logicLayer.providers.Providers"/>
+                <content type="2" name="presentationLayer.favorite.bank.favoriteList.FavoritesPage"/>
+
+                <content type="2" name="Page" symbolName="version" pos="1043.6,1002">
+                    <param name="custom_label_0" instance="versionTf" key="global_project_version"/>
+                </content>
+                <content type="2" name="presentationLayer.defaultLogo.DefaultLogoWrapper" pos="40,0"/>
+            </page>
+
+            <!--Ваши банковские платежи: Нет записей-->
+            <page name="no_favorites_page" index="6" idleTime="40">
+                <content type="2" name="presentationLayer.favorite.bank.noFavorites.NoFavoritesPage"/>
+                <content type="2" name="Page" symbolName="version" pos="1043.6,1002">
+                    <param name="custom_label_0" instance="versionTf" key="global_project_version"/>
+                </content>
+                <content type="2" name="presentationLayer.defaultLogo.DefaultLogoWrapper" pos="40,0"/>
+            </page>
+
+
+            <!--Оферта-->
+            <page name="oferta_page" index="8" idleTime="40">
+                <content type="2" name="presentationLayer.oferta.OfertaPage" pos="0,0"/>
+                <content type="2" name="Page" symbolName="version" pos="1043.6,1002">
+                    <param name="custom_label_0" instance="versionTf" key="global_project_version"/>
+                </content>
+                <content type="2" name="presentationLayer.defaultLogo.DefaultLogoWrapper" pos="40,0"/>
+            </page>
+
+            <!--Главное меню idleTime="10" specialTimeout="true"-->
+            <page name="main_menu_page" index="9" idleTime="40">
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2" name="presentationLayer.mainMenu.MainMenuPage"/>
+                <content type="2" name="Page" symbolName="version" pos="1043.6,1002">
+                    <param name="custom_label_0" instance="versionTf" key="global_project_version"/>
+                </content>
+                <content type="2" name="presentationLayer.defaultLogo.DefaultLogoWrapper" pos="40,0"/>
+            </page>
+
+
+            <!--Обращение в поддержку: Тип обращения -->
+            <page name="select_feedback_type_page" index="10" idleTime="40">
+                <content type="2" name="presentationLayer.feedback.feedbackType.FeedbackTypePage"/>
+                <content type="2" name="Page" symbolName="version" pos="1043.6,1002">
+                    <param name="custom_label_0" instance="versionTf" key="global_project_version"/>
+                </content>
+            </page>
+
+            <!--Обращение в поддержку: Емейл-->
+            <page name="enter_feedback_email_page" index="11" idleTime="40">
+                <content type="2" name="presentationLayer.feedback.feedbackEmail.FeedbackEmailPage"/>
+                <content type="2" name="Page" symbolName="version" pos="1043.6,1002">
+                    <param name="custom_label_0" instance="versionTf" key="global_project_version"/>
+                </content>
+                <content type="2" name="presentationLayer.defaultLogo.DefaultLogoWrapper" pos="40,0"/>
+            </page>
+
+            <!--Обращение в поддержку: Сообщение -->
+            <page name="enter_feedback_message_page" index="12" idleTime="40">
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2" name="presentationLayer.feedback.feedbackMessage.FeedbackMessagePage"/>
+                <content type="2" name="Page" symbolName="version" pos="1043.6,1002">
+                    <param name="custom_label_0" instance="versionTf" key="global_project_version"/>
+                </content>
+                <content type="2" name="presentationLayer.defaultLogo.DefaultLogoWrapper" pos="40,0"/>
+            </page>
+
+            <!--Логин с обязательным запросом пина -->
+            <page name="full_login_page" index="13" idleTime="40">
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2" name="presentationLayer.auth.fullLogin.FullLoginPage"/>
+
+                <content type="2" name="Page" symbolName="version" pos="1043.6,1002">
+                    <param name="custom_label_0" instance="versionTf" key="global_project_version"/>
+                </content>
+                <content type="2" name="presentationLayer.defaultLogo.DefaultLogoWrapper" pos="40,0"/>
+            </page>
+
+            <!--Переход в категорию "Банки"-->
+            <page name="goto_banks_page" index="14" idleTime="40">
+                <content type="2" name="logicLayer.gotoMainInterface.gotoBankCredits.GotoBankCredits"/>
+            </page>
+
+            <!--Проверка наличия аутентификации-->
+            <page name="check_small_auth_page" index="15" idleTime="40">
+                <content type="2" name="logicLayer.checkSmallAuth.CheckSmallAuth"/>
+            </page>
+
+            <!--Проверка регистрации-->
+            <page name="check_full_auth_page" index="16" idleTime="40">
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2" name="logicLayer.checkFullAuth.CheckFullAuth"/>
+            </page>
+
+            <!--Пополнение: проверки-->
+            <page name="init_replenish_page" index="60" idleTime="40">
+                <content type="2" name="logicLayer.providers.Providers"/>
+                <content type="2" name="presentationLayer.replenish.replenishInit.ReplenishInitPage"/>
+            </page>
+
+            <!--Пополнение: аккаунт-->
+            <page name="input_replenish_account_page" index="17" idleTime="40">
+                <content type="2" name="logicLayer.checkUserExists.CheckUserExists"/>
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2" name="presentationLayer.replenish.replenishAccount.ReplenishAccountPage"/>
+                <content type="2" name="Page" symbolName="version" pos="1043.6,1002">
+                    <param name="custom_label_0" instance="versionTf" key="global_project_version"/>
+                </content>
+                <content type="2" name="presentationLayer.defaultLogo.DefaultLogoWrapper" pos="40,0"/>
+            </page>
+            <page name="confirm_topup_account_page" index="68" idleTime="40">
+                <content type="2" name="logicLayer.checkUserExists.CheckUserExists"/>
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2" name="presentationLayer.replenish.confirmTopupAccount.ConfirmTopupAccountPage"/>
+                <content type="2" name="Page" symbolName="version" pos="1043.6,1002">
+                    <param name="custom_label_0" instance="versionTf" key="global_project_version"/>
+                </content>
+            </page>
+            <page name="select_replenish_page" index="62" idleTime="40">
+                <content type="2" name="presentationLayer.replenish.selectReplenishType.SelectReplenishTypePage"/>
+                <content type="2" name="Page" symbolName="version" pos="1043.6,1002">
+                    <param name="custom_label_0" instance="versionTf" key="global_project_version"/>
+                </content>
+                <content type="2" name="presentationLayer.defaultLogo.DefaultLogoWrapper" pos="40,0"/>
+            </page>
+
+            <!--Пополнение:  комментарий-->
+            <page name="replenish_comment_page" index="18" idleTime="40">
+                <content type="2" name="presentationLayer.replenish.replenishComment.ReplenishCommentPage"/>
+                <content type="2" name="presentationLayer.defaultLogo.DefaultLogoWrapper" pos="40,0"/>
+            </page>
+
+
+            <!--Пополнение: Внесение денег-->
+            <page name="replenish_cash_page" index="21" idleTime="30000">
+                <content type="2" name="presentationLayer.replenish.replenishCash.ReplenishCashPage"/>
+                <content type="2" name="presentationLayer.fun.cats.CatsPage" pos="947,550"/>
+                <content type="2" name="presentationLayer.defaultLogo.DefaultLogoWrapper" pos="40,0"/>
+            </page>
+
+            <!--Пополнение: Спасибо-->
+            <page name="end_replenish_page" index="22" idleTime="22">
+                <content type="2" name="presentationLayer.provider.end.EndProviderPage"/>
+                <content type="2" name="presentationLayer.fun.killCockroachGame.KillCockRoachGamePage" pos="1.75,67.05"/>
+            </page>
+
+            <!--Логин для счетов-->
+            <page name="input_login_invoices_page" index="67" idleTime="40">
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2" name="presentationLayer.bills.billsLogin.BiilsLoginPage"/>
+                <content type="2" name="Page" symbolName="version" pos="1043.6,1002">
+                    <param name="custom_label_0" instance="versionTf" key="global_project_version"/>
+                </content>
+                <content type="2" name="presentationLayer.defaultLogo.DefaultLogoWrapper" pos="40,0"/>
+            </page>
+            <!--Авторизация: QR-->
+            <page name="qr_login_page" index="73" idleTime="40">
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2" name="presentationLayer.auth.qrLogin.QRLoginPage"/>
+            </page>
+            <!--Авторизация: QR check-->
+            <page name="qr_check_page" index="74" idleTime="40">
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2" name="presentationLayer.auth.qrCheck.QRCheckPage"/>
+            </page>
+            <!--Логин-->
+            <page name="input_login_page" index="23" idleTime="40">
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2" name="presentationLayer.auth.login.LoginPage"/>
+
+                <content type="2" name="Page" symbolName="version" pos="1043.6,1002">
+                    <param name="custom_label_0" instance="versionTf" key="global_project_version"/>
+                </content>
+                <content type="2" name="presentationLayer.defaultLogo.DefaultLogoWrapper" pos="40,0"/>
+            </page>
+
+            <!--Оплата счетов: Запрос списка счетов-->
+            <page name="bills_loader_page" index="24" idleTime="40">
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2" name="logicLayer.providers.Providers"/>
+                <content type="2" name="presentationLayer.bills.billsLoader.BillsLoaderPage"/>
+
+                <content type="2" name="Page" symbolName="version" pos="1043.6,1002">
+                    <param name="custom_label_0" instance="versionTf" key="global_project_version"/>
+                </content>
+            </page>
+
+            <!--Оплата счетов: Список счетов-->
+            <page name="bills_list_page" index="25" idleTime="40">
+                <content type="2" name="presentationLayer.bills.billsList.BillsListPage"/>
+                <content type="2" name="presentationLayer.defaultLogo.DefaultLogoWrapper" pos="40,0"/>
+            </page>
+
+            <!--Оплата счетов: один счет -->
+            <page name="one_bill_page" index="26" idleTime="40">
+                <content type="2" name="presentationLayer.bills.oneBill.OneBillPage"/>
+                <content type="2" name="presentationLayer.defaultLogo.DefaultLogoWrapper" pos="40,0"/>
+            </page>
+
+            <!--Оплата счетов: формирование платежа-->
+            <page name="silent_confirm_bill_page" index="27" idleTime="40">
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2" name="presentationLayer.bills.silentConfirm.SilentConfirmBill"/>
+
+            </page>
+
+            <!--Оплата счетов: платеж с баланса-->
+            <page name="balance_bills_page" index="28" idleTime="180">
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2" name="presentationLayer.bills.billsBalancePayment.BillsBalancePaymentPage"/>
+                <content type="2" name="presentationLayer.defaultLogo.DefaultLogoWrapper" pos="40,0"/>
+            </page>
+
+            <!--Поиск провайдеров-->
+            <page name="search_providers_page" index="29" idleTime="40">
+                <content type="2" name="logicLayer.providers.Providers"/>
+                <content type="2" name="presentationLayer.paymentService.providerList.ProviderListPage"/>
+
+                <content type="2" name="presentationLayer.paymentService.searchKeyboard.SearchKeyboard" pos="58,333.9"/>
+                <content type="2" name="presentationLayer.paymentService.searchProvidersResult.SearchProvidersResult"
+                         pos="3.25,130"/>
+
+            </page>
+
+            <!--Переход на провайдера РИ-->
+            <page name="goto_provider_page" index="30" idleTime="40">
+                <content type="2" name="logicLayer.gotoMainInterface.gotoProvider.GotoProvider"/>
+                <content type="0" name="bg_wait"/>
+            </page>
+
+
+            <!--Провайдер: Инициализация из кошелька-->
+            <page name="get_provider_page" index="31" idleTime="40">
+                <content type="2" name="logicLayer.providers.Providers"/>
+                <content type="2" name="presentationLayer.paymentService.getProviderInfo.GetProviderInfoPage"/>
+            </page>
+
+            <!--Отчеты-->
+            <page name="reports_page" index="32" idleTime="40">
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2" name="presentationLayer.reports.ReportsPage"/>
+
+                <content type="2" name="Page" symbolName="version" pos="1043.6,1002">
+                    <param name="custom_label_0" instance="versionTf" key="global_project_version"/>
+                </content>
+                <content type="2" name="presentationLayer.defaultLogo.DefaultLogoWrapper" pos="40,0"/>
+            </page>
+
+            <!--Настройки-->
+            <page name="settings_page" index="33" idleTime="40">
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2" name="presentationLayer.settings.SettingsPage"/>
+
+                <content type="2" name="Page" symbolName="version" pos="1043.6,1002">
+                    <param name="custom_label_0" instance="versionTf" key="global_project_version"/>
+                </content>
+                <content type="2" name="presentationLayer.defaultLogo.DefaultLogoWrapper" pos="40,0"/>
+            </page>
+
+            <!--Настройки: Смена пина-->
+            <page name="change_pin_page" index="34" idleTime="40">
+                <content type="2" name="presentationLayer.changePin.inputFirstPin.ChangePinPage"/>
+
+                <content type="2" name="Page" symbolName="version" pos="1043.6,1002">
+                    <param name="custom_label_0" instance="versionTf" key="global_project_version"/>
+                </content>
+                <content type="2" name="presentationLayer.defaultLogo.DefaultLogoWrapper" pos="40,0"/>
+            </page>
+
+            <!--Настройки: Смена пина(подтверждение)-->
+            <page name="change_pin_confirm_page" index="35" idleTime="40">
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2" name="presentationLayer.changePin.confirmPin.ConfirmPinPage"/>
+
+                <content type="2" name="Page" symbolName="version" pos="1043.6,1002">
+                    <param name="custom_label_0" instance="versionTf" key="global_project_version"/>
+                </content>
+                <content type="2" name="presentationLayer.defaultLogo.DefaultLogoWrapper" pos="40,0"/>
+            </page>
+
+            <!--Мои платежи: Список-->
+            <page name="general_favorites_list_page" index="36" idleTime="40">
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2"
+                         name="presentationLayer.favorite.general.generalFavoriteList.GeneralFavoriteListPage"/>
+
+                <content type="2" name="Page" symbolName="version" pos="1043.6,1002">
+                    <param name="custom_label_0" instance="versionTf" key="global_project_version"/>
+                </content>
+                <content type="2" name="presentationLayer.defaultLogo.DefaultLogoWrapper" pos="40,0"/>
+            </page>
+
+
+            <!--Мои платежи: Инициализация избранного платежа-->
+            <page name="detail_provider_info_init_page" index="37" idleTime="40">
+                <content type="2" name="presentationLayer.favorite.general.providerInfo.ProviderInfoPage"/>
+            </page>
+
+            <!--Мои платежи: Редактирование - название-->
+            <page name="provider_edit_title_page" index="38" idleTime="40">
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2" name="presentationLayer.favorite.general.edit.title.EditTitlePage"/>
+                <content type="2" name="presentationLayer.provider.icon.IconWrapper" pos="40,0"/>
+            </page>
+
+            <!--Мои платежи: Редактирование - аккаунт-->
+            <page name="provider_edit_account_page" index="39" idleTime="40">
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2" name="presentationLayer.favorite.general.edit.account.EditAccountPage"/>
+                <content type="2" name="presentationLayer.provider.icon.IconWrapper" pos="40,0"/>
+            </page>
+
+            <!--Мои платежи: Редактирование - экстра-->
+            <page name="provider_edit_extra_page" index="59" idleTime="40">
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2" name="presentationLayer.favorite.general.edit.extra.EditExtraPage"/>
+                <content type="2" name="presentationLayer.provider.icon.IconWrapper" pos="40,0"/>
+            </page>
+
+            <!--Мои платежи: Редактирование - сумма-->
+            <page name="provider_edit_sum_page" index="40" idleTime="40">
+                <content type="2" name="logicLayer.providers.Providers"/>
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2" name="presentationLayer.favorite.general.edit.sum.EditSummPage"/>
+                <content type="2" name="presentationLayer.provider.icon.IconWrapper" pos="40,0"/>
+            </page>
+
+            <!--Мои платежи: Редактирование - комментарий-->
+            <page name="provider_edit_comment_page" index="41" idleTime="40">
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2" name="presentationLayer.favorite.general.edit.comment.EditCommentPage"/>
+                <content type="2" name="presentationLayer.provider.icon.IconWrapper" pos="40,0"/>
+            </page>
+
+            <!--Мои платежи: переход на РИ с сохраненными данными-->
+            <page name="goto_external_favorite_page" index="42" idleTime="40">
+                <content type="2" name="logicLayer.gotoMainInterface.gotoProvider.GotoProvider"/>
+                <content type="0" name="bg_wait"/>
+            </page>
+
+            <!--Мои платежи: Избранный платеж (Детали)-->
+            <page name="favorite_item_page" index="43" idleTime="40">
+                <content type="2" name="presentationLayer.favorite.general.favoriteItem.FavoriteItemPage"/>
+                <content type="2" name="presentationLayer.provider.icon.IconWrapper" pos="40,0"/>
+            </page>
+
+
+
+            <!--Провайдер: Логин для оффлайнов-->
+            <page name="input_login_provider_offline_page" index="44" idleTime="40">
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2" name="presentationLayer.auth.offlineLogin.OfflineLoginPage"/>
+                <content type="2" name="presentationLayer.defaultLogo.DefaultLogoWrapper" pos="40,0"/>
+            </page>
+
+            <!--Провайдер: Подтверждение с отложенной сдачей-->
+            <page name="confirm_offline_page" index="44" idleTime="40">
+                <content type="2" name="presentationLayer.provider.deffered_change_confirm.DefferedChangeConfirmProviderPage"/>
+            </page>
+
+            <!--Провайдер: Внесение купюр с отложенной сдачей-->
+            <page name="cash_deffered_page" index="44" idleTime="40">
+                <content type="2" name="presentationLayer.provider.deffered_change_cash.DefferedChangeCashPage"/>
+            </page>
+
+
+            <!--Провайдер: Инициализация-->
+            <page name="init_provider_page" index="44" idleTime="40">
+                <content type="2" name="logicLayer.providers.Providers"/>
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2" name="presentationLayer.provider.init.InitProviderPage"/>
+            </page>
+
+            <!--Провайдер: Постинициализация-->
+            <page name="light_init_provider" index="61" idleTime="40">
+                <content type="2" name="logicLayer.providers.Providers"/>
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2" name="presentationLayer.provider.lightInit.LightInitProviderPage"/>
+            </page>
+
+            <!--Провайдер: Приветствие-->
+            <page name="welcome_page" index="69" idleTime="40">
+                <content type="2" name="presentationLayer.provider.welcome.WelcomeProviderPage"/>
+                <content type="2" name="presentationLayer.provider.icon.IconWrapper" pos="40,0"/>
+            </page>
+
+            <!--Провайдер: Результат онлайна-->
+            <page name="disp_buttons_page" index="70" idleTime="40">
+                <content type="2" name="presentationLayer.provider.dispButtons.DispButtonsPage"/>
+                <content type="2" name="presentationLayer.provider.icon.IconWrapper" pos="40,0"/>
+            </page>
+
+
+            <!--Провайдер: Аккаунт-->
+            <page name="provider_account_page" index="45" idleTime="40">
+                <content type="2" name="presentationLayer.provider.account.ProviderAccountPage"/>
+                <content type="2" name="presentationLayer.provider.icon.IconWrapper" pos="40,0"/>
+            </page>
+
+            <!--Провайдер: проверка-->
+            <page name="check_online_page" index="46" idleTime="40">
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2" name="presentationLayer.provider.onlineCheck.OnlineCheckPage"/>
+            </page>
+
+
+            <!--Провайдер: проверка наличия доп полей-->
+            <page name="check_provider_extras_page" index="57" idleTime="40">
+                <content type="2" name="presentationLayer.provider.checkForExtras.CheckForExtrasPage"/>
+            </page>
+
+            <!--Провайдер: дополнительные поля-->
+            <page name="provider_extra_field_page" index="58" idleTime="40">
+                <content type="2" name="presentationLayer.provider.extra.ProviderExtraPage"/>
+                <content type="2" name="presentationLayer.provider.icon.IconWrapper" pos="40,0"/>
+            </page>
+
+            <!--Провайдер: проверка наличия обязательных доп полей для избранного-->
+            <page name="check_provider_favorite_extras_page" index="71" idleTime="40">
+                <content type="2" name="presentationLayer.provider.checkForFavoriteExtras.CheckForFavoriteExtrasPage"/>
+            </page>
+
+            <!--Провайдер: обязательные дополнительные поля-->
+            <page name="provider_favorite_extra_field_page" index="72" idleTime="40">
+                <content type="2" name="presentationLayer.provider.extraFavorite.ProviderFavoriteExtraPage"/>
+                <content type="2" name="presentationLayer.provider.icon.IconWrapper" pos="40,0"/>
+            </page>
+
+            <!--Провайдер: Ввод суммы-->
+            <page name="enter_summ_page" index="47" idleTime="40">
+                <content type="2" name="logicLayer.checkForNeedAddFavorite.CheckForNeedAddFavorite"/>
+                <content type="2" name="logicLayer.providers.Providers"/>
+                <content type="2" name="presentationLayer.provider.enterSumm.EnterSummPage"/>
+                <content type="2" name="presentationLayer.provider.icon.IconWrapper" pos="40,0"/>
+            </page>
+
+
+            <!--Провайдер: Проверка необходимости выбора способа оплаты-->
+            <page name="check_need_select_payment_type_page" index="63" idleTime="40">
+                <content type="2" name="presentationLayer.provider.checkNeedSelectPaymentType.CheckNeedSelectPaymentTypePage"/>
+             </page>
+
+            <!--Провайдер: Выбор способа оплаты-->
+            <page name="select_payment_type_page" index="48" idleTime="40">
+                <content type="2" name="presentationLayer.provider.selectPaymentType.SelectPaymentTypePage"/>
+                <content type="2" name="presentationLayer.provider.icon.IconWrapper" pos="40,0"/>
+            </page>
+
+            <!--Провайдер: Оплата через СМС(инструкция)-->
+            <page name="pay_through_sms_page" index="49" idleTime="40">
+                <content type="2" name="presentationLayer.provider.payThroughSms.PayThroughSmsPage"/>
+                <content type="2" name="presentationLayer.provider.icon.IconWrapper" pos="40,0"/>
+            </page>
+
+            <!--Провайдер: Выбор сдачи-->
+            <page name="select_change_page" index="50" idleTime="40">
+                <content type="2" name="presentationLayer.provider.selectChangeType.SelectChangeTypePage"/>
+                <content type="2" name="presentationLayer.provider.icon.IconWrapper" pos="40,0"/>
+            </page>
+
+            <!--Провайдер: другой аккаунт сдачи-->
+            <page name="change_to_other_mobile_page" index="51" idleTime="40">
+                <content type="2"
+                         name="presentationLayer.provider.inputOtherAccountForChange.InputOtherAccountForChangePage"/>
+
+                <content type="2" name="Page" symbolName="version" pos="1043.6,1002">
+                    <param name="custom_label_0" instance="versionTf" key="global_project_version"/>
+                </content>
+                <content type="2" name="presentationLayer.defaultLogo.DefaultLogoWrapper" pos="40,0"/>
+            </page>
+
+            <!--Провайдер: Подтверждение-->
+            <page name="confirm_page" index="52" idleTime="40">
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2" name="presentationLayer.provider.confirm.ConfirmProviderPage"/>
+                <content type="2" name="presentationLayer.provider.icon.IconWrapper" pos="40,0"/>
+            </page>
+
+            <!--Провайдер: Внесение денег-->
+            <page name="cash_page" index="53" idleTime="30000">
+                <content type="2" name="presentationLayer.provider.cash.CashPage"/>
+                <content type="2" name="presentationLayer.provider.icon.IconWrapper" pos="40,0"/>
+                <content type="2" name="presentationLayer.fun.cats.CatsPage" pos="947,550"/>
+            </page>
+
+            <!--Провайдер: Проверка необходимости ввода суммы-->
+            <page name="select_fixed_page" index="65" idleTime="40">
+                <content type="2" name="logicLayer.checkForNeedAddFavorite.CheckForNeedAddFavorite"/>
+                <content type="2" name="logicLayer.providers.Providers"/>
+                <content type="2" name="presentationLayer.provider.checkNeedFixedSumm.CheckNeedFixedSummPage"/>
+            </page>
+
+            <!--Провайдер: Внесение денег без фиксы-->
+            <page name="cash_without_fixed_summ_page" index="64" idleTime="30000">
+                <content type="2" name="presentationLayer.provider.cashWithoutFixedSumm.CashWithoutFixedSummPage"/>
+                <content type="2" name="presentationLayer.provider.icon.IconWrapper" pos="40,0"/>
+                <content type="2" name="presentationLayer.fun.cats.CatsPage" pos="947,550"/>
+            </page>
+
+            <!--Провайдер: Оплата с баланса-->
+            <page name="balance_page" index="54" idleTime="180">
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2" name="presentationLayer.provider.balance.BalancePage"/>
+                <content type="2" name="presentationLayer.provider.icon.IconWrapper" pos="40,0"/>
+            </page>
+
+            <!--Провайдер: Спасибо-->
+            <page name="end_provider_page" index="55" idleTime="22">
+                <content type="2" name="logicLayer.addFavorite.AddFavorite"/>
+                <content type="2" name="presentationLayer.provider.end.EndProviderPage"/>
+            </page>
+
+            <!--Банкомат: Проверки-->
+            <page name="check_card_page" index="55">
+                <content type="2" name="logicLayer.network.Network"/>
+                <content type="2" name="presentationLayer.cardreader.check.CardReaderCheckPage"/>
+            </page>
+
+            <!--Провайдер: Спасибо-->
+            <page name="load_data_page" index="66">
+                <content type="2" name="logicLayer.providers.Providers"/>
+                <content type="2" name="logicLayer.loadData.LoadDataPage"/>
+            </page>
+
+            <!--Ошибка старта приложения-->
+            <page name="fail_terminal_page" index="56" idleTime="10">
+                <content type="0" name="bg_terminal_fail"/>
+                <content type="1" name="btnExit" pos="490.4,880"/>
+            </page>
+        </pages>
+    </config>
+</scripts>
+

@@ -1,0 +1,49 @@
+{
+   "index_config" : {
+      "mnptimeout" : "10",
+      "promotion" : "-1",
+      "unekt" : "0",
+      "vqw_qr_auth" : "0"
+   },
+   "info" : {
+      "agent-id" : "4666170",
+      "agent-inn" : "7703633176",
+      "agt-contract" : "Договор тестирования",
+      "agt-country-code" : "643",
+      "aof-bank-acc" : "7703633176",
+      "aof-name" : "QИмя контрагента aof-name",
+      "ftp-home" : "/!anonymous/",
+      "max-pay-amount" : "0",
+      "offer-type" : "0",
+      "online-auth" : "1",
+      "osmp-general-phone" : "8-495-6265252",
+      "p-height" : "0",
+      "p-width" : "0",
+      "prof-type" : "REG",
+      "receipt-address" : "г Москва, ?, Экспоком",
+      "terminal-type" : "4"
+   },
+   "region_hierarchy" : [
+      {
+         "id" : "1",
+         "level" : "1",
+         "name" : "?????????? ?????????",
+         "regUICalculatedBy" : "0",
+         "type" : "1"
+      },
+      {
+         "id" : "2",
+         "level" : "2",
+         "name" : "???????????",
+         "regUICalculatedBy" : "0",
+         "type" : "2"
+      },
+      {
+         "id" : "26",
+         "level" : "3",
+         "name" : "??????",
+         "regUICalculatedBy" : "1",
+         "type" : "5"
+      }
+   ]
+}

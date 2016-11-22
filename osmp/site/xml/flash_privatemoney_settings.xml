@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data xmlns:b="com.styleru.bool" xmlns:n="com.styleru.number" xmlns:s="com.styleru.string">
+	<settings
+		n:width="1280"
+		n:height="1024"
+		s:constructor_context="xml/flash_privatemoney_context.xml"
+		s:constructor_flow="xml/flash_privatemoney_flow.xml"
+		s:title="PrivateMoney"
+		s:prvname="Visa QIWI Wallet"
+		s:prvid="20243"
+		s:prvid2="7406"
+		s:qw_prvid="441"
+		n:speed="0.4"
+		s:statisticsId="30016"
+		>
+	</settings>
+	<LoaderMax name="resources" load="true">
+		<SWFLoader name="fonts" url="swf/flash_privatemoney_fonts.swf" />
+		<SWFLoader name="graphics" url="swf/flash_privatemoney_graphics.swf" />
+	</LoaderMax>
+</data>

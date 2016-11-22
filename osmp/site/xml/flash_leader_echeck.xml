@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<object id="echeck" class="String">
+		<constructor-arg>
+			<value>
+<![CDATA[
+ВАШИ ПЛАТЕЖИ<br/>Принято: %accepted%<br/>Комиссия оператора: %bankcommission%<br/>Зачислено: %enrolled%<br/>**************************************<br/>ОПЛАТА ЗА<br/>КИВИ Банк (АО)<br/>ИНН: 3123011520<br/>Лицензия № 2241<br/>Вид операции: 005<br/>Сумма: %amount%<br/>Коммисия: %bankcommission%<br/>{{usd && Сумма к выдаче в долларах США: %amountusd% USD<br/>(1 USD = %rateusd%)}}{{euro && Сумма к выдаче в Евро: %amounteuro% EURO<br/>(1 EURO = %rateeuro%)<br/>}}{{change && Сдача в Visa Qiwi Wallet: %change%<br/>}}Денежные переводы "Лидер"<br/>Получатель: %sender%<br/>Отправитель: %recipient%<br/>Страна получения перевода: %country%<br/>Контрольный номер перевода: %control%<br/>Операция по переводу средств в банк получалеля принята КИВИ Банк (АО) к исполнению<br/>**************************************<br/>Поддержка клиентов системы Лидер (24ч.) 8(800)333-44-44<br/>]]>
+			</value>
+		</constructor-arg>
+	</object>
+</objects>

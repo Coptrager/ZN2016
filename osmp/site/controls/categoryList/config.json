@@ -1,0 +1,10 @@
+{
+  "name":"categoryList",
+  "css":true,
+  "parent":"visualControl",
+  "use": [
+    "providerButton",
+    "folderButton"
+  ],
+  "version":"0.1.0"
+}

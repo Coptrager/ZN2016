@@ -1,0 +1,33 @@
+﻿.providerButton {
+    position:relative;
+    width:240px;
+    height:120px;
+    padding-left:140px;
+    background:#fff;
+    border-radius:10px;
+    transition:all 100ms;
+}
+    .providerButton div {
+        top:10px;
+        left:20px;
+        width:100px;
+        height:100px;
+        background-position:center;
+        background-repeat:no-repeat;
+    }
+    .providerButton p {
+        width:220px;
+        max-width:220px;
+        height:120px;
+        display:table-cell;
+        vertical-align:middle;
+        font-family:Whitney;
+        font-size:24px;
+        text-overflow: ellipsis;
+    }
+    .providerButton:active {
+        margin-top:3px;
+        opacity:0.7;
+        /*background-color:#d2deec;
+        color:#2458aa;*/
+    }

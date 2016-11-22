@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<object id="billText" class="String">
+		<constructor-arg>
+			<value>
+<![CDATA[_receipt_=------------------------------
+«КИВИ Банк» (ЗАО)<br>ИНН 3123011520 БИК 044585416   К/с 30101810200000000416<br>Лицензия No. 2241<br>123001, г. Москва, ул. Спиридоновка, д. 4, стр. 2
+&_receipt_Вид операции=026&_receipt_Услуга=организация и осуществление расчетов с использованием предоплаченной карты&_receipt_Принятo=%total%&_receipt_Зачислено=%total%&_receipt_Кoмиссия=%commission%<br>
+-------------ЛИНИЯ ОТРЕЗА-------------
+&_receipt_КВИТАНЦИЯ=<br>«КИВИ Банк» (ЗАО)<br>ИНН 3123011520 БИК 044585416   К/с 30101810200000000416<br>Лицензия No. 2241&_receipt_Терминал=%termid%&_receipt_Код операции=%operation_code%
+&_receipt_Плательщик=%name%{{address && &_receipt_Адрес=%address%}}&_receipt_Получатель=%to_name_f%&_receipt_ИНН=%inn%&_receipt_КПП=%kpp%&_receipt_ОКТМО/ОКАТО=%okato%&_receipt_КБК=%kbk%&_receipt_БИК=%rec_bik%&_receipt_Р/С=%cre%&_receipt_Статус плательщика (101)=%fns_status%&_receipt_Основание платежа (106)=%payment_reason%&_receipt_Налоговый период (107)=%tax_period%&_receipt_Тип платежа (110)=%payment_type%
+&_receipt_Вид платежа=Налоговые платежи физ. лиц по индексу документа %account%&_receipt_Сумма=%price%
+&_receipt_Подпись плательщика=____________________<br>&_receipt_prt_top_msg=]]>
+			</value>
+		</constructor-arg>
+	</object>
+	
+</objects>

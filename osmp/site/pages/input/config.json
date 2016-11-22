@@ -1,0 +1,7 @@
+﻿{
+  "parent":"provider_info",
+  "use":[
+    "providerPage"
+  ],
+  "timeout":180
+}

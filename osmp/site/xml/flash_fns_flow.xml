@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<object id="flowCfg" class="ru.mobw.coreas3.app.config.FlowConfig" />
+	
+	<object id="flow" class="ru.mobw.coreas3.app.flow.mcflow.MCFlowBase" depends-on="flowCfg">
+		<constructor-arg ref="flowCfg" />
+		<property name="routeData" ref="route" />
+		<property name="elementsMap">
+            <dictionary>
+                <entry><key>init</key><value ref="init" /></entry>
+                <entry><key>start</key><value ref="start" /></entry>
+                <entry><key>info</key><value ref="info" /></entry>
+                <entry><key>offertus</key><value ref="offertus" /></entry>
+                <entry><key>account</key><value ref="account" /></entry>
+                <entry><key>confirmation</key><value ref="confirmation" /></entry>
+                <entry><key>name</key><value ref="name" /></entry>
+                <entry><key>address</key><value ref="address" /></entry>
+                <entry><key>tinyConfirmation</key><value ref="tinyConfirmation" /></entry>
+                <entry><key>change</key><value ref="change" /></entry>
+                <entry><key>phone</key><value ref="phone" /></entry>
+                <entry><key>payMethod</key><value ref="payMethod" /></entry>
+                <entry><key>cash</key><value ref="cash" /></entry>
+                <entry><key>pin</key><value ref="pin" /></entry>
+                <entry><key>balance</key><value ref="balance" /></entry>
+				<entry><key>final</key><value ref="final" /></entry>
+                <entry><key>exit</key><value ref="exit" /></entry>
+            </dictionary>
+        </property>
+    </object>
+	
+	
+    <object id="init" class="elements.InitElement">
+		<constructor-arg>
+			<array>
+				<value><![CDATA[https://w.qiwi.com/xml/xmlcp.jsp]]></value>
+				<value><![CDATA[https://service1.osmp.ru/wallet/xmlcp.jsp]]></value>
+				<value><![CDATA[https://service2.osmp.ru/wallet/xmlcp.jsp]]></value>
+			</array>
+		</constructor-arg>
+		<property name="id" value="0"/>
+		<property name="registrationCandidates">
+			<array>
+				<value>dispatcher,fail,E:initFail</value>
+			</array>
+		</property>
+    </object>
+	
+    <object id="start" class="elements.StartElement">
+		<constructor-arg>
+			<value>
+				<![CDATA[Налоговые платежи по индексу документа]]>
+			</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>
+				<![CDATA[Плата за организацию и осуществление расчетов с использованием предоплаченной карты составляет:<br/>%commission%]]>
+			</value>
+		</constructor-arg>
+		<constructor-arg value="21407"/>
+		<constructor-arg value="25707"/>
+		<property name="id" value="1"/>
+		<property name="countdownConfirm" value="false" />
+		<property name="exitConfirm" value="false" />
+	</object>
+    <object id="info" class="elements.InfoElement">
+		<property name="id" value="2"/>
+	</object>
+    <object id="offertus" class="elements.OffertusElement">
+        <constructor-arg value="QK_oferta_fns.xml" />
+		<property name="id" value="3"/>
+    </object>
+    <object id="account" class="elements.AccountElement">
+        <constructor-arg class="String">
+			<value><![CDATA[^(\d{15}|\d{20})$]]></value>
+		</constructor-arg>
+        <constructor-arg value="20" />
+		<property name="id" value="4"/>
+		<property name="registrationCandidates">
+			<array>
+				<!-- слушатель, событие, тип:имя зарегистрированного объекта (регистрируется в Registrator.instance) -->
+				<value>dispatcher,success,S:accountSuccess</value>
+				<value>dispatcher,fail,E:accountFail</value>
+			</array>
+		</property>
+	</object>
+    <object id="confirmation" class="elements.ConfirmationElement">
+		<property name="id" value="5"/>
+	</object>
+    <object id="name" class="elements.NameElement">
+		<property name="id" value="6"/>
+	</object>
+    <object id="address" class="elements.AddressElement">
+		<property name="id" value="7"/>
+	</object>
+    <object id="phone" class="elements.PhoneElement">
+		<property name="id" value="8"/>
+	</object>
+    <object id="tinyConfirmation" class="elements.TinyConfirmationElement">
+		<property name="id" value="9"/>
+	</object>
+    <object id="change" class="elements.ChangeElement">
+		<property name="id" value="10"/>
+	</object>
+    <object id="payMethod" class="elements.PayMethodElement">
+		<property name="id" value="11"/>
+	</object>
+    <object id="cash" class="elements.CashElement">
+        <constructor-arg ref="billText" />
+		<property name="id" value="12"/>
+		<property name="timeout" value="300000"/>
+		<property name="countdownConfirm" value="false" />
+		<property name="exitConfirm" value="false" />
+	</object>
+    <object id="pin" class="elements.PinElement">
+		<property name="id" value="13"/>
+	</object>
+    <object id="balance" class="elements.BalanceElement">
+        <constructor-arg ref="billText" />
+		<property name="id" value="14"/>
+	</object>
+    <object id="final" class="elements.FinalElement">
+		<property name="id" value="15"/>
+		<property name="countdownConfirm" value="false" />
+		<property name="exitConfirm" value="false" />
+	</object>
+	<object id="exit" class="com.qiwi.elements.ExitElement">
+		<property name="id" value="16"/>
+		<property name="countdownConfirm" value="false" />
+		<property name="exitConfirm" value="false" />
+	</object>
+	
+</objects>

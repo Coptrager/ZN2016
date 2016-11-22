@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scripts>
+	<config totalTime="600" defaultIdleTime="60" version="2.0" log="false">
+
+		<session>
+			<var key="settings.MGT_path_format" value="page:time"/>
+			<var key="settings.MGT_date_format" value="yyyy-mm-dd hh:nn:ss"/>
+			<var key="settings.MGT_exit_last_page" value="true"/>
+			<var key="settings.exclude_zero_page" value="true"/>
+			<var key="settings.update_phone" value="true"/>
+			<var key="settings.use_phone_capacity" value="true"/>
+			<var key="settings.vqw_id" value="7406"/>
+			<var key="settings.prv_name" value="Океан банк"/>
+
+			<var key="check_status.PrvId" value="14210"/>
+			<var key="check_status.TermId" value="true"/>
+			<var key="check_status.PrtStatus" value="false"/>
+
+			<var key="settings.project_name" value="Ocean Bank Card"/>
+			<var key="settings.project_version" value="Ocean Bank Card 1.0.1"/>
+			<var key="settings.oferta_path" value="Offer.xml"/>
+			<var key="settings.oferta_name" value="qiwi"/>
+			<var key="extras.rp" value="./ocean_bank_card_pay/return.html"/>
+			
+			<var key="fake_pages.phoneProviderPopup.index" value="3"/>
+			<var key="fake_pages.phoneDigitPopup.index" value="3"/>
+			<var key="fake_pages.maxPopup.index" value="4"/>
+		</session>
+
+		<statistic defaultProfile="bad">
+			<add>
+				<bad>
+					<var name="_extra_MGT_phone" value="user_info.phone"/>
+					<var name="_extra_MGT_account" value="user_info.account"/>
+					<var name="_extra_MGT_ver" value="settings.project_version"/>
+					<var name="_extra_MGT_sum" value="extras.sum"/>
+				</bad>
+				<good>
+					<var name="_extra_MGT_phone" value="user_info.phone"/>
+					<var name="_extra_MGT_account" value="user_info.account"/>
+					<var name="_extra_MGT_sum" value="extras.sum"/>
+					<var name="_extra_MGT_ver" value="settings.project_version"/>
+					<var name="_extra_result_int_page" value="extras.rp"/>
+
+				</good>
+			</add>
+			<object>
+				<variable name="prv_id" value="323"/>
+				<variable name="prv_name" value="Magitel"/>
+				<variable name="_extra_MGT_project_number" value="30067"/>
+				<variable name="_extra_no_print_check" value="true"/>
+				<variable name="_extra_fake_provider" value="true"/>
+				<variable name="getAccountNumber" value="0000000000"/>
+			</object>
+			<bad
+				vars="_extra_MGT_project_number,_extra_MGT_exit,_extra_MGT_date,_extra_MGT_time,_extra_MGT_path, getAccountNumber"
+				post="./return.html"/>
+			<good
+				vars="_extra_MGT_project_number,_extra_MGT_exit,_extra_MGT_date,_extra_MGT_time,_extra_MGT_path, getAccountNumber"
+				post="./return.html"/>
+		</statistic>
+
+		<defaultBackground type="0" name="bg_base"/>
+
+		<pages>
+			<page name="check_status_page" index="1">
+				<content type="2" name="Check">
+					<componentEvents>
+						<event name="success" page="read_card_page"/>
+						<event name="fail" page="fail_page"/>
+					</componentEvents>
+				</content>
+			</page>
+			<page name="read_card_page" index="2" >
+				<content type="2" name="ReadCard">
+					<componentEvents>
+						<event name="success" page="enter_summ_page"/>
+						<event name="errorStart" page="fail_page"/>
+						<event name="errorCardNumber" page="fail_card_page"/>
+						
+					</componentEvents>
+				</content>	
+			</page>
+			
+			<page name="enter_summ_page" index="4" >
+				<content type="2" name="EnterSumm">
+					<componentEvents>
+						<event name="back" page="read_card_page"/>
+						<event name="next" page="enter_last_phone_digits_page"/>
+						<event name="oferta" page="oferta_page"/>
+					</componentEvents>
+				</content>	
+			</page>
+			
+			<page name="enter_last_phone_digits_page" index="5" >
+				<content type="2" name="EnterLastPhoneDigits">
+					<componentEvents>
+						<event name="back" page="enter_summ_page"/>
+						<event name="next" page="confirm_data_page"/>
+					</componentEvents>
+				</content>	
+			</page>
+			
+			<page name="confirm_data_page" index="6" >
+				<content type="2" name="ConfirmData">
+					<componentEvents>
+						<event name="back" page="enter_last_phone_digits_page"/>
+						<event name="next" page="send_request_page"/>
+					</componentEvents>
+				</content>	
+				
+			</page>
+			
+			<page name="send_request_page" index="7" timeout="180">
+				<content type="2" name="SendRequest">
+					<componentEvents>
+						<event name="error" page="error_page"/>
+						<event name="timeout" page="timeout_page"/>
+						<event name="fatalFail" page="fatal_error_page"/>
+						<event name="success" page="confirm_summ_page"/>
+					</componentEvents>
+				</content>	
+			</page>
+			
+			<page name="confirm_summ_page" index="8" >
+				<content type="2" name="ConfirmSumm">
+					<componentEvents>
+						<event name="back" page="confirm_data_page"/>
+						<event name="next" page="enter_sms_code_page"/>
+					</componentEvents>
+				</content>	
+			</page>
+			
+			<page name="enter_sms_code_page" index="9" >
+				<content type="2" name="EnterSmsCode">
+					<componentEvents>
+						<event name="back" page="confirm_summ_page"/>
+						<event name="next" page="ok_page"/>
+					</componentEvents>
+				</content>	
+			</page>
+			
+			<page name="ok_page" index="10" >
+				<content type="0" name="bg_ok"/>
+				<content type="1" name="exit" pos="490,883"/>
+			</page>
+			
+			<page name="error_page" index="11">
+				<content type="0" name="bg_error"/>
+				<content type="1" name="OkButton" page="confirm_data_page" pos="469.7,478.8"/>
+			</page>
+			
+			<page name="timeout_page" index="12">
+				<content type="0" name="bg_timeout"/>
+				<content type="1" name="OkButton" page="confirm_data_page" pos="469.7,478.8"/>
+			</page>
+			
+			<page name="fatal_error_page" index="13">
+				<content type="0" name="bg_fatal_error"/>
+				<content type="1" name="exit" pos="490.4,880"/>
+			</page>
+
+			<page name="fail_page" index="14">
+				<content type="0" name="bg_fail"/>
+				<content type="1" name="back" pos="33.8,883" page="back_page" />
+			</page>
+			<page name="back_page" index="17" idleTime='1'>
+				<content type="2" name="Page"  symbolName="bg_base">
+					<param name="set" key0="exit_direct" value0="back" />
+				</content>
+			</page>
+			<page name="oferta_page" index="15">
+               <content type="2" name="OfertaPage" pos="100,0"/>
+               <content type="1" name="back" pos="33.8,883" page="enter_summ_page"/>
+			</page>
+			<page name="fail_card_page" index="16">
+				<content type="0" name="bg_error_card"/>
+				<content type="1" name="OkButton" page="read_card_page" pos="469.7,478.8"/>
+			</page>
+		</pages>
+	</config>
+</scripts>
+

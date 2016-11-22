@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data xmlns:b="com.styleru.bool" xmlns:n="com.styleru.number" xmlns:s="com.styleru.string">
+	<settings
+		n:width="1280"
+		n:height="1024"
+		s:constructor_context="xml/flash_leader_context.xml"
+		s:constructor_flow="xml/flash_leader_flow.xml"
+		s:title="leader"
+		s:prvname="Visa QIWI Wallet"
+		s:prvid="7406"
+		s:prvid2="7406"
+		s:qw_prvid="441"
+		n:speed="0.4"
+		s:statisticsId="30064"
+		>
+	</settings>
+	<LoaderMax name="resources" load="true">
+		<SWFLoader name="fonts" url="swf/flash_leader_fonts.swf" />
+		<SWFLoader name="graphics" url="swf/flash_leader_graphics.swf" />
+	</LoaderMax>
+</data>

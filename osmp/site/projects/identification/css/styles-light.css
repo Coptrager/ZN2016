@@ -1,0 +1,219 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+#fio-page {
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  width: 1280px; }
+  #fio-page .fieldBlock {
+    margin: 20px 0 0 0;
+    text-align: center; }
+    #fio-page .fieldBlock .textfield {
+      margin-top: 25px; }
+  #fio-page .erase-button .button-content {
+    font-size: 48px;
+    font-family: "WhitneySemibold", Helvetica, Arial, sans-serif;
+    font-weight: normal; }
+
+#header {
+  margin: 35px auto; }
+  #header .subtitle {
+    white-space: pre; }
+
+#confirm-page {
+  /*
+  $head-height: 300px;
+  $head-needed: 350px;
+  $head-left: $head-needed - $head-height; // 50px
+  $main-height: 60px;
+  $main-needed: 240px;
+  $main-left: $main-needed - $main-height; // 180px
+  $footer-height: 100px;
+  $footer-needed: 275px;
+  $footer-left: $footer-needed - $footer-height; // 175px
+  */
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  height: 864px; }
+  #confirm-page > * {
+    display: -moz-box;
+    -moz-box-align: center;
+    -moz-box-pack: center;
+    -moz-box-orient: vertical;
+    width: 1280px; }
+    #confirm-page > * > * {
+      -moz-box-flex: 1;
+      display: -moz-box;
+      -moz-box-align: center;
+      -moz-box-pack: center;
+      -moz-box-orient: vertical; }
+  #confirm-page > :first-child {
+    -moz-box-flex: 2; }
+    #confirm-page > :first-child + * {
+      -moz-box-flex: 7; }
+      #confirm-page > :first-child + * + * {
+        -moz-box-flex: 7; }
+  #confirm-page .head {
+    padding-top: 120px;
+    text-align: center; }
+    #confirm-page .head > :first-child {
+      font-size: 60px; }
+    #confirm-page .head > :last-child {
+      color: #4D4D4D;
+      font-size: 30px;
+      width: 790px;
+      margin: 30px 0; }
+  #confirm-page .main {
+    background: #FFB82A;
+    text-align: center; }
+    #confirm-page .main > :first-child {
+      font-size: 60px; }
+  #confirm-page .footer {
+    text-align: center; }
+    #confirm-page .footer > :first-child .button {
+      margin-bottom: -28px;
+      width: 280px;
+      height: 80px; }
+      #confirm-page .footer > :first-child .button .button-content {
+        height: 80px;
+        line-height: inherit;
+        font-size: 28px; }
+    #confirm-page .footer > :last-child {
+      color: #4D4D4D;
+      width: 570px;
+      font-size: 24px; }
+
+#doc-page {
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  width: 1280px;
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  height: 864px; }
+  #doc-page .header {
+    font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    width: 940px;
+    text-align: center; }
+    #doc-page .header .main {
+      margin: 12px auto;
+      font-size: 48px; }
+    #doc-page .header .subtitle {
+      font-size: 20px; }
+  #doc-page .fieldBlock {
+    margin: 65px 0 15px;
+    text-align: center; }
+  #doc-page .erase-button .button-content {
+    font-size: 48px;
+    font-family: "WhitneySemibold", Helvetica, Arial, sans-serif;
+    font-weight: normal; }
+
+#final-page {
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  height: 864px;
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  width: 1280px; }
+  #final-page > img {
+    margin: 0 0 60px; }
+  #final-page .text-n-image {
+    display: -moz-box;
+    -moz-box-align: center;
+    -moz-box-pack: center;
+    -moz-box-orient: horizontal;
+    width: 690px; }
+    #final-page .text-n-image.success {
+      font-size: 48px;
+      margin: 0 0 95px; }
+      #final-page .text-n-image.success .text {
+        padding: 12px 7px; }
+    #final-page .text-n-image:not(.success) {
+      -moz-box-align: start;
+      margin: 15px 0;
+      font-size: 36px; }
+      #final-page .text-n-image:not(.success) .image > img {
+        padding: 0 18px; }
+
+.popupContents .title {
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  white-space: pre;
+  margin-top: -45px; }
+.popupContents .message {
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 46px;
+  white-space: pre;
+  margin-top: 55px; }
+.popupContents .description {
+  font-family: "WhitneyMedium", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  white-space: pre;
+  margin-top: 50px; }
