@@ -1,1 +1,2 @@
-# ZN2016.QiwiTerminlal.osmp
+# ZN2016.QiwiTerminlal
+Coptrager
